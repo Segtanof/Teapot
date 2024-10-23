@@ -1,0 +1,106 @@
+{
+    "categories": [
+      {
+        "name": "Education",
+        "details": [
+          {
+            "institution": "University of Mannheim",
+            "location": "Germany",
+            "program": "Master of Management (Finance & Information Systems)",
+            "gpa": "2.0",
+            "start_date": "Sep 2022",
+            "end_date": "Present",
+            "courses": ["Python", "IT Management", "Agile Software Development", "Business Analytics", "German Language"],
+            "seminar_topic": "Monetizing Disinformation in Attention Economy",
+            "grade": "1.7"
+          },
+            {
+            "institution": "Bayes Business School",
+            "location": "London, UK",
+            "program": "Masters Exchange Program",
+            "courses": ["Trading and Market Microstructure, Machine Learning, Data Modelling, Private Equity"],
+            "start_date": "May 2024",
+            "end_date": "Jul 2024"
+            },
+            {
+            "institution": "University of Hong Kong",
+            "location": "Hong Kong",
+            "program": "Bachelor of Business Administration in Business Design and Innovation",
+            "courses": ["Entrepreneurship", "Value Driven Innovation", "German Language", "Management of Information System"],
+            "start_date": "Sep 2012",
+            "end_date": "Jun 2017",
+            "major": "Business Design and Innovation",
+            "minor": "German",
+            "gpa": "2.1"
+            },
+            {
+            "institution": "University of Tübingen",
+            "location": "Germany",
+            "program": "German Language Course, Cross-Cultural Management",
+            "start_date": "Feb 2016",
+            "end_date": "Jun 2016"
+            }
+            ]
+          },
+      {
+        "name": "Work Experience",
+        "details": [
+          {
+            "company": "ISS-STOXX (Deutsche Börse Group)",
+            "position": "Intern, IT Financials and Asset Management",
+            "start_date": "Aug 2023",
+            "end_date": "Feb 2024",
+            "key_achievements": [
+              "Pioneered internal process automation project by replacing manual processes such as invoice approval, periodic emails and record keeping with power automate flows. Sped up procurement and license assignment by 30% for over 800 users across 10 office locations and eliminated untraceable procurement tickets.",
+              "Enabled financial metrics visibility of corporate IT department such as asset allocation, depreciation and monthly budget. Provided financial insight to a buyout analysis of over 300k USD for director-level decision-making during company M&A",
+              "Developed IT strategy in software licensing management by structuralizing tasks by event triggers, and storing data centrally on ITAM tool (Asset Sonar). Sped up approval process, automated assignment process, optimized inventory, and reduced non-compliance entitlements."
+            ]
+          },
+          {
+            "company": "Mapletree Logistics Trust",
+            "position": "Asset Management Executive",
+            "start_date": "Apr 2021",
+            "end_date": "Aug 2022",
+            "key_achievements": [
+              "Executed asset management activities such as lease negotiation, tenant onboarding and arrears management. Maintained occupancy of over 99% among 6 properties of over 260k sqm NLA with notable tenants such as Adidas, UPS and Swatch",
+              "Restructured leasing process by integrating tasks using excel tools such as query, Marcos and database linkages. Eliminated data input redundancy and accelerated renewal and termination processes by over 50%.",
+              "Constructed yearly budget by projecting current year performance and extracting rent schedule information. Figures and forecast produced were used in the company annual report",
+              "Served in the sustainability committee and designed workshops and initiatives for coworkers in Hong Kong Office. 8 activities were planned such as upcycling workshops, hikes and museum tours"
+            ]
+          },
+          {
+            "company": "Spaceship HK",
+            "position": "Logistics Sales Executive",
+            "start_date": "Jul 2020",
+            "end_date": "Apr 2021",
+            "key_achievements": [
+              "Collaborated with major industry players (FedEx, DHL, UPS etc.) to provide a one-stop online international courier platform for corporate clients. Notable clients: Art Incubator (PMQ), largest youth non-profit organization in Hong Kong (HKFYG), Edifier",
+              "Developed and standardized sales process, including lead generation. Customer profiling, and sales automation. Collaborated with marketing team for sales pitch creation, and with operation team to deliver after-sales service",
+              "Achieved over $1M HKD sales in 5 months and increase client base by 50%."
+            ]
+          },
+          {
+            "company": "JEB Furniture Solutions Limited",
+            "position": "Sales Executive",
+            "start_date": "Aug 2018",
+            "end_date": "Mar 2020",
+            "key_achievements": [
+              "Generated 65K Eur Sales in 1 year selling imported office furniture to A-grade office tenant such as Baker Mckenzie, Davidoff, and Tiffany &Co. Produced new use cases including luxury retail and restaurants",
+              "Coordinated with design firms such as Goudie, Richards Basmajian and property managers such as JLL and CBRE for project design and procurement. Built relationship through weekly client visits and providing lunch & learn sessions"
+            ]
+          },
+          {
+            "company": "IROCO Design",
+            "position": "Business Development Manager",
+            "start_date": "Sep 2017",
+            "end_date": "Jul 2018",
+            "key_achievements": [
+              "Gained 500 connections through cold-calling and referral. Promoted the brand through service pitch and job inquiries.",
+              "Provided design furniture leasing service in Art Basel HK 2018. Coordinated with over 200 galleries in the 5-day event, from order taking to CRM service",
+              "Improved online channel to drive traffic, brand impression and visitor engagement with targeted content and simpler UI"
+            ]
+          }
+        ]
+      }
+    ]
+}
