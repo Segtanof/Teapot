@@ -25,6 +25,7 @@ finance_agent = Agent(
 
 agent_team = Agent(
     team=[web_agent, finance_agent],
+    model= Groq(id="llama-3.1-70b-versatile", api_key= "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"),
     instructions=["Always include sources", "Use tables to display data"],
     show_tool_calls=True,
     markdown=True,
