@@ -1,16 +1,14 @@
 from phi.agent import Agent
-from phi.model.openai import OpenAIChat
 from phi.storage.agent.sqlite import SqlAgentStorage
 from phi.tools.duckduckgo import DuckDuckGo
 from phi.tools.yfinance import YFinanceTools
 from phi.playground import Playground, serve_playground_app
 from fastapi import FastAPI
-
-from groq import Groq
+from phi.model.groq import Groq
 
 web_agent = Agent(
     name="Web Agent",
-    model = OpenAIChat(id="llama3-8b-8192"),
+    model = Groq(id="llama3-8b-8192", api_key="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"),
     tools=[DuckDuckGo()],
     instructions=["Always include sources"],
     storage=SqlAgentStorage(table_name="web_agent", db_file="agents.db"),
@@ -20,7 +18,7 @@ web_agent = Agent(
 
 finance_agent = Agent(
     name="Finance Agent",
-    model = OpenAIChat(api_key="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",id="llama3-8b-8192"),
+    model = Groq(id="llama3-8b-8192", api_key="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"),
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)],
     instructions=["Use tables to display data"],
     storage=SqlAgentStorage(table_name="finance_agent", db_file="agents.db"),

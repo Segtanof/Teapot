@@ -1,10 +1,13 @@
 from phi.agent import Agent
-from phi.tools.duckduckgo import DuckDuckGo
-from phi.llm.groq import Groq
+from phi.model.groq import Groq
+from phi.tools.yfinance import YFinanceTools
 
 agent = Agent(
-    llm=Groq(model="mixtral-8x7b-32768", api_key="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"),
-    tools=[DuckDuckGo()],
+    model=Groq(id="llama3-8b-8192", api_key="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"),
+    tools=[YFinanceTools(stock_price=True)],
     show_tool_calls=True,
+    markdown=True,
 )
-agent.print_response("Whats happening in France?", markdown=True, stream=False)
+
+# Print the response on the terminal
+agent.print_response("What is the stock price of NVDA and TSLA")
