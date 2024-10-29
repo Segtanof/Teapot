@@ -1,6 +1,7 @@
 import pandas as pd
 from phi.agent import Agent
 from phi.model.groq import Groq
+from phi.tools.duckduckgo import DuckDuckGo
 
 #import occupation description
 df_occupation = pd.read_csv('occupation.txt', sep='\t')
@@ -28,18 +29,14 @@ for i in range(len(test_df)):
     agent_role = Agent(
         name= "random",
         role= test_df.iloc[i]['occupation_name'],
-        model=Groq(id="llama3-8b-8192", api_key= "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"),
+        model=Groq(id="mixtral-8x7b-32768", api_key= "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"),
         #tools=[DuckDuckGo()],
         instructions=[f"This is who you are: {test_df.iloc[i]['occupation_description']}"],
-        show_tool_calls=False,
-        markdown=False,)
+        show_tool_calls=True,
+        markdown=True,)
     
-    print(f"{test_df.iloc[i]["occupation_name"]}: {agent_role.print_response("tell me about yourself")}")
-
-#for i in range(len(df)):
- #   role = df.iloc[i]['occupation_name']
-  #  description = df.iloc[i]['occupation_description']
-   # wage = df.iloc[i]['A_MEAN']
+    print(f"{test_df.iloc[i]["occupation_name"]}: {agent_role.print_response("tell me a standard operating procedure of one of your tasks. list it in point form as an instruction.")}")
 
 
+    
 #get the result
