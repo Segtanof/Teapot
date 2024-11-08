@@ -1,7 +1,7 @@
 import pandas as pd
 from phi.agent import Agent
 from phi.model.groq import Groq
-from phi.tools.duckduckgo import DuckDuckGo
+import random
 
 #import occupation description
 df_occupation = pd.read_csv('occupation.txt', sep='\t')
@@ -24,11 +24,17 @@ print(merged_df.head())
 #testing the idea
 test_df = merged_df.head(5)
 
+l1 = list(merged_df["occupation_name"])
+
+aaa = random.choice(l1)
+bbb = random.choice(l1)
+ccc = random.choice(l1)
+
 #pass that to agent
 #for i in range(len(test_df)):
 agent_role1 = Agent(
-    name= "random",
-    role= test_df.iloc[1]['occupation_name'],
+    name= aaa,
+    role= aaa,
     model=Groq(id="mixtral-8x7b-32768", api_key= "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"),
     #tools=[DuckDuckGo()],
     instructions=[f"This is who you are: {test_df.iloc[1]['occupation_description']}"],
@@ -36,7 +42,7 @@ agent_role1 = Agent(
     markdown=True,)
 
 agent_role2 = Agent(
-    name= "random",
+    name= test_df.iloc[2]['occupation_name'],
     role= test_df.iloc[2]['occupation_name'],
     model=Groq(id="mixtral-8x7b-32768", api_key= "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"),
     #tools=[DuckDuckGo()],
@@ -45,9 +51,9 @@ agent_role2 = Agent(
     markdown=True,)
 
 agent_role3 = Agent(
-    name= "random",
+    name= test_df.iloc[3]['occupation_name'],
     role= test_df.iloc[3]['occupation_name'],
-    model=Groq(id="mixtral-8x7b-32768", api_key= "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"),
+    model=Groq(id="mixtral-8x7b-32768", api_key = "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"),
     #tools=[DuckDuckGo()],
     instructions=[f"This is who you are: {test_df.iloc[3]['occupation_description']}"],
     show_tool_calls=True,
@@ -55,13 +61,12 @@ agent_role3 = Agent(
     
 agent_team = Agent(
     team=[agent_role1, agent_role2, agent_role3],
-    model= Groq(id="llama-3.1-70b-versatile", api_key= "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"),
+    model= Groq(id="llama-3.1-70b-versatile", api_key = "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"),
     instructions=["Always include sources", "Use tables to display data"],
     show_tool_calls=True,
     markdown=True,
 )
 
 print(agent_team.print_response("""youre a team. please show discussion among you all on this topic: "How should we resolve conflicts?"""))
-
 
 #get the result
