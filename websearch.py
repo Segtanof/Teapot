@@ -1,13 +1,8 @@
-from phi.agent import Agent
-from phi.model.groq import Groq
-from phi.tools.yfinance import YFinanceTools
+import torch
 
-agent = Agent(
-    model=Groq(id="llama3-8b-8192", api_key="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"),
-    tools=[YFinanceTools(stock_price=True)],
-    show_tool_calls=True,
-    markdown=True,
-)
+print(f"CUDA driver version: {torch.version.cuda}")
+print(f"CUDA runtime version: {torch.version.cuda_runtime}")
 
-# Print the response on the terminal
-agent.print_response("What is the stock price of NVDA and TSLA")
+# Compare the CUDA driver version with the CUDA runtime version
+if torch.version.cuda != torch.version.cuda_runtime:
+    print("CUDA driver version mismatch!")
