@@ -1,0 +1,113 @@
+[
+    {
+      "question": "When positioning a patient for a chest X-ray, which adjustment ensures the clavicles are out of the lung field?",
+      "options": [
+        "Angle the X-ray tube cephalad.",
+        "Position the patient in a prone position.",
+        "Align the X-ray beam perpendicular to the sternum.",
+        "Ask the patient to roll their shoulders forward."
+      ],
+      "answer": "d",
+      "reason": "Rolling shoulders forward moves the clavicles out of the lung field."
+    },
+    {
+      "question": "What is the recommended protocol when imaging a pediatric patient who cannot remain still?",
+      "options": [
+        "Use sedation to keep the patient immobile.",
+        "Use the shortest possible exposure time and immobilization devices.",
+        "Allow a parent to hold the child during the procedure without protective gear.",
+        "Perform the imaging procedure despite movement for efficiency."
+      ],
+      "answer": "b",
+      "reason": "Short exposure time and immobilization reduce radiation and ensure safety."
+    },
+    {
+      "question": "A fluoroscopy exam shows unusually high patient skin dose readings. What should you do?",
+      "options": [
+        "Stop the procedure immediately and report the incident.",
+        "Continue the procedure but decrease the fluoroscopy time.",
+        "Confirm equipment calibration and assess for overexposure risks.",
+        "Lower the table to reduce the distance between the X-ray source and the patient."
+      ],
+      "answer": "c",
+      "reason": "Overexposure may indicate a calibration issue requiring immediate attention."
+    },
+    {
+      "question": "A physician requests an X-ray on a pregnant patient. What is your first step?",
+      "options": [
+        "Perform the procedure as ordered while avoiding pelvic exposure.",
+        "Decline the request and suggest an ultrasound instead.",
+        "Discuss the potential risks with the physician and patient before proceeding.",
+        "Use the maximum lead shielding available and proceed."
+      ],
+      "answer": "c",
+      "reason": "Risk communication is essential before imaging a pregnant patient."
+    },
+    {
+      "question": "A lateral lumbar spine X-ray appears underexposed despite correct technique settings. What is the most likely cause?",
+      "options": [
+        "Excessive focal spot size.",
+        "Incorrect positioning of the patient.",
+        "High tissue density in the area.",
+        "Miscalibration of the exposure timer."
+      ],
+      "answer": "c",
+      "reason": "Dense tissues, like in the lumbar region, often require adjusted exposure."
+    },
+    {
+      "question": "What is the primary purpose of using a grid in radiography?",
+      "options": [
+        "Protect the patient from scattered radiation.",
+        "Enhance image sharpness by reducing scatter radiation.",
+        "Minimize motion artifacts during exposure.",
+        "Reduce the dose needed for adequate imaging."
+      ],
+      "answer": "b",
+      "reason": "Grids improve image quality by filtering scatter radiation."
+    },
+    {
+      "question": "During a CT scan, a patient reports feeling warm and flushed after receiving contrast. What should you do?",
+      "options": [
+        "Reassure the patient and continue the scan.",
+        "Stop the procedure immediately and call for emergency assistance.",
+        "Monitor for additional symptoms and prepare to manage an allergic reaction.",
+        "Offer the patient water to counteract the sensation."
+      ],
+      "answer": "c",
+      "reason": "Warm sensations are common but can indicate an early allergic reaction."
+    },
+    {
+      "question": "Which regulatory standard mandates regular testing of radiologic equipment?",
+      "options": [
+        "American Registry of Radiologic Technologists (ARRT) standards.",
+        "Occupational Safety and Health Administration (OSHA) guidelines.",
+        "The Joint Commission accreditation requirements.",
+        "Federal regulations under the Mammography Quality Standards Act (MQSA)."
+      ],
+      "answer": "d",
+      "reason": "MQSA specifically mandates regular quality control of radiologic equipment."
+    },
+    {
+      "question": "A colleague forgets to wear their dosimeter during a procedure. What is the best course of action?",
+      "options": [
+        "Report the incident to your supervisor immediately.",
+        "Share your dosimeter with them for the rest of the procedure.",
+        "Advise them to record an estimated exposure level post-procedure.",
+        "Remind them to wear it next time and proceed."
+      ],
+      "answer": "a",
+      "reason": "Dosimeter use is critical for accurate monitoring, and incidents must be reported."
+    },
+    {
+      "question": "What is the maximum permissible dose of radiation for occupational exposure per year according to international standards?",
+      "options": [
+        "1 millisievert (mSv)",
+        "5 mSv",
+        "20 mSv",
+        "50 mSv"
+      ],
+      "answer": "c",
+      "reason": "The International Commission on Radiological Protection recommends 20 mSv/year."
+    }
+  ]
+  
