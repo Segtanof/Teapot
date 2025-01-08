@@ -1,0 +1,333 @@
+{
+	"questions": {
+		"answer_options": {
+			"answer_option": [
+				{
+					"_value": "1",
+					"__text": "Strongly Dislike"
+				},
+				{
+					"_value": "2",
+					"__text": "Dislike"
+				},
+				{
+					"_value": "3",
+					"__text": "Unsure"
+				},
+				{
+					"_value": "4",
+					"__text": "Like"
+				},
+				{
+					"_value": "5",
+					"__text": "Strongly Like"
+				}
+			]
+		},
+		"question": [
+			{
+				"area": "Realistic",
+				"text": "Build kitchen cabinets",
+				"_index": "1"
+			},
+			{
+				"area": "Realistic",
+				"text": "Lay brick or tile",
+				"_index": "2"
+			},
+			{
+				"area": "Investigative",
+				"text": "Develop a new medicine",
+				"_index": "3"
+			},
+			{
+				"area": "Investigative",
+				"text": "Study ways to reduce water pollution",
+				"_index": "4"
+			},
+			{
+				"area": "Artistic",
+				"text": "Write books or plays",
+				"_index": "5"
+			},
+			{
+				"area": "Artistic",
+				"text": "Play a musical instrument",
+				"_index": "6"
+			},
+			{
+				"area": "Social",
+				"text": "Teach an individual an exercise routine",
+				"_index": "7"
+			},
+			{
+				"area": "Social",
+				"text": "Help people with personal or emotional problems",
+				"_index": "8"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Buy and sell stocks and bonds",
+				"_index": "9"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Manage a retail store",
+				"_index": "10"
+			},
+			{
+				"area": "Conventional",
+				"text": "Develop a spreadsheet using computer software",
+				"_index": "11"
+			},
+			{
+				"area": "Conventional",
+				"text": "Proofread records or forms",
+				"_index": "12"
+			},
+			{
+				"area": "Realistic",
+				"text": "Repair household appliances",
+				"_index": "13"
+			},
+			{
+				"area": "Realistic",
+				"text": "Raise fish in a fish hatchery",
+				"_index": "14"
+			},
+			{
+				"area": "Investigative",
+				"text": "Conduct chemical experiments",
+				"_index": "15"
+			},
+			{
+				"area": "Investigative",
+				"text": "Study the movement of planets",
+				"_index": "16"
+			},
+			{
+				"area": "Artistic",
+				"text": "Compose or arrange music",
+				"_index": "17"
+			},
+			{
+				"area": "Artistic",
+				"text": "Draw pictures",
+				"_index": "18"
+			},
+			{
+				"area": "Social",
+				"text": "Give career guidance to people",
+				"_index": "19"
+			},
+			{
+				"area": "Social",
+				"text": "Perform rehabilitation therapy",
+				"_index": "20"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Operate a beauty salon or barber shop",
+				"_index": "21"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Manage a department within a large company",
+				"_index": "22"
+			},
+			{
+				"area": "Conventional",
+				"text": "Install software across computers on a large network",
+				"_index": "23"
+			},
+			{
+				"area": "Conventional",
+				"text": "Operate a calculator",
+				"_index": "24"
+			},
+			{
+				"area": "Realistic",
+				"text": "Assemble electronic parts",
+				"_index": "25"
+			},
+			{
+				"area": "Realistic",
+				"text": "Drive a truck to deliver packages to offices and homes",
+				"_index": "26"
+			},
+			{
+				"area": "Investigative",
+				"text": "Examine blood samples using a microscope",
+				"_index": "27"
+			},
+			{
+				"area": "Investigative",
+				"text": "Investigate the cause of a fire",
+				"_index": "28"
+			},
+			{
+				"area": "Artistic",
+				"text": "Create special effects for movies",
+				"_index": "29"
+			},
+			{
+				"area": "Artistic",
+				"text": "Paint sets for plays",
+				"_index": "30"
+			},
+			{
+				"area": "Social",
+				"text": "Do volunteer work at a non-profit organization",
+				"_index": "31"
+			},
+			{
+				"area": "Social",
+				"text": "Teach children how to play sports",
+				"_index": "32"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Start your own business",
+				"_index": "33"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Negotiate business contracts",
+				"_index": "34"
+			},
+			{
+				"area": "Conventional",
+				"text": "Keep shipping and receiving records",
+				"_index": "35"
+			},
+			{
+				"area": "Conventional",
+				"text": "Calculate the wages of employees",
+				"_index": "36"
+			},
+			{
+				"area": "Realistic",
+				"text": "Test the quality of parts before shipment",
+				"_index": "37"
+			},
+			{
+				"area": "Realistic",
+				"text": "Repair and install locks",
+				"_index": "38"
+			},
+			{
+				"area": "Investigative",
+				"text": "Develop a way to better predict the weather",
+				"_index": "39"
+			},
+			{
+				"area": "Investigative",
+				"text": "Work in a biology lab",
+				"_index": "40"
+			},
+			{
+				"area": "Artistic",
+				"text": "Write scripts for movies or television shows",
+				"_index": "41"
+			},
+			{
+				"area": "Artistic",
+				"text": "Perform jazz or tap dance",
+				"_index": "42"
+			},
+			{
+				"area": "Social",
+				"text": "Teach sign language to people who are deaf or hard of hearing",
+				"_index": "43"
+			},
+			{
+				"area": "Social",
+				"text": "Help conduct a group therapy session",
+				"_index": "44"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Represent a client in a lawsuit",
+				"_index": "45"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Market a new line of clothing",
+				"_index": "46"
+			},
+			{
+				"area": "Conventional",
+				"text": "Inventory supplies using a hand-held computer",
+				"_index": "47"
+			},
+			{
+				"area": "Conventional",
+				"text": "Record rent payments",
+				"_index": "48"
+			},
+			{
+				"area": "Realistic",
+				"text": "Set up and operate machines to make products",
+				"_index": "49"
+			},
+			{
+				"area": "Realistic",
+				"text": "Put out forest fires",
+				"_index": "50"
+			},
+			{
+				"area": "Investigative",
+				"text": "Invent a replacement for sugar",
+				"_index": "51"
+			},
+			{
+				"area": "Investigative",
+				"text": "Do laboratory tests to identify diseases",
+				"_index": "52"
+			},
+			{
+				"area": "Artistic",
+				"text": "Sing in a band",
+				"_index": "53"
+			},
+			{
+				"area": "Artistic",
+				"text": "Edit movies",
+				"_index": "54"
+			},
+			{
+				"area": "Social",
+				"text": "Take care of children at a day-care center",
+				"_index": "55"
+			},
+			{
+				"area": "Social",
+				"text": "Teach a high-school class",
+				"_index": "56"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Sell merchandise at a department store",
+				"_index": "57"
+			},
+			{
+				"area": "Enterprising",
+				"text": "Manage a clothing store",
+				"_index": "58"
+			},
+			{
+				"area": "Conventional",
+				"text": "Keep inventory records",
+				"_index": "59"
+			},
+			{
+				"area": "Conventional",
+				"text": "Stamp, sort, and distribute mail for an organization",
+				"_index": "60"
+			}
+		],
+		"_start": "1",
+		"_end": "60",
+		"_total": "60"
+	}
+}
