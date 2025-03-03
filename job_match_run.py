@@ -16,11 +16,16 @@ from tqdm import tqdm
 #logging
 import pickle
 import regex as re
+import os
+from datetime import datetime
 
-# %% [markdown]
-# ### Set up occupation data sample
 
-# %%
+# Generate the folder name with current date and time
+folder_name = 'results/job_match_'+datetime.now().strftime("%d%m_%H%M")
+
+# Create the folder if it does not exist
+os.makedirs(folder_name, exist_ok=True)
+
 # set up occupation data
 occupations = pd.read_excel('datasets/occupation_data.xlsx').dropna()
 
@@ -37,9 +42,10 @@ occupations['description'] = occupations['description'].astype(str)
 occupations["ind"] = occupations["code"].str[:2]
 sampled_occupation = occupations.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1) #47 samples
 
+test_sample = sampled_occupation.sample(5, random_state=1)
 
-# %%
-occupation_list = [sampled_occupation["title"].iloc[x] for x in range(len(sampled_occupation))]
+occupation_dict = {sampled_occupation["title"].iloc[x]: sampled_occupation["code"].iloc[x]for x in range(len(sampled_occupation))}
+test_dict = {test_sample["title"].iloc[x]: test_sample["code"].iloc[x]for x in range(len(test_sample))}
 
 
 # %% [markdown]
@@ -57,12 +63,11 @@ qlist = list(df["question"])
 
 # %% [markdown]
 # ### Set up related occupation data
-
-# %%
 #whole dataset
 related = pd.read_excel('datasets/related_occupations.xlsx').astype(str)
-related.columns = related.columns.str.lower()
-related = related.rename(columns={'o*net-soc code':'code','related o*net-soc code': 'related_code' })
+related.columns = related.columns.str.lower().str.replace(" ","_").str.replace("o*net-soc_", "")
+related = related[related["relatedness_tier"] == "Primary-Short"]
+related
 
 
 # %% [markdown]
@@ -123,11 +128,9 @@ def matching_score(code, career):
 
 
 
-# %%
-
 
 # %%
-def get_rating(title, model, system = None ):
+def get_rating(title, model, code, system = None ):
     class rating(BaseModel):
             do_you_like_it: str
             provide_thoughts: str
@@ -159,29 +162,20 @@ def get_rating(title, model, system = None ):
         chat_history.append(AIMessage(str(response)))
         to_parse.append(response["your_rating"])
     
-    title = title.lower().replace(" ","_").replace(",","").replace(".","").replace("-","")
-    with open('chat_'+title+'.pkl', 'wb') as f:
+    
+    with open(folder_name + '/' + code + '.pkl', 'wb') as f:
         pickle.dump(chat_history, f)
     answer = ''.join(map(str, to_parse))
     return answer
 
 
-
 # %%
-test_sample = sampled_occupation.sample(10, random_state=1)
+test_model= ChatOllama(model="llama3.1", temperature=1)
 
-model= ChatOllama(model="llama3.1", temperature=1)
-
-for x in range(len(test_sample)):
-    title = test_sample["title"].iloc[x]
-    code = test_sample["code"].iloc[x]
-    answer = get_rating(title, model)
-
-    print(answer)
-
-#call api and get career suggestions
+for title, code in test_dict.items():
+    answer = get_rating(title, test_model, code)
     career = get_career(answer)
-    print(len(career))
 
-
+    with open(folder_name + '/' + code + '.json', 'w') as f:
+        f.write(career.to_json(index=True))
 
