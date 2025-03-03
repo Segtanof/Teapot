@@ -47,10 +47,8 @@ test_sample = sampled_occupation.sample(5, random_state=1)
 occupation_dict = {sampled_occupation["title"].iloc[x]: sampled_occupation["code"].iloc[x]for x in range(len(sampled_occupation))}
 test_dict = {test_sample["title"].iloc[x]: test_sample["code"].iloc[x]for x in range(len(test_sample))}
 
-
-# %% [markdown]
-# Load Question bank
-
+# %%
+json.dump(test_dict, open(folder_name + '/test_dict.json', 'w'))
 # %%
 #get the questions into a list
 with open("datasets/60qs.json") as f:
@@ -67,7 +65,7 @@ qlist = list(df["question"])
 related = pd.read_excel('datasets/related_occupations.xlsx').astype(str)
 related.columns = related.columns.str.lower().str.replace(" ","_").str.replace("o*net-soc_", "")
 related = related[related["relatedness_tier"] == "Primary-Short"]
-related
+
 
 
 # %% [markdown]
