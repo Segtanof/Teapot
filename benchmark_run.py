@@ -58,7 +58,7 @@ def task_gen(title,model, system = None):
     #initialize model
     model= model
 
-    query = "Generate "+str(len(get_des(title)))+" task statements that "+ title +" would perform at work."
+    query = "List out "+str(len(get_des(title)))+" things that the occupation \""+ title +"\" would perform at work. Make sure each statement is unique and different from one another."
 
     if system == None:
         prompt_template = ChatPromptTemplate([
@@ -140,10 +140,10 @@ def match(ref, gen):
 # ### packaging things for repeated excution
 
 # %%
-model = ChatOllama(model="llama3.2", temperature=1, seed= 1)
+model = ChatOllama(model="llama3.1", temperature=1, seed= 1)
 
 #ask user to input and save it as the variable system
-system = input("")
+system = "your occupation is {title}. Respond with the knowledge of the occupation."
 
 # %%
 for title in tqdm(sampled_list):
@@ -163,7 +163,7 @@ result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambd
 result_df
 
 # %%
-with open('result.json', 'w') as f:
+with open('sys_prompt1.json', 'w') as f:
     f.write(result_df.to_json(index=True))
 
 with open('prompts.txt', 'w') as f:
