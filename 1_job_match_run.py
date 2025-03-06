@@ -41,14 +41,15 @@ occupations['description'] = occupations['description'].astype(str)
 
 occupations["ind"] = occupations["code"].str[:2]
 sampled_occupation = occupations.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1) #47 samples
-
+#save sample as json
+sampled_occupation.to_json(folder_name + '/sampled_occupation.json')
 test_sample = sampled_occupation.sample(5, random_state=1)
 
 occupation_dict = {sampled_occupation["title"].iloc[x]: sampled_occupation["code"].iloc[x]for x in range(len(sampled_occupation))}
 test_dict = {test_sample["title"].iloc[x]: test_sample["code"].iloc[x]for x in range(len(test_sample))}
 
 # %%
-json.dump(test_dict, open(folder_name + '/test_dict.json', 'w'))
+json.dump(occupation_dict, open(folder_name + '/test_dict.json', 'w'))
 # %%
 #get the questions into a list
 with open("datasets/60qs.json") as f:
@@ -136,7 +137,7 @@ def get_rating(title, model, code, system = None ):
 
     chat_history = []
     to_parse=[]
-    query = "think about your persona and rate the statement with a number between 1 to 5 depending on your interest. 1 is strongly dislike and 5 is strongly like."
+    query = "think about your persona and rate the statement with a number 1, 2, 3, 4, or 5 depending on your interest. 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like."
 
     prompt_template = ChatPromptTemplate.from_messages(
         [
@@ -155,12 +156,17 @@ def get_rating(title, model, code, system = None ):
     structured_llm = model.with_structured_output(schema=rating.model_json_schema())
     for q in tqdm(qlist):
         prompt = prompt_template.invoke({"name": title, "chat_history" : chat_history[-10:], "input": query + q})
-        response = structured_llm.invoke(prompt)
-        chat_history.append(HumanMessage(content=q))
-        chat_history.append(AIMessage(str(response)))
-        to_parse.append(response["your_rating"])
-    
-    
+        while True:
+            try:
+                response = structured_llm.invoke(prompt)
+                chat_history.append(HumanMessage(content=q))
+                chat_history.append(AIMessage(str(response)))
+                to_parse.append(response["your_rating"])
+                break
+            except Exception as e:
+                print(f"Error occurred: {e}")
+                continue
+
     with open(folder_name + '/' + code + '.pkl', 'wb') as f:
         pickle.dump(chat_history, f)
     answer = ''.join(map(str, to_parse))
@@ -170,7 +176,7 @@ def get_rating(title, model, code, system = None ):
 # %%
 test_model= ChatOllama(model="llama3.1", temperature=1)
 
-for title, code in test_dict.items():
+for title, code in occupation_dict.items():
     answer = get_rating(title, test_model, code)
     career = get_career(answer)
 
