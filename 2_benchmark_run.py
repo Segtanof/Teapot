@@ -22,6 +22,14 @@ import seaborn as sns
 #counting
 from tqdm import tqdm
 
+from datetime import datetime
+import os
+
+# Generate the folder name with current date and time
+folder_name = 'results/task_match_'+datetime.now().strftime("%d%m_%H%M")
+
+# Create the folder if it does not exist
+os.makedirs(folder_name, exist_ok=True)
 
 # %%
 job_statements = pd.read_excel("datasets/task_statements.xlsx")
@@ -30,12 +38,12 @@ job_statements = job_statements.drop(labels=["incumbents responding","date","dom
 job_statements = job_statements[~job_statements["type"].str.contains("Supplemental", case=False, na=True)]
 job_statements["ind"] = job_statements["code"].str[:2]
 job_statements = job_statements.groupby("title").agg({"ref_task":list, "ind": "first"}).reset_index().sort_values("ind")
-sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1) #43 samples
+sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac=0.01, random_state=1) #43 samples
 sampled_occupation
 
 # %%
 #for trial
-trial_df = sampled_occupation.sample(5, random_state=1).reset_index(drop=True)
+trial_df = sampled_occupation
 sampled_list =[trial_df.iloc[x]["title"] for x in range(len(trial_df))]
 sampled_list
 
@@ -73,6 +81,8 @@ def task_gen(title,model, system = None):
 
     prompt = prompt_template.invoke({"input": query, "title": title})
     # keep running until the number of parsed tasks is equal to the number of reference tasks
+    #try 5 times
+
     while True:
         response = structured_llm.invoke(prompt)
         #parse response
@@ -87,7 +97,7 @@ def task_gen(title,model, system = None):
                 print('not string')
                 continue
         try:
-            if len(parsed) >= 1: #== len(get_des(title)):
+            if len(parsed) >= 0.8 * len(get_des(title)):
                 return parsed
             else:
                 print('not equal, parsed:', len(parsed), 'ref:', len(get_des(title)))
@@ -163,9 +173,9 @@ result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambd
 result_df
 
 # %%
-with open('sys_prompt1.json', 'w') as f:
+with open(folder_name + '/sys_prompt1.json', 'w') as f:
     f.write(result_df.to_json(index=True))
 
-with open('prompts.txt', 'w') as f:
+with open(folder_name + '/sys_prompts.txt', 'w') as f:
     f.write(system)
 
