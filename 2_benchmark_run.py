@@ -57,13 +57,14 @@ def get_des (title):
 # %%
 def task_gen(title,model, system = None):
     class occupation(BaseModel):
+        '''Name the occupation and list out the tasks that the occupation would perform at work.'''
         occupation: str
         tasks: list[str]
 
     #initialize model
     model= model
 
-    query = "List out "+str(len(get_des(title)))+" things that the occupation \""+ title +"\" would perform at work. Make sure each statement is unique and different from one another."
+    query = "List out exactly "+str(len(get_des(title)))+" tasks that the occupation \""+ title +"\" would perform at work. Make sure each statement is unique and different from one another."
 
     if system == None:
         prompt_template = ChatPromptTemplate([
@@ -77,12 +78,10 @@ def task_gen(title,model, system = None):
             ]
         )
 
-    structured_llm = model.with_structured_output(schema=occupation.model_json_schema())
+    structured_llm = model.with_structured_output(schema=occupation, method='json_schema')
 
     prompt = prompt_template.invoke({"input": query, "title": title})
     # keep running until the number of parsed tasks is equal to the number of reference tasks
-    #try 5 times
-
     while True:
         response = structured_llm.invoke(prompt)
         #parse response
@@ -153,14 +152,14 @@ def match(ref, gen):
 
 
 # %%
-model = ChatOllama(model="llama3.2", temperature=1)
+model = ChatOllama(model="granite3.2", temperature=1)
 
 #ask user to input and save it as the variable system
 system = "your occupation is {title}. Respond with the knowledge of the occupation."
 
 # %%
 for title in tqdm(sampled_list):
-    generated_statements = task_gen(title, model, system)
+    generated_statements = task_gen(title, model)
     trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
 trial_df
 
