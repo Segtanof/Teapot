@@ -171,71 +171,31 @@ def match(ref, gen):
 # %%
 # start the process
 model = ChatOllama(model="llama3.2", temperature=1)
-system_prompt = None
+
+prompts = {"no_prompt": None, 
+           "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear and concise task descriptions that reflect common responsibilities in this profession. Each description should be specific, action-oriented, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task.", 
+           "prompt2": "You are a specialist of this job: \"{title}\". Your assignment is to create precise and brief job task descriptions that capture typical duties in this occupation. Each description should be particular, action-focused, and employ professional terminology. Skip superfluous details—concentrate on the essential action and objective of the task.", 
+           "prompt3": "As an expert of this job: \"{title}\", you generate precise and professional task descriptions that accurately represent duties in this field. Each task description should begin with a strong action verb, clearly state the responsibility, and, where applicable, include the purpose or outcome of the task. Keep descriptions brief but informative.",
+           "prompt4": "As a specialist of this occupation: \"{title}\", you create exact and professional task descriptions that correctly represent responsibilities in this domain. Each task description should start with a powerful action verb, explicitly state the duty, and, when relevant, incorporate the goal or result of the task. Keep descriptions concise but enlightening."}
+
 
 # %%
-# invoke llm for each title
-for title in tqdm(test_sample_list):
-    generated_statements = task_gen(title, model, system_prompt)
-    trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
-result_df = trial_df.reset_index(drop=True)
-result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
+# run 5 times each for each prompt
+for name, prompt in prompts.items():
+    if prompt != None:
+            with open(folder_name + '/sys_prompt.txt', 'a') as f:
+                f.write(prompt + '\n')
 
-# %%
-#save results
-with open(folder_name + '/no_prompt.json', 'w') as f:
-    f.write(result_df.to_json(index=True))
-if system_prompt != None:
-    with open(folder_name + '/sys_prompt.txt', 'w') as f:
-        f.write(system_prompt)
+    for i in range (5):
+        # invoke llm for each title
+        for title in tqdm(test_sample_list):
+            generated_statements = task_gen(title, model, prompt)
+            trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
+        result_df = trial_df.reset_index(drop=True)
+        result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
+
+        with open(folder_name + '/' + name + '_'+str(i)+'_result.json', 'w') as f:
+            f.write(result_df.to_json(index=True))
+    
         
-#%%
-#round 2
-system_prompt = None
-for title in tqdm(test_sample_list):
-    generated_statements = task_gen(title, model, system_prompt)
-    trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
-result_df = trial_df.reset_index(drop=True)
-result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
 
-# %%
-#save results
-with open(folder_name + '/prompt1.json', 'w') as f:
-    f.write(result_df.to_json(index=True))
-if system_prompt != None:
-    with open(folder_name + '/sys_prompt.txt', 'w') as f:
-        f.write(system_prompt)
-
-#%%
-#round 3
-system_prompt = None
-for title in tqdm(test_sample_list):
-    generated_statements = task_gen(title, model, system_prompt)
-    trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
-result_df = trial_df.reset_index(drop=True)
-result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
-
-# %%
-#save results
-with open(folder_name + '/prompt2.json', 'w') as f:
-    f.write(result_df.to_json(index=True))
-if system_prompt != None:
-    with open(folder_name + '/sys_prompt.txt', 'w') as f:
-        f.write(system_prompt)
-
-#%%
-#round 4
-system_prompt = None
-for title in tqdm(test_sample_list):
-    generated_statements = task_gen(title, model, system_prompt)
-    trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
-result_df = trial_df.reset_index(drop=True)
-result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
-
-# %%
-#save results
-with open(folder_name + '/prompt3.json', 'w') as f:
-    f.write(result_df.to_json(index=True))
-if system_prompt != None:
-    with open(folder_name + '/sys_prompt.txt', 'w') as f:
-        f.write(system_prompt)
