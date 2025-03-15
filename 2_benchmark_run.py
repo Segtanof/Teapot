@@ -178,3 +178,7 @@ with open(folder_name + '/sys_prompt1.json', 'w') as f:
 with open(folder_name + '/sys_prompts.txt', 'w') as f:
     f.write(system)
 
+mean = result_df["score"].mean()
+with open(folder_name + '/score.json', 'w') as f:
+    f.write(mean)
+
