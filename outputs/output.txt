@@ -1,0 +1,19 @@
+      Name  Age         City
+0    Alice   25     New York
+1      Bob   30  Los Angeles
+2  Charlie   35      Chicago
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n[481,487]
+Job ID: 25386063
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 2
+Cores per node: 20
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.08% of 00:21:20 core-walltime
+Job Wall-clock time: 00:00:32
+Memory Utilized: 2.54 MB
+Memory Efficiency: 0.00% of 250.00 GB
