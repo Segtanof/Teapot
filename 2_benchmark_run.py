@@ -167,8 +167,6 @@ def match(ref, gen):
         print('error in matching' + ref[0])
         return np.nan
 
-# %% [markdown]
-# ### packaging things for repeated excution
 
 # %%
 # start the process
@@ -187,9 +185,57 @@ result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambd
 #save results
 with open(folder_name + '/no_prompt.json', 'w') as f:
     f.write(result_df.to_json(index=True))
+if system_prompt != None:
+    with open(folder_name + '/sys_prompt.txt', 'w') as f:
+        f.write(system_prompt)
+        
+#%%
+#round 2
+system_prompt = None
+for title in tqdm(test_sample_list):
+    generated_statements = task_gen(title, model, system_prompt)
+    trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
+result_df = trial_df.reset_index(drop=True)
+result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
 
-with open(folder_name + '/sys_prompt.txt', 'w') as f:
-    f.write(system_prompt)
+# %%
+#save results
+with open(folder_name + '/prompt1.json', 'w') as f:
+    f.write(result_df.to_json(index=True))
+if system_prompt != None:
+    with open(folder_name + '/sys_prompt.txt', 'w') as f:
+        f.write(system_prompt)
 
+#%%
+#round 3
+system_prompt = None
+for title in tqdm(test_sample_list):
+    generated_statements = task_gen(title, model, system_prompt)
+    trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
+result_df = trial_df.reset_index(drop=True)
+result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
 
+# %%
+#save results
+with open(folder_name + '/prompt2.json', 'w') as f:
+    f.write(result_df.to_json(index=True))
+if system_prompt != None:
+    with open(folder_name + '/sys_prompt.txt', 'w') as f:
+        f.write(system_prompt)
 
+#%%
+#round 4
+system_prompt = None
+for title in tqdm(test_sample_list):
+    generated_statements = task_gen(title, model, system_prompt)
+    trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
+result_df = trial_df.reset_index(drop=True)
+result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
+
+# %%
+#save results
+with open(folder_name + '/prompt3.json', 'w') as f:
+    f.write(result_df.to_json(index=True))
+if system_prompt != None:
+    with open(folder_name + '/sys_prompt.txt', 'w') as f:
+        f.write(system_prompt)
