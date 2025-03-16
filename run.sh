@@ -7,5 +7,5 @@
 #SBATCH --job-name=test
 #SBATCH --mem=128000
 
-python test_test.py
+python 2_benchmark_run.py
 # nvidia-smi
