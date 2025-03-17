@@ -24,6 +24,7 @@ import os
 # Generate the folder name with current date and time
 folder_name = 'results/task_match_'+datetime.now().strftime("%d%m_%H%M")+"/"
 
+
 # Create the folder if it does not exist
 os.makedirs(folder_name, exist_ok=True)
 
@@ -170,7 +171,7 @@ def match(ref, gen):
 
 # %%
 # start the process
-model = ChatOllama(model="llama3.2", temperature=1)
+model = ChatOllama(model="llama3.2", temperature=1, base_url="http://10.0.3.228:11434")
 
 prompts = {"no_prompt": None, 
            "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear and concise task descriptions that reflect common responsibilities in this profession. Each description should be specific, action-oriented, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task.", 

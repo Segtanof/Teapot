@@ -1,0 +1,14 @@
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:34<01:08, 34.46s/it] 67%|██████▋   | 2/3 [00:53<00:25, 25.54s/it]100%|██████████| 3/3 [01:15<00:00, 23.75s/it]100%|██████████| 3/3 [01:15<00:00, 25.13s/it]
+Could not set the permissions on the file '/home/ma/ma_ma/ma_ssiu/.cache/huggingface/hub/models--sentence-transformers--all-mpnet-base-v2/blobs/1112f497338a70c395072396c53b702fbbf98add.incomplete'. Error: [Errno 122] Disk quota exceeded: '/home/ma/ma_ma/ma_ssiu/.cache/huggingface/hub/models--sentence-transformers--all-mpnet-base-v2/tmp_71f399d0-7dbd-492d-8c68-f8807b73c6c6'.
+Continuing without setting permissions.
+Traceback (most recent call last):
+  File "/pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/2_benchmark_run.py", line 196, in <module>
+    result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pfs/work7/workspace/scratch/ma_ssiu-myspace/.conda/envs/test/lib/python3.11/site-packages/pandas/core/frame.py", line 4299, in __setitem__
+    self._setitem_array(key, value)
+  File "/pfs/work7/workspace/scratch/ma_ssiu-myspace/.conda/envs/test/lib/python3.11/site-packages/pandas/core/frame.py", line 4341, in _setitem_array
+    check_key_length(self.columns, key, value)
+  File "/pfs/work7/workspace/scratch/ma_ssiu-myspace/.conda/envs/test/lib/python3.11/site-packages/pandas/core/indexers/utils.py", line 390, in check_key_length
+    raise ValueError("Columns must be same length as key")
+ValueError: Columns must be same length as key

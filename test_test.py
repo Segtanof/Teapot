@@ -1,14 +1,12 @@
-import pandas as pd
+from langchain_ollama import ChatOllama
 
-# Create a dictionary with some sample data
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie'],
-    'Age': [25, 30, 35],
-    'City': ['New York', 'Los Angeles', 'Chicago']
-}
+llm = ChatOllama(
+    model = "llama3.2",
+    base_url="http://10.0.3.228:11434"
 
-# Create a DataFrame from the dictionary
-df = pd.DataFrame(data)
-
-# Display the DataFrame
-print(df)
+)
+messages = [
+    ("system", "You are a helpful translator. Translate the user sentence to French."),
+    ("human", "I love programming."),
+]
+llm.invoke(messages)
