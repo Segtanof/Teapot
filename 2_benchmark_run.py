@@ -171,7 +171,7 @@ def match(ref, gen):
 
 # %%
 # start the process
-model = ChatOllama(model="llama3.2", temperature=1, base_url="http://10.0.3.228:11434")
+model = ChatOllama(model="llama3.2", temperature=1, base_url="http://10.0.3.226:11434")
 
 prompts = {"no_prompt": None, 
            "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear and concise task descriptions that reflect common responsibilities in this profession. Each description should be specific, action-oriented, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task.", 
@@ -190,13 +190,17 @@ for name, prompt in prompts.items():
     for i in range (5):
         # invoke llm for each title
         for title in tqdm(test_sample_list):
+            print(title + str(i))
             generated_statements = task_gen(title, model, prompt)
             trial_df.loc[trial_df["title"] == title, "gen_task"] = pd.Series([generated_statements]).values
         result_df = trial_df.reset_index(drop=True)
-        result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
-
         with open(folder_name + '/' + name + '_'+str(i)+'_result.json', 'w') as f:
             f.write(result_df.to_json(index=True))
+
+        # result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
+
+        # with open(folder_name + '/' + name + '_'+str(i)+'_result.json', 'w') as f:
+        #     f.write(result_df.to_json(index=True))
     
         
 
