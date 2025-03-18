@@ -36,7 +36,7 @@ os.makedirs(folder_name, exist_ok=True)
 job_statements = pd.read_excel("datasets/task_statements.xlsx")
 job_statements.columns = job_statements.columns.str.lower()
 job_statements = job_statements.drop(labels=["incumbents responding","date","domain source"], axis=1).rename(columns={"o*net-soc code":"code", "task type":"type", "task id": "id", "task":"ref_task"})
-job_statements = job_statements[~job_statements["type"].str.contains("Supplemental", case=False, na=True)]
+job_statements = job_statements[job_statements["type"].notna()]
 job_statements["ind"] = job_statements["code"].str[:2]
 job_statements = job_statements.groupby("title").agg({"ref_task":list, "ind": "first"}).reset_index().sort_values("ind")
 sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1) #43 samples
