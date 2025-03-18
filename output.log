@@ -595,3 +595,175 @@ parsed string
 [GIN] 2025/03/18 - 14:13:31 | 200 |  570.956826ms |       127.0.0.1 | POST     "/api/chat"
 [GIN] 2025/03/18 - 14:13:33 | 200 |  1.214674739s |       127.0.0.1 | POST     "/api/chat"
 [GIN] 2025/03/18 - 14:13:33 | 200 |  542.917885ms |       127.0.0.1 | POST     "/api/chat"
+Lodging Managers3
+not json
+parsed string
+Spa Managers3
+not json
+parsed string
+Training and Development Managers3
+not json
+parsed string
+Customs Brokers3
+not json
+parsed string
+Government Property Inspectors and Investigators3
+not json
+parsed string
+Video Game Designers3
+not json
+parsed string
+Nanosystems Engineers3
+not json
+parsed string
+Industrial Engineers3
+not json
+parsed string
+Surveying and Mapping Technicians3
+not json
+parsed string
+Conservation Scientists3
+not json
+parsed string
+Chemists3
+not json
+parsed string
+Biologists3
+not json
+parsed string
+Social and Human Service Assistants3
+not json
+parsed string
+Farm and Home Management Educators3
+not json
+parsed string
+Library Technicians3
+not json
+parsed string
+Art, Drama, and Music Teachers, Postsecondary3
+not json
+parsed string
+Technical Writers3
+not json
+parsed string
+Graphic Designers3
+not json
+parsed string
+Medical and Clinical Laboratory Technicians3
+not json
+parsed string
+Naturopathic Physicians3
+not json
+parsed string
+Nuclear Medicine Technologists3
+not json
+parsed string
+Veterinarians3
+not json
+parsed string
+Physical Therapist Aides3
+not json
+parsed string
+Parking Enforcement Workers3
+not json
+parsed string
+Cooks, Institution and Cafeteria3
+not json
+parsed string
+Baggage Porters and Bellhops3
+not json
+parsed string
+Insurance Sales Agents3
+not json
+parsed string
+Office Clerks, General3
+not json
+parsed string
+Insurance Claims and Policy Processing Clerks3
+not json
+parsed string
+Proofreaders and Copy Markers3
+not json
+parsed string
+Fallers3
+not json
+parsed string
+Elevator and Escalator Installers and Repairers3
+not json
+parsed string
+Rock Splitters, Quarry3
+not json
+parsed string
+Structural Iron and Steel Workers3
+not json
+parsed string
+Electric Motor, Power Tool, and Related Repairers3
+not json
+parsed string
+Locksmiths and Safe Repairers3
+not json
+parsed string
+Model Makers, Metal and Plastic3
+not json
+parsed string
+Forging Machine Setters, Operators, and Tenders, Metal and Plastic3
+not json
+parsed string
+Pressers, Textile, Garment, and Related Materials3
+not json
+parsed string
+Semiconductor Processing Technicians3
+not json
+parsed string
+Painting, Coating, and Decorating Workers3
+not json
+parsed string
+Tank Car, Truck, and Ship Loaders3
+not json
+parsed string
+Driver/Sales Workers3
+not json
+parsed string
+[GIN] 2025/03/18 - 15:03:48 | 200 |  6.558937298s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:03:50 | 200 |  2.248071334s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:03:52 | 200 |  1.430815731s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:03:55 | 200 |  2.800487977s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:03:55 | 200 |  704.520523ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:03:58 | 200 |  2.749866534s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:00 | 200 |  2.304070018s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:03 | 200 |  2.430595279s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:05 | 200 |  2.422246834s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:08 | 200 |  2.858601898s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:09 | 200 |   1.31720742s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:11 | 200 |  1.493372306s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:12 | 200 |  1.124377052s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:13 | 200 |  1.388109939s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:15 | 200 |  1.932965539s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:18 | 200 |  2.490675906s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:19 | 200 |  1.408090813s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:21 | 200 |  2.169484426s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:22 | 200 |  972.171331ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:25 | 200 |  2.521222731s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:27 | 200 |  1.525527063s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:28 | 200 |  1.471236062s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:30 | 200 |  1.596041396s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:31 | 200 |  1.660605266s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:32 | 200 |  932.151934ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:33 | 200 |  1.138268476s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:35 | 200 |  1.668678574s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:36 | 200 |  885.480564ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:38 | 200 |  2.201982582s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:39 | 200 |  1.040771839s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:41 | 200 |   1.59965447s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:43 | 200 |  1.773963947s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:43 | 200 |  610.452641ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:45 | 200 |  1.735736223s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:46 | 200 |  1.533482365s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:48 | 200 |  1.086333968s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:49 | 200 |  1.597006477s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:50 | 200 |  1.091323419s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:53 | 200 |  2.322110117s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:53 | 200 |  880.757557ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:54 | 200 |   666.70004ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:55 | 200 |   1.20113756s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 15:04:56 | 200 |  958.322062ms |       127.0.0.1 | POST     "/api/chat"
