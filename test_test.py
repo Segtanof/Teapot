@@ -9,4 +9,5 @@ messages = [
     ("system", "You are a helpful translator. Translate the user sentence to French."),
     ("human", "I love programming."),
 ]
-llm.invoke(messages)
+response = llm.invoke(messages)
+print(response)

@@ -1,5 +1,7 @@
-Active environment: 
-Python path: /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/bin/python
+Active environment: test
+Python path: /pfs/work7/workspace/scratch/ma_ssiu-myspace/.conda/envs/test/bin/python
+langchain-ollama      0.2.3
+Ollama path: /opt/bwhpc/common/cs/ollama/0.5.7/bin/ollama
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
@@ -30,18 +32,322 @@ Python path: /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/bin/python
 [GIN-debug] HEAD   /                         --> github.com/ollama/ollama/server.(*Server).GenerateRoutes.func1 (5 handlers)
 [GIN-debug] HEAD   /api/tags                 --> github.com/ollama/ollama/server.(*Server).ListHandler-fm (5 handlers)
 [GIN-debug] HEAD   /api/version              --> github.com/ollama/ollama/server.(*Server).GenerateRoutes.func2 (5 handlers)
+[GIN] 2025/03/18 - 10:47:41 | 200 |  4.742392206s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:42 | 200 |  1.179550668s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:43 | 200 |  1.093353459s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers0
+not json
+parsed string
+Training and Development Managers0
+not json
+parsed string
+Cooks, Institution and Cafeteria0
+not json
+parsed string
+[GIN] 2025/03/18 - 10:47:45 | 200 |  2.129587328s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:47 | 200 |  1.171816513s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:48 | 200 |  1.331909597s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers1
+not json
+parsed string
+Training and Development Managers1
+not json
+parsed string
+Cooks, Institution and Cafeteria1
+not json
+parsed string
+[GIN] 2025/03/18 - 10:47:50 | 200 |  2.117922055s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:52 | 200 |  1.881462863s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:53 | 200 |  1.286884748s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:54 | 200 |  1.255075084s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers2
+not json
+parsed string
+not equal, parsed: 19 ref: 21
+not json
+parsed string
+Training and Development Managers2
+not json
+parsed string
+Cooks, Institution and Cafeteria2
+not json
+parsed string
+[GIN] 2025/03/18 - 10:47:57 | 200 |  2.910045668s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:47:59 | 200 |  1.302129338s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:00 | 200 |  959.298004ms |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers3
+not json
+parsed string
+Training and Development Managers3
+not json
+parsed string
+Cooks, Institution and Cafeteria3
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:03 | 200 |   3.35234528s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:04 | 200 |  926.976047ms |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:05 | 200 |  1.313325903s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers4
+not json
+parsed string
+Training and Development Managers4
+not json
+parsed string
+Cooks, Institution and Cafeteria4
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:08 | 200 |  3.167703005s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:10 | 200 |  1.504487472s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:11 | 200 |   1.46780405s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers0
+not json
+parsed string
+Training and Development Managers0
+not json
+parsed string
+Cooks, Institution and Cafeteria0
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:14 | 200 |  2.731392632s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:16 | 200 |  1.528472401s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:17 | 200 |  1.433405471s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers1
+not json
+parsed string
+Training and Development Managers1
+not json
+parsed string
+Cooks, Institution and Cafeteria1
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:20 | 200 |  2.631682418s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:21 | 200 |   1.59707141s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:23 | 200 |   1.49942574s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers2
+not json
+parsed string
+Training and Development Managers2
+not json
+parsed string
+Cooks, Institution and Cafeteria2
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:26 | 200 |   2.79219554s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:27 | 200 |  1.475278517s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:29 | 200 |  1.346897965s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers3
+not json
+parsed string
+Training and Development Managers3
+not json
+parsed string
+Cooks, Institution and Cafeteria3
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:31 | 200 |  2.777356739s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:33 | 200 |  1.565800685s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:34 | 200 |   1.36606539s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers4
+not json
+parsed string
+Training and Development Managers4
+not json
+parsed string
+Cooks, Institution and Cafeteria4
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:37 | 200 |  2.338649935s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:38 | 200 |   1.39335053s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:40 | 200 |   1.45335089s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers0
+not json
+parsed string
+Training and Development Managers0
+not json
+parsed string
+Cooks, Institution and Cafeteria0
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:42 | 200 |  2.733994112s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:44 | 200 |  1.848515244s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:46 | 200 |  1.547181717s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers1
+not json
+parsed string
+Training and Development Managers1
+not json
+parsed string
+Cooks, Institution and Cafeteria1
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:48 | 200 |  2.504982905s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:50 | 200 |  1.391106801s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:51 | 200 |  1.312737891s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers2
+not json
+parsed string
+Training and Development Managers2
+not json
+parsed string
+Cooks, Institution and Cafeteria2
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:53 | 200 |  2.308010961s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:55 | 200 |  1.548822034s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:48:56 | 200 |  1.335986515s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers3
+not json
+parsed string
+Training and Development Managers3
+not json
+parsed string
+Cooks, Institution and Cafeteria3
+not json
+parsed string
+[GIN] 2025/03/18 - 10:48:58 | 200 |  2.193793408s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:00 | 200 |  1.492544051s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:01 | 200 |  1.257399639s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers4
+not json
+parsed string
+Training and Development Managers4
+not json
+parsed string
+Cooks, Institution and Cafeteria4
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:03 | 200 |  2.155289417s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:05 | 200 |   1.79278851s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:07 | 200 |  1.366649472s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers0
+not json
+parsed string
+Training and Development Managers0
+not json
+parsed string
+Cooks, Institution and Cafeteria0
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:08 | 200 |    1.8036227s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:10 | 200 |  1.447363324s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:11 | 200 |  1.351464141s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers1
+not json
+parsed string
+Training and Development Managers1
+not json
+parsed string
+Cooks, Institution and Cafeteria1
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:13 | 200 |  1.965969555s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:14 | 200 |  1.229396693s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:16 | 200 |  1.804736878s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers2
+not json
+parsed string
+Training and Development Managers2
+not json
+parsed string
+Cooks, Institution and Cafeteria2
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:19 | 200 |  2.404054183s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:20 | 200 |  1.370515946s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:21 | 200 |  1.283219817s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers3
+not json
+parsed string
+Training and Development Managers3
+not json
+parsed string
+Cooks, Institution and Cafeteria3
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:24 | 200 |  2.679182936s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:26 | 200 |  1.495581068s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:27 | 200 |  1.661097303s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers4
+not json
+parsed string
+Training and Development Managers4
+not json
+parsed string
+Cooks, Institution and Cafeteria4
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:30 | 200 |  2.469303837s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:31 | 200 |  1.708013495s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:33 | 200 |  1.194994891s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers0
+not json
+parsed string
+Training and Development Managers0
+not json
+parsed string
+Cooks, Institution and Cafeteria0
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:35 | 200 |  2.280642182s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:37 | 200 |  2.011569398s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:38 | 200 |  1.124444009s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers1
+not json
+parsed string
+Training and Development Managers1
+not json
+parsed string
+Cooks, Institution and Cafeteria1
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:40 | 200 |  2.311378292s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:42 | 200 |  1.138439441s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:43 | 200 |  1.342920338s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers2
+not json
+parsed string
+Training and Development Managers2
+not json
+parsed string
+Cooks, Institution and Cafeteria2
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:45 | 200 |  2.518301052s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:47 | 200 |  1.733062593s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:49 | 200 |  2.249020489s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers3
+not json
+parsed string
+Training and Development Managers3
+not json
+parsed string
+Cooks, Institution and Cafeteria3
+not json
+parsed string
+[GIN] 2025/03/18 - 10:49:54 | 200 |  4.390487592s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:55 | 200 |  1.571758468s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/18 - 10:49:57 | 200 |   1.22690814s |       127.0.0.1 | POST     "/api/chat"
+Customs Brokers4
+not json
+parsed string
+Training and Development Managers4
+not json
+parsed string
+Cooks, Institution and Cafeteria4
+not json
+parsed string
 
 ============================= JOB FEEDBACK =============================
 
-NodeName=uc2n[481,489]
-Job ID: 25396053
+NodeName=uc2n[910,913]
+Job ID: 25396896
 Cluster: uc2
 User/Group: ma_ssiu/ma_ma
-State: FAILED (exit code 1)
+State: COMPLETED (exit code 0)
 Nodes: 2
 Cores per node: 20
-CPU Utilized: 00:00:01
-CPU Efficiency: 0.05% of 00:32:00 core-walltime
-Job Wall-clock time: 00:00:48
-Memory Utilized: 39.03 MB
-Memory Efficiency: 0.02% of 250.00 GB
+CPU Utilized: 00:00:11
+CPU Efficiency: 0.06% of 05:04:40 core-walltime
+Job Wall-clock time: 00:07:37
+Memory Utilized: 1.70 GB
+Memory Efficiency: 0.68% of 250.00 GB
