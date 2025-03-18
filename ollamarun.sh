@@ -22,3 +22,4 @@ echo "Ollama path: $(which ollama)" >> output.log
 ollama serve &  # Start server
 sleep 5         # Wait for it
 python /pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/2_benchmark_run.py
+# nvidia-smi

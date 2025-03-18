@@ -44,8 +44,8 @@ sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac
 
 # %%
 #for trial
-trial_df = sampled_occupation.sample(3, random_state= 1)
-test_sample_list =[trial_df.iloc[x]["title"] for x in range(3)]
+trial_df = sampled_occupation#.sample(3, random_state= 1)
+test_sample_list =[trial_df.iloc[x]["title"] for x in range(len(trial_df))]
 test_sample_list
 
 # %% [markdown]
@@ -171,7 +171,10 @@ def match(ref, gen):
 
 # %%
 # start the process
-model = ChatOllama(model="llama3.2", temperature=1, base_url="http://127.0.0.1:11434")
+llama = ChatOllama(model="llama3.2", temperature=1, base_url="http://127.0.0.1:11434")
+mistral = ChatOllama(model="mistral", temperature=1, base_url="http://127.0.0.1:11434")
+qwen = ChatOllama(model="qwen2.5", temperature=1, base_url="http://127.0.0.1:11434")
+model_list = [llama, mistral, qwen]
 
 prompts = {"no_prompt": None, 
            "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear and concise task descriptions that reflect common responsibilities in this profession. Each description should be specific, action-oriented, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task.", 
@@ -197,10 +200,14 @@ for name, prompt in prompts.items():
         with open(folder_name + '/' + name + '_'+str(i)+'_result.json', 'w') as f:
             f.write(result_df.to_json(index=True))
 
-        # result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
+        try:
+            result_df[["score", "matrix", "ref_order", "gen_order"]] = result_df.apply(lambda row: match(row["ref_task"], row["gen_task"]), axis=1).apply(pd.Series)
 
-        # with open(folder_name + '/' + name + '_'+str(i)+'_result.json', 'w') as f:
-        #     f.write(result_df.to_json(index=True))
+            with open(folder_name + '/' + name + '_'+str(i)+'_sim.json', 'w') as f:
+                f.write(result_df.to_json(index=True))
+        except Exception as e:
+            print(e)
+            continue
     
         
 
