@@ -41,7 +41,7 @@ def get_des (title):
 def task_gen(title, model, system=None):  
     ref_task_count = len(get_des(title))
     json_schema = {"type": "object", "properties": {"occupation": {"type": "string"}, "tasks": {"type": "array", "items": {"type": "string"}, "minItems": ref_task_count, "maxItems": ref_task_count}}, "required": ["occupation", "tasks"]}
-    query = "List exactly "+ ref_task_count +" unique task statements that the occupation " + title + "would perform at work."
+    query = "List exactly "+ str(ref_task_count) +" unique task statements that the occupation " + title + "would perform at work."
     prompt_template = ChatPromptTemplate.from_messages([("system", system), ("human", "{input}")] if system else [("human", "{input}")])
     llm = model.with_structured_output(schema=json_schema, method="json_schema")
     prompt = prompt_template.invoke({"input": query})
