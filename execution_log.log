@@ -1224,3 +1224,35 @@
 2025-03-19 15:18:33,345 - Assigned results for deepseek-r1-prompt1-9, duration: 0:00:00.009438
 2025-03-19 15:18:33,347 - Wrote result JSON for deepseek-r1-prompt1-9, duration: 0:00:00.001595
 2025-03-19 15:18:33,347 - Script completed
+2025-03-19 17:48:51,456 - Script started
+2025-03-19 17:48:51,456 - Processing model: llama3.2
+2025-03-19 17:48:56,302 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 17:49:00,249 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 17:49:20,181 - Single inference for Customs Brokers, duration: 0:00:20.168836
+2025-03-19 17:49:20,181 - ThreadPoolExecutor for llama3.2-no_prompt-0, duration: 0:00:20.168836
+2025-03-19 17:50:06,079 - Script started
+2025-03-19 17:50:06,079 - Processing model: llama3.2
+2025-03-19 17:50:06,526 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 17:50:11,295 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 17:50:37,641 - Single inference for Customs Brokers, duration: 0:00:26.524110
+2025-03-19 17:50:37,646 - ThreadPoolExecutor for llama3.2-no_prompt-0, duration: 0:00:26.530213
+2025-03-19 17:50:41,921 - Script started
+2025-03-19 17:50:41,921 - Processing model: llama3.2
+2025-03-19 17:50:42,271 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 17:50:49,152 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 17:51:21,044 - Single inference for Customs Brokers, duration: 0:00:32.083894
+2025-03-19 17:51:21,048 - ThreadPoolExecutor for llama3.2-no_prompt-0, duration: 0:00:32.087786
+2025-03-19 17:51:21,177 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 17:51:38,689 - Single inference for Customs Brokers, duration: 0:00:17.637842
+2025-03-19 18:35:02,532 - Script started
+2025-03-19 18:35:02,534 - Processing model: llama3.2
+2025-03-19 18:35:05,252 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 18:36:24,486 - Script started
+2025-03-19 18:36:24,487 - Processing model: llama3.2
+2025-03-19 18:36:25,247 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 18:39:21,914 - Script started
+2025-03-19 18:39:21,919 - Processing model: llama3.2
+2025-03-19 18:39:22,591 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 18:41:13,681 - Script started
+2025-03-19 18:41:13,683 - Processing model: llama3.2
+2025-03-19 18:41:14,511 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
