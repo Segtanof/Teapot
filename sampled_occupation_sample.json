@@ -1,0 +1,77 @@
+[
+    {
+        "title":"Lodging Managers",
+        "ref_task":[
+            "Answer inquiries pertaining to hotel policies and services, and resolve occupants' complaints.",
+            "Participate in financial activities, such as the setting of room rates, the establishment of budgets, and the allocation of funds to departments.",
+            "Confer and cooperate with other managers to ensure coordination of hotel activities.",
+            "Greet and register guests.",
+            "Monitor the revenue activity of the hotel or facility.",
+            "Manage and maintain temporary or permanent lodging facilities.",
+            "Train staff members.",
+            "Observe and monitor staff performance to ensure efficient operations and adherence to facility's policies and procedures.",
+            "Coordinate front-office activities of hotels or motels, and resolve problems.",
+            "Inspect guest rooms, public areas, and grounds for cleanliness and appearance.",
+            "Assign duties to workers, and schedule shifts.",
+            "Receive and process advance registration payments, mail letters of confirmation, or return checks when registrations cannot be accepted.",
+            "Interview and hire applicants.",
+            "Purchase supplies, and arrange for outside services, such as deliveries, laundry, maintenance and repair, and trash collection.",
+            "Collect payments and record data pertaining to funds and expenditures.",
+            "Develop and implement policies and procedures for the operation of a department or establishment.",
+            "Prepare required paperwork pertaining to departmental functions.",
+            "Show, rent, or assign accommodations.",
+            "Perform marketing and public relations activities.",
+            "Organize and coordinate the work of staff and convention personnel for meetings to be held at a particular facility.",
+            "Provide assistance to staff members by inspecting rooms, setting tables, or doing laundry.",
+            "Arrange telephone answering services, deliver mail and packages, or answer questions regarding locations for eating and entertainment.",
+            "Meet with clients to schedule and plan details of conventions, banquets, receptions and other functions.",
+            "Book tickets for guests for local tours and attractions."
+        ],
+        "ind":"11"
+    },
+    {
+        "title":"Spa Managers",
+        "ref_task":[
+            "Respond to customer inquiries or complaints.",
+            "Schedule guest appointments.",
+            "Maintain client databases.",
+            "Coordinate facility schedules to maximize usage and efficiency.",
+            "Perform accounting duties, such as recording daily cash flow, preparing bank deposits, or generating financial statements.",
+            "Monitor operations to ensure compliance with applicable health, safety, or hygiene standards.",
+            "Plan or direct spa services and programs.",
+            "Develop or implement marketing strategies.",
+            "Sell products, services, or memberships.",
+            "Recruit, interview, or hire employees.",
+            "Assess employee performance and suggest ways to improve work.",
+            "Inventory products and order new supplies.",
+            "Establish spa budgets and financial goals.",
+            "Inform staff of job responsibilities, performance expectations, client service standards, or corporate policies and guidelines.",
+            "Train staff in the use or sale of products, programs, or activities.",
+            "Participate in continuing education classes to maintain current knowledge of industry.",
+            "Direct facility maintenance or repair.",
+            "Verify staff credentials, such as educational and certification requirements.",
+            "Schedule staff or supervise scheduling.",
+            "Check spa equipment to ensure proper functioning.",
+            "Develop staff service or retail goals and guide staff in goal achievement."
+        ],
+        "ind":"11"
+    },
+    {
+        "title":"Training and Development Managers",
+        "ref_task":[
+            "Analyze training needs to develop new training programs or modify and improve existing programs.",
+            "Evaluate instructor performance and the effectiveness of training programs, providing recommendations for improvement.",
+            "Plan, develop, and provide training and staff development programs, using knowledge of the effectiveness of methods such as classroom training, demonstrations, on-the-job training, meetings, conferences, and workshops.",
+            "Confer with management and conduct surveys to identify training needs based on projected production processes, changes, and other factors.",
+            "Conduct orientation sessions and arrange on-the-job training for new hires.",
+            "Train instructors and supervisors in techniques and skills for training and dealing with employees.",
+            "Develop and organize training manuals, multimedia visual aids, and other educational materials.",
+            "Prepare training budget for department or organization.",
+            "Develop testing and evaluation procedures.",
+            "Conduct or arrange for ongoing technical training and personal development classes for staff members.",
+            "Review and evaluate training and apprenticeship programs for compliance with government standards.",
+            "Coordinate established courses with technical and professional courses provided by community schools, and designate training procedures."
+        ],
+        "ind":"11"
+    }
+]
