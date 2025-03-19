@@ -1,0 +1,15 @@
+2025/03/19 12:01:11 routes.go:1187: INFO server config env="map[CUDA_VISIBLE_DEVICES:0 GPU_DEVICE_ORDINAL:0 HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:false OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:2h0m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/home/ma/ma_ma/ma_ssiu/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:0 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:0 http_proxy: https_proxy: no_proxy:]"
+time=2025-03-19T12:01:11.389+01:00 level=INFO source=images.go:432 msg="total blobs: 16"
+time=2025-03-19T12:01:11.390+01:00 level=INFO source=images.go:439 msg="total unused blobs removed: 0"
+time=2025-03-19T12:01:11.392+01:00 level=INFO source=routes.go:1238 msg="Listening on 127.0.0.1:11434 (version 0.5.7)"
+time=2025-03-19T12:01:11.393+01:00 level=INFO source=routes.go:1267 msg="Dynamic LLM libraries" runners="[cuda_v11_avx cuda_v12_avx rocm_avx cpu cpu_avx cpu_avx2]"
+time=2025-03-19T12:01:11.393+01:00 level=INFO source=gpu.go:226 msg="looking for compatible GPUs"
+time=2025-03-19T12:01:11.700+01:00 level=INFO source=types.go:131 msg="inference compute" id=GPU-a82aed54-b48a-689a-ae4a-babb4f2db140 library=cuda variant=v12 compute=8.0 driver=12.4 name="NVIDIA A100 80GB PCIe" total="79.1 GiB" available="78.7 GiB"
+
+  0%|          | 0/43 [00:00<?, ?it/s]
+  0%|          | 0/43 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/2_benchmark_run.py", line 197, in <module>
+    generated_statements = task_gen(title, model, prompt)
+                                           ^^^^^
+NameError: name 'model' is not defined

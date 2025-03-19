@@ -2319,3 +2319,18 @@ parsed string
 [GIN] 2025/03/18 - 22:55:07 | 200 |  715.709844ms |       127.0.0.1 | POST     "/api/chat"
 [GIN] 2025/03/18 - 22:55:09 | 200 |  1.618022972s |       127.0.0.1 | POST     "/api/chat"
 [GIN] 2025/03/18 - 22:55:10 | 200 |  992.945937ms |       127.0.0.1 | POST     "/api/chat"
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n[909,912]
+Job ID: 25397130
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: TIMEOUT (exit code 0)
+Nodes: 2
+Cores per node: 20
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.00% of 20-00:10:00 core-walltime
+Job Wall-clock time: 12:00:15
+Memory Utilized: 2.93 GB
+Memory Efficiency: 1.17% of 250.00 GB
