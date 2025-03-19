@@ -18,12 +18,6 @@ source /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/etc/profile.d/conda.sh
 # Activate the test environment
 conda activate test
 
-# Debug info
-echo "Active environment: $CONDA_DEFAULT_ENV" >> output_$SLURM_JOB_ID.log
-echo "Python path: $(which python)" >> output_$SLURM_JOB_ID.log
-pip list | grep langchain-ollama >> output_$SLURM_JOB_ID.log
-echo "Ollama path: $(which ollama)" >> output_$SLURM_JOB_ID.log
-
 # Set Ollama environment variable to keep model loaded
 export OLLAMA_KEEP_ALIVE="1h"
 export OLLAMA_NUM_PARALLEL=8    # Max parallelism
@@ -34,7 +28,7 @@ OLLAMA_PID=$!
 sleep 10  # Wait for server to initialize
 
 # Monitor GPU usage
-nvidia-smi --query-gpu=utilization.gpu,memory.used --format=csv -l 1 > gpu_usage_$SLURM_JOB_ID.log &
+nvidia-smi 
 NVIDIA_PID=$!
 
 # Run Python script
