@@ -5,7 +5,7 @@
 #SBATCH --cpus-per-task=8      # 8 CPUs for parallelism
 #SBATCH --gres=gpu:1           # 1 GPU
 #SBATCH --mem=16G              # 16 GB RAM, sufficient for model + overhead
-#SBATCH --time=01:00:00        # 2 hours, adjustable based on workload
+#SBATCH --time=02:00:00        # 2 hours, adjustable based on workload
 #SBATCH --output=output_%j.log # Job-specific output
 #SBATCH --error=error_%j.log   # Job-specific error
 

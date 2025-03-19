@@ -44,7 +44,7 @@ def task_gen(title, model, system=None):
     query = "List exactly "+ str(ref_task_count) +" unique task statements that the occupation " + title + "would perform at work."
     prompt_template = ChatPromptTemplate.from_messages([("system", system), ("human", "{input}")] if system else [("human", "{input}")])
     llm = model.with_structured_output(schema=json_schema, method="json_schema")
-    prompt = prompt_template.invoke({"input": query})
+    prompt = prompt_template.invoke({"input": query, "title": title})
     try:
         response = llm.invoke(prompt)
         tasks = response["tasks"]
@@ -123,11 +123,11 @@ def process_title(args):
 model_configs = [
     {"model": "llama3.2", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
     {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
-    {"model": "qwen2.5", "temperature": 1, "base_url": "http://127.0.0.1:11434"}
+    {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434"}
 ]
 prompts = {
     "no_prompt": None,
-    "prompt1": f"You are an expert of this occupation: \"{title}\". Your task is to generate clear and concise task descriptions that reflect common responsibilities in this profession. Each description should be specific, action-oriented, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task."
+    "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear and concise task descriptions that reflect common responsibilities in this profession. Each description should be specific, action-oriented, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task."
 }
 
 
@@ -168,10 +168,10 @@ for model_config in model_configs:
         # all_results_df = apply_match_batch(all_results_df)
         # logging.info(f"Batch matching for {model_name}-{name}, duration: {datetime.now() - start_time}")
 
-        # start_time = datetime.now()
+        start_time = datetime.now()
         # all_results_df = all_results_df.reset_index(drop=True)
         with open(f"{folder_name}/{model_name}_{name}_results.json", "w") as f:
             f.write(all_results_df.to_json(index=True))
-        # logging.info(f"Wrote results JSON for {model_name}-{name}, duration: {datetime.now() - start_time}")
+        logging.info(f"Wrote results JSON for {model_name}-{name}, duration: {datetime.now() - start_time}")
 
 logging.info("Script completed")
