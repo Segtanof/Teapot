@@ -38,7 +38,7 @@ nvidia-smi --query-gpu=utilization.gpu,memory.used --format=csv -l 1 > gpu_usage
 NVIDIA_PID=$!
 
 # Run Python script
-python /pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/2_new_bench_match.py
+python /pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/2_optimized.py
 # Clean up
 kill $NVIDIA_PID
 kill $OLLAMA_PID
