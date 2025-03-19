@@ -1,0 +1,1226 @@
+2025-03-19 14:49:45,548 - Script started
+2025-03-19 14:49:45,548 - Processing model: llama3.2
+2025-03-19 14:49:45,548 - Warming up llama3.2
+2025-03-19 14:49:53,412 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:49:54,238 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:49:54,368 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:49:54,370 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:49:54,371 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:49:54,372 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:49:54,373 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:02,447 - Batch inference for 3 titles, duration: 0:00:08.349866
+2025-03-19 14:50:06,295 - Batch inference for 8 titles, duration: 0:00:12.198560
+2025-03-19 14:50:06,597 - Batch inference for 8 titles, duration: 0:00:12.500879
+2025-03-19 14:50:08,842 - Batch inference for 8 titles, duration: 0:00:14.746027
+2025-03-19 14:50:10,402 - Batch inference for 8 titles, duration: 0:00:16.305362
+2025-03-19 14:50:10,573 - Batch inference for 8 titles, duration: 0:00:16.477012
+2025-03-19 14:50:10,574 - ThreadPoolExecutor for llama3.2-no_prompt-0, duration: 0:00:16.478266
+2025-03-19 14:50:10,584 - Assigned results for llama3.2-no_prompt-0, duration: 0:00:00.010100
+2025-03-19 14:50:10,586 - Wrote result JSON for llama3.2-no_prompt-0, duration: 0:00:00.002157
+2025-03-19 14:50:10,624 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:10,642 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:10,644 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:10,645 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:10,646 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:10,673 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:21,686 - Batch inference for 8 titles, duration: 0:00:11.098757
+2025-03-19 14:50:24,591 - Batch inference for 8 titles, duration: 0:00:14.003700
+2025-03-19 14:50:25,640 - Batch inference for 8 titles, duration: 0:00:15.053630
+2025-03-19 14:50:25,672 - Batch inference for 3 titles, duration: 0:00:15.084782
+2025-03-19 14:50:27,030 - Batch inference for 8 titles, duration: 0:00:16.443119
+2025-03-19 14:50:27,176 - Batch inference for 8 titles, duration: 0:00:16.588970
+2025-03-19 14:50:27,177 - ThreadPoolExecutor for llama3.2-no_prompt-1, duration: 0:00:16.590026
+2025-03-19 14:50:27,186 - Assigned results for llama3.2-no_prompt-1, duration: 0:00:00.009597
+2025-03-19 14:50:27,189 - Wrote result JSON for llama3.2-no_prompt-1, duration: 0:00:00.002194
+2025-03-19 14:50:27,226 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:27,244 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:27,245 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:27,247 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:27,248 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:27,275 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:38,565 - Batch inference for 3 titles, duration: 0:00:11.374627
+2025-03-19 14:50:42,325 - Batch inference for 8 titles, duration: 0:00:15.135223
+2025-03-19 14:50:44,151 - Batch inference for 8 titles, duration: 0:00:16.961711
+2025-03-19 14:50:44,196 - Batch inference for 8 titles, duration: 0:00:17.006388
+2025-03-19 14:50:44,365 - Batch inference for 8 titles, duration: 0:00:17.175085
+2025-03-19 14:50:44,386 - Batch inference for 8 titles, duration: 0:00:17.196152
+2025-03-19 14:50:44,386 - ThreadPoolExecutor for llama3.2-no_prompt-2, duration: 0:00:17.197334
+2025-03-19 14:50:44,396 - Assigned results for llama3.2-no_prompt-2, duration: 0:00:00.009436
+2025-03-19 14:50:44,398 - Wrote result JSON for llama3.2-no_prompt-2, duration: 0:00:00.002158
+2025-03-19 14:50:44,446 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:44,447 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:44,468 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:44,469 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:44,470 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:44,472 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:50:55,817 - Batch inference for 3 titles, duration: 0:00:11.416881
+2025-03-19 14:50:57,961 - Batch inference for 8 titles, duration: 0:00:13.562020
+2025-03-19 14:50:59,094 - Batch inference for 8 titles, duration: 0:00:14.694003
+2025-03-19 14:50:59,617 - Batch inference for 8 titles, duration: 0:00:15.217364
+2025-03-19 14:51:00,841 - Batch inference for 8 titles, duration: 0:00:16.441865
+2025-03-19 14:51:01,581 - Batch inference for 8 titles, duration: 0:00:17.181237
+2025-03-19 14:51:01,581 - ThreadPoolExecutor for llama3.2-no_prompt-3, duration: 0:00:17.182428
+2025-03-19 14:51:01,591 - Assigned results for llama3.2-no_prompt-3, duration: 0:00:00.009541
+2025-03-19 14:51:01,593 - Wrote result JSON for llama3.2-no_prompt-3, duration: 0:00:00.001840
+2025-03-19 14:51:01,630 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:01,649 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:01,650 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:01,652 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:01,653 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:01,680 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:10,654 - Batch inference for 3 titles, duration: 0:00:09.060008
+2025-03-19 14:51:14,527 - Batch inference for 8 titles, duration: 0:00:12.933007
+2025-03-19 14:51:16,639 - Batch inference for 8 titles, duration: 0:00:15.045692
+2025-03-19 14:51:17,075 - Batch inference for 8 titles, duration: 0:00:15.481506
+2025-03-19 14:51:17,544 - Batch inference for 8 titles, duration: 0:00:15.950294
+2025-03-19 14:51:18,235 - Batch inference for 8 titles, duration: 0:00:16.641119
+2025-03-19 14:51:18,236 - ThreadPoolExecutor for llama3.2-no_prompt-4, duration: 0:00:16.642266
+2025-03-19 14:51:18,245 - Assigned results for llama3.2-no_prompt-4, duration: 0:00:00.009445
+2025-03-19 14:51:18,247 - Wrote result JSON for llama3.2-no_prompt-4, duration: 0:00:00.002069
+2025-03-19 14:51:18,249 - Wrote prompt prompt1, duration: 0:00:00.001089
+2025-03-19 14:51:18,367 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:19,417 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:19,418 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:19,420 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:19,421 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:19,422 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:26,569 - Batch inference for 3 titles, duration: 0:00:08.318860
+2025-03-19 14:51:27,036 - Batch inference for 8 titles, duration: 0:00:08.786344
+2025-03-19 14:51:27,086 - Batch inference for 8 titles, duration: 0:00:08.836805
+2025-03-19 14:51:28,686 - Batch inference for 8 titles, duration: 0:00:10.436464
+2025-03-19 14:51:29,143 - Batch inference for 8 titles, duration: 0:00:10.893650
+2025-03-19 14:51:29,344 - Batch inference for 8 titles, duration: 0:00:11.095462
+2025-03-19 14:51:29,345 - ThreadPoolExecutor for llama3.2-prompt1-0, duration: 0:00:11.096237
+2025-03-19 14:51:29,355 - Assigned results for llama3.2-prompt1-0, duration: 0:00:00.009531
+2025-03-19 14:51:29,365 - Wrote result JSON for llama3.2-prompt1-0, duration: 0:00:00.010087
+2025-03-19 14:51:29,413 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:29,414 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:29,438 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:29,439 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:29,441 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:29,442 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:36,894 - Batch inference for 8 titles, duration: 0:00:07.527829
+2025-03-19 14:51:38,131 - Batch inference for 3 titles, duration: 0:00:08.765263
+2025-03-19 14:51:39,306 - Batch inference for 8 titles, duration: 0:00:09.940197
+2025-03-19 14:51:39,838 - Batch inference for 8 titles, duration: 0:00:10.471984
+2025-03-19 14:51:40,306 - Batch inference for 8 titles, duration: 0:00:10.939837
+2025-03-19 14:51:40,409 - Batch inference for 8 titles, duration: 0:00:11.043878
+2025-03-19 14:51:40,410 - ThreadPoolExecutor for llama3.2-prompt1-1, duration: 0:00:11.044677
+2025-03-19 14:51:40,419 - Assigned results for llama3.2-prompt1-1, duration: 0:00:00.009393
+2025-03-19 14:51:40,421 - Wrote result JSON for llama3.2-prompt1-1, duration: 0:00:00.001873
+2025-03-19 14:51:40,467 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:40,486 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:40,487 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:40,489 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:40,490 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:40,491 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:46,635 - Batch inference for 3 titles, duration: 0:00:06.212163
+2025-03-19 14:51:48,338 - Batch inference for 8 titles, duration: 0:00:07.915563
+2025-03-19 14:51:49,204 - Batch inference for 8 titles, duration: 0:00:08.781269
+2025-03-19 14:51:51,470 - Batch inference for 8 titles, duration: 0:00:11.047594
+2025-03-19 14:51:51,554 - Batch inference for 8 titles, duration: 0:00:11.132381
+2025-03-19 14:51:51,745 - Batch inference for 8 titles, duration: 0:00:11.323365
+2025-03-19 14:51:51,746 - ThreadPoolExecutor for llama3.2-prompt1-2, duration: 0:00:11.324423
+2025-03-19 14:51:51,756 - Assigned results for llama3.2-prompt1-2, duration: 0:00:00.009444
+2025-03-19 14:51:51,758 - Wrote result JSON for llama3.2-prompt1-2, duration: 0:00:00.001614
+2025-03-19 14:51:51,804 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:51,805 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:51,828 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:51,830 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:51,830 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:51,832 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:51:59,076 - Batch inference for 8 titles, duration: 0:00:07.317237
+2025-03-19 14:51:59,365 - Batch inference for 3 titles, duration: 0:00:07.606349
+2025-03-19 14:52:00,782 - Batch inference for 8 titles, duration: 0:00:09.023862
+2025-03-19 14:52:01,554 - Batch inference for 8 titles, duration: 0:00:09.796375
+2025-03-19 14:52:02,462 - Batch inference for 8 titles, duration: 0:00:10.703411
+2025-03-19 14:52:03,210 - Batch inference for 8 titles, duration: 0:00:11.452016
+2025-03-19 14:52:03,211 - ThreadPoolExecutor for llama3.2-prompt1-3, duration: 0:00:11.453317
+2025-03-19 14:52:03,221 - Assigned results for llama3.2-prompt1-3, duration: 0:00:00.009422
+2025-03-19 14:52:03,223 - Wrote result JSON for llama3.2-prompt1-3, duration: 0:00:00.001915
+2025-03-19 14:52:03,262 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:03,280 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:03,281 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:03,282 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:03,284 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:03,314 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:10,701 - Batch inference for 8 titles, duration: 0:00:07.477424
+2025-03-19 14:52:11,914 - Batch inference for 3 titles, duration: 0:00:08.690246
+2025-03-19 14:52:11,992 - Batch inference for 8 titles, duration: 0:00:08.767896
+2025-03-19 14:52:13,517 - Batch inference for 8 titles, duration: 0:00:10.293735
+2025-03-19 14:52:13,885 - Batch inference for 8 titles, duration: 0:00:10.661855
+2025-03-19 14:52:14,001 - Batch inference for 8 titles, duration: 0:00:10.777938
+2025-03-19 14:52:14,002 - ThreadPoolExecutor for llama3.2-prompt1-4, duration: 0:00:10.778919
+2025-03-19 14:52:14,012 - Assigned results for llama3.2-prompt1-4, duration: 0:00:00.009744
+2025-03-19 14:52:14,014 - Wrote result JSON for llama3.2-prompt1-4, duration: 0:00:00.001681
+2025-03-19 14:52:14,014 - Processing model: mistral
+2025-03-19 14:52:14,014 - Warming up mistral
+2025-03-19 14:52:21,840 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:27,755 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:27,829 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:27,829 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:27,829 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:27,830 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:27,831 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:35,177 - Batch inference for 3 titles, duration: 0:00:07.456878
+2025-03-19 14:52:38,811 - Batch inference for 8 titles, duration: 0:00:11.091061
+2025-03-19 14:52:39,655 - Batch inference for 8 titles, duration: 0:00:11.935433
+2025-03-19 14:52:40,209 - Batch inference for 8 titles, duration: 0:00:12.489188
+2025-03-19 14:52:40,467 - Batch inference for 8 titles, duration: 0:00:12.747168
+2025-03-19 14:52:40,764 - Batch inference for 8 titles, duration: 0:00:13.044465
+2025-03-19 14:52:40,764 - ThreadPoolExecutor for mistral-no_prompt-0, duration: 0:00:13.045289
+2025-03-19 14:52:40,774 - Assigned results for mistral-no_prompt-0, duration: 0:00:00.009422
+2025-03-19 14:52:40,776 - Wrote result JSON for mistral-no_prompt-0, duration: 0:00:00.001501
+2025-03-19 14:52:40,797 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:40,815 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:40,815 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:40,815 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:40,816 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:40,817 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:51,697 - Batch inference for 8 titles, duration: 0:00:10.920593
+2025-03-19 14:52:53,122 - Batch inference for 8 titles, duration: 0:00:12.345580
+2025-03-19 14:52:53,222 - Batch inference for 3 titles, duration: 0:00:12.445413
+2025-03-19 14:52:53,355 - Batch inference for 8 titles, duration: 0:00:12.578418
+2025-03-19 14:52:53,438 - Batch inference for 8 titles, duration: 0:00:12.661297
+2025-03-19 14:52:55,948 - Batch inference for 8 titles, duration: 0:00:15.171746
+2025-03-19 14:52:55,949 - ThreadPoolExecutor for mistral-no_prompt-1, duration: 0:00:15.172649
+2025-03-19 14:52:55,958 - Assigned results for mistral-no_prompt-1, duration: 0:00:00.009561
+2025-03-19 14:52:55,960 - Wrote result JSON for mistral-no_prompt-1, duration: 0:00:00.001856
+2025-03-19 14:52:55,983 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:56,001 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:56,001 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:56,002 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:56,002 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:52:56,003 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:03,440 - Batch inference for 8 titles, duration: 0:00:07.479739
+2025-03-19 14:53:06,952 - Batch inference for 8 titles, duration: 0:00:10.991573
+2025-03-19 14:53:06,974 - Batch inference for 3 titles, duration: 0:00:11.012569
+2025-03-19 14:53:07,084 - Batch inference for 8 titles, duration: 0:00:11.122694
+2025-03-19 14:53:08,069 - Batch inference for 8 titles, duration: 0:00:12.107682
+2025-03-19 14:53:08,848 - Batch inference for 8 titles, duration: 0:00:12.886755
+2025-03-19 14:53:08,849 - ThreadPoolExecutor for mistral-no_prompt-2, duration: 0:00:12.888173
+2025-03-19 14:53:08,858 - Assigned results for mistral-no_prompt-2, duration: 0:00:00.009450
+2025-03-19 14:53:08,860 - Wrote result JSON for mistral-no_prompt-2, duration: 0:00:00.001569
+2025-03-19 14:53:08,884 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:08,901 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:08,902 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:08,902 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:08,902 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:08,903 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:18,309 - Batch inference for 8 titles, duration: 0:00:09.448177
+2025-03-19 14:53:22,023 - Batch inference for 8 titles, duration: 0:00:13.162444
+2025-03-19 14:53:22,283 - Batch inference for 8 titles, duration: 0:00:13.422470
+2025-03-19 14:53:22,705 - Batch inference for 8 titles, duration: 0:00:13.844332
+2025-03-19 14:53:22,837 - Batch inference for 8 titles, duration: 0:00:13.976244
+2025-03-19 14:53:24,129 - Batch inference for 3 titles, duration: 0:00:15.268275
+2025-03-19 14:53:24,130 - ThreadPoolExecutor for mistral-no_prompt-3, duration: 0:00:15.269984
+2025-03-19 14:53:24,140 - Assigned results for mistral-no_prompt-3, duration: 0:00:00.009480
+2025-03-19 14:53:24,142 - Wrote result JSON for mistral-no_prompt-3, duration: 0:00:00.001837
+2025-03-19 14:53:24,171 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:24,171 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:24,171 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:24,195 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:24,196 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:24,196 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:35,464 - Batch inference for 8 titles, duration: 0:00:11.321159
+2025-03-19 14:53:36,387 - Batch inference for 8 titles, duration: 0:00:12.244281
+2025-03-19 14:53:36,716 - Batch inference for 8 titles, duration: 0:00:12.573489
+2025-03-19 14:53:37,243 - Batch inference for 3 titles, duration: 0:00:13.099458
+2025-03-19 14:53:39,089 - Batch inference for 8 titles, duration: 0:00:14.946338
+2025-03-19 14:53:40,450 - Batch inference for 8 titles, duration: 0:00:16.307438
+2025-03-19 14:53:40,450 - ThreadPoolExecutor for mistral-no_prompt-4, duration: 0:00:16.308276
+2025-03-19 14:53:40,460 - Assigned results for mistral-no_prompt-4, duration: 0:00:00.009398
+2025-03-19 14:53:40,462 - Wrote result JSON for mistral-no_prompt-4, duration: 0:00:00.001802
+2025-03-19 14:53:40,462 - Wrote prompt prompt1, duration: 0:00:00.000227
+2025-03-19 14:53:40,541 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:41,206 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:41,207 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:41,207 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:41,207 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:41,207 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:45,243 - Batch inference for 3 titles, duration: 0:00:04.779696
+2025-03-19 14:53:46,843 - Batch inference for 8 titles, duration: 0:00:06.380682
+2025-03-19 14:53:48,255 - Batch inference for 8 titles, duration: 0:00:07.791835
+2025-03-19 14:53:49,241 - Batch inference for 8 titles, duration: 0:00:08.777617
+2025-03-19 14:53:51,532 - Batch inference for 8 titles, duration: 0:00:11.068482
+2025-03-19 14:53:51,796 - Batch inference for 8 titles, duration: 0:00:11.332492
+2025-03-19 14:53:51,796 - ThreadPoolExecutor for mistral-prompt1-0, duration: 0:00:11.333739
+2025-03-19 14:53:51,806 - Assigned results for mistral-prompt1-0, duration: 0:00:00.009393
+2025-03-19 14:53:51,808 - Wrote result JSON for mistral-prompt1-0, duration: 0:00:00.001850
+2025-03-19 14:53:51,831 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:51,851 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:51,851 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:51,852 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:51,852 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:51,852 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:53:55,862 - Batch inference for 3 titles, duration: 0:00:04.052587
+2025-03-19 14:53:57,956 - Batch inference for 8 titles, duration: 0:00:06.147313
+2025-03-19 14:53:58,024 - Batch inference for 8 titles, duration: 0:00:06.215402
+2025-03-19 14:53:59,120 - Batch inference for 8 titles, duration: 0:00:07.311601
+2025-03-19 14:54:00,682 - Batch inference for 8 titles, duration: 0:00:08.872737
+2025-03-19 14:54:01,402 - Batch inference for 8 titles, duration: 0:00:09.592892
+2025-03-19 14:54:01,402 - ThreadPoolExecutor for mistral-prompt1-1, duration: 0:00:09.594169
+2025-03-19 14:54:01,412 - Assigned results for mistral-prompt1-1, duration: 0:00:00.009417
+2025-03-19 14:54:01,414 - Wrote result JSON for mistral-prompt1-1, duration: 0:00:00.001604
+2025-03-19 14:54:01,438 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:01,458 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:01,458 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:01,458 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:01,459 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:01,459 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:08,106 - Batch inference for 3 titles, duration: 0:00:06.691682
+2025-03-19 14:54:08,390 - Batch inference for 8 titles, duration: 0:00:06.975684
+2025-03-19 14:54:09,586 - Batch inference for 8 titles, duration: 0:00:08.171726
+2025-03-19 14:54:10,080 - Batch inference for 8 titles, duration: 0:00:08.664910
+2025-03-19 14:54:11,220 - Batch inference for 8 titles, duration: 0:00:09.805430
+2025-03-19 14:54:11,711 - Batch inference for 8 titles, duration: 0:00:10.297005
+2025-03-19 14:54:11,712 - ThreadPoolExecutor for mistral-prompt1-2, duration: 0:00:10.297777
+2025-03-19 14:54:11,721 - Assigned results for mistral-prompt1-2, duration: 0:00:00.009470
+2025-03-19 14:54:11,724 - Wrote result JSON for mistral-prompt1-2, duration: 0:00:00.002203
+2025-03-19 14:54:11,750 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:11,750 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:11,773 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:11,773 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:11,773 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:11,774 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:16,447 - Batch inference for 3 titles, duration: 0:00:04.722209
+2025-03-19 14:54:18,519 - Batch inference for 8 titles, duration: 0:00:06.794764
+2025-03-19 14:54:20,436 - Batch inference for 8 titles, duration: 0:00:08.711528
+2025-03-19 14:54:21,168 - Batch inference for 8 titles, duration: 0:00:09.443448
+2025-03-19 14:54:22,132 - Batch inference for 8 titles, duration: 0:00:10.408354
+2025-03-19 14:54:22,380 - Batch inference for 8 titles, duration: 0:00:10.655510
+2025-03-19 14:54:22,381 - ThreadPoolExecutor for mistral-prompt1-3, duration: 0:00:10.656763
+2025-03-19 14:54:22,390 - Assigned results for mistral-prompt1-3, duration: 0:00:00.009378
+2025-03-19 14:54:22,392 - Wrote result JSON for mistral-prompt1-3, duration: 0:00:00.001797
+2025-03-19 14:54:22,417 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:22,437 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:22,438 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:22,439 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:22,439 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:22,439 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 14:54:27,257 - Batch inference for 3 titles, duration: 0:00:04.863872
+2025-03-19 14:54:30,824 - Batch inference for 8 titles, duration: 0:00:08.431204
+2025-03-19 14:54:32,069 - Batch inference for 8 titles, duration: 0:00:09.676179
+2025-03-19 14:54:32,615 - Batch inference for 8 titles, duration: 0:00:10.221850
+2025-03-19 14:54:33,226 - Batch inference for 8 titles, duration: 0:00:10.833297
+2025-03-19 14:54:33,284 - Batch inference for 8 titles, duration: 0:00:10.891021
+2025-03-19 14:54:33,285 - ThreadPoolExecutor for mistral-prompt1-4, duration: 0:00:10.892390
+2025-03-19 14:54:33,294 - Assigned results for mistral-prompt1-4, duration: 0:00:00.009351
+2025-03-19 14:54:33,297 - Wrote result JSON for mistral-prompt1-4, duration: 0:00:00.002468
+2025-03-19 14:54:33,297 - Processing model: qwen2.5
+2025-03-19 14:54:33,297 - Warming up qwen2.5
+2025-03-19 14:54:33,300 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-19 15:00:20,223 - Script started
+2025-03-19 15:00:20,224 - Processing model: llama3.2
+2025-03-19 15:00:20,224 - Warming up llama3.2
+2025-03-19 15:00:22,411 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:23,006 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:23,058 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:23,059 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:23,060 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:23,062 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:23,063 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:32,157 - Batch inference for 3 titles, duration: 0:00:09.194936
+2025-03-19 15:00:39,460 - Batch inference for 8 titles, duration: 0:00:16.498882
+2025-03-19 15:00:40,745 - Batch inference for 8 titles, duration: 0:00:17.783610
+2025-03-19 15:00:40,855 - Batch inference for 8 titles, duration: 0:00:17.893496
+2025-03-19 15:00:41,938 - Batch inference for 8 titles, duration: 0:00:18.977125
+2025-03-19 15:00:43,575 - Batch inference for 8 titles, duration: 0:00:20.613905
+2025-03-19 15:00:43,576 - ThreadPoolExecutor for llama3.2-no_prompt-0, duration: 0:00:20.615615
+2025-03-19 15:00:43,586 - Assigned results for llama3.2-no_prompt-0, duration: 0:00:00.010028
+2025-03-19 15:00:43,588 - Wrote result JSON for llama3.2-no_prompt-0, duration: 0:00:00.002057
+2025-03-19 15:00:43,631 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:43,649 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:43,650 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:43,651 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:43,652 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:43,654 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:00:54,110 - Batch inference for 3 titles, duration: 0:00:10.520467
+2025-03-19 15:00:54,187 - Batch inference for 8 titles, duration: 0:00:10.597472
+2025-03-19 15:00:57,317 - Batch inference for 8 titles, duration: 0:00:13.727154
+2025-03-19 15:00:58,369 - Batch inference for 8 titles, duration: 0:00:14.780076
+2025-03-19 15:00:59,466 - Batch inference for 8 titles, duration: 0:00:15.876844
+2025-03-19 15:01:02,229 - Batch inference for 8 titles, duration: 0:00:18.639438
+2025-03-19 15:01:02,229 - ThreadPoolExecutor for llama3.2-no_prompt-1, duration: 0:00:18.640711
+2025-03-19 15:01:02,239 - Assigned results for llama3.2-no_prompt-1, duration: 0:00:00.009679
+2025-03-19 15:01:02,242 - Wrote result JSON for llama3.2-no_prompt-1, duration: 0:00:00.002606
+2025-03-19 15:01:02,283 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:02,300 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:02,301 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:02,302 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:02,304 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:02,305 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:11,724 - Batch inference for 3 titles, duration: 0:00:09.480497
+2025-03-19 15:01:15,917 - Batch inference for 8 titles, duration: 0:00:13.673484
+2025-03-19 15:01:17,444 - Batch inference for 8 titles, duration: 0:00:15.201834
+2025-03-19 15:01:17,498 - Batch inference for 8 titles, duration: 0:00:15.254948
+2025-03-19 15:01:17,870 - Batch inference for 8 titles, duration: 0:00:15.627384
+2025-03-19 15:01:17,949 - Batch inference for 8 titles, duration: 0:00:15.706778
+2025-03-19 15:01:17,950 - ThreadPoolExecutor for llama3.2-no_prompt-2, duration: 0:00:15.707817
+2025-03-19 15:01:17,960 - Assigned results for llama3.2-no_prompt-2, duration: 0:00:00.009514
+2025-03-19 15:01:17,962 - Wrote result JSON for llama3.2-no_prompt-2, duration: 0:00:00.001669
+2025-03-19 15:01:18,005 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:18,022 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:18,024 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:18,025 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:18,026 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:18,028 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:29,113 - Batch inference for 8 titles, duration: 0:00:11.150671
+2025-03-19 15:01:30,277 - Batch inference for 3 titles, duration: 0:00:12.314277
+2025-03-19 15:01:33,437 - Batch inference for 8 titles, duration: 0:00:15.474674
+2025-03-19 15:01:34,547 - Batch inference for 8 titles, duration: 0:00:16.584884
+2025-03-19 15:01:34,695 - Batch inference for 8 titles, duration: 0:00:16.732978
+2025-03-19 15:01:36,653 - Batch inference for 8 titles, duration: 0:00:18.691463
+2025-03-19 15:01:36,654 - ThreadPoolExecutor for llama3.2-no_prompt-3, duration: 0:00:18.692284
+2025-03-19 15:01:36,664 - Assigned results for llama3.2-no_prompt-3, duration: 0:00:00.009565
+2025-03-19 15:01:36,668 - Wrote result JSON for llama3.2-no_prompt-3, duration: 0:00:00.003620
+2025-03-19 15:01:36,712 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:36,729 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:36,730 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:36,732 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:36,733 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:36,734 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:43,457 - Batch inference for 3 titles, duration: 0:00:06.788679
+2025-03-19 15:01:49,151 - Batch inference for 8 titles, duration: 0:00:12.482968
+2025-03-19 15:01:51,761 - Batch inference for 8 titles, duration: 0:00:15.092907
+2025-03-19 15:01:52,952 - Batch inference for 8 titles, duration: 0:00:16.283690
+2025-03-19 15:01:53,575 - Batch inference for 8 titles, duration: 0:00:16.906409
+2025-03-19 15:01:55,371 - Batch inference for 8 titles, duration: 0:00:18.702514
+2025-03-19 15:01:55,372 - ThreadPoolExecutor for llama3.2-no_prompt-4, duration: 0:00:18.703666
+2025-03-19 15:01:55,381 - Assigned results for llama3.2-no_prompt-4, duration: 0:00:00.009465
+2025-03-19 15:01:55,383 - Wrote result JSON for llama3.2-no_prompt-4, duration: 0:00:00.002180
+2025-03-19 15:01:55,420 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:55,438 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:55,439 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:55,440 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:55,468 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:01:55,469 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:05,568 - Batch inference for 3 titles, duration: 0:00:10.183594
+2025-03-19 15:02:07,495 - Batch inference for 8 titles, duration: 0:00:12.110505
+2025-03-19 15:02:07,742 - Batch inference for 8 titles, duration: 0:00:12.357845
+2025-03-19 15:02:10,568 - Batch inference for 8 titles, duration: 0:00:15.184114
+2025-03-19 15:02:11,518 - Batch inference for 8 titles, duration: 0:00:16.133825
+2025-03-19 15:02:12,487 - Batch inference for 8 titles, duration: 0:00:17.103008
+2025-03-19 15:02:12,488 - ThreadPoolExecutor for llama3.2-no_prompt-5, duration: 0:00:17.104138
+2025-03-19 15:02:12,498 - Assigned results for llama3.2-no_prompt-5, duration: 0:00:00.009572
+2025-03-19 15:02:12,501 - Wrote result JSON for llama3.2-no_prompt-5, duration: 0:00:00.003360
+2025-03-19 15:02:12,539 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:12,557 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:12,558 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:12,559 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:12,561 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:12,588 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:22,427 - Batch inference for 8 titles, duration: 0:00:09.924744
+2025-03-19 15:02:23,259 - Batch inference for 8 titles, duration: 0:00:10.756692
+2025-03-19 15:02:24,252 - Batch inference for 3 titles, duration: 0:00:11.749410
+2025-03-19 15:02:25,313 - Batch inference for 8 titles, duration: 0:00:12.811548
+2025-03-19 15:02:28,285 - Batch inference for 8 titles, duration: 0:00:15.783370
+2025-03-19 15:02:31,719 - Batch inference for 8 titles, duration: 0:00:19.216960
+2025-03-19 15:02:31,719 - ThreadPoolExecutor for llama3.2-no_prompt-6, duration: 0:00:19.218142
+2025-03-19 15:02:31,729 - Assigned results for llama3.2-no_prompt-6, duration: 0:00:00.009489
+2025-03-19 15:02:31,733 - Wrote result JSON for llama3.2-no_prompt-6, duration: 0:00:00.003292
+2025-03-19 15:02:31,769 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:31,787 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:31,789 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:31,790 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:31,815 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:31,816 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:41,392 - Batch inference for 3 titles, duration: 0:00:09.658172
+2025-03-19 15:02:44,421 - Batch inference for 8 titles, duration: 0:00:12.687783
+2025-03-19 15:02:47,937 - Batch inference for 8 titles, duration: 0:00:16.203485
+2025-03-19 15:02:47,980 - Batch inference for 8 titles, duration: 0:00:16.246034
+2025-03-19 15:02:48,959 - Batch inference for 8 titles, duration: 0:00:17.225372
+2025-03-19 15:02:50,058 - Batch inference for 8 titles, duration: 0:00:18.325127
+2025-03-19 15:02:50,059 - ThreadPoolExecutor for llama3.2-no_prompt-7, duration: 0:00:18.326037
+2025-03-19 15:02:50,069 - Assigned results for llama3.2-no_prompt-7, duration: 0:00:00.009587
+2025-03-19 15:02:50,073 - Wrote result JSON for llama3.2-no_prompt-7, duration: 0:00:00.003748
+2025-03-19 15:02:50,116 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:50,117 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:50,138 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:50,139 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:50,140 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:02:50,141 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:02,239 - Batch inference for 8 titles, duration: 0:00:12.166104
+2025-03-19 15:03:02,794 - Batch inference for 8 titles, duration: 0:00:12.721269
+2025-03-19 15:03:04,307 - Batch inference for 3 titles, duration: 0:00:14.233471
+2025-03-19 15:03:05,191 - Batch inference for 8 titles, duration: 0:00:15.118049
+2025-03-19 15:03:05,322 - Batch inference for 8 titles, duration: 0:00:15.248751
+2025-03-19 15:03:05,361 - Batch inference for 8 titles, duration: 0:00:15.288485
+2025-03-19 15:03:05,362 - ThreadPoolExecutor for llama3.2-no_prompt-8, duration: 0:00:15.289259
+2025-03-19 15:03:05,372 - Assigned results for llama3.2-no_prompt-8, duration: 0:00:00.009506
+2025-03-19 15:03:05,374 - Wrote result JSON for llama3.2-no_prompt-8, duration: 0:00:00.002397
+2025-03-19 15:03:05,411 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:05,429 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:05,430 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:05,431 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:05,433 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:05,460 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:14,805 - Batch inference for 3 titles, duration: 0:00:09.430124
+2025-03-19 15:03:16,445 - Batch inference for 8 titles, duration: 0:00:11.069894
+2025-03-19 15:03:19,521 - Batch inference for 8 titles, duration: 0:00:14.146484
+2025-03-19 15:03:20,073 - Batch inference for 8 titles, duration: 0:00:14.697793
+2025-03-19 15:03:20,344 - Batch inference for 8 titles, duration: 0:00:14.968515
+2025-03-19 15:03:22,148 - Batch inference for 8 titles, duration: 0:00:16.772873
+2025-03-19 15:03:22,150 - ThreadPoolExecutor for llama3.2-no_prompt-9, duration: 0:00:16.775594
+2025-03-19 15:03:22,160 - Assigned results for llama3.2-no_prompt-9, duration: 0:00:00.009593
+2025-03-19 15:03:22,164 - Wrote result JSON for llama3.2-no_prompt-9, duration: 0:00:00.003620
+2025-03-19 15:03:22,165 - Wrote prompt prompt1, duration: 0:00:00.000915
+2025-03-19 15:03:22,345 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:22,346 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:22,629 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:22,630 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:22,631 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:22,633 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:30,593 - Batch inference for 3 titles, duration: 0:00:08.427176
+2025-03-19 15:03:33,387 - Batch inference for 8 titles, duration: 0:00:11.221798
+2025-03-19 15:03:33,921 - Batch inference for 8 titles, duration: 0:00:11.755146
+2025-03-19 15:03:34,678 - Batch inference for 8 titles, duration: 0:00:12.513043
+2025-03-19 15:03:35,828 - Batch inference for 8 titles, duration: 0:00:13.663131
+2025-03-19 15:03:36,538 - Batch inference for 8 titles, duration: 0:00:14.373510
+2025-03-19 15:03:36,540 - ThreadPoolExecutor for llama3.2-prompt1-0, duration: 0:00:14.375275
+2025-03-19 15:03:36,550 - Assigned results for llama3.2-prompt1-0, duration: 0:00:00.009594
+2025-03-19 15:03:36,553 - Wrote result JSON for llama3.2-prompt1-0, duration: 0:00:00.003150
+2025-03-19 15:03:36,593 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:36,612 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:36,613 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:36,613 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:36,615 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:36,616 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:42,579 - Batch inference for 3 titles, duration: 0:00:06.024659
+2025-03-19 15:03:47,790 - Batch inference for 8 titles, duration: 0:00:11.236365
+2025-03-19 15:03:48,285 - Batch inference for 8 titles, duration: 0:00:11.731595
+2025-03-19 15:03:48,395 - Batch inference for 8 titles, duration: 0:00:11.841098
+2025-03-19 15:03:48,432 - Batch inference for 8 titles, duration: 0:00:11.878516
+2025-03-19 15:03:49,028 - Batch inference for 8 titles, duration: 0:00:12.474347
+2025-03-19 15:03:49,030 - ThreadPoolExecutor for llama3.2-prompt1-1, duration: 0:00:12.476666
+2025-03-19 15:03:49,040 - Assigned results for llama3.2-prompt1-1, duration: 0:00:00.009683
+2025-03-19 15:03:49,042 - Wrote result JSON for llama3.2-prompt1-1, duration: 0:00:00.002385
+2025-03-19 15:03:49,078 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:49,104 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:49,105 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:49,106 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:49,107 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:49,108 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:56,789 - Batch inference for 3 titles, duration: 0:00:07.745486
+2025-03-19 15:03:57,053 - Batch inference for 8 titles, duration: 0:00:08.009194
+2025-03-19 15:03:57,950 - Batch inference for 8 titles, duration: 0:00:08.906536
+2025-03-19 15:03:58,080 - Batch inference for 8 titles, duration: 0:00:09.037112
+2025-03-19 15:03:59,116 - Batch inference for 8 titles, duration: 0:00:10.072257
+2025-03-19 15:03:59,413 - Batch inference for 8 titles, duration: 0:00:10.369756
+2025-03-19 15:03:59,414 - ThreadPoolExecutor for llama3.2-prompt1-2, duration: 0:00:10.370934
+2025-03-19 15:03:59,423 - Assigned results for llama3.2-prompt1-2, duration: 0:00:00.009494
+2025-03-19 15:03:59,425 - Wrote result JSON for llama3.2-prompt1-2, duration: 0:00:00.001849
+2025-03-19 15:03:59,469 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:59,488 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:59,489 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:59,491 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:59,491 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:03:59,492 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:06,912 - Batch inference for 8 titles, duration: 0:00:07.486670
+2025-03-19 15:04:07,297 - Batch inference for 3 titles, duration: 0:00:07.870946
+2025-03-19 15:04:07,904 - Batch inference for 8 titles, duration: 0:00:08.477990
+2025-03-19 15:04:08,613 - Batch inference for 8 titles, duration: 0:00:09.186992
+2025-03-19 15:04:08,963 - Batch inference for 8 titles, duration: 0:00:09.536340
+2025-03-19 15:04:09,690 - Batch inference for 8 titles, duration: 0:00:10.263923
+2025-03-19 15:04:09,691 - ThreadPoolExecutor for llama3.2-prompt1-3, duration: 0:00:10.265061
+2025-03-19 15:04:09,700 - Assigned results for llama3.2-prompt1-3, duration: 0:00:00.009500
+2025-03-19 15:04:09,705 - Wrote result JSON for llama3.2-prompt1-3, duration: 0:00:00.004691
+2025-03-19 15:04:09,747 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:09,766 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:09,768 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:09,769 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:09,771 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:09,772 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:17,074 - Batch inference for 8 titles, duration: 0:00:07.368240
+2025-03-19 15:04:17,550 - Batch inference for 3 titles, duration: 0:00:07.843450
+2025-03-19 15:04:19,594 - Batch inference for 8 titles, duration: 0:00:09.887946
+2025-03-19 15:04:19,957 - Batch inference for 8 titles, duration: 0:00:10.251536
+2025-03-19 15:04:20,773 - Batch inference for 8 titles, duration: 0:00:11.067202
+2025-03-19 15:04:20,806 - Batch inference for 8 titles, duration: 0:00:11.100053
+2025-03-19 15:04:20,806 - ThreadPoolExecutor for llama3.2-prompt1-4, duration: 0:00:11.100906
+2025-03-19 15:04:20,816 - Assigned results for llama3.2-prompt1-4, duration: 0:00:00.009478
+2025-03-19 15:04:20,818 - Wrote result JSON for llama3.2-prompt1-4, duration: 0:00:00.001992
+2025-03-19 15:04:20,855 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:20,874 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:20,875 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:20,876 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:20,906 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:20,906 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:29,121 - Batch inference for 3 titles, duration: 0:00:08.301595
+2025-03-19 15:04:29,315 - Batch inference for 8 titles, duration: 0:00:08.496384
+2025-03-19 15:04:29,996 - Batch inference for 8 titles, duration: 0:00:09.177547
+2025-03-19 15:04:30,945 - Batch inference for 8 titles, duration: 0:00:10.126012
+2025-03-19 15:04:31,882 - Batch inference for 8 titles, duration: 0:00:11.062949
+2025-03-19 15:04:32,990 - Batch inference for 8 titles, duration: 0:00:12.171907
+2025-03-19 15:04:32,991 - ThreadPoolExecutor for llama3.2-prompt1-5, duration: 0:00:12.172765
+2025-03-19 15:04:33,001 - Assigned results for llama3.2-prompt1-5, duration: 0:00:00.009473
+2025-03-19 15:04:33,004 - Wrote result JSON for llama3.2-prompt1-5, duration: 0:00:00.002724
+2025-03-19 15:04:33,040 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:33,066 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:33,067 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:33,069 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:33,070 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:33,072 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:39,563 - Batch inference for 3 titles, duration: 0:00:06.558528
+2025-03-19 15:04:40,407 - Batch inference for 8 titles, duration: 0:00:07.402584
+2025-03-19 15:04:40,874 - Batch inference for 8 titles, duration: 0:00:07.869789
+2025-03-19 15:04:44,802 - Batch inference for 8 titles, duration: 0:00:11.797969
+2025-03-19 15:04:45,150 - Batch inference for 8 titles, duration: 0:00:12.145930
+2025-03-19 15:04:45,338 - Batch inference for 8 titles, duration: 0:00:12.333976
+2025-03-19 15:04:45,339 - ThreadPoolExecutor for llama3.2-prompt1-6, duration: 0:00:12.335188
+2025-03-19 15:04:45,348 - Assigned results for llama3.2-prompt1-6, duration: 0:00:00.009491
+2025-03-19 15:04:45,351 - Wrote result JSON for llama3.2-prompt1-6, duration: 0:00:00.002372
+2025-03-19 15:04:45,391 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:45,410 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:45,412 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:45,413 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:45,414 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:45,415 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:51,822 - Batch inference for 3 titles, duration: 0:00:06.469755
+2025-03-19 15:04:53,874 - Batch inference for 8 titles, duration: 0:00:08.521585
+2025-03-19 15:04:54,443 - Batch inference for 8 titles, duration: 0:00:09.090536
+2025-03-19 15:04:55,568 - Batch inference for 8 titles, duration: 0:00:10.215815
+2025-03-19 15:04:55,635 - Batch inference for 8 titles, duration: 0:00:10.283531
+2025-03-19 15:04:55,927 - Batch inference for 8 titles, duration: 0:00:10.575138
+2025-03-19 15:04:55,928 - ThreadPoolExecutor for llama3.2-prompt1-7, duration: 0:00:10.576477
+2025-03-19 15:04:55,938 - Assigned results for llama3.2-prompt1-7, duration: 0:00:00.009667
+2025-03-19 15:04:55,940 - Wrote result JSON for llama3.2-prompt1-7, duration: 0:00:00.001913
+2025-03-19 15:04:55,980 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:55,982 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:56,005 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:56,007 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:56,009 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:04:56,010 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:03,694 - Batch inference for 8 titles, duration: 0:00:07.754062
+2025-03-19 15:05:04,732 - Batch inference for 3 titles, duration: 0:00:08.790595
+2025-03-19 15:05:05,844 - Batch inference for 8 titles, duration: 0:00:09.903231
+2025-03-19 15:05:05,966 - Batch inference for 8 titles, duration: 0:00:10.025627
+2025-03-19 15:05:06,950 - Batch inference for 8 titles, duration: 0:00:11.009619
+2025-03-19 15:05:07,998 - Batch inference for 8 titles, duration: 0:00:12.057395
+2025-03-19 15:05:07,998 - ThreadPoolExecutor for llama3.2-prompt1-8, duration: 0:00:12.058582
+2025-03-19 15:05:08,008 - Assigned results for llama3.2-prompt1-8, duration: 0:00:00.009619
+2025-03-19 15:05:08,011 - Wrote result JSON for llama3.2-prompt1-8, duration: 0:00:00.002047
+2025-03-19 15:05:08,065 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:08,085 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:08,086 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:08,087 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:08,089 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:08,090 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:15,895 - Batch inference for 8 titles, duration: 0:00:07.883755
+2025-03-19 15:05:16,060 - Batch inference for 3 titles, duration: 0:00:08.048071
+2025-03-19 15:05:16,252 - Batch inference for 8 titles, duration: 0:00:08.240210
+2025-03-19 15:05:18,476 - Batch inference for 8 titles, duration: 0:00:10.465160
+2025-03-19 15:05:19,079 - Batch inference for 8 titles, duration: 0:00:11.067895
+2025-03-19 15:05:19,897 - Batch inference for 8 titles, duration: 0:00:11.885688
+2025-03-19 15:05:19,898 - ThreadPoolExecutor for llama3.2-prompt1-9, duration: 0:00:11.887100
+2025-03-19 15:05:19,907 - Assigned results for llama3.2-prompt1-9, duration: 0:00:00.009438
+2025-03-19 15:05:19,910 - Wrote result JSON for llama3.2-prompt1-9, duration: 0:00:00.002153
+2025-03-19 15:05:19,910 - Processing model: mistral
+2025-03-19 15:05:19,910 - Warming up mistral
+2025-03-19 15:05:22,085 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:25,139 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:25,212 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:25,213 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:25,213 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:25,214 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:25,214 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:31,076 - Batch inference for 8 titles, duration: 0:00:05.974896
+2025-03-19 15:05:34,038 - Batch inference for 3 titles, duration: 0:00:08.936809
+2025-03-19 15:05:34,969 - Batch inference for 8 titles, duration: 0:00:09.867493
+2025-03-19 15:05:35,416 - Batch inference for 8 titles, duration: 0:00:10.314404
+2025-03-19 15:05:36,535 - Batch inference for 8 titles, duration: 0:00:11.433976
+2025-03-19 15:05:38,065 - Batch inference for 8 titles, duration: 0:00:12.964053
+2025-03-19 15:05:38,066 - ThreadPoolExecutor for mistral-no_prompt-0, duration: 0:00:12.964956
+2025-03-19 15:05:38,075 - Assigned results for mistral-no_prompt-0, duration: 0:00:00.009499
+2025-03-19 15:05:38,078 - Wrote result JSON for mistral-no_prompt-0, duration: 0:00:00.002340
+2025-03-19 15:05:38,098 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:38,115 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:38,116 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:38,116 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:38,117 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:38,117 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:47,415 - Batch inference for 3 titles, duration: 0:00:09.335812
+2025-03-19 15:05:48,036 - Batch inference for 8 titles, duration: 0:00:09.957487
+2025-03-19 15:05:49,128 - Batch inference for 8 titles, duration: 0:00:11.049050
+2025-03-19 15:05:49,636 - Batch inference for 8 titles, duration: 0:00:11.557109
+2025-03-19 15:05:52,259 - Batch inference for 8 titles, duration: 0:00:14.180416
+2025-03-19 15:05:54,063 - Batch inference for 8 titles, duration: 0:00:15.984799
+2025-03-19 15:05:54,064 - ThreadPoolExecutor for mistral-no_prompt-1, duration: 0:00:15.985566
+2025-03-19 15:05:54,073 - Assigned results for mistral-no_prompt-1, duration: 0:00:00.009681
+2025-03-19 15:05:54,077 - Wrote result JSON for mistral-no_prompt-1, duration: 0:00:00.003166
+2025-03-19 15:05:54,101 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:54,101 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:54,121 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:54,122 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:54,122 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:05:54,123 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:02,151 - Batch inference for 8 titles, duration: 0:00:08.073501
+2025-03-19 15:06:02,472 - Batch inference for 3 titles, duration: 0:00:08.394103
+2025-03-19 15:06:04,155 - Batch inference for 8 titles, duration: 0:00:10.077552
+2025-03-19 15:06:04,515 - Batch inference for 8 titles, duration: 0:00:10.437331
+2025-03-19 15:06:05,011 - Batch inference for 8 titles, duration: 0:00:10.934176
+2025-03-19 15:06:06,383 - Batch inference for 8 titles, duration: 0:00:12.305054
+2025-03-19 15:06:06,383 - ThreadPoolExecutor for mistral-no_prompt-2, duration: 0:00:12.306582
+2025-03-19 15:06:06,393 - Assigned results for mistral-no_prompt-2, duration: 0:00:00.009534
+2025-03-19 15:06:06,395 - Wrote result JSON for mistral-no_prompt-2, duration: 0:00:00.001664
+2025-03-19 15:06:06,417 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:06,434 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:06,435 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:06,435 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:06,435 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:06,436 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:12,745 - Batch inference for 3 titles, duration: 0:00:06.349082
+2025-03-19 15:06:16,843 - Batch inference for 8 titles, duration: 0:00:10.447391
+2025-03-19 15:06:16,876 - Batch inference for 8 titles, duration: 0:00:10.479919
+2025-03-19 15:06:18,556 - Batch inference for 8 titles, duration: 0:00:12.160526
+2025-03-19 15:06:18,655 - Batch inference for 8 titles, duration: 0:00:12.259503
+2025-03-19 15:06:19,428 - Batch inference for 8 titles, duration: 0:00:13.032232
+2025-03-19 15:06:19,428 - ThreadPoolExecutor for mistral-no_prompt-3, duration: 0:00:13.033125
+2025-03-19 15:06:19,438 - Assigned results for mistral-no_prompt-3, duration: 0:00:00.009535
+2025-03-19 15:06:19,440 - Wrote result JSON for mistral-no_prompt-3, duration: 0:00:00.001269
+2025-03-19 15:06:19,464 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:19,464 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:19,485 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:19,485 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:19,485 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:19,486 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:25,892 - Batch inference for 8 titles, duration: 0:00:06.451910
+2025-03-19 15:06:26,982 - Batch inference for 3 titles, duration: 0:00:07.541014
+2025-03-19 15:06:27,529 - Batch inference for 8 titles, duration: 0:00:08.088610
+2025-03-19 15:06:28,420 - Batch inference for 8 titles, duration: 0:00:08.980002
+2025-03-19 15:06:30,372 - Batch inference for 8 titles, duration: 0:00:10.932084
+2025-03-19 15:06:30,669 - Batch inference for 8 titles, duration: 0:00:11.228749
+2025-03-19 15:06:30,670 - ThreadPoolExecutor for mistral-no_prompt-4, duration: 0:00:11.229815
+2025-03-19 15:06:30,679 - Assigned results for mistral-no_prompt-4, duration: 0:00:00.009497
+2025-03-19 15:06:30,681 - Wrote result JSON for mistral-no_prompt-4, duration: 0:00:00.001721
+2025-03-19 15:06:30,706 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:30,723 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:30,723 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:30,724 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:30,725 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:30,725 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:40,421 - Batch inference for 8 titles, duration: 0:00:09.739163
+2025-03-19 15:06:41,320 - Batch inference for 8 titles, duration: 0:00:10.638126
+2025-03-19 15:06:41,659 - Batch inference for 8 titles, duration: 0:00:10.977212
+2025-03-19 15:06:41,789 - Batch inference for 8 titles, duration: 0:00:11.107628
+2025-03-19 15:06:42,087 - Batch inference for 3 titles, duration: 0:00:11.404830
+2025-03-19 15:06:43,208 - Batch inference for 8 titles, duration: 0:00:12.526567
+2025-03-19 15:06:43,209 - ThreadPoolExecutor for mistral-no_prompt-5, duration: 0:00:12.527330
+2025-03-19 15:06:43,218 - Assigned results for mistral-no_prompt-5, duration: 0:00:00.009492
+2025-03-19 15:06:43,220 - Wrote result JSON for mistral-no_prompt-5, duration: 0:00:00.001842
+2025-03-19 15:06:43,242 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:43,259 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:43,260 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:43,260 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:43,261 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:43,261 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:51,776 - Batch inference for 8 titles, duration: 0:00:08.555054
+2025-03-19 15:06:53,798 - Batch inference for 3 titles, duration: 0:00:10.576664
+2025-03-19 15:06:55,384 - Batch inference for 8 titles, duration: 0:00:12.163130
+2025-03-19 15:06:55,394 - Batch inference for 8 titles, duration: 0:00:12.172974
+2025-03-19 15:06:55,769 - Batch inference for 8 titles, duration: 0:00:12.547946
+2025-03-19 15:06:55,965 - Batch inference for 8 titles, duration: 0:00:12.743750
+2025-03-19 15:06:55,965 - ThreadPoolExecutor for mistral-no_prompt-6, duration: 0:00:12.744962
+2025-03-19 15:06:55,975 - Assigned results for mistral-no_prompt-6, duration: 0:00:00.009620
+2025-03-19 15:06:55,977 - Wrote result JSON for mistral-no_prompt-6, duration: 0:00:00.001691
+2025-03-19 15:06:55,999 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:56,016 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:56,017 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:56,017 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:56,018 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:06:56,018 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:03,770 - Batch inference for 3 titles, duration: 0:00:07.791241
+2025-03-19 15:07:05,367 - Batch inference for 8 titles, duration: 0:00:09.388339
+2025-03-19 15:07:06,416 - Batch inference for 8 titles, duration: 0:00:10.438142
+2025-03-19 15:07:06,850 - Batch inference for 8 titles, duration: 0:00:10.871901
+2025-03-19 15:07:06,948 - Batch inference for 8 titles, duration: 0:00:10.970085
+2025-03-19 15:07:08,226 - Batch inference for 8 titles, duration: 0:00:12.248678
+2025-03-19 15:07:08,227 - ThreadPoolExecutor for mistral-no_prompt-7, duration: 0:00:12.249736
+2025-03-19 15:07:08,237 - Assigned results for mistral-no_prompt-7, duration: 0:00:00.009477
+2025-03-19 15:07:08,238 - Wrote result JSON for mistral-no_prompt-7, duration: 0:00:00.001514
+2025-03-19 15:07:08,261 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:08,278 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:08,278 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:08,279 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:08,279 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:08,279 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:14,452 - Batch inference for 8 titles, duration: 0:00:06.213728
+2025-03-19 15:07:17,135 - Batch inference for 3 titles, duration: 0:00:08.895341
+2025-03-19 15:07:17,488 - Batch inference for 8 titles, duration: 0:00:09.248589
+2025-03-19 15:07:18,206 - Batch inference for 8 titles, duration: 0:00:09.966609
+2025-03-19 15:07:19,623 - Batch inference for 8 titles, duration: 0:00:11.383300
+2025-03-19 15:07:20,549 - Batch inference for 8 titles, duration: 0:00:12.310344
+2025-03-19 15:07:20,550 - ThreadPoolExecutor for mistral-no_prompt-8, duration: 0:00:12.311376
+2025-03-19 15:07:20,560 - Assigned results for mistral-no_prompt-8, duration: 0:00:00.009475
+2025-03-19 15:07:20,561 - Wrote result JSON for mistral-no_prompt-8, duration: 0:00:00.001522
+2025-03-19 15:07:20,582 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:20,599 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:20,599 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:20,600 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:20,600 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:20,601 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:29,261 - Batch inference for 3 titles, duration: 0:00:08.698346
+2025-03-19 15:07:30,129 - Batch inference for 8 titles, duration: 0:00:09.567187
+2025-03-19 15:07:32,409 - Batch inference for 8 titles, duration: 0:00:11.847050
+2025-03-19 15:07:32,560 - Batch inference for 8 titles, duration: 0:00:11.997739
+2025-03-19 15:07:33,299 - Batch inference for 8 titles, duration: 0:00:12.737498
+2025-03-19 15:07:35,089 - Batch inference for 8 titles, duration: 0:00:14.527349
+2025-03-19 15:07:35,090 - ThreadPoolExecutor for mistral-no_prompt-9, duration: 0:00:14.528143
+2025-03-19 15:07:35,099 - Assigned results for mistral-no_prompt-9, duration: 0:00:00.009501
+2025-03-19 15:07:35,101 - Wrote result JSON for mistral-no_prompt-9, duration: 0:00:00.001573
+2025-03-19 15:07:35,101 - Wrote prompt prompt1, duration: 0:00:00.000197
+2025-03-19 15:07:35,515 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:35,516 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:35,516 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:35,829 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:35,861 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:35,861 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:40,477 - Batch inference for 3 titles, duration: 0:00:05.374148
+2025-03-19 15:07:45,242 - Batch inference for 8 titles, duration: 0:00:10.139772
+2025-03-19 15:07:45,299 - Batch inference for 8 titles, duration: 0:00:10.197164
+2025-03-19 15:07:45,987 - Batch inference for 8 titles, duration: 0:00:10.885055
+2025-03-19 15:07:47,103 - Batch inference for 8 titles, duration: 0:00:12.000956
+2025-03-19 15:07:47,267 - Batch inference for 8 titles, duration: 0:00:12.164451
+2025-03-19 15:07:47,267 - ThreadPoolExecutor for mistral-prompt1-0, duration: 0:00:12.165820
+2025-03-19 15:07:47,277 - Assigned results for mistral-prompt1-0, duration: 0:00:00.009428
+2025-03-19 15:07:47,279 - Wrote result JSON for mistral-prompt1-0, duration: 0:00:00.001737
+2025-03-19 15:07:47,307 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:47,308 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:47,330 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:47,331 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:47,331 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:47,331 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:51,697 - Batch inference for 3 titles, duration: 0:00:04.416976
+2025-03-19 15:07:53,085 - Batch inference for 8 titles, duration: 0:00:05.805524
+2025-03-19 15:07:56,343 - Batch inference for 8 titles, duration: 0:00:09.063970
+2025-03-19 15:07:56,502 - Batch inference for 8 titles, duration: 0:00:09.221817
+2025-03-19 15:07:57,444 - Batch inference for 8 titles, duration: 0:00:10.163938
+2025-03-19 15:07:57,524 - Batch inference for 8 titles, duration: 0:00:10.243948
+2025-03-19 15:07:57,524 - ThreadPoolExecutor for mistral-prompt1-1, duration: 0:00:10.245211
+2025-03-19 15:07:57,534 - Assigned results for mistral-prompt1-1, duration: 0:00:00.009457
+2025-03-19 15:07:57,536 - Wrote result JSON for mistral-prompt1-1, duration: 0:00:00.001451
+2025-03-19 15:07:57,561 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:57,562 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:57,584 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:57,584 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:57,585 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:07:57,586 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:02,086 - Batch inference for 3 titles, duration: 0:00:04.549117
+2025-03-19 15:08:02,377 - Batch inference for 8 titles, duration: 0:00:04.840843
+2025-03-19 15:08:03,935 - Batch inference for 8 titles, duration: 0:00:06.399530
+2025-03-19 15:08:06,262 - Batch inference for 8 titles, duration: 0:00:08.725152
+2025-03-19 15:08:07,128 - Batch inference for 8 titles, duration: 0:00:09.592190
+2025-03-19 15:08:08,201 - Batch inference for 8 titles, duration: 0:00:10.664477
+2025-03-19 15:08:08,201 - ThreadPoolExecutor for mistral-prompt1-2, duration: 0:00:10.665621
+2025-03-19 15:08:08,211 - Assigned results for mistral-prompt1-2, duration: 0:00:00.009486
+2025-03-19 15:08:08,213 - Wrote result JSON for mistral-prompt1-2, duration: 0:00:00.001910
+2025-03-19 15:08:08,236 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:08,257 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:08,258 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:08,258 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:08,258 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:08,259 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:12,218 - Batch inference for 3 titles, duration: 0:00:04.003327
+2025-03-19 15:08:13,703 - Batch inference for 8 titles, duration: 0:00:05.489694
+2025-03-19 15:08:14,262 - Batch inference for 8 titles, duration: 0:00:06.047861
+2025-03-19 15:08:16,944 - Batch inference for 8 titles, duration: 0:00:08.729690
+2025-03-19 15:08:17,837 - Batch inference for 8 titles, duration: 0:00:09.623625
+2025-03-19 15:08:18,162 - Batch inference for 8 titles, duration: 0:00:09.948326
+2025-03-19 15:08:18,162 - ThreadPoolExecutor for mistral-prompt1-3, duration: 0:00:09.949084
+2025-03-19 15:08:18,172 - Assigned results for mistral-prompt1-3, duration: 0:00:00.009514
+2025-03-19 15:08:18,174 - Wrote result JSON for mistral-prompt1-3, duration: 0:00:00.001658
+2025-03-19 15:08:18,198 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:18,218 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:18,219 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:18,219 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:18,220 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:18,220 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:23,350 - Batch inference for 3 titles, duration: 0:00:05.174391
+2025-03-19 15:08:23,984 - Batch inference for 8 titles, duration: 0:00:05.809350
+2025-03-19 15:08:25,720 - Batch inference for 8 titles, duration: 0:00:07.545063
+2025-03-19 15:08:28,571 - Batch inference for 8 titles, duration: 0:00:10.396206
+2025-03-19 15:08:29,110 - Batch inference for 8 titles, duration: 0:00:10.935208
+2025-03-19 15:08:30,034 - Batch inference for 8 titles, duration: 0:00:11.859884
+2025-03-19 15:08:30,035 - ThreadPoolExecutor for mistral-prompt1-4, duration: 0:00:11.860656
+2025-03-19 15:08:30,045 - Assigned results for mistral-prompt1-4, duration: 0:00:00.009664
+2025-03-19 15:08:30,046 - Wrote result JSON for mistral-prompt1-4, duration: 0:00:00.001696
+2025-03-19 15:08:30,070 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:30,090 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:30,091 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:30,091 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:30,092 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:30,092 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:35,001 - Batch inference for 3 titles, duration: 0:00:04.953420
+2025-03-19 15:08:35,841 - Batch inference for 8 titles, duration: 0:00:05.793884
+2025-03-19 15:08:35,899 - Batch inference for 8 titles, duration: 0:00:05.851752
+2025-03-19 15:08:39,577 - Batch inference for 8 titles, duration: 0:00:09.529999
+2025-03-19 15:08:40,484 - Batch inference for 8 titles, duration: 0:00:10.436564
+2025-03-19 15:08:42,021 - Batch inference for 8 titles, duration: 0:00:11.974335
+2025-03-19 15:08:42,022 - ThreadPoolExecutor for mistral-prompt1-5, duration: 0:00:11.975472
+2025-03-19 15:08:42,035 - Assigned results for mistral-prompt1-5, duration: 0:00:00.012777
+2025-03-19 15:08:42,037 - Wrote result JSON for mistral-prompt1-5, duration: 0:00:00.001923
+2025-03-19 15:08:42,065 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:42,065 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:42,089 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:42,089 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:42,089 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:42,090 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:46,594 - Batch inference for 3 titles, duration: 0:00:04.554662
+2025-03-19 15:08:47,909 - Batch inference for 8 titles, duration: 0:00:05.871255
+2025-03-19 15:08:50,576 - Batch inference for 8 titles, duration: 0:00:08.537240
+2025-03-19 15:08:51,792 - Batch inference for 8 titles, duration: 0:00:09.753345
+2025-03-19 15:08:52,070 - Batch inference for 8 titles, duration: 0:00:10.032074
+2025-03-19 15:08:52,378 - Batch inference for 8 titles, duration: 0:00:10.339664
+2025-03-19 15:08:52,379 - ThreadPoolExecutor for mistral-prompt1-6, duration: 0:00:10.341474
+2025-03-19 15:08:52,389 - Assigned results for mistral-prompt1-6, duration: 0:00:00.009521
+2025-03-19 15:08:52,391 - Wrote result JSON for mistral-prompt1-6, duration: 0:00:00.001831
+2025-03-19 15:08:52,417 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:52,437 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:52,438 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:52,438 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:52,439 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:52,439 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:08:57,284 - Batch inference for 8 titles, duration: 0:00:04.892889
+2025-03-19 15:08:57,784 - Batch inference for 8 titles, duration: 0:00:05.392405
+2025-03-19 15:08:58,504 - Batch inference for 3 titles, duration: 0:00:06.112047
+2025-03-19 15:09:00,109 - Batch inference for 8 titles, duration: 0:00:07.717245
+2025-03-19 15:09:01,393 - Batch inference for 8 titles, duration: 0:00:09.001419
+2025-03-19 15:09:02,016 - Batch inference for 8 titles, duration: 0:00:09.624101
+2025-03-19 15:09:02,016 - ThreadPoolExecutor for mistral-prompt1-7, duration: 0:00:09.625521
+2025-03-19 15:09:02,026 - Assigned results for mistral-prompt1-7, duration: 0:00:00.009452
+2025-03-19 15:09:02,028 - Wrote result JSON for mistral-prompt1-7, duration: 0:00:00.001874
+2025-03-19 15:09:02,052 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:02,072 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:02,073 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:02,073 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:02,074 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:02,074 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:06,838 - Batch inference for 8 titles, duration: 0:00:04.809082
+2025-03-19 15:09:07,496 - Batch inference for 3 titles, duration: 0:00:05.466256
+2025-03-19 15:09:11,338 - Batch inference for 8 titles, duration: 0:00:09.308739
+2025-03-19 15:09:11,982 - Batch inference for 8 titles, duration: 0:00:09.952918
+2025-03-19 15:09:12,433 - Batch inference for 8 titles, duration: 0:00:10.404337
+2025-03-19 15:09:13,037 - Batch inference for 8 titles, duration: 0:00:11.008584
+2025-03-19 15:09:13,038 - ThreadPoolExecutor for mistral-prompt1-8, duration: 0:00:11.009679
+2025-03-19 15:09:13,048 - Assigned results for mistral-prompt1-8, duration: 0:00:00.009448
+2025-03-19 15:09:13,049 - Wrote result JSON for mistral-prompt1-8, duration: 0:00:00.001344
+2025-03-19 15:09:13,072 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:13,093 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:13,093 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:13,094 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:13,094 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:13,095 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:17,630 - Batch inference for 3 titles, duration: 0:00:04.579717
+2025-03-19 15:09:18,821 - Batch inference for 8 titles, duration: 0:00:05.771786
+2025-03-19 15:09:19,855 - Batch inference for 8 titles, duration: 0:00:06.804688
+2025-03-19 15:09:21,822 - Batch inference for 8 titles, duration: 0:00:08.771697
+2025-03-19 15:09:22,380 - Batch inference for 8 titles, duration: 0:00:09.329877
+2025-03-19 15:09:24,353 - Batch inference for 8 titles, duration: 0:00:11.302824
+2025-03-19 15:09:24,353 - ThreadPoolExecutor for mistral-prompt1-9, duration: 0:00:11.303866
+2025-03-19 15:09:24,363 - Assigned results for mistral-prompt1-9, duration: 0:00:00.009547
+2025-03-19 15:09:24,365 - Wrote result JSON for mistral-prompt1-9, duration: 0:00:00.001637
+2025-03-19 15:09:24,365 - Processing model: deepseek-r1
+2025-03-19 15:09:24,365 - Warming up deepseek-r1
+2025-03-19 15:09:32,242 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:32,764 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:32,833 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:32,835 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:32,837 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:32,838 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:32,840 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:09:54,701 - Batch inference for 8 titles, duration: 0:00:21.995629
+2025-03-19 15:09:59,874 - Batch inference for 8 titles, duration: 0:00:27.167309
+2025-03-19 15:10:01,734 - Batch inference for 8 titles, duration: 0:00:29.027512
+2025-03-19 15:10:02,887 - Batch inference for 3 titles, duration: 0:00:30.180608
+2025-03-19 15:10:16,806 - Batch inference for 8 titles, duration: 0:00:44.100408
+2025-03-19 15:10:17,985 - Batch inference for 8 titles, duration: 0:00:45.278551
+2025-03-19 15:10:17,985 - ThreadPoolExecutor for deepseek-r1-no_prompt-0, duration: 0:00:45.279958
+2025-03-19 15:10:17,995 - Assigned results for deepseek-r1-no_prompt-0, duration: 0:00:00.009596
+2025-03-19 15:10:17,997 - Wrote result JSON for deepseek-r1-no_prompt-0, duration: 0:00:00.001791
+2025-03-19 15:10:18,062 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:18,148 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:18,150 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:18,152 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:18,154 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:18,155 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:41,939 - Batch inference for 3 titles, duration: 0:00:23.940515
+2025-03-19 15:10:44,092 - Batch inference for 8 titles, duration: 0:00:26.093783
+2025-03-19 15:10:46,985 - Batch inference for 8 titles, duration: 0:00:28.986250
+2025-03-19 15:10:49,341 - Batch inference for 8 titles, duration: 0:00:31.343115
+2025-03-19 15:10:51,864 - Batch inference for 8 titles, duration: 0:00:33.866417
+2025-03-19 15:10:51,894 - Batch inference for 8 titles, duration: 0:00:33.896392
+2025-03-19 15:10:51,895 - ThreadPoolExecutor for deepseek-r1-no_prompt-1, duration: 0:00:33.897180
+2025-03-19 15:10:51,904 - Assigned results for deepseek-r1-no_prompt-1, duration: 0:00:00.009514
+2025-03-19 15:10:51,906 - Wrote result JSON for deepseek-r1-no_prompt-1, duration: 0:00:00.001679
+2025-03-19 15:10:51,946 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:51,974 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:51,975 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:51,977 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:51,979 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:10:51,981 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:09,501 - Batch inference for 8 titles, duration: 0:00:17.593823
+2025-03-19 15:11:11,272 - Batch inference for 3 titles, duration: 0:00:19.365010
+2025-03-19 15:11:12,184 - Batch inference for 8 titles, duration: 0:00:20.276784
+2025-03-19 15:11:15,574 - Batch inference for 8 titles, duration: 0:00:23.667533
+2025-03-19 15:11:15,613 - Batch inference for 8 titles, duration: 0:00:23.705914
+2025-03-19 15:11:17,114 - Batch inference for 8 titles, duration: 0:00:25.206848
+2025-03-19 15:11:17,114 - ThreadPoolExecutor for deepseek-r1-no_prompt-2, duration: 0:00:25.208033
+2025-03-19 15:11:17,124 - Assigned results for deepseek-r1-no_prompt-2, duration: 0:00:00.009683
+2025-03-19 15:11:17,126 - Wrote result JSON for deepseek-r1-no_prompt-2, duration: 0:00:00.001712
+2025-03-19 15:11:17,165 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:17,193 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:17,195 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:17,196 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:17,198 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:17,200 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:38,119 - Batch inference for 8 titles, duration: 0:00:20.992411
+2025-03-19 15:11:38,559 - Batch inference for 8 titles, duration: 0:00:21.431988
+2025-03-19 15:11:39,515 - Batch inference for 3 titles, duration: 0:00:22.387748
+2025-03-19 15:11:41,925 - Batch inference for 8 titles, duration: 0:00:24.797716
+2025-03-19 15:11:44,348 - Batch inference for 8 titles, duration: 0:00:27.221127
+2025-03-19 15:11:56,837 - Batch inference for 8 titles, duration: 0:00:39.710433
+2025-03-19 15:11:56,838 - ThreadPoolExecutor for deepseek-r1-no_prompt-3, duration: 0:00:39.711233
+2025-03-19 15:11:56,847 - Assigned results for deepseek-r1-no_prompt-3, duration: 0:00:00.009413
+2025-03-19 15:11:56,849 - Wrote result JSON for deepseek-r1-no_prompt-3, duration: 0:00:00.001671
+2025-03-19 15:11:56,914 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:56,916 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:57,002 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:57,004 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:57,005 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:11:57,007 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:12:16,288 - Batch inference for 3 titles, duration: 0:00:19.437385
+2025-03-19 15:12:25,114 - Batch inference for 8 titles, duration: 0:00:28.263739
+2025-03-19 15:12:25,637 - Batch inference for 8 titles, duration: 0:00:28.787654
+2025-03-19 15:12:26,744 - Batch inference for 8 titles, duration: 0:00:29.894373
+2025-03-19 15:12:27,857 - Batch inference for 8 titles, duration: 0:00:31.006863
+2025-03-19 15:12:33,500 - Batch inference for 8 titles, duration: 0:00:36.650472
+2025-03-19 15:12:33,502 - ThreadPoolExecutor for deepseek-r1-no_prompt-4, duration: 0:00:36.652950
+2025-03-19 15:12:33,512 - Assigned results for deepseek-r1-no_prompt-4, duration: 0:00:00.009644
+2025-03-19 15:12:33,514 - Wrote result JSON for deepseek-r1-no_prompt-4, duration: 0:00:00.001720
+2025-03-19 15:12:33,553 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:12:33,638 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:12:33,640 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:12:33,641 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:12:33,643 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:12:33,645 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:12:56,613 - Batch inference for 8 titles, duration: 0:00:23.098900
+2025-03-19 15:12:58,431 - Batch inference for 8 titles, duration: 0:00:24.916416
+2025-03-19 15:12:58,872 - Batch inference for 8 titles, duration: 0:00:25.358103
+2025-03-19 15:12:59,339 - Batch inference for 3 titles, duration: 0:00:25.824047
+2025-03-19 15:13:02,806 - Batch inference for 8 titles, duration: 0:00:29.291016
+2025-03-19 15:13:06,771 - Batch inference for 8 titles, duration: 0:00:33.256150
+2025-03-19 15:13:06,771 - ThreadPoolExecutor for deepseek-r1-no_prompt-5, duration: 0:00:33.257324
+2025-03-19 15:13:06,781 - Assigned results for deepseek-r1-no_prompt-5, duration: 0:00:00.009439
+2025-03-19 15:13:06,783 - Wrote result JSON for deepseek-r1-no_prompt-5, duration: 0:00:00.001590
+2025-03-19 15:13:06,822 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:06,850 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:06,852 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:06,853 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:06,855 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:06,856 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:30,626 - Batch inference for 8 titles, duration: 0:00:23.842713
+2025-03-19 15:13:31,457 - Batch inference for 3 titles, duration: 0:00:24.672750
+2025-03-19 15:13:34,506 - Batch inference for 8 titles, duration: 0:00:27.722889
+2025-03-19 15:13:35,177 - Batch inference for 8 titles, duration: 0:00:28.393905
+2025-03-19 15:13:36,501 - Batch inference for 8 titles, duration: 0:00:29.717657
+2025-03-19 15:13:40,300 - Batch inference for 8 titles, duration: 0:00:33.517156
+2025-03-19 15:13:40,301 - ThreadPoolExecutor for deepseek-r1-no_prompt-6, duration: 0:00:33.518165
+2025-03-19 15:13:40,311 - Assigned results for deepseek-r1-no_prompt-6, duration: 0:00:00.009482
+2025-03-19 15:13:40,313 - Wrote result JSON for deepseek-r1-no_prompt-6, duration: 0:00:00.002387
+2025-03-19 15:13:40,356 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:40,385 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:40,386 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:40,387 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:40,389 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:13:40,391 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:04,401 - Batch inference for 8 titles, duration: 0:00:24.086902
+2025-03-19 15:14:05,195 - Batch inference for 8 titles, duration: 0:00:24.880343
+2025-03-19 15:14:08,368 - Batch inference for 8 titles, duration: 0:00:28.053889
+2025-03-19 15:14:12,290 - Batch inference for 3 titles, duration: 0:00:31.975806
+2025-03-19 15:14:12,472 - Batch inference for 8 titles, duration: 0:00:32.158082
+2025-03-19 15:14:13,969 - Batch inference for 8 titles, duration: 0:00:33.654782
+2025-03-19 15:14:13,969 - ThreadPoolExecutor for deepseek-r1-no_prompt-7, duration: 0:00:33.655795
+2025-03-19 15:14:13,979 - Assigned results for deepseek-r1-no_prompt-7, duration: 0:00:00.009707
+2025-03-19 15:14:13,982 - Wrote result JSON for deepseek-r1-no_prompt-7, duration: 0:00:00.002422
+2025-03-19 15:14:14,019 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:14,047 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:14,049 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:14,051 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:14,052 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:14,054 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:34,964 - Batch inference for 8 titles, duration: 0:00:20.981436
+2025-03-19 15:14:36,324 - Batch inference for 3 titles, duration: 0:00:22.341045
+2025-03-19 15:14:37,969 - Batch inference for 8 titles, duration: 0:00:23.986764
+2025-03-19 15:14:39,145 - Batch inference for 8 titles, duration: 0:00:25.162784
+2025-03-19 15:14:46,738 - Batch inference for 8 titles, duration: 0:00:32.755601
+2025-03-19 15:14:48,120 - Batch inference for 8 titles, duration: 0:00:34.138201
+2025-03-19 15:14:48,121 - ThreadPoolExecutor for deepseek-r1-no_prompt-8, duration: 0:00:34.139107
+2025-03-19 15:14:48,131 - Assigned results for deepseek-r1-no_prompt-8, duration: 0:00:00.009417
+2025-03-19 15:14:48,133 - Wrote result JSON for deepseek-r1-no_prompt-8, duration: 0:00:00.001822
+2025-03-19 15:14:48,174 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:48,202 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:48,204 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:48,205 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:48,207 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:14:48,208 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:06,318 - Batch inference for 3 titles, duration: 0:00:18.184263
+2025-03-19 15:15:14,064 - Batch inference for 8 titles, duration: 0:00:25.930483
+2025-03-19 15:15:14,571 - Batch inference for 8 titles, duration: 0:00:26.437157
+2025-03-19 15:15:15,612 - Batch inference for 8 titles, duration: 0:00:27.478611
+2025-03-19 15:15:19,371 - Batch inference for 8 titles, duration: 0:00:31.237235
+2025-03-19 15:15:20,171 - Batch inference for 8 titles, duration: 0:00:32.037624
+2025-03-19 15:15:20,172 - ThreadPoolExecutor for deepseek-r1-no_prompt-9, duration: 0:00:32.038655
+2025-03-19 15:15:20,181 - Assigned results for deepseek-r1-no_prompt-9, duration: 0:00:00.009435
+2025-03-19 15:15:20,184 - Wrote result JSON for deepseek-r1-no_prompt-9, duration: 0:00:00.002361
+2025-03-19 15:15:20,184 - Wrote prompt prompt1, duration: 0:00:00.000207
+2025-03-19 15:15:20,365 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:20,884 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:20,885 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:20,887 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:20,889 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:20,890 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:32,451 - Batch inference for 8 titles, duration: 0:00:12.266502
+2025-03-19 15:15:33,233 - Batch inference for 3 titles, duration: 0:00:13.047667
+2025-03-19 15:15:36,257 - Batch inference for 8 titles, duration: 0:00:16.072455
+2025-03-19 15:15:36,636 - Batch inference for 8 titles, duration: 0:00:16.450651
+2025-03-19 15:15:38,367 - Batch inference for 8 titles, duration: 0:00:18.182897
+2025-03-19 15:15:40,075 - Batch inference for 8 titles, duration: 0:00:19.889923
+2025-03-19 15:15:40,076 - ThreadPoolExecutor for deepseek-r1-prompt1-0, duration: 0:00:19.892079
+2025-03-19 15:15:40,086 - Assigned results for deepseek-r1-prompt1-0, duration: 0:00:00.009638
+2025-03-19 15:15:40,088 - Wrote result JSON for deepseek-r1-prompt1-0, duration: 0:00:00.001631
+2025-03-19 15:15:40,139 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:40,166 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:40,167 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:40,169 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:40,170 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:40,172 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:50,603 - Batch inference for 8 titles, duration: 0:00:10.514290
+2025-03-19 15:15:53,799 - Batch inference for 8 titles, duration: 0:00:13.709820
+2025-03-19 15:15:54,901 - Batch inference for 8 titles, duration: 0:00:14.812405
+2025-03-19 15:15:56,781 - Batch inference for 8 titles, duration: 0:00:16.692588
+2025-03-19 15:15:57,459 - Batch inference for 8 titles, duration: 0:00:17.370865
+2025-03-19 15:15:59,313 - Batch inference for 3 titles, duration: 0:00:19.224098
+2025-03-19 15:15:59,314 - ThreadPoolExecutor for deepseek-r1-prompt1-1, duration: 0:00:19.225708
+2025-03-19 15:15:59,323 - Assigned results for deepseek-r1-prompt1-1, duration: 0:00:00.009517
+2025-03-19 15:15:59,326 - Wrote result JSON for deepseek-r1-prompt1-1, duration: 0:00:00.002113
+2025-03-19 15:15:59,374 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:59,401 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:59,402 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:59,403 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:59,404 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:15:59,405 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:10,161 - Batch inference for 8 titles, duration: 0:00:10.834869
+2025-03-19 15:16:11,687 - Batch inference for 8 titles, duration: 0:00:12.359993
+2025-03-19 15:16:14,725 - Batch inference for 3 titles, duration: 0:00:15.398235
+2025-03-19 15:16:16,186 - Batch inference for 8 titles, duration: 0:00:16.859439
+2025-03-19 15:16:18,372 - Batch inference for 8 titles, duration: 0:00:19.045561
+2025-03-19 15:16:18,467 - Batch inference for 8 titles, duration: 0:00:19.139997
+2025-03-19 15:16:18,467 - ThreadPoolExecutor for deepseek-r1-prompt1-2, duration: 0:00:19.141490
+2025-03-19 15:16:18,477 - Assigned results for deepseek-r1-prompt1-2, duration: 0:00:00.009377
+2025-03-19 15:16:18,479 - Wrote result JSON for deepseek-r1-prompt1-2, duration: 0:00:00.001565
+2025-03-19 15:16:18,520 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:18,548 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:18,549 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:18,551 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:18,552 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:18,554 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:28,189 - Batch inference for 8 titles, duration: 0:00:09.709399
+2025-03-19 15:16:30,531 - Batch inference for 8 titles, duration: 0:00:12.051127
+2025-03-19 15:16:31,296 - Batch inference for 3 titles, duration: 0:00:12.816416
+2025-03-19 15:16:32,150 - Batch inference for 8 titles, duration: 0:00:13.670794
+2025-03-19 15:16:32,603 - Batch inference for 8 titles, duration: 0:00:14.123992
+2025-03-19 15:16:34,690 - Batch inference for 8 titles, duration: 0:00:16.210492
+2025-03-19 15:16:34,690 - ThreadPoolExecutor for deepseek-r1-prompt1-3, duration: 0:00:16.211483
+2025-03-19 15:16:34,700 - Assigned results for deepseek-r1-prompt1-3, duration: 0:00:00.009475
+2025-03-19 15:16:34,702 - Wrote result JSON for deepseek-r1-prompt1-3, duration: 0:00:00.001742
+2025-03-19 15:16:34,746 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:34,773 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:34,774 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:34,776 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:34,777 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:34,779 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:42,843 - Batch inference for 8 titles, duration: 0:00:08.140000
+2025-03-19 15:16:44,447 - Batch inference for 8 titles, duration: 0:00:09.744690
+2025-03-19 15:16:46,337 - Batch inference for 8 titles, duration: 0:00:11.635005
+2025-03-19 15:16:47,724 - Batch inference for 8 titles, duration: 0:00:13.020778
+2025-03-19 15:16:47,944 - Batch inference for 8 titles, duration: 0:00:13.241394
+2025-03-19 15:16:53,946 - Batch inference for 3 titles, duration: 0:00:19.242273
+2025-03-19 15:16:53,946 - ThreadPoolExecutor for deepseek-r1-prompt1-4, duration: 0:00:19.243982
+2025-03-19 15:16:53,956 - Assigned results for deepseek-r1-prompt1-4, duration: 0:00:00.009508
+2025-03-19 15:16:53,957 - Wrote result JSON for deepseek-r1-prompt1-4, duration: 0:00:00.001369
+2025-03-19 15:16:53,997 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:54,024 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:54,026 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:54,028 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:54,030 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:16:54,032 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:05,687 - Batch inference for 8 titles, duration: 0:00:11.728921
+2025-03-19 15:17:08,543 - Batch inference for 8 titles, duration: 0:00:14.584581
+2025-03-19 15:17:09,525 - Batch inference for 8 titles, duration: 0:00:15.566505
+2025-03-19 15:17:13,111 - Batch inference for 3 titles, duration: 0:00:19.152064
+2025-03-19 15:17:14,278 - Batch inference for 8 titles, duration: 0:00:20.319636
+2025-03-19 15:17:17,918 - Batch inference for 8 titles, duration: 0:00:23.960422
+2025-03-19 15:17:17,919 - ThreadPoolExecutor for deepseek-r1-prompt1-5, duration: 0:00:23.961283
+2025-03-19 15:17:17,928 - Assigned results for deepseek-r1-prompt1-5, duration: 0:00:00.009517
+2025-03-19 15:17:17,930 - Wrote result JSON for deepseek-r1-prompt1-5, duration: 0:00:00.001479
+2025-03-19 15:17:17,972 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:17,999 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:18,000 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:18,001 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:18,002 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:18,004 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:24,976 - Batch inference for 8 titles, duration: 0:00:07.045282
+2025-03-19 15:17:27,979 - Batch inference for 8 titles, duration: 0:00:10.048398
+2025-03-19 15:17:29,843 - Batch inference for 8 titles, duration: 0:00:11.912058
+2025-03-19 15:17:31,355 - Batch inference for 8 titles, duration: 0:00:13.424367
+2025-03-19 15:17:31,664 - Batch inference for 3 titles, duration: 0:00:13.732788
+2025-03-19 15:17:33,554 - Batch inference for 8 titles, duration: 0:00:15.622905
+2025-03-19 15:17:33,556 - ThreadPoolExecutor for deepseek-r1-prompt1-6, duration: 0:00:15.625785
+2025-03-19 15:17:33,566 - Assigned results for deepseek-r1-prompt1-6, duration: 0:00:00.009635
+2025-03-19 15:17:33,568 - Wrote result JSON for deepseek-r1-prompt1-6, duration: 0:00:00.001739
+2025-03-19 15:17:33,613 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:33,639 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:33,641 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:33,643 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:33,644 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:33,646 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:44,277 - Batch inference for 8 titles, duration: 0:00:10.707631
+2025-03-19 15:17:46,164 - Batch inference for 8 titles, duration: 0:00:12.595403
+2025-03-19 15:17:46,540 - Batch inference for 8 titles, duration: 0:00:12.971946
+2025-03-19 15:17:50,766 - Batch inference for 8 titles, duration: 0:00:17.197769
+2025-03-19 15:17:50,828 - Batch inference for 3 titles, duration: 0:00:17.258747
+2025-03-19 15:17:51,946 - Batch inference for 8 titles, duration: 0:00:18.376845
+2025-03-19 15:17:51,946 - ThreadPoolExecutor for deepseek-r1-prompt1-7, duration: 0:00:18.378290
+2025-03-19 15:17:51,956 - Assigned results for deepseek-r1-prompt1-7, duration: 0:00:00.009397
+2025-03-19 15:17:51,958 - Wrote result JSON for deepseek-r1-prompt1-7, duration: 0:00:00.001711
+2025-03-19 15:17:52,009 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:52,036 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:52,038 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:52,039 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:52,041 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:17:52,042 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:18:04,933 - Batch inference for 8 titles, duration: 0:00:12.974247
+2025-03-19 15:18:07,308 - Batch inference for 8 titles, duration: 0:00:15.349313
+2025-03-19 15:18:07,879 - Batch inference for 8 titles, duration: 0:00:15.920835
+2025-03-19 15:18:09,525 - Batch inference for 8 titles, duration: 0:00:17.565980
+2025-03-19 15:18:09,953 - Batch inference for 3 titles, duration: 0:00:17.993939
+2025-03-19 15:18:12,144 - Batch inference for 8 titles, duration: 0:00:20.185462
+2025-03-19 15:18:12,144 - ThreadPoolExecutor for deepseek-r1-prompt1-8, duration: 0:00:20.186276
+2025-03-19 15:18:12,154 - Assigned results for deepseek-r1-prompt1-8, duration: 0:00:00.009467
+2025-03-19 15:18:12,156 - Wrote result JSON for deepseek-r1-prompt1-8, duration: 0:00:00.001459
+2025-03-19 15:18:12,203 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:18:12,205 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:18:12,237 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:18:12,239 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:18:12,241 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:18:12,242 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-19 15:18:24,747 - Batch inference for 3 titles, duration: 0:00:12.590613
+2025-03-19 15:18:25,824 - Batch inference for 8 titles, duration: 0:00:13.667576
+2025-03-19 15:18:26,093 - Batch inference for 8 titles, duration: 0:00:13.936928
+2025-03-19 15:18:28,772 - Batch inference for 8 titles, duration: 0:00:16.615837
+2025-03-19 15:18:31,998 - Batch inference for 8 titles, duration: 0:00:19.841486
+2025-03-19 15:18:33,335 - Batch inference for 8 titles, duration: 0:00:21.178861
+2025-03-19 15:18:33,335 - ThreadPoolExecutor for deepseek-r1-prompt1-9, duration: 0:00:21.179733
+2025-03-19 15:18:33,345 - Assigned results for deepseek-r1-prompt1-9, duration: 0:00:00.009438
+2025-03-19 15:18:33,347 - Wrote result JSON for deepseek-r1-prompt1-9, duration: 0:00:00.001595
+2025-03-19 15:18:33,347 - Script completed
