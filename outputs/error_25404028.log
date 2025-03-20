@@ -1,0 +1,20 @@
+2025-03-20 16:45:24,111 - INFO - Script started
+2025-03-20 16:45:24,113 - INFO - Found 4 JSON files in results/task_match_2003_0105
+2025-03-20 16:45:24,113 - INFO - Processing file: llama3.2_no_prompt_results.json
+2025-03-20 16:45:24,512 - INFO - Loaded 430 rows from llama3.2_no_prompt_results.json
+2025-03-20 16:45:24,622 - ERROR - Error in apply_match_batch: name 'device' is not defined
+2025-03-20 16:45:24,622 - ERROR - Failed to process llama3.2_no_prompt_results.json: name 'device' is not defined
+2025-03-20 16:45:24,622 - INFO - Processing file: mistral_prompt1_results.json
+2025-03-20 16:45:24,658 - INFO - Loaded 430 rows from mistral_prompt1_results.json
+2025-03-20 16:45:24,705 - ERROR - Error in apply_match_batch: name 'device' is not defined
+2025-03-20 16:45:24,705 - ERROR - Failed to process mistral_prompt1_results.json: name 'device' is not defined
+2025-03-20 16:45:24,705 - INFO - Processing file: llama3.2_prompt1_results.json
+2025-03-20 16:45:24,741 - INFO - Loaded 430 rows from llama3.2_prompt1_results.json
+2025-03-20 16:45:24,788 - ERROR - Error in apply_match_batch: name 'device' is not defined
+2025-03-20 16:45:24,788 - ERROR - Failed to process llama3.2_prompt1_results.json: name 'device' is not defined
+2025-03-20 16:45:24,788 - INFO - Processing file: mistral_no_prompt_results.json
+2025-03-20 16:45:24,830 - INFO - Loaded 430 rows from mistral_no_prompt_results.json
+2025-03-20 16:45:24,877 - ERROR - Error in apply_match_batch: name 'device' is not defined
+2025-03-20 16:45:24,878 - ERROR - Failed to process mistral_no_prompt_results.json: name 'device' is not defined
+2025-03-20 16:45:24,878 - INFO - Script completed
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
