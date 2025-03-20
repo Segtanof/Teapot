@@ -1,0 +1,284 @@
+2025/03/20 01:02:34 routes.go:1187: INFO server config env="map[CUDA_VISIBLE_DEVICES:0 GPU_DEVICE_ORDINAL:0 HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:false OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:1h0m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/home/ma/ma_ma/ma_ssiu/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:8 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:0 http_proxy: https_proxy: no_proxy:]"
+time=2025-03-20T01:02:34.973+01:00 level=INFO source=images.go:432 msg="total blobs: 16"
+time=2025-03-20T01:02:34.974+01:00 level=INFO source=images.go:439 msg="total unused blobs removed: 0"
+time=2025-03-20T01:02:34.976+01:00 level=INFO source=routes.go:1238 msg="Listening on 127.0.0.1:11434 (version 0.5.7)"
+time=2025-03-20T01:02:34.979+01:00 level=INFO source=routes.go:1267 msg="Dynamic LLM libraries" runners="[cpu_avx cpu_avx2 cuda_v11_avx cuda_v12_avx rocm_avx cpu]"
+time=2025-03-20T01:02:34.979+01:00 level=INFO source=gpu.go:226 msg="looking for compatible GPUs"
+time=2025-03-20T01:02:35.652+01:00 level=INFO source=types.go:131 msg="inference compute" id=GPU-f1e5d66c-5d04-3975-b5c3-18123b385160 library=cuda variant=v12 compute=9.0 driver=12.4 name="NVIDIA H100 PCIe" total="79.1 GiB" available="78.6 GiB"
+2025-03-20 01:05:42,315 - Script started
+2025-03-20 01:05:42,317 - Processing model: llama3.2
+time=2025-03-20T01:05:42.774+01:00 level=INFO source=sched.go:714 msg="new model will fit in available VRAM in single GPU, loading" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff gpu=GPU-f1e5d66c-5d04-3975-b5c3-18123b385160 parallel=8 available=84422623232 required="5.0 GiB"
+time=2025-03-20T01:05:42.997+01:00 level=INFO source=server.go:104 msg="system memory" total="503.5 GiB" free="481.1 GiB" free_swap="14.8 GiB"
+time=2025-03-20T01:05:42.998+01:00 level=INFO source=memory.go:356 msg="offload to cuda" layers.requested=-1 layers.model=29 layers.offload=29 layers.split="" memory.available="[78.6 GiB]" memory.gpu_overhead="0 B" memory.required.full="5.0 GiB" memory.required.partial="5.0 GiB" memory.required.kv="1.8 GiB" memory.required.allocations="[5.0 GiB]" memory.weights.total="3.3 GiB" memory.weights.repeating="3.0 GiB" memory.weights.nonrepeating="308.2 MiB" memory.graph.full="824.0 MiB" memory.graph.partial="881.1 MiB"
+time=2025-03-20T01:05:43.000+01:00 level=INFO source=server.go:376 msg="starting llama server" cmd="/pfs/data5/software_uc2/bwhpc/common/cs/ollama/0.5.7/lib/ollama/runners/cuda_v12_avx/ollama_llama_server runner --model /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff --ctx-size 16384 --batch-size 512 --n-gpu-layers 29 --threads 64 --parallel 8 --port 44341"
+time=2025-03-20T01:05:43.023+01:00 level=INFO source=sched.go:449 msg="loaded runners" count=1
+time=2025-03-20T01:05:43.023+01:00 level=INFO source=server.go:555 msg="waiting for llama runner to start responding"
+time=2025-03-20T01:05:43.024+01:00 level=INFO source=server.go:589 msg="waiting for server to become available" status="llm server error"
+time=2025-03-20T01:05:45.110+01:00 level=INFO source=runner.go:936 msg="starting go runner"
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA H100 PCIe, compute capability 9.0, VMM: yes
+time=2025-03-20T01:05:45.252+01:00 level=INFO source=runner.go:937 msg=system info="CUDA : ARCHS = 600,610,620,700,720,750,800,860,870,890,900 | USE_GRAPHS = 1 | PEER_MAX_BATCH_SIZE = 128 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | LLAMAFILE = 1 | AARCH64_REPACK = 1 | cgo(gcc)" threads=64
+time=2025-03-20T01:05:45.253+01:00 level=INFO source=.:0 msg="Server listening on 127.0.0.1:44341"
+time=2025-03-20T01:05:45.279+01:00 level=INFO source=server.go:589 msg="waiting for server to become available" status="llm server loading model"
+llama_load_model_from_file: using device CUDA0 (NVIDIA H100 PCIe) - 80511 MiB free
+llama_model_loader: loaded meta data with 30 key-value pairs and 255 tensors from /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Llama 3.2 3B Instruct
+llama_model_loader: - kv   3:                           general.finetune str              = Instruct
+llama_model_loader: - kv   4:                           general.basename str              = Llama-3.2
+llama_model_loader: - kv   5:                         general.size_label str              = 3B
+llama_model_loader: - kv   6:                               general.tags arr[str,6]       = ["facebook", "meta", "pytorch", "llam...
+llama_model_loader: - kv   7:                          general.languages arr[str,8]       = ["en", "de", "fr", "it", "pt", "hi", ...
+llama_model_loader: - kv   8:                          llama.block_count u32              = 28
+llama_model_loader: - kv   9:                       llama.context_length u32              = 131072
+llama_model_loader: - kv  10:                     llama.embedding_length u32              = 3072
+llama_model_loader: - kv  11:                  llama.feed_forward_length u32              = 8192
+llama_model_loader: - kv  12:                 llama.attention.head_count u32              = 24
+llama_model_loader: - kv  13:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  14:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv  15:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  16:                 llama.attention.key_length u32              = 128
+llama_model_loader: - kv  17:               llama.attention.value_length u32              = 128
+llama_model_loader: - kv  18:                          general.file_type u32              = 15
+llama_model_loader: - kv  19:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  20:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  21:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  22:                         tokenizer.ggml.pre str              = llama-bpe
+llama_model_loader: - kv  23:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  24:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  25:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  26:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  27:                tokenizer.ggml.eos_token_id u32              = 128009
+llama_model_loader: - kv  28:                    tokenizer.chat_template str              = {{- bos_token }}\n{%- if custom_tools ...
+llama_model_loader: - kv  29:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   58 tensors
+llama_model_loader: - type q4_K:  168 tensors
+llama_model_loader: - type q6_K:   29 tensors
+llm_load_vocab: special tokens cache size = 256
+llm_load_vocab: token to piece cache size = 0.7999 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: vocab_only       = 0
+llm_load_print_meta: n_ctx_train      = 131072
+llm_load_print_meta: n_embd           = 3072
+llm_load_print_meta: n_layer          = 28
+llm_load_print_meta: n_head           = 24
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_swa            = 0
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 3
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 8192
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_ctx_orig_yarn  = 131072
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: ssm_dt_b_c_rms   = 0
+llm_load_print_meta: model type       = 3B
+llm_load_print_meta: model ftype      = Q4_K - Medium
+llm_load_print_meta: model params     = 3.21 B
+llm_load_print_meta: model size       = 1.87 GiB (5.01 BPW) 
+llm_load_print_meta: general.name     = Llama 3.2 3B Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOM token        = 128008 '<|eom_id|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOG token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128009 '<|eot_id|>'
+llm_load_print_meta: max token length = 256
+llm_load_tensors: offloading 28 repeating layers to GPU
+llm_load_tensors: offloading output layer to GPU
+llm_load_tensors: offloaded 29/29 layers to GPU
+llm_load_tensors:        CUDA0 model buffer size =  1918.35 MiB
+llm_load_tensors:   CPU_Mapped model buffer size =   308.23 MiB
+llama_new_context_with_model: n_seq_max     = 8
+llama_new_context_with_model: n_ctx         = 16384
+llama_new_context_with_model: n_ctx_per_seq = 2048
+llama_new_context_with_model: n_batch       = 4096
+llama_new_context_with_model: n_ubatch      = 512
+llama_new_context_with_model: flash_attn    = 0
+llama_new_context_with_model: freq_base     = 500000.0
+llama_new_context_with_model: freq_scale    = 1
+llama_new_context_with_model: n_ctx_per_seq (2048) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+llama_kv_cache_init: kv_size = 16384, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 28, can_shift = 1
+llama_kv_cache_init:      CUDA0 KV buffer size =  1792.00 MiB
+llama_new_context_with_model: KV self size  = 1792.00 MiB, K (f16):  896.00 MiB, V (f16):  896.00 MiB
+llama_new_context_with_model:  CUDA_Host  output buffer size =     4.01 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   824.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    38.01 MiB
+llama_new_context_with_model: graph nodes  = 902
+llama_new_context_with_model: graph splits = 2
+time=2025-03-20T01:05:48.791+01:00 level=INFO source=server.go:594 msg="llama runner started in 5.77 seconds"
+2025-03-20 01:05:51,498 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+llama3.2-no_prompt-0:   0%|          | 0/43 [00:00<?, ?it/s]2025-03-20 01:05:52,138 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,389 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,401 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,414 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,427 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,440 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,453 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,466 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:55,512 - Single inference for Training and Development Managers, duration: 0:00:03.598448
+llama3.2-no_prompt-0:   2%|▏         | 1/43 [00:03<02:33,  3.65s/it]2025-03-20 01:05:55,621 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:56,599 - Single inference for Government Property Inspectors and Investigators, duration: 0:00:04.685485
+llama3.2-no_prompt-0:   5%|▍         | 2/43 [00:04<01:27,  2.13s/it]2025-03-20 01:05:56,693 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:56,899 - Single inference for Industrial Engineers, duration: 0:00:04.966762
+llama3.2-no_prompt-0:   7%|▋         | 3/43 [00:05<00:51,  1.29s/it]2025-03-20 01:05:56,932 - Single inference for Customs Brokers, duration: 0:00:05.018186
+2025-03-20 01:05:57,021 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:57,035 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:59,689 - Single inference for Video Game Designers, duration: 0:00:07.786250
+llama3.2-no_prompt-0:  12%|█▏        | 5/43 [00:07<00:51,  1.35s/it]2025-03-20 01:05:59,784 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:00,189 - Single inference for Lodging Managers, duration: 0:00:08.275404
+llama3.2-no_prompt-0:  14%|█▍        | 6/43 [00:08<00:40,  1.11s/it]2025-03-20 01:06:00,320 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:01,330 - Single inference for Nanosystems Engineers, duration: 0:00:09.404406
+llama3.2-no_prompt-0:  16%|█▋        | 7/43 [00:09<00:40,  1.12s/it]2025-03-20 01:06:01,442 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,030 - Single inference for Animal Scientists, duration: 0:00:05.083759
+llama3.2-no_prompt-0:  19%|█▊        | 8/43 [00:10<00:34,  1.01it/s]2025-03-20 01:06:02,125 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,261 - Task issues for Spa Managers: count 21/21, uniques 12
+2025-03-20 01:06:02,261 - Single inference for Spa Managers, duration: 0:00:10.347533
+llama3.2-no_prompt-0:  21%|██        | 9/43 [00:10<00:26,  1.30it/s]2025-03-20 01:06:02,307 - Single inference for Chemical Technicians, duration: 0:00:05.384824
+2025-03-20 01:06:02,367 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,462 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,630 - Task issues for Surveying and Mapping Technicians: count 19/19, uniques 18
+2025-03-20 01:06:02,630 - Single inference for Surveying and Mapping Technicians, duration: 0:00:07.083706
+llama3.2-no_prompt-0:  26%|██▌       | 11/43 [00:10<00:16,  2.00it/s]2025-03-20 01:06:02,749 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:05,133 - Single inference for Biochemists and Biophysicists, duration: 0:00:08.519044
+llama3.2-no_prompt-0:  28%|██▊       | 12/43 [00:13<00:30,  1.01it/s]2025-03-20 01:06:05,230 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:07,228 - Single inference for Commercial and Industrial Designers, duration: 0:00:04.908128
+llama3.2-no_prompt-0:  30%|███       | 13/43 [00:15<00:38,  1.28s/it]2025-03-20 01:06:07,324 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:08,406 - Single inference for Talent Directors, duration: 0:00:06.131593
+llama3.2-no_prompt-0:  33%|███▎      | 14/43 [00:16<00:36,  1.25s/it]2025-03-20 01:06:08,501 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:08,670 - Single inference for Child, Family, and School Social Workers, duration: 0:00:08.966957
+llama3.2-no_prompt-0:  35%|███▍      | 15/43 [00:16<00:27,  1.02it/s]2025-03-20 01:06:08,765 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:09,215 - Single inference for Psychiatric Technicians, duration: 0:00:06.572126
+llama3.2-no_prompt-0:  37%|███▋      | 16/43 [00:17<00:23,  1.17it/s]2025-03-20 01:06:09,310 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:09,890 - Single inference for Business Teachers, Postsecondary, duration: 0:00:07.846708
+llama3.2-no_prompt-0:  40%|███▉      | 17/43 [00:18<00:20,  1.25it/s]2025-03-20 01:06:10,009 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:10,193 - Single inference for Library Science Teachers, Postsecondary, duration: 0:00:09.991060
+llama3.2-no_prompt-0:  42%|████▏     | 18/43 [00:18<00:16,  1.52it/s]2025-03-20 01:06:10,289 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:10,726 - Single inference for Radiologists, duration: 0:00:05.579287
+llama3.2-no_prompt-0:  44%|████▍     | 19/43 [00:18<00:14,  1.61it/s]2025-03-20 01:06:10,822 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:10,987 - Single inference for Sociology Teachers, Postsecondary, duration: 0:00:09.643539
+llama3.2-no_prompt-0:  47%|████▋     | 20/43 [00:19<00:11,  1.95it/s]2025-03-20 01:06:11,085 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:13,720 - Single inference for Preventive Medicine Physicians, duration: 0:00:06.479126
+llama3.2-no_prompt-0:  49%|████▉     | 21/43 [00:21<00:25,  1.17s/it]2025-03-20 01:06:13,816 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:14,333 - Single inference for Cooks, Short Order, duration: 0:00:04.430371
+llama3.2-no_prompt-0:  51%|█████     | 22/43 [00:22<00:21,  1.01s/it]2025-03-20 01:06:14,428 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:14,786 - Single inference for Crossing Guards and Flaggers, duration: 0:00:05.557613
+llama3.2-no_prompt-0:  53%|█████▎    | 23/43 [00:22<00:16,  1.19it/s]2025-03-20 01:06:14,839 - Single inference for Occupational Therapy Aides, duration: 0:00:06.155471
+2025-03-20 01:06:14,878 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:14,942 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:15,131 - Single inference for Ophthalmic Medical Technicians, duration: 0:00:06.711556
+llama3.2-no_prompt-0:  58%|█████▊    | 25/43 [00:23<00:09,  1.88it/s]2025-03-20 01:06:15,237 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:15,798 - Single inference for Gambling Dealers, duration: 0:00:05.591394
+llama3.2-no_prompt-0:  60%|██████    | 26/43 [00:23<00:09,  1.77it/s]2025-03-20 01:06:15,894 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:17,083 - Single inference for Insurance Claims and Policy Processing Clerks, duration: 0:00:06.082225
+llama3.2-no_prompt-0:  63%|██████▎   | 27/43 [00:25<00:12,  1.33it/s]2025-03-20 01:06:17,179 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:17,629 - Single inference for Credit Authorizers, Checkers, and Clerks, duration: 0:00:03.892882
+llama3.2-no_prompt-0:  65%|██████▌   | 28/43 [00:25<00:10,  1.43it/s]2025-03-20 01:06:17,727 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:18,137 - Single inference for Insurance Sales Agents, duration: 0:00:07.397235
+llama3.2-no_prompt-0:  67%|██████▋   | 29/43 [00:26<00:09,  1.55it/s]2025-03-20 01:06:18,233 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:19,533 - Single inference for Log Graders and Scalers, duration: 0:00:04.733266
+llama3.2-no_prompt-0:  70%|██████▉   | 30/43 [00:27<00:11,  1.16it/s]2025-03-20 01:06:19,648 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:20,056 - Single inference for Carpenters, duration: 0:00:05.204371
+llama3.2-no_prompt-0:  72%|███████▏  | 31/43 [00:28<00:09,  1.31it/s]2025-03-20 01:06:20,151 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:21,571 - Single inference for Bicycle Repairers, duration: 0:00:04.475269
+llama3.2-no_prompt-0:  74%|███████▍  | 32/43 [00:29<00:10,  1.02it/s]2025-03-20 01:06:21,588 - Single inference for Postal Service Mail Carriers, duration: 0:00:07.241521
+2025-03-20 01:06:21,680 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:21,693 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:21,964 - Single inference for Avionics Technicians, duration: 0:00:04.312849
+llama3.2-no_prompt-0:  79%|███████▉  | 34/43 [00:30<00:05,  1.60it/s]2025-03-20 01:06:22,062 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:22,734 - Single inference for Hazardous Materials Removal Workers, duration: 0:00:07.589877
+llama3.2-no_prompt-0:  81%|████████▏ | 35/43 [00:30<00:05,  1.51it/s]2025-03-20 01:06:22,847 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:24,607 - Single inference for Energy Auditors, duration: 0:00:08.787890
+llama3.2-no_prompt-0:  84%|████████▎ | 36/43 [00:32<00:06,  1.03it/s]2025-03-20 01:06:25,344 - Single inference for Molders, Shapers, and Casters, Except Metal and Plastic, duration: 0:00:07.193714
+llama3.2-no_prompt-0:  86%|████████▌ | 37/43 [00:33<00:05,  1.10it/s]2025-03-20 01:06:26,561 - Single inference for Printing Press Operators, duration: 0:00:07.005574
+llama3.2-no_prompt-0:  88%|████████▊ | 38/43 [00:34<00:04,  1.00it/s]2025-03-20 01:06:27,086 - Single inference for Power Plant Operators, duration: 0:00:07.016625
+llama3.2-no_prompt-0:  91%|█████████ | 39/43 [00:35<00:03,  1.16it/s]2025-03-20 01:06:27,179 - Single inference for Nuclear Power Reactor Operators, duration: 0:00:05.595048
+2025-03-20 01:06:27,880 - Single inference for Ship Engineers, duration: 0:00:05.902246
+llama3.2-no_prompt-0:  95%|█████████▌| 41/43 [00:35<00:01,  1.53it/s]2025-03-20 01:06:28,626 - Single inference for Air Traffic Controllers, duration: 0:00:05.878252
+llama3.2-no_prompt-0:  98%|█████████▊| 42/43 [00:36<00:00,  1.48it/s]2025-03-20 01:06:32,009 - Single inference for Metal-Refining Furnace Operators and Tenders, duration: 0:00:10.397338
+llama3.2-no_prompt-0: 100%|██████████| 43/43 [00:40<00:00,  1.37s/it]llama3.2-no_prompt-0: 100%|██████████| 43/43 [00:40<00:00,  1.07it/s]
+2025-03-20 01:06:32,027 - Multiprocessing for llama3.2-no_prompt-0, duration: 0:00:40.187498
+llama3.2-no_prompt-1:   0%|          | 0/43 [00:00<?, ?it/s]2025-03-20 01:06:32,190 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,864 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,877 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,890 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,903 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,916 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,928 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,941 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:36,726 - Single inference for Training and Development Managers, duration: 0:00:04.630560
+llama3.2-no_prompt-1:   2%|▏         | 1/43 [00:04<03:15,  4.65s/it]2025-03-20 01:06:36,820 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:37,296 - Single inference for Government Property Inspectors and Investigators, duration: 0:00:05.200748
+llama3.2-no_prompt-1:   5%|▍         | 2/43 [00:05<01:32,  2.25s/it]2025-03-20 01:06:37,392 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:38,543 - Single inference for Customs Brokers, duration: 0:00:06.447638
+llama3.2-no_prompt-1:   7%|▋         | 3/43 [00:06<01:11,  1.79s/it]2025-03-20 01:06:38,639 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:39,129 - Single inference for Industrial Engineers, duration: 0:00:07.033310
+llama3.2-no_prompt-1:   9%|▉         | 4/43 [00:07<00:51,  1.32s/it]2025-03-20 01:06:39,228 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:39,936 - Single inference for Video Game Designers, duration: 0:00:07.840440
+llama3.2-no_prompt-1:  12%|█▏        | 5/43 [00:07<00:43,  1.13s/it]2025-03-20 01:06:40,030 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:40,318 - Single inference for Spa Managers, duration: 0:00:08.223065
+llama3.2-no_prompt-1:  14%|█▍        | 6/43 [00:08<00:32,  1.14it/s]2025-03-20 01:06:40,413 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:40,976 - Single inference for Nanosystems Engineers, duration: 0:00:08.880828
+llama3.2-no_prompt-1:  16%|█▋        | 7/43 [00:08<00:28,  1.24it/s]2025-03-20 01:06:41,072 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:41,354 - Single inference for Lodging Managers, duration: 0:00:09.259009
+llama3.2-no_prompt-1:  19%|█▊        | 8/43 [00:09<00:23,  1.49it/s]2025-03-20 01:06:41,465 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:41,816 - Single inference for Animal Scientists, duration: 0:00:02.674143
+llama3.2-no_prompt-1:  21%|██        | 9/43 [00:09<00:20,  1.65it/s]2025-03-20 01:06:41,916 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:43,619 - Single inference for Surveying and Mapping Technicians, duration: 0:00:06.879164
+llama3.2-no_prompt-1:  23%|██▎       | 10/43 [00:11<00:32,  1.03it/s]2025-03-20 01:06:43,715 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:43,735 - Single inference for Chemical Technicians, duration: 0:00:05.178608
+llama3.2-no_prompt-1:  26%|██▌       | 11/43 [00:11<00:22,  1.41it/s]2025-03-20 01:06:43,859 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:44,368 - Single inference for Biochemists and Biophysicists, duration: 0:00:07.058270
+llama3.2-no_prompt-1:  28%|██▊       | 12/43 [00:12<00:21,  1.45it/s]2025-03-20 01:06:44,463 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:45,481 - Single inference for Talent Directors, duration: 0:00:03.642472
+llama3.2-no_prompt-1:  30%|███       | 13/43 [00:13<00:24,  1.22it/s]2025-03-20 01:06:45,559 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:47,246 - Single inference for Child, Family, and School Social Workers, duration: 0:00:07.295551
+llama3.2-no_prompt-1:  33%|███▎      | 14/43 [00:15<00:31,  1.10s/it]2025-03-20 01:06:47,359 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:48,478 - Single inference for Library Science Teachers, Postsecondary, duration: 0:00:08.146114
+llama3.2-no_prompt-1:  35%|███▍      | 15/43 [00:16<00:31,  1.14s/it]2025-03-20 01:06:48,573 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:48,824 - Single inference for Commercial and Industrial Designers, duration: 0:00:05.191403
+llama3.2-no_prompt-1:  37%|███▋      | 16/43 [00:16<00:24,  1.11it/s]2025-03-20 01:06:48,920 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:49,076 - Single inference for Sociology Teachers, Postsecondary, duration: 0:00:08.085957
+llama3.2-no_prompt-1:  40%|███▉      | 17/43 [00:16<00:18,  1.41it/s]2025-03-20 01:06:49,185 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:50,780 - Single inference for Preventive Medicine Physicians, duration: 0:00:05.286327
+llama3.2-no_prompt-1:  42%|████▏     | 18/43 [00:18<00:25,  1.01s/it]2025-03-20 01:06:50,876 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:51,066 - Single inference for Psychiatric Technicians, duration: 0:00:07.318100
+llama3.2-no_prompt-1:  44%|████▍     | 19/43 [00:18<00:18,  1.27it/s]2025-03-20 01:06:51,163 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:52,176 - Single inference for Radiologists, duration: 0:00:07.793985
+2025-03-20 01:06:52,176 - Single inference for Crossing Guards and Flaggers, duration: 0:00:03.339984
+llama3.2-no_prompt-1:  47%|████▋     | 20/43 [00:20<00:20,  1.13it/s]2025-03-20 01:06:52,272 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:52,285 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:53,171 - Single inference for Cooks, Short Order, duration: 0:00:04.081993
+llama3.2-no_prompt-1:  51%|█████     | 22/43 [00:21<00:14,  1.42it/s]2025-03-20 01:06:53,283 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:53,348 - Single inference for Business Teachers, Postsecondary, duration: 0:00:11.979744
+llama3.2-no_prompt-1:  53%|█████▎    | 23/43 [00:21<00:11,  1.74it/s]2025-03-20 01:06:53,441 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:55,391 - Single inference for Ophthalmic Medical Technicians, duration: 0:00:08.132030
+llama3.2-no_prompt-1:  56%|█████▌    | 24/43 [00:23<00:18,  1.04it/s]2025-03-20 01:06:55,487 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"

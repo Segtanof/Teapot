@@ -1,0 +1,148 @@
+2025-03-20 01:05:42,315 - Script started
+2025-03-20 01:05:42,317 - Processing model: llama3.2
+2025-03-20 01:05:51,498 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,138 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,389 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,401 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,414 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,427 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,440 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,453 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:52,466 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:55,512 - Single inference for Training and Development Managers, duration: 0:00:03.598448
+2025-03-20 01:05:55,621 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:56,599 - Single inference for Government Property Inspectors and Investigators, duration: 0:00:04.685485
+2025-03-20 01:05:56,693 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:56,899 - Single inference for Industrial Engineers, duration: 0:00:04.966762
+2025-03-20 01:05:56,932 - Single inference for Customs Brokers, duration: 0:00:05.018186
+2025-03-20 01:05:57,021 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:57,035 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:05:59,689 - Single inference for Video Game Designers, duration: 0:00:07.786250
+2025-03-20 01:05:59,784 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:00,189 - Single inference for Lodging Managers, duration: 0:00:08.275404
+2025-03-20 01:06:00,320 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:01,330 - Single inference for Nanosystems Engineers, duration: 0:00:09.404406
+2025-03-20 01:06:01,442 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,030 - Single inference for Animal Scientists, duration: 0:00:05.083759
+2025-03-20 01:06:02,125 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,261 - Task issues for Spa Managers: count 21/21, uniques 12
+2025-03-20 01:06:02,261 - Single inference for Spa Managers, duration: 0:00:10.347533
+2025-03-20 01:06:02,307 - Single inference for Chemical Technicians, duration: 0:00:05.384824
+2025-03-20 01:06:02,367 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,462 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:02,630 - Task issues for Surveying and Mapping Technicians: count 19/19, uniques 18
+2025-03-20 01:06:02,630 - Single inference for Surveying and Mapping Technicians, duration: 0:00:07.083706
+2025-03-20 01:06:02,749 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:05,133 - Single inference for Biochemists and Biophysicists, duration: 0:00:08.519044
+2025-03-20 01:06:05,230 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:07,228 - Single inference for Commercial and Industrial Designers, duration: 0:00:04.908128
+2025-03-20 01:06:07,324 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:08,406 - Single inference for Talent Directors, duration: 0:00:06.131593
+2025-03-20 01:06:08,501 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:08,670 - Single inference for Child, Family, and School Social Workers, duration: 0:00:08.966957
+2025-03-20 01:06:08,765 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:09,215 - Single inference for Psychiatric Technicians, duration: 0:00:06.572126
+2025-03-20 01:06:09,310 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:09,890 - Single inference for Business Teachers, Postsecondary, duration: 0:00:07.846708
+2025-03-20 01:06:10,009 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:10,193 - Single inference for Library Science Teachers, Postsecondary, duration: 0:00:09.991060
+2025-03-20 01:06:10,289 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:10,726 - Single inference for Radiologists, duration: 0:00:05.579287
+2025-03-20 01:06:10,822 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:10,987 - Single inference for Sociology Teachers, Postsecondary, duration: 0:00:09.643539
+2025-03-20 01:06:11,085 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:13,720 - Single inference for Preventive Medicine Physicians, duration: 0:00:06.479126
+2025-03-20 01:06:13,816 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:14,333 - Single inference for Cooks, Short Order, duration: 0:00:04.430371
+2025-03-20 01:06:14,428 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:14,786 - Single inference for Crossing Guards and Flaggers, duration: 0:00:05.557613
+2025-03-20 01:06:14,839 - Single inference for Occupational Therapy Aides, duration: 0:00:06.155471
+2025-03-20 01:06:14,878 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:14,942 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:15,131 - Single inference for Ophthalmic Medical Technicians, duration: 0:00:06.711556
+2025-03-20 01:06:15,237 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:15,798 - Single inference for Gambling Dealers, duration: 0:00:05.591394
+2025-03-20 01:06:15,894 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:17,083 - Single inference for Insurance Claims and Policy Processing Clerks, duration: 0:00:06.082225
+2025-03-20 01:06:17,179 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:17,629 - Single inference for Credit Authorizers, Checkers, and Clerks, duration: 0:00:03.892882
+2025-03-20 01:06:17,727 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:18,137 - Single inference for Insurance Sales Agents, duration: 0:00:07.397235
+2025-03-20 01:06:18,233 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:19,533 - Single inference for Log Graders and Scalers, duration: 0:00:04.733266
+2025-03-20 01:06:19,648 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:20,056 - Single inference for Carpenters, duration: 0:00:05.204371
+2025-03-20 01:06:20,151 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:21,571 - Single inference for Bicycle Repairers, duration: 0:00:04.475269
+2025-03-20 01:06:21,588 - Single inference for Postal Service Mail Carriers, duration: 0:00:07.241521
+2025-03-20 01:06:21,680 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:21,693 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:21,964 - Single inference for Avionics Technicians, duration: 0:00:04.312849
+2025-03-20 01:06:22,062 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:22,734 - Single inference for Hazardous Materials Removal Workers, duration: 0:00:07.589877
+2025-03-20 01:06:22,847 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:24,607 - Single inference for Energy Auditors, duration: 0:00:08.787890
+2025-03-20 01:06:25,344 - Single inference for Molders, Shapers, and Casters, Except Metal and Plastic, duration: 0:00:07.193714
+2025-03-20 01:06:26,561 - Single inference for Printing Press Operators, duration: 0:00:07.005574
+2025-03-20 01:06:27,086 - Single inference for Power Plant Operators, duration: 0:00:07.016625
+2025-03-20 01:06:27,179 - Single inference for Nuclear Power Reactor Operators, duration: 0:00:05.595048
+2025-03-20 01:06:27,880 - Single inference for Ship Engineers, duration: 0:00:05.902246
+2025-03-20 01:06:28,626 - Single inference for Air Traffic Controllers, duration: 0:00:05.878252
+2025-03-20 01:06:32,009 - Single inference for Metal-Refining Furnace Operators and Tenders, duration: 0:00:10.397338
+2025-03-20 01:06:32,027 - Multiprocessing for llama3.2-no_prompt-0, duration: 0:00:40.187498
+2025-03-20 01:06:32,190 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,864 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,877 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,890 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,903 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,916 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,928 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:32,941 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:36,726 - Single inference for Training and Development Managers, duration: 0:00:04.630560
+2025-03-20 01:06:36,820 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:37,296 - Single inference for Government Property Inspectors and Investigators, duration: 0:00:05.200748
+2025-03-20 01:06:37,392 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:38,543 - Single inference for Customs Brokers, duration: 0:00:06.447638
+2025-03-20 01:06:38,639 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:39,129 - Single inference for Industrial Engineers, duration: 0:00:07.033310
+2025-03-20 01:06:39,228 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:39,936 - Single inference for Video Game Designers, duration: 0:00:07.840440
+2025-03-20 01:06:40,030 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:40,318 - Single inference for Spa Managers, duration: 0:00:08.223065
+2025-03-20 01:06:40,413 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:40,976 - Single inference for Nanosystems Engineers, duration: 0:00:08.880828
+2025-03-20 01:06:41,072 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:41,354 - Single inference for Lodging Managers, duration: 0:00:09.259009
+2025-03-20 01:06:41,465 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:41,816 - Single inference for Animal Scientists, duration: 0:00:02.674143
+2025-03-20 01:06:41,916 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:43,619 - Single inference for Surveying and Mapping Technicians, duration: 0:00:06.879164
+2025-03-20 01:06:43,715 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:43,735 - Single inference for Chemical Technicians, duration: 0:00:05.178608
+2025-03-20 01:06:43,859 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:44,368 - Single inference for Biochemists and Biophysicists, duration: 0:00:07.058270
+2025-03-20 01:06:44,463 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:45,481 - Single inference for Talent Directors, duration: 0:00:03.642472
+2025-03-20 01:06:45,559 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:47,246 - Single inference for Child, Family, and School Social Workers, duration: 0:00:07.295551
+2025-03-20 01:06:47,359 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:48,478 - Single inference for Library Science Teachers, Postsecondary, duration: 0:00:08.146114
+2025-03-20 01:06:48,573 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:48,824 - Single inference for Commercial and Industrial Designers, duration: 0:00:05.191403
+2025-03-20 01:06:48,920 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:49,076 - Single inference for Sociology Teachers, Postsecondary, duration: 0:00:08.085957
+2025-03-20 01:06:49,185 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:50,780 - Single inference for Preventive Medicine Physicians, duration: 0:00:05.286327
+2025-03-20 01:06:50,876 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:51,066 - Single inference for Psychiatric Technicians, duration: 0:00:07.318100
+2025-03-20 01:06:51,163 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:52,176 - Single inference for Radiologists, duration: 0:00:07.793985
+2025-03-20 01:06:52,176 - Single inference for Crossing Guards and Flaggers, duration: 0:00:03.339984
+2025-03-20 01:06:52,272 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:52,285 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:53,171 - Single inference for Cooks, Short Order, duration: 0:00:04.081993
+2025-03-20 01:06:53,283 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:53,348 - Single inference for Business Teachers, Postsecondary, duration: 0:00:11.979744
+2025-03-20 01:06:53,441 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 01:06:55,391 - Single inference for Ophthalmic Medical Technicians, duration: 0:00:08.132030
+2025-03-20 01:06:55,487 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
