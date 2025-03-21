@@ -45,15 +45,17 @@ def task_gen(title, model, system=None):
     prompt_template = ChatPromptTemplate.from_messages([("system", system), ("human", "{input}")] if system else [("human", "{input}")])
     llm = model.with_structured_output(schema=json_schema, method="json_schema")
     prompt = prompt_template.invoke({"input": query, "title": title})
-    try:
-        response = llm.invoke(prompt)
-        tasks = response["tasks"]
-        if len(tasks) != ref_task_count or len(set(tasks)) < len(tasks):
-            logging.warning(f"Task issues for {title}: count {len(tasks)}/{ref_task_count}, uniques {len(set(tasks))}")
-        return tasks
-    except Exception as e:
-        logging.error(f"Failed for {title}: {e}")
-        return [f"Error: Task {i+1} for {title}" for i in range(ref_task_count)]
+    while True:
+        try:
+            response = llm.invoke(prompt)
+            tasks = response["tasks"]
+            if len(tasks) == ref_task_count and len(set(tasks)) == len(tasks):
+                break
+            else:
+                logging.warning(f"Task issues for {title}: count {len(tasks)}/{ref_task_count}, uniques {len(set(tasks))}. Retrying...")
+        except Exception as e:
+            logging.error(f"Failed for {title}: {e}. Retrying...")
+    return tasks
 
 def process_title(args):
     title, model_config, prompt = args
@@ -67,13 +69,12 @@ def process_title(args):
 model_configs = [
     # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
     # {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
-    {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434"}
+    {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384}
 ]
 prompts = {
     "no_prompt": None,
     "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
 }
-
 
 logging.info("Script started")
 for model_config in model_configs:
