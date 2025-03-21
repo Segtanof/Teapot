@@ -2,10 +2,10 @@
 #SBATCH --job-name=ollama_test
 #SBATCH --nodes=1              # Keep 1 node
 #SBATCH --ntasks=1             # Single task
-#SBATCH --cpus-per-task=12     # Increase to 12 CPUs for better I/O and orchestration
+#SBATCH --cpus-per-task=8     # Increase to 12 CPUs for better I/O and orchestration
 #SBATCH --gres=gpu:1           # Keep 1 GPU (H100 is sufficient)
-#SBATCH --mem=32G              # Increase to 32 GB RAM for model transitions
-#SBATCH --time=03:00:00        # Increase to 3 hours for 2,580 inferences
+#SBATCH --mem=16G              # Increase to 32 GB RAM for model transitions
+#SBATCH --time=01:00:00        # Increase to 3 hours for 2,580 inferences
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 

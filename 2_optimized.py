@@ -65,8 +65,8 @@ def process_title(args):
 
 
 model_configs = [
-    {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
-    {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
+    # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
+    # {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
     {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434"}
 ]
 prompts = {
