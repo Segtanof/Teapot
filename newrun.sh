@@ -19,7 +19,7 @@ source /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/etc/profile.d/conda.sh
 conda activate test
 
 # Set Ollama environment variable to keep model loaded
-export OLLAMA_KEEP_ALIVE="1h"
+export OLLAMA_KEEP_ALIVE="2h"
 export OLLAMA_NUM_PARALLEL=8    # Max parallelism
 
 # Start Ollama server in the background
