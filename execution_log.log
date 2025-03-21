@@ -1,0 +1,10 @@
+2025-03-21 18:17:53,258 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-21 18:17:53,259 - Failed for Customs Brokers: model "deepseek-r1" not found, try pulling it first (status code: 404)
+2025-03-21 18:17:53,259 - Single inference for Customs Brokers, duration: 0:00:00.032902
+2025-03-21 18:18:15,376 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-21 18:18:15,376 - Failed for Customs Brokers: model "deepseek-r1" not found, try pulling it first (status code: 404)
+2025-03-21 18:18:15,378 - Single inference for Customs Brokers, duration: 0:00:00.011896
+2025-03-21 18:18:33,465 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 18:20:12,400 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 18:26:05,697 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 18:27:16,475 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
