@@ -45,7 +45,7 @@ occupations = occupations.astype({"code": str, "title": str, "description": str}
 occupations["ind"] = occupations["code"].str[:2]
 
 # Sample 5% of occupations per industry
-sampled_occupation = occupations.groupby("ind", group_keys=False).sample(frac=0.05, random_state=1)
+sampled_occupation = occupations.groupby("ind").apply(lambda x: x.sample(frac=0.05, random_state=1)).reset_index(drop=True)
 
 # get a list of sampled occupations
 test_sample_list = list(sampled_occupation["title"])
@@ -58,32 +58,48 @@ with open("datasets/60qs.json") as f:
     df.columns = ['question', 'area', 'index']
     qlist = list(df["question"])
 
-def get_rating(title, model, system=None):
-   json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
-   query = "Rate the statement with a number 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Here is the statement: "
-   prompt_template = ChatPromptTemplate.from_messages([("system", system), ("human", "{input}")] if system else [("human", "{input}")])
-   llm = model.with_structured_output(schema=json_schema, method="json_schema")
+def get_rating(title, model, system=None, batch_size =10):
+    json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
+    query = "Rate the statement with a number 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Here is the statement: "
+    prompt_template = ChatPromptTemplate.from_messages([("system", system), ("human", "{input}")] if system else [("human", "{input}")])
+    llm = model.with_structured_output(schema=json_schema, method="json_schema")
+    
+    rating_list = []
+    reason_list = []
 
-   # pass question to the llm
-   rating_list =[]
-   reason_list = []
-   for q in qlist:
-        prompt = prompt_template.invoke({"input": query + q + ".", "title": title})
-        while True:
+    for i in range(0, len(qlist), batch_size):
+        batch_questions = qlist[i:i + batch_size]
+        prompts = [prompt_template.invoke({"input": query + q + ".", "title": title}) for q in batch_questions]
+        
+        while True:  # Retry entire batch until all ratings are valid
             try:
-                response = llm.invoke(prompt)
-                rating = response["rating"]
-                reason = response["reason"]
-                if rating in [1, 2, 3, 4, 5]:
-                    rating_list.append(rating)
-                    reason_list.append(reason)
-                    break
-                else:
-                    logging.warning(f"Rating issue. Retrying...")
+                responses = llm.batch(prompts)
+                all_valid = True
+                temp_ratings = []
+                temp_reasons = []
+                
+                for response in responses:
+                    rating = response["rating"]
+                    reason = response["reason"]
+                    if rating in [1, 2, 3, 4, 5]:
+                        temp_ratings.append(str(rating))
+                        temp_reasons.append(reason)
+                    else:
+                        all_valid = False
+                        logging.warning(f"Invalid rating {rating} for {title}. Retrying batch...")
+                        break
+                
+                if all_valid:
+                    rating_list.extend(temp_ratings)
+                    reason_list.extend(temp_reasons)
+                    break  # Move to next batch if all ratings are valid
+                # If not all valid, loop continues to retry the batch
+                
             except Exception as e:
-                logging.error(f"Failed for {title}: {e}. Retrying...")
-   rating_list = "".join(map(str, rating_list))
-   return rating_list, reason_list
+                logging.error(f"Batch failed for {title}: {e}. Retrying...")
+                # Retry the entire batch on exception
+    
+    return "".join(rating_list), reason_list
 
 def process_title(args):
     title, model_config, prompt = args
@@ -95,8 +111,8 @@ def process_title(args):
 
 
 model_configs = [
-    {"model": "llama3.2", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384},
-    # {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384},
+    {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384},
+    # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384},
     # {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384}
 ]
 prompts = {
@@ -121,9 +137,9 @@ for model_config in model_configs:
         # create a df to store the results
         all_results_df = sampled_occupation.copy()
         all_results_df["rating"] = [None] * len(all_results_df)
-        all_results_df["reason"] = [None]
+        all_results_df["reason"] = None
 
-        for i in range(10):
+        for i in range(5):
             start_time = datetime.now()
             with Pool(processes=8) as pool:
                 results = list(tqdm(
@@ -145,6 +161,3 @@ for model_config in model_configs:
         logging.info(f"Wrote results JSON for {model_name}-{name}, duration: {datetime.now() - start_time}")
 
 logging.info("Script completed")
-
-
-
