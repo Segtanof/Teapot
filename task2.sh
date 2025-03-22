@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=ollama_test
+#SBATCH --job-name=task2
 #SBATCH --nodes=1              # Keep 1 node
 #SBATCH --ntasks=1             # Single task
 #SBATCH --cpus-per-task=8     # Increase to 12 CPUs for better I/O and orchestration
