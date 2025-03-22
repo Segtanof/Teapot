@@ -58,9 +58,9 @@ with open("datasets/60qs.json") as f:
     df.columns = ['question', 'area', 'index']
     qlist = list(df["question"])
 
-def get_rating(title, model, system=None, batch_size =10):
+def get_rating(title, model, system=None, batch_size =3):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
-    query = "Rate the statement with a number 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Here is the statement: "
+    query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system), ("human", "{input}")] if system else [("human", "{input}")])
     llm = model.with_structured_output(schema=json_schema, method="json_schema")
     
@@ -69,35 +69,43 @@ def get_rating(title, model, system=None, batch_size =10):
 
     for i in range(0, len(qlist), batch_size):
         batch_questions = qlist[i:i + batch_size]
-        prompts = [prompt_template.invoke({"input": query + q + ".", "title": title}) for q in batch_questions]
+        prompts = [prompt_template.invoke({"input": query + q + "."}) for q in batch_questions]
         
-        while True:  # Retry entire batch until all ratings are valid
+        attempt = 0
+        while True:  # Keep retrying until all ratings in batch are valid
+            attempt += 1
             try:
                 responses = llm.batch(prompts)
-                all_valid = True
                 temp_ratings = []
                 temp_reasons = []
+                all_valid = True
                 
-                for response in responses:
-                    rating = response["rating"]
-                    reason = response["reason"]
-                    if rating in [1, 2, 3, 4, 5]:
-                        temp_ratings.append(str(rating))
-                        temp_reasons.append(reason)
-                    else:
+                for j, response in enumerate(responses):
+                    rating = response.get("rating")
+                    reason = response.get("reason", "No reason provided")
+                    
+                    if not isinstance(rating, int) or rating not in [1, 2, 3, 4, 5]:
+                        logging.warning(f"Attempt {attempt}: Invalid rating {rating} for {title}, question {batch_questions[j]}. Retrying batch...")
                         all_valid = False
-                        logging.warning(f"Invalid rating {rating} for {title}. Retrying batch...")
-                        break
+                        break  # Retry entire batch if any rating is invalid
+                    
+                    temp_ratings.append(str(rating))
+                    temp_reasons.append(reason)
                 
                 if all_valid:
                     rating_list.extend(temp_ratings)
                     reason_list.extend(temp_reasons)
-                    break  # Move to next batch if all ratings are valid
-                # If not all valid, loop continues to retry the batch
+                    logging.info(f"Batch starting at question {i} succeeded after {attempt} attempts")
+                    break  # Move to next batch
                 
             except Exception as e:
-                logging.error(f"Batch failed for {title}: {e}. Retrying...")
-                # Retry the entire batch on exception
+                logging.error(f"Attempt {attempt}: Batch failed for {title} starting at question {i}: {e}. Retrying...")
+            
+            # Optional: Add a delay or max attempts if needed to prevent infinite loops
+            # import time
+            # time.sleep(1)  # Small delay between retries
+            # if attempt > 10:
+            #     raise Exception(f"Failed to get valid ratings for batch starting at {i} after 10 attempts")
     
     return "".join(rating_list), reason_list
 
