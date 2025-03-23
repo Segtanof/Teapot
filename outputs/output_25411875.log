@@ -1,0 +1,17 @@
+PORT: 12309
+folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n905
+Job ID: 25411875
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:04
+CPU Efficiency: 1.02% of 00:06:32 core-walltime
+Job Wall-clock time: 00:00:49
+Memory Utilized: 137.55 MB
+Memory Efficiency: 0.42% of 32.00 GB

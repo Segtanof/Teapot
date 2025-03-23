@@ -1,0 +1,17 @@
+PORT: 12321
+content=" Hello! How can I assist you today? Do you have any specific questions or topics in mind that you would like to discuss? I'm here to help with a wide range of subjects, from technology and science to history, literature, and more. Let me know what you need help with, and I'll do my best to provide you with useful information!" additional_kwargs={} response_metadata={'model': 'mistral', 'created_at': '2025-03-23T22:41:19.684661846Z', 'done': True, 'done_reason': 'stop', 'total_duration': 6602225056, 'load_duration': 5329389462, 'prompt_eval_count': 8, 'prompt_eval_duration': 592000000, 'eval_count': 75, 'eval_duration': 679000000, 'message': Message(role='assistant', content='', images=None, tool_calls=None)} id='run-097f456c-2f36-4ce2-8753-d31c7c364416-0' usage_metadata={'input_tokens': 8, 'output_tokens': 75, 'total_tokens': 83}
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n512
+Job ID: 25411887
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:02
+CPU Efficiency: 0.58% of 00:05:44 core-walltime
+Job Wall-clock time: 00:00:43
+Memory Utilized: 2.24 GB
+Memory Efficiency: 6.99% of 32.00 GB

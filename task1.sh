@@ -1,16 +1,17 @@
 #!/bin/bash
-#SBATCH --job-name=task1
+#SBATCH --job-name=para_4_batch_6_deep
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=8     
 #SBATCH --gres=gpu:1           
 #SBATCH --mem=32G              
-#SBATCH --time=02:00:00        
+#SBATCH --time=04:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 
 # Load ollama module
 module load cs/ollama
+module load devel/cuda/12.2
 
 # Initialize Conda
 source /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/etc/profile.d/conda.sh
@@ -19,24 +20,38 @@ source /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/etc/profile.d/conda.sh
 conda activate test
 
 # Set Ollama environment variable to keep model loaded
-export OLLAMA_DEBUG=true
-export OLLAMA_KEEP_ALIVE="2h"
-export OLLAMA_NUM_PARALLEL=8    # Max parallelism
-export OLLAMA_MAX_QUEUE=128
-export OLLAMA_CTX_SIZE=16384
+export OLLAMA_DEBUG=false
+export OLLAMA_KEEP_ALIVE="4h"
+export OLLAMA_NUM_PARALLEL=4    # Max parallelism
+export OLLAMA_MAX_QUEUE=50
+export OLLAMA_CTX_SIZE=1024
 
 # Start Ollama server in the background
-ollama serve &
+PORT=$((11434 + (SLURM_JOB_ID % 1000)))
+ollama serve > outputs/ollama_${SLURM_JOB_ID}.log 2>&1 &
 OLLAMA_PID=$!
 sleep 5  # Wait for server to initialize
+# Debug
+echo "PORT: $PORT" >> outputs/output_${SLURM_JOB_ID}.log
 
 # Monitor GPU usage
-nvidia-smi 
-free -h
-NVIDIA_PID=$!
+nvidia-smi > outputs/gpu_initial_${SLURM_JOB_ID}.log
+monitor_gpu() {  # NEW: Function for continuous GPU logging
+    local output_file="outputs/gpu_usage_${SLURM_JOB_ID}.log"
+    echo "Timestamp, GPU Util (%), Memory Used (MiB), Power (W)" > "$output_file"
+    while true; do
+        timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+        nvidia-smi --query-gpu=utilization.gpu,memory.used,power.draw --format=csv,noheader,nounits | \
+        awk -v ts="$timestamp" '{print ts ", " $1 ", " $2 ", " $3}' >> "$output_file"
+        sleep 10  # NEW: 10-second interval, less noise than 5
+    done
+}
+monitor_gpu &  # NEW: Start GPU monitoring in background
+GPU_MONITOR_PID=$!  # NEW: Store PID for cleanup
 
 # Run Python script
-timeout 7200 python /pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/1_optimized.py
+python /pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/1_optimized.py --port $PORT
+
 # Clean up
-kill $NVIDIA_PID
 kill $OLLAMA_PID
+kill $GPU_MONITOR_PID  # NEW: Stop GPU monitoring

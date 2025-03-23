@@ -1,0 +1,16 @@
+MODEL_ID: , PORT: 12292
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n483
+Job ID: 25411858
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.34% of 00:04:56 core-walltime
+Job Wall-clock time: 00:00:37
+Memory Utilized: 2.54 MB
+Memory Efficiency: 0.01% of 32.00 GB

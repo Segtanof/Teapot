@@ -1,4 +1,5 @@
 import logging
+import argparse
 from datetime import datetime
 from multiprocessing import Pool
 import pandas as pd
@@ -11,9 +12,9 @@ import torch
 import os
 
 # SLURM environment setup
-os.environ["OMP_NUM_THREADS"] = "4"  # Half of 8 cores for threading within processes
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Single GPU
-folder_name = f'results/job_match_{datetime.now().strftime("%d%m_%H%M")}/'
+# os.environ["OMP_NUM_THREADS"] = "4"  # Half of 8 cores for threading within processes
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Single GPU
+folder_name = f'results/ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
 os.makedirs(folder_name, exist_ok=True)
 print("folder created")
 
@@ -40,7 +41,7 @@ occupations["ind"] = occupations["code"].str[:2]
 sampled_occupation = occupations.groupby("ind").apply(lambda x: x.sample(frac=0.05, random_state=1)).reset_index(drop=True)
 
 # get a list of sampled occupations
-dsampled_occupation = sampled_occupation[:2]
+dsampled_occupation = sampled_occupation
 test_sample_list = list(dsampled_occupation["title"])
 
 #get the questions into a list
@@ -50,11 +51,10 @@ with open("datasets/60qs.json") as f:
     df = pd.DataFrame(test)[['text', 'area', '_index']]
     df.columns = ['question', 'area', 'index']
     rqlist = list(df["question"])
-    qlist = rqlist[:30]
-
+    qlist = rqlist
   
 
-def get_rating(title, model, system_prompt=None, batch_size=10):
+def get_rating(title, model, system_prompt=None, batch_size=6):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -74,7 +74,7 @@ def get_rating(title, model, system_prompt=None, batch_size=10):
             try:
                 with torch.cuda.device(0):
                     logging.debug(f"Sending batch {i} to LLM: {prompts}")
-                    responses = llm.batch(prompts, config={"num_threads": 4})
+                    responses = llm.batch(prompts, config={"num_threads": num_processes})
                 
                 elapsed = time.time() - start_time
                 logging.info(f"Batch {i} response received after {elapsed:.2f} seconds")
@@ -108,6 +108,7 @@ def get_rating(title, model, system_prompt=None, batch_size=10):
 
     return "".join(ratings), reasons
 
+
 def process_title(args):
     """Process a single title"""
     title, model_config, prompt = args
@@ -120,19 +121,23 @@ def initializer():
     logging.basicConfig(level=logging.INFO)
 
 def main():
+    # Parse arguments from SLURM
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", type=int, default=11434)  # Dynamic port
+    args = parser.parse_args()
     # Model configurations
     model_configs = [
-        {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
-         "num_predict": 512, "num_ctx": 16384},
-        {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
-         "num_predict": 512, "num_ctx": 16384},
+        # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+        #  "num_predict": 512, "num_ctx": 1024},
+        {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+         "num_predict": 512, "num_ctx": 1024},
         # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
         #  "num_predict": 512, "num_ctx": 16384}
     ]
     
     prompts = {
         "no_prompt": None,
-        "prompt1": "You are an expert of this occupation: \"{title}\". Rate based on professional interest."
+        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
 
@@ -140,7 +145,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 8  # Match SLURM cpus-per-task
+    num_processes = 4  # Match SLURM cpus-per-task
     
     for model_config in model_configs:
         model_name = model_config["model"]
@@ -156,10 +161,12 @@ def main():
                     f.write(prompt + "\n")
             
             all_results_df = sampled_occupation.copy()
-            all_results_df["rating"] = pd.Series([None] * len(all_results_df), dtype="string")
+            all_results_df["rating"] = pd.Series([None] * len(all_results_df))
             all_results_df["reason"] = [None] * len(all_results_df)
+            all_results_df = all_results_df.astype({"rating": str})
+
             
-            for i in range(2):  # 5 rounds
+            for i in range(5):  # 10 rounds
                 start_time = datetime.now()
                 
                 args = [(title, model_config, prompt) for title in test_sample_list]
