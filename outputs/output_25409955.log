@@ -51,3 +51,18 @@ Sun Mar 23 00:46:45 2025
               total        used        free      shared  buff/cache   available
 Mem:          503Gi        35Gi       441Gi        25Mi        26Gi       461Gi
 Swap:          14Gi       7.5Gi       7.4Gi
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n906
+Job ID: 25409955
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 04:41:36 core-walltime
+Job Wall-clock time: 00:35:12
+Memory Utilized: 32.99 GB
+Memory Efficiency: 51.54% of 64.00 GB

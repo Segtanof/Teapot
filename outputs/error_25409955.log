@@ -639,3 +639,4 @@ time=2025-03-23T00:48:56.980+01:00 level=DEBUG source=cache.go:104 msg="loading 
 2025-03-23 00:50:38,130 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Sat, 22 Mar 2025 23:50:38 GMT'), (b'Transfer-Encoding', b'chunked')])
 2025-03-23 00:50:38,152 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2025-03-23 00:50:38,152 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+slurmstepd: error: *** JOB 25409955 ON uc2n906 CANCELLED AT 2025-03-23T01:21:25 ***

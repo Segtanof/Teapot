@@ -54,7 +54,7 @@ with open("datasets/60qs.json") as f:
 
   
 
-def get_rating(title, model, system_prompt=None, batch_size=3):
+def get_rating(title, model, system_prompt=None, batch_size=10):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -122,12 +122,12 @@ def initializer():
 def main():
     # Model configurations
     model_configs = [
-        # {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
-        #  "num_predict": 512, "num_ctx": 16384},
-        # {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
-        #  "num_predict": 512, "num_ctx": 16384},
-        {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
-         "num_predict": 512, "num_ctx": 16384}
+        {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
+         "num_predict": 512, "num_ctx": 16384},
+        {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
+         "num_predict": 512, "num_ctx": 16384},
+        # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
+        #  "num_predict": 512, "num_ctx": 16384}
     ]
     
     prompts = {
@@ -173,7 +173,7 @@ def main():
                 
                 temp_df = sampled_occupation.copy()
                 for title, rating, reason in results:
-                    temp_df.loc[temp_df["title"] == title, "rating"] = pd.Series([rating]).values
+                    temp_df.loc[temp_df["title"] == title, "rating"] = pd.Series([rating],dtype= "string").values
                     temp_df.loc[temp_df["title"] == title, "reason"] = pd.Series([reason]).values
                 temp_df["iteration"] = i
                 all_results_df = pd.concat([all_results_df, temp_df], ignore_index=True)
