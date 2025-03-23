@@ -534,3 +534,18 @@ folder created
 [GIN] 2025/03/23 - 01:26:30 | 200 |  6.098914686s |       127.0.0.1 | POST     "/api/chat"
 [GIN] 2025/03/23 - 01:26:31 | 200 |  6.197803419s |       127.0.0.1 | POST     "/api/chat"
 [GIN] 2025/03/23 - 01:26:31 | 200 |  6.387428068s |       127.0.0.1 | POST     "/api/chat"
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n906
+Job ID: 25410025
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:13
+CPU Efficiency: 0.62% of 00:35:12 core-walltime
+Job Wall-clock time: 00:04:24
+Memory Utilized: 5.20 GB
+Memory Efficiency: 16.26% of 32.00 GB

@@ -156,8 +156,8 @@ def main():
                     f.write(prompt + "\n")
             
             all_results_df = sampled_occupation.copy()
-            all_results_df["rating"] = [None] * len(all_results_df)
-            all_results_df["reason"] = None
+            all_results_df["rating"] = pd.Series([None] * len(all_results_df), dtype="string")
+            all_results_df["reason"] = [None] * len(all_results_df)
             
             for i in range(2):  # 5 rounds
                 start_time = datetime.now()
