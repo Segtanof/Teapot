@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=para_4_batch_6_deep
+#SBATCH --job-name=dp_p_8_b_30
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=8     
@@ -19,15 +19,17 @@ source /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/etc/profile.d/conda.sh
 # Activate the test environment
 conda activate test
 
-# Set Ollama environment variable to keep model loaded
-export OLLAMA_DEBUG=false
-export OLLAMA_KEEP_ALIVE="4h"
-export OLLAMA_NUM_PARALLEL=4    # Max parallelism
-export OLLAMA_MAX_QUEUE=50
-export OLLAMA_CTX_SIZE=1024
+
 
 # Start Ollama server in the background
 PORT=$((11434 + (SLURM_JOB_ID % 1000)))
+# Set Ollama environment variable to keep model loaded
+export OLLAMA_DEBUG=false
+export OLLAMA_KEEP_ALIVE="4h"
+export OLLAMA_NUM_PARALLEL=8    # Max parallelism
+export OLLAMA_MAX_QUEUE=50
+export OLLAMA_CTX_SIZE=1024
+export OLLAMA_HOST="127.0.0.1:$PORT"
 ollama serve > outputs/ollama_${SLURM_JOB_ID}.log 2>&1 &
 OLLAMA_PID=$!
 sleep 5  # Wait for server to initialize
