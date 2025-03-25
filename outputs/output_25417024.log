@@ -1,0 +1,18 @@
+PORT: 11458
+Starting Python script...
+folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n514
+Job ID: 25417024
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 15:42:00 core-walltime
+Job Wall-clock time: 01:57:45
+Memory Utilized: 2.34 GB
+Memory Efficiency: 7.32% of 32.00 GB
