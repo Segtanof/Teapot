@@ -1,0 +1,18 @@
+PORT: 11782
+Starting Python script...
+folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n508
+Job ID: 25417348
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: TIMEOUT (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 1-08:03:12 core-walltime
+Job Wall-clock time: 04:00:24
+Memory Utilized: 2.49 GB
+Memory Efficiency: 7.79% of 32.00 GB

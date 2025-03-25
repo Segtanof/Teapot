@@ -41,7 +41,7 @@ occupations["ind"] = occupations["code"].str[:2]
 sampled_occupation = occupations.groupby("ind").apply(lambda x: x.sample(frac=0.05, random_state=1)).reset_index(drop=True)
 
 # get a list of sampled occupations
-dsampled_occupation = sampled_occupation[:4]
+dsampled_occupation = sampled_occupation[:]
 test_sample_list = list(dsampled_occupation["title"])
 
 #get the questions into a list
@@ -54,7 +54,7 @@ with open("datasets/60qs.json") as f:
     qlist = rqlist
   
 
-def get_rating(title, model, system_prompt=None, batch_size=30):
+def get_rating(title, model, system_prompt=None, batch_size=20):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -74,7 +74,7 @@ def get_rating(title, model, system_prompt=None, batch_size=30):
             try:
                 with torch.cuda.device(0):
                     logging.debug(f"Sending batch {i} to LLM: {prompts}")
-                    responses = llm.batch(prompts, config={"num_threads": 8})
+                    responses = llm.batch(prompts, config={"num_threads": 4})
                 
                 elapsed = time.time() - start_time
                 logging.info(f"Batch {i} response received after {elapsed:.2f} seconds")
@@ -128,11 +128,13 @@ def main():
     # Model configurations
     model_configs = [
         # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-        #  "num_predict": 512, "num_ctx": 1024},
+        #  "num_predict": 512, "num_ctx": 8192},
         {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-         "num_predict": 512, "num_ctx": 1024},
+         "num_predict": 512, "num_ctx": 8192},
         # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
-        #  "num_predict": 512, "num_ctx": 16384}
+        #  "num_predict": 512, "num_ctx": 16384},
+        # {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+        #  "num_predict": 512, "num_ctx": 2048}
     ]
     
     prompts = {
@@ -145,7 +147,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 8  # Match SLURM cpus-per-task
+    num_processes = 4  # Match SLURM cpus-per-task
     
     for model_config in model_configs:
         model_name = model_config["model"]
@@ -166,7 +168,7 @@ def main():
             all_results_df = all_results_df.astype({"rating": str})
 
             
-            for i in range(10):  # 10 rounds
+            for i in range(1):  # 10 rounds
                 start_time = datetime.now()
                 
                 args = [(title, model_config, prompt) for title in test_sample_list]
