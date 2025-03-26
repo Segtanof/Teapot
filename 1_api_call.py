@@ -15,12 +15,6 @@ related = pd.read_excel('datasets/related_occupations.xlsx').astype(str)
 related.columns = related.columns.str.lower().str.replace(" ","_").str.replace("o*net-soc_", "")
 related = related[related["relatedness_tier"].isin(["Primary-Short", "Primary-Long"])]
 
-#get jobzone df
-jz = pd.read_excel('datasets/job_zone.xlsx')
-jz.columns = jz.columns.str.lower().str.replace(" ","_")
-jz = jz.drop(labels=['date', 'domain_source'], axis=1)   
-jz = jz.rename(columns={'o*net-soc_code':'code', 'job_zone':'zone'})
-
 #access the api to get the job titles
 def get_career(answer):
 
@@ -112,13 +106,13 @@ def process_rating(generated_df, num_workers=5):
     
     return result_df
 
-folder_name = "results/ajob_match_2503_1552"
+folder_name = "results/ajob_match_2503_1531"
 #access the folder, get file name ends with .json
 json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
 
 for file in json_files:
     generated_df = pd.read_json(folder_name + '/' + file).dropna()
-    generated_df = generated_df[["title", "ind", "rating"]]
+    generated_df = generated_df[["title", "ind", "rating","iteration"]]
     generated_df[["perfect_match", "related"]] = None
     result_df = process_rating(generated_df)
     result_df.to_json(folder_name+"/"+file[:-5]+"_processed.json", orient='records')
