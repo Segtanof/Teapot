@@ -54,7 +54,7 @@ with open("datasets/60qs.json") as f:
     qlist = rqlist
   
 
-def get_rating(title, model, system_prompt=None, batch_size=20):
+def get_rating(title, model, system_prompt=None, batch_size=10):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -168,7 +168,7 @@ def main():
             all_results_df = all_results_df.astype({"rating": str})
 
             
-            for i in range(1):  # 10 rounds
+            for i in range(3):  # 10 rounds
                 start_time = datetime.now()
                 
                 args = [(title, model_config, prompt) for title in test_sample_list]
