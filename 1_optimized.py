@@ -37,8 +37,11 @@ occupations = occupations.astype({"code": str, "title": str, "description": str}
 # Extract industry code
 occupations["ind"] = occupations["code"].str[:2]
 
+# discard rows with ind = 55
+occupations = occupations[occupations['ind'] != '55']
+
 # Sample 5% of occupations per industry
-sampled_occupation = occupations.groupby("ind").apply(lambda x: x.sample(frac=0.05, random_state=1)).reset_index(drop=True)
+sampled_occupation = occupations.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1)
 
 # get a list of sampled occupations
 dsampled_occupation = sampled_occupation[:]
@@ -54,7 +57,7 @@ with open("datasets/60qs.json") as f:
     qlist = rqlist
   
 
-def get_rating(title, model, system_prompt=None, batch_size=10):
+def get_rating(title, model, system_prompt=None, batch_size=20):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -134,7 +137,7 @@ def main():
         # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
         #  "num_predict": 512, "num_ctx": 16384},
         # {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-        #  "num_predict": 512, "num_ctx": 2048}
+        #  "num_predict": 512, "num_ctx": 8192}
     ]
     
     prompts = {
@@ -168,7 +171,7 @@ def main():
             all_results_df = all_results_df.astype({"rating": str})
 
             
-            for i in range(3):  # 10 rounds
+            for i in range(5):  # 10 rounds
                 start_time = datetime.now()
                 
                 args = [(title, model_config, prompt) for title in test_sample_list]

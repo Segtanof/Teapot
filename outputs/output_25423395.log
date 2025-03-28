@@ -1,0 +1,19 @@
+PORT: 11829
+Starting Python script...
+folder created
+Python exit code: 0
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n511
+Job ID: 25423395
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:06:58
+CPU Efficiency: 0.74% of 15:44:08 core-walltime
+Job Wall-clock time: 01:58:01
+Memory Utilized: 2.38 GB
+Memory Efficiency: 7.44% of 32.00 GB
