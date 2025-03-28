@@ -3315,3 +3315,52 @@ time=2025-03-28T18:29:24.175+01:00 level=DEBUG source=sched.go:357 msg="after pr
 time=2025-03-28T18:29:24.226+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Tile and Stone Setterswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
 time=2025-03-28T18:29:24.337+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=379 prompt=30 used=8 remaining=22
 2025-03-28 18:29:24,467 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:35.226+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:35.227+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:35,227 - Single inference for Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters, duration: 0:00:22.168469
+llama3.3-no_prompt-8:  70%|██████▉   | 30/43 [04:26<01:48,  8.36s/it]time=2025-03-28T18:29:35.280+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:35.280+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 27 unique task statements that the occupation Rooferswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:35.383+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=267 prompt=27 used=8 remaining=19
+2025-03-28 18:29:35,503 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:48.671+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:48.671+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:48,672 - Single inference for Public Safety Telecommunicators, duration: 0:00:36.422874
+llama3.3-no_prompt-8:  72%|███████▏  | 31/43 [04:40<01:58,  9.87s/it]time=2025-03-28T18:29:48.725+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:48.725+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Automotive Body and Related Repairerswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:48.832+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=404 prompt=31 used=8 remaining=23
+2025-03-28 18:29:48,965 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:01.926+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:01.926+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:01,926 - Single inference for Fishing and Hunting Workers, duration: 0:00:49.269256
+llama3.3-no_prompt-8:  74%|███████▍  | 32/43 [04:53<01:59, 10.88s/it]time=2025-03-28T18:30:01.966+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:01.966+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 31 unique task statements that the occupation Electric Motor, Power Tool, and Related Repairerswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:02.087+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=534 prompt=35 used=8 remaining=27
+2025-03-28 18:30:02,225 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:12.322+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:12.322+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:12,323 - Single inference for Tile and Stone Setters, duration: 0:00:48.122087
+llama3.3-no_prompt-8:  77%|███████▋  | 33/43 [05:03<01:47, 10.74s/it]time=2025-03-28T18:30:12.375+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:12.375+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Butchers and Meat Cutterswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:12.486+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=525 prompt=31 used=8 remaining=23
+2025-03-28 18:30:12,620 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:27.662+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:27.662+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:27,663 - Single inference for Automotive Body and Related Repairers, duration: 0:00:38.964477
+llama3.3-no_prompt-8:  79%|███████▉  | 34/43 [05:19<01:49, 12.11s/it]time=2025-03-28T18:30:27.715+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:27.715+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Fiberglass Laminators and Fabricatorswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:27.827+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=426 prompt=34 used=8 remaining=26
+2025-03-28 18:30:27,963 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:28.595+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:28.595+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:28,596 - Single inference for Roofers, duration: 0:00:53.342818
+llama3.3-no_prompt-8:  81%|████████▏ | 35/43 [05:20<01:10,  8.77s/it]time=2025-03-28T18:30:28.647+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:28.647+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 17 unique task statements that the occupation Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenderswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:28.758+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=571 prompt=43 used=8 remaining=35
+2025-03-28 18:30:28,910 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:30.037+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:30.037+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:30,038 - Single inference for Butchers and Meat Cutters, duration: 0:00:17.688850
+llama3.3-no_prompt-8:  84%|████████▎ | 36/43 [05:21<00:46,  6.57s/it]time=2025-03-28T18:30:30.092+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:30.092+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Power Plant Operatorswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:30.200+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=207 prompt=29 used=8 remaining=21
+2025-03-28 18:30:30,321 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"

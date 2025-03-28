@@ -2866,3 +2866,73 @@ time=2025-03-28T18:29:29.882+01:00 level=DEBUG source=sched.go:357 msg="after pr
 time=2025-03-28T18:29:29.934+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Survey Researcherswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
 time=2025-03-28T18:29:30.005+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=541 prompt=27 used=8 remaining=19
 2025-03-28 18:29:30,107 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:33.578+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:33.580+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:33,579 - Single inference for Cartographers and Photogrammetrists, duration: 0:00:22.281497
+llama3.3-no_prompt-7:  21%|██        | 9/43 [01:11<03:54,  6.88s/it]time=2025-03-28T18:29:33.631+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:33.631+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Child, Family, and School Social Workerswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:33.704+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=328 prompt=33 used=8 remaining=25
+2025-03-28 18:29:33,809 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:37.080+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:37.080+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:37,082 - Single inference for Microbiologists, duration: 0:00:23.170391
+llama3.3-no_prompt-7:  23%|██▎       | 10/43 [01:14<03:12,  5.84s/it]time=2025-03-28T18:29:37.133+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:37.134+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Forestry and Conservation Science Teachers, Postsecondarywould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:37.208+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=335 prompt=34 used=8 remaining=26
+2025-03-28 18:29:37,316 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:44.538+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:44.538+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:44,539 - Single inference for School Psychologists, duration: 0:00:28.818059
+llama3.3-no_prompt-7:  26%|██▌       | 11/43 [01:22<03:22,  6.33s/it]time=2025-03-28T18:29:44.589+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:44.590+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 33 unique task statements that the occupation English Language and Literature Teachers, Postsecondarywould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:44.667+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=411 prompt=33 used=8 remaining=25
+2025-03-28 18:29:44,768 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:46.190+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:46.190+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:46,191 - Single inference for Survey Researchers, duration: 0:00:16.283569
+llama3.3-no_prompt-7:  28%|██▊       | 12/43 [01:23<02:32,  4.91s/it]time=2025-03-28T18:29:46.241+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:46.242+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Area, Ethnic, and Cultural Studies Teachers, Postsecondarywould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:46.311+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=241 prompt=36 used=8 remaining=28
+2025-03-28 18:29:46,414 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:58.220+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:58.220+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:58,221 - Single inference for Child, Family, and School Social Workers, duration: 0:00:24.616043
+llama3.3-no_prompt-7:  30%|███       | 13/43 [01:35<03:32,  7.07s/it]time=2025-03-28T18:29:58.273+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:58.274+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Craft Artistswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:58.348+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=362 prompt=27 used=8 remaining=19
+2025-03-28 18:29:58,444 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:11.263+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:11.263+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:11,264 - Single inference for Forestry and Conservation Science Teachers, Postsecondary, duration: 0:00:34.156486
+llama3.3-no_prompt-7:  33%|███▎      | 14/43 [01:48<04:17,  8.87s/it]time=2025-03-28T18:30:11.316+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:11.317+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Actorswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:11.390+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=493 prompt=26 used=8 remaining=18
+2025-03-28 18:30:11,487 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:16.235+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:16.235+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:16,236 - Single inference for Craft Artists, duration: 0:00:17.988177
+llama3.3-no_prompt-7:  35%|███▍      | 15/43 [01:53<03:35,  7.70s/it]time=2025-03-28T18:30:16.283+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:16.283+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapistswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:16.362+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=267 prompt=42 used=8 remaining=34
+2025-03-28 18:30:16,479 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:18.623+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:18.623+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:18,624 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:32.407465
+llama3.3-no_prompt-7:  37%|███▋      | 16/43 [01:56<02:44,  6.10s/it]time=2025-03-28T18:30:18.662+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:18.662+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Exercise Physiologistswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:18.758+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=471 prompt=29 used=8 remaining=21
+2025-03-28 18:30:18,854 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:28.933+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:28.933+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:28,934 - Single inference for English Language and Literature Teachers, Postsecondary, duration: 0:00:44.370414
+llama3.3-no_prompt-7:  40%|███▉      | 17/43 [02:06<03:11,  7.37s/it]time=2025-03-28T18:30:28.987+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:28.987+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 27 unique task statements that the occupation Registered Nurseswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:29.062+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=628 prompt=27 used=8 remaining=19
+2025-03-28 18:30:29,159 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:30:35.564+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:30:35.564+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:30:35,565 - Single inference for Actors, duration: 0:00:24.274176
+llama3.3-no_prompt-7:  42%|████▏     | 18/43 [02:13<02:58,  7.14s/it]time=2025-03-28T18:30:35.617+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:30:35.617+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Patient Representativeswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:30:35.690+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=347 prompt=27 used=8 remaining=19
+2025-03-28 18:30:35,789 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
