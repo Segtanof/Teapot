@@ -1,0 +1,1298 @@
+2025-03-28 18:21:11,850 - INFO - Script started
+2025-03-28 18:21:11,852 - INFO - Found 1 JSON files in results/tm
+2025-03-28 18:21:11,852 - INFO - Processing file: deepseek-r1_no_prompt_results.json
+2025-03-28 18:21:11,956 - INFO - Loaded 430 rows from deepseek-r1_no_prompt_results.json
+2025-03-28 18:21:12,231 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:21:12,231 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:09<00:09,  9.94s/it]Batches:  50%|█████     | 1/2 [00:09<00:09,  9.93s/it]Batches: 100%|██████████| 2/2 [00:10<00:00,  4.20s/it]Batches: 100%|██████████| 2/2 [00:10<00:00,  4.20s/it]Batches: 100%|██████████| 2/2 [00:10<00:00,  5.06s/it]Batches: 100%|██████████| 2/2 [00:10<00:00,  5.06s/it]
+
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 56.76it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 56.73it/s]
+
+2025-03-28 18:21:36,828 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:21:36,829 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.81it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 122.00it/s]
+2025-03-28 18:21:38,515 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.50it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 118.73it/s]
+2025-03-28 18:21:39,307 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 106.64it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 122.60it/s]
+2025-03-28 18:21:40,206 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 105.77it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 107.62it/s]
+2025-03-28 18:21:41,369 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.69it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 115.98it/s]
+2025-03-28 18:21:41,946 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.52it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 96.19it/s]
+2025-03-28 18:21:43,043 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 90.06it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 110.03it/s]
+2025-03-28 18:21:43,560 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.07it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.91it/s]
+2025-03-28 18:21:44,820 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00,  5.55it/s]Batches: 100%|██████████| 2/2 [00:00<00:00,  5.55it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 119.66it/s]
+2025-03-28 18:21:45,471 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 68.99it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.66it/s]
+2025-03-28 18:21:46,688 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 103.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 93.23it/s]
+2025-03-28 18:21:47,208 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.11it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 117.47it/s]
+2025-03-28 18:21:48,305 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 118.89it/s]
+2025-03-28 18:21:48,963 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.19it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 125.33it/s]
+2025-03-28 18:21:50,002 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.44it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 110.40it/s]
+2025-03-28 18:21:50,548 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 117.75it/s]
+2025-03-28 18:21:51,577 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 92.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 95.53it/s]
+2025-03-28 18:21:52,204 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 96.37it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 92.56it/s]
+2025-03-28 18:21:53,446 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.93it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 106.62it/s]
+2025-03-28 18:21:53,814 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.27it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 103.28it/s]
+2025-03-28 18:21:55,073 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 96.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 114.50it/s]
+2025-03-28 18:21:55,483 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 95.66it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 105.36it/s]
+2025-03-28 18:21:56,698 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.52it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 127.79it/s]
+2025-03-28 18:21:57,098 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.51it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 115.39it/s]
+2025-03-28 18:21:58,298 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.16it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 120.13it/s]
+2025-03-28 18:21:58,730 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.98it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 109.27it/s]
+2025-03-28 18:21:59,952 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 111.36it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 126.33it/s]
+2025-03-28 18:22:00,341 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 106.71it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 125.94it/s]
+2025-03-28 18:22:01,550 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.93it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 111.08it/s]
+2025-03-28 18:22:01,929 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.18it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.52it/s]
+2025-03-28 18:22:03,141 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 112.37it/s]
+2025-03-28 18:22:03,680 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.23it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 78.98it/s]
+2025-03-28 18:22:05,057 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 66.52it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 116.40it/s]
+2025-03-28 18:22:05,884 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 91.08it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 129.14it/s]
+2025-03-28 18:22:06,835 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.24it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.23it/s]
+2025-03-28 18:22:08,052 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.14it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 120.19it/s]
+2025-03-28 18:22:08,906 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.12it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 108.36it/s]
+2025-03-28 18:22:09,841 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.14it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 121.28it/s]
+2025-03-28 18:22:10,529 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 101.94it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 128.04it/s]
+2025-03-28 18:22:11,529 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.29it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 111.42it/s]
+2025-03-28 18:22:13,664 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.73it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 81.60it/s]
+2025-03-28 18:22:14,141 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 75.68it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 108.01it/s]
+2025-03-28 18:22:15,259 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 99.88it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 110.13it/s]
+2025-03-28 18:22:15,943 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 98.08it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 113.13it/s]
+2025-03-28 18:22:16,856 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.85it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.06it/s]
+2025-03-28 18:22:17,741 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.45it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.78it/s]
+2025-03-28 18:22:18,509 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.91it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 112.10it/s]
+2025-03-28 18:22:18,688 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.52it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.55it/s]
+2025-03-28 18:22:19,280 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 107.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 127.95it/s]
+2025-03-28 18:22:19,308 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.16it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.54it/s]
+2025-03-28 18:22:19,941 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 132.69it/s]
+2025-03-28 18:22:20,004 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 70.48it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.44it/s]
+2025-03-28 18:22:20,589 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.24it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 109.54it/s]
+2025-03-28 18:22:20,662 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.52it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.10it/s]
+2025-03-28 18:22:21,262 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.86it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 123.43it/s]
+2025-03-28 18:22:21,342 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.95it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.87it/s]
+2025-03-28 18:22:21,905 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.21it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.46it/s]
+2025-03-28 18:22:21,996 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 67.44it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.64it/s]
+2025-03-28 18:22:22,585 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 96.17it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 114.77it/s]
+2025-03-28 18:22:22,661 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 73.02it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 73.28it/s]
+2025-03-28 18:22:23,236 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 120.51it/s]
+2025-03-28 18:22:23,297 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.68it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.63it/s]
+2025-03-28 18:22:23,870 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 94.37it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.16it/s]
+2025-03-28 18:22:23,934 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 66.05it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.44it/s]
+2025-03-28 18:22:24,524 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.55it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 111.12it/s]
+2025-03-28 18:22:24,594 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.85it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.29it/s]
+2025-03-28 18:22:25,173 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.94it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 112.57it/s]
+2025-03-28 18:22:25,249 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 65.62it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.06it/s]
+2025-03-28 18:22:25,813 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 90.57it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 110.69it/s]
+2025-03-28 18:22:25,907 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 66.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.50it/s]
+2025-03-28 18:22:26,445 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.26it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 119.38it/s]
+2025-03-28 18:22:26,544 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 65.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.90it/s]
+2025-03-28 18:22:27,039 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 101.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 116.23it/s]
+2025-03-28 18:22:27,172 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.56it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.20it/s]
+2025-03-28 18:22:27,682 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 101.83it/s]
+2025-03-28 18:22:27,811 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.57it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.12it/s]
+2025-03-28 18:22:28,296 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 98.61it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.71it/s]
+2025-03-28 18:22:28,474 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 81.42it/s]
+2025-03-28 18:22:28,994 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.13it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 120.71it/s]
+2025-03-28 18:22:29,110 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.81it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 72.76it/s]
+2025-03-28 18:22:29,665 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 96.02it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 122.68it/s]
+2025-03-28 18:22:29,743 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.60it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.03it/s]
+2025-03-28 18:22:30,293 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 91.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 117.17it/s]
+2025-03-28 18:22:30,390 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 68.20it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.30it/s]
+2025-03-28 18:22:30,931 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 98.42it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 113.81it/s]
+2025-03-28 18:22:31,063 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.88it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.64it/s]
+2025-03-28 18:22:31,581 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.27it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.79it/s]
+2025-03-28 18:22:31,735 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.93it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.08it/s]
+2025-03-28 18:22:32,198 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.77it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.79it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]2025-03-28 18:22:32,822 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 81.83it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.29it/s]
+2025-03-28 18:22:32,873 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.82it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.78it/s]
+2025-03-28 18:22:33,464 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.20it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.02it/s]
+2025-03-28 18:22:33,968 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.54it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.67it/s]
+2025-03-28 18:22:34,217 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.33it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.58it/s]
+2025-03-28 18:22:34,589 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.43it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.21it/s]
+2025-03-28 18:22:34,862 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 106.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 87.82it/s]
+2025-03-28 18:22:35,198 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.03it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 107.44it/s]
+2025-03-28 18:22:35,508 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.69it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 112.64it/s]
+2025-03-28 18:22:35,841 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 85.92it/s]
+2025-03-28 18:22:36,132 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 108.19it/s]
+2025-03-28 18:22:36,459 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.33it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 108.35it/s]
+2025-03-28 18:22:36,795 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 72.22it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 115.38it/s]
+2025-03-28 18:22:37,072 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.58it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.65it/s]
+2025-03-28 18:22:37,464 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 98.50it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 115.94it/s]
+2025-03-28 18:22:37,690 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.05it/s]
+2025-03-28 18:22:38,177 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 88.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 119.37it/s]
+2025-03-28 18:22:38,321 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.54it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.49it/s]
+2025-03-28 18:22:38,802 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.04it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 59.42it/s]
+2025-03-28 18:22:38,999 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 73.05it/s]
+2025-03-28 18:22:39,407 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.97it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 109.47it/s]
+2025-03-28 18:22:39,644 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.65it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.35it/s]
+2025-03-28 18:22:40,053 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 110.44it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 81.02it/s]
+2025-03-28 18:22:40,320 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.04it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 64.25it/s]
+2025-03-28 18:22:40,707 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.23it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 33.70it/s]
+2025-03-28 18:22:40,994 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 111.42it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 81.03it/s]
+2025-03-28 18:22:41,355 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.11it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 95.37it/s]
+2025-03-28 18:22:41,608 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.77it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.74it/s]
+2025-03-28 18:22:42,004 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.97it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 127.79it/s]
+2025-03-28 18:22:42,254 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.56it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 78.40it/s]
+2025-03-28 18:22:42,632 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.68it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 126.32it/s]
+2025-03-28 18:22:42,859 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.41it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 64.70it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.64it/s]
+2025-03-28 18:22:43,546 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 82.08it/s]
+2025-03-28 18:22:43,556 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.23it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 64.95it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 68.13it/s]
+2025-03-28 18:22:44,222 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 93.09it/s]
+2025-03-28 18:22:44,234 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 70.62it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 64.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 63.95it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 68.80it/s]
+2025-03-28 18:22:44,943 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:22:44,945 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 60.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 54.74it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 52.01it/s]
+
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]2025-03-28 18:22:45,603 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 115.74it/s]
+2025-03-28 18:22:45,622 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.18it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 71.33it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 66.05it/s]
+2025-03-28 18:22:46,263 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 78.45it/s]
+2025-03-28 18:22:46,271 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 75.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 68.44it/s]
+2025-03-28 18:22:46,904 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 70.24it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 122.30it/s]
+2025-03-28 18:22:46,934 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.29it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 75.49it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.57it/s]
+2025-03-28 18:22:47,564 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 81.15it/s]
+2025-03-28 18:22:47,571 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.36it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.16it/s]
+2025-03-28 18:22:48,214 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.59it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 119.08it/s]
+2025-03-28 18:22:48,290 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.48it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 85.09it/s]
+2025-03-28 18:22:48,852 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 101.74it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 116.07it/s]
+2025-03-28 18:22:48,938 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.65it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.25it/s]
+2025-03-28 18:22:49,560 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 105.98it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 117.42it/s]
+2025-03-28 18:22:49,660 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.89it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.24it/s]
+2025-03-28 18:22:50,342 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.28it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 63.26it/s]
+2025-03-28 18:22:50,604 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 40.97it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.68it/s]
+2025-03-28 18:22:51,068 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.87it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 67.19it/s]
+2025-03-28 18:22:51,257 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 111.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 115.98it/s]
+2025-03-28 18:22:51,876 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.27it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 101.60it/s]
+2025-03-28 18:22:52,241 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.39it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 105.47it/s]
+2025-03-28 18:22:52,567 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.29it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 129.12it/s]
+2025-03-28 18:22:52,880 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.50it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 118.09it/s]
+2025-03-28 18:22:53,193 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 90.30it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 113.03it/s]
+2025-03-28 18:22:53,491 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 91.55it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 107.73it/s]
+2025-03-28 18:22:53,821 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.67it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 119.08it/s]
+2025-03-28 18:22:54,125 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.45it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 130.12it/s]
+2025-03-28 18:22:54,450 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.96it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 114.88it/s]
+2025-03-28 18:22:54,762 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 112.75it/s]
+2025-03-28 18:22:55,061 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 98.24it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.27it/s]
+2025-03-28 18:22:55,404 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 72.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 81.50it/s]
+2025-03-28 18:22:55,682 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.70it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.61it/s]
+2025-03-28 18:22:56,049 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.97it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.11it/s]
+2025-03-28 18:22:56,326 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 75.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.11it/s]
+2025-03-28 18:22:56,652 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.71it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.90it/s]
+2025-03-28 18:22:56,956 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 79.02it/s]
+2025-03-28 18:22:57,283 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.97it/s]
+2025-03-28 18:22:57,562 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.08it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.58it/s]
+2025-03-28 18:22:57,918 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 81.61it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.34it/s]
+2025-03-28 18:22:58,178 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 70.33it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.08it/s]
+2025-03-28 18:22:58,549 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.63it/s]
+2025-03-28 18:22:58,815 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 105.81it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 83.26it/s]
+2025-03-28 18:22:59,155 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.70it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 109.60it/s]
+2025-03-28 18:22:59,453 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 124.07it/s]
+2025-03-28 18:22:59,761 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 92.38it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 104.46it/s]
+2025-03-28 18:23:00,080 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.48it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 120.88it/s]
+2025-03-28 18:23:00,384 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.22it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 109.60it/s]
+2025-03-28 18:23:00,701 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.83it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.09it/s]
+2025-03-28 18:23:01,036 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.74it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.67it/s]
+2025-03-28 18:23:01,384 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.52it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 90.71it/s]
+2025-03-28 18:23:01,679 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 92.32it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.96it/s]
+2025-03-28 18:23:02,019 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.59it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 111.76it/s]
+2025-03-28 18:23:02,312 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.83it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.92it/s]
+2025-03-28 18:23:02,650 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 70.46it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.93it/s]
+2025-03-28 18:23:03,038 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 65.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.37it/s]
+2025-03-28 18:23:03,264 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.31it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.07it/s]
+2025-03-28 18:23:03,706 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 68.62it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.18it/s]
+2025-03-28 18:23:03,923 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.68it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.50it/s]
+2025-03-28 18:23:04,332 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 63.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.56it/s]
+2025-03-28 18:23:04,548 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 75.56it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 73.57it/s]
+2025-03-28 18:23:04,976 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 69.65it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 114.39it/s]
+2025-03-28 18:23:05,189 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 70.35it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.96it/s]
+2025-03-28 18:23:05,598 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.68it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 92.12it/s]
+2025-03-28 18:23:05,859 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 69.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 73.81it/s]
+2025-03-28 18:23:06,238 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 99.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.17it/s]
+2025-03-28 18:23:06,474 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 102.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 46.71it/s]
+2025-03-28 18:23:06,839 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.47it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 110.74it/s]
+2025-03-28 18:23:07,124 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 70.55it/s]
+2025-03-28 18:23:07,498 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.74it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.08it/s]
+2025-03-28 18:23:08,166 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 93.19it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 119.98it/s]
+2025-03-28 18:23:08,231 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 80.85it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 83.34it/s]
+2025-03-28 18:23:08,815 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.88it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 117.74it/s]
+2025-03-28 18:23:08,908 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.06it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 90.68it/s]
+2025-03-28 18:23:09,422 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.92it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.89it/s]
+2025-03-28 18:23:09,993 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 91.93it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 113.90it/s]
+2025-03-28 18:23:10,105 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 81.94it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 83.16it/s]
+2025-03-28 18:23:10,652 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 96.73it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 121.93it/s]
+2025-03-28 18:23:10,747 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.93it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.94it/s]
+2025-03-28 18:23:11,348 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 90.61it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 118.31it/s]
+2025-03-28 18:23:11,420 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 69.13it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 78.16it/s]
+2025-03-28 18:23:11,977 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.81it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 116.98it/s]
+2025-03-28 18:23:12,069 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.32it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.07it/s]
+2025-03-28 18:23:12,600 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.22it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 106.57it/s]
+2025-03-28 18:23:12,742 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.10it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.49it/s]
+2025-03-28 18:23:13,215 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 110.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.32it/s]
+2025-03-28 18:23:13,377 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.05it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.97it/s]
+2025-03-28 18:23:13,843 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 85.28it/s]
+2025-03-28 18:23:14,010 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.69it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.67it/s]
+2025-03-28 18:23:14,463 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.68it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.05it/s]
+2025-03-28 18:23:14,675 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 72.36it/s]
+2025-03-28 18:23:15,084 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.61it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.09it/s]
+2025-03-28 18:23:15,319 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.61it/s]
+2025-03-28 18:23:15,719 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 79.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 110.69it/s]
+2025-03-28 18:23:15,936 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.87it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.67it/s]
+2025-03-28 18:23:16,362 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.64it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.21it/s]
+2025-03-28 18:23:16,584 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.63it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.57it/s]
+2025-03-28 18:23:17,006 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 90.00it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.23it/s]
+2025-03-28 18:23:17,266 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 114.44it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 55.31it/s]
+2025-03-28 18:23:17,629 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.55it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 92.94it/s]
+2025-03-28 18:23:17,917 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.11it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 61.78it/s]
+2025-03-28 18:23:18,286 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.71it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 128.45it/s]
+2025-03-28 18:23:18,553 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.55it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.00it/s]
+2025-03-28 18:23:18,972 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 54.73it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.01it/s]
+2025-03-28 18:23:19,205 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.54it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.85it/s]
+2025-03-28 18:23:19,614 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 107.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 83.63it/s]
+2025-03-28 18:23:19,853 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 103.87it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.71it/s]
+2025-03-28 18:23:20,230 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.17it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.75it/s]
+2025-03-28 18:23:20,516 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.95it/s]
+2025-03-28 18:23:20,889 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 67.59it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.46it/s]
+2025-03-28 18:23:21,164 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 84.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 52.48it/s]
+2025-03-28 18:23:21,555 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 96.77it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.72it/s]
+2025-03-28 18:23:21,920 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 96.55it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 124.16it/s]
+2025-03-28 18:23:22,198 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.97it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.60it/s]
+2025-03-28 18:23:22,597 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.16it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.80it/s]
+2025-03-28 18:23:22,861 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.67it/s]
+2025-03-28 18:23:23,200 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.28it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 107.75it/s]
+2025-03-28 18:23:23,495 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 65.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.12it/s]
+2025-03-28 18:23:23,868 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.42it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.80it/s]
+2025-03-28 18:23:24,138 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 106.26it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 139.83it/s]
+2025-03-28 18:23:24,459 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.59it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 82.18it/s]
+2025-03-28 18:23:25,014 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 91.11it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 112.71it/s]
+2025-03-28 18:23:25,124 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 66.44it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 78.76it/s]
+2025-03-28 18:23:25,626 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.68it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 84.73it/s]
+2025-03-28 18:23:25,825 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.04it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 91.88it/s]
+2025-03-28 18:23:26,253 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 80.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 82.67it/s]
+2025-03-28 18:23:26,895 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.84it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.53it/s]
+2025-03-28 18:23:27,393 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.85it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 103.60it/s]
+2025-03-28 18:23:27,629 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.66it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 126.69it/s]
+2025-03-28 18:23:27,960 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.78it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.63it/s]
+2025-03-28 18:23:28,538 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 105.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 124.32it/s]
+2025-03-28 18:23:28,582 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.61it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.11it/s]
+2025-03-28 18:23:29,286 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 92.45it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.63it/s]
+2025-03-28 18:23:29,490 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.26it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.69it/s]
+2025-03-28 18:23:29,926 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.98it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.67it/s]
+2025-03-28 18:23:30,147 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 105.35it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 109.84it/s]
+2025-03-28 18:23:30,533 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.49it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 56.17it/s]
+2025-03-28 18:23:30,903 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 116.37it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 128.86it/s]
+2025-03-28 18:23:31,140 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.93it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.66it/s]
+2025-03-28 18:23:31,755 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.92it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.79it/s]
+2025-03-28 18:23:32,042 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 101.16it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.99it/s]
+2025-03-28 18:23:32,383 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.80it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 100.79it/s]
+2025-03-28 18:23:32,670 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 114.63it/s]
+2025-03-28 18:23:33,001 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 108.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.77it/s]
+2025-03-28 18:23:33,355 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.02it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 110.54it/s]
+2025-03-28 18:23:33,657 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.38it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.81it/s]
+2025-03-28 18:23:33,989 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 68.47it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 120.72it/s]
+2025-03-28 18:23:34,294 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 80.81it/s]
+2025-03-28 18:23:34,625 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.30it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.58it/s]
+2025-03-28 18:23:34,951 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 105.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 105.46it/s]
+2025-03-28 18:23:35,213 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.44it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]2025-03-28 18:23:35,906 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 1/1 [00:00<00:00, 83.47it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 113.53it/s]
+2025-03-28 18:23:35,928 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 65.63it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 53.71it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 53.45it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]2025-03-28 18:23:36,579 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 108.53it/s]
+2025-03-28 18:23:36,598 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 69.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 55.73it/s]
+Batches: 100%|██████████| 2/2 [00:00<00:00, 49.23it/s]
+2025-03-28 18:23:37,246 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 124.02it/s]
+2025-03-28 18:23:37,268 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.70it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.78it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.76it/s]
+2025-03-28 18:23:37,924 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 94.63it/s]
+2025-03-28 18:23:37,936 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.28it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.96it/s]
+2025-03-28 18:23:38,589 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 3/3 [00:00<00:00, 78.14it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 123.60it/s]
+2025-03-28 18:23:38,623 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 82.25it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 89.12it/s]
+2025-03-28 18:23:39,248 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 106.05it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 115.33it/s]
+2025-03-28 18:23:39,293 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.50it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.41it/s]
+2025-03-28 18:23:39,897 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 1/1 [00:00<00:00, 80.99it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 127.04it/s]
+2025-03-28 18:23:39,916 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.22it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 68.24it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.73it/s]
+2025-03-28 18:23:40,591 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 1/1 [00:00<00:00, 86.00it/s]
+2025-03-28 18:23:40,599 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.06it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.92it/s]
+2025-03-28 18:23:41,273 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 78.00it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 111.74it/s]
+2025-03-28 18:23:41,303 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.23it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.84it/s]
+2025-03-28 18:23:41,916 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 104.25it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 107.51it/s]
+2025-03-28 18:23:41,970 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.96it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.75it/s]
+2025-03-28 18:23:42,567 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.73it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 114.86it/s]
+2025-03-28 18:23:42,632 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.85it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.85it/s]
+2025-03-28 18:23:43,236 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 109.76it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 114.59it/s]
+2025-03-28 18:23:43,268 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.47it/s]
+2025-03-28 18:23:43,850 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 106.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 107.65it/s]
+2025-03-28 18:23:43,900 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.47it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.37it/s]
+2025-03-28 18:23:44,535 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 109.59it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 109.58it/s]
+2025-03-28 18:23:44,913 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.62it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.50it/s]
+2025-03-28 18:23:45,225 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.47it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.63it/s]
+2025-03-28 18:23:45,593 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 79.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.69it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.78it/s]
+
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.48it/s]
+2025-03-28 18:23:46,281 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:23:46,307 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 95.11it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]2025-03-28 18:23:46,907 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 100.13it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 135.53it/s]
+2025-03-28 18:23:46,946 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.18it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.97it/s]
+2025-03-28 18:23:47,536 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 103.31it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 124.47it/s]
+2025-03-28 18:23:47,630 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.28it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.27it/s]
+2025-03-28 18:23:48,183 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 116.35it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 128.85it/s]
+2025-03-28 18:23:48,276 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.87it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.71it/s]
+2025-03-28 18:23:48,792 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.12it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 119.41it/s]
+2025-03-28 18:23:48,910 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.60it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 57.73it/s]
+2025-03-28 18:23:49,432 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 95.21it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 122.15it/s]
+2025-03-28 18:23:49,557 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.77it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.16it/s]
+2025-03-28 18:23:50,055 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 119.90it/s]
+2025-03-28 18:23:50,181 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.44it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 118.70it/s]
+2025-03-28 18:23:50,589 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 67.28it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.41it/s]
+2025-03-28 18:23:51,256 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 90.46it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 119.80it/s]
+2025-03-28 18:23:51,330 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.02it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.56it/s]
+2025-03-28 18:23:51,896 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.15it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 116.77it/s]
+2025-03-28 18:23:51,982 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.36it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.23it/s]
+2025-03-28 18:23:52,532 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.54it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 122.46it/s]
+2025-03-28 18:23:52,629 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.69it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.35it/s]
+2025-03-28 18:23:53,226 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.33it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 117.24it/s]
+2025-03-28 18:23:53,295 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.72it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 81.94it/s]
+2025-03-28 18:23:53,850 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 95.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 128.69it/s]
+2025-03-28 18:23:53,917 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 63.10it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 63.31it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 51.70it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 49.69it/s]
+2025-03-28 18:23:54,618 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:23:54,619 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 55.30it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 54.51it/s]
+
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 66.26it/s]
+Batches: 100%|██████████| 2/2 [00:00<00:00, 64.17it/s]
+2025-03-28 18:23:55,325 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:23:55,326 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 49.32it/s]
+Batches: 100%|██████████| 2/2 [00:00<00:00, 48.90it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 62.33it/s]
+Batches: 100%|██████████| 2/2 [00:00<00:00, 61.36it/s]
+2025-03-28 18:23:56,046 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:23:56,046 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 65.22it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 66.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 75.36it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 73.96it/s]
+
+2025-03-28 18:23:56,710 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-03-28 18:23:56,710 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.89it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.62it/s]
+2025-03-28 18:23:57,313 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 110.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 101.83it/s]
+2025-03-28 18:23:57,413 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 74.07it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.07it/s]
+2025-03-28 18:23:57,981 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.27it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 124.90it/s]
+2025-03-28 18:23:58,048 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.14it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.19it/s]
+2025-03-28 18:23:58,616 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 108.41it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 118.51it/s]
+2025-03-28 18:23:58,690 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.27it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.21it/s]
+2025-03-28 18:23:59,256 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 104.86it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 108.49it/s]
+2025-03-28 18:23:59,349 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.86it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.98it/s]
+2025-03-28 18:23:59,900 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 109.74it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 124.57it/s]
+2025-03-28 18:23:59,981 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.38it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.69it/s]
+2025-03-28 18:24:00,528 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.72it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.04it/s]
+2025-03-28 18:24:00,711 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.75it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.76it/s]
+2025-03-28 18:24:01,199 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 116.27it/s]
+2025-03-28 18:24:01,362 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.73it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.36it/s]
+2025-03-28 18:24:01,845 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 105.07it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.29it/s]
+2025-03-28 18:24:02,005 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.61it/s]
+2025-03-28 18:24:02,442 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 79.77it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 78.21it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]2025-03-28 18:24:03,097 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches: 100%|██████████| 2/2 [00:00<00:00, 74.96it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 107.21it/s]
+2025-03-28 18:24:03,126 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.94it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.15it/s]
+2025-03-28 18:24:03,743 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.12it/s]
+2025-03-28 18:24:04,171 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 78.26it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.45it/s]
+2025-03-28 18:24:04,425 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.04it/s]
+2025-03-28 18:24:04,779 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 49.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 114.94it/s]
+2025-03-28 18:24:05,034 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.63it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.44it/s]
+2025-03-28 18:24:05,456 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.00it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 123.86it/s]
+2025-03-28 18:24:05,675 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.72it/s]
+2025-03-28 18:24:06,070 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 69.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 114.19it/s]
+2025-03-28 18:24:06,292 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.37it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.27it/s]
+2025-03-28 18:24:06,701 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.42it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 121.12it/s]
+2025-03-28 18:24:06,925 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.15it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.30it/s]
+2025-03-28 18:24:07,323 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 102.92it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.78it/s]
+2025-03-28 18:24:07,566 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 118.20it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 125.41it/s]
+2025-03-28 18:24:07,976 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 99.80it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 124.08it/s]
+2025-03-28 18:24:08,295 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.48it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 122.04it/s]
+2025-03-28 18:24:08,601 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.15it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 121.02it/s]
+2025-03-28 18:24:08,927 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 103.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 121.55it/s]
+2025-03-28 18:24:09,227 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 69.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 103.53it/s]
+2025-03-28 18:24:09,530 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 100.13it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 45.87it/s]
+2025-03-28 18:24:09,895 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 89.62it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.78it/s]
+2025-03-28 18:24:10,157 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.74it/s]
+2025-03-28 18:24:10,525 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 87.54it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.71it/s]
+2025-03-28 18:24:10,792 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 91.11it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 117.83it/s]
+2025-03-28 18:24:11,152 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 93.65it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 124.13it/s]
+2025-03-28 18:24:11,468 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 86.78it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 108.61it/s]
+2025-03-28 18:24:11,775 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.89it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 104.55it/s]
+2025-03-28 18:24:12,102 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 86.78it/s]
+2025-03-28 18:24:12,385 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 90.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 107.76it/s]
+2025-03-28 18:24:12,711 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 103.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 101.27it/s]
+2025-03-28 18:24:12,975 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 79.96it/s]
+2025-03-28 18:24:13,446 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 67.82it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.55it/s]
+2025-03-28 18:24:13,641 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.69it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.04it/s]
+2025-03-28 18:24:14,077 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.69it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 92.98it/s]
+2025-03-28 18:24:14,292 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.06it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.27it/s]
+2025-03-28 18:24:14,719 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 82.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 86.44it/s]
+2025-03-28 18:24:14,914 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 76.87it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 85.76it/s]
+2025-03-28 18:24:15,323 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.37it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 112.41it/s]
+2025-03-28 18:24:15,555 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 75.83it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.77it/s]
+2025-03-28 18:24:15,950 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 94.04it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 112.11it/s]
+2025-03-28 18:24:16,197 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.86it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.11it/s]
+2025-03-28 18:24:16,582 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 113.16it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 80.18it/s]
+2025-03-28 18:24:16,934 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.78it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 106.48it/s]
+2025-03-28 18:24:17,235 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 98.75it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 129.79it/s]
+2025-03-28 18:24:17,569 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 92.52it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 125.78it/s]
+2025-03-28 18:24:17,891 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 76.41it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.69it/s]
+2025-03-28 18:24:18,201 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 72.65it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.03it/s]
+2025-03-28 18:24:18,574 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 113.28it/s]
+2025-03-28 18:24:18,806 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 72.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 77.87it/s]
+2025-03-28 18:24:19,180 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 78.26it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 88.67it/s]
+2025-03-28 18:24:19,457 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 69.39it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 84.90it/s]
+2025-03-28 18:24:20,131 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.92it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 119.32it/s]
+2025-03-28 18:24:20,236 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.74it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 82.08it/s]
+2025-03-28 18:24:20,903 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 99.38it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.05it/s]
+2025-03-28 18:24:21,170 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 71.29it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 77.86it/s]
+2025-03-28 18:24:21,593 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 63.87it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.92it/s]
+2025-03-28 18:24:21,830 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.32it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 81.21it/s]
+2025-03-28 18:24:22,210 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 104.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 90.42it/s]
+2025-03-28 18:24:22,450 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 68.63it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 83.52it/s]
+2025-03-28 18:24:22,818 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 120.54it/s]
+2025-03-28 18:24:23,054 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 65.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 84.37it/s]
+2025-03-28 18:24:23,439 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 97.08it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 96.83it/s]
+2025-03-28 18:24:23,685 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.71it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 85.49it/s]
+2025-03-28 18:24:24,071 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.24it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 104.61it/s]
+2025-03-28 18:24:24,326 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 73.18it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 79.27it/s]
+2025-03-28 18:24:24,733 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 58.58it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 129.23it/s]
+2025-03-28 18:24:24,949 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 55.63it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 82.41it/s]
+2025-03-28 18:24:25,337 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.72it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 117.02it/s]
+2025-03-28 18:24:25,558 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 69.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 78.80it/s]
+2025-03-28 18:24:25,944 - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 96.37it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 83.48it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 110.28it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 117.44it/s]
+2025-03-28 18:24:26,750 - INFO - Computed similarities for deepseek-r1_no_prompt_results.json
+2025-03-28 18:24:26,808 - INFO - Saved results to results/tm/simdeepseek-r1_no_prompt_results.json
+2025-03-28 18:24:26,808 - INFO - Script completed
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]

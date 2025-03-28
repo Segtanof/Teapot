@@ -27,7 +27,7 @@ job_statements = job_statements.drop(labels=["incumbents responding","date","dom
 job_statements = job_statements[job_statements["type"].notna()]
 job_statements["ind"] = job_statements["code"].str[:2]
 job_statements = job_statements.groupby("title").agg({"ref_task":list, "ind": "first"}).reset_index().sort_values("ind")
-sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1) #43 samples
+sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac=0.05, random_state=3) #43 samples
 
 #for trial
 trial_df = sampled_occupation#.sample(3, random_state= 1)
@@ -68,8 +68,8 @@ def process_title(args):
 
 model_configs = [
     # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
-    # {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
-    {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384}
+    {"model": "mistral", "temperature": 1, "base_url": "http://127.0.0.1:11434"},
+    # {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384}
 ]
 prompts = {
     "no_prompt": None,

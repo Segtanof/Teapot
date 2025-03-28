@@ -1,0 +1,164 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/pull                 --> github.com/ollama/ollama/server.(*Server).PullHandler-fm (5 handlers)
+[GIN-debug] POST   /api/generate             --> github.com/ollama/ollama/server.(*Server).GenerateHandler-fm (5 handlers)
+[GIN-debug] POST   /api/chat                 --> github.com/ollama/ollama/server.(*Server).ChatHandler-fm (5 handlers)
+[GIN-debug] POST   /api/embed                --> github.com/ollama/ollama/server.(*Server).EmbedHandler-fm (5 handlers)
+[GIN-debug] POST   /api/embeddings           --> github.com/ollama/ollama/server.(*Server).EmbeddingsHandler-fm (5 handlers)
+[GIN-debug] POST   /api/create               --> github.com/ollama/ollama/server.(*Server).CreateHandler-fm (5 handlers)
+[GIN-debug] POST   /api/push                 --> github.com/ollama/ollama/server.(*Server).PushHandler-fm (5 handlers)
+[GIN-debug] POST   /api/copy                 --> github.com/ollama/ollama/server.(*Server).CopyHandler-fm (5 handlers)
+[GIN-debug] DELETE /api/delete               --> github.com/ollama/ollama/server.(*Server).DeleteHandler-fm (5 handlers)
+[GIN-debug] POST   /api/show                 --> github.com/ollama/ollama/server.(*Server).ShowHandler-fm (5 handlers)
+[GIN-debug] POST   /api/blobs/:digest        --> github.com/ollama/ollama/server.(*Server).CreateBlobHandler-fm (5 handlers)
+[GIN-debug] HEAD   /api/blobs/:digest        --> github.com/ollama/ollama/server.(*Server).HeadBlobHandler-fm (5 handlers)
+[GIN-debug] GET    /api/ps                   --> github.com/ollama/ollama/server.(*Server).PsHandler-fm (5 handlers)
+[GIN-debug] POST   /v1/chat/completions      --> github.com/ollama/ollama/server.(*Server).ChatHandler-fm (6 handlers)
+[GIN-debug] POST   /v1/completions           --> github.com/ollama/ollama/server.(*Server).GenerateHandler-fm (6 handlers)
+[GIN-debug] POST   /v1/embeddings            --> github.com/ollama/ollama/server.(*Server).EmbedHandler-fm (6 handlers)
+[GIN-debug] GET    /v1/models                --> github.com/ollama/ollama/server.(*Server).ListHandler-fm (6 handlers)
+[GIN-debug] GET    /v1/models/:model         --> github.com/ollama/ollama/server.(*Server).ShowHandler-fm (6 handlers)
+[GIN-debug] GET    /                         --> github.com/ollama/ollama/server.(*Server).GenerateRoutes.func1 (5 handlers)
+[GIN-debug] GET    /api/tags                 --> github.com/ollama/ollama/server.(*Server).ListHandler-fm (5 handlers)
+[GIN-debug] GET    /api/version              --> github.com/ollama/ollama/server.(*Server).GenerateRoutes.func2 (5 handlers)
+[GIN-debug] HEAD   /                         --> github.com/ollama/ollama/server.(*Server).GenerateRoutes.func1 (5 handlers)
+[GIN-debug] HEAD   /api/tags                 --> github.com/ollama/ollama/server.(*Server).ListHandler-fm (5 handlers)
+[GIN-debug] HEAD   /api/version              --> github.com/ollama/ollama/server.(*Server).GenerateRoutes.func2 (5 handlers)
+Fri Mar 28 15:19:52 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-SXM2-32GB           On  |   00000000:15:00.0 Off |                    0 |
+| N/A   39C    P0             42W /  300W |      21MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A      2106      G   /usr/libexec/Xorg                              17MiB |
++-----------------------------------------------------------------------------------------+
+              total        used        free      shared  buff/cache   available
+Mem:          755Gi        62Gi       604Gi       295Mi        88Gi       685Gi
+Swap:          14Gi       1.1Gi        13Gi
+[GIN] 2025/03/28 - 15:20:15 | 200 |  8.626289976s |       127.0.0.1 | POST     "/api/chat"
+folder created
+[GIN] 2025/03/28 - 15:20:24 | 200 |  8.241013927s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:25 | 200 |  8.849883986s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:26 | 200 |  9.930398987s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:28 | 200 | 11.895402948s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:28 | 200 | 12.486112539s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:30 | 200 | 13.837288651s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:31 | 200 | 15.722465929s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:32 | 200 |  8.378832686s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:37 | 200 | 21.476655575s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:37 | 200 | 12.593731357s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:39 | 200 | 13.773617524s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:40 | 200 | 12.573389181s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:45 | 200 | 16.914591508s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:48 | 200 | 11.074837256s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:49 | 200 | 16.721206325s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:50 | 200 | 12.509436256s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:54 | 200 | 24.763392491s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:57 | 200 |  8.645278822s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:20:58 | 200 | 18.423451299s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:00 | 200 | 10.724453799s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:01 | 200 |  4.251988844s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:03 | 200 |  22.82206968s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:04 | 200 | 32.453559174s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:06 | 200 | 21.076488131s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:08 | 200 | 13.553399959s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:09 | 200 | 18.767336331s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:10 | 200 | 10.338674019s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:16 | 200 | 14.606011716s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:16 | 200 |  18.43257827s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:18 | 200 | 11.761438429s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:20 | 200 |  17.18059835s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:24 | 200 | 20.092692603s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:25 | 200 |  8.306500639s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:29 | 200 |  20.39604827s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:30 | 200 | 21.653093351s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:31 | 200 | 20.907363825s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:33 | 200 | 14.911394374s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:34 | 200 |  9.284096994s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:36 | 200 |  15.24835503s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:38 | 200 |  9.298908646s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:39 | 200 | 14.800297635s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:40 | 200 | 24.198483105s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:42 | 200 | 12.739588669s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:54 | 200 | 10.799974773s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:56 | 200 | 13.162107114s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:57 | 200 |  14.69960588s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:21:59 | 200 | 16.435015868s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:00 | 200 | 17.281157051s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:01 | 200 | 18.806552991s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:03 | 200 | 19.841056046s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:07 | 200 | 13.737501604s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:08 | 200 | 24.813951892s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:10 | 200 | 10.741140389s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:10 | 200 | 14.552592605s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:14 | 200 | 16.418809029s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:19 | 200 | 17.537344523s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:20 | 200 | 12.163985307s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:21 | 200 | 20.730325865s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:21 | 200 | 11.164130521s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:25 | 200 | 17.654603753s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:28 | 200 | 17.775471505s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:30 | 200 | 10.324740891s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:31 | 200 |  9.957809355s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:33 | 200 |   4.57989976s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:33 | 200 | 19.250684983s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:33 | 200 | 30.727388436s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:38 | 200 | 19.361846309s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:39 | 200 | 14.261763861s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:43 | 200 | 11.924528106s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:44 | 200 |  22.64403574s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:46 | 200 | 16.209632021s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:46 | 200 | 13.550932171s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:51 | 200 | 17.781193307s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:51 | 200 | 18.108724835s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:53 | 200 | 14.268449512s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:22:55 | 200 |  8.933642406s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:00 | 200 | 16.185652111s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:03 | 200 |  7.640545812s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:04 | 200 | 24.777177064s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:05 | 200 | 13.311176711s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:06 | 200 | 15.151608547s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:07 | 200 | 24.287216099s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:09 | 200 | 16.680227148s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:10 | 200 | 23.435368929s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:11 | 200 | 10.593396325s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:14 | 200 | 10.656508868s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:27 | 200 | 13.115187098s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:28 | 200 | 14.271830075s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:29 | 200 | 14.972138022s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:30 | 200 | 15.454733813s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:30 | 200 | 15.643204391s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:30 | 200 | 15.856091652s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:33 | 200 | 18.481095488s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2025/03/28 - 15:23:34 | 200 | 20.085039099s |       127.0.0.1 | POST     "/api/chat"
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n510
+Job ID: 25424568
+Cluster: uc2
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:35:04 core-walltime
+Job Wall-clock time: 00:04:23
+Memory Utilized: 1.40 GB
+Memory Efficiency: 4.38% of 32.00 GB

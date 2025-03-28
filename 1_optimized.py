@@ -132,12 +132,12 @@ def main():
     model_configs = [
         # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
         #  "num_predict": 512, "num_ctx": 8192},
-        {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-         "num_predict": 512, "num_ctx": 8192},
+        # {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+        #  "num_predict": 512, "num_ctx": 8192},
         # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
         #  "num_predict": 512, "num_ctx": 16384},
-        # {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-        #  "num_predict": 512, "num_ctx": 8192}
+        {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+         "num_predict": 512, "num_ctx": 8192}
     ]
     
     prompts = {
