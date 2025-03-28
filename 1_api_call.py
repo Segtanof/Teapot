@@ -6,10 +6,6 @@ import time
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 
-folder_name = "results/ajob_match_2503_1524"
-#access the folder, get file name ends with .json
-json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
-
 #get related occupation, filtered by primary-short (most relevant)
 related = pd.read_excel('datasets/related_occupations.xlsx').astype(str)
 related.columns = related.columns.str.lower().str.replace(" ","_").str.replace("o*net-soc_", "")
@@ -106,12 +102,12 @@ def process_rating(generated_df, num_workers=5):
     
     return result_df
 
-folder_name = "results/ajob_match_2503_1531"
+folder_name = "results/_prompt1"
 #access the folder, get file name ends with .json
 json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
 
 for file in json_files:
-    generated_df = pd.read_json(folder_name + '/' + file).dropna()
+    generated_df = pd.read_json(folder_name + '/' + file, dtype={"rating": "object"}).dropna()
     generated_df = generated_df[["title", "ind", "rating","iteration"]]
     generated_df[["perfect_match", "related"]] = None
     result_df = process_rating(generated_df)
