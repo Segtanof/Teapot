@@ -111,5 +111,5 @@ def process_files(folder_name):
     logging.info("Script completed")
 
 if __name__ == "__main__":
-    folder_name = 'results/tm2'
+    folder_name = 'results/task_match_2803_1753'
     process_files(folder_name)
