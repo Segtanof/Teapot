@@ -102,7 +102,7 @@ def process_rating(generated_df, num_workers=5):
     
     return result_df
 
-folder_name = "results/_prompt1"
+folder_name = "results/jm"
 #access the folder, get file name ends with .json
 json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
 
