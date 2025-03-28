@@ -39,7 +39,7 @@ def match_batch(ref_lists, gen_lists):
         gen_clean = preProcessText(gen_tasks)
         matrix = sbert_batch(ref_clean, gen_clean)
         row_ind, col_ind = linear_sum_assignment(1 - matrix)
-        avg_score = np.mean(matrix[row_ind, col_ind])
+        avg_score = np.mean(matrix)
         results.append((avg_score, matrix.tolist(), row_ind.tolist(), col_ind.tolist()))
     return results
 
