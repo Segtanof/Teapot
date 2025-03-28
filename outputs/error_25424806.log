@@ -3308,3 +3308,10 @@ time=2025-03-28T18:29:13.043+01:00 level=DEBUG source=sched.go:357 msg="after pr
 time=2025-03-28T18:29:13.083+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitterswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
 time=2025-03-28T18:29:13.241+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=436 prompt=42 used=8 remaining=34
 2025-03-28 18:29:13,391 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:24.173+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:24.175+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:24,174 - Single inference for Correspondence Clerks, duration: 0:00:34.537058
+llama3.3-no_prompt-8:  67%|██████▋   | 29/43 [04:15<01:41,  7.22s/it]time=2025-03-28T18:29:24.226+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:24.226+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Tile and Stone Setterswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:24.337+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=379 prompt=30 used=8 remaining=22
+2025-03-28 18:29:24,467 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"

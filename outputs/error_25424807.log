@@ -2859,3 +2859,10 @@ time=2025-03-28T18:29:15.694+01:00 level=DEBUG source=sched.go:357 msg="after pr
 time=2025-03-28T18:29:15.747+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation School Psychologistswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
 time=2025-03-28T18:29:15.818+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=369 prompt=28 used=8 remaining=20
 2025-03-28 18:29:15,912 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+time=2025-03-28T18:29:29.880+01:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-03-28T18:29:29.882+01:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=3
+2025-03-28 18:29:29,881 - Single inference for Microsystems Engineers, duration: 0:00:38.313746
+llama3.3-no_prompt-7:  19%|█▊        | 8/43 [01:07<04:51,  8.33s/it]time=2025-03-28T18:29:29.934+01:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/pfs/work7/workspace/scratch/ma_ssiu-ollama_models/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-03-28T18:29:29.934+01:00 level=DEBUG source=routes.go:1470 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Survey Researcherswould perform at work.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-03-28T18:29:30.005+01:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=541 prompt=27 used=8 remaining=19
+2025-03-28 18:29:30,107 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
