@@ -5,110 +5,143 @@ import requests
 import time
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
+import hashlib
 
-#get related occupation, filtered by primary-short (most relevant)
+# Load related occupations
 related = pd.read_excel('datasets/related_occupations.xlsx').astype(str)
-related.columns = related.columns.str.lower().str.replace(" ","_").str.replace("o*net-soc_", "")
+related.columns = related.columns.str.lower().str.replace(" ", "_").str.replace("o*net-soc_", "")
 related = related[related["relatedness_tier"].isin(["Primary-Short", "Primary-Long"])]
 
-#access the api to get the job titles
+# Directory to save career data
+CAREER_CACHE_DIR = "career_cache"
+os.makedirs(CAREER_CACHE_DIR, exist_ok=True)
+
+# API call to get career data
 def get_career(answer):
-
-    url = 'https://services.onetcenter.org/ws/mnm/interestprofiler/careers?answers='+answer+'&start=1&end=1000'
-    cookies = {
-        'developer_login': 'dW5pX21hbm5oZWltX2RlMTowMDU1ODEyOTFiYzRjYTYxNGE5YmJlM2E4ZjgyNjk2NWQxNzFiY2Y0',
-    }
-
+    # Generate a unique filename based on the rating (hash to avoid special chars)
+    hash_key = hashlib.md5(answer.encode()).hexdigest()
+    cache_file = f"{CAREER_CACHE_DIR}/career_{hash_key}.json"
+    
+    # Check if cached file exists
+    if os.path.exists(cache_file):
+        return pd.read_json(cache_file)
+    
+    # API request
+    url = 'https://services.onetcenter.org/ws/mnm/interestprofiler/careers?answers=' + answer + '&start=1&end=1000'
+    cookies = {'developer_login': 'dW5pX21hbm5oZWltX2RlMTowMDU1ODEyOTFiYzRjYTYxNGE5YmJlM2E4ZjgyNjk2NWQxNzFiY2Y0'}
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0',
         'Accept': 'application/json',
         'Accept-Language': 'en-US,en;q=0.5',
         'Authorization': 'Basic dW5pX21hbm5oZWltX2RlMTo3MzM5Y3R1',
         'Connection': 'keep-alive',
-        'Upgrade-Insecure-Requests': '1',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'cross-site',
-        'Priority': 'u=0, i',
     }
-
-    params = {
-        'start': '1',
-        'end': '60',
-    }
-
-    response = requests.get(
-        url,
-        params=params,
-        cookies=cookies,
-        headers=headers,
-    )
-    #search for the the target occupation in the response
+    params = {'start': '1', 'end': '60'}
+    
+    response = requests.get(url, params=params, cookies=cookies, headers=headers)
     data = json.loads(response.text)["career"]
-    #select only title and fit
     career = pd.DataFrame(data).drop(["href", "tags"], axis=1)
-    return career 
+    
+    # Save to cache
+    career.to_json(cache_file, orient='records')
+    time.sleep(1.1)  # Respect API rate limit
+    return career
 
+# Matching function
 def match_score(rating, title):
-    # Get career possibilities based on rating
+    # Load pre-fetched career data
     onet_career = get_career(rating)
-    time.sleep(1.1)
     
-    # Check for perfect match (returns 1 if match found, 0 if not)
-    perfect_match = 1 if title in onet_career["title"].values else 0
-    
-    # Get best fit careers
+    #create an empty dataframe to store the results
+    result_df = pd.DataFrame(columns=[])
+
+    # Filter careers by fit categories
     best_fit = onet_career[onet_career["fit"] == "Best"]
+    great_fit = onet_career[onet_career["fit"] == "Great"]
+    good_fit = onet_career[onet_career["fit"] == "Good"]
     
-    # Get related jobs for the given title
+    # Calculate hit rate @n
+    best_fit_hits = 1 if title in best_fit["title"].values else 0
+    best_and_great_fit_hits = 1 if title in pd.concat([best_fit, great_fit])["title"].values else 0
+    all_fit_hits = 1 if title in onet_career["title"].values else 0
+    
+    # Calculate precision
+    best_fit_precision = best_fit_hits / len(best_fit) if len(best_fit) > 0 else 0
+    great_fit_precision = best_and_great_fit_hits / len(pd.concat([best_fit, great_fit])) if len(pd.concat([best_fit, great_fit])) > 0 else 0
+    all_fit_precision = all_fit_hits / len(onet_career) if len(onet_career) > 0 else 0
+
+    # Calculate recall @n
     related_job = related[related["title"] == title]
-    
-    # Check if any related titles match best fit careers
-    related_match = len(pd.merge(
+    related_in_best = pd.merge(
         right=best_fit, 
         left=related_job, 
         right_on="title", 
         left_on="related_title", 
         how="inner"
-    ))
-    
-    return perfect_match, related_match
+    )
+    related_in_best_and_great = pd.merge(
+        right=pd.concat([best_fit, great_fit]),
+        left=related_job, 
+        right_on="title", 
+        left_on="related_title", 
+        how="inner"
+    )
+    related_in_all = pd.merge(
+        right=onet_career, 
+        left=related_job, 
+        right_on="title", 
+        left_on="related_title", 
+        how="inner"
+    )
 
-# Parallel processing helper function
+    # Calculate recall
+    best_fit_recall = len(related_in_best) / len(related_job) if len(related_job) > 0 else 0
+    best_and_great_fit_recall = len(related_in_best_and_great) / len(related_job) if len(related_job) > 0 else 0
+    all_fit_recall = len(related_in_all) / len(related_job) if len(related_job) > 0 else 0
+    result_df = pd.DataFrame({
+        "title": [title],
+        "best_fit": [len(best_fit)],
+        "great_fit": [len(great_fit)],
+        "good_fit": [len(good_fit)],
+        "all_fit": [len(onet_career)],
+        "best_fit_hits": [best_fit_hits],
+        "best_fit_precision": [best_fit_precision],
+        "best_fit_recall": [best_fit_recall],
+        "best_and_great_fit_hits": [best_and_great_fit_hits],
+        "best_and_great_fit_precision": [great_fit_precision],
+        "best_and_great_fit_recall": [best_and_great_fit_recall],
+        "all_fit_hits": [all_fit_hits],
+        "all_fit_precision": [all_fit_precision],
+        "all_fit_recall": [all_fit_recall],
+    })
+
+    
+    return result_df
+
+# Parallel processing helper
 def process_single_pair(args):
     rating, title = args
     return match_score(rating, title)
 
 def process_rating(generated_df, num_workers=5):
-    """
-    Process ratings with parallel execution while respecting API rate limits
-    """
     rating_list = generated_df["rating"].tolist()
     title_list = generated_df["title"].tolist()
     pairs = list(zip(rating_list, title_list))
     
-    # Use ThreadPoolExecutor for I/O-bound tasks (API calls)
     with ThreadPoolExecutor(max_workers=num_workers) as executor:
-        # tqdm for progress bar
-        results = list(tqdm(executor.map(process_single_pair, pairs), total=len(pairs)))
-    
-    # Unzip results
-    perfect_match, related_match = zip(*results)
-    
-    # Create new DataFrame efficiently
-    result_df = generated_df.copy()
-    result_df["perfect_match"] = perfect_match
-    result_df["related"] = related_match
+        result_df= list(tqdm(executor.map(process_single_pair, pairs), total=len(pairs)))
     
     return result_df
 
-folder_name = "results/jm"
-#access the folder, get file name ends with .json
-json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
 
+# Main execution
+folder_name = "results/jm1"
+json_files = [f for f in os.listdir(folder_name) if f.endswith('a.json')]
 for file in json_files:
-    generated_df = pd.read_json(folder_name + '/' + file, dtype={"rating": "object"}).dropna()
-    generated_df = generated_df[["title", "ind", "rating","iteration"]]
-    generated_df[["perfect_match", "related"]] = None
+    generated_df = pd.read_json(f"{folder_name}/{file}", dtype={"rating": "object"}).dropna()
+    generated_df = generated_df[["title", "ind", "rating", "iteration"]]
+    # generated_df = generated_df[generated_df["iteration"]]
     result_df = process_rating(generated_df)
-    result_df.to_json(folder_name+"/"+file[:-5]+"_processed.json", orient='records')
+    # Concatenate the list of DataFrames into a single DataFrame
+    result_df_combined = pd.concat(result_df, ignore_index=True)
+    result_df_combined.to_json(f"{folder_name}/{file[:-5]}_processed.json", orient='records')
