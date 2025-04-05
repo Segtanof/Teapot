@@ -70,6 +70,13 @@ def match_score(rating, title):
     great_fit_precision = best_and_great_fit_hits / len(pd.concat([best_fit, great_fit])) if len(pd.concat([best_fit, great_fit])) > 0 else 0
     all_fit_precision = all_fit_hits / len(onet_career) if len(onet_career) > 0 else 0
 
+    # Calculate hit rate @n in related jobs
+    related_job = related[related["title"] == title]
+    related_best_fit_precision = 1 if related_job["related_title"].isin(best_fit["title"]).any() else 0
+    related_best_and_great_fit_precision = 1 if related_job["related_title"].isin(pd.concat([best_fit, great_fit])["title"]).any() else 0
+    related_all_fit_precision = 1 if related_job["related_title"].isin(onet_career["title"]).any() else 0
+
+    
     # Calculate recall @n
     related_job = related[related["title"] == title]
     related_in_best = pd.merge(
@@ -104,15 +111,19 @@ def match_score(rating, title):
         "great_fit": [len(great_fit)],
         "good_fit": [len(good_fit)],
         "all_fit": [len(onet_career)],
-        "best_fit_hits": [best_fit_hits],
-        "best_fit_precision": [best_fit_precision],
-        "best_fit_recall": [best_fit_recall],
-        "best_and_great_fit_hits": [best_and_great_fit_hits],
-        "best_and_great_fit_precision": [great_fit_precision],
-        "best_and_great_fit_recall": [best_and_great_fit_recall],
-        "all_fit_hits": [all_fit_hits],
-        "all_fit_precision": [all_fit_precision],
-        "all_fit_recall": [all_fit_recall],
+        "c_best_fit_hits": [best_fit_hits],
+        "c_best_fit_precision": [best_fit_precision],
+        "r_best_fit_precision": [related_best_fit_precision],
+        "r_best_fit_recall": [best_fit_recall],
+        "c_best_and_great_fit_hits": [best_and_great_fit_hits],
+        "c_best_and_great_fit_precision": [great_fit_precision],
+        "r_best_and_great_fit_precision": [related_best_and_great_fit_precision],
+        "r_best_and_great_fit_recall": [best_and_great_fit_recall],
+        "c_all_fit_hits": [all_fit_hits],
+        "c_all_fit_precision": [all_fit_precision],
+        "r_all_fit_precision": [related_all_fit_precision],
+        "r_all_fit_recall": [all_fit_recall]
+
     })
 
     
@@ -136,7 +147,7 @@ def process_rating(generated_df, num_workers=5):
 
 # Main execution
 folder_name = "results/jm1"
-json_files = [f for f in os.listdir(folder_name) if f.endswith('a.json')]
+json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
 for file in json_files:
     generated_df = pd.read_json(f"{folder_name}/{file}", dtype={"rating": "object"}).dropna()
     generated_df = generated_df[["title", "ind", "rating", "iteration"]]
