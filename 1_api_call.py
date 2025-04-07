@@ -72,9 +72,9 @@ def match_score(rating, title):
 
     # Calculate hit rate @n in related jobs
     related_job = related[related["title"] == title]
-    related_best_fit_precision = 1 if related_job["related_title"].isin(best_fit["title"]).any() else 0
-    related_best_and_great_fit_precision = 1 if related_job["related_title"].isin(pd.concat([best_fit, great_fit])["title"]).any() else 0
-    related_all_fit_precision = 1 if related_job["related_title"].isin(onet_career["title"]).any() else 0
+    related_best_fit_hits = 1 if related_job["related_title"].isin(best_fit["title"]).any() else 0
+    related_best_and_great_fit_hits = 1 if related_job["related_title"].isin(pd.concat([best_fit, great_fit])["title"]).any() else 0
+    related_all_fit_hits = 1 if related_job["related_title"].isin(onet_career["title"]).any() else 0
 
     
     # Calculate recall @n
@@ -113,15 +113,15 @@ def match_score(rating, title):
         "all_fit": [len(onet_career)],
         "c_best_fit_hits": [best_fit_hits],
         "c_best_fit_precision": [best_fit_precision],
-        "r_best_fit_precision": [related_best_fit_precision],
+        "r_best_fit_hits": [related_best_fit_hits],
         "r_best_fit_recall": [best_fit_recall],
         "c_best_and_great_fit_hits": [best_and_great_fit_hits],
         "c_best_and_great_fit_precision": [great_fit_precision],
-        "r_best_and_great_fit_precision": [related_best_and_great_fit_precision],
+        "r_best_and_great_fit_hits": [related_best_and_great_fit_hits],
         "r_best_and_great_fit_recall": [best_and_great_fit_recall],
         "c_all_fit_hits": [all_fit_hits],
         "c_all_fit_precision": [all_fit_precision],
-        "r_all_fit_precision": [related_all_fit_precision],
+        "r_all_fit_hits": [related_all_fit_hits],
         "r_all_fit_recall": [all_fit_recall]
 
     })
