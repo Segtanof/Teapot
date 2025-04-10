@@ -1,1 +1,0 @@
-your occupation is {title}. Respond with the knowledge of the occupation.
