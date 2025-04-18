@@ -1,20 +1,20 @@
 #!/bin/bash
-#SBATCH --job-name=43l2
+#SBATCH --job-name=fla8
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=8     
 #SBATCH --gres=gpu:1           
 #SBATCH --mem=32G              
-#SBATCH --time=6:00:00        
+#SBATCH --time=12:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 
 # Load ollama module
 module load cs/ollama
-module load devel/cuda/12.2
+module load devel/cuda/11.8
 
 # Initialize Conda
-source /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/etc/profile.d/conda.sh
+source /opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/etc/profile.d/conda.sh
 
 # Activate the test environment
 conda activate test
@@ -25,8 +25,8 @@ conda activate test
 PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 # Set Ollama environment variable to keep model loaded
 export OLLAMA_DEBUG=true
-export OLLAMA_KEEP_ALIVE="6h"
-export OLLAMA_NUM_PARALLEL=4    # Max parallelism
+export OLLAMA_KEEP_ALIVE="12h"
+export OLLAMA_NUM_PARALLEL=8    # Max parallelism
 export OLLAMA_MAX_QUEUE=512
 export OLLAMA_CTX_SIZE=8192
 
@@ -54,7 +54,7 @@ GPU_MONITOR_PID=$!  # NEW: Store PID for cleanup
 
 # Run Python with explicit output
 echo "Starting Python script..." >> outputs/output_${SLURM_JOB_ID}.log
-python /pfs/work7/workspace/scratch/ma_ssiu-myspace/teapot/1_optimized.py --port $PORT >> outputs/output_${SLURM_JOB_ID}.log 2>> outputs/error_${SLURM_JOB_ID}.log
+python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT >> outputs/output_${SLURM_JOB_ID}.log 2>> outputs/error_${SLURM_JOB_ID}.log
 PYTHON_EXIT=$?
 
 # Clean up

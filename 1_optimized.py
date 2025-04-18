@@ -78,7 +78,7 @@ def get_rating(title, model, description, system_prompt=None, batch_size=20):
             try:
                 with torch.cuda.device(0):
                     logging.debug(f"Sending batch {i} to LLM: {prompts}")
-                    responses = llm.batch(prompts, config={"num_threads": 4})
+                    responses = llm.batch(prompts, config={"num_threads": 8})
                 
                 elapsed = time.time() - start_time
                 logging.info(f"Batch {i} response received after {elapsed:.2f} seconds")
@@ -151,7 +151,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 4  # Match SLURM cpus-per-task
+    num_processes = 8  # Match SLURM cpus-per-task
     
     for model_config in model_configs:
         model_name = model_config["model"]
