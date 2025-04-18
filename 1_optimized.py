@@ -41,11 +41,12 @@ occupations["ind"] = occupations["code"].str[:2]
 occupations = occupations[occupations['ind'] != '55']
 
 # Sample 5% of occupations per industry
-sampled_occupation = occupations.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1)
+# sampled_occupation = occupations.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1)
 
 # get a list of sampled occupations
-dsampled_occupation = sampled_occupation[:]
-test_sample_list = list(dsampled_occupation["title"])
+# dsampled_occupation = sampled_occupation[:]
+# test_sample_list = list(dsampled_occupation["title"])
+# test_description_list = list(dsampled_occupation["description"])
 
 #get the questions into a list
 with open("datasets/60qs.json") as f:
@@ -57,9 +58,9 @@ with open("datasets/60qs.json") as f:
     qlist = rqlist
   
 
-def get_rating(title, model, system_prompt=None, batch_size=20):
+def get_rating(title, model, description, system_prompt=None, batch_size=20):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
-    query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
+    query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". This occupation "+ description +" Your options for the ratings are the following: 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
 
     llm = model.with_structured_output(schema=json_schema, method="json_schema")
@@ -114,9 +115,9 @@ def get_rating(title, model, system_prompt=None, batch_size=20):
 
 def process_title(args):
     """Process a single title"""
-    title, model_config, prompt = args
+    title, model_config, description, prompt = args
     model = ChatOllama(**model_config)
-    ratings, reasons = get_rating(title, model, prompt)
+    ratings, reasons = get_rating(title, model, description, prompt)
     return title, ratings, reasons
 
 def initializer():
@@ -165,7 +166,7 @@ def main():
                 with open(f"{folder_name}/sys_prompt.txt", "a") as f:
                     f.write(prompt + "\n")
             
-            all_results_df = sampled_occupation.copy()
+            all_results_df = occupations.copy()
             all_results_df["rating"] = pd.Series([None] * len(all_results_df))
             all_results_df["reason"] = [None] * len(all_results_df)
             all_results_df = all_results_df.astype({"rating": str})
@@ -174,16 +175,16 @@ def main():
             for i in range(5):  # 10 rounds
                 start_time = datetime.now()
                 
-                args = [(title, model_config, prompt) for title in test_sample_list]
+                args = [(row['title'], model_config, row['description'], prompt) for _, row in occupations[['title', 'description']].iterrows()]
 
                 with Pool(processes=num_processes, initializer=initializer) as pool:
                     results = list(tqdm(
                         pool.imap_unordered(process_title, args),
-                        total=len(test_sample_list),
+                        total=len(occupations),
                         desc=f"{model_name}-{name}-{i}"
                     ))
                 
-                temp_df = sampled_occupation.copy()
+                temp_df = occupations.copy()
                 for title, rating, reason in results:
                     temp_df.loc[temp_df["title"] == title, "rating"] = pd.Series([rating],dtype= "string").values
                     temp_df.loc[temp_df["title"] == title, "reason"] = pd.Series([reason]).values
