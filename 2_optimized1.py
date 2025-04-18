@@ -21,28 +21,34 @@ print("folder created")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s",
                     handlers=[logging.FileHandler("execution_log.log"), logging.StreamHandler()])
 
-# read dataset and drop columns
 job_statements = pd.read_excel("datasets/task_statements.xlsx")
 job_statements.columns = job_statements.columns.str.lower()
 job_statements = job_statements.drop(labels=["incumbents responding","date","domain source"], axis=1).rename(columns={"o*net-soc code":"code", "task type":"type", "task id": "id", "task":"ref_task"})
 job_statements = job_statements[job_statements["type"].notna()]
-job_statements["ind"] = job_statements["code"].str[:2]
-job_statements = job_statements.groupby("title").agg({"ref_task":list, "ind": "first"}).reset_index().sort_values("ind")
-sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac=0.05, random_state=3) #43 samples
+# job_statements["ind"] = job_statements["code"].str[:2]
+job_statements = job_statements.groupby("title").agg({"ref_task":list}).reset_index()#, "ind": "first"}).reset_index().sort_values("ind")
+# sampled_occupation = job_statements.groupby('ind', group_keys=False).sample(frac=0.05, random_state=3) #43 samples
+occupations = (
+    pd.read_excel("datasets/occupation_data.xlsx")
+    .dropna()
+    .rename(columns=lambda x: x.lower())  # Convert column names to lowercase
+    .rename(columns={"o*net-soc code": "code"})  # Rename specific column
+)
+sampled_occupation = job_statements.merge(occupations, how="left", on="title")
 
 #for trial
-trial_df = sampled_occupation#.sample(3, random_state= 1)
-test_sample_list =[trial_df.iloc[x]["title"] for x in range(len(trial_df))]
+# trial_df = sampled_occupation#.sample(3, random_state= 1)
+# test_sample_list =[trial_df.iloc[x]["title"] for x in range(len(trial_df))]
 
 #get reference description
 def get_des (title):
     task_list = sampled_occupation.query("title == @title")["ref_task"].iloc[0]
     return task_list
 
-def task_gen(title, model, system=None):  
+def task_gen(title, model, description, system=None):  
     ref_task_count = len(get_des(title))
     json_schema = {"type": "object", "properties": {"occupation": {"type": "string"}, "tasks": {"type": "array", "items": {"type": "string"}, "minItems": ref_task_count, "maxItems": ref_task_count}}, "required": ["occupation", "tasks"]}
-    query = "List exactly "+ str(ref_task_count) +" unique task statements that the occupation " + title + "would perform at work."
+    query = "List exactly "+ str(ref_task_count) +" unique task statements that the occupation " + title + "would perform at work. Here is the description of the occupation: " + description
     prompt_template = ChatPromptTemplate.from_messages([("system", system), ("human", "{input}")] if system else [("human", "{input}")])
     llm = model.with_structured_output(schema=json_schema, method="json_schema")
     prompt = prompt_template.invoke({"input": query, "title": title})
@@ -59,10 +65,10 @@ def task_gen(title, model, system=None):
     return tasks
 
 def process_title(args):
-    title, model_config, prompt = args
+    title, model_config, description, prompt = args
     model = ChatOllama(**model_config)
     start_time = datetime.now()
-    tasks = task_gen(title, model, system=prompt)
+    tasks = task_gen(title, model, description, system=prompt)
     logging.info(f"Single inference for {title}, duration: {datetime.now() - start_time}")
     return title, tasks
 
@@ -94,7 +100,7 @@ for model_config in model_configs:
                 f.write(prompt + "\n")
             logging.info(f"Wrote prompt {name}, duration: {datetime.now() - start_time}")
 
-        all_results_df = trial_df.copy()
+        all_results_df = sampled_occupation.copy()
         all_results_df["gen_task"] = [None] * len(all_results_df)
         all_results_df["iteration"] = None
 
@@ -102,12 +108,12 @@ for model_config in model_configs:
             start_time = datetime.now()
             with Pool(processes=4) as pool:
                 results = list(tqdm(
-                    pool.imap_unordered(process_title, [(title, model_config, prompt) for title in test_sample_list]),
-                    total=len(test_sample_list), desc=f"{model_name}-{name}-{i}"
+                    pool.imap_unordered(process_title, [(row['title'], model_config, row['description'], prompt) for _, row in sampled_occupation[['title', 'description']].iterrows()]),
+                    total=len(sampled_occupation), desc=f"{model_name}-{name}-{i}"
                 ))
             logging.info(f"Multiprocessing for {model_name}-{name}-{i}, duration: {datetime.now() - start_time}")
 
-            temp_df = trial_df.copy()
+            temp_df = sampled_occupation.copy()
             for title, tasks in results:
                 temp_df.loc[temp_df["title"] == title, "gen_task"] = pd.Series([tasks]).values
             temp_df["iteration"] = i
