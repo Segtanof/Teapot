@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=10_100
+#SBATCH --job-name=10_20
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=4     
 #SBATCH --gres=gpu:1           
 #SBATCH --mem=8G              
-#SBATCH --time=01:00:00        
+#SBATCH --time=00:15:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 

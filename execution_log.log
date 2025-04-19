@@ -1,0 +1,1613 @@
+2025-04-19 19:27:57,739 - Script started
+2025-04-19 19:27:57,743 - Processing model: mistral
+2025-04-19 19:36:46,059 - Script started
+2025-04-19 19:36:46,060 - Processing model: mistral
+2025-04-19 19:44:47,603 - Script started
+2025-04-19 19:44:47,604 - Processing model: mistral
+2025-04-19 19:44:47,659 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:48,559 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:48,563 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:48,630 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:48,633 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:52,506 - Single inference for Actuaries, duration: 0:00:04.196699
+2025-04-19 19:44:52,609 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:52,780 - Single inference for Actors, duration: 0:00:04.472303
+2025-04-19 19:44:52,893 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:53,784 - Single inference for Acupuncturists, duration: 0:00:05.475947
+2025-04-19 19:44:53,898 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:54,955 - Single inference for Accountants and Auditors, duration: 0:00:06.647064
+2025-04-19 19:44:55,063 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:58,575 - Single inference for Acute Care Nurses, duration: 0:00:06.055093
+2025-04-19 19:44:58,640 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.836567
+2025-04-19 19:44:58,675 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:58,745 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:44:58,817 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.010034
+2025-04-19 19:44:58,956 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.978508
+2025-04-19 19:45:00,526 - Single inference for Administrative Services Managers, duration: 0:00:01.937251
+2025-04-19 19:45:03,965 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.312477
+2025-04-19 19:45:03,987 - Multiprocessing for mistral-no_prompt-0, duration: 0:00:15.737725
+2025-04-19 19:45:04,155 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:04,158 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:04,234 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:04,237 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:07,902 - Single inference for Actuaries, duration: 0:00:03.862791
+2025-04-19 19:45:08,006 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:08,916 - Single inference for Acupuncturists, duration: 0:00:04.876494
+2025-04-19 19:45:09,018 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:09,265 - Single inference for Actors, duration: 0:00:05.225241
+2025-04-19 19:45:09,366 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:11,720 - Single inference for Accountants and Auditors, duration: 0:00:07.680438
+2025-04-19 19:45:11,817 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:13,290 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.010683
+2025-04-19 19:45:13,391 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:15,224 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.293444
+2025-04-19 19:45:15,320 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:15,614 - Single inference for Acute Care Nurses, duration: 0:00:07.694415
+2025-04-19 19:45:15,995 - Single inference for Administrative Services Managers, duration: 0:00:02.682141
+2025-04-19 19:45:16,064 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.330222
+2025-04-19 19:45:21,948 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:06.710473
+2025-04-19 19:45:21,970 - Multiprocessing for mistral-no_prompt-1, duration: 0:00:17.978454
+2025-04-19 19:45:22,117 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:22,196 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:22,199 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:22,203 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:25,628 - Single inference for Actors, duration: 0:00:03.604404
+2025-04-19 19:45:25,741 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:26,157 - Single inference for Actuaries, duration: 0:00:04.133125
+2025-04-19 19:45:26,245 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:26,727 - Single inference for Acupuncturists, duration: 0:00:04.703350
+2025-04-19 19:45:26,846 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:26,873 - Single inference for Accountants and Auditors, duration: 0:00:04.849104
+2025-04-19 19:45:26,982 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:30,672 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.776473
+2025-04-19 19:45:30,771 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:31,251 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.079997
+2025-04-19 19:45:31,344 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:31,673 - Single inference for Acute Care Nurses, duration: 0:00:06.021845
+2025-04-19 19:45:32,506 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.755886
+2025-04-19 19:45:32,688 - Single inference for Administrative Services Managers, duration: 0:00:02.002327
+2025-04-19 19:45:37,194 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.928909
+2025-04-19 19:45:37,213 - Multiprocessing for mistral-no_prompt-2, duration: 0:00:15.238833
+2025-04-19 19:45:37,358 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:37,441 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:37,444 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:37,447 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:40,976 - Single inference for Actuaries, duration: 0:00:03.709123
+2025-04-19 19:45:41,079 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:42,154 - Single inference for Actors, duration: 0:00:04.887561
+2025-04-19 19:45:42,243 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:43,283 - Single inference for Acupuncturists, duration: 0:00:06.016664
+2025-04-19 19:45:43,399 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:44,255 - Single inference for Accountants and Auditors, duration: 0:00:06.988731
+2025-04-19 19:45:44,364 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:48,142 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.973871
+2025-04-19 19:45:48,230 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:48,440 - Single inference for Acute Care Nurses, duration: 0:00:07.441613
+2025-04-19 19:45:48,554 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:48,950 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.652709
+2025-04-19 19:45:49,313 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:05.034941
+2025-04-19 19:45:50,595 - Single inference for Administrative Services Managers, duration: 0:00:02.439627
+2025-04-19 19:45:54,350 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.887132
+2025-04-19 19:45:54,369 - Multiprocessing for mistral-no_prompt-3, duration: 0:00:17.152755
+2025-04-19 19:45:54,511 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:54,597 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:54,599 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:54,603 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:45:58,244 - Single inference for Actuaries, duration: 0:00:03.821712
+2025-04-19 19:45:58,349 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:00,013 - Single inference for Actors, duration: 0:00:05.590365
+2025-04-19 19:46:00,046 - Single inference for Acupuncturists, duration: 0:00:05.623681
+2025-04-19 19:46:00,101 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:00,163 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:01,434 - Single inference for Accountants and Auditors, duration: 0:00:07.011038
+2025-04-19 19:46:01,542 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:04,115 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.046228
+2025-04-19 19:46:04,217 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:04,996 - Single inference for Acute Care Nurses, duration: 0:00:06.737815
+2025-04-19 19:46:05,092 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:05,980 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.523868
+2025-04-19 19:46:07,264 - Single inference for Adapted Physical Education Specialists, duration: 0:00:07.236882
+2025-04-19 19:46:07,440 - Single inference for Administrative Services Managers, duration: 0:00:03.301543
+2025-04-19 19:46:10,805 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.795766
+2025-04-19 19:46:10,825 - Multiprocessing for mistral-no_prompt-4, duration: 0:00:16.452030
+2025-04-19 19:46:10,972 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:11,059 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:11,062 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:11,065 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:14,924 - Single inference for Actuaries, duration: 0:00:04.043985
+2025-04-19 19:46:15,019 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:16,043 - Single inference for Actors, duration: 0:00:05.163716
+2025-04-19 19:46:16,136 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:16,986 - Single inference for Accountants and Auditors, duration: 0:00:06.107025
+2025-04-19 19:46:17,021 - Single inference for Acupuncturists, duration: 0:00:06.140916
+2025-04-19 19:46:17,092 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:17,150 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:20,995 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.951308
+2025-04-19 19:46:21,093 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:21,419 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.418937
+2025-04-19 19:46:21,516 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:21,601 - Single inference for Acute Care Nurses, duration: 0:00:06.663045
+2025-04-19 19:46:21,846 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.789555
+2025-04-19 19:46:23,367 - Single inference for Administrative Services Managers, duration: 0:00:02.348686
+2025-04-19 19:46:28,793 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:07.360448
+2025-04-19 19:46:28,813 - Multiprocessing for mistral-no_prompt-5, duration: 0:00:17.983979
+2025-04-19 19:46:28,978 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:28,982 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:29,055 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:29,059 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:32,859 - Single inference for Actors, duration: 0:00:03.995362
+2025-04-19 19:46:32,968 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:33,207 - Single inference for Actuaries, duration: 0:00:04.343832
+2025-04-19 19:46:33,312 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:33,654 - Single inference for Acupuncturists, duration: 0:00:04.790611
+2025-04-19 19:46:33,767 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:35,852 - Single inference for Accountants and Auditors, duration: 0:00:06.988710
+2025-04-19 19:46:35,960 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:39,080 - Single inference for Acute Care Nurses, duration: 0:00:06.207223
+2025-04-19 19:46:39,168 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:39,596 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.928181
+2025-04-19 19:46:39,696 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:39,959 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.729416
+2025-04-19 19:46:40,232 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.365985
+2025-04-19 19:46:41,531 - Single inference for Administrative Services Managers, duration: 0:00:02.437071
+2025-04-19 19:46:46,034 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:06.424153
+2025-04-19 19:46:46,053 - Multiprocessing for mistral-no_prompt-6, duration: 0:00:17.236442
+2025-04-19 19:46:46,239 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:46,243 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:46,245 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:46,300 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:49,637 - Single inference for Actuaries, duration: 0:00:03.527668
+2025-04-19 19:46:49,740 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:50,565 - Single inference for Actors, duration: 0:00:04.455881
+2025-04-19 19:46:50,660 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:50,909 - Single inference for Acupuncturists, duration: 0:00:04.799771
+2025-04-19 19:46:51,021 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:51,464 - Single inference for Accountants and Auditors, duration: 0:00:05.354315
+2025-04-19 19:46:51,568 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:55,177 - Single inference for Acute Care Nurses, duration: 0:00:05.525548
+2025-04-19 19:46:55,274 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:55,455 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.978042
+2025-04-19 19:46:55,553 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:46:56,149 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.217249
+2025-04-19 19:46:56,951 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.372068
+2025-04-19 19:46:57,192 - Single inference for Administrative Services Managers, duration: 0:00:01.992634
+2025-04-19 19:47:02,320 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:06.851047
+2025-04-19 19:47:02,338 - Multiprocessing for mistral-no_prompt-7, duration: 0:00:16.281508
+2025-04-19 19:47:02,505 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:02,508 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:02,584 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:02,587 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:06,265 - Single inference for Actuaries, duration: 0:00:03.871765
+2025-04-19 19:47:06,360 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:07,002 - Single inference for Actors, duration: 0:00:04.608759
+2025-04-19 19:47:07,094 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:07,573 - Single inference for Acupuncturists, duration: 0:00:05.179895
+2025-04-19 19:47:07,682 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:09,237 - Single inference for Accountants and Auditors, duration: 0:00:06.843923
+2025-04-19 19:47:09,332 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:13,179 - Single inference for Acute Care Nurses, duration: 0:00:06.900444
+2025-04-19 19:47:13,278 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:13,399 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.811717
+2025-04-19 19:47:13,506 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:13,572 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.555704
+2025-04-19 19:47:14,128 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.876887
+2025-04-19 19:47:15,630 - Single inference for Administrative Services Managers, duration: 0:00:02.435959
+2025-04-19 19:47:18,704 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.291003
+2025-04-19 19:47:18,724 - Multiprocessing for mistral-no_prompt-8, duration: 0:00:16.382073
+2025-04-19 19:47:18,886 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:18,891 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:18,969 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:18,972 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:22,600 - Single inference for Actuaries, duration: 0:00:03.826053
+2025-04-19 19:47:22,704 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:24,286 - Single inference for Accountants and Auditors, duration: 0:00:05.512693
+2025-04-19 19:47:24,398 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:24,761 - Single inference for Actors, duration: 0:00:05.987378
+2025-04-19 19:47:24,859 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:26,800 - Single inference for Acupuncturists, duration: 0:00:08.026230
+2025-04-19 19:47:26,897 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:29,898 - Single inference for Acute Care Nurses, duration: 0:00:07.275328
+2025-04-19 19:47:29,922 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.146467
+2025-04-19 19:47:29,984 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:30,044 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:31,153 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.339105
+2025-04-19 19:47:31,528 - Single inference for Adapted Physical Education Specialists, duration: 0:00:07.218475
+2025-04-19 19:47:32,332 - Single inference for Administrative Services Managers, duration: 0:00:02.419874
+2025-04-19 19:47:37,151 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:07.206513
+2025-04-19 19:47:37,171 - Multiprocessing for mistral-no_prompt-9, duration: 0:00:18.443459
+2025-04-19 19:47:37,183 - Wrote results JSON for mistral-no_prompt, duration: 0:00:00.008732
+2025-04-19 19:47:37,188 - Wrote prompt prompt1, duration: 0:00:00.004748
+2025-04-19 19:47:37,353 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:37,497 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:37,501 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:37,504 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:40,990 - Single inference for Actuaries, duration: 0:00:03.750129
+2025-04-19 19:47:41,106 - Single inference for Actors, duration: 0:00:03.865548
+2025-04-19 19:47:41,107 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:41,226 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:43,272 - Single inference for Acupuncturists, duration: 0:00:06.031827
+2025-04-19 19:47:43,391 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:44,662 - Single inference for Accountants and Auditors, duration: 0:00:07.422262
+2025-04-19 19:47:44,793 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:47,126 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:03.839883
+2025-04-19 19:47:47,161 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.040688
+2025-04-19 19:47:47,252 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:47,335 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:47,990 - Single inference for Acute Care Nurses, duration: 0:00:06.985689
+2025-04-19 19:47:48,782 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.096816
+2025-04-19 19:47:49,604 - Single inference for Administrative Services Managers, duration: 0:00:02.455099
+2025-04-19 19:47:53,629 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:06.454514
+2025-04-19 19:47:53,648 - Multiprocessing for mistral-prompt1-0, duration: 0:00:16.459398
+2025-04-19 19:47:53,818 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:53,952 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:53,956 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:53,958 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:58,259 - Single inference for Actuaries, duration: 0:00:04.557365
+2025-04-19 19:47:58,329 - Single inference for Actors, duration: 0:00:04.627142
+2025-04-19 19:47:58,386 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:58,460 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:59,422 - Single inference for Acupuncturists, duration: 0:00:05.719591
+2025-04-19 19:47:59,539 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:47:59,615 - Single inference for Accountants and Auditors, duration: 0:00:05.912733
+2025-04-19 19:47:59,746 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:03,658 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.029653
+2025-04-19 19:48:03,775 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:03,808 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.465645
+2025-04-19 19:48:03,851 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.415813
+2025-04-19 19:48:03,941 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:05,019 - Single inference for Acute Care Nurses, duration: 0:00:06.745943
+2025-04-19 19:48:05,937 - Single inference for Administrative Services Managers, duration: 0:00:02.264788
+2025-04-19 19:48:09,666 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.834350
+2025-04-19 19:48:09,689 - Multiprocessing for mistral-prompt1-1, duration: 0:00:16.037019
+2025-04-19 19:48:09,855 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:09,989 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:09,993 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:09,997 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:13,621 - Single inference for Actuaries, duration: 0:00:03.879650
+2025-04-19 19:48:13,746 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:15,371 - Single inference for Acupuncturists, duration: 0:00:05.629515
+2025-04-19 19:48:15,508 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:15,906 - Single inference for Actors, duration: 0:00:06.164093
+2025-04-19 19:48:15,952 - Single inference for Accountants and Auditors, duration: 0:00:06.210671
+2025-04-19 19:48:16,033 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:16,109 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:19,226 - Single inference for Acute Care Nurses, duration: 0:00:05.586966
+2025-04-19 19:48:19,331 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:19,930 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.964038
+2025-04-19 19:48:20,049 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:20,246 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.326907
+2025-04-19 19:48:21,355 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.957242
+2025-04-19 19:48:21,562 - Single inference for Administrative Services Managers, duration: 0:00:02.322137
+2025-04-19 19:48:26,977 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:07.033435
+2025-04-19 19:48:26,993 - Multiprocessing for mistral-prompt1-2, duration: 0:00:17.300258
+2025-04-19 19:48:27,156 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:27,288 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:27,292 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:27,296 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:31,120 - Single inference for Actuaries, duration: 0:00:04.077495
+2025-04-19 19:48:31,235 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:31,913 - Single inference for Acupuncturists, duration: 0:00:04.870335
+2025-04-19 19:48:32,025 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:32,334 - Single inference for Actors, duration: 0:00:05.291420
+2025-04-19 19:48:32,464 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:35,704 - Single inference for Accountants and Auditors, duration: 0:00:08.661696
+2025-04-19 19:48:35,825 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:36,552 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.194932
+2025-04-19 19:48:36,671 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:37,898 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.971681
+2025-04-19 19:48:38,020 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:38,111 - Single inference for Acute Care Nurses, duration: 0:00:06.977475
+2025-04-19 19:48:39,129 - Single inference for Administrative Services Managers, duration: 0:00:02.554699
+2025-04-19 19:48:39,901 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.182914
+2025-04-19 19:48:44,996 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:07.084316
+2025-04-19 19:48:45,016 - Multiprocessing for mistral-prompt1-3, duration: 0:00:18.019014
+2025-04-19 19:48:45,183 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:45,316 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:45,320 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:45,323 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:50,073 - Single inference for Actuaries, duration: 0:00:05.003778
+2025-04-19 19:48:50,108 - Single inference for Actors, duration: 0:00:05.038563
+2025-04-19 19:48:50,193 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:50,264 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:50,411 - Single inference for Acupuncturists, duration: 0:00:05.341402
+2025-04-19 19:48:50,541 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:52,259 - Single inference for Accountants and Auditors, duration: 0:00:07.189107
+2025-04-19 19:48:52,377 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:54,701 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.276554
+2025-04-19 19:48:54,807 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:56,080 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.807903
+2025-04-19 19:48:56,149 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.021149
+2025-04-19 19:48:56,209 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:48:56,512 - Single inference for Acute Care Nurses, duration: 0:00:06.424783
+2025-04-19 19:48:57,182 - Single inference for Administrative Services Managers, duration: 0:00:02.467435
+2025-04-19 19:49:01,899 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.804850
+2025-04-19 19:49:01,919 - Multiprocessing for mistral-prompt1-4, duration: 0:00:16.899028
+2025-04-19 19:49:02,085 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:02,219 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:02,222 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:02,225 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:05,914 - Single inference for Actuaries, duration: 0:00:03.944208
+2025-04-19 19:49:06,027 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:06,792 - Single inference for Actors, duration: 0:00:04.822032
+2025-04-19 19:49:06,904 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:07,058 - Single inference for Acupuncturists, duration: 0:00:05.088420
+2025-04-19 19:49:07,176 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:08,898 - Single inference for Accountants and Auditors, duration: 0:00:06.928253
+2025-04-19 19:49:09,027 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:11,888 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.815391
+2025-04-19 19:49:11,992 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:12,874 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.952688
+2025-04-19 19:49:13,005 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:13,865 - Single inference for Adapted Physical Education Specialists, duration: 0:00:07.059399
+2025-04-19 19:49:14,250 - Single inference for Acute Care Nurses, duration: 0:00:08.322256
+2025-04-19 19:49:14,561 - Single inference for Administrative Services Managers, duration: 0:00:02.660010
+2025-04-19 19:49:18,856 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.959993
+2025-04-19 19:49:18,876 - Multiprocessing for mistral-prompt1-5, duration: 0:00:16.953693
+2025-04-19 19:49:19,042 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:19,175 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:19,178 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:19,181 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:23,619 - Single inference for Actors, duration: 0:00:04.692222
+2025-04-19 19:49:23,666 - Single inference for Actuaries, duration: 0:00:04.739426
+2025-04-19 19:49:23,752 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:23,823 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:24,621 - Single inference for Acupuncturists, duration: 0:00:05.694414
+2025-04-19 19:49:24,751 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:26,531 - Single inference for Accountants and Auditors, duration: 0:00:07.604847
+2025-04-19 19:49:26,651 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:29,523 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.838863
+2025-04-19 19:49:29,642 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:30,188 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:05.553174
+2025-04-19 19:49:30,320 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:31,229 - Single inference for Acute Care Nurses, duration: 0:00:07.586421
+2025-04-19 19:49:31,287 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.742095
+2025-04-19 19:49:31,746 - Single inference for Administrative Services Managers, duration: 0:00:02.200446
+2025-04-19 19:49:36,236 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:06.025408
+2025-04-19 19:49:36,254 - Multiprocessing for mistral-prompt1-6, duration: 0:00:17.374876
+2025-04-19 19:49:36,422 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:36,555 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:36,559 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:36,562 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:40,720 - Single inference for Actuaries, duration: 0:00:04.409805
+2025-04-19 19:49:40,854 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:41,424 - Single inference for Actors, duration: 0:00:05.113554
+2025-04-19 19:49:41,548 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:41,567 - Single inference for Accountants and Auditors, duration: 0:00:05.256072
+2025-04-19 19:49:41,701 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:41,778 - Single inference for Acupuncturists, duration: 0:00:05.467376
+2025-04-19 19:49:41,909 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:45,458 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.657030
+2025-04-19 19:49:45,563 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:46,444 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.863420
+2025-04-19 19:49:46,574 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:47,144 - Single inference for Acute Care Nurses, duration: 0:00:06.401069
+2025-04-19 19:49:47,271 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.833372
+2025-04-19 19:49:47,802 - Single inference for Administrative Services Managers, duration: 0:00:02.331008
+2025-04-19 19:49:52,682 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:06.224029
+2025-04-19 19:49:52,701 - Multiprocessing for mistral-prompt1-7, duration: 0:00:16.442439
+2025-04-19 19:49:52,866 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:52,998 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:53,003 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:53,005 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:56,926 - Single inference for Actuaries, duration: 0:00:04.171537
+2025-04-19 19:49:56,926 - Single inference for Actors, duration: 0:00:04.171936
+2025-04-19 19:49:57,080 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:57,083 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:58,030 - Single inference for Acupuncturists, duration: 0:00:05.276159
+2025-04-19 19:49:58,150 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:49:58,551 - Single inference for Accountants and Auditors, duration: 0:00:05.797422
+2025-04-19 19:49:58,669 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:02,264 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.220093
+2025-04-19 19:50:02,371 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:02,859 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:04.293913
+2025-04-19 19:50:02,979 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:03,262 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.312609
+2025-04-19 19:50:03,767 - Single inference for Acute Care Nurses, duration: 0:00:06.817403
+2025-04-19 19:50:04,385 - Single inference for Administrative Services Managers, duration: 0:00:02.107304
+2025-04-19 19:50:08,612 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.738542
+2025-04-19 19:50:08,632 - Multiprocessing for mistral-prompt1-8, duration: 0:00:15.927559
+2025-04-19 19:50:08,797 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:08,930 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:08,933 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:08,937 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:12,919 - Single inference for Actuaries, duration: 0:00:04.236839
+2025-04-19 19:50:13,043 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:13,855 - Single inference for Actors, duration: 0:00:05.172688
+2025-04-19 19:50:13,968 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:14,144 - Single inference for Acupuncturists, duration: 0:00:05.461969
+2025-04-19 19:50:14,262 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:15,740 - Single inference for Accountants and Auditors, duration: 0:00:07.058118
+2025-04-19 19:50:15,871 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:18,918 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.760310
+2025-04-19 19:50:19,035 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:19,641 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.877933
+2025-04-19 19:50:19,782 - HTTP Request: POST http://127.0.0.1:11441/api/chat "HTTP/1.1 200 OK"
+2025-04-19 19:50:20,511 - Single inference for Adapted Physical Education Specialists, duration: 0:00:06.642138
+2025-04-19 19:50:20,708 - Single inference for Acute Care Nurses, duration: 0:00:07.766074
+2025-04-19 19:50:21,242 - Single inference for Administrative Services Managers, duration: 0:00:02.309286
+2025-04-19 19:50:24,871 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:05.216719
+2025-04-19 19:50:24,891 - Multiprocessing for mistral-prompt1-9, duration: 0:00:16.255312
+2025-04-19 19:50:24,903 - Wrote results JSON for mistral-prompt1, duration: 0:00:00.008104
+2025-04-19 19:50:24,903 - Script completed
+2025-04-19 22:51:01,825 - Script started
+2025-04-19 22:51:01,827 - Processing model: mistral
+2025-04-19 22:51:05,974 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:09,361 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:09,363 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:09,416 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:09,418 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:11,500 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.216222
+2025-04-19 22:51:11,576 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:12,553 - Single inference for Advertising Sales Agents, duration: 0:00:03.269258
+2025-04-19 22:51:12,592 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.308525
+2025-04-19 22:51:12,620 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:12,661 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:13,275 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:03.990963
+2025-04-19 22:51:13,340 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:14,432 - Single inference for Aerospace Engineers, duration: 0:00:02.904718
+2025-04-19 22:51:14,490 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:15,412 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.846863
+2025-04-19 22:51:15,477 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:15,632 - Single inference for Agricultural Engineers, duration: 0:00:03.023352
+2025-04-19 22:51:15,698 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:16,996 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.710486
+2025-04-19 22:51:17,059 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:18,802 - Single inference for Agricultural Inspectors, duration: 0:00:04.359477
+2025-04-19 22:51:18,869 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:19,188 - Single inference for Agricultural Technicians, duration: 0:00:03.545745
+2025-04-19 22:51:19,257 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:20,187 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.763967
+2025-04-19 22:51:20,260 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:20,495 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.682052
+2025-04-19 22:51:20,563 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:21,938 - Single inference for Air Traffic Controllers, duration: 0:00:04.931258
+2025-04-19 22:51:22,003 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:25,848 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.644685
+2025-04-19 22:51:25,909 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:25,950 - Single inference for Airfield Operations Specialists, duration: 0:00:05.444544
+2025-04-19 22:51:25,975 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.770028
+2025-04-19 22:51:26,012 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:26,050 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:27,388 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.439631
+2025-04-19 22:51:28,340 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.378852
+2025-04-19 22:51:28,582 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.595505
+2025-04-19 22:51:29,182 - Single inference for Allergists and Immunologists, duration: 0:00:03.321563
+2025-04-19 22:51:29,199 - Multiprocessing for mistral-no_prompt-0, duration: 0:00:19.986265
+2025-04-19 22:51:29,306 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:29,309 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:29,353 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:29,356 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:31,358 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.116401
+2025-04-19 22:51:31,428 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:32,663 - Single inference for Advertising Sales Agents, duration: 0:00:03.421477
+2025-04-19 22:51:32,721 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:34,100 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.857691
+2025-04-19 22:51:34,168 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:34,445 - Single inference for Aerospace Engineers, duration: 0:00:03.070102
+2025-04-19 22:51:34,511 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:34,984 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.742287
+2025-04-19 22:51:35,044 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:35,421 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.746626
+2025-04-19 22:51:35,486 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:36,795 - Single inference for Agricultural Engineers, duration: 0:00:02.678520
+2025-04-19 22:51:36,861 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:37,411 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.954918
+2025-04-19 22:51:37,482 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:37,950 - Single inference for Agricultural Inspectors, duration: 0:00:02.954580
+2025-04-19 22:51:38,013 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:39,419 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.457790
+2025-04-19 22:51:39,478 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:40,629 - Single inference for Agricultural Technicians, duration: 0:00:03.823510
+2025-04-19 22:51:40,699 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:40,834 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.402193
+2025-04-19 22:51:40,897 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:40,909 - Single inference for Air Traffic Controllers, duration: 0:00:03.481975
+2025-04-19 22:51:40,970 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:45,494 - Single inference for Airfield Operations Specialists, duration: 0:00:04.648785
+2025-04-19 22:51:45,553 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:45,634 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.988493
+2025-04-19 22:51:45,703 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.783237
+2025-04-19 22:51:45,706 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:45,767 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:47,425 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.995127
+2025-04-19 22:51:48,083 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.369328
+2025-04-19 22:51:48,135 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.484937
+2025-04-19 22:51:48,871 - Single inference for Allergists and Immunologists, duration: 0:00:03.366837
+2025-04-19 22:51:48,889 - Multiprocessing for mistral-no_prompt-1, duration: 0:00:19.685683
+2025-04-19 22:51:49,005 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:49,007 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:49,062 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:49,064 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:51,438 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.506363
+2025-04-19 22:51:51,514 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:52,879 - Single inference for Advertising Sales Agents, duration: 0:00:03.947480
+2025-04-19 22:51:52,942 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:53,508 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.575885
+2025-04-19 22:51:53,578 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:53,800 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.868027
+2025-04-19 22:51:53,874 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:54,825 - Single inference for Aerospace Engineers, duration: 0:00:03.370978
+2025-04-19 22:51:54,883 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:55,438 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.547884
+2025-04-19 22:51:55,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:56,174 - Single inference for Agricultural Engineers, duration: 0:00:02.649704
+2025-04-19 22:51:56,238 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:57,003 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.187054
+2025-04-19 22:51:57,065 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:59,117 - Single inference for Agricultural Inspectors, duration: 0:00:04.281384
+2025-04-19 22:51:59,183 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:59,519 - Single inference for Agricultural Technicians, duration: 0:00:03.334120
+2025-04-19 22:51:59,579 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:00,063 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.612231
+2025-04-19 22:52:00,128 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:00,576 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.448413
+2025-04-19 22:52:00,639 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:02,717 - Single inference for Air Traffic Controllers, duration: 0:00:05.702722
+2025-04-19 22:52:02,783 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:05,583 - Single inference for Airfield Operations Specialists, duration: 0:00:04.995556
+2025-04-19 22:52:05,653 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:06,130 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.600110
+2025-04-19 22:52:06,192 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:06,649 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:06.575297
+2025-04-19 22:52:06,714 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:07,589 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.861348
+2025-04-19 22:52:08,511 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.370254
+2025-04-19 22:52:09,017 - Single inference for Allergists and Immunologists, duration: 0:00:03.417563
+2025-04-19 22:52:09,252 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.591994
+2025-04-19 22:52:09,269 - Multiprocessing for mistral-no_prompt-2, duration: 0:00:20.375829
+2025-04-19 22:52:09,386 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:09,388 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:09,431 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:09,432 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:12,178 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.866164
+2025-04-19 22:52:12,247 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:13,365 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.052510
+2025-04-19 22:52:13,424 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:13,972 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.659954
+2025-04-19 22:52:14,032 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:14,158 - Single inference for Advertising Sales Agents, duration: 0:00:04.845354
+2025-04-19 22:52:14,226 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:15,384 - Single inference for Aerospace Engineers, duration: 0:00:03.189526
+2025-04-19 22:52:15,451 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:16,374 - Single inference for Agricultural Engineers, duration: 0:00:02.391001
+2025-04-19 22:52:16,406 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.030432
+2025-04-19 22:52:16,444 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:16,482 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:17,503 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.333901
+2025-04-19 22:52:17,564 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:18,160 - Single inference for Agricultural Inspectors, duration: 0:00:02.759819
+2025-04-19 22:52:18,224 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:19,668 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.497099
+2025-04-19 22:52:19,734 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:20,410 - Single inference for Agricultural Technicians, duration: 0:00:03.992880
+2025-04-19 22:52:20,478 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:20,759 - Single inference for Air Traffic Controllers, duration: 0:00:03.245848
+2025-04-19 22:52:20,829 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:21,519 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.128281
+2025-04-19 22:52:21,592 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:25,511 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:03.976553
+2025-04-19 22:52:25,572 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:25,766 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.345797
+2025-04-19 22:52:25,829 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:25,917 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.237032
+2025-04-19 22:52:25,983 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:27,194 - Single inference for Airfield Operations Specialists, duration: 0:00:06.424277
+2025-04-19 22:52:28,655 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.877288
+2025-04-19 22:52:28,837 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.909435
+2025-04-19 22:52:29,336 - Single inference for Allergists and Immunologists, duration: 0:00:03.813604
+2025-04-19 22:52:29,353 - Multiprocessing for mistral-no_prompt-3, duration: 0:00:20.079050
+2025-04-19 22:52:29,456 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:29,509 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:29,511 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:29,513 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:32,240 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.845174
+2025-04-19 22:52:32,303 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:32,959 - Single inference for Advertising Sales Agents, duration: 0:00:03.563704
+2025-04-19 22:52:33,018 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:33,109 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.713503
+2025-04-19 22:52:33,167 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:34,993 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.597548
+2025-04-19 22:52:35,067 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:35,592 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.622649
+2025-04-19 22:52:35,613 - Single inference for Agricultural Engineers, duration: 0:00:02.494133
+2025-04-19 22:52:35,651 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:35,689 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:36,056 - Single inference for Aerospace Engineers, duration: 0:00:03.804655
+2025-04-19 22:52:36,120 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:37,486 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.477252
+2025-04-19 22:52:37,555 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:38,710 - Single inference for Agricultural Inspectors, duration: 0:00:03.106699
+2025-04-19 22:52:38,773 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:39,708 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.081778
+2025-04-19 22:52:39,769 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:39,829 - Single inference for Agricultural Technicians, duration: 0:00:03.762249
+2025-04-19 22:52:39,893 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:40,342 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.621518
+2025-04-19 22:52:40,404 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:41,589 - Single inference for Air Traffic Controllers, duration: 0:00:04.086680
+2025-04-19 22:52:41,652 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:44,394 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.554373
+2025-04-19 22:52:44,418 - Single inference for Airfield Operations Specialists, duration: 0:00:04.064958
+2025-04-19 22:52:44,451 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:44,485 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:46,526 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.926018
+2025-04-19 22:52:46,595 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:46,778 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.059443
+2025-04-19 22:52:46,853 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.422974
+2025-04-19 22:52:47,704 - Single inference for Allergists and Immunologists, duration: 0:00:03.299395
+2025-04-19 22:52:48,406 - Single inference for Amusement and Recreation Attendants, duration: 0:00:01.863923
+2025-04-19 22:52:48,424 - Multiprocessing for mistral-no_prompt-4, duration: 0:00:19.066773
+2025-04-19 22:52:48,526 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:48,580 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:48,582 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:48,584 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:51,105 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.639055
+2025-04-19 22:52:51,169 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:52,911 - Single inference for Advertising Sales Agents, duration: 0:00:04.445671
+2025-04-19 22:52:52,928 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.461650
+2025-04-19 22:52:52,972 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:53,007 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:54,086 - Single inference for Aerospace Engineers, duration: 0:00:02.969905
+2025-04-19 22:52:54,156 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:55,092 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:06.625632
+2025-04-19 22:52:55,153 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:55,324 - Single inference for Agricultural Engineers, duration: 0:00:02.381842
+2025-04-19 22:52:55,392 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:55,704 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.781474
+2025-04-19 22:52:55,772 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:57,173 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.076628
+2025-04-19 22:52:57,236 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:58,284 - Single inference for Agricultural Inspectors, duration: 0:00:03.181187
+2025-04-19 22:52:58,356 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:59,701 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.401167
+2025-04-19 22:52:59,769 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:59,860 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.525361
+2025-04-19 22:52:59,924 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:00,321 - Single inference for Agricultural Technicians, duration: 0:00:04.603496
+2025-04-19 22:53:00,391 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:02,460 - Single inference for Air Traffic Controllers, duration: 0:00:05.273792
+2025-04-19 22:53:02,525 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:04,449 - Single inference for Airfield Operations Specialists, duration: 0:00:04.112491
+2025-04-19 22:53:04,509 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:06,077 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.359259
+2025-04-19 22:53:06,147 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:06,184 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:06.313529
+2025-04-19 22:53:06,256 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:07,339 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.866447
+2025-04-19 22:53:07,821 - Single inference for Allergists and Immunologists, duration: 0:00:03.361140
+2025-04-19 22:53:08,587 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.493891
+2025-04-19 22:53:09,050 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.853668
+2025-04-19 22:53:09,068 - Multiprocessing for mistral-no_prompt-5, duration: 0:00:20.639931
+2025-04-19 22:53:09,171 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:09,223 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:09,225 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:09,228 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:11,627 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.516594
+2025-04-19 22:53:11,692 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:12,680 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.569652
+2025-04-19 22:53:12,721 - Single inference for Advertising Sales Agents, duration: 0:00:03.610870
+2025-04-19 22:53:12,750 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:12,782 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:13,616 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.505787
+2025-04-19 22:53:13,692 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:15,094 - Single inference for Aerospace Engineers, duration: 0:00:03.456767
+2025-04-19 22:53:15,154 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:15,639 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.942441
+2025-04-19 22:53:15,639 - Single inference for Agricultural Engineers, duration: 0:00:02.907447
+2025-04-19 22:53:15,717 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:15,719 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:16,272 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.639044
+2025-04-19 22:53:16,344 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:18,031 - Single inference for Agricultural Inspectors, duration: 0:00:02.925902
+2025-04-19 22:53:18,096 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:19,616 - Single inference for Agricultural Technicians, duration: 0:00:03.960528
+2025-04-19 22:53:19,631 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.588866
+2025-04-19 22:53:19,693 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:19,695 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:20,946 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.294176
+2025-04-19 22:53:21,017 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:21,661 - Single inference for Air Traffic Controllers, duration: 0:00:05.372858
+2025-04-19 22:53:21,726 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:24,351 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.705708
+2025-04-19 22:53:24,419 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:25,594 - Single inference for Airfield Operations Specialists, duration: 0:00:04.631917
+2025-04-19 22:53:25,662 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:26,795 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.123165
+2025-04-19 22:53:26,860 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:28,209 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.604428
+2025-04-19 22:53:28,217 - Single inference for Allergists and Immunologists, duration: 0:00:03.849487
+2025-04-19 22:53:29,277 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:09.649937
+2025-04-19 22:53:29,664 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.858270
+2025-04-19 22:53:29,681 - Multiprocessing for mistral-no_prompt-6, duration: 0:00:20.609481
+2025-04-19 22:53:29,786 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:29,843 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:29,846 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:29,848 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:32,553 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.829358
+2025-04-19 22:53:32,617 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:33,383 - Single inference for Advertising Sales Agents, duration: 0:00:03.658788
+2025-04-19 22:53:33,449 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:33,566 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.842193
+2025-04-19 22:53:33,625 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:35,175 - Single inference for Aerospace Engineers, duration: 0:00:02.611306
+2025-04-19 22:53:35,243 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:36,101 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:06.377335
+2025-04-19 22:53:36,162 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:36,254 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.855087
+2025-04-19 22:53:36,321 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:36,440 - Single inference for Agricultural Engineers, duration: 0:00:02.863692
+2025-04-19 22:53:36,508 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:38,309 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.120700
+2025-04-19 22:53:38,373 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:39,611 - Single inference for Agricultural Inspectors, duration: 0:00:03.496700
+2025-04-19 22:53:39,676 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:40,728 - Single inference for Agricultural Technicians, duration: 0:00:04.276914
+2025-04-19 22:53:40,798 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:41,034 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.412194
+2025-04-19 22:53:41,099 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:41,592 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.326681
+2025-04-19 22:53:41,656 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:44,982 - Single inference for Air Traffic Controllers, duration: 0:00:06.662019
+2025-04-19 22:53:45,050 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:45,918 - Single inference for Airfield Operations Specialists, duration: 0:00:04.315705
+2025-04-19 22:53:45,984 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:46,905 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.859920
+2025-04-19 22:53:46,968 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:47,126 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.387448
+2025-04-19 22:53:47,190 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:48,999 - Single inference for Allergists and Immunologists, duration: 0:00:03.064658
+2025-04-19 22:53:49,022 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.103981
+2025-04-19 22:53:49,398 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.261244
+2025-04-19 22:53:49,642 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.649381
+2025-04-19 22:53:49,660 - Multiprocessing for mistral-no_prompt-7, duration: 0:00:19.974451
+2025-04-19 22:53:49,754 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:49,809 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:49,811 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:49,813 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:52,413 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.710251
+2025-04-19 22:53:52,474 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:52,688 - Single inference for Advertising Sales Agents, duration: 0:00:02.986032
+2025-04-19 22:53:52,755 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:53,339 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:03.636223
+2025-04-19 22:53:53,397 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:53,460 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.757840
+2025-04-19 22:53:53,523 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:55,246 - Single inference for Aerospace Engineers, duration: 0:00:02.822692
+2025-04-19 22:53:55,311 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:55,432 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.727331
+2025-04-19 22:53:55,497 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:56,459 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.987697
+2025-04-19 22:53:56,521 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:56,580 - Single inference for Agricultural Engineers, duration: 0:00:03.230640
+2025-04-19 22:53:56,650 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:58,880 - Single inference for Agricultural Inspectors, duration: 0:00:03.617157
+2025-04-19 22:53:58,952 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:59,829 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.383490
+2025-04-19 22:53:59,889 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:00,348 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.451948
+2025-04-19 22:54:00,416 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:00,715 - Single inference for Agricultural Technicians, duration: 0:00:04.245813
+2025-04-19 22:54:00,778 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:01,242 - Single inference for Air Traffic Controllers, duration: 0:00:04.645570
+2025-04-19 22:54:01,314 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:05,273 - Single inference for Airfield Operations Specialists, duration: 0:00:04.546675
+2025-04-19 22:54:05,339 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:05,771 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.410569
+2025-04-19 22:54:05,835 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:06,249 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.990467
+2025-04-19 22:54:06,312 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:07,084 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.244508
+2025-04-19 22:54:08,095 - Single inference for Allergists and Immunologists, duration: 0:00:02.805439
+2025-04-19 22:54:08,336 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.552008
+2025-04-19 22:54:08,591 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.331178
+2025-04-19 22:54:08,608 - Multiprocessing for mistral-no_prompt-8, duration: 0:00:18.943967
+2025-04-19 22:54:08,706 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:08,760 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:08,762 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:08,765 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:11,313 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.662501
+2025-04-19 22:54:11,382 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:12,039 - Single inference for Advertising Sales Agents, duration: 0:00:03.388641
+2025-04-19 22:54:12,114 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:12,204 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.553538
+2025-04-19 22:54:12,271 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:14,086 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.435122
+2025-04-19 22:54:14,160 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:14,297 - Single inference for Aerospace Engineers, duration: 0:00:02.966833
+2025-04-19 22:54:14,364 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:14,577 - Single inference for Agricultural Engineers, duration: 0:00:02.355780
+2025-04-19 22:54:14,651 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:15,135 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.079375
+2025-04-19 22:54:15,200 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:17,172 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.069677
+2025-04-19 22:54:17,241 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:18,286 - Single inference for Agricultural Inspectors, duration: 0:00:03.972871
+2025-04-19 22:54:18,357 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:18,965 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.371947
+2025-04-19 22:54:19,027 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:19,484 - Single inference for Agricultural Technicians, duration: 0:00:04.338239
+2025-04-19 22:54:19,548 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:19,978 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.676032
+2025-04-19 22:54:20,041 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:21,989 - Single inference for Air Traffic Controllers, duration: 0:00:04.800859
+2025-04-19 22:54:22,062 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:24,239 - Single inference for Airfield Operations Specialists, duration: 0:00:04.250501
+2025-04-19 22:54:24,279 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.784012
+2025-04-19 22:54:24,305 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:24,346 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:26,446 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.441492
+2025-04-19 22:54:26,513 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:26,972 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.682309
+2025-04-19 22:54:27,103 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:08.125429
+2025-04-19 22:54:27,872 - Single inference for Allergists and Immunologists, duration: 0:00:03.617270
+2025-04-19 22:54:28,605 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.142564
+2025-04-19 22:54:28,623 - Multiprocessing for mistral-no_prompt-9, duration: 0:00:20.010684
+2025-04-19 22:54:28,634 - Wrote results JSON for mistral-no_prompt, duration: 0:00:00.007305
+2025-04-19 22:54:28,636 - Wrote prompt prompt1, duration: 0:00:00.001390
+2025-04-19 22:54:28,783 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:28,871 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:28,874 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:28,877 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:31,335 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.659655
+2025-04-19 22:54:31,410 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:32,587 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.911916
+2025-04-19 22:54:32,659 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:32,883 - Single inference for Advertising Sales Agents, duration: 0:00:04.207607
+2025-04-19 22:54:32,961 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:33,479 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.803079
+2025-04-19 22:54:33,557 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:34,563 - Single inference for Aerospace Engineers, duration: 0:00:03.216927
+2025-04-19 22:54:34,636 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:35,630 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.031138
+2025-04-19 22:54:35,638 - Single inference for Agricultural Engineers, duration: 0:00:02.743092
+2025-04-19 22:54:35,735 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:35,738 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:36,979 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.489740
+2025-04-19 22:54:37,055 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:37,481 - Single inference for Agricultural Inspectors, duration: 0:00:02.907567
+2025-04-19 22:54:37,568 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:39,186 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.689267
+2025-04-19 22:54:39,268 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:39,424 - Single inference for Agricultural Technicians, duration: 0:00:03.771600
+2025-04-19 22:54:39,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:40,948 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.307158
+2025-04-19 22:54:41,023 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:41,322 - Single inference for Air Traffic Controllers, duration: 0:00:04.332434
+2025-04-19 22:54:41,409 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:43,564 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.129291
+2025-04-19 22:54:43,634 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:45,669 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.465946
+2025-04-19 22:54:45,743 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:45,904 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.565267
+2025-04-19 22:54:45,979 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:47,646 - Single inference for Airfield Operations Specialists, duration: 0:00:06.686441
+2025-04-19 22:54:47,646 - Single inference for Allergists and Immunologists, duration: 0:00:04.071348
+2025-04-19 22:54:48,018 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.338751
+2025-04-19 22:54:48,523 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.605793
+2025-04-19 22:54:48,540 - Multiprocessing for mistral-prompt1-0, duration: 0:00:19.903710
+2025-04-19 22:54:48,650 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:48,735 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:48,738 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:48,740 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:51,068 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.484764
+2025-04-19 22:54:51,150 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:51,892 - Single inference for Advertising Sales Agents, duration: 0:00:03.309088
+2025-04-19 22:54:51,967 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:52,187 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.604364
+2025-04-19 22:54:52,261 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:53,485 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.902439
+2025-04-19 22:54:53,563 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:54,387 - Single inference for Aerospace Engineers, duration: 0:00:03.302675
+2025-04-19 22:54:54,469 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:54,527 - Single inference for Agricultural Engineers, duration: 0:00:02.326388
+2025-04-19 22:54:54,604 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:54,945 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.039880
+2025-04-19 22:54:55,024 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:56,483 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.987206
+2025-04-19 22:54:56,567 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:57,662 - Single inference for Agricultural Inspectors, duration: 0:00:03.259370
+2025-04-19 22:54:57,750 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:59,217 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.537868
+2025-04-19 22:54:59,290 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:59,352 - Single inference for Agricultural Technicians, duration: 0:00:04.395585
+2025-04-19 22:54:59,432 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:59,933 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.394975
+2025-04-19 22:55:00,009 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:01,238 - Single inference for Air Traffic Controllers, duration: 0:00:04.738261
+2025-04-19 22:55:01,316 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:03,085 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:03.722325
+2025-04-19 22:55:03,164 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:05,549 - Single inference for Airfield Operations Specialists, duration: 0:00:05.605742
+2025-04-19 22:55:05,624 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:05,845 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.617859
+2025-04-19 22:55:05,920 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:05,984 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.735628
+2025-04-19 22:55:06,284 - Single inference for Allergists and Immunologists, duration: 0:00:03.182727
+2025-04-19 22:55:07,633 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.071474
+2025-04-19 22:55:08,002 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.145912
+2025-04-19 22:55:08,019 - Multiprocessing for mistral-prompt1-1, duration: 0:00:19.474421
+2025-04-19 22:55:08,130 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:08,209 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:08,211 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:08,213 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:10,342 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.280542
+2025-04-19 22:55:10,416 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:11,700 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.638260
+2025-04-19 22:55:11,784 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:12,105 - Single inference for Advertising Sales Agents, duration: 0:00:04.043622
+2025-04-19 22:55:12,190 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:13,782 - Single inference for Aerospace Engineers, duration: 0:00:03.429204
+2025-04-19 22:55:13,869 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:14,260 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:06.198694
+2025-04-19 22:55:14,333 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:14,757 - Single inference for Agricultural Engineers, duration: 0:00:02.636111
+2025-04-19 22:55:14,836 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:14,937 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.220522
+2025-04-19 22:55:15,015 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:16,902 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.103515
+2025-04-19 22:55:16,977 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:17,317 - Single inference for Agricultural Inspectors, duration: 0:00:03.045697
+2025-04-19 22:55:17,395 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:18,927 - Single inference for Agricultural Technicians, duration: 0:00:03.979626
+2025-04-19 22:55:19,001 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:19,160 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.832806
+2025-04-19 22:55:19,242 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:20,356 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.585788
+2025-04-19 22:55:20,431 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:21,846 - Single inference for Air Traffic Controllers, duration: 0:00:04.933098
+2025-04-19 22:55:21,924 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:23,856 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.684944
+2025-04-19 22:55:23,927 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:25,994 - Single inference for Airfield Operations Specialists, duration: 0:00:05.627432
+2025-04-19 22:55:26,069 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:26,237 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.299329
+2025-04-19 22:55:26,321 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:27,374 - Single inference for Allergists and Immunologists, duration: 0:00:03.503923
+2025-04-19 22:55:27,592 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.735582
+2025-04-19 22:55:28,275 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.269395
+2025-04-19 22:55:28,769 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.514916
+2025-04-19 22:55:28,786 - Multiprocessing for mistral-prompt1-2, duration: 0:00:20.762592
+2025-04-19 22:55:28,901 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:28,985 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:28,987 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:28,989 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:30,943 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.115115
+2025-04-19 22:55:31,018 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:32,208 - Single inference for Advertising Sales Agents, duration: 0:00:03.380071
+2025-04-19 22:55:32,286 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:32,527 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.698289
+2025-04-19 22:55:32,602 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:33,475 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.646464
+2025-04-19 22:55:33,553 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:34,390 - Single inference for Aerospace Engineers, duration: 0:00:03.435525
+2025-04-19 22:55:34,463 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:34,785 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.563471
+2025-04-19 22:55:34,872 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:35,260 - Single inference for Agricultural Engineers, duration: 0:00:02.720568
+2025-04-19 22:55:35,339 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:36,854 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.368302
+2025-04-19 22:55:36,930 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:37,783 - Single inference for Agricultural Inspectors, duration: 0:00:03.382155
+2025-04-19 22:55:37,862 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:39,140 - Single inference for Agricultural Technicians, duration: 0:00:03.868700
+2025-04-19 22:55:39,217 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:39,534 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.740285
+2025-04-19 22:55:39,611 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.809362
+2025-04-19 22:55:39,613 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:39,698 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:42,465 - Single inference for Air Traffic Controllers, duration: 0:00:05.599995
+2025-04-19 22:55:42,543 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:44,428 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.882598
+2025-04-19 22:55:44,501 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:44,853 - Single inference for Airfield Operations Specialists, duration: 0:00:05.225675
+2025-04-19 22:55:44,927 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:45,106 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:05.949849
+2025-04-19 22:55:45,190 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:47,175 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.311266
+2025-04-19 22:55:47,345 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.869844
+2025-04-19 22:55:47,887 - Single inference for Allergists and Immunologists, duration: 0:00:03.447992
+2025-04-19 22:55:47,950 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.827250
+2025-04-19 22:55:47,966 - Multiprocessing for mistral-prompt1-3, duration: 0:00:19.176850
+2025-04-19 22:55:48,077 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:48,163 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:48,165 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:48,167 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:50,419 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.409746
+2025-04-19 22:55:50,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:51,279 - Single inference for Advertising Sales Agents, duration: 0:00:03.269839
+2025-04-19 22:55:51,353 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:52,138 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.128641
+2025-04-19 22:55:52,186 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.176795
+2025-04-19 22:55:52,218 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:52,266 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:53,682 - Single inference for Aerospace Engineers, duration: 0:00:03.247100
+2025-04-19 22:55:53,764 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:54,658 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.367997
+2025-04-19 22:55:54,744 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:54,851 - Single inference for Agricultural Engineers, duration: 0:00:02.696613
+2025-04-19 22:55:54,938 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:55,093 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.896642
+2025-04-19 22:55:55,170 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:56,779 - Single inference for Agricultural Inspectors, duration: 0:00:03.080827
+2025-04-19 22:55:56,858 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:58,419 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.628411
+2025-04-19 22:55:58,506 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:59,091 - Single inference for Agricultural Technicians, duration: 0:00:04.224141
+2025-04-19 22:55:59,170 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:59,228 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.553555
+2025-04-19 22:55:59,309 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:59,321 - Single inference for Air Traffic Controllers, duration: 0:00:04.216750
+2025-04-19 22:55:59,394 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:04,037 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.705128
+2025-04-19 22:56:04,111 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:04,121 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.019234
+2025-04-19 22:56:04,194 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:05,335 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.899586
+2025-04-19 22:56:05,410 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:06,201 - Single inference for Airfield Operations Specialists, duration: 0:00:06.956909
+2025-04-19 22:56:06,778 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.645779
+2025-04-19 22:56:07,800 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.454213
+2025-04-19 22:56:08,040 - Single inference for Allergists and Immunologists, duration: 0:00:03.992167
+2025-04-19 22:56:08,058 - Multiprocessing for mistral-prompt1-4, duration: 0:00:20.087329
+2025-04-19 22:56:08,168 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:08,254 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:08,256 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:08,259 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:10,683 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.581795
+2025-04-19 22:56:10,757 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:11,163 - Single inference for Advertising Sales Agents, duration: 0:00:03.062074
+2025-04-19 22:56:11,237 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:12,548 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.447397
+2025-04-19 22:56:12,621 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:12,898 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.797533
+2025-04-19 22:56:12,985 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:13,516 - Single inference for Aerospace Engineers, duration: 0:00:02.822761
+2025-04-19 22:56:13,598 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:14,052 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.877968
+2025-04-19 22:56:14,130 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:15,419 - Single inference for Agricultural Engineers, duration: 0:00:02.860109
+2025-04-19 22:56:15,507 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:15,973 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.058484
+2025-04-19 22:56:16,048 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:16,643 - Single inference for Agricultural Inspectors, duration: 0:00:03.110197
+2025-04-19 22:56:16,722 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:18,236 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.582602
+2025-04-19 22:56:18,319 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:18,423 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.358089
+2025-04-19 22:56:18,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:18,862 - Single inference for Agricultural Technicians, duration: 0:00:03.426370
+2025-04-19 22:56:18,937 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:21,045 - Single inference for Air Traffic Controllers, duration: 0:00:05.058922
+2025-04-19 22:56:21,123 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:23,272 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.837149
+2025-04-19 22:56:23,346 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:24,036 - Single inference for Airfield Operations Specialists, duration: 0:00:05.162923
+2025-04-19 22:56:24,119 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:26,018 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.765368
+2025-04-19 22:56:26,102 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:26,237 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.181662
+2025-04-19 22:56:26,518 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.466368
+2025-04-19 22:56:26,690 - Single inference for Allergists and Immunologists, duration: 0:00:03.401310
+2025-04-19 22:56:28,282 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.247723
+2025-04-19 22:56:28,299 - Multiprocessing for mistral-prompt1-5, duration: 0:00:20.237228
+2025-04-19 22:56:28,415 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:28,498 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:28,500 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:28,503 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:31,040 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.698169
+2025-04-19 22:56:31,115 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:32,125 - Single inference for Advertising Sales Agents, duration: 0:00:03.782966
+2025-04-19 22:56:32,213 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:32,597 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.255955
+2025-04-19 22:56:32,671 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:33,569 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.227787
+2025-04-19 22:56:33,656 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:34,277 - Single inference for Aerospace Engineers, duration: 0:00:03.225997
+2025-04-19 22:56:34,350 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:35,008 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.867338
+2025-04-19 22:56:35,086 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:35,125 - Single inference for Agricultural Engineers, duration: 0:00:02.516218
+2025-04-19 22:56:35,212 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:37,276 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.690498
+2025-04-19 22:56:37,359 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:37,544 - Single inference for Agricultural Inspectors, duration: 0:00:03.256717
+2025-04-19 22:56:37,631 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:38,752 - Single inference for Agricultural Technicians, duration: 0:00:03.610568
+2025-04-19 22:56:38,826 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:39,263 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.706433
+2025-04-19 22:56:39,342 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:39,814 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.795199
+2025-04-19 22:56:39,899 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:41,872 - Single inference for Air Traffic Controllers, duration: 0:00:04.579610
+2025-04-19 22:56:41,950 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:43,582 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:04.818979
+2025-04-19 22:56:43,656 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:44,215 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.939187
+2025-04-19 22:56:44,296 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:44,865 - Single inference for Airfield Operations Specialists, duration: 0:00:05.033982
+2025-04-19 22:56:44,940 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:46,836 - Single inference for Allergists and Immunologists, duration: 0:00:03.243813
+2025-04-19 22:56:46,885 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.002668
+2025-04-19 22:56:46,908 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.675930
+2025-04-19 22:56:46,941 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.063006
+2025-04-19 22:56:46,959 - Multiprocessing for mistral-prompt1-6, duration: 0:00:18.655372
+2025-04-19 22:56:47,075 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:47,156 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:47,157 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:47,160 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:49,167 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.165114
+2025-04-19 22:56:49,249 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:50,181 - Single inference for Advertising Sales Agents, duration: 0:00:03.178867
+2025-04-19 22:56:50,255 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:50,528 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.526357
+2025-04-19 22:56:50,607 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:51,792 - Single inference for Aerospace Engineers, duration: 0:00:02.609102
+2025-04-19 22:56:51,879 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:52,057 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.054809
+2025-04-19 22:56:52,136 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:53,128 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.936316
+2025-04-19 22:56:53,215 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:53,275 - Single inference for Agricultural Engineers, duration: 0:00:02.732946
+2025-04-19 22:56:53,362 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:55,390 - Single inference for Agricultural Inspectors, duration: 0:00:03.317490
+2025-04-19 22:56:55,474 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:55,534 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.728116
+2025-04-19 22:56:55,611 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:56,966 - Single inference for Agricultural Technicians, duration: 0:00:03.675076
+2025-04-19 22:56:57,046 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:57,525 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.980392
+2025-04-19 22:56:57,603 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:58,146 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.001925
+2025-04-19 22:56:58,227 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:59,565 - Single inference for Air Traffic Controllers, duration: 0:00:04.158575
+2025-04-19 22:56:59,643 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:03,101 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.118776
+2025-04-19 22:57:03,176 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:03,539 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:06.003606
+2025-04-19 22:57:03,619 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:04,528 - Single inference for Airfield Operations Specialists, duration: 0:00:06.366360
+2025-04-19 22:57:04,612 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:05,289 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.713185
+2025-04-19 22:57:05,876 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.320705
+2025-04-19 22:57:07,214 - Single inference for Allergists and Immunologists, duration: 0:00:04.103003
+2025-04-19 22:57:07,321 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.776748
+2025-04-19 22:57:07,339 - Multiprocessing for mistral-prompt1-7, duration: 0:00:20.376431
+2025-04-19 22:57:07,450 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:07,534 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:07,537 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:07,539 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:09,776 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.393218
+2025-04-19 22:57:09,850 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:10,990 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.607677
+2025-04-19 22:57:11,076 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:11,507 - Single inference for Advertising Sales Agents, duration: 0:00:04.124248
+2025-04-19 22:57:11,588 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:12,733 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.349972
+2025-04-19 22:57:12,811 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:12,883 - Single inference for Aerospace Engineers, duration: 0:00:03.096450
+2025-04-19 22:57:12,957 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:14,305 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.299043
+2025-04-19 22:57:14,384 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:14,430 - Single inference for Agricultural Engineers, duration: 0:00:02.910147
+2025-04-19 22:57:14,512 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:15,445 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.701995
+2025-04-19 22:57:15,521 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:16,594 - Single inference for Agricultural Inspectors, duration: 0:00:03.699688
+2025-04-19 22:57:16,681 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:17,610 - Single inference for Agricultural Technicians, duration: 0:00:03.165077
+2025-04-19 22:57:17,693 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:18,239 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.628618
+2025-04-19 22:57:18,327 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:19,065 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.748984
+2025-04-19 22:57:19,151 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:19,972 - Single inference for Air Traffic Controllers, duration: 0:00:04.515632
+2025-04-19 22:57:20,051 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:22,736 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.486555
+2025-04-19 22:57:22,815 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:23,403 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:05.776646
+2025-04-19 22:57:23,477 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:24,263 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.279532
+2025-04-19 22:57:24,348 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:25,263 - Single inference for Airfield Operations Specialists, duration: 0:00:06.186532
+2025-04-19 22:57:25,956 - Single inference for Allergists and Immunologists, duration: 0:00:03.203859
+2025-04-19 22:57:26,113 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.699614
+2025-04-19 22:57:26,571 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.292288
+2025-04-19 22:57:26,589 - Multiprocessing for mistral-prompt1-8, duration: 0:00:19.245379
+2025-04-19 22:57:26,701 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:26,785 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:26,787 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:26,789 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:29,327 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.695613
+2025-04-19 22:57:29,403 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:30,439 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.807855
+2025-04-19 22:57:30,514 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:31,084 - Single inference for Advertising Sales Agents, duration: 0:00:04.452267
+2025-04-19 22:57:31,163 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:31,831 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.199386
+2025-04-19 22:57:31,910 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:32,747 - Single inference for Aerospace Engineers, duration: 0:00:03.409114
+2025-04-19 22:57:32,821 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:33,778 - Single inference for Agricultural Engineers, duration: 0:00:02.683133
+2025-04-19 22:57:33,856 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:33,917 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.466777
+2025-04-19 22:57:33,998 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:35,169 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.326977
+2025-04-19 22:57:35,253 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:36,180 - Single inference for Agricultural Inspectors, duration: 0:00:03.421804
+2025-04-19 22:57:36,267 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:37,406 - Single inference for Agricultural Technicians, duration: 0:00:03.477795
+2025-04-19 22:57:37,479 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:38,073 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.877225
+2025-04-19 22:57:38,152 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:38,363 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.574526
+2025-04-19 22:57:38,447 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:40,561 - Single inference for Air Traffic Controllers, duration: 0:00:05.379415
+2025-04-19 22:57:40,648 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:43,539 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.454965
+2025-04-19 22:57:43,610 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:43,968 - Single inference for Airfield Operations Specialists, duration: 0:00:05.588099
+2025-04-19 22:57:44,043 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:44,976 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.559044
+2025-04-19 22:57:45,051 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:45,780 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.202354
+2025-04-19 22:57:46,561 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.581683
+2025-04-19 22:57:46,770 - Single inference for Allergists and Immunologists, duration: 0:00:03.219837
+2025-04-19 22:57:47,247 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.260085
+2025-04-19 22:57:47,268 - Multiprocessing for mistral-prompt1-9, duration: 0:00:20.675324
+2025-04-19 22:57:47,278 - Wrote results JSON for mistral-prompt1, duration: 0:00:00.006079
+2025-04-19 22:57:47,278 - Script completed
+2025-04-19 23:04:02,169 - Script started
+2025-04-19 23:04:02,169 - Processing model: mistral
+2025-04-19 23:04:04,309 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:05,317 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:05,373 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:05,376 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:05,379 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:08,717 - Single inference for Animal Control Workers, duration: 0:00:03.448289
+2025-04-19 23:04:08,774 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:09,142 - Single inference for Animal Caretakers, duration: 0:00:03.881438
+2025-04-19 23:04:09,211 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:09,314 - Single inference for Anesthesiologists, duration: 0:00:04.056045
+2025-04-19 23:04:09,384 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:09,609 - Single inference for Animal Breeders, duration: 0:00:04.349431
+2025-04-19 23:04:09,670 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:11,049 - Single inference for Animal Scientists, duration: 0:00:02.321313
+2025-04-19 23:04:11,118 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:11,916 - Single inference for Animal Trainers, duration: 0:00:02.763092
+2025-04-19 23:04:11,976 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:15,147 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:05.526111
+2025-04-19 23:04:15,207 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:15,308 - Single inference for Anthropologists and Archeologists, duration: 0:00:05.983031
+2025-04-19 23:04:15,372 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:15,723 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:04.658079
+2025-04-19 23:04:15,795 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:16,148 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:04.220513
+2025-04-19 23:04:16,219 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:18,944 - Single inference for Architectural and Engineering Managers, duration: 0:00:03.205203
+2025-04-19 23:04:19,015 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:19,961 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:03.797460
+2025-04-19 23:04:20,029 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:20,220 - Single inference for Architectural and Civil Drafters, duration: 0:00:04.899375
+2025-04-19 23:04:20,280 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:21,638 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.480777
+2025-04-19 23:04:21,698 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:21,945 - Single inference for Archivists, duration: 0:00:02.985088
+2025-04-19 23:04:22,010 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:23,228 - Single inference for Art Directors, duration: 0:00:02.997445
+2025-04-19 23:04:23,289 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:24,487 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:04.510707
+2025-04-19 23:04:24,544 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:25,721 - Single inference for Art Therapists, duration: 0:00:04.072225
+2025-04-19 23:04:25,788 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:26,063 - Single inference for Athletes and Sports Competitors, duration: 0:00:01.564324
+2025-04-19 23:04:26,127 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:27,098 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:05.141957
+2025-04-19 23:04:27,160 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:27,347 - Single inference for Astronomers, duration: 0:00:04.106584
+2025-04-19 23:04:27,414 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:30,075 - Single inference for Athletic Trainers, duration: 0:00:04.337895
+2025-04-19 23:04:30,134 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:31,869 - Single inference for Audio and Video Technicians, duration: 0:00:04.510750
+2025-04-19 23:04:31,934 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:32,404 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:05.294515
+2025-04-19 23:04:32,464 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:33,159 - Single inference for Atmospheric and Space Scientists, duration: 0:00:07.085735
+2025-04-19 23:04:33,222 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:34,422 - Single inference for Audiologists, duration: 0:00:04.335739
+2025-04-19 23:04:34,764 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.883845
+2025-04-19 23:04:36,018 - Single inference for Automotive Engineering Technicians, duration: 0:00:02.847395
+2025-04-19 23:04:36,596 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.180986
+2025-04-19 23:04:36,614 - Multiprocessing for mistral-no_prompt-0, duration: 0:00:31.394740
+2025-04-19 23:04:36,723 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:36,725 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:36,779 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:36,781 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:39,396 - Single inference for Animal Control Workers, duration: 0:00:02.735740
+2025-04-19 23:04:39,453 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:39,930 - Single inference for Anesthesiologists, duration: 0:00:03.270287
+2025-04-19 23:04:39,995 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:40,303 - Single inference for Animal Breeders, duration: 0:00:03.642430
+2025-04-19 23:04:40,375 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:40,874 - Single inference for Animal Caretakers, duration: 0:00:04.213666
+2025-04-19 23:04:40,934 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:41,739 - Single inference for Animal Scientists, duration: 0:00:02.331076
+2025-04-19 23:04:41,805 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:43,819 - Single inference for Animal Trainers, duration: 0:00:03.877808
+2025-04-19 23:04:43,888 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:45,894 - Single inference for Anthropologists and Archeologists, duration: 0:00:05.573589
+2025-04-19 23:04:45,961 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:46,919 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:05.164667
+2025-04-19 23:04:46,994 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:47,417 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:06.531995
+2025-04-19 23:04:47,477 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:48,023 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:04.187659
+2025-04-19 23:04:48,085 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:51,201 - Single inference for Architectural and Engineering Managers, duration: 0:00:03.773393
+2025-04-19 23:04:51,272 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:51,867 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:05.957952
+2025-04-19 23:04:51,941 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:52,158 - Single inference for Architectural and Civil Drafters, duration: 0:00:05.223308
+2025-04-19 23:04:52,220 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:52,249 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:04.215861
+2025-04-19 23:04:52,310 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:53,836 - Single inference for Archivists, duration: 0:00:02.619120
+2025-04-19 23:04:53,899 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:54,634 - Single inference for Art Directors, duration: 0:00:02.464757
+2025-04-19 23:04:54,692 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:56,443 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:04.559787
+2025-04-19 23:04:56,508 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:57,662 - Single inference for Art Therapists, duration: 0:00:05.401354
+2025-04-19 23:04:57,731 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:58,037 - Single inference for Astronomers, duration: 0:00:03.391248
+2025-04-19 23:04:58,101 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:04:58,281 - Single inference for Athletes and Sports Competitors, duration: 0:00:01.821329
+2025-04-19 23:04:58,351 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:00,792 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:06.942927
+2025-04-19 23:05:00,869 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:02,603 - Single inference for Athletic Trainers, duration: 0:00:04.924466
+2025-04-19 23:05:02,664 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:03,151 - Single inference for Atmospheric and Space Scientists, duration: 0:00:05.103188
+2025-04-19 23:05:03,210 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:03,433 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:05.135437
+2025-04-19 23:05:03,501 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:05,453 - Single inference for Audio and Video Technicians, duration: 0:00:04.644975
+2025-04-19 23:05:05,513 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:05,603 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.441504
+2025-04-19 23:05:07,033 - Single inference for Audiologists, duration: 0:00:04.419267
+2025-04-19 23:05:07,468 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.017955
+2025-04-19 23:05:08,110 - Single inference for Automotive Engineering Technicians, duration: 0:00:02.646015
+2025-04-19 23:05:08,128 - Multiprocessing for mistral-no_prompt-1, duration: 0:00:31.508060
+2025-04-19 23:05:08,228 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:08,278 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:08,280 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:08,283 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:10,538 - Single inference for Animal Control Workers, duration: 0:00:02.361586
+2025-04-19 23:05:10,603 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:11,294 - Single inference for Animal Caretakers, duration: 0:00:03.122158
+2025-04-19 23:05:11,365 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:11,480 - Single inference for Anesthesiologists, duration: 0:00:03.307469
+2025-04-19 23:05:11,543 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:12,071 - Single inference for Animal Breeders, duration: 0:00:03.898417
+2025-04-19 23:05:12,140 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:12,936 - Single inference for Animal Scientists, duration: 0:00:02.381384
+2025-04-19 23:05:13,002 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:14,266 - Single inference for Animal Trainers, duration: 0:00:02.960254
+2025-04-19 23:05:14,326 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:16,345 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:04.257381
+2025-04-19 23:05:16,403 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:17,729 - Single inference for Anthropologists and Archeologists, duration: 0:00:06.238226
+2025-04-19 23:05:17,795 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:18,126 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:03.849757
+2025-04-19 23:05:18,195 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:18,623 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:05.671581
+2025-04-19 23:05:18,686 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:21,289 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:04.934098
+2025-04-19 23:05:21,351 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:21,781 - Single inference for Architectural and Civil Drafters, duration: 0:00:04.037521
+2025-04-19 23:05:21,844 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:22,511 - Single inference for Architectural and Engineering Managers, duration: 0:00:04.368867
+2025-04-19 23:05:22,570 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:23,430 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:04.796626
+2025-04-19 23:05:23,489 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:23,829 - Single inference for Archivists, duration: 0:00:02.528662
+2025-04-19 23:05:23,893 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:25,881 - Single inference for Art Directors, duration: 0:00:03.358929
+2025-04-19 23:05:25,941 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:26,174 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:04.381934
+2025-04-19 23:05:26,229 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:27,907 - Single inference for Athletes and Sports Competitors, duration: 0:00:01.722399
+2025-04-19 23:05:27,967 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:28,865 - Single inference for Art Therapists, duration: 0:00:05.423096
+2025-04-19 23:05:28,933 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:28,942 - Single inference for Astronomers, duration: 0:00:03.050341
+2025-04-19 23:05:29,006 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:30,055 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:06.215631
+2025-04-19 23:05:30,124 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:32,609 - Single inference for Athletic Trainers, duration: 0:00:04.690949
+2025-04-19 23:05:32,669 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:35,475 - Single inference for Atmospheric and Space Scientists, duration: 0:00:06.594116
+2025-04-19 23:05:35,546 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:35,677 - Single inference for Audio and Video Technicians, duration: 0:00:05.611043
+2025-04-19 23:05:35,732 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:36,273 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:07.315114
+2025-04-19 23:05:36,337 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:37,722 - Single inference for Audiologists, duration: 0:00:05.102469
+2025-04-19 23:05:37,959 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.473494
+2025-04-19 23:05:39,598 - Single inference for Automotive Engineering Technicians, duration: 0:00:03.309503
+2025-04-19 23:05:40,019 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.330605
+2025-04-19 23:05:40,036 - Multiprocessing for mistral-no_prompt-2, duration: 0:00:31.902956
+2025-04-19 23:05:40,137 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:40,196 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:40,199 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:40,202 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:43,269 - Single inference for Animal Control Workers, duration: 0:00:03.187220
+2025-04-19 23:05:43,329 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:43,377 - Single inference for Anesthesiologists, duration: 0:00:03.294871
+2025-04-19 23:05:43,442 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:43,740 - Single inference for Animal Breeders, duration: 0:00:03.657213
+2025-04-19 23:05:43,811 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:44,104 - Single inference for Animal Caretakers, duration: 0:00:04.021857
+2025-04-19 23:05:44,164 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:45,501 - Single inference for Animal Scientists, duration: 0:00:02.220297
+2025-04-19 23:05:45,569 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:46,739 - Single inference for Animal Trainers, duration: 0:00:03.350577
+2025-04-19 23:05:46,799 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:49,135 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:05.019940
+2025-04-19 23:05:49,197 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:50,258 - Single inference for Anthropologists and Archeologists, duration: 0:00:06.507692
+2025-04-19 23:05:50,324 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:51,014 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:04.264174
+2025-04-19 23:05:51,074 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:51,309 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:05.792338
+2025-04-19 23:05:51,372 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:54,597 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:05.451958
+2025-04-19 23:05:54,625 - Single inference for Architectural and Civil Drafters, duration: 0:00:04.356450
+2025-04-19 23:05:54,661 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:54,699 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:54,942 - Single inference for Architectural and Engineering Managers, duration: 0:00:03.917609
+2025-04-19 23:05:55,009 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:55,646 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:04.326439
+2025-04-19 23:05:55,705 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:57,401 - Single inference for Archivists, duration: 0:00:02.793303
+2025-04-19 23:05:57,473 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:05:58,425 - Single inference for Art Directors, duration: 0:00:03.467182
+2025-04-19 23:05:58,492 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:00,091 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:05.455159
+2025-04-19 23:06:00,147 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:00,282 - Single inference for Art Therapists, duration: 0:00:04.625035
+2025-04-19 23:06:00,342 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:01,728 - Single inference for Astronomers, duration: 0:00:03.286833
+2025-04-19 23:06:01,797 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:02,306 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.204521
+2025-04-19 23:06:02,371 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:03,044 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:05.625556
+2025-04-19 23:06:03,111 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:05,415 - Single inference for Athletic Trainers, duration: 0:00:05.122491
+2025-04-19 23:06:05,475 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:07,562 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:05.239628
+2025-04-19 23:06:07,634 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:08,364 - Single inference for Audio and Video Technicians, duration: 0:00:05.309778
+2025-04-19 23:06:08,424 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:09,035 - Single inference for Atmospheric and Space Scientists, duration: 0:00:07.296492
+2025-04-19 23:06:09,107 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:10,095 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.516471
+2025-04-19 23:06:10,103 - Single inference for Audiologists, duration: 0:00:04.676399
+2025-04-19 23:06:12,042 - Single inference for Automotive Engineering Technicians, duration: 0:00:02.989607
+2025-04-19 23:06:12,616 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.240380
+2025-04-19 23:06:12,632 - Multiprocessing for mistral-no_prompt-3, duration: 0:00:32.590560
+2025-04-19 23:06:12,757 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:12,761 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:12,763 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:12,805 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:15,733 - Single inference for Animal Control Workers, duration: 0:00:03.055334
+2025-04-19 23:06:15,794 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:16,048 - Single inference for Anesthesiologists, duration: 0:00:03.371481
+2025-04-19 23:06:16,112 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:16,191 - Single inference for Animal Caretakers, duration: 0:00:03.513930
+2025-04-19 23:06:16,259 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:16,660 - Single inference for Animal Breeders, duration: 0:00:03.982759
+2025-04-19 23:06:16,730 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:18,313 - Single inference for Animal Scientists, duration: 0:00:02.567873
+2025-04-19 23:06:18,380 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:19,170 - Single inference for Animal Trainers, duration: 0:00:03.110483
+2025-04-19 23:06:19,230 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:21,421 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:04.744245
+2025-04-19 23:06:21,480 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:22,791 - Single inference for Anthropologists and Archeologists, duration: 0:00:06.583736
+2025-04-19 23:06:22,856 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:23,565 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:04.384333
+2025-04-19 23:06:23,626 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:23,933 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:05.604386
+2025-04-19 23:06:23,997 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:26,944 - Single inference for Architectural and Civil Drafters, duration: 0:00:04.142296
+2025-04-19 23:06:27,005 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:27,196 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:05.764237
+2025-04-19 23:06:27,261 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:27,911 - Single inference for Architectural and Engineering Managers, duration: 0:00:04.335187
+2025-04-19 23:06:27,974 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:28,225 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:04.276479
+2025-04-19 23:06:28,284 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:29,413 - Single inference for Archivists, duration: 0:00:02.456948
+2025-04-19 23:06:29,476 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:31,145 - Single inference for Art Directors, duration: 0:00:03.223160
+2025-04-19 23:06:31,203 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:32,668 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:05.461754
+2025-04-19 23:06:32,726 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:33,980 - Single inference for Art Therapists, duration: 0:00:05.743810
+2025-04-19 23:06:34,043 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:34,166 - Single inference for Astronomers, duration: 0:00:03.009968
+2025-04-19 23:06:34,247 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:34,704 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.025010
+2025-04-19 23:06:34,778 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:36,193 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:06.769262
+2025-04-19 23:06:36,263 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:38,578 - Single inference for Athletic Trainers, duration: 0:00:04.586245
+2025-04-19 23:06:38,639 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:40,268 - Single inference for Atmospheric and Space Scientists, duration: 0:00:06.085979
+2025-04-19 23:06:40,328 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:40,715 - Single inference for Audio and Video Technicians, duration: 0:00:04.510903
+2025-04-19 23:06:40,776 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:40,797 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:06.075998
+2025-04-19 23:06:40,865 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:42,674 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.394507
+2025-04-19 23:06:43,416 - Single inference for Audiologists, duration: 0:00:04.826955
+2025-04-19 23:06:44,505 - Single inference for Automotive Engineering Technicians, duration: 0:00:03.692009
+2025-04-19 23:06:44,956 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.224253
+2025-04-19 23:06:44,973 - Multiprocessing for mistral-no_prompt-4, duration: 0:00:32.335685
+2025-04-19 23:06:45,073 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:45,125 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:45,128 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:45,130 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:47,983 - Single inference for Anesthesiologists, duration: 0:00:02.964515
+2025-04-19 23:06:48,040 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:48,605 - Single inference for Animal Control Workers, duration: 0:00:03.586490
+2025-04-19 23:06:48,636 - Single inference for Animal Caretakers, duration: 0:00:03.618389
+2025-04-19 23:06:48,666 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:48,709 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:49,130 - Single inference for Animal Breeders, duration: 0:00:04.111460
+2025-04-19 23:06:49,191 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:49,894 - Single inference for Animal Scientists, duration: 0:00:01.898539
+2025-04-19 23:06:49,953 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:51,937 - Single inference for Animal Trainers, duration: 0:00:03.321505
+2025-04-19 23:06:51,998 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:54,308 - Single inference for Anthropologists and Archeologists, duration: 0:00:05.660757
+2025-04-19 23:06:54,377 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:55,561 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:06.417691
+2025-04-19 23:06:55,629 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:56,572 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:06.666785
+2025-04-19 23:06:56,632 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:59,541 - Single inference for Architectural and Civil Drafters, duration: 0:00:03.968822
+2025-04-19 23:06:59,605 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:06:59,865 - Single inference for Architectural and Engineering Managers, duration: 0:00:03.282756
+2025-04-19 23:06:59,927 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:00,614 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.289840
+2025-04-19 23:07:00,682 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:02,746 - Single inference for Archivists, duration: 0:00:02.869735
+2025-04-19 23:07:02,811 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:03,374 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:03.823386
+2025-04-19 23:07:03,439 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:05,025 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:04.398664
+2025-04-19 23:07:05,098 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:06,512 - Single inference for Art Directors, duration: 0:00:03.755059
+2025-04-19 23:07:06,580 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:09,076 - Single inference for Art Therapists, duration: 0:00:05.684819
+2025-04-19 23:07:09,146 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:10,034 - Single inference for Astronomers, duration: 0:00:03.510904
+2025-04-19 23:07:10,105 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:11,335 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.242515
+2025-04-19 23:07:11,426 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:11,940 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:06.898435
+2025-04-19 23:07:12,016 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:15,714 - Single inference for Athletic Trainers, duration: 0:00:05.668976
+2025-04-19 23:07:15,796 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:17,911 - Single inference for Atmospheric and Space Scientists, duration: 0:00:06.560126
+2025-04-19 23:07:17,984 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:18,570 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:06.619422
+2025-04-19 23:07:18,646 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:21,257 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.670408
+2025-04-19 23:07:21,318 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:22,433 - Single inference for Audio and Video Technicians, duration: 0:00:06.703086
+2025-04-19 23:07:22,497 - HTTP Request: POST http://127.0.0.1:11644/api/chat "HTTP/1.1 200 OK"
+2025-04-19 23:07:23,461 - Single inference for Audiologists, duration: 0:00:05.538847
+2025-04-19 23:07:24,775 - Single inference for Automotive Body and Related Repairers, duration: 0:00:03.507124
+2025-04-19 23:07:26,367 - Single inference for Automotive Engineering Technicians, duration: 0:00:03.917735

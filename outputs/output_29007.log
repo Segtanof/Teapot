@@ -1,0 +1,41 @@
+PORT: 11441
+Sat Apr 19 19:44:36 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100 80GB PCIe          On  |   00000000:1C:00.0 Off |                    0 |
+| N/A   37C    P0            210W /  300W |    5918MiB /  81920MiB |     84%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2905      G   /usr/libexec/Xorg                        17MiB |
+|    0   N/A  N/A         2245537      C   ...n/cs/ollama/0.5.11/bin/ollama       5882MiB |
++-----------------------------------------------------------------------------------------+
+               total        used        free      shared  buff/cache   available
+Mem:           503Gi        25Gi       471Gi       177Mi        12Gi       478Gi
+Swap:           14Gi       2.0Mi        14Gi
+folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n905
+Job ID: 29007
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:36
+CPU Efficiency: 2.33% of 00:25:48 core-walltime
+Job Wall-clock time: 00:06:27
+Memory Utilized: 1.10 GB
+Memory Efficiency: 13.74% of 8.00 GB (8.00 GB/node)

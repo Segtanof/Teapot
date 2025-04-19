@@ -1,0 +1,847 @@
+2025-04-19 22:51:01,825 - Script started
+2025-04-19 22:51:01,827 - Processing model: mistral
+2025-04-19 22:51:05,974 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+mistral-no_prompt-0:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:51:09,361 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:09,363 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:09,416 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:09,418 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:11,500 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.216222
+mistral-no_prompt-0:   5%|▌         | 1/20 [00:02<00:43,  2.28s/it]2025-04-19 22:51:11,576 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:12,553 - Single inference for Advertising Sales Agents, duration: 0:00:03.269258
+mistral-no_prompt-0:  10%|█         | 2/20 [00:03<00:27,  1.55s/it]2025-04-19 22:51:12,592 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.308525
+2025-04-19 22:51:12,620 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:12,661 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:13,275 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:03.990963
+mistral-no_prompt-0:  20%|██        | 4/20 [00:04<00:12,  1.24it/s]2025-04-19 22:51:13,340 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:14,432 - Single inference for Aerospace Engineers, duration: 0:00:02.904718
+mistral-no_prompt-0:  25%|██▌       | 5/20 [00:05<00:13,  1.10it/s]2025-04-19 22:51:14,490 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:15,412 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.846863
+mistral-no_prompt-0:  30%|███       | 6/20 [00:06<00:13,  1.07it/s]2025-04-19 22:51:15,477 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:15,632 - Single inference for Agricultural Engineers, duration: 0:00:03.023352
+mistral-no_prompt-0:  35%|███▌      | 7/20 [00:06<00:09,  1.40it/s]2025-04-19 22:51:15,698 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:16,996 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.710486
+mistral-no_prompt-0:  40%|████      | 8/20 [00:07<00:10,  1.10it/s]2025-04-19 22:51:17,059 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:18,802 - Single inference for Agricultural Inspectors, duration: 0:00:04.359477
+mistral-no_prompt-0:  45%|████▌     | 9/20 [00:09<00:13,  1.18s/it]2025-04-19 22:51:18,869 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:19,188 - Single inference for Agricultural Technicians, duration: 0:00:03.545745
+mistral-no_prompt-0:  50%|█████     | 10/20 [00:09<00:09,  1.06it/s]2025-04-19 22:51:19,257 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:20,187 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.763967
+mistral-no_prompt-0:  55%|█████▌    | 11/20 [00:10<00:08,  1.04it/s]2025-04-19 22:51:20,260 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:20,495 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.682052
+mistral-no_prompt-0:  60%|██████    | 12/20 [00:11<00:06,  1.31it/s]2025-04-19 22:51:20,563 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:21,938 - Single inference for Air Traffic Controllers, duration: 0:00:04.931258
+mistral-no_prompt-0:  65%|██████▌   | 13/20 [00:12<00:06,  1.03it/s]2025-04-19 22:51:22,003 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:25,848 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.644685
+mistral-no_prompt-0:  70%|███████   | 14/20 [00:16<00:11,  1.85s/it]2025-04-19 22:51:25,909 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:25,950 - Single inference for Airfield Operations Specialists, duration: 0:00:05.444544
+mistral-no_prompt-0:  75%|███████▌  | 15/20 [00:16<00:06,  1.33s/it]2025-04-19 22:51:25,975 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.770028
+2025-04-19 22:51:26,012 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:26,050 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:27,388 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.439631
+mistral-no_prompt-0:  85%|████████▌ | 17/20 [00:18<00:03,  1.05s/it]2025-04-19 22:51:28,340 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.378852
+mistral-no_prompt-0:  90%|█████████ | 18/20 [00:19<00:02,  1.02s/it]2025-04-19 22:51:28,582 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.595505
+mistral-no_prompt-0:  95%|█████████▌| 19/20 [00:19<00:00,  1.22it/s]2025-04-19 22:51:29,182 - Single inference for Allergists and Immunologists, duration: 0:00:03.321563
+mistral-no_prompt-0: 100%|██████████| 20/20 [00:19<00:00,  1.32it/s]mistral-no_prompt-0: 100%|██████████| 20/20 [00:19<00:00,  1.00it/s]
+2025-04-19 22:51:29,199 - Multiprocessing for mistral-no_prompt-0, duration: 0:00:19.986265
+mistral-no_prompt-1:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:51:29,306 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:29,309 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:29,353 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:29,356 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:31,358 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.116401
+mistral-no_prompt-1:   5%|▌         | 1/20 [00:02<00:40,  2.14s/it]2025-04-19 22:51:31,428 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:32,663 - Single inference for Advertising Sales Agents, duration: 0:00:03.421477
+mistral-no_prompt-1:  10%|█         | 2/20 [00:03<00:29,  1.65s/it]2025-04-19 22:51:32,721 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:34,100 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.857691
+mistral-no_prompt-1:  15%|█▌        | 3/20 [00:04<00:26,  1.55s/it]2025-04-19 22:51:34,168 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:34,445 - Single inference for Aerospace Engineers, duration: 0:00:03.070102
+mistral-no_prompt-1:  20%|██        | 4/20 [00:05<00:17,  1.07s/it]2025-04-19 22:51:34,511 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:34,984 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.742287
+mistral-no_prompt-1:  25%|██▌       | 5/20 [00:05<00:13,  1.13it/s]2025-04-19 22:51:35,044 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:35,421 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.746626
+mistral-no_prompt-1:  30%|███       | 6/20 [00:06<00:10,  1.37it/s]2025-04-19 22:51:35,486 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:36,795 - Single inference for Agricultural Engineers, duration: 0:00:02.678520
+mistral-no_prompt-1:  35%|███▌      | 7/20 [00:07<00:12,  1.06it/s]2025-04-19 22:51:36,861 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:37,411 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.954918
+mistral-no_prompt-1:  40%|████      | 8/20 [00:08<00:10,  1.19it/s]2025-04-19 22:51:37,482 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:37,950 - Single inference for Agricultural Inspectors, duration: 0:00:02.954580
+mistral-no_prompt-1:  45%|████▌     | 9/20 [00:08<00:08,  1.34it/s]2025-04-19 22:51:38,013 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:39,419 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.457790
+mistral-no_prompt-1:  50%|█████     | 10/20 [00:10<00:09,  1.03it/s]2025-04-19 22:51:39,478 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:40,629 - Single inference for Agricultural Technicians, duration: 0:00:03.823510
+mistral-no_prompt-1:  55%|█████▌    | 11/20 [00:11<00:09,  1.04s/it]2025-04-19 22:51:40,699 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:40,834 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.402193
+mistral-no_prompt-1:  60%|██████    | 12/20 [00:11<00:06,  1.27it/s]2025-04-19 22:51:40,897 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:40,909 - Single inference for Air Traffic Controllers, duration: 0:00:03.481975
+2025-04-19 22:51:40,970 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:45,494 - Single inference for Airfield Operations Specialists, duration: 0:00:04.648785
+mistral-no_prompt-1:  70%|███████   | 14/20 [00:16<00:09,  1.50s/it]2025-04-19 22:51:45,553 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:45,634 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.988493
+mistral-no_prompt-1:  75%|███████▌  | 15/20 [00:16<00:05,  1.16s/it]2025-04-19 22:51:45,703 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.783237
+2025-04-19 22:51:45,706 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:45,767 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:47,425 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.995127
+mistral-no_prompt-1:  85%|████████▌ | 17/20 [00:18<00:03,  1.05s/it]2025-04-19 22:51:48,083 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.369328
+mistral-no_prompt-1:  90%|█████████ | 18/20 [00:18<00:01,  1.04it/s]2025-04-19 22:51:48,135 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.484937
+2025-04-19 22:51:48,871 - Single inference for Allergists and Immunologists, duration: 0:00:03.366837
+mistral-no_prompt-1: 100%|██████████| 20/20 [00:19<00:00,  1.36it/s]mistral-no_prompt-1: 100%|██████████| 20/20 [00:19<00:00,  1.02it/s]
+2025-04-19 22:51:48,889 - Multiprocessing for mistral-no_prompt-1, duration: 0:00:19.685683
+mistral-no_prompt-2:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:51:49,005 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:49,007 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:49,062 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:49,064 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:51,438 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.506363
+mistral-no_prompt-2:   5%|▌         | 1/20 [00:02<00:47,  2.53s/it]2025-04-19 22:51:51,514 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:52,879 - Single inference for Advertising Sales Agents, duration: 0:00:03.947480
+mistral-no_prompt-2:  10%|█         | 2/20 [00:03<00:33,  1.89s/it]2025-04-19 22:51:52,942 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:53,508 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.575885
+mistral-no_prompt-2:  15%|█▌        | 3/20 [00:04<00:22,  1.31s/it]2025-04-19 22:51:53,578 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:53,800 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.868027
+mistral-no_prompt-2:  20%|██        | 4/20 [00:04<00:14,  1.10it/s]2025-04-19 22:51:53,874 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:54,825 - Single inference for Aerospace Engineers, duration: 0:00:03.370978
+mistral-no_prompt-2:  25%|██▌       | 5/20 [00:05<00:14,  1.05it/s]2025-04-19 22:51:54,883 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:55,438 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.547884
+mistral-no_prompt-2:  30%|███       | 6/20 [00:06<00:11,  1.20it/s]2025-04-19 22:51:55,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:56,174 - Single inference for Agricultural Engineers, duration: 0:00:02.649704
+mistral-no_prompt-2:  35%|███▌      | 7/20 [00:07<00:10,  1.24it/s]2025-04-19 22:51:56,238 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:57,003 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.187054
+mistral-no_prompt-2:  40%|████      | 8/20 [00:08<00:09,  1.23it/s]2025-04-19 22:51:57,065 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:59,117 - Single inference for Agricultural Inspectors, duration: 0:00:04.281384
+mistral-no_prompt-2:  45%|████▌     | 9/20 [00:10<00:13,  1.22s/it]2025-04-19 22:51:59,183 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:51:59,519 - Single inference for Agricultural Technicians, duration: 0:00:03.334120
+mistral-no_prompt-2:  50%|█████     | 10/20 [00:10<00:09,  1.03it/s]2025-04-19 22:51:59,579 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:00,063 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.612231
+mistral-no_prompt-2:  55%|█████▌    | 11/20 [00:11<00:07,  1.19it/s]2025-04-19 22:52:00,128 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:00,576 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.448413
+mistral-no_prompt-2:  60%|██████    | 12/20 [00:11<00:05,  1.35it/s]2025-04-19 22:52:00,639 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:02,717 - Single inference for Air Traffic Controllers, duration: 0:00:05.702722
+mistral-no_prompt-2:  65%|██████▌   | 13/20 [00:13<00:08,  1.16s/it]2025-04-19 22:52:02,783 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:05,583 - Single inference for Airfield Operations Specialists, duration: 0:00:04.995556
+mistral-no_prompt-2:  70%|███████   | 14/20 [00:16<00:10,  1.68s/it]2025-04-19 22:52:05,653 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:06,130 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.600110
+mistral-no_prompt-2:  75%|███████▌  | 15/20 [00:17<00:06,  1.34s/it]2025-04-19 22:52:06,192 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:06,649 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:06.575297
+mistral-no_prompt-2:  80%|████████  | 16/20 [00:17<00:04,  1.09s/it]2025-04-19 22:52:06,714 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:07,589 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.861348
+mistral-no_prompt-2:  85%|████████▌ | 17/20 [00:18<00:03,  1.05s/it]2025-04-19 22:52:08,511 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.370254
+mistral-no_prompt-2:  90%|█████████ | 18/20 [00:19<00:02,  1.01s/it]2025-04-19 22:52:09,017 - Single inference for Allergists and Immunologists, duration: 0:00:03.417563
+mistral-no_prompt-2:  95%|█████████▌| 19/20 [00:20<00:00,  1.17it/s]2025-04-19 22:52:09,252 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.591994
+mistral-no_prompt-2: 100%|██████████| 20/20 [00:20<00:00,  1.49it/s]mistral-no_prompt-2: 100%|██████████| 20/20 [00:20<00:00,  1.02s/it]
+2025-04-19 22:52:09,269 - Multiprocessing for mistral-no_prompt-2, duration: 0:00:20.375829
+mistral-no_prompt-3:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:52:09,386 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:09,388 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:09,431 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:09,432 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:12,178 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.866164
+mistral-no_prompt-3:   5%|▌         | 1/20 [00:02<00:54,  2.89s/it]2025-04-19 22:52:12,247 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:13,365 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.052510
+mistral-no_prompt-3:  10%|█         | 2/20 [00:04<00:33,  1.89s/it]2025-04-19 22:52:13,424 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:13,972 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.659954
+mistral-no_prompt-3:  15%|█▌        | 3/20 [00:04<00:22,  1.30s/it]2025-04-19 22:52:14,032 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:14,158 - Single inference for Advertising Sales Agents, duration: 0:00:04.845354
+mistral-no_prompt-3:  20%|██        | 4/20 [00:04<00:13,  1.16it/s]2025-04-19 22:52:14,226 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:15,384 - Single inference for Aerospace Engineers, duration: 0:00:03.189526
+mistral-no_prompt-3:  25%|██▌       | 5/20 [00:06<00:14,  1.01it/s]2025-04-19 22:52:15,451 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:16,374 - Single inference for Agricultural Engineers, duration: 0:00:02.391001
+mistral-no_prompt-3:  30%|███       | 6/20 [00:07<00:13,  1.01it/s]2025-04-19 22:52:16,406 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.030432
+2025-04-19 22:52:16,444 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:16,482 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:17,503 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.333901
+mistral-no_prompt-3:  40%|████      | 8/20 [00:08<00:09,  1.28it/s]2025-04-19 22:52:17,564 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:18,160 - Single inference for Agricultural Inspectors, duration: 0:00:02.759819
+mistral-no_prompt-3:  45%|████▌     | 9/20 [00:08<00:08,  1.34it/s]2025-04-19 22:52:18,224 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:19,668 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.497099
+mistral-no_prompt-3:  50%|█████     | 10/20 [00:10<00:09,  1.05it/s]2025-04-19 22:52:19,734 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:20,410 - Single inference for Agricultural Technicians, duration: 0:00:03.992880
+mistral-no_prompt-3:  55%|█████▌    | 11/20 [00:11<00:08,  1.12it/s]2025-04-19 22:52:20,478 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:20,759 - Single inference for Air Traffic Controllers, duration: 0:00:03.245848
+mistral-no_prompt-3:  60%|██████    | 12/20 [00:11<00:05,  1.35it/s]2025-04-19 22:52:20,829 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:21,519 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.128281
+mistral-no_prompt-3:  65%|██████▌   | 13/20 [00:12<00:05,  1.34it/s]2025-04-19 22:52:21,592 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:25,511 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:03.976553
+mistral-no_prompt-3:  70%|███████   | 14/20 [00:16<00:10,  1.70s/it]2025-04-19 22:52:25,572 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:25,766 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.345797
+mistral-no_prompt-3:  75%|███████▌  | 15/20 [00:16<00:06,  1.27s/it]2025-04-19 22:52:25,829 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:25,917 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.237032
+mistral-no_prompt-3:  80%|████████  | 16/20 [00:16<00:03,  1.07it/s]2025-04-19 22:52:25,983 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:27,194 - Single inference for Airfield Operations Specialists, duration: 0:00:06.424277
+mistral-no_prompt-3:  85%|████████▌ | 17/20 [00:17<00:03,  1.04s/it]2025-04-19 22:52:28,655 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.877288
+mistral-no_prompt-3:  90%|█████████ | 18/20 [00:19<00:02,  1.17s/it]2025-04-19 22:52:28,837 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.909435
+mistral-no_prompt-3:  95%|█████████▌| 19/20 [00:19<00:00,  1.15it/s]2025-04-19 22:52:29,336 - Single inference for Allergists and Immunologists, duration: 0:00:03.813604
+mistral-no_prompt-3: 100%|██████████| 20/20 [00:20<00:00,  1.32it/s]mistral-no_prompt-3: 100%|██████████| 20/20 [00:20<00:00,  1.00s/it]
+2025-04-19 22:52:29,353 - Multiprocessing for mistral-no_prompt-3, duration: 0:00:20.079050
+mistral-no_prompt-4:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:52:29,456 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:29,509 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:29,511 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:29,513 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:32,240 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.845174
+mistral-no_prompt-4:   5%|▌         | 1/20 [00:02<00:54,  2.86s/it]2025-04-19 22:52:32,303 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:32,959 - Single inference for Advertising Sales Agents, duration: 0:00:03.563704
+mistral-no_prompt-4:  10%|█         | 2/20 [00:03<00:28,  1.60s/it]2025-04-19 22:52:33,018 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:33,109 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.713503
+mistral-no_prompt-4:  15%|█▌        | 3/20 [00:03<00:15,  1.06it/s]2025-04-19 22:52:33,167 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:34,993 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.597548
+mistral-no_prompt-4:  20%|██        | 4/20 [00:05<00:20,  1.31s/it]2025-04-19 22:52:35,067 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:35,592 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.622649
+mistral-no_prompt-4:  25%|██▌       | 5/20 [00:06<00:15,  1.06s/it]2025-04-19 22:52:35,613 - Single inference for Agricultural Engineers, duration: 0:00:02.494133
+2025-04-19 22:52:35,651 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:35,689 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:36,056 - Single inference for Aerospace Engineers, duration: 0:00:03.804655
+mistral-no_prompt-4:  35%|███▌      | 7/20 [00:06<00:08,  1.57it/s]2025-04-19 22:52:36,120 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:37,486 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.477252
+mistral-no_prompt-4:  40%|████      | 8/20 [00:08<00:10,  1.18it/s]2025-04-19 22:52:37,555 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:38,710 - Single inference for Agricultural Inspectors, duration: 0:00:03.106699
+mistral-no_prompt-4:  45%|████▌     | 9/20 [00:09<00:10,  1.05it/s]2025-04-19 22:52:38,773 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:39,708 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.081778
+mistral-no_prompt-4:  50%|█████     | 10/20 [00:10<00:09,  1.04it/s]2025-04-19 22:52:39,769 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:39,829 - Single inference for Agricultural Technicians, duration: 0:00:03.762249
+mistral-no_prompt-4:  55%|█████▌    | 11/20 [00:10<00:06,  1.38it/s]2025-04-19 22:52:39,893 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:40,342 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.621518
+mistral-no_prompt-4:  60%|██████    | 12/20 [00:10<00:05,  1.51it/s]2025-04-19 22:52:40,404 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:41,589 - Single inference for Air Traffic Controllers, duration: 0:00:04.086680
+mistral-no_prompt-4:  65%|██████▌   | 13/20 [00:12<00:05,  1.20it/s]2025-04-19 22:52:41,652 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:44,394 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.554373
+mistral-no_prompt-4:  70%|███████   | 14/20 [00:15<00:08,  1.42s/it]2025-04-19 22:52:44,418 - Single inference for Airfield Operations Specialists, duration: 0:00:04.064958
+2025-04-19 22:52:44,451 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:44,485 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:46,526 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.926018
+mistral-no_prompt-4:  80%|████████  | 16/20 [00:17<00:05,  1.26s/it]2025-04-19 22:52:46,595 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:46,778 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.059443
+mistral-no_prompt-4:  85%|████████▌ | 17/20 [00:17<00:03,  1.01s/it]2025-04-19 22:52:46,853 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.422974
+2025-04-19 22:52:47,704 - Single inference for Allergists and Immunologists, duration: 0:00:03.299395
+mistral-no_prompt-4:  95%|█████████▌| 19/20 [00:18<00:00,  1.28it/s]2025-04-19 22:52:48,406 - Single inference for Amusement and Recreation Attendants, duration: 0:00:01.863923
+mistral-no_prompt-4: 100%|██████████| 20/20 [00:19<00:00,  1.31it/s]mistral-no_prompt-4: 100%|██████████| 20/20 [00:19<00:00,  1.05it/s]
+2025-04-19 22:52:48,424 - Multiprocessing for mistral-no_prompt-4, duration: 0:00:19.066773
+mistral-no_prompt-5:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:52:48,526 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:48,580 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:48,582 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:48,584 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:51,105 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.639055
+mistral-no_prompt-5:   5%|▌         | 1/20 [00:02<00:50,  2.66s/it]2025-04-19 22:52:51,169 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:52,911 - Single inference for Advertising Sales Agents, duration: 0:00:04.445671
+mistral-no_prompt-5:  10%|█         | 2/20 [00:04<00:38,  2.16s/it]2025-04-19 22:52:52,928 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.461650
+2025-04-19 22:52:52,972 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:53,007 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:54,086 - Single inference for Aerospace Engineers, duration: 0:00:02.969905
+mistral-no_prompt-5:  20%|██        | 4/20 [00:05<00:18,  1.17s/it]2025-04-19 22:52:54,156 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:55,092 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:06.625632
+mistral-no_prompt-5:  25%|██▌       | 5/20 [00:06<00:16,  1.12s/it]2025-04-19 22:52:55,153 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:55,324 - Single inference for Agricultural Engineers, duration: 0:00:02.381842
+mistral-no_prompt-5:  30%|███       | 6/20 [00:06<00:11,  1.18it/s]2025-04-19 22:52:55,392 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:55,704 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.781474
+mistral-no_prompt-5:  35%|███▌      | 7/20 [00:07<00:09,  1.42it/s]2025-04-19 22:52:55,772 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:57,173 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.076628
+mistral-no_prompt-5:  40%|████      | 8/20 [00:08<00:11,  1.07it/s]2025-04-19 22:52:57,236 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:58,284 - Single inference for Agricultural Inspectors, duration: 0:00:03.181187
+mistral-no_prompt-5:  45%|████▌     | 9/20 [00:09<00:10,  1.01it/s]2025-04-19 22:52:58,356 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:59,701 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.401167
+mistral-no_prompt-5:  50%|█████     | 10/20 [00:11<00:11,  1.12s/it]2025-04-19 22:52:59,769 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:52:59,860 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.525361
+mistral-no_prompt-5:  55%|█████▌    | 11/20 [00:11<00:07,  1.21it/s]2025-04-19 22:52:59,924 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:00,321 - Single inference for Agricultural Technicians, duration: 0:00:04.603496
+mistral-no_prompt-5:  60%|██████    | 12/20 [00:11<00:05,  1.39it/s]2025-04-19 22:53:00,391 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:02,460 - Single inference for Air Traffic Controllers, duration: 0:00:05.273792
+mistral-no_prompt-5:  65%|██████▌   | 13/20 [00:14<00:08,  1.15s/it]2025-04-19 22:53:02,525 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:04,449 - Single inference for Airfield Operations Specialists, duration: 0:00:04.112491
+mistral-no_prompt-5:  70%|███████   | 14/20 [00:16<00:08,  1.40s/it]2025-04-19 22:53:04,509 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:06,077 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.359259
+mistral-no_prompt-5:  75%|███████▌  | 15/20 [00:17<00:07,  1.47s/it]2025-04-19 22:53:06,147 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:06,184 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:06.313529
+mistral-no_prompt-5:  80%|████████  | 16/20 [00:17<00:04,  1.06s/it]2025-04-19 22:53:06,256 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:07,339 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.866447
+mistral-no_prompt-5:  85%|████████▌ | 17/20 [00:18<00:03,  1.09s/it]2025-04-19 22:53:07,821 - Single inference for Allergists and Immunologists, duration: 0:00:03.361140
+mistral-no_prompt-5:  90%|█████████ | 18/20 [00:19<00:01,  1.10it/s]2025-04-19 22:53:08,587 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.493891
+mistral-no_prompt-5:  95%|█████████▌| 19/20 [00:20<00:00,  1.16it/s]2025-04-19 22:53:09,050 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.853668
+mistral-no_prompt-5: 100%|██████████| 20/20 [00:20<00:00,  1.34it/s]mistral-no_prompt-5: 100%|██████████| 20/20 [00:20<00:00,  1.03s/it]
+2025-04-19 22:53:09,068 - Multiprocessing for mistral-no_prompt-5, duration: 0:00:20.639931
+mistral-no_prompt-6:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:53:09,171 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:09,223 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:09,225 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:09,228 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:11,627 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.516594
+mistral-no_prompt-6:   5%|▌         | 1/20 [00:02<00:48,  2.54s/it]2025-04-19 22:53:11,692 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:12,680 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.569652
+mistral-no_prompt-6:  10%|█         | 2/20 [00:03<00:29,  1.66s/it]2025-04-19 22:53:12,721 - Single inference for Advertising Sales Agents, duration: 0:00:03.610870
+2025-04-19 22:53:12,750 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:12,782 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:13,616 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.505787
+mistral-no_prompt-6:  20%|██        | 4/20 [00:04<00:14,  1.09it/s]2025-04-19 22:53:13,692 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:15,094 - Single inference for Aerospace Engineers, duration: 0:00:03.456767
+mistral-no_prompt-6:  25%|██▌       | 5/20 [00:06<00:16,  1.09s/it]2025-04-19 22:53:15,154 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:15,639 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.942441
+2025-04-19 22:53:15,639 - Single inference for Agricultural Engineers, duration: 0:00:02.907447
+mistral-no_prompt-6:  30%|███       | 6/20 [00:06<00:12,  1.08it/s]2025-04-19 22:53:15,717 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:15,719 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:16,272 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.639044
+mistral-no_prompt-6:  40%|████      | 8/20 [00:07<00:07,  1.56it/s]2025-04-19 22:53:16,344 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:18,031 - Single inference for Agricultural Inspectors, duration: 0:00:02.925902
+mistral-no_prompt-6:  45%|████▌     | 9/20 [00:08<00:10,  1.09it/s]2025-04-19 22:53:18,096 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:19,616 - Single inference for Agricultural Technicians, duration: 0:00:03.960528
+mistral-no_prompt-6:  50%|█████     | 10/20 [00:10<00:10,  1.09s/it]2025-04-19 22:53:19,631 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.588866
+2025-04-19 22:53:19,693 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:19,695 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:20,946 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.294176
+mistral-no_prompt-6:  60%|██████    | 12/20 [00:11<00:07,  1.10it/s]2025-04-19 22:53:21,017 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:21,661 - Single inference for Air Traffic Controllers, duration: 0:00:05.372858
+mistral-no_prompt-6:  65%|██████▌   | 13/20 [00:12<00:06,  1.16it/s]2025-04-19 22:53:21,726 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:24,351 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.705708
+mistral-no_prompt-6:  70%|███████   | 14/20 [00:15<00:07,  1.32s/it]2025-04-19 22:53:24,419 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:25,594 - Single inference for Airfield Operations Specialists, duration: 0:00:04.631917
+mistral-no_prompt-6:  75%|███████▌  | 15/20 [00:16<00:06,  1.30s/it]2025-04-19 22:53:25,662 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:26,795 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.123165
+mistral-no_prompt-6:  80%|████████  | 16/20 [00:17<00:05,  1.27s/it]2025-04-19 22:53:26,860 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:28,209 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.604428
+mistral-no_prompt-6:  85%|████████▌ | 17/20 [00:19<00:03,  1.31s/it]2025-04-19 22:53:28,217 - Single inference for Allergists and Immunologists, duration: 0:00:03.849487
+2025-04-19 22:53:29,277 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:09.649937
+mistral-no_prompt-6:  95%|█████████▌| 19/20 [00:20<00:00,  1.04it/s]2025-04-19 22:53:29,664 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.858270
+mistral-no_prompt-6: 100%|██████████| 20/20 [00:20<00:00,  1.21it/s]mistral-no_prompt-6: 100%|██████████| 20/20 [00:20<00:00,  1.03s/it]
+2025-04-19 22:53:29,681 - Multiprocessing for mistral-no_prompt-6, duration: 0:00:20.609481
+mistral-no_prompt-7:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:53:29,786 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:29,843 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:29,846 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:29,848 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:32,553 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.829358
+mistral-no_prompt-7:   5%|▌         | 1/20 [00:02<00:54,  2.85s/it]2025-04-19 22:53:32,617 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:33,383 - Single inference for Advertising Sales Agents, duration: 0:00:03.658788
+mistral-no_prompt-7:  10%|█         | 2/20 [00:03<00:29,  1.66s/it]2025-04-19 22:53:33,449 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:33,566 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.842193
+mistral-no_prompt-7:  15%|█▌        | 3/20 [00:03<00:16,  1.01it/s]2025-04-19 22:53:33,625 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:35,175 - Single inference for Aerospace Engineers, duration: 0:00:02.611306
+mistral-no_prompt-7:  20%|██        | 4/20 [00:05<00:19,  1.23s/it]2025-04-19 22:53:35,243 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:36,101 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:06.377335
+mistral-no_prompt-7:  25%|██▌       | 5/20 [00:06<00:16,  1.12s/it]2025-04-19 22:53:36,162 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:36,254 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.855087
+mistral-no_prompt-7:  30%|███       | 6/20 [00:06<00:11,  1.26it/s]2025-04-19 22:53:36,321 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:36,440 - Single inference for Agricultural Engineers, duration: 0:00:02.863692
+mistral-no_prompt-7:  35%|███▌      | 7/20 [00:06<00:07,  1.68it/s]2025-04-19 22:53:36,508 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:38,309 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.120700
+mistral-no_prompt-7:  40%|████      | 8/20 [00:08<00:11,  1.00it/s]2025-04-19 22:53:38,373 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:39,611 - Single inference for Agricultural Inspectors, duration: 0:00:03.496700
+mistral-no_prompt-7:  45%|████▌     | 9/20 [00:09<00:12,  1.09s/it]2025-04-19 22:53:39,676 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:40,728 - Single inference for Agricultural Technicians, duration: 0:00:04.276914
+mistral-no_prompt-7:  50%|█████     | 10/20 [00:11<00:11,  1.10s/it]2025-04-19 22:53:40,798 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:41,034 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.412194
+mistral-no_prompt-7:  55%|█████▌    | 11/20 [00:11<00:07,  1.17it/s]2025-04-19 22:53:41,099 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:41,592 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.326681
+mistral-no_prompt-7:  60%|██████    | 12/20 [00:11<00:06,  1.30it/s]2025-04-19 22:53:41,656 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:44,982 - Single inference for Air Traffic Controllers, duration: 0:00:06.662019
+mistral-no_prompt-7:  65%|██████▌   | 13/20 [00:15<00:10,  1.56s/it]2025-04-19 22:53:45,050 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:45,918 - Single inference for Airfield Operations Specialists, duration: 0:00:04.315705
+mistral-no_prompt-7:  70%|███████   | 14/20 [00:16<00:08,  1.37s/it]2025-04-19 22:53:45,984 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:46,905 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.859920
+mistral-no_prompt-7:  75%|███████▌  | 15/20 [00:17<00:06,  1.26s/it]2025-04-19 22:53:46,968 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:47,126 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.387448
+mistral-no_prompt-7:  80%|████████  | 16/20 [00:17<00:03,  1.06it/s]2025-04-19 22:53:47,190 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:48,999 - Single inference for Allergists and Immunologists, duration: 0:00:03.064658
+mistral-no_prompt-7:  85%|████████▌ | 17/20 [00:19<00:03,  1.22s/it]2025-04-19 22:53:49,022 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.103981
+2025-04-19 22:53:49,398 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.261244
+mistral-no_prompt-7:  95%|█████████▌| 19/20 [00:19<00:00,  1.33it/s]2025-04-19 22:53:49,642 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.649381
+mistral-no_prompt-7: 100%|██████████| 20/20 [00:19<00:00,  1.60it/s]mistral-no_prompt-7: 100%|██████████| 20/20 [00:19<00:00,  1.00it/s]
+2025-04-19 22:53:49,660 - Multiprocessing for mistral-no_prompt-7, duration: 0:00:19.974451
+mistral-no_prompt-8:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:53:49,754 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:49,809 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:49,811 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:49,813 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:52,413 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.710251
+mistral-no_prompt-8:   5%|▌         | 1/20 [00:02<00:51,  2.73s/it]2025-04-19 22:53:52,474 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:52,688 - Single inference for Advertising Sales Agents, duration: 0:00:02.986032
+mistral-no_prompt-8:  10%|█         | 2/20 [00:03<00:23,  1.29s/it]2025-04-19 22:53:52,755 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:53,339 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:03.636223
+mistral-no_prompt-8:  15%|█▌        | 3/20 [00:03<00:16,  1.00it/s]2025-04-19 22:53:53,397 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:53,460 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.757840
+mistral-no_prompt-8:  20%|██        | 4/20 [00:03<00:10,  1.54it/s]2025-04-19 22:53:53,523 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:55,246 - Single inference for Aerospace Engineers, duration: 0:00:02.822692
+mistral-no_prompt-8:  25%|██▌       | 5/20 [00:05<00:15,  1.06s/it]2025-04-19 22:53:55,311 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:55,432 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.727331
+mistral-no_prompt-8:  30%|███       | 6/20 [00:05<00:10,  1.31it/s]2025-04-19 22:53:55,497 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:56,459 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.987697
+mistral-no_prompt-8:  35%|███▌      | 7/20 [00:06<00:11,  1.18it/s]2025-04-19 22:53:56,521 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:56,580 - Single inference for Agricultural Engineers, duration: 0:00:03.230640
+mistral-no_prompt-8:  40%|████      | 8/20 [00:06<00:07,  1.62it/s]2025-04-19 22:53:56,650 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:58,880 - Single inference for Agricultural Inspectors, duration: 0:00:03.617157
+mistral-no_prompt-8:  45%|████▌     | 9/20 [00:09<00:12,  1.14s/it]2025-04-19 22:53:58,952 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:53:59,829 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.383490
+mistral-no_prompt-8:  50%|█████     | 10/20 [00:10<00:10,  1.08s/it]2025-04-19 22:53:59,889 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:00,348 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.451948
+mistral-no_prompt-8:  55%|█████▌    | 11/20 [00:10<00:08,  1.10it/s]2025-04-19 22:54:00,416 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:00,715 - Single inference for Agricultural Technicians, duration: 0:00:04.245813
+mistral-no_prompt-8:  60%|██████    | 12/20 [00:11<00:05,  1.34it/s]2025-04-19 22:54:00,778 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:01,242 - Single inference for Air Traffic Controllers, duration: 0:00:04.645570
+mistral-no_prompt-8:  65%|██████▌   | 13/20 [00:11<00:04,  1.47it/s]2025-04-19 22:54:01,314 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:05,273 - Single inference for Airfield Operations Specialists, duration: 0:00:04.546675
+mistral-no_prompt-8:  70%|███████   | 14/20 [00:15<00:10,  1.69s/it]2025-04-19 22:54:05,339 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:05,771 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.410569
+mistral-no_prompt-8:  75%|███████▌  | 15/20 [00:16<00:06,  1.33s/it]2025-04-19 22:54:05,835 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:06,249 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.990467
+mistral-no_prompt-8:  80%|████████  | 16/20 [00:16<00:04,  1.07s/it]2025-04-19 22:54:06,312 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:07,084 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.244508
+mistral-no_prompt-8:  85%|████████▌ | 17/20 [00:17<00:03,  1.00s/it]2025-04-19 22:54:08,095 - Single inference for Allergists and Immunologists, duration: 0:00:02.805439
+mistral-no_prompt-8:  90%|█████████ | 18/20 [00:18<00:02,  1.00s/it]2025-04-19 22:54:08,336 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.552008
+mistral-no_prompt-8:  95%|█████████▌| 19/20 [00:18<00:00,  1.29it/s]2025-04-19 22:54:08,591 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.331178
+mistral-no_prompt-8: 100%|██████████| 20/20 [00:18<00:00,  1.62it/s]mistral-no_prompt-8: 100%|██████████| 20/20 [00:18<00:00,  1.06it/s]
+2025-04-19 22:54:08,608 - Multiprocessing for mistral-no_prompt-8, duration: 0:00:18.943967
+mistral-no_prompt-9:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:54:08,706 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:08,760 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:08,762 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:08,765 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:11,313 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.662501
+mistral-no_prompt-9:   5%|▌         | 1/20 [00:02<00:50,  2.68s/it]2025-04-19 22:54:11,382 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:12,039 - Single inference for Advertising Sales Agents, duration: 0:00:03.388641
+mistral-no_prompt-9:  10%|█         | 2/20 [00:03<00:27,  1.53s/it]2025-04-19 22:54:12,114 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:12,204 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.553538
+mistral-no_prompt-9:  15%|█▌        | 3/20 [00:03<00:15,  1.10it/s]2025-04-19 22:54:12,271 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:14,086 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.435122
+mistral-no_prompt-9:  20%|██        | 4/20 [00:05<00:20,  1.29s/it]2025-04-19 22:54:14,160 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:14,297 - Single inference for Aerospace Engineers, duration: 0:00:02.966833
+mistral-no_prompt-9:  25%|██▌       | 5/20 [00:05<00:13,  1.11it/s]2025-04-19 22:54:14,364 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:14,577 - Single inference for Agricultural Engineers, duration: 0:00:02.355780
+mistral-no_prompt-9:  30%|███       | 6/20 [00:05<00:09,  1.45it/s]2025-04-19 22:54:14,651 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:15,135 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.079375
+mistral-no_prompt-9:  35%|███▌      | 7/20 [00:06<00:08,  1.55it/s]2025-04-19 22:54:15,200 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:17,172 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.069677
+mistral-no_prompt-9:  40%|████      | 8/20 [00:08<00:13,  1.09s/it]2025-04-19 22:54:17,241 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:18,286 - Single inference for Agricultural Inspectors, duration: 0:00:03.972871
+mistral-no_prompt-9:  45%|████▌     | 9/20 [00:09<00:12,  1.10s/it]2025-04-19 22:54:18,357 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:18,965 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.371947
+mistral-no_prompt-9:  50%|█████     | 10/20 [00:10<00:09,  1.03it/s]2025-04-19 22:54:19,027 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:19,484 - Single inference for Agricultural Technicians, duration: 0:00:04.338239
+mistral-no_prompt-9:  55%|█████▌    | 11/20 [00:10<00:07,  1.20it/s]2025-04-19 22:54:19,548 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:19,978 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.676032
+mistral-no_prompt-9:  60%|██████    | 12/20 [00:11<00:05,  1.37it/s]2025-04-19 22:54:20,041 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:21,989 - Single inference for Air Traffic Controllers, duration: 0:00:04.800859
+mistral-no_prompt-9:  65%|██████▌   | 13/20 [00:13<00:07,  1.12s/it]2025-04-19 22:54:22,062 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:24,239 - Single inference for Airfield Operations Specialists, duration: 0:00:04.250501
+mistral-no_prompt-9:  70%|███████   | 14/20 [00:15<00:08,  1.46s/it]2025-04-19 22:54:24,279 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.784012
+2025-04-19 22:54:24,305 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:24,346 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:26,446 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.441492
+mistral-no_prompt-9:  80%|████████  | 16/20 [00:17<00:05,  1.29s/it]2025-04-19 22:54:26,513 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:26,972 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.682309
+mistral-no_prompt-9:  85%|████████▌ | 17/20 [00:18<00:03,  1.10s/it]2025-04-19 22:54:27,103 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:08.125429
+mistral-no_prompt-9:  90%|█████████ | 18/20 [00:18<00:01,  1.18it/s]2025-04-19 22:54:27,872 - Single inference for Allergists and Immunologists, duration: 0:00:03.617270
+mistral-no_prompt-9:  95%|█████████▌| 19/20 [00:19<00:00,  1.21it/s]2025-04-19 22:54:28,605 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.142564
+mistral-no_prompt-9: 100%|██████████| 20/20 [00:19<00:00,  1.25it/s]mistral-no_prompt-9: 100%|██████████| 20/20 [00:19<00:00,  1.00it/s]
+2025-04-19 22:54:28,623 - Multiprocessing for mistral-no_prompt-9, duration: 0:00:20.010684
+2025-04-19 22:54:28,634 - Wrote results JSON for mistral-no_prompt, duration: 0:00:00.007305
+2025-04-19 22:54:28,636 - Wrote prompt prompt1, duration: 0:00:00.001390
+mistral-prompt1-0:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:54:28,783 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:28,871 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:28,874 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:28,877 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:31,335 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.659655
+mistral-prompt1-0:   5%|▌         | 1/20 [00:02<00:50,  2.68s/it]2025-04-19 22:54:31,410 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:32,587 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.911916
+mistral-prompt1-0:  10%|█         | 2/20 [00:03<00:33,  1.84s/it]2025-04-19 22:54:32,659 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:32,883 - Single inference for Advertising Sales Agents, duration: 0:00:04.207607
+mistral-prompt1-0:  15%|█▌        | 3/20 [00:04<00:19,  1.13s/it]2025-04-19 22:54:32,961 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:33,479 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.803079
+mistral-prompt1-0:  20%|██        | 4/20 [00:04<00:14,  1.08it/s]2025-04-19 22:54:33,557 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:34,563 - Single inference for Aerospace Engineers, duration: 0:00:03.216927
+mistral-prompt1-0:  25%|██▌       | 5/20 [00:05<00:14,  1.02it/s]2025-04-19 22:54:34,636 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:35,630 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.031138
+mistral-prompt1-0:  30%|███       | 6/20 [00:06<00:14,  1.01s/it]2025-04-19 22:54:35,638 - Single inference for Agricultural Engineers, duration: 0:00:02.743092
+2025-04-19 22:54:35,735 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:35,738 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:36,979 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.489740
+mistral-prompt1-0:  40%|████      | 8/20 [00:08<00:10,  1.18it/s]2025-04-19 22:54:37,055 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:37,481 - Single inference for Agricultural Inspectors, duration: 0:00:02.907567
+mistral-prompt1-0:  45%|████▌     | 9/20 [00:08<00:08,  1.32it/s]2025-04-19 22:54:37,568 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:39,186 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.689267
+mistral-prompt1-0:  50%|█████     | 10/20 [00:10<00:10,  1.01s/it]2025-04-19 22:54:39,268 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:39,424 - Single inference for Agricultural Technicians, duration: 0:00:03.771600
+mistral-prompt1-0:  55%|█████▌    | 11/20 [00:10<00:07,  1.26it/s]2025-04-19 22:54:39,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:40,948 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.307158
+mistral-prompt1-0:  60%|██████    | 12/20 [00:12<00:08,  1.00s/it]2025-04-19 22:54:41,023 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:41,322 - Single inference for Air Traffic Controllers, duration: 0:00:04.332434
+mistral-prompt1-0:  65%|██████▌   | 13/20 [00:12<00:05,  1.22it/s]2025-04-19 22:54:41,409 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:43,564 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.129291
+mistral-prompt1-0:  70%|███████   | 14/20 [00:14<00:07,  1.24s/it]2025-04-19 22:54:43,634 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:45,669 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.465946
+mistral-prompt1-0:  75%|███████▌  | 15/20 [00:17<00:07,  1.49s/it]2025-04-19 22:54:45,743 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:45,904 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.565267
+mistral-prompt1-0:  80%|████████  | 16/20 [00:17<00:04,  1.12s/it]2025-04-19 22:54:45,979 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:47,646 - Single inference for Airfield Operations Specialists, duration: 0:00:06.686441
+2025-04-19 22:54:47,646 - Single inference for Allergists and Immunologists, duration: 0:00:04.071348
+mistral-prompt1-0:  85%|████████▌ | 17/20 [00:18<00:03,  1.31s/it]2025-04-19 22:54:48,018 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.338751
+mistral-prompt1-0:  95%|█████████▌| 19/20 [00:19<00:00,  1.26it/s]2025-04-19 22:54:48,523 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.605793
+mistral-prompt1-0: 100%|██████████| 20/20 [00:19<00:00,  1.39it/s]mistral-prompt1-0: 100%|██████████| 20/20 [00:19<00:00,  1.01it/s]
+2025-04-19 22:54:48,540 - Multiprocessing for mistral-prompt1-0, duration: 0:00:19.903710
+mistral-prompt1-1:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:54:48,650 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:48,735 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:48,738 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:48,740 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:51,068 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.484764
+mistral-prompt1-1:   5%|▌         | 1/20 [00:02<00:47,  2.50s/it]2025-04-19 22:54:51,150 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:51,892 - Single inference for Advertising Sales Agents, duration: 0:00:03.309088
+mistral-prompt1-1:  10%|█         | 2/20 [00:03<00:27,  1.52s/it]2025-04-19 22:54:51,967 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:52,187 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.604364
+mistral-prompt1-1:  15%|█▌        | 3/20 [00:03<00:16,  1.04it/s]2025-04-19 22:54:52,261 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:53,485 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.902439
+mistral-prompt1-1:  20%|██        | 4/20 [00:04<00:17,  1.09s/it]2025-04-19 22:54:53,563 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:54,387 - Single inference for Aerospace Engineers, duration: 0:00:03.302675
+mistral-prompt1-1:  25%|██▌       | 5/20 [00:05<00:15,  1.02s/it]2025-04-19 22:54:54,469 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:54,527 - Single inference for Agricultural Engineers, duration: 0:00:02.326388
+mistral-prompt1-1:  30%|███       | 6/20 [00:05<00:10,  1.38it/s]2025-04-19 22:54:54,604 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:54,945 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.039880
+mistral-prompt1-1:  35%|███▌      | 7/20 [00:06<00:08,  1.60it/s]2025-04-19 22:54:55,024 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:56,483 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.987206
+mistral-prompt1-1:  40%|████      | 8/20 [00:07<00:10,  1.09it/s]2025-04-19 22:54:56,567 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:57,662 - Single inference for Agricultural Inspectors, duration: 0:00:03.259370
+mistral-prompt1-1:  45%|████▌     | 9/20 [00:09<00:10,  1.00it/s]2025-04-19 22:54:57,750 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:59,217 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.537868
+mistral-prompt1-1:  50%|█████     | 10/20 [00:10<00:11,  1.17s/it]2025-04-19 22:54:59,290 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:59,352 - Single inference for Agricultural Technicians, duration: 0:00:04.395585
+mistral-prompt1-1:  55%|█████▌    | 11/20 [00:10<00:07,  1.17it/s]2025-04-19 22:54:59,432 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:54:59,933 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.394975
+mistral-prompt1-1:  60%|██████    | 12/20 [00:11<00:06,  1.30it/s]2025-04-19 22:55:00,009 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:01,238 - Single inference for Air Traffic Controllers, duration: 0:00:04.738261
+mistral-prompt1-1:  65%|██████▌   | 13/20 [00:12<00:06,  1.07it/s]2025-04-19 22:55:01,316 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:03,085 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:03.722325
+mistral-prompt1-1:  70%|███████   | 14/20 [00:14<00:07,  1.21s/it]2025-04-19 22:55:03,164 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:05,549 - Single inference for Airfield Operations Specialists, duration: 0:00:05.605742
+mistral-prompt1-1:  75%|███████▌  | 15/20 [00:16<00:07,  1.59s/it]2025-04-19 22:55:05,624 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:05,845 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.617859
+mistral-prompt1-1:  80%|████████  | 16/20 [00:17<00:04,  1.20s/it]2025-04-19 22:55:05,920 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:05,984 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.735628
+mistral-prompt1-1:  85%|████████▌ | 17/20 [00:17<00:02,  1.14it/s]2025-04-19 22:55:06,284 - Single inference for Allergists and Immunologists, duration: 0:00:03.182727
+mistral-prompt1-1:  90%|█████████ | 18/20 [00:17<00:01,  1.42it/s]2025-04-19 22:55:07,633 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.071474
+mistral-prompt1-1:  95%|█████████▌| 19/20 [00:19<00:00,  1.11it/s]2025-04-19 22:55:08,002 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.145912
+mistral-prompt1-1: 100%|██████████| 20/20 [00:19<00:00,  1.35it/s]mistral-prompt1-1: 100%|██████████| 20/20 [00:19<00:00,  1.03it/s]
+2025-04-19 22:55:08,019 - Multiprocessing for mistral-prompt1-1, duration: 0:00:19.474421
+mistral-prompt1-2:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:55:08,130 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:08,209 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:08,211 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:08,213 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:10,342 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.280542
+mistral-prompt1-2:   5%|▌         | 1/20 [00:02<00:43,  2.30s/it]2025-04-19 22:55:10,416 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:11,700 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.638260
+mistral-prompt1-2:  10%|█         | 2/20 [00:03<00:31,  1.75s/it]2025-04-19 22:55:11,784 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:12,105 - Single inference for Advertising Sales Agents, duration: 0:00:04.043622
+mistral-prompt1-2:  15%|█▌        | 3/20 [00:04<00:19,  1.13s/it]2025-04-19 22:55:12,190 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:13,782 - Single inference for Aerospace Engineers, duration: 0:00:03.429204
+mistral-prompt1-2:  20%|██        | 4/20 [00:05<00:21,  1.35s/it]2025-04-19 22:55:13,869 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:14,260 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:06.198694
+mistral-prompt1-2:  25%|██▌       | 5/20 [00:06<00:15,  1.03s/it]2025-04-19 22:55:14,333 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:14,757 - Single inference for Agricultural Engineers, duration: 0:00:02.636111
+mistral-prompt1-2:  30%|███       | 6/20 [00:06<00:11,  1.17it/s]2025-04-19 22:55:14,836 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:14,937 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.220522
+mistral-prompt1-2:  35%|███▌      | 7/20 [00:06<00:08,  1.58it/s]2025-04-19 22:55:15,015 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:16,902 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.103515
+mistral-prompt1-2:  40%|████      | 8/20 [00:08<00:12,  1.06s/it]2025-04-19 22:55:16,977 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:17,317 - Single inference for Agricultural Inspectors, duration: 0:00:03.045697
+mistral-prompt1-2:  45%|████▌     | 9/20 [00:09<00:09,  1.17it/s]2025-04-19 22:55:17,395 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:18,927 - Single inference for Agricultural Technicians, duration: 0:00:03.979626
+mistral-prompt1-2:  50%|█████     | 10/20 [00:10<00:10,  1.09s/it]2025-04-19 22:55:19,001 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:19,160 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.832806
+mistral-prompt1-2:  55%|█████▌    | 11/20 [00:11<00:07,  1.21it/s]2025-04-19 22:55:19,242 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:20,356 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.585788
+mistral-prompt1-2:  60%|██████    | 12/20 [00:12<00:07,  1.06it/s]2025-04-19 22:55:20,431 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:21,846 - Single inference for Air Traffic Controllers, duration: 0:00:04.933098
+mistral-prompt1-2:  65%|██████▌   | 13/20 [00:13<00:07,  1.11s/it]2025-04-19 22:55:21,924 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:23,856 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.684944
+mistral-prompt1-2:  70%|███████   | 14/20 [00:15<00:08,  1.38s/it]2025-04-19 22:55:23,927 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:25,994 - Single inference for Airfield Operations Specialists, duration: 0:00:05.627432
+mistral-prompt1-2:  75%|███████▌  | 15/20 [00:17<00:08,  1.61s/it]2025-04-19 22:55:26,069 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:26,237 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.299329
+mistral-prompt1-2:  80%|████████  | 16/20 [00:18<00:04,  1.20s/it]2025-04-19 22:55:26,321 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:27,374 - Single inference for Allergists and Immunologists, duration: 0:00:03.503923
+mistral-prompt1-2:  85%|████████▌ | 17/20 [00:19<00:03,  1.18s/it]2025-04-19 22:55:27,592 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.735582
+mistral-prompt1-2:  90%|█████████ | 18/20 [00:19<00:01,  1.12it/s]2025-04-19 22:55:28,275 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.269395
+mistral-prompt1-2:  95%|█████████▌| 19/20 [00:20<00:00,  1.21it/s]2025-04-19 22:55:28,769 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.514916
+mistral-prompt1-2: 100%|██████████| 20/20 [00:20<00:00,  1.37it/s]mistral-prompt1-2: 100%|██████████| 20/20 [00:20<00:00,  1.04s/it]
+2025-04-19 22:55:28,786 - Multiprocessing for mistral-prompt1-2, duration: 0:00:20.762592
+mistral-prompt1-3:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:55:28,901 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:28,985 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:28,987 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:28,989 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:30,943 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.115115
+mistral-prompt1-3:   5%|▌         | 1/20 [00:02<00:40,  2.13s/it]2025-04-19 22:55:31,018 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:32,208 - Single inference for Advertising Sales Agents, duration: 0:00:03.380071
+mistral-prompt1-3:  10%|█         | 2/20 [00:03<00:29,  1.62s/it]2025-04-19 22:55:32,286 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:32,527 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.698289
+mistral-prompt1-3:  15%|█▌        | 3/20 [00:03<00:17,  1.03s/it]2025-04-19 22:55:32,602 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:33,475 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.646464
+mistral-prompt1-3:  20%|██        | 4/20 [00:04<00:15,  1.00it/s]2025-04-19 22:55:33,553 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:34,390 - Single inference for Aerospace Engineers, duration: 0:00:03.435525
+mistral-prompt1-3:  25%|██▌       | 5/20 [00:05<00:14,  1.03it/s]2025-04-19 22:55:34,463 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:34,785 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.563471
+mistral-prompt1-3:  30%|███       | 6/20 [00:05<00:10,  1.29it/s]2025-04-19 22:55:34,872 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:35,260 - Single inference for Agricultural Engineers, duration: 0:00:02.720568
+mistral-prompt1-3:  35%|███▌      | 7/20 [00:06<00:08,  1.48it/s]2025-04-19 22:55:35,339 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:36,854 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.368302
+mistral-prompt1-3:  40%|████      | 8/20 [00:08<00:11,  1.03it/s]2025-04-19 22:55:36,930 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:37,783 - Single inference for Agricultural Inspectors, duration: 0:00:03.382155
+mistral-prompt1-3:  45%|████▌     | 9/20 [00:08<00:10,  1.05it/s]2025-04-19 22:55:37,862 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:39,140 - Single inference for Agricultural Technicians, duration: 0:00:03.868700
+mistral-prompt1-3:  50%|█████     | 10/20 [00:10<00:10,  1.08s/it]2025-04-19 22:55:39,217 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:39,534 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.740285
+mistral-prompt1-3:  55%|█████▌    | 11/20 [00:10<00:07,  1.15it/s]2025-04-19 22:55:39,611 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.809362
+2025-04-19 22:55:39,613 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:39,698 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:42,465 - Single inference for Air Traffic Controllers, duration: 0:00:05.599995
+mistral-prompt1-3:  65%|██████▌   | 13/20 [00:13<00:08,  1.15s/it]2025-04-19 22:55:42,543 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:44,428 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.882598
+mistral-prompt1-3:  70%|███████   | 14/20 [00:15<00:08,  1.35s/it]2025-04-19 22:55:44,501 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:44,853 - Single inference for Airfield Operations Specialists, duration: 0:00:05.225675
+mistral-prompt1-3:  75%|███████▌  | 15/20 [00:16<00:05,  1.11s/it]2025-04-19 22:55:44,927 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:45,106 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:05.949849
+mistral-prompt1-3:  80%|████████  | 16/20 [00:16<00:03,  1.14it/s]2025-04-19 22:55:45,190 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:47,175 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.311266
+mistral-prompt1-3:  85%|████████▌ | 17/20 [00:18<00:03,  1.21s/it]2025-04-19 22:55:47,345 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.869844
+mistral-prompt1-3:  90%|█████████ | 18/20 [00:18<00:01,  1.10it/s]2025-04-19 22:55:47,887 - Single inference for Allergists and Immunologists, duration: 0:00:03.447992
+mistral-prompt1-3:  95%|█████████▌| 19/20 [00:19<00:00,  1.24it/s]2025-04-19 22:55:47,950 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.827250
+mistral-prompt1-3: 100%|██████████| 20/20 [00:19<00:00,  1.04it/s]
+2025-04-19 22:55:47,966 - Multiprocessing for mistral-prompt1-3, duration: 0:00:19.176850
+mistral-prompt1-4:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:55:48,077 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:48,163 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:48,165 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:48,167 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:50,419 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.409746
+mistral-prompt1-4:   5%|▌         | 1/20 [00:02<00:46,  2.43s/it]2025-04-19 22:55:50,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:51,279 - Single inference for Advertising Sales Agents, duration: 0:00:03.269839
+mistral-prompt1-4:  10%|█         | 2/20 [00:03<00:27,  1.51s/it]2025-04-19 22:55:51,353 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:52,138 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.128641
+mistral-prompt1-4:  15%|█▌        | 3/20 [00:04<00:20,  1.21s/it]2025-04-19 22:55:52,186 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.176795
+2025-04-19 22:55:52,218 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:52,266 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:53,682 - Single inference for Aerospace Engineers, duration: 0:00:03.247100
+mistral-prompt1-4:  25%|██▌       | 5/20 [00:05<00:14,  1.04it/s]2025-04-19 22:55:53,764 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:54,658 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.367997
+mistral-prompt1-4:  30%|███       | 6/20 [00:06<00:13,  1.03it/s]2025-04-19 22:55:54,744 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:54,851 - Single inference for Agricultural Engineers, duration: 0:00:02.696613
+mistral-prompt1-4:  35%|███▌      | 7/20 [00:06<00:09,  1.35it/s]2025-04-19 22:55:54,938 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:55,093 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.896642
+mistral-prompt1-4:  40%|████      | 8/20 [00:07<00:07,  1.68it/s]2025-04-19 22:55:55,170 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:56,779 - Single inference for Agricultural Inspectors, duration: 0:00:03.080827
+mistral-prompt1-4:  45%|████▌     | 9/20 [00:08<00:10,  1.09it/s]2025-04-19 22:55:56,858 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:58,419 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.628411
+mistral-prompt1-4:  50%|█████     | 10/20 [00:10<00:11,  1.13s/it]2025-04-19 22:55:58,506 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:59,091 - Single inference for Agricultural Technicians, duration: 0:00:04.224141
+mistral-prompt1-4:  55%|█████▌    | 11/20 [00:11<00:08,  1.01it/s]2025-04-19 22:55:59,170 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:59,228 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.553555
+mistral-prompt1-4:  60%|██████    | 12/20 [00:11<00:05,  1.35it/s]2025-04-19 22:55:59,309 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:55:59,321 - Single inference for Air Traffic Controllers, duration: 0:00:04.216750
+2025-04-19 22:55:59,394 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:04,037 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.705128
+mistral-prompt1-4:  70%|███████   | 14/20 [00:16<00:09,  1.51s/it]2025-04-19 22:56:04,111 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:04,121 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.019234
+2025-04-19 22:56:04,194 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:05,335 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.899586
+mistral-prompt1-4:  80%|████████  | 16/20 [00:17<00:04,  1.17s/it]2025-04-19 22:56:05,410 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:06,201 - Single inference for Airfield Operations Specialists, duration: 0:00:06.956909
+mistral-prompt1-4:  85%|████████▌ | 17/20 [00:18<00:03,  1.10s/it]2025-04-19 22:56:06,778 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.645779
+mistral-prompt1-4:  90%|█████████ | 18/20 [00:18<00:01,  1.03it/s]2025-04-19 22:56:07,800 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.454213
+mistral-prompt1-4:  95%|█████████▌| 19/20 [00:19<00:00,  1.01it/s]2025-04-19 22:56:08,040 - Single inference for Allergists and Immunologists, duration: 0:00:03.992167
+mistral-prompt1-4: 100%|██████████| 20/20 [00:20<00:00,  1.27it/s]mistral-prompt1-4: 100%|██████████| 20/20 [00:20<00:00,  1.00s/it]
+2025-04-19 22:56:08,058 - Multiprocessing for mistral-prompt1-4, duration: 0:00:20.087329
+mistral-prompt1-5:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:56:08,168 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:08,254 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:08,256 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:08,259 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:10,683 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.581795
+mistral-prompt1-5:   5%|▌         | 1/20 [00:02<00:49,  2.60s/it]2025-04-19 22:56:10,757 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:11,163 - Single inference for Advertising Sales Agents, duration: 0:00:03.062074
+mistral-prompt1-5:  10%|█         | 2/20 [00:03<00:24,  1.35s/it]2025-04-19 22:56:11,237 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:12,548 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.447397
+mistral-prompt1-5:  15%|█▌        | 3/20 [00:04<00:23,  1.37s/it]2025-04-19 22:56:12,621 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:12,898 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:04.797533
+mistral-prompt1-5:  20%|██        | 4/20 [00:04<00:15,  1.03it/s]2025-04-19 22:56:12,985 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:13,516 - Single inference for Aerospace Engineers, duration: 0:00:02.822761
+mistral-prompt1-5:  25%|██▌       | 5/20 [00:05<00:12,  1.19it/s]2025-04-19 22:56:13,598 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:14,052 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.877968
+mistral-prompt1-5:  30%|███       | 6/20 [00:05<00:10,  1.36it/s]2025-04-19 22:56:14,130 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:15,419 - Single inference for Agricultural Engineers, duration: 0:00:02.860109
+mistral-prompt1-5:  35%|███▌      | 7/20 [00:07<00:12,  1.06it/s]2025-04-19 22:56:15,507 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:15,973 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.058484
+mistral-prompt1-5:  40%|████      | 8/20 [00:07<00:09,  1.22it/s]2025-04-19 22:56:16,048 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:16,643 - Single inference for Agricultural Inspectors, duration: 0:00:03.110197
+mistral-prompt1-5:  45%|████▌     | 9/20 [00:08<00:08,  1.29it/s]2025-04-19 22:56:16,722 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:18,236 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.582602
+mistral-prompt1-5:  50%|█████     | 10/20 [00:10<00:10,  1.03s/it]2025-04-19 22:56:18,319 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:18,423 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.358089
+mistral-prompt1-5:  55%|█████▌    | 11/20 [00:10<00:06,  1.30it/s]2025-04-19 22:56:18,502 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:18,862 - Single inference for Agricultural Technicians, duration: 0:00:03.426370
+mistral-prompt1-5:  60%|██████    | 12/20 [00:10<00:05,  1.50it/s]2025-04-19 22:56:18,937 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:21,045 - Single inference for Air Traffic Controllers, duration: 0:00:05.058922
+mistral-prompt1-5:  65%|██████▌   | 13/20 [00:12<00:07,  1.13s/it]2025-04-19 22:56:21,123 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:23,272 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.837149
+mistral-prompt1-5:  70%|███████   | 14/20 [00:15<00:08,  1.46s/it]2025-04-19 22:56:23,346 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:24,036 - Single inference for Airfield Operations Specialists, duration: 0:00:05.162923
+mistral-prompt1-5:  75%|███████▌  | 15/20 [00:15<00:06,  1.25s/it]2025-04-19 22:56:24,119 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:26,018 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.765368
+mistral-prompt1-5:  80%|████████  | 16/20 [00:17<00:05,  1.47s/it]2025-04-19 22:56:26,102 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:26,237 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.181662
+mistral-prompt1-5:  85%|████████▌ | 17/20 [00:18<00:03,  1.09s/it]2025-04-19 22:56:26,518 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.466368
+mistral-prompt1-5:  90%|█████████ | 18/20 [00:18<00:01,  1.18it/s]2025-04-19 22:56:26,690 - Single inference for Allergists and Immunologists, duration: 0:00:03.401310
+mistral-prompt1-5:  95%|█████████▌| 19/20 [00:18<00:00,  1.55it/s]2025-04-19 22:56:28,282 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.247723
+mistral-prompt1-5: 100%|██████████| 20/20 [00:20<00:00,  1.08it/s]mistral-prompt1-5: 100%|██████████| 20/20 [00:20<00:00,  1.01s/it]
+2025-04-19 22:56:28,299 - Multiprocessing for mistral-prompt1-5, duration: 0:00:20.237228
+mistral-prompt1-6:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:56:28,415 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:28,498 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:28,500 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:28,503 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:31,040 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.698169
+mistral-prompt1-6:   5%|▌         | 1/20 [00:02<00:51,  2.72s/it]2025-04-19 22:56:31,115 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:32,125 - Single inference for Advertising Sales Agents, duration: 0:00:03.782966
+mistral-prompt1-6:  10%|█         | 2/20 [00:03<00:31,  1.76s/it]2025-04-19 22:56:32,213 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:32,597 - Single inference for Advertising and Promotions Managers, duration: 0:00:04.255955
+mistral-prompt1-6:  15%|█▌        | 3/20 [00:04<00:19,  1.17s/it]2025-04-19 22:56:32,671 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:33,569 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.227787
+mistral-prompt1-6:  20%|██        | 4/20 [00:05<00:17,  1.09s/it]2025-04-19 22:56:33,656 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:34,277 - Single inference for Aerospace Engineers, duration: 0:00:03.225997
+mistral-prompt1-6:  25%|██▌       | 5/20 [00:05<00:14,  1.05it/s]2025-04-19 22:56:34,350 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:35,008 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.867338
+mistral-prompt1-6:  30%|███       | 6/20 [00:06<00:12,  1.14it/s]2025-04-19 22:56:35,086 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:35,125 - Single inference for Agricultural Engineers, duration: 0:00:02.516218
+mistral-prompt1-6:  35%|███▌      | 7/20 [00:06<00:08,  1.59it/s]2025-04-19 22:56:35,212 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:37,276 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.690498
+mistral-prompt1-6:  40%|████      | 8/20 [00:08<00:13,  1.11s/it]2025-04-19 22:56:37,359 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:37,544 - Single inference for Agricultural Inspectors, duration: 0:00:03.256717
+mistral-prompt1-6:  45%|████▌     | 9/20 [00:09<00:09,  1.18it/s]2025-04-19 22:56:37,631 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:38,752 - Single inference for Agricultural Technicians, duration: 0:00:03.610568
+mistral-prompt1-6:  50%|█████     | 10/20 [00:10<00:09,  1.04it/s]2025-04-19 22:56:38,826 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:39,263 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.706433
+mistral-prompt1-6:  55%|█████▌    | 11/20 [00:10<00:07,  1.22it/s]2025-04-19 22:56:39,342 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:39,814 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.795199
+mistral-prompt1-6:  60%|██████    | 12/20 [00:11<00:05,  1.35it/s]2025-04-19 22:56:39,899 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:41,872 - Single inference for Air Traffic Controllers, duration: 0:00:04.579610
+mistral-prompt1-6:  65%|██████▌   | 13/20 [00:13<00:07,  1.14s/it]2025-04-19 22:56:41,950 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:43,582 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:04.818979
+mistral-prompt1-6:  70%|███████   | 14/20 [00:15<00:07,  1.31s/it]2025-04-19 22:56:43,656 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:44,215 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.939187
+mistral-prompt1-6:  75%|███████▌  | 15/20 [00:15<00:05,  1.11s/it]2025-04-19 22:56:44,296 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:44,865 - Single inference for Airfield Operations Specialists, duration: 0:00:05.033982
+mistral-prompt1-6:  80%|████████  | 16/20 [00:16<00:03,  1.03it/s]2025-04-19 22:56:44,940 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:46,836 - Single inference for Allergists and Immunologists, duration: 0:00:03.243813
+mistral-prompt1-6:  85%|████████▌ | 17/20 [00:18<00:03,  1.27s/it]2025-04-19 22:56:46,885 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.002668
+2025-04-19 22:56:46,908 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.675930
+2025-04-19 22:56:46,941 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.063006
+mistral-prompt1-6: 100%|██████████| 20/20 [00:18<00:00,  1.74it/s]mistral-prompt1-6: 100%|██████████| 20/20 [00:18<00:00,  1.07it/s]
+2025-04-19 22:56:46,959 - Multiprocessing for mistral-prompt1-6, duration: 0:00:18.655372
+mistral-prompt1-7:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:56:47,075 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:47,156 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:47,157 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:47,160 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:49,167 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.165114
+mistral-prompt1-7:   5%|▌         | 1/20 [00:02<00:41,  2.19s/it]2025-04-19 22:56:49,249 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:50,181 - Single inference for Advertising Sales Agents, duration: 0:00:03.178867
+mistral-prompt1-7:  10%|█         | 2/20 [00:03<00:26,  1.50s/it]2025-04-19 22:56:50,255 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:50,528 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.526357
+mistral-prompt1-7:  15%|█▌        | 3/20 [00:03<00:16,  1.03it/s]2025-04-19 22:56:50,607 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:51,792 - Single inference for Aerospace Engineers, duration: 0:00:02.609102
+mistral-prompt1-7:  20%|██        | 4/20 [00:04<00:17,  1.09s/it]2025-04-19 22:56:51,879 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:52,057 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.054809
+mistral-prompt1-7:  25%|██▌       | 5/20 [00:05<00:11,  1.27it/s]2025-04-19 22:56:52,136 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:53,128 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:02.936316
+mistral-prompt1-7:  30%|███       | 6/20 [00:06<00:12,  1.13it/s]2025-04-19 22:56:53,215 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:53,275 - Single inference for Agricultural Engineers, duration: 0:00:02.732946
+mistral-prompt1-7:  35%|███▌      | 7/20 [00:06<00:08,  1.55it/s]2025-04-19 22:56:53,362 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:55,390 - Single inference for Agricultural Inspectors, duration: 0:00:03.317490
+mistral-prompt1-7:  40%|████      | 8/20 [00:08<00:13,  1.11s/it]2025-04-19 22:56:55,474 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:55,534 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.728116
+mistral-prompt1-7:  45%|████▌     | 9/20 [00:08<00:08,  1.24it/s]2025-04-19 22:56:55,611 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:56,966 - Single inference for Agricultural Technicians, duration: 0:00:03.675076
+mistral-prompt1-7:  50%|█████     | 10/20 [00:09<00:10,  1.00s/it]2025-04-19 22:56:57,046 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:57,525 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.980392
+mistral-prompt1-7:  55%|█████▌    | 11/20 [00:10<00:07,  1.15it/s]2025-04-19 22:56:57,603 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:58,146 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:05.001925
+mistral-prompt1-7:  60%|██████    | 12/20 [00:11<00:06,  1.26it/s]2025-04-19 22:56:58,227 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:56:59,565 - Single inference for Air Traffic Controllers, duration: 0:00:04.158575
+mistral-prompt1-7:  65%|██████▌   | 13/20 [00:12<00:06,  1.02it/s]2025-04-19 22:56:59,643 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:03,101 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:06.118776
+mistral-prompt1-7:  70%|███████   | 14/20 [00:16<00:10,  1.75s/it]2025-04-19 22:57:03,176 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:03,539 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:06.003606
+mistral-prompt1-7:  75%|███████▌  | 15/20 [00:16<00:06,  1.36s/it]2025-04-19 22:57:03,619 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:04,528 - Single inference for Airfield Operations Specialists, duration: 0:00:06.366360
+mistral-prompt1-7:  80%|████████  | 16/20 [00:17<00:04,  1.25s/it]2025-04-19 22:57:04,612 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:05,289 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.713185
+mistral-prompt1-7:  85%|████████▌ | 17/20 [00:18<00:03,  1.10s/it]2025-04-19 22:57:05,876 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.320705
+mistral-prompt1-7:  90%|█████████ | 18/20 [00:18<00:01,  1.06it/s]2025-04-19 22:57:07,214 - Single inference for Allergists and Immunologists, duration: 0:00:04.103003
+mistral-prompt1-7:  95%|█████████▌| 19/20 [00:20<00:01,  1.06s/it]2025-04-19 22:57:07,321 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.776748
+mistral-prompt1-7: 100%|██████████| 20/20 [00:20<00:00,  1.29it/s]mistral-prompt1-7: 100%|██████████| 20/20 [00:20<00:00,  1.02s/it]
+2025-04-19 22:57:07,339 - Multiprocessing for mistral-prompt1-7, duration: 0:00:20.376431
+mistral-prompt1-8:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:57:07,450 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:07,534 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:07,537 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:07,539 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:09,776 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.393218
+mistral-prompt1-8:   5%|▌         | 1/20 [00:02<00:45,  2.41s/it]2025-04-19 22:57:09,850 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:10,990 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.607677
+mistral-prompt1-8:  10%|█         | 2/20 [00:03<00:30,  1.71s/it]2025-04-19 22:57:11,076 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:11,507 - Single inference for Advertising Sales Agents, duration: 0:00:04.124248
+mistral-prompt1-8:  15%|█▌        | 3/20 [00:04<00:19,  1.16s/it]2025-04-19 22:57:11,588 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:12,733 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.349972
+mistral-prompt1-8:  20%|██        | 4/20 [00:05<00:19,  1.19s/it]2025-04-19 22:57:12,811 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:12,883 - Single inference for Aerospace Engineers, duration: 0:00:03.096450
+mistral-prompt1-8:  25%|██▌       | 5/20 [00:05<00:12,  1.23it/s]2025-04-19 22:57:12,957 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:14,305 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.299043
+mistral-prompt1-8:  30%|███       | 6/20 [00:06<00:14,  1.02s/it]2025-04-19 22:57:14,384 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:14,430 - Single inference for Agricultural Engineers, duration: 0:00:02.910147
+mistral-prompt1-8:  35%|███▌      | 7/20 [00:07<00:09,  1.37it/s]2025-04-19 22:57:14,512 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:15,445 - Single inference for Agricultural Equipment Operators, duration: 0:00:02.701995
+mistral-prompt1-8:  40%|████      | 8/20 [00:08<00:09,  1.22it/s]2025-04-19 22:57:15,521 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:16,594 - Single inference for Agricultural Inspectors, duration: 0:00:03.699688
+mistral-prompt1-8:  45%|████▌     | 9/20 [00:09<00:10,  1.08it/s]2025-04-19 22:57:16,681 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:17,610 - Single inference for Agricultural Technicians, duration: 0:00:03.165077
+mistral-prompt1-8:  50%|█████     | 10/20 [00:10<00:09,  1.05it/s]2025-04-19 22:57:17,693 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:18,239 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.628618
+mistral-prompt1-8:  55%|█████▌    | 11/20 [00:10<00:07,  1.17it/s]2025-04-19 22:57:18,327 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:19,065 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.748984
+mistral-prompt1-8:  60%|██████    | 12/20 [00:11<00:06,  1.18it/s]2025-04-19 22:57:19,151 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:19,972 - Single inference for Air Traffic Controllers, duration: 0:00:04.515632
+mistral-prompt1-8:  65%|██████▌   | 13/20 [00:12<00:06,  1.16it/s]2025-04-19 22:57:20,051 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:22,736 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:04.486555
+mistral-prompt1-8:  70%|███████   | 14/20 [00:15<00:08,  1.44s/it]2025-04-19 22:57:22,815 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:23,403 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:05.776646
+mistral-prompt1-8:  75%|███████▌  | 15/20 [00:16<00:06,  1.21s/it]2025-04-19 22:57:23,477 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:24,263 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:04.279532
+mistral-prompt1-8:  80%|████████  | 16/20 [00:16<00:04,  1.10s/it]2025-04-19 22:57:24,348 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:25,263 - Single inference for Airfield Operations Specialists, duration: 0:00:06.186532
+mistral-prompt1-8:  85%|████████▌ | 17/20 [00:17<00:03,  1.07s/it]2025-04-19 22:57:25,956 - Single inference for Allergists and Immunologists, duration: 0:00:03.203859
+mistral-prompt1-8:  90%|█████████ | 18/20 [00:18<00:01,  1.04it/s]2025-04-19 22:57:26,113 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.699614
+mistral-prompt1-8:  95%|█████████▌| 19/20 [00:18<00:00,  1.39it/s]2025-04-19 22:57:26,571 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.292288
+mistral-prompt1-8: 100%|██████████| 20/20 [00:19<00:00,  1.56it/s]mistral-prompt1-8: 100%|██████████| 20/20 [00:19<00:00,  1.04it/s]
+2025-04-19 22:57:26,589 - Multiprocessing for mistral-prompt1-8, duration: 0:00:19.245379
+mistral-prompt1-9:   0%|          | 0/20 [00:00<?, ?it/s]2025-04-19 22:57:26,701 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:26,785 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:26,787 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:26,789 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:29,327 - Single inference for Aerospace Engineering and Operations Technologists and Technicians, duration: 0:00:02.695613
+mistral-prompt1-9:   5%|▌         | 1/20 [00:02<00:51,  2.72s/it]2025-04-19 22:57:29,403 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:30,439 - Single inference for Advertising and Promotions Managers, duration: 0:00:03.807855
+mistral-prompt1-9:  10%|█         | 2/20 [00:03<00:31,  1.77s/it]2025-04-19 22:57:30,514 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:31,084 - Single inference for Advertising Sales Agents, duration: 0:00:04.452267
+mistral-prompt1-9:  15%|█▌        | 3/20 [00:04<00:21,  1.26s/it]2025-04-19 22:57:31,163 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:31,831 - Single inference for Advanced Practice Psychiatric Nurses, duration: 0:00:05.199386
+mistral-prompt1-9:  20%|██        | 4/20 [00:05<00:16,  1.06s/it]2025-04-19 22:57:31,910 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:32,747 - Single inference for Aerospace Engineers, duration: 0:00:03.409114
+mistral-prompt1-9:  25%|██▌       | 5/20 [00:06<00:15,  1.01s/it]2025-04-19 22:57:32,821 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:33,778 - Single inference for Agricultural Engineers, duration: 0:00:02.683133
+mistral-prompt1-9:  30%|███       | 6/20 [00:07<00:14,  1.01s/it]2025-04-19 22:57:33,856 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:33,917 - Single inference for Agents and Business Managers of Artists, Performers, and Athletes, duration: 0:00:03.466777
+mistral-prompt1-9:  35%|███▌      | 7/20 [00:07<00:09,  1.37it/s]2025-04-19 22:57:33,998 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:35,169 - Single inference for Agricultural Equipment Operators, duration: 0:00:03.326977
+mistral-prompt1-9:  40%|████      | 8/20 [00:08<00:10,  1.12it/s]2025-04-19 22:57:35,253 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:36,180 - Single inference for Agricultural Inspectors, duration: 0:00:03.421804
+mistral-prompt1-9:  45%|████▌     | 9/20 [00:09<00:10,  1.07it/s]2025-04-19 22:57:36,267 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:37,406 - Single inference for Agricultural Technicians, duration: 0:00:03.477795
+mistral-prompt1-9:  50%|█████     | 10/20 [00:10<00:10,  1.02s/it]2025-04-19 22:57:37,479 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:38,073 - Single inference for Aircraft Cargo Handling Supervisors, duration: 0:00:01.877225
+mistral-prompt1-9:  55%|█████▌    | 11/20 [00:11<00:08,  1.09it/s]2025-04-19 22:57:38,152 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:38,363 - Single inference for Agricultural Sciences Teachers, Postsecondary, duration: 0:00:04.574526
+mistral-prompt1-9:  60%|██████    | 12/20 [00:11<00:05,  1.38it/s]2025-04-19 22:57:38,447 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:40,561 - Single inference for Air Traffic Controllers, duration: 0:00:05.379415
+mistral-prompt1-9:  65%|██████▌   | 13/20 [00:13<00:08,  1.17s/it]2025-04-19 22:57:40,648 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:43,539 - Single inference for Aircraft Structure, Surfaces, Rigging, and Systems Assemblers, duration: 0:00:05.454965
+mistral-prompt1-9:  70%|███████   | 14/20 [00:16<00:10,  1.72s/it]2025-04-19 22:57:43,610 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:43,968 - Single inference for Airfield Operations Specialists, duration: 0:00:05.588099
+mistral-prompt1-9:  75%|███████▌  | 15/20 [00:17<00:06,  1.33s/it]2025-04-19 22:57:44,043 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:44,976 - Single inference for Aircraft Mechanics and Service Technicians, duration: 0:00:07.559044
+mistral-prompt1-9:  80%|████████  | 16/20 [00:18<00:04,  1.23s/it]2025-04-19 22:57:45,051 - HTTP Request: POST http://127.0.0.1:11611/api/chat "HTTP/1.1 200 OK"
+2025-04-19 22:57:45,780 - Single inference for Airline Pilots, Copilots, and Flight Engineers, duration: 0:00:05.202354
+mistral-prompt1-9:  85%|████████▌ | 17/20 [00:19<00:03,  1.10s/it]2025-04-19 22:57:46,561 - Single inference for Ambulance Drivers and Attendants, Except Emergency Medical Technicians, duration: 0:00:02.581683
+mistral-prompt1-9:  90%|█████████ | 18/20 [00:19<00:02,  1.01s/it]2025-04-19 22:57:46,770 - Single inference for Allergists and Immunologists, duration: 0:00:03.219837
+mistral-prompt1-9:  95%|█████████▌| 19/20 [00:20<00:00,  1.30it/s]2025-04-19 22:57:47,247 - Single inference for Amusement and Recreation Attendants, duration: 0:00:02.260085
+mistral-prompt1-9: 100%|██████████| 20/20 [00:20<00:00,  1.47it/s]mistral-prompt1-9: 100%|██████████| 20/20 [00:20<00:00,  1.03s/it]
+2025-04-19 22:57:47,268 - Multiprocessing for mistral-prompt1-9, duration: 0:00:20.675324
+2025-04-19 22:57:47,278 - Wrote results JSON for mistral-prompt1, duration: 0:00:00.006079
+2025-04-19 22:57:47,278 - Script completed
