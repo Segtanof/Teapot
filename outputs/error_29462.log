@@ -1,0 +1,3 @@
+2025-04-20 02:45:12,418 - Script started
+2025-04-20 02:45:12,420 - Processing model: mistral
+slurmstepd: error: *** JOB 29462 ON uc3n083 CANCELLED AT 2025-04-20T03:00:41 ***

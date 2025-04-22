@@ -1,0 +1,40 @@
+PORT: 12239
+Mon Apr 21 13:34:19 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 PCIe               On  |   00000000:B3:00.0 Off |                    0 |
+| N/A   31C    P0             47W /  350W |      30MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2671      G   /usr/libexec/Xorg                        17MiB |
++-----------------------------------------------------------------------------------------+
+               total        used        free      shared  buff/cache   available
+Mem:           503Gi        21Gi       466Gi       131Mi        22Gi       481Gi
+Swap:           14Gi       612Mi        14Gi
+folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n906
+Job ID: 32805
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:03:15
+CPU Efficiency: 1.35% of 04:01:20 core-walltime
+Job Wall-clock time: 02:00:40
+Memory Utilized: 22.58 GB
+Memory Efficiency: 282.25% of 8.00 GB (8.00 GB/node)

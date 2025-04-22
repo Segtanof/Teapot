@@ -1,0 +1,4 @@
+/var/spool/slurmd/job29451/slurm_script: line 41: nvidia-smi: command not found
+2025-04-20 02:03:05,675 - Script started
+2025-04-20 02:03:05,677 - Processing model: mistral
+slurmstepd: error: *** JOB 29451 ON uc3n083 CANCELLED AT 2025-04-20T02:13:38 ***

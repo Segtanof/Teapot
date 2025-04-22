@@ -1,0 +1,35 @@
+PORT: 11885
+
+
+============================================ ROCm System Management Interface ============================================
+====================================================== Concise Info ======================================================
+Device  Node  IDs              Temp        Power     Partitions          SCLK    MCLK     Fan  Perf  PwrCap  VRAM%  GPU%  
+[3m              (DID,     GUID)  (Junction)  (Socket)  (Mem, Compute, ID)                                                   [0m
+==========================================================================================================================
+0       4     0x74a0,   32934  35.0°C      94.0W     NPS1, SPX, 0        109Mhz  1200Mhz  0%   auto  550.0W  0%     0%    
+1       5     0x74a0,   33239  39.0°C      103.0W    NPS1, SPX, 0        100Mhz  1300Mhz  0%   auto  550.0W  0%     0%    
+2       6     0x74a0,   8391   55.0°C      107.0W    NPS1, SPX, 0        118Mhz  1300Mhz  0%   auto  550.0W  0%     0%    
+3       7     0x74a0,   8630   35.0°C      44.0W     NPS1, SPX, 0        105Mhz  900Mhz   0%   auto  550.0W  0%     0%    
+==========================================================================================================================
+================================================== End of ROCm SMI Log ===================================================
+               total        used        free      shared  buff/cache   available
+Mem:           502Gi        25Gi       457Gi        80Mi        26Gi       476Gi
+Swap:          3.7Gi        42Mi       3.7Gi
+               total        used        free      shared  buff/cache   available
+Mem:           502Gi        25Gi       457Gi        80Mi        26Gi       476Gi
+Swap:          3.7Gi        42Mi       3.7Gi
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n083
+Job ID: 29451
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:02
+CPU Efficiency: 0.15% of 00:22:50 core-walltime
+Job Wall-clock time: 00:11:25
+Memory Utilized: 5.03 GB
+Memory Efficiency: 62.82% of 8.00 GB (8.00 GB/node)

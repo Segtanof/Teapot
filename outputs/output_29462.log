@@ -1,0 +1,32 @@
+PORT: 11896
+
+
+============================================ ROCm System Management Interface ============================================
+====================================================== Concise Info ======================================================
+Device  Node  IDs              Temp        Power     Partitions          SCLK    MCLK     Fan  Perf  PwrCap  VRAM%  GPU%  
+[3m              (DID,     GUID)  (Junction)  (Socket)  (Mem, Compute, ID)                                                   [0m
+==========================================================================================================================
+0       4     0x74a0,   32934  34.0°C      88.0W     NPS1, SPX, 0        107Mhz  1200Mhz  0%   auto  550.0W  0%     0%    
+1       5     0x74a0,   33239  38.0°C      104.0W    NPS1, SPX, 0        113Mhz  1300Mhz  0%   auto  550.0W  0%     0%    
+2       6     0x74a0,   8391   55.0°C      107.0W    NPS1, SPX, 0        118Mhz  1300Mhz  0%   auto  550.0W  0%     0%    
+3       7     0x74a0,   8630   34.0°C      44.0W     NPS1, SPX, 0        122Mhz  900Mhz   0%   auto  550.0W  0%     0%    
+==========================================================================================================================
+================================================== End of ROCm SMI Log ===================================================
+               total        used        free      shared  buff/cache   available
+Mem:           502Gi        25Gi       456Gi        80Mi        28Gi       477Gi
+Swap:          3.7Gi        42Mi       3.7Gi
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n083
+Job ID: 29462
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.05% of 00:32:32 core-walltime
+Job Wall-clock time: 00:16:16
+Memory Utilized: 5.36 GB
+Memory Efficiency: 66.94% of 8.00 GB (8.00 GB/node)

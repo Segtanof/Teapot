@@ -1,0 +1,19 @@
+PORT: 11883
+               total        used        free      shared  buff/cache   available
+Mem:           502Gi        25Gi       460Gi        80Mi        23Gi       477Gi
+Swap:          3.7Gi        42Mi       3.7Gi
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n083
+Job ID: 29449
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:02
+CPU Efficiency: 0.15% of 00:21:40 core-walltime
+Job Wall-clock time: 00:10:50
+Memory Utilized: 4.49 GB
+Memory Efficiency: 56.16% of 8.00 GB (8.00 GB/node)

@@ -14,7 +14,7 @@ import os
 import argparse
 
 # Setup output folder
-folder_name = f'results/task_match_{datetime.now().strftime("%d%m_%H%M")}/'
+folder_name = f'results/llamatask_match_{datetime.now().strftime("%d%m_%H%M")}/'
 os.makedirs(folder_name, exist_ok=True)
 print("folder created")
 
@@ -35,7 +35,7 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-sampled_occupation = sampled_occupation.iloc[31:60]
+sampled_occupation = sampled_occupation.iloc[:100]
 
 #for trial
 # trial_df = sampled_occupation#.sample(3, random_state= 1)
@@ -78,8 +78,8 @@ parser.add_argument("--port", type=int, default=11434)  # Dynamic port
 args = parser.parse_args()
 
 model_configs = [
-    # {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}"},
-    {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}"},
+    {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}","num_predict": 2048},
+    # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 1024},
     # {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384}
 ]
 prompts = {
@@ -107,7 +107,7 @@ for model_config in model_configs:
 
         for i in range(10):
             start_time = datetime.now()
-            with Pool(processes=4) as pool:
+            with Pool(processes=8) as pool:
                 results = list(tqdm(
                     pool.imap_unordered(process_title, [(row['title'], model_config, row['description'], prompt) for _, row in sampled_occupation[['title', 'description']].iterrows()]),
                     total=len(sampled_occupation), desc=f"{model_name}-{name}-{i}"

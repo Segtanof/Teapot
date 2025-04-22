@@ -1,0 +1,1443 @@
+2025/04/21 12:57:53 routes.go:1186: INFO server config env="map[CUDA_VISIBLE_DEVICES:0 GPU_DEVICE_ORDINAL:0 HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:true OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:12210 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:4h0m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/home/ma/ma_ma/ma_ssiu/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:8 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:0 http_proxy: https_proxy: no_proxy:]"
+time=2025-04-21T12:57:53.858+02:00 level=INFO source=images.go:432 msg="total blobs: 26"
+time=2025-04-21T12:57:53.872+02:00 level=INFO source=images.go:439 msg="total unused blobs removed: 0"
+time=2025-04-21T12:57:53.889+02:00 level=INFO source=routes.go:1237 msg="Listening on 127.0.0.1:12210 (version 0.5.11)"
+time=2025-04-21T12:57:53.889+02:00 level=DEBUG source=sched.go:105 msg="starting llm scheduler"
+time=2025-04-21T12:57:53.889+02:00 level=INFO source=gpu.go:217 msg="looking for compatible GPUs"
+time=2025-04-21T12:57:53.907+02:00 level=DEBUG source=gpu.go:98 msg="searching for GPU discovery libraries for NVIDIA"
+time=2025-04-21T12:57:53.907+02:00 level=DEBUG source=gpu.go:501 msg="Searching for GPU library" name=libcuda.so*
+time=2025-04-21T12:57:53.907+02:00 level=DEBUG source=gpu.go:525 msg="gpu library search" globs="[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /usr/local/cuda*/targets/*/lib/libcuda.so* /usr/lib/*-linux-gnu/nvidia/current/libcuda.so* /usr/lib/*-linux-gnu/libcuda.so* /usr/lib/wsl/lib/libcuda.so* /usr/lib/wsl/drivers/*/libcuda.so* /opt/cuda/lib*/libcuda.so* /usr/local/cuda/lib*/libcuda.so* /usr/lib*/libcuda.so* /usr/local/lib*/libcuda.so*]"
+time=2025-04-21T12:57:53.914+02:00 level=DEBUG source=gpu.go:558 msg="discovered GPU libraries" paths="[/usr/lib/libcuda.so.570.86.15 /usr/lib64/libcuda.so.570.86.15]"
+initializing /usr/lib/libcuda.so.570.86.15
+library /usr/lib/libcuda.so.570.86.15 load err: /usr/lib/libcuda.so.570.86.15: wrong ELF class: ELFCLASS32
+time=2025-04-21T12:57:53.914+02:00 level=DEBUG source=gpu.go:609 msg="skipping 32bit library" library=/usr/lib/libcuda.so.570.86.15
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x14b5bbd0de00
+dlsym: cuDriverGetVersion - 0x14b5bbd0de20
+dlsym: cuDeviceGetCount - 0x14b5bbd0de60
+dlsym: cuDeviceGet - 0x14b5bbd0de40
+dlsym: cuDeviceGetAttribute - 0x14b5bbd0df40
+dlsym: cuDeviceGetUuid - 0x14b5bbd0dea0
+dlsym: cuDeviceGetName - 0x14b5bbd0de80
+dlsym: cuCtxCreate_v3 - 0x14b5bbd0e120
+dlsym: cuMemGetInfo_v2 - 0x14b5bbd0e8a0
+dlsym: cuCtxDestroy - 0x14b5bbd6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-21T12:57:54.447+02:00 level=DEBUG source=gpu.go:125 msg="detected GPUs" count=1 library=/usr/lib64/libcuda.so.570.86.15
+[GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c] CUDA totalMem 81090 mb
+[GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c] CUDA freeMem 80606 mb
+[GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c] Compute Capability 9.0
+time=2025-04-21T12:57:54.652+02:00 level=DEBUG source=amd_linux.go:419 msg="amdgpu driver not detected /sys/module/amdgpu"
+releasing cuda driver library
+time=2025-04-21T12:57:54.652+02:00 level=INFO source=types.go:130 msg="inference compute" id=GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c library=cuda variant=v12 compute=9.0 driver=12.8 name="NVIDIA H100 PCIe" total="79.2 GiB" available="78.7 GiB"
+time=2025-04-21T13:00:06.812+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="503.5 GiB" before.free="486.3 GiB" before.free_swap="14.9 GiB" now.total="503.5 GiB" now.free="484.6 GiB" now.free_swap="14.9 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x14b5bbd0de00
+dlsym: cuDriverGetVersion - 0x14b5bbd0de20
+dlsym: cuDeviceGetCount - 0x14b5bbd0de60
+dlsym: cuDeviceGet - 0x14b5bbd0de40
+dlsym: cuDeviceGetAttribute - 0x14b5bbd0df40
+dlsym: cuDeviceGetUuid - 0x14b5bbd0dea0
+dlsym: cuDeviceGetName - 0x14b5bbd0de80
+dlsym: cuCtxCreate_v3 - 0x14b5bbd0e120
+dlsym: cuMemGetInfo_v2 - 0x14b5bbd0e8a0
+dlsym: cuCtxDestroy - 0x14b5bbd6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-21T13:00:07.015+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c name="NVIDIA H100 PCIe" overhead="0 B" before.total="79.2 GiB" before.free="78.7 GiB" now.total="79.2 GiB" now.free="78.7 GiB" now.used="483.4 MiB"
+releasing cuda driver library
+time=2025-04-21T13:00:07.015+02:00 level=DEBUG source=sched.go:181 msg="updating default concurrency" OLLAMA_MAX_LOADED_MODELS=0x561e15b5bb40 gpu_count=1
+time=2025-04-21T13:00:07.052+02:00 level=DEBUG source=sched.go:224 msg="loading first model" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:00:07.052+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[78.7 GiB]"
+time=2025-04-21T13:00:07.053+02:00 level=INFO source=sched.go:714 msg="new model will fit in available VRAM in single GPU, loading" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d gpu=GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c parallel=8 available=84522303488 required="47.2 GiB"
+time=2025-04-21T13:00:07.053+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="503.5 GiB" before.free="484.6 GiB" before.free_swap="14.9 GiB" now.total="503.5 GiB" now.free="484.6 GiB" now.free_swap="14.9 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x14b5bbd0de00
+dlsym: cuDriverGetVersion - 0x14b5bbd0de20
+dlsym: cuDeviceGetCount - 0x14b5bbd0de60
+dlsym: cuDeviceGet - 0x14b5bbd0de40
+dlsym: cuDeviceGetAttribute - 0x14b5bbd0df40
+dlsym: cuDeviceGetUuid - 0x14b5bbd0dea0
+dlsym: cuDeviceGetName - 0x14b5bbd0de80
+dlsym: cuCtxCreate_v3 - 0x14b5bbd0e120
+dlsym: cuMemGetInfo_v2 - 0x14b5bbd0e8a0
+dlsym: cuCtxDestroy - 0x14b5bbd6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-21T13:00:07.245+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c name="NVIDIA H100 PCIe" overhead="0 B" before.total="79.2 GiB" before.free="78.7 GiB" now.total="79.2 GiB" now.free="78.7 GiB" now.used="483.4 MiB"
+releasing cuda driver library
+time=2025-04-21T13:00:07.246+02:00 level=INFO source=server.go:100 msg="system memory" total="503.5 GiB" free="484.6 GiB" free_swap="14.9 GiB"
+time=2025-04-21T13:00:07.246+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[78.7 GiB]"
+time=2025-04-21T13:00:07.248+02:00 level=INFO source=memory.go:356 msg="offload to cuda" layers.requested=-1 layers.model=81 layers.offload=81 layers.split="" memory.available="[78.7 GiB]" memory.gpu_overhead="0 B" memory.required.full="47.2 GiB" memory.required.partial="47.2 GiB" memory.required.kv="5.0 GiB" memory.required.allocations="[47.2 GiB]" memory.weights.total="43.2 GiB" memory.weights.repeating="42.4 GiB" memory.weights.nonrepeating="822.0 MiB" memory.graph.full="2.1 GiB" memory.graph.partial="2.2 GiB"
+time=2025-04-21T13:00:07.249+02:00 level=DEBUG source=server.go:262 msg="compatible gpu libraries" compatible="[cuda_v12 cuda_v11]"
+time=2025-04-21T13:00:07.250+02:00 level=DEBUG source=server.go:302 msg="adding gpu library" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-21T13:00:07.250+02:00 level=DEBUG source=server.go:310 msg="adding gpu dependency paths" paths=[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12]
+time=2025-04-21T13:00:07.250+02:00 level=INFO source=server.go:380 msg="starting llama server" cmd="/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/bin/ollama runner --model /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d --ctx-size 16384 --batch-size 512 --n-gpu-layers 81 --verbose --threads 64 --parallel 8 --port 42899"
+time=2025-04-21T13:00:07.250+02:00 level=DEBUG source=server.go:398 msg=subprocess environment="[ROCR_VISIBLE_DEVICES=0 CUDA_VISIBLE_DEVICES=GPU-699c47d8-3091-4fde-3356-ebb5fc95b09c GPU_DEVICE_ORDINAL=0 LD_LIBRARY_PATH=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama PATH=/pfs/work9/workspace/scratch/ma_ssiu-thesis/.conda/envs/mythesis/bin:/opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/condabin:/opt/bwhpc/common/cs/ollama/0.5.11/bin:/software/all/bin:/pfs/data6/home/ma/ma_ma/ma_ssiu/.vscode-server/cli/servers/Stable-17baf841131aa23349f217ca7c570c76ee87b957/server/bin/remote-cli:/home/ma/ma_ma/ma_ssiu/.local/bin:/home/ma/ma_ma/ma_ssiu/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ma/ma_ma/ma_ssiu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand]"
+time=2025-04-21T13:00:07.251+02:00 level=INFO source=sched.go:449 msg="loaded runners" count=1
+time=2025-04-21T13:00:07.251+02:00 level=INFO source=server.go:557 msg="waiting for llama runner to start responding"
+time=2025-04-21T13:00:07.251+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server error"
+time=2025-04-21T13:00:07.285+02:00 level=INFO source=runner.go:936 msg="starting go runner"
+time=2025-04-21T13:00:07.285+02:00 level=INFO source=runner.go:937 msg=system info="CPU : LLAMAFILE = 1 | CPU : LLAMAFILE = 1 | cgo(gcc)" threads=64
+time=2025-04-21T13:00:07.285+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-21T13:00:07.285+02:00 level=INFO source=runner.go:995 msg="Server listening on 127.0.0.1:42899"
+time=2025-04-21T13:00:07.702+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server not responding"
+time=2025-04-21T13:00:09.757+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server loading model"
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA H100 PCIe, compute capability 9.0, VMM: yes
+load_backend: loaded CUDA backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12/libggml-cuda.so
+time=2025-04-21T13:00:12.953+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+time=2025-04-21T13:00:13.112+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+llama_load_model_from_file: using device CUDA0 (NVIDIA H100 PCIe) - 80606 MiB free
+llama_model_loader: loaded meta data with 36 key-value pairs and 724 tensors from /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Llama 3.1 70B Instruct 2024 12
+llama_model_loader: - kv   3:                            general.version str              = 2024-12
+llama_model_loader: - kv   4:                           general.finetune str              = Instruct
+llama_model_loader: - kv   5:                           general.basename str              = Llama-3.1
+llama_model_loader: - kv   6:                         general.size_label str              = 70B
+llama_model_loader: - kv   7:                            general.license str              = llama3.1
+llama_model_loader: - kv   8:                   general.base_model.count u32              = 1
+llama_model_loader: - kv   9:                  general.base_model.0.name str              = Llama 3.1 70B
+llama_model_loader: - kv  10:          general.base_model.0.organization str              = Meta Llama
+llama_model_loader: - kv  11:              general.base_model.0.repo_url str              = https://huggingface.co/meta-llama/Lla...
+llama_model_loader: - kv  12:                               general.tags arr[str,5]       = ["facebook", "meta", "pytorch", "llam...
+llama_model_loader: - kv  13:                          general.languages arr[str,7]       = ["fr", "it", "pt", "hi", "es", "th", ...
+llama_model_loader: - kv  14:                          llama.block_count u32              = 80
+llama_model_loader: - kv  15:                       llama.context_length u32              = 131072
+llama_model_loader: - kv  16:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv  17:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv  18:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv  19:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  20:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv  21:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  22:                 llama.attention.key_length u32              = 128
+llama_model_loader: - kv  23:               llama.attention.value_length u32              = 128
+llama_model_loader: - kv  24:                          general.file_type u32              = 15
+llama_model_loader: - kv  25:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  26:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  27:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  28:                         tokenizer.ggml.pre str              = llama-bpe
+llama_model_loader: - kv  29:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  30:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  31:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  32:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  33:                tokenizer.ggml.eos_token_id u32              = 128009
+llama_model_loader: - kv  34:                    tokenizer.chat_template str              = {{- bos_token }}\n{%- if custom_tools ...
+llama_model_loader: - kv  35:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  162 tensors
+llama_model_loader: - type q4_K:  441 tensors
+llama_model_loader: - type q5_K:   40 tensors
+llama_model_loader: - type q6_K:   81 tensors
+llm_load_vocab: control token: 128254 '<|reserved_special_token_246|>' is not marked as EOG
+llm_load_vocab: control token: 128249 '<|reserved_special_token_241|>' is not marked as EOG
+llm_load_vocab: control token: 128246 '<|reserved_special_token_238|>' is not marked as EOG
+llm_load_vocab: control token: 128243 '<|reserved_special_token_235|>' is not marked as EOG
+llm_load_vocab: control token: 128242 '<|reserved_special_token_234|>' is not marked as EOG
+llm_load_vocab: control token: 128241 '<|reserved_special_token_233|>' is not marked as EOG
+llm_load_vocab: control token: 128240 '<|reserved_special_token_232|>' is not marked as EOG
+llm_load_vocab: control token: 128235 '<|reserved_special_token_227|>' is not marked as EOG
+llm_load_vocab: control token: 128231 '<|reserved_special_token_223|>' is not marked as EOG
+llm_load_vocab: control token: 128230 '<|reserved_special_token_222|>' is not marked as EOG
+llm_load_vocab: control token: 128228 '<|reserved_special_token_220|>' is not marked as EOG
+llm_load_vocab: control token: 128225 '<|reserved_special_token_217|>' is not marked as EOG
+llm_load_vocab: control token: 128218 '<|reserved_special_token_210|>' is not marked as EOG
+llm_load_vocab: control token: 128214 '<|reserved_special_token_206|>' is not marked as EOG
+llm_load_vocab: control token: 128213 '<|reserved_special_token_205|>' is not marked as EOG
+llm_load_vocab: control token: 128207 '<|reserved_special_token_199|>' is not marked as EOG
+llm_load_vocab: control token: 128206 '<|reserved_special_token_198|>' is not marked as EOG
+llm_load_vocab: control token: 128204 '<|reserved_special_token_196|>' is not marked as EOG
+llm_load_vocab: control token: 128200 '<|reserved_special_token_192|>' is not marked as EOG
+llm_load_vocab: control token: 128199 '<|reserved_special_token_191|>' is not marked as EOG
+llm_load_vocab: control token: 128198 '<|reserved_special_token_190|>' is not marked as EOG
+llm_load_vocab: control token: 128196 '<|reserved_special_token_188|>' is not marked as EOG
+llm_load_vocab: control token: 128194 '<|reserved_special_token_186|>' is not marked as EOG
+llm_load_vocab: control token: 128193 '<|reserved_special_token_185|>' is not marked as EOG
+llm_load_vocab: control token: 128188 '<|reserved_special_token_180|>' is not marked as EOG
+llm_load_vocab: control token: 128187 '<|reserved_special_token_179|>' is not marked as EOG
+llm_load_vocab: control token: 128185 '<|reserved_special_token_177|>' is not marked as EOG
+llm_load_vocab: control token: 128184 '<|reserved_special_token_176|>' is not marked as EOG
+llm_load_vocab: control token: 128180 '<|reserved_special_token_172|>' is not marked as EOG
+llm_load_vocab: control token: 128179 '<|reserved_special_token_171|>' is not marked as EOG
+llm_load_vocab: control token: 128178 '<|reserved_special_token_170|>' is not marked as EOG
+llm_load_vocab: control token: 128177 '<|reserved_special_token_169|>' is not marked as EOG
+llm_load_vocab: control token: 128176 '<|reserved_special_token_168|>' is not marked as EOG
+llm_load_vocab: control token: 128175 '<|reserved_special_token_167|>' is not marked as EOG
+llm_load_vocab: control token: 128171 '<|reserved_special_token_163|>' is not marked as EOG
+llm_load_vocab: control token: 128170 '<|reserved_special_token_162|>' is not marked as EOG
+llm_load_vocab: control token: 128169 '<|reserved_special_token_161|>' is not marked as EOG
+llm_load_vocab: control token: 128168 '<|reserved_special_token_160|>' is not marked as EOG
+llm_load_vocab: control token: 128165 '<|reserved_special_token_157|>' is not marked as EOG
+llm_load_vocab: control token: 128162 '<|reserved_special_token_154|>' is not marked as EOG
+llm_load_vocab: control token: 128158 '<|reserved_special_token_150|>' is not marked as EOG
+llm_load_vocab: control token: 128156 '<|reserved_special_token_148|>' is not marked as EOG
+llm_load_vocab: control token: 128155 '<|reserved_special_token_147|>' is not marked as EOG
+llm_load_vocab: control token: 128154 '<|reserved_special_token_146|>' is not marked as EOG
+llm_load_vocab: control token: 128151 '<|reserved_special_token_143|>' is not marked as EOG
+llm_load_vocab: control token: 128149 '<|reserved_special_token_141|>' is not marked as EOG
+llm_load_vocab: control token: 128147 '<|reserved_special_token_139|>' is not marked as EOG
+llm_load_vocab: control token: 128146 '<|reserved_special_token_138|>' is not marked as EOG
+llm_load_vocab: control token: 128144 '<|reserved_special_token_136|>' is not marked as EOG
+llm_load_vocab: control token: 128142 '<|reserved_special_token_134|>' is not marked as EOG
+llm_load_vocab: control token: 128141 '<|reserved_special_token_133|>' is not marked as EOG
+llm_load_vocab: control token: 128138 '<|reserved_special_token_130|>' is not marked as EOG
+llm_load_vocab: control token: 128136 '<|reserved_special_token_128|>' is not marked as EOG
+llm_load_vocab: control token: 128135 '<|reserved_special_token_127|>' is not marked as EOG
+llm_load_vocab: control token: 128134 '<|reserved_special_token_126|>' is not marked as EOG
+llm_load_vocab: control token: 128133 '<|reserved_special_token_125|>' is not marked as EOG
+llm_load_vocab: control token: 128131 '<|reserved_special_token_123|>' is not marked as EOG
+llm_load_vocab: control token: 128128 '<|reserved_special_token_120|>' is not marked as EOG
+llm_load_vocab: control token: 128124 '<|reserved_special_token_116|>' is not marked as EOG
+llm_load_vocab: control token: 128123 '<|reserved_special_token_115|>' is not marked as EOG
+llm_load_vocab: control token: 128122 '<|reserved_special_token_114|>' is not marked as EOG
+llm_load_vocab: control token: 128119 '<|reserved_special_token_111|>' is not marked as EOG
+llm_load_vocab: control token: 128115 '<|reserved_special_token_107|>' is not marked as EOG
+llm_load_vocab: control token: 128112 '<|reserved_special_token_104|>' is not marked as EOG
+llm_load_vocab: control token: 128110 '<|reserved_special_token_102|>' is not marked as EOG
+llm_load_vocab: control token: 128109 '<|reserved_special_token_101|>' is not marked as EOG
+llm_load_vocab: control token: 128108 '<|reserved_special_token_100|>' is not marked as EOG
+llm_load_vocab: control token: 128106 '<|reserved_special_token_98|>' is not marked as EOG
+llm_load_vocab: control token: 128103 '<|reserved_special_token_95|>' is not marked as EOG
+llm_load_vocab: control token: 128102 '<|reserved_special_token_94|>' is not marked as EOG
+llm_load_vocab: control token: 128101 '<|reserved_special_token_93|>' is not marked as EOG
+llm_load_vocab: control token: 128097 '<|reserved_special_token_89|>' is not marked as EOG
+llm_load_vocab: control token: 128091 '<|reserved_special_token_83|>' is not marked as EOG
+llm_load_vocab: control token: 128090 '<|reserved_special_token_82|>' is not marked as EOG
+llm_load_vocab: control token: 128089 '<|reserved_special_token_81|>' is not marked as EOG
+llm_load_vocab: control token: 128087 '<|reserved_special_token_79|>' is not marked as EOG
+llm_load_vocab: control token: 128085 '<|reserved_special_token_77|>' is not marked as EOG
+llm_load_vocab: control token: 128081 '<|reserved_special_token_73|>' is not marked as EOG
+llm_load_vocab: control token: 128078 '<|reserved_special_token_70|>' is not marked as EOG
+llm_load_vocab: control token: 128076 '<|reserved_special_token_68|>' is not marked as EOG
+llm_load_vocab: control token: 128075 '<|reserved_special_token_67|>' is not marked as EOG
+llm_load_vocab: control token: 128073 '<|reserved_special_token_65|>' is not marked as EOG
+llm_load_vocab: control token: 128068 '<|reserved_special_token_60|>' is not marked as EOG
+llm_load_vocab: control token: 128067 '<|reserved_special_token_59|>' is not marked as EOG
+llm_load_vocab: control token: 128065 '<|reserved_special_token_57|>' is not marked as EOG
+llm_load_vocab: control token: 128063 '<|reserved_special_token_55|>' is not marked as EOG
+llm_load_vocab: control token: 128062 '<|reserved_special_token_54|>' is not marked as EOG
+llm_load_vocab: control token: 128060 '<|reserved_special_token_52|>' is not marked as EOG
+llm_load_vocab: control token: 128059 '<|reserved_special_token_51|>' is not marked as EOG
+llm_load_vocab: control token: 128057 '<|reserved_special_token_49|>' is not marked as EOG
+llm_load_vocab: control token: 128054 '<|reserved_special_token_46|>' is not marked as EOG
+llm_load_vocab: control token: 128046 '<|reserved_special_token_38|>' is not marked as EOG
+llm_load_vocab: control token: 128045 '<|reserved_special_token_37|>' is not marked as EOG
+llm_load_vocab: control token: 128044 '<|reserved_special_token_36|>' is not marked as EOG
+llm_load_vocab: control token: 128043 '<|reserved_special_token_35|>' is not marked as EOG
+llm_load_vocab: control token: 128038 '<|reserved_special_token_30|>' is not marked as EOG
+llm_load_vocab: control token: 128036 '<|reserved_special_token_28|>' is not marked as EOG
+llm_load_vocab: control token: 128035 '<|reserved_special_token_27|>' is not marked as EOG
+llm_load_vocab: control token: 128032 '<|reserved_special_token_24|>' is not marked as EOG
+llm_load_vocab: control token: 128028 '<|reserved_special_token_20|>' is not marked as EOG
+llm_load_vocab: control token: 128027 '<|reserved_special_token_19|>' is not marked as EOG
+llm_load_vocab: control token: 128024 '<|reserved_special_token_16|>' is not marked as EOG
+llm_load_vocab: control token: 128023 '<|reserved_special_token_15|>' is not marked as EOG
+llm_load_vocab: control token: 128022 '<|reserved_special_token_14|>' is not marked as EOG
+llm_load_vocab: control token: 128021 '<|reserved_special_token_13|>' is not marked as EOG
+llm_load_vocab: control token: 128018 '<|reserved_special_token_10|>' is not marked as EOG
+llm_load_vocab: control token: 128016 '<|reserved_special_token_8|>' is not marked as EOG
+llm_load_vocab: control token: 128015 '<|reserved_special_token_7|>' is not marked as EOG
+llm_load_vocab: control token: 128013 '<|reserved_special_token_5|>' is not marked as EOG
+llm_load_vocab: control token: 128011 '<|reserved_special_token_3|>' is not marked as EOG
+llm_load_vocab: control token: 128005 '<|reserved_special_token_2|>' is not marked as EOG
+llm_load_vocab: control token: 128004 '<|finetune_right_pad_id|>' is not marked as EOG
+llm_load_vocab: control token: 128002 '<|reserved_special_token_0|>' is not marked as EOG
+llm_load_vocab: control token: 128252 '<|reserved_special_token_244|>' is not marked as EOG
+llm_load_vocab: control token: 128190 '<|reserved_special_token_182|>' is not marked as EOG
+llm_load_vocab: control token: 128183 '<|reserved_special_token_175|>' is not marked as EOG
+llm_load_vocab: control token: 128137 '<|reserved_special_token_129|>' is not marked as EOG
+llm_load_vocab: control token: 128182 '<|reserved_special_token_174|>' is not marked as EOG
+llm_load_vocab: control token: 128040 '<|reserved_special_token_32|>' is not marked as EOG
+llm_load_vocab: control token: 128048 '<|reserved_special_token_40|>' is not marked as EOG
+llm_load_vocab: control token: 128092 '<|reserved_special_token_84|>' is not marked as EOG
+llm_load_vocab: control token: 128215 '<|reserved_special_token_207|>' is not marked as EOG
+llm_load_vocab: control token: 128107 '<|reserved_special_token_99|>' is not marked as EOG
+llm_load_vocab: control token: 128208 '<|reserved_special_token_200|>' is not marked as EOG
+llm_load_vocab: control token: 128145 '<|reserved_special_token_137|>' is not marked as EOG
+llm_load_vocab: control token: 128031 '<|reserved_special_token_23|>' is not marked as EOG
+llm_load_vocab: control token: 128129 '<|reserved_special_token_121|>' is not marked as EOG
+llm_load_vocab: control token: 128201 '<|reserved_special_token_193|>' is not marked as EOG
+llm_load_vocab: control token: 128074 '<|reserved_special_token_66|>' is not marked as EOG
+llm_load_vocab: control token: 128095 '<|reserved_special_token_87|>' is not marked as EOG
+llm_load_vocab: control token: 128186 '<|reserved_special_token_178|>' is not marked as EOG
+llm_load_vocab: control token: 128143 '<|reserved_special_token_135|>' is not marked as EOG
+llm_load_vocab: control token: 128229 '<|reserved_special_token_221|>' is not marked as EOG
+llm_load_vocab: control token: 128007 '<|end_header_id|>' is not marked as EOG
+llm_load_vocab: control token: 128055 '<|reserved_special_token_47|>' is not marked as EOG
+llm_load_vocab: control token: 128056 '<|reserved_special_token_48|>' is not marked as EOG
+llm_load_vocab: control token: 128061 '<|reserved_special_token_53|>' is not marked as EOG
+llm_load_vocab: control token: 128153 '<|reserved_special_token_145|>' is not marked as EOG
+llm_load_vocab: control token: 128152 '<|reserved_special_token_144|>' is not marked as EOG
+llm_load_vocab: control token: 128212 '<|reserved_special_token_204|>' is not marked as EOG
+llm_load_vocab: control token: 128172 '<|reserved_special_token_164|>' is not marked as EOG
+llm_load_vocab: control token: 128160 '<|reserved_special_token_152|>' is not marked as EOG
+llm_load_vocab: control token: 128041 '<|reserved_special_token_33|>' is not marked as EOG
+llm_load_vocab: control token: 128181 '<|reserved_special_token_173|>' is not marked as EOG
+llm_load_vocab: control token: 128094 '<|reserved_special_token_86|>' is not marked as EOG
+llm_load_vocab: control token: 128118 '<|reserved_special_token_110|>' is not marked as EOG
+llm_load_vocab: control token: 128236 '<|reserved_special_token_228|>' is not marked as EOG
+llm_load_vocab: control token: 128148 '<|reserved_special_token_140|>' is not marked as EOG
+llm_load_vocab: control token: 128042 '<|reserved_special_token_34|>' is not marked as EOG
+llm_load_vocab: control token: 128139 '<|reserved_special_token_131|>' is not marked as EOG
+llm_load_vocab: control token: 128173 '<|reserved_special_token_165|>' is not marked as EOG
+llm_load_vocab: control token: 128239 '<|reserved_special_token_231|>' is not marked as EOG
+llm_load_vocab: control token: 128157 '<|reserved_special_token_149|>' is not marked as EOG
+llm_load_vocab: control token: 128052 '<|reserved_special_token_44|>' is not marked as EOG
+llm_load_vocab: control token: 128026 '<|reserved_special_token_18|>' is not marked as EOG
+llm_load_vocab: control token: 128003 '<|reserved_special_token_1|>' is not marked as EOG
+llm_load_vocab: control token: 128019 '<|reserved_special_token_11|>' is not marked as EOG
+llm_load_vocab: control token: 128116 '<|reserved_special_token_108|>' is not marked as EOG
+llm_load_vocab: control token: 128161 '<|reserved_special_token_153|>' is not marked as EOG
+llm_load_vocab: control token: 128226 '<|reserved_special_token_218|>' is not marked as EOG
+llm_load_vocab: control token: 128159 '<|reserved_special_token_151|>' is not marked as EOG
+llm_load_vocab: control token: 128012 '<|reserved_special_token_4|>' is not marked as EOG
+llm_load_vocab: control token: 128088 '<|reserved_special_token_80|>' is not marked as EOG
+llm_load_vocab: control token: 128163 '<|reserved_special_token_155|>' is not marked as EOG
+llm_load_vocab: control token: 128001 '<|end_of_text|>' is not marked as EOG
+llm_load_vocab: control token: 128113 '<|reserved_special_token_105|>' is not marked as EOG
+llm_load_vocab: control token: 128250 '<|reserved_special_token_242|>' is not marked as EOG
+llm_load_vocab: control token: 128125 '<|reserved_special_token_117|>' is not marked as EOG
+llm_load_vocab: control token: 128053 '<|reserved_special_token_45|>' is not marked as EOG
+llm_load_vocab: control token: 128224 '<|reserved_special_token_216|>' is not marked as EOG
+llm_load_vocab: control token: 128247 '<|reserved_special_token_239|>' is not marked as EOG
+llm_load_vocab: control token: 128251 '<|reserved_special_token_243|>' is not marked as EOG
+llm_load_vocab: control token: 128216 '<|reserved_special_token_208|>' is not marked as EOG
+llm_load_vocab: control token: 128006 '<|start_header_id|>' is not marked as EOG
+llm_load_vocab: control token: 128211 '<|reserved_special_token_203|>' is not marked as EOG
+llm_load_vocab: control token: 128077 '<|reserved_special_token_69|>' is not marked as EOG
+llm_load_vocab: control token: 128237 '<|reserved_special_token_229|>' is not marked as EOG
+llm_load_vocab: control token: 128086 '<|reserved_special_token_78|>' is not marked as EOG
+llm_load_vocab: control token: 128227 '<|reserved_special_token_219|>' is not marked as EOG
+llm_load_vocab: control token: 128058 '<|reserved_special_token_50|>' is not marked as EOG
+llm_load_vocab: control token: 128100 '<|reserved_special_token_92|>' is not marked as EOG
+llm_load_vocab: control token: 128209 '<|reserved_special_token_201|>' is not marked as EOG
+llm_load_vocab: control token: 128084 '<|reserved_special_token_76|>' is not marked as EOG
+llm_load_vocab: control token: 128071 '<|reserved_special_token_63|>' is not marked as EOG
+llm_load_vocab: control token: 128070 '<|reserved_special_token_62|>' is not marked as EOG
+llm_load_vocab: control token: 128049 '<|reserved_special_token_41|>' is not marked as EOG
+llm_load_vocab: control token: 128197 '<|reserved_special_token_189|>' is not marked as EOG
+llm_load_vocab: control token: 128072 '<|reserved_special_token_64|>' is not marked as EOG
+llm_load_vocab: control token: 128000 '<|begin_of_text|>' is not marked as EOG
+llm_load_vocab: control token: 128223 '<|reserved_special_token_215|>' is not marked as EOG
+llm_load_vocab: control token: 128217 '<|reserved_special_token_209|>' is not marked as EOG
+llm_load_vocab: control token: 128111 '<|reserved_special_token_103|>' is not marked as EOG
+llm_load_vocab: control token: 128203 '<|reserved_special_token_195|>' is not marked as EOG
+llm_load_vocab: control token: 128051 '<|reserved_special_token_43|>' is not marked as EOG
+llm_load_vocab: control token: 128030 '<|reserved_special_token_22|>' is not marked as EOG
+llm_load_vocab: control token: 128117 '<|reserved_special_token_109|>' is not marked as EOG
+llm_load_vocab: control token: 128010 '<|python_tag|>' is not marked as EOG
+llm_load_vocab: control token: 128238 '<|reserved_special_token_230|>' is not marked as EOG
+llm_load_vocab: control token: 128255 '<|reserved_special_token_247|>' is not marked as EOG
+llm_load_vocab: control token: 128202 '<|reserved_special_token_194|>' is not marked as EOG
+llm_load_vocab: control token: 128132 '<|reserved_special_token_124|>' is not marked as EOG
+llm_load_vocab: control token: 128248 '<|reserved_special_token_240|>' is not marked as EOG
+llm_load_vocab: control token: 128167 '<|reserved_special_token_159|>' is not marked as EOG
+llm_load_vocab: control token: 128127 '<|reserved_special_token_119|>' is not marked as EOG
+llm_load_vocab: control token: 128105 '<|reserved_special_token_97|>' is not marked as EOG
+llm_load_vocab: control token: 128039 '<|reserved_special_token_31|>' is not marked as EOG
+llm_load_vocab: control token: 128232 '<|reserved_special_token_224|>' is not marked as EOG
+llm_load_vocab: control token: 128166 '<|reserved_special_token_158|>' is not marked as EOG
+llm_load_vocab: control token: 128130 '<|reserved_special_token_122|>' is not marked as EOG
+llm_load_vocab: control token: 128114 '<|reserved_special_token_106|>' is not marked as EOG
+llm_load_vocab: control token: 128234 '<|reserved_special_token_226|>' is not marked as EOG
+llm_load_vocab: control token: 128191 '<|reserved_special_token_183|>' is not marked as EOG
+llm_load_vocab: control token: 128064 '<|reserved_special_token_56|>' is not marked as EOG
+llm_load_vocab: control token: 128140 '<|reserved_special_token_132|>' is not marked as EOG
+llm_load_vocab: control token: 128096 '<|reserved_special_token_88|>' is not marked as EOG
+llm_load_vocab: control token: 128098 '<|reserved_special_token_90|>' is not marked as EOG
+llm_load_vocab: control token: 128192 '<|reserved_special_token_184|>' is not marked as EOG
+llm_load_vocab: control token: 128093 '<|reserved_special_token_85|>' is not marked as EOG
+llm_load_vocab: control token: 128150 '<|reserved_special_token_142|>' is not marked as EOG
+llm_load_vocab: control token: 128222 '<|reserved_special_token_214|>' is not marked as EOG
+llm_load_vocab: control token: 128233 '<|reserved_special_token_225|>' is not marked as EOG
+llm_load_vocab: control token: 128220 '<|reserved_special_token_212|>' is not marked as EOG
+llm_load_vocab: control token: 128034 '<|reserved_special_token_26|>' is not marked as EOG
+llm_load_vocab: control token: 128033 '<|reserved_special_token_25|>' is not marked as EOG
+llm_load_vocab: control token: 128253 '<|reserved_special_token_245|>' is not marked as EOG
+llm_load_vocab: control token: 128195 '<|reserved_special_token_187|>' is not marked as EOG
+llm_load_vocab: control token: 128099 '<|reserved_special_token_91|>' is not marked as EOG
+llm_load_vocab: control token: 128189 '<|reserved_special_token_181|>' is not marked as EOG
+llm_load_vocab: control token: 128210 '<|reserved_special_token_202|>' is not marked as EOG
+llm_load_vocab: control token: 128174 '<|reserved_special_token_166|>' is not marked as EOG
+llm_load_vocab: control token: 128083 '<|reserved_special_token_75|>' is not marked as EOG
+llm_load_vocab: control token: 128080 '<|reserved_special_token_72|>' is not marked as EOG
+llm_load_vocab: control token: 128104 '<|reserved_special_token_96|>' is not marked as EOG
+llm_load_vocab: control token: 128082 '<|reserved_special_token_74|>' is not marked as EOG
+llm_load_vocab: control token: 128219 '<|reserved_special_token_211|>' is not marked as EOG
+llm_load_vocab: control token: 128017 '<|reserved_special_token_9|>' is not marked as EOG
+llm_load_vocab: control token: 128050 '<|reserved_special_token_42|>' is not marked as EOG
+llm_load_vocab: control token: 128205 '<|reserved_special_token_197|>' is not marked as EOG
+llm_load_vocab: control token: 128047 '<|reserved_special_token_39|>' is not marked as EOG
+llm_load_vocab: control token: 128164 '<|reserved_special_token_156|>' is not marked as EOG
+llm_load_vocab: control token: 128020 '<|reserved_special_token_12|>' is not marked as EOG
+llm_load_vocab: control token: 128069 '<|reserved_special_token_61|>' is not marked as EOG
+llm_load_vocab: control token: 128245 '<|reserved_special_token_237|>' is not marked as EOG
+llm_load_vocab: control token: 128121 '<|reserved_special_token_113|>' is not marked as EOG
+llm_load_vocab: control token: 128079 '<|reserved_special_token_71|>' is not marked as EOG
+llm_load_vocab: control token: 128037 '<|reserved_special_token_29|>' is not marked as EOG
+llm_load_vocab: control token: 128244 '<|reserved_special_token_236|>' is not marked as EOG
+llm_load_vocab: control token: 128029 '<|reserved_special_token_21|>' is not marked as EOG
+llm_load_vocab: control token: 128221 '<|reserved_special_token_213|>' is not marked as EOG
+llm_load_vocab: control token: 128066 '<|reserved_special_token_58|>' is not marked as EOG
+llm_load_vocab: control token: 128120 '<|reserved_special_token_112|>' is not marked as EOG
+llm_load_vocab: control token: 128014 '<|reserved_special_token_6|>' is not marked as EOG
+llm_load_vocab: control token: 128025 '<|reserved_special_token_17|>' is not marked as EOG
+llm_load_vocab: control token: 128126 '<|reserved_special_token_118|>' is not marked as EOG
+llm_load_vocab: special tokens cache size = 256
+llm_load_vocab: token to piece cache size = 0.7999 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: vocab_only       = 0
+llm_load_print_meta: n_ctx_train      = 131072
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_swa            = 0
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_ctx_orig_yarn  = 131072
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: ssm_dt_b_c_rms   = 0
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_K - Medium
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 39.59 GiB (4.82 BPW) 
+llm_load_print_meta: general.name     = Llama 3.1 70B Instruct 2024 12
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOM token        = 128008 '<|eom_id|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOG token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128009 '<|eot_id|>'
+llm_load_print_meta: max token length = 256
+llm_load_tensors: tensor 'token_embd.weight' (q4_K) (and 0 others) cannot be used with preferred buffer type CUDA_Host, using CPU instead
+time=2025-04-21T13:03:42.947+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server not responding"
+time=2025-04-21T13:03:44.509+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server loading model"
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading output layer to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CUDA0 model buffer size = 39979.48 MiB
+llm_load_tensors:   CPU_Mapped model buffer size =   563.62 MiB
+time=2025-04-21T13:04:39.107+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.02"
+time=2025-04-21T13:04:39.399+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.02"
+time=2025-04-21T13:04:40.405+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.03"
+time=2025-04-21T13:04:40.906+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.03"
+time=2025-04-21T13:04:41.663+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.03"
+time=2025-04-21T13:04:41.913+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.03"
+time=2025-04-21T13:04:42.164+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.04"
+time=2025-04-21T13:04:42.919+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.04"
+time=2025-04-21T13:04:43.671+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.04"
+time=2025-04-21T13:04:44.173+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.05"
+time=2025-04-21T13:04:44.424+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.05"
+time=2025-04-21T13:04:44.675+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.05"
+time=2025-04-21T13:04:45.680+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.05"
+time=2025-04-21T13:04:46.934+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.06"
+time=2025-04-21T13:04:47.686+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.06"
+time=2025-04-21T13:04:47.937+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.06"
+time=2025-04-21T13:04:48.187+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.06"
+time=2025-04-21T13:04:48.438+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.06"
+time=2025-04-21T13:04:49.193+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.06"
+time=2025-04-21T13:04:50.448+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.07"
+time=2025-04-21T13:04:51.453+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.07"
+time=2025-04-21T13:04:51.705+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.07"
+time=2025-04-21T13:04:52.206+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.07"
+time=2025-04-21T13:04:52.959+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.08"
+time=2025-04-21T13:04:54.214+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.08"
+time=2025-04-21T13:04:55.217+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.08"
+time=2025-04-21T13:04:55.469+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.09"
+time=2025-04-21T13:04:55.720+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.09"
+time=2025-04-21T13:04:55.970+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.09"
+time=2025-04-21T13:04:56.974+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.09"
+time=2025-04-21T13:04:58.228+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.09"
+time=2025-04-21T13:04:59.243+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.10"
+time=2025-04-21T13:04:59.494+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.10"
+time=2025-04-21T13:04:59.744+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.10"
+time=2025-04-21T13:05:01.001+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.10"
+time=2025-04-21T13:05:02.509+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.11"
+time=2025-04-21T13:05:03.419+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.11"
+time=2025-04-21T13:05:03.673+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.11"
+time=2025-04-21T13:05:03.923+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.11"
+time=2025-04-21T13:05:05.178+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.12"
+time=2025-04-21T13:05:06.434+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.12"
+time=2025-04-21T13:05:07.437+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.12"
+time=2025-04-21T13:05:07.689+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.12"
+time=2025-04-21T13:05:07.940+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.12"
+time=2025-04-21T13:05:08.191+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.12"
+time=2025-04-21T13:05:09.196+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.13"
+time=2025-04-21T13:05:10.452+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.13"
+time=2025-04-21T13:05:11.471+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.14"
+time=2025-04-21T13:05:11.722+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.14"
+time=2025-04-21T13:05:11.972+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.14"
+time=2025-04-21T13:05:12.223+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.14"
+time=2025-04-21T13:05:13.227+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.14"
+time=2025-04-21T13:05:14.481+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.15"
+time=2025-04-21T13:05:15.485+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.15"
+time=2025-04-21T13:05:15.736+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.15"
+time=2025-04-21T13:05:16.237+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.15"
+time=2025-04-21T13:05:17.241+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.15"
+time=2025-04-21T13:05:17.995+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.16"
+time=2025-04-21T13:05:18.999+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.16"
+time=2025-04-21T13:05:19.250+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.16"
+time=2025-04-21T13:05:19.501+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.16"
+time=2025-04-21T13:05:19.751+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.16"
+time=2025-04-21T13:05:20.755+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.16"
+time=2025-04-21T13:05:21.759+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.17"
+time=2025-04-21T13:05:22.763+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.17"
+time=2025-04-21T13:05:23.014+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.17"
+time=2025-04-21T13:05:23.265+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.17"
+time=2025-04-21T13:05:23.515+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.17"
+time=2025-04-21T13:05:24.518+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.18"
+time=2025-04-21T13:05:25.774+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.18"
+time=2025-04-21T13:05:26.778+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.18"
+time=2025-04-21T13:05:27.029+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.18"
+time=2025-04-21T13:05:27.280+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.19"
+time=2025-04-21T13:05:28.284+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.19"
+time=2025-04-21T13:05:29.288+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.19"
+time=2025-04-21T13:05:30.295+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.20"
+time=2025-04-21T13:05:30.546+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.20"
+time=2025-04-21T13:05:30.798+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.20"
+time=2025-04-21T13:05:31.049+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.20"
+time=2025-04-21T13:05:32.303+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.20"
+time=2025-04-21T13:05:33.308+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.20"
+time=2025-04-21T13:05:34.333+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.21"
+time=2025-04-21T13:05:34.587+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.21"
+time=2025-04-21T13:05:34.838+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.21"
+time=2025-04-21T13:05:35.090+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.21"
+time=2025-04-21T13:05:36.094+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.21"
+time=2025-04-21T13:05:37.353+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.22"
+time=2025-04-21T13:05:38.356+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.22"
+time=2025-04-21T13:05:38.607+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.22"
+time=2025-04-21T13:05:38.857+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.22"
+time=2025-04-21T13:05:40.113+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.22"
+time=2025-04-21T13:05:40.869+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.23"
+time=2025-04-21T13:05:41.875+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.23"
+time=2025-04-21T13:05:42.128+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.23"
+time=2025-04-21T13:05:42.379+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.23"
+time=2025-04-21T13:05:42.632+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.23"
+time=2025-04-21T13:05:43.638+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.24"
+time=2025-04-21T13:05:44.642+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.24"
+time=2025-04-21T13:05:45.397+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.24"
+time=2025-04-21T13:05:45.648+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.24"
+time=2025-04-21T13:05:45.899+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.24"
+time=2025-04-21T13:05:46.150+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.24"
+time=2025-04-21T13:05:47.153+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.25"
+time=2025-04-21T13:05:48.661+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.25"
+time=2025-04-21T13:05:49.416+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.25"
+time=2025-04-21T13:05:49.667+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.26"
+time=2025-04-21T13:05:49.918+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.26"
+time=2025-04-21T13:05:50.172+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.26"
+time=2025-04-21T13:05:51.176+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.26"
+time=2025-04-21T13:05:52.180+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.26"
+time=2025-04-21T13:05:52.932+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.27"
+time=2025-04-21T13:05:53.434+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.27"
+time=2025-04-21T13:05:53.685+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.27"
+time=2025-04-21T13:05:54.690+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.27"
+time=2025-04-21T13:05:55.693+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.27"
+time=2025-04-21T13:05:56.446+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.28"
+time=2025-04-21T13:05:56.697+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.28"
+time=2025-04-21T13:05:56.948+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.28"
+time=2025-04-21T13:05:57.199+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.28"
+time=2025-04-21T13:05:58.203+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.28"
+time=2025-04-21T13:05:59.708+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.29"
+time=2025-04-21T13:06:00.733+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.29"
+time=2025-04-21T13:06:00.984+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.29"
+time=2025-04-21T13:06:01.235+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.29"
+time=2025-04-21T13:06:01.489+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.29"
+time=2025-04-21T13:06:02.748+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.30"
+time=2025-04-21T13:06:03.753+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.30"
+time=2025-04-21T13:06:04.802+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.30"
+time=2025-04-21T13:06:05.053+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.30"
+time=2025-04-21T13:06:05.556+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.30"
+time=2025-04-21T13:06:06.561+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.31"
+time=2025-04-21T13:06:07.566+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.31"
+time=2025-04-21T13:06:08.325+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.31"
+time=2025-04-21T13:06:08.828+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.31"
+time=2025-04-21T13:06:09.078+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.31"
+time=2025-04-21T13:06:10.082+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.32"
+time=2025-04-21T13:06:11.589+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.32"
+time=2025-04-21T13:06:12.342+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.33"
+time=2025-04-21T13:06:12.845+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.33"
+time=2025-04-21T13:06:13.096+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.33"
+time=2025-04-21T13:06:14.099+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.33"
+time=2025-04-21T13:06:15.104+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.33"
+time=2025-04-21T13:06:16.108+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.34"
+time=2025-04-21T13:06:16.359+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.34"
+time=2025-04-21T13:06:16.611+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.34"
+time=2025-04-21T13:06:16.861+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.34"
+time=2025-04-21T13:06:17.865+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.34"
+time=2025-04-21T13:06:18.618+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.35"
+time=2025-04-21T13:06:19.621+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.35"
+time=2025-04-21T13:06:19.872+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.35"
+time=2025-04-21T13:06:20.123+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.35"
+time=2025-04-21T13:06:20.373+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.35"
+time=2025-04-21T13:06:21.381+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.35"
+time=2025-04-21T13:06:22.636+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.36"
+time=2025-04-21T13:06:23.640+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.36"
+time=2025-04-21T13:06:23.891+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.36"
+time=2025-04-21T13:06:24.144+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.36"
+time=2025-04-21T13:06:24.395+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.36"
+time=2025-04-21T13:06:25.235+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.37"
+time=2025-04-21T13:06:26.238+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.37"
+time=2025-04-21T13:06:27.241+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.37"
+time=2025-04-21T13:06:27.492+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.37"
+time=2025-04-21T13:06:27.743+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.37"
+time=2025-04-21T13:06:27.994+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.37"
+time=2025-04-21T13:06:28.998+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.38"
+time=2025-04-21T13:06:29.751+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.38"
+time=2025-04-21T13:06:30.777+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.38"
+time=2025-04-21T13:06:31.027+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.38"
+time=2025-04-21T13:06:31.278+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.39"
+time=2025-04-21T13:06:31.529+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.39"
+time=2025-04-21T13:06:32.532+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.39"
+time=2025-04-21T13:06:34.288+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.39"
+time=2025-04-21T13:06:35.047+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.40"
+time=2025-04-21T13:06:35.312+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.40"
+time=2025-04-21T13:06:35.564+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.40"
+time=2025-04-21T13:06:35.815+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.40"
+time=2025-04-21T13:06:36.818+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.40"
+time=2025-04-21T13:06:37.823+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.40"
+time=2025-04-21T13:06:38.576+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.41"
+time=2025-04-21T13:06:39.078+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.41"
+time=2025-04-21T13:06:39.329+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.41"
+time=2025-04-21T13:06:40.333+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.41"
+time=2025-04-21T13:06:41.336+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.42"
+time=2025-04-21T13:06:42.339+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.42"
+time=2025-04-21T13:06:42.590+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.42"
+time=2025-04-21T13:06:42.840+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.42"
+time=2025-04-21T13:06:43.091+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.42"
+time=2025-04-21T13:06:44.096+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.42"
+time=2025-04-21T13:06:47.108+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.43"
+time=2025-04-21T13:06:49.367+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.43"
+time=2025-04-21T13:06:50.124+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.43"
+time=2025-04-21T13:06:50.376+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.43"
+time=2025-04-21T13:06:51.129+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.43"
+time=2025-04-21T13:06:53.641+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.44"
+time=2025-04-21T13:06:55.901+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.44"
+time=2025-04-21T13:06:58.411+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.44"
+time=2025-04-21T13:06:59.667+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.44"
+time=2025-04-21T13:07:00.170+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.44"
+time=2025-04-21T13:07:00.420+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.44"
+time=2025-04-21T13:07:01.174+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.45"
+time=2025-04-21T13:07:03.685+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.45"
+time=2025-04-21T13:07:05.441+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.45"
+time=2025-04-21T13:07:06.193+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.45"
+time=2025-04-21T13:07:06.696+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.46"
+time=2025-04-21T13:07:06.948+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.46"
+time=2025-04-21T13:07:07.952+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.46"
+time=2025-04-21T13:07:09.457+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.46"
+time=2025-04-21T13:07:10.210+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.47"
+time=2025-04-21T13:07:10.711+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.47"
+time=2025-04-21T13:07:10.962+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.47"
+time=2025-04-21T13:07:11.967+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.47"
+time=2025-04-21T13:07:12.972+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.48"
+time=2025-04-21T13:07:13.975+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.48"
+time=2025-04-21T13:07:14.239+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.48"
+time=2025-04-21T13:07:14.490+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.48"
+time=2025-04-21T13:07:14.741+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.48"
+time=2025-04-21T13:07:15.750+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.48"
+time=2025-04-21T13:07:17.015+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.49"
+time=2025-04-21T13:07:17.769+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.49"
+time=2025-04-21T13:07:18.272+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.49"
+time=2025-04-21T13:07:18.524+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.49"
+time=2025-04-21T13:07:19.540+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.50"
+time=2025-04-21T13:07:21.046+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.50"
+time=2025-04-21T13:07:21.804+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.50"
+time=2025-04-21T13:07:22.056+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.50"
+time=2025-04-21T13:07:22.306+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.50"
+time=2025-04-21T13:07:22.557+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.51"
+time=2025-04-21T13:07:22.808+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.51"
+time=2025-04-21T13:07:23.560+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.51"
+time=2025-04-21T13:07:24.565+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.51"
+time=2025-04-21T13:07:25.570+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.51"
+time=2025-04-21T13:07:25.821+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.52"
+time=2025-04-21T13:07:26.072+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.52"
+time=2025-04-21T13:07:26.323+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.52"
+time=2025-04-21T13:07:27.080+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.52"
+time=2025-04-21T13:07:28.085+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.52"
+time=2025-04-21T13:07:29.089+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.53"
+time=2025-04-21T13:07:29.340+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.53"
+time=2025-04-21T13:07:29.590+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.53"
+time=2025-04-21T13:07:29.841+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.53"
+time=2025-04-21T13:07:30.845+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.53"
+time=2025-04-21T13:07:32.100+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.54"
+time=2025-04-21T13:07:33.104+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.54"
+time=2025-04-21T13:07:33.355+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.54"
+time=2025-04-21T13:07:33.606+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.54"
+time=2025-04-21T13:07:33.857+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.54"
+time=2025-04-21T13:07:34.860+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.54"
+time=2025-04-21T13:07:35.614+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.55"
+time=2025-04-21T13:07:36.618+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.55"
+time=2025-04-21T13:07:36.869+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.55"
+time=2025-04-21T13:07:37.119+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.55"
+time=2025-04-21T13:07:37.370+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.55"
+time=2025-04-21T13:07:38.376+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.56"
+time=2025-04-21T13:07:39.379+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.56"
+time=2025-04-21T13:07:40.135+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.56"
+time=2025-04-21T13:07:40.637+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.56"
+time=2025-04-21T13:07:40.888+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.56"
+time=2025-04-21T13:07:41.891+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.57"
+time=2025-04-21T13:07:43.396+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.57"
+time=2025-04-21T13:07:44.402+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.57"
+time=2025-04-21T13:07:44.653+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.58"
+time=2025-04-21T13:07:44.913+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.58"
+time=2025-04-21T13:07:45.167+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.58"
+time=2025-04-21T13:07:46.170+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.58"
+time=2025-04-21T13:07:47.427+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.58"
+time=2025-04-21T13:07:48.180+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.59"
+time=2025-04-21T13:07:48.682+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.59"
+time=2025-04-21T13:07:48.933+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.59"
+time=2025-04-21T13:07:50.080+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.59"
+time=2025-04-21T13:07:51.084+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.59"
+time=2025-04-21T13:07:52.090+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.60"
+time=2025-04-21T13:07:52.341+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.60"
+time=2025-04-21T13:07:52.592+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.60"
+time=2025-04-21T13:07:52.843+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.60"
+time=2025-04-21T13:07:53.595+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.60"
+time=2025-04-21T13:07:55.100+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.61"
+time=2025-04-21T13:07:56.103+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.61"
+time=2025-04-21T13:07:56.355+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.61"
+time=2025-04-21T13:07:56.856+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.61"
+time=2025-04-21T13:07:57.860+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.61"
+time=2025-04-21T13:07:58.612+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.62"
+time=2025-04-21T13:07:59.615+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.62"
+time=2025-04-21T13:07:59.866+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.62"
+time=2025-04-21T13:08:00.117+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.62"
+time=2025-04-21T13:08:00.367+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.62"
+time=2025-04-21T13:08:01.372+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.63"
+time=2025-04-21T13:08:02.125+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.63"
+time=2025-04-21T13:08:03.130+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.63"
+time=2025-04-21T13:08:03.381+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.63"
+time=2025-04-21T13:08:03.633+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.63"
+time=2025-04-21T13:08:03.884+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.63"
+time=2025-04-21T13:08:04.887+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.64"
+time=2025-04-21T13:08:06.392+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.64"
+time=2025-04-21T13:08:07.396+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.65"
+time=2025-04-21T13:08:07.647+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.65"
+time=2025-04-21T13:08:07.898+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.65"
+time=2025-04-21T13:08:08.148+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.65"
+time=2025-04-21T13:08:09.152+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.65"
+time=2025-04-21T13:08:10.156+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.65"
+time=2025-04-21T13:08:10.908+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.66"
+time=2025-04-21T13:08:11.411+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.66"
+time=2025-04-21T13:08:11.662+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.66"
+time=2025-04-21T13:08:12.666+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.66"
+time=2025-04-21T13:08:13.669+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.66"
+time=2025-04-21T13:08:14.675+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.67"
+time=2025-04-21T13:08:14.925+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.67"
+time=2025-04-21T13:08:15.176+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.67"
+time=2025-04-21T13:08:15.427+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.67"
+time=2025-04-21T13:08:16.447+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.67"
+time=2025-04-21T13:08:17.954+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.68"
+time=2025-04-21T13:08:18.958+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.68"
+time=2025-04-21T13:08:19.459+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.68"
+time=2025-04-21T13:08:19.710+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.68"
+time=2025-04-21T13:08:20.739+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.69"
+time=2025-04-21T13:08:21.748+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.69"
+time=2025-04-21T13:08:22.756+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.69"
+time=2025-04-21T13:08:23.007+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.69"
+time=2025-04-21T13:08:23.510+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.69"
+time=2025-04-21T13:08:24.514+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.70"
+time=2025-04-21T13:08:25.518+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.70"
+time=2025-04-21T13:08:26.270+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.70"
+time=2025-04-21T13:08:26.773+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.70"
+time=2025-04-21T13:08:27.024+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.71"
+time=2025-04-21T13:08:28.030+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.71"
+time=2025-04-21T13:08:29.535+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.71"
+time=2025-04-21T13:08:30.291+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.72"
+time=2025-04-21T13:08:30.542+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.72"
+time=2025-04-21T13:08:30.793+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.72"
+time=2025-04-21T13:08:31.044+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.72"
+time=2025-04-21T13:08:32.048+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.72"
+time=2025-04-21T13:08:32.803+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.72"
+time=2025-04-21T13:08:33.808+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.73"
+time=2025-04-21T13:08:34.059+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.73"
+time=2025-04-21T13:08:34.317+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.73"
+time=2025-04-21T13:08:34.568+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.73"
+time=2025-04-21T13:08:35.572+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.73"
+time=2025-04-21T13:08:36.331+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.74"
+time=2025-04-21T13:08:37.335+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.74"
+time=2025-04-21T13:08:37.586+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.74"
+time=2025-04-21T13:08:37.838+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.74"
+time=2025-04-21T13:08:38.088+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.74"
+time=2025-04-21T13:08:39.094+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.74"
+time=2025-04-21T13:08:40.348+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.75"
+time=2025-04-21T13:08:41.101+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.75"
+time=2025-04-21T13:08:41.603+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.75"
+time=2025-04-21T13:08:41.854+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.75"
+time=2025-04-21T13:08:42.858+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.76"
+time=2025-04-21T13:08:43.863+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.76"
+time=2025-04-21T13:08:44.867+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.76"
+time=2025-04-21T13:08:45.118+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.76"
+time=2025-04-21T13:08:45.369+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.76"
+time=2025-04-21T13:08:45.620+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.77"
+time=2025-04-21T13:08:46.638+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.77"
+time=2025-04-21T13:08:47.391+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.77"
+time=2025-04-21T13:08:48.646+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.77"
+time=2025-04-21T13:08:49.153+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.78"
+time=2025-04-21T13:08:49.403+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.78"
+time=2025-04-21T13:08:50.414+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.78"
+time=2025-04-21T13:08:51.679+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.78"
+time=2025-04-21T13:08:52.683+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.79"
+time=2025-04-21T13:08:52.934+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.79"
+time=2025-04-21T13:08:53.184+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.79"
+time=2025-04-21T13:08:53.435+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.79"
+time=2025-04-21T13:08:54.440+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.79"
+time=2025-04-21T13:08:55.450+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.80"
+time=2025-04-21T13:08:56.212+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.80"
+time=2025-04-21T13:08:56.714+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.80"
+time=2025-04-21T13:08:56.965+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.80"
+time=2025-04-21T13:08:57.968+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.80"
+time=2025-04-21T13:08:59.227+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.81"
+time=2025-04-21T13:08:59.979+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.81"
+time=2025-04-21T13:09:00.481+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.81"
+time=2025-04-21T13:09:00.732+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.81"
+time=2025-04-21T13:09:01.737+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.81"
+time=2025-04-21T13:09:03.245+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.82"
+time=2025-04-21T13:09:04.249+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.82"
+time=2025-04-21T13:09:04.500+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.82"
+time=2025-04-21T13:09:04.751+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.82"
+time=2025-04-21T13:09:05.002+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.82"
+time=2025-04-21T13:09:06.007+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.83"
+time=2025-04-21T13:09:06.760+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.83"
+time=2025-04-21T13:09:07.764+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.83"
+time=2025-04-21T13:09:08.014+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.83"
+time=2025-04-21T13:09:08.265+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.84"
+time=2025-04-21T13:09:08.516+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.84"
+time=2025-04-21T13:09:09.522+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.84"
+time=2025-04-21T13:09:10.527+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.84"
+time=2025-04-21T13:09:11.280+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.85"
+time=2025-04-21T13:09:11.783+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.85"
+time=2025-04-21T13:09:12.033+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.85"
+time=2025-04-21T13:09:13.038+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.85"
+time=2025-04-21T13:09:14.545+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.86"
+time=2025-04-21T13:09:15.549+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.86"
+time=2025-04-21T13:09:15.800+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.86"
+time=2025-04-21T13:09:16.051+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.86"
+time=2025-04-21T13:09:16.301+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.86"
+time=2025-04-21T13:09:17.307+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.86"
+time=2025-04-21T13:09:18.852+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.87"
+time=2025-04-21T13:09:19.879+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.87"
+time=2025-04-21T13:09:20.131+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.87"
+time=2025-04-21T13:09:20.382+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.87"
+time=2025-04-21T13:09:20.633+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.87"
+time=2025-04-21T13:09:21.666+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.88"
+time=2025-04-21T13:09:22.932+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.88"
+time=2025-04-21T13:09:23.937+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.88"
+time=2025-04-21T13:09:24.188+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.88"
+time=2025-04-21T13:09:24.439+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.88"
+time=2025-04-21T13:09:24.691+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.89"
+time=2025-04-21T13:09:25.694+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.89"
+time=2025-04-21T13:09:26.948+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.89"
+time=2025-04-21T13:09:27.952+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.90"
+time=2025-04-21T13:09:28.202+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.90"
+time=2025-04-21T13:09:28.453+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.90"
+time=2025-04-21T13:09:28.704+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.90"
+time=2025-04-21T13:09:29.707+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.90"
+time=2025-04-21T13:09:30.961+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.91"
+time=2025-04-21T13:09:31.965+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.91"
+time=2025-04-21T13:09:32.216+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.91"
+time=2025-04-21T13:09:32.467+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.91"
+time=2025-04-21T13:09:32.717+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.91"
+time=2025-04-21T13:09:33.721+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.91"
+time=2025-04-21T13:09:34.976+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.92"
+time=2025-04-21T13:09:35.979+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.92"
+time=2025-04-21T13:09:36.230+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.92"
+time=2025-04-21T13:09:36.481+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.92"
+time=2025-04-21T13:09:37.484+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.93"
+time=2025-04-21T13:09:38.738+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.93"
+time=2025-04-21T13:09:39.742+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.93"
+time=2025-04-21T13:09:39.993+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.94"
+time=2025-04-21T13:09:40.243+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.94"
+time=2025-04-21T13:09:40.494+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.94"
+time=2025-04-21T13:09:41.247+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.94"
+time=2025-04-21T13:09:42.501+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.94"
+time=2025-04-21T13:09:43.504+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.95"
+time=2025-04-21T13:09:43.755+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.95"
+time=2025-04-21T13:09:44.006+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.95"
+time=2025-04-21T13:09:44.257+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.95"
+time=2025-04-21T13:09:45.009+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.95"
+time=2025-04-21T13:09:46.263+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.96"
+time=2025-04-21T13:09:47.275+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.96"
+time=2025-04-21T13:09:47.525+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.96"
+time=2025-04-21T13:09:47.776+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.96"
+time=2025-04-21T13:09:48.027+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.96"
+time=2025-04-21T13:09:49.292+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.97"
+time=2025-04-21T13:09:50.546+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.97"
+time=2025-04-21T13:09:51.601+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.97"
+time=2025-04-21T13:09:51.853+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.97"
+time=2025-04-21T13:09:52.104+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.97"
+time=2025-04-21T13:09:52.355+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.98"
+time=2025-04-21T13:09:53.109+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.98"
+time=2025-04-21T13:09:54.618+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.98"
+time=2025-04-21T13:09:55.372+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.99"
+llama_new_context_with_model: n_seq_max     = 8
+llama_new_context_with_model: n_ctx         = 16384
+llama_new_context_with_model: n_ctx_per_seq = 2048
+llama_new_context_with_model: n_batch       = 4096
+llama_new_context_with_model: n_ubatch      = 512
+llama_new_context_with_model: flash_attn    = 0
+llama_new_context_with_model: freq_base     = 500000.0
+llama_new_context_with_model: freq_scale    = 1
+llama_new_context_with_model: n_ctx_per_seq (2048) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+llama_kv_cache_init: kv_size = 16384, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 80, can_shift = 1
+llama_kv_cache_init: layer 0: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 1: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 2: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 3: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 4: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 5: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 6: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 7: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 8: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 9: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 10: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 11: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 12: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 13: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 14: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 15: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 16: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 17: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 18: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 19: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 20: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 21: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 22: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 23: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 24: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 25: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 26: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 27: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 28: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 29: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 30: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 31: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 32: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 33: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 34: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 35: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 36: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 37: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 38: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 39: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 40: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 41: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 42: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 43: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 44: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 45: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 46: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 47: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 48: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 49: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 50: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 51: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 52: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 53: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 54: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 55: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 56: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 57: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 58: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 59: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 60: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 61: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 62: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 63: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 64: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 65: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 66: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 67: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 68: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 69: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 70: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 71: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 72: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 73: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 74: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 75: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 76: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 77: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 78: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 79: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init:      CUDA0 KV buffer size =  5120.00 MiB
+llama_new_context_with_model: KV self size  = 5120.00 MiB, K (f16): 2560.00 MiB, V (f16): 2560.00 MiB
+llama_new_context_with_model:  CUDA_Host  output buffer size =     4.16 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =  2144.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    48.01 MiB
+llama_new_context_with_model: graph nodes  = 2566
+llama_new_context_with_model: graph splits = 2
+time=2025-04-21T13:09:55.624+02:00 level=INFO source=server.go:596 msg="llama runner started in 588.37 seconds"
+time=2025-04-21T13:09:55.630+02:00 level=DEBUG source=sched.go:462 msg="finished setting up runner" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:09:55.642+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nWarm-up prompt<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:09:55.666+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=0 prompt=13 used=0 remaining=13
+[GIN] 2025/04/21 - 13:10:01 | 200 |         9m54s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:10:01.283+02:00 level=DEBUG source=sched.go:466 msg="context for request finished"
+time=2025-04-21T13:10:01.283+02:00 level=DEBUG source=sched.go:339 msg="runner with non-zero duration has gone idle, adding timer" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d duration=4h0m0s
+time=2025-04-21T13:10:01.283+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=0
+time=2025-04-21T13:10:03.632+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.632+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.632+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Acupuncturistswould perform at work. Here is the description of the occupation: Diagnose, treat, and prevent disorders by stimulating specific acupuncture points within the body using acupuncture needles. May also use cups, nutritional supplements, therapeutic massage, acupressure, and other alternative health therapies.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.641+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.641+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Adhesive Bonding Machine Operators and Tenderswould perform at work. Here is the description of the occupation: Operate or tend bonding machines that use adhesives to join items for further processing or to form a completed product. Processes include joining veneer sheets into plywood; gluing paper; or joining rubber and rubberized fabric parts, plastic, simulated leather, or other materials.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.642+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.643+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Adapted Physical Education Specialistswould perform at work. Here is the description of the occupation: Provide individualized physical education instruction or services to children, youth, or adults with exceptional physical needs due to gross motor developmental delays or other impairments.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.644+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.644+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Actorswould perform at work. Here is the description of the occupation: Play parts in stage, television, radio, video, or film productions, or other settings for entertainment, information, or instruction. Interpret serious or comic role by speech, gesture, and body movement to entertain or inform audience. May dance and sing.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.653+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.653+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Administrative Law Judges, Adjudicators, and Hearing Officerswould perform at work. Here is the description of the occupation: Conduct hearings to recommend or make decisions on claims concerning government programs or other government-related matters. Determine liability, sanctions, or penalties, or recommend the acceptance or rejection of claims or settlements.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.656+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.656+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Accountants and Auditorswould perform at work. Here is the description of the occupation: Examine, analyze, and interpret accounting records to prepare financial statements, give advice, or audit and evaluate statements prepared by others. Install or advise on systems of recording costs or other financial and budgetary data.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.657+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:03.658+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 26 unique task statements that the occupation Acute Care Nurseswould perform at work. Here is the description of the occupation: Provide advanced nursing care for patients with acute conditions such as heart attacks, respiratory distress syndrome, or shock. May care for pre- and post-operative patients or perform advanced, invasive diagnostic or therapeutic procedures.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.676+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Actuarieswould perform at work. Here is the description of the occupation: Analyze statistical data, such as mortality, accident, sickness, disability, and retirement rates and construct probability tables to forecast risk and liability for payment of future benefits. May ascertain insurance rates required and cash reserves necessary to ensure payment of future benefits.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:03.829+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=112 prompt=81 used=5 remaining=76
+time=2025-04-21T13:10:03.829+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=0 prompt=84 used=0 remaining=84
+time=2025-04-21T13:10:04.748+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=0 prompt=77 used=0 remaining=77
+time=2025-04-21T13:10:04.749+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=0 prompt=85 used=0 remaining=85
+time=2025-04-21T13:10:04.749+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=0 prompt=80 used=0 remaining=80
+time=2025-04-21T13:10:04.749+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=0 prompt=81 used=0 remaining=81
+time=2025-04-21T13:10:04.749+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=0 prompt=68 used=0 remaining=68
+time=2025-04-21T13:10:04.749+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=0 prompt=97 used=0 remaining=97
+[GIN] 2025/04/21 - 13:10:37 | 200 | 33.581544357s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:10:37.001+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:10:37.001+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:10:37.124+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:37.125+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 8 unique task statements that the occupation Administrative Services Managerswould perform at work. Here is the description of the occupation: Plan, direct, or coordinate one or more administrative services of an organization, such as records and information management, mail distribution, and other office support services.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:37.345+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=325 prompt=67 used=8 remaining=59
+[GIN] 2025/04/21 - 13:10:39 | 200 | 35.826685747s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:10:39.247+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:10:39.247+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:10:39.338+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:39.339+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 37 unique task statements that the occupation Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructorswould perform at work. Here is the description of the occupation: Teach or instruct out-of-school youths and adults in basic education, literacy, or English as a Second Language classes, or in classes for earning a high school equivalency credential.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:39.485+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=344 prompt=84 used=8 remaining=76
+[GIN] 2025/04/21 - 13:10:42 | 200 | 38.888983431s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:10:42.302+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:10:42.302+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:10:42.388+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:42.388+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Advanced Practice Psychiatric Nurseswould perform at work. Here is the description of the occupation: Assess, diagnose, and treat individuals and families with mental health or substance use disorders or the potential for such disorders. Apply therapeutic activities, including the prescription of medication, per state regulations, and the administration of psychotherapy.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:42.546+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=368 prompt=82 used=8 remaining=74
+[GIN] 2025/04/21 - 13:10:43 | 200 | 40.341984295s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:10:43.765+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:10:43.765+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:10:43.889+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:43.890+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Advertising Sales Agentswould perform at work. Here is the description of the occupation: Sell or solicit advertising space, time, or media in publications, signage, TV, radio, or Internet establishments or public spaces.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:44.114+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=389 prompt=62 used=8 remaining=54
+[GIN] 2025/04/21 - 13:10:52 | 200 | 48.731107084s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:10:52.142+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:10:52.142+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:10:52.226+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:52.226+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Advertising and Promotions Managerswould perform at work. Here is the description of the occupation: Plan, direct, or coordinate advertising policies and programs or produce collateral materials, such as posters, contests, coupons, or giveaways, to create extra interest in the purchase of a product or service for a department, an entire organization, or on an account basis.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:52.372+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=437 prompt=90 used=8 remaining=82
+[GIN] 2025/04/21 - 13:10:58 | 200 | 55.439409683s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:10:58.851+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:10:58.851+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:10:58.943+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:10:58.944+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Aerospace Engineering and Operations Technologists and Technicianswould perform at work. Here is the description of the occupation: Operate, install, adjust, and maintain integrated computer/communications systems, consoles, simulators, and other data acquisition, test, and measurement instruments and equipment, which are used to launch, track, position, and evaluate air and space vehicles. May record and interpret test data.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:10:59.182+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=490 prompt=99 used=8 remaining=91
+[GIN] 2025/04/21 - 13:11:01 | 200 | 24.744508271s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:01.810+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:01.810+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:01.902+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:01.903+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Aerospace Engineerswould perform at work. Here is the description of the occupation: Perform engineering duties in designing, constructing, and testing aircraft, missiles, and spacecraft. May conduct basic and applied research to evaluate adaptability of materials and equipment to aircraft design and manufacture. May recommend improvements in testing equipment and techniques.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/21 - 13:11:01 | 200 | 58.512660919s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:01.934+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:01.934+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:02.022+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:02.022+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Agents and Business Managers of Artists, Performers, and Athleteswould perform at work. Here is the description of the occupation: Represent and promote artists, performers, and athletes in dealings with current or prospective employers. May handle contract negotiation and other business matters for clients.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:02.038+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=252 prompt=81 used=8 remaining=73
+time=2025-04-21T13:11:02.408+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=500 prompt=74 used=8 remaining=66
+[GIN] 2025/04/21 - 13:11:03 | 200 | 59.645164367s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:03.061+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:03.061+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:03.156+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:03.156+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Agricultural Engineerswould perform at work. Here is the description of the occupation: Apply knowledge of engineering technology and biological science to agricultural problems concerned with power and machinery, electrification, structures, soil and water conservation, and processing of agricultural products.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:03.282+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=516 prompt=68 used=8 remaining=60
+[GIN] 2025/04/21 - 13:11:22 | 200 | 39.059011324s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:22.919+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:22.928+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:23.461+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:23.493+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 17 unique task statements that the occupation Agricultural Equipment Operatorswould perform at work. Here is the description of the occupation: Drive and control equipment to support agricultural activities such as tilling soil; planting, cultivating, and harvesting crops; feeding and herding livestock; or removing animal waste. May perform tasks such as crop baling or hay bucking. May operate stationary equipment to perform post-harvest tasks such as husking, shelling, threshing, and ginning.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:23.814+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=364 prompt=109 used=8 remaining=101
+[GIN] 2025/04/21 - 13:11:24 | 200 | 25.654176386s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:24.543+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:24.550+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:24.654+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:24.666+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Agricultural Inspectorswould perform at work. Here is the description of the occupation: Inspect agricultural commodities, processing equipment, and facilities, and fish and logging operations, to ensure compliance with regulations and laws governing health, quality, and safety.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:24.819+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=297 prompt=69 used=8 remaining=61
+[GIN] 2025/04/21 - 13:11:32 | 200 | 30.206041351s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:32.054+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:32.054+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:32.157+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:32.162+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Agricultural Sciences Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in the agricultural sciences. Includes teachers of agronomy, dairy sciences, fisheries management, horticultural sciences, poultry sciences, range management, and agricultural soil conservation. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:32.396+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=316 prompt=92 used=8 remaining=84
+[GIN] 2025/04/21 - 13:11:32 | 200 | 30.679717047s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:32.647+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:32.647+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:32.741+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:32.742+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 26 unique task statements that the occupation Agricultural Technicianswould perform at work. Here is the description of the occupation: Work with agricultural scientists in plant, fiber, and animal research, or assist with animal breeding and nutrition. Set up or maintain laboratory equipment and collect samples from crops or animals. Prepare specimens or record data to assist scientists in biology or related life science experiments. Conduct tests and experiments to improve yield and quality of crops or to increase the resistance of plants and animals to disease or insects.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:32.895+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=311 prompt=112 used=8 remaining=104
+[GIN] 2025/04/21 - 13:11:35 | 200 | 32.235115952s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:35.337+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:35.337+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:35.434+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:35.434+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Air Traffic Controllerswould perform at work. Here is the description of the occupation: Control air traffic on and within vicinity of airport, and movement of air traffic between altitude sectors and control centers, according to established procedures and policies. Authorize, regulate, and control commercial airline flights according to government or company regulations to expedite and ensure flight safety.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/21 - 13:11:35 | 200 | 53.109347363s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:35.443+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:35.443+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:35.553+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:35.557+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 6 unique task statements that the occupation Aircraft Cargo Handling Supervisorswould perform at work. Here is the description of the occupation: Supervise and coordinate the activities of ground crew in the loading, unloading, securing, and staging of aircraft cargo or baggage. May determine the quantity and orientation of cargo and compute aircraft center of gravity. May accompany aircraft as member of flight crew and monitor and handle cargo in flight, and assist and brief passengers on safety and emergency procedures. Includes loadmasters.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:35.664+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=490 prompt=89 used=8 remaining=81
+time=2025-04-21T13:11:35.664+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=318 prompt=110 used=8 remaining=102
+[GIN] 2025/04/21 - 13:11:38 | 200 | 46.000360352s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:38.171+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:38.171+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:38.257+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:38.257+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 38 unique task statements that the occupation Aircraft Mechanics and Service Technicianswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul aircraft engines and assemblies, such as hydraulic and pneumatic systems.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:38.411+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=441 prompt=62 used=8 remaining=54
+[GIN] 2025/04/21 - 13:11:53 | 200 | 17.635442774s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:11:53.118+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:11:53.118+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:11:53.227+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:11:53.228+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 27 unique task statements that the occupation Aircraft Structure, Surfaces, Rigging, and Systems Assemblerswould perform at work. Here is the description of the occupation: Assemble, fit, fasten, and install parts of airplanes, space vehicles, or missiles, such as tails, wings, fuselage, bulkheads, stabilizers, landing gear, rigging and control equipment, or heating and ventilating systems.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:11:53.453+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=242 prompt=98 used=8 remaining=90
+[GIN] 2025/04/21 - 13:12:05 | 200 | 42.638139229s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:05.613+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:05.613+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:05.697+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:05.699+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 27 unique task statements that the occupation Airfield Operations Specialistswould perform at work. Here is the description of the occupation: Ensure the safe takeoff and landing of commercial and military aircraft. Duties include coordination between air-traffic control and maintenance personnel, dispatching, using airfield landing and navigational aids, implementing airfield safety procedures, monitoring and maintaining flight records, and applying knowledge of weather information.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:12:05.837+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=425 prompt=94 used=8 remaining=86
+[GIN] 2025/04/21 - 13:12:09 | 200 | 45.034750906s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:09.616+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:09.616+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:09.701+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:09.701+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Airline Pilots, Copilots, and Flight Engineerswould perform at work. Here is the description of the occupation: Pilot and navigate the flight of fixed-wing aircraft, usually on scheduled air carrier routes, for the transport of passengers and cargo. Requires Federal Air Transport certificate and rating for specific aircraft type used. Includes regional, national, and international airline pilots and flight instructors of airline pilots.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:12:09.851+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=409 prompt=99 used=8 remaining=91
+[GIN] 2025/04/21 - 13:12:19 | 200 | 43.631369423s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:19.006+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:19.006+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:19.098+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:19.098+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Allergists and Immunologistswould perform at work. Here is the description of the occupation: Diagnose, treat, and help prevent allergic diseases and disease processes affecting the immune system.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:12:19.239+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=418 prompt=58 used=8 remaining=50
+[GIN] 2025/04/21 - 13:12:20 | 200 | 48.228280227s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:20.922+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:20.922+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:21.023+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:21.024+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Ambulance Drivers and Attendants, Except Emergency Medical Technicianswould perform at work. Here is the description of the occupation: Drive ambulance or assist ambulance driver in transporting sick, injured, or convalescent persons. Assist in lifting patients.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/21 - 13:12:21 | 200 | 49.144431302s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:21.255+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:21.255+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:21.254+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=461 prompt=68 used=8 remaining=60
+time=2025-04-21T13:12:21.313+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:21.314+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 17 unique task statements that the occupation Amusement and Recreation Attendantswould perform at work. Here is the description of the occupation: Perform a variety of attending duties at amusement or recreation facility. May schedule use of recreation facilities, maintain and provide equipment to participants of sporting events or recreational pursuits, or operate amusement concessions and rides.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/21 - 13:12:21 | 200 |         1m42s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:21.518+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:21.518+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:21.606+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:21.606+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Anesthesiologist Assistantswould perform at work. Here is the description of the occupation: Assist anesthesiologists in the administration of anesthesia for surgical and non-surgical procedures. Monitor patient status and provide patient care during surgical treatment.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:12:21.643+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=865 prompt=78 used=8 remaining=70
+time=2025-04-21T13:12:21.644+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=475 prompt=68 used=8 remaining=60
+[GIN] 2025/04/21 - 13:12:34 | 200 | 56.582251954s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:34.784+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:34.784+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:34.870+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:34.870+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Anesthesiologistswould perform at work. Here is the description of the occupation: Administer anesthetics and analgesics for pain management prior to, during, or after surgery.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:12:35.022+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=490 prompt=58 used=8 remaining=50
+[GIN] 2025/04/21 - 13:12:46 | 200 | 25.094003842s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:46.039+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:46.039+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:46.127+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:46.128+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Animal Breederswould perform at work. Here is the description of the occupation: Select and breed animals according to their genealogy, characteristics, and offspring. May require knowledge of artificial insemination techniques and equipment use. May involve keeping records on heats, birth intervals, or pedigree.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:12:46.272+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=254 prompt=76 used=8 remaining=68
+[GIN] 2025/04/21 - 13:12:55 | 200 | 33.972695581s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:12:55.251+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:12:55.251+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:12:55.341+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:12:55.342+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Animal Caretakerswould perform at work. Here is the description of the occupation: Feed, water, groom, bathe, exercise, or otherwise provide care to promote and maintain the well-being of pets and other animals that are not raised for consumption, such as dogs, cats, race horses, ornamental fish or birds, zoo animals, and mice. Work in settings such as kennels, animal shelters, zoos, circuses, and aquariums. May keep records of feedings, treatments, and animals received or discharged. May clean, disinfect, and repair cages, pens, or fish tanks.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:12:55.486+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=332 prompt=144 used=8 remaining=136
+[GIN] 2025/04/21 - 13:13:00 | 200 | 41.502707154s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:00.545+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:00.545+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:00.632+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:00.633+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Animal Control Workerswould perform at work. Here is the description of the occupation: Handle animals for the purpose of investigations of mistreatment, or control of abandoned, dangerous, or unattended animals.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:00.781+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=367 prompt=59 used=8 remaining=51
+[GIN] 2025/04/21 - 13:13:01 | 200 | 51.867122689s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:01.515+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:01.515+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:01.598+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:01.598+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 9 unique task statements that the occupation Animal Scientistswould perform at work. Here is the description of the occupation: Conduct research in the genetics, nutrition, reproduction, growth, and development of domestic farm animals.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:01.739+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=486 prompt=54 used=8 remaining=46
+[GIN] 2025/04/21 - 13:13:02 | 200 | 40.934020212s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:02.487+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:02.487+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:02.576+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:02.576+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Animal Trainerswould perform at work. Here is the description of the occupation: Train animals for riding, harness, security, performance, or obedience, or for assisting persons with disabilities. Accustom animals to human voice and contact, and condition animals to respond to commands. Train animals according to prescribed standards for show or competition. May train animals to carry pack loads or work as part of pack team.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:02.736+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=374 prompt=100 used=8 remaining=92
+[GIN] 2025/04/21 - 13:13:04 | 200 |         1m10s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:04.107+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:04.107+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:04.199+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:04.199+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 30 unique task statements that the occupation Anthropologists and Archeologistswould perform at work. Here is the description of the occupation: Study the origin, development, and behavior of human beings. May study the way of life, language, or physical characteristics of people in various parts of the world. May engage in systematic recovery and examination of material evidence, such as tools or pottery remaining from past human cultures, in order to determine the history, customs, and living habits of earlier civilizations.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:04.347+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=628 prompt=110 used=8 remaining=102
+[GIN] 2025/04/21 - 13:13:18 | 200 |         1m12s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:18.426+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:18.426+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:18.523+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:18.524+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 26 unique task statements that the occupation Anthropology and Archeology Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in anthropology or archeology. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:18.649+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=638 prompt=70 used=8 remaining=62
+[GIN] 2025/04/21 - 13:13:22 | 200 | 47.974539628s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:22.791+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:22.791+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:22.882+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:22.882+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 29 unique task statements that the occupation Appraisers and Assessors of Real Estatewould perform at work. Here is the description of the occupation: Appraise real estate, exclusively, and estimate its fair value. May assess taxes in accordance with prescribed schedules.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:23.009+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=418 prompt=64 used=8 remaining=56
+[GIN] 2025/04/21 - 13:13:26 | 200 | 31.487347877s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:26.774+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:26.774+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:26.878+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:26.879+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Arbitrators, Mediators, and Conciliatorswould perform at work. Here is the description of the occupation: Facilitate negotiation and conflict resolution through dialogue. Resolve conflicts outside of the court system by mutual consent of parties involved.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:27.103+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=378 prompt=69 used=8 remaining=61
+[GIN] 2025/04/21 - 13:13:28 | 200 | 26.581958817s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:28.126+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:28.126+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:28.235+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:28.235+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Architects, Except Landscape and Navalwould perform at work. Here is the description of the occupation: Plan and design structures, such as private residences, office buildings, theaters, factories, and other structural property.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:28.459+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=253 prompt=61 used=8 remaining=53
+[GIN] 2025/04/21 - 13:13:30 | 200 | 44.372879129s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:30.453+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:30.453+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:30.538+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:30.538+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Architectural and Civil Drafterswould perform at work. Here is the description of the occupation: Prepare detailed drawings of architectural and structural features of buildings or drawings and topographical relief maps used in civil engineering projects, such as highways, bridges, and public works. Use knowledge of building materials, engineering practices, and mathematics to complete drawings.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:30.731+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=408 prompt=87 used=8 remaining=79
+[GIN] 2025/04/21 - 13:13:38 | 200 |  36.29493562s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:38.817+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:38.817+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:38.908+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:38.908+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation Architectural and Engineering Managerswould perform at work. Here is the description of the occupation: Plan, direct, or coordinate activities in such fields as architecture and engineering or research and development in these fields.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:39.035+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=375 prompt=60 used=8 remaining=52
+[GIN] 2025/04/21 - 13:13:41 | 200 | 40.422114213s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:13:41.001+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:13:41.001+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:13:41.092+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:13:41.092+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Architecture Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in architecture and architectural design, such as architectural environmental design, interior architecture/design, and landscape architecture. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:13:41.251+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=365 prompt=78 used=8 remaining=70
+[GIN] 2025/04/21 - 13:14:06 | 200 |          1m2s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:06.630+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:06.630+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:06.726+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:06.726+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Archivistswould perform at work. Here is the description of the occupation: Appraise, edit, and direct safekeeping of permanent records and historically valuable documents. Participate in research activities based on archival materials.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:06.857+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=594 prompt=63 used=8 remaining=55
+[GIN] 2025/04/21 - 13:14:17 | 200 | 50.782263841s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:17.601+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:17.601+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:17.697+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:17.698+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Area, Ethnic, and Cultural Studies Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses pertaining to the culture and development of an area, an ethnic group, or any other group, such as Latin American studies, women's studies, or urban affairs. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:17.827+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=464 prompt=97 used=8 remaining=89
+[GIN] 2025/04/21 - 13:14:19 | 200 | 48.899109227s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:19.382+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:19.382+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:19.479+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:19.479+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Art Directorswould perform at work. Here is the description of the occupation: Formulate design concepts and presentation approaches for visual productions and media, such as print, broadcasting, video, and film. Direct workers engaged in artwork or layout design.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:19.607+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=468 prompt=68 used=8 remaining=60
+[GIN] 2025/04/21 - 13:14:26 | 200 | 47.673348725s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:26.526+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:26.526+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:26.611+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:26.611+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Art Therapistswould perform at work. Here is the description of the occupation: Plan or conduct art therapy sessions or programs to improve clients' physical, cognitive, or emotional well-being.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:26.751+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=431 prompt=58 used=8 remaining=50
+[GIN] 2025/04/21 - 13:14:27 | 200 |          1m9s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:27.615+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:27.615+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:27.698+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:27.699+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 28 unique task statements that the occupation Art, Drama, and Music Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in drama, music, and the arts including fine and applied art, such as painting and sculpture, or design and crafts. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:27.833+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=607 prompt=88 used=8 remaining=80
+[GIN] 2025/04/21 - 13:14:30 | 200 |          1m7s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:30.567+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:30.567+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:30.655+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:30.655+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 17 unique task statements that the occupation Astronomerswould perform at work. Here is the description of the occupation: Observe, research, and interpret astronomical phenomena to increase basic knowledge or apply such information to practical problems.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:30.790+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=589 prompt=57 used=8 remaining=49
+[GIN] 2025/04/21 - 13:14:32 | 200 |          1m4s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:32.833+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:32.833+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:32.917+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:32.917+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 9 unique task statements that the occupation Athletes and Sports Competitorswould perform at work. Here is the description of the occupation: Compete in athletic events.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:33.042+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=561 prompt=45 used=8 remaining=37
+[GIN] 2025/04/21 - 13:14:34 | 200 | 28.178772307s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:34.850+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:34.850+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:34.941+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:34.942+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Athletic Trainerswould perform at work. Here is the description of the occupation: Evaluate and treat musculoskeletal injuries or illnesses. Provide preventive, therapeutic, emergency, and rehabilitative care.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:35.074+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=277 prompt=58 used=8 remaining=50
+[GIN] 2025/04/21 - 13:14:42 | 200 |          1m1s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:42.903+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:42.903+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:42.994+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:42.994+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 27 unique task statements that the occupation Atmospheric and Space Scientistswould perform at work. Here is the description of the occupation: Investigate atmospheric phenomena and interpret meteorological data, gathered by surface and air stations, satellites, and radar to prepare reports and forecasts for public and other uses. Includes weather analysts and forecasters whose functions require the detailed knowledge of meteorology.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:43.127+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=558 prompt=85 used=8 remaining=77
+[GIN] 2025/04/21 - 13:14:50 | 200 | 17.763567967s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:50.629+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:50.629+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:50.715+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:50.716+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 26 unique task statements that the occupation Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in the physical sciences, except chemistry and physics. Includes both teachers primarily engaged in teaching, and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:50.851+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=180 prompt=77 used=8 remaining=69
+[GIN] 2025/04/21 - 13:14:53 | 200 | 34.572925944s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:14:53.998+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:14:53.998+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:14:54.082+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:14:54.083+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 29 unique task statements that the occupation Audio and Video Technicianswould perform at work. Here is the description of the occupation: Set up, maintain, and dismantle audio and video equipment, such as microphones, sound speakers, connecting wires and cables, sound and mixing boards, video cameras, video monitors and servers, and related electronic equipment for live or recorded events, such as concerts, meetings, conventions, presentations, podcasts, news conferences, and sporting events.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:14:54.267+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=331 prompt=105 used=8 remaining=97
+[GIN] 2025/04/21 - 13:15:00 | 200 | 43.345646663s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:00.980+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:00.981+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:01.075+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:01.076+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Audiologistswould perform at work. Here is the description of the occupation: Assess and treat persons with hearing and related disorders. May fit hearing aids and provide auditory training. May perform research related to hearing problems.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:01.207+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=426 prompt=62 used=8 remaining=54
+[GIN] 2025/04/21 - 13:15:03 | 200 |  33.36387633s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:03.961+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:03.961+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:04.045+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:04.045+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Audiovisual Equipment Installers and Repairerswould perform at work. Here is the description of the occupation: Install, repair, or adjust audio or television receivers, stereo systems, camcorders, video systems, or other electronic entertainment equipment in homes or other venues. May perform routine maintenance.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:04.187+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=311 prompt=78 used=8 remaining=70
+[GIN] 2025/04/21 - 13:15:21 | 200 | 54.243118642s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:21.887+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:21.888+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:21.986+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:21.986+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Automotive Body and Related Repairerswould perform at work. Here is the description of the occupation: Repair and refinish automotive vehicle bodies and straighten vehicle frames.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/21 - 13:15:22 | 200 | 47.213981042s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:22.108+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:22.108+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:22.106+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=422 prompt=52 used=8 remaining=44
+time=2025-04-21T13:15:22.181+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:22.182+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Automotive Engineering Technicianswould perform at work. Here is the description of the occupation: Assist engineers in determining the practicality of proposed product design changes and plan and carry out tests on experimental test devices or equipment for performance, durability, or efficiency.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:22.412+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=505 prompt=69 used=8 remaining=61
+[GIN] 2025/04/21 - 13:15:23 | 200 | 57.156622623s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:23.713+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:23.713+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:23.804+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:23.804+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Automotive Engineerswould perform at work. Here is the description of the occupation: Develop new or improved designs for vehicle structural members, engines, transmissions, or other vehicle systems, using computer-assisted design technology. Direct building, modification, or testing of vehicle or components.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:23.933+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=496 prompt=73 used=15 remaining=58
+[GIN] 2025/04/21 - 13:15:33 | 200 |  29.68722755s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:33.679+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:33.679+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:33.771+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:33.771+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Automotive Glass Installers and Repairerswould perform at work. Here is the description of the occupation: Replace or repair broken windshields and window glass in motor vehicles.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:33.908+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=307 prompt=54 used=8 remaining=46
+[GIN] 2025/04/21 - 13:15:35 | 200 |  40.99262719s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:35.042+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:35.042+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:35.109+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:35.109+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 28 unique task statements that the occupation Automotive Service Technicians and Mechanicswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul automotive vehicles.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:35.250+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=420 prompt=52 used=8 remaining=44
+[GIN] 2025/04/21 - 13:15:49 | 200 |   48.3872547s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:49.408+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:49.408+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:49.501+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:49.501+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Automotive and Watercraft Service Attendantswould perform at work. Here is the description of the occupation: Service automobiles, buses, trucks, boats, and other automotive or marine vehicles with fuel, lubricants, and accessories. Collect payment for services and supplies. May lubricate vehicle, change motor oil, refill antifreeze, or replace lights or other accessories, such as windshield wiper blades or fan belts. May repair or replace tires.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:49.631+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=436 prompt=108 used=8 remaining=100
+[GIN] 2025/04/21 - 13:15:50 | 200 |          1m7s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:50.665+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:50.665+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:50.749+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:50.749+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Aviation Inspectorswould perform at work. Here is the description of the occupation: Inspect aircraft, maintenance procedures, air navigational aids, air traffic controls, and communications equipment to ensure conformance with Federal safety regulations.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:50.894+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=606 prompt=65 used=8 remaining=57
+[GIN] 2025/04/21 - 13:15:57 | 200 |          1m7s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:57.962+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:57.962+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:58.060+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:58.060+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Avionics Technicianswould perform at work. Here is the description of the occupation: Install, inspect, test, adjust, or repair avionics equipment, such as radar, radio, navigation, and missile control systems in aircraft or space vehicles.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:58.181+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=596 prompt=71 used=8 remaining=63
+[GIN] 2025/04/21 - 13:15:58 | 200 | 36.759470684s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:15:58.887+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:15:58.887+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:15:58.977+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:15:58.977+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 17 unique task statements that the occupation Baggage Porters and Bellhopswould perform at work. Here is the description of the occupation: Handle baggage for travelers at transportation terminals or for guests at hotels or similar establishments.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:15:59.105+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=350 prompt=57 used=8 remaining=49
+[GIN] 2025/04/21 - 13:16:15 | 200 | 42.035349489s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:16:15.748+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:16:15.749+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:16:15.832+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:16:15.832+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Bailiffswould perform at work. Here is the description of the occupation: Maintain order in courts of law.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:16:15.978+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=379 prompt=43 used=8 remaining=35
+[GIN] 2025/04/21 - 13:16:16 | 200 | 27.351005473s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:16:16.798+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:16:16.798+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:16:16.884+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:16:16.885+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Bakerswould perform at work. Here is the description of the occupation: Mix and bake ingredients to produce breads, rolls, cookies, cakes, pies, pastries, or other baked goods.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:16:17.021+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=319 prompt=60 used=8 remaining=52
+[GIN] 2025/04/21 - 13:16:18 | 200 | 54.668237401s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:16:18.417+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:16:18.417+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:16:18.499+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:16:18.499+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Barberswould perform at work. Here is the description of the occupation: Provide barbering services, such as cutting, trimming, shampooing, and styling hair; trimming beards; or giving shaves.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:16:18.656+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=496 prompt=62 used=8 remaining=54
+[GIN] 2025/04/21 - 13:16:19 | 200 | 28.813750475s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:16:19.510+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:16:19.510+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:16:19.600+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:16:19.601+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation Baristaswould perform at work. Here is the description of the occupation: Prepare or serve specialty coffee or other beverages. Serve food such as baked goods or sandwiches to patrons.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:16:19.760+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=287 prompt=55 used=8 remaining=47
+[GIN] 2025/04/21 - 13:16:22 | 200 |          1m0s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-21T13:16:22.573+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-21T13:16:22.573+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-21T13:16:22.669+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-21T13:16:22.669+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Bartenderswould perform at work. Here is the description of the occupation: Mix and serve drinks to patrons, directly or through waitstaff.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-21T13:16:22.825+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=519 prompt=48 used=8 remaining=40
