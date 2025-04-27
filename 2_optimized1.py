@@ -14,7 +14,7 @@ import os
 import argparse
 
 # Setup output folder
-folder_name = f'results/llamatask_match_other{datetime.now().strftime("%d%m_%H%M")}/'
+folder_name = f'results/mis30task_match_other{datetime.now().strftime("%d%m_%H%M")}/'
 os.makedirs(folder_name, exist_ok=True)
 print("folder created")
 
@@ -35,7 +35,7 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-sampled_occupation = sampled_occupation.iloc[30]
+sampled_occupation = sampled_occupation.iloc[30:31]
 
 
 #for trial
@@ -108,7 +108,7 @@ for model_config in model_configs:
 
         for i in range(10):
             start_time = datetime.now()
-            with Pool(processes=8) as pool:
+            with Pool(processes=1) as pool:
                 results = list(tqdm(
                     pool.imap_unordered(process_title, [(row['title'], model_config, row['description'], prompt) for _, row in sampled_occupation[['title', 'description']].iterrows()]),
                     total=len(sampled_occupation), desc=f"{model_name}-{name}-{i}"
