@@ -1,0 +1,449 @@
+2025-04-27 19:07:31,229 - Script started
+2025-04-27 19:07:31,234 - Processing model: mistral
+2025-04-27 19:07:33,280 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+mistral-no_prompt-0:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:07:35,974 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:36,054 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:36,057 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:36,060 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:39,918 - Single inference for Actuaries, duration: 0:00:04.036951
+mistral-no_prompt-0:  10%|█         | 1/10 [00:04<00:36,  4.05s/it]2025-04-27 19:07:39,983 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:40,761 - Single inference for Actors, duration: 0:00:04.908393
+mistral-no_prompt-0:  20%|██        | 2/10 [00:04<00:17,  2.16s/it]2025-04-27 19:07:40,816 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:41,706 - Single inference for Acupuncturists, duration: 0:00:05.852501
+mistral-no_prompt-0:  30%|███       | 3/10 [00:05<00:11,  1.61s/it]2025-04-27 19:07:41,754 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:42,005 - Single inference for Accountants and Auditors, duration: 0:00:06.151571
+mistral-no_prompt-0:  40%|████      | 4/10 [00:06<00:06,  1.09s/it]2025-04-27 19:07:42,065 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:44,225 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:08.328038
+mistral-no_prompt-0:  50%|█████     | 5/10 [00:08<00:07,  1.50s/it]2025-04-27 19:07:44,279 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:45,157 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:09.275929
+mistral-no_prompt-0:  60%|██████    | 6/10 [00:09<00:05,  1.30s/it]2025-04-27 19:07:45,217 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:46,699 - Single inference for Administrative Services Managers, duration: 0:00:06.763522
+mistral-no_prompt-0:  70%|███████   | 7/10 [00:10<00:04,  1.38s/it]2025-04-27 19:07:47,028 - Single inference for Adapted Physical Education Specialists, duration: 0:00:11.133069
+mistral-no_prompt-0:  80%|████████  | 8/10 [00:11<00:02,  1.05s/it]2025-04-27 19:07:49,174 - Single inference for Acute Care Nurses, duration: 0:00:13.287169
+mistral-no_prompt-0:  90%|█████████ | 9/10 [00:13<00:01,  1.39s/it]2025-04-27 19:07:51,830 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:11.055575
+mistral-no_prompt-0: 100%|██████████| 10/10 [00:15<00:00,  1.78s/it]mistral-no_prompt-0: 100%|██████████| 10/10 [00:15<00:00,  1.60s/it]
+2025-04-27 19:07:51,858 - Multiprocessing for mistral-no_prompt-0, duration: 0:00:16.070182
+mistral-no_prompt-1:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:07:52,056 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:52,060 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:52,138 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:52,142 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:55,246 - Single inference for Actuaries, duration: 0:00:03.324753
+mistral-no_prompt-1:  10%|█         | 1/10 [00:03<00:30,  3.36s/it]2025-04-27 19:07:55,304 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:56,743 - Single inference for Acupuncturists, duration: 0:00:04.809639
+mistral-no_prompt-1:  20%|██        | 2/10 [00:04<00:18,  2.26s/it]2025-04-27 19:07:56,808 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:56,952 - Single inference for Actors, duration: 0:00:05.031078
+mistral-no_prompt-1:  30%|███       | 3/10 [00:05<00:09,  1.32s/it]2025-04-27 19:07:57,007 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:59,481 - Single inference for Acute Care Nurses, duration: 0:00:07.535948
+mistral-no_prompt-1:  40%|████      | 4/10 [00:07<00:10,  1.80s/it]2025-04-27 19:07:59,542 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:01,225 - Single inference for Adapted Physical Education Specialists, duration: 0:00:09.269838
+mistral-no_prompt-1:  50%|█████     | 5/10 [00:09<00:08,  1.78s/it]2025-04-27 19:08:01,279 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:01,546 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:09.584406
+mistral-no_prompt-1:  60%|██████    | 6/10 [00:09<00:05,  1.28s/it]2025-04-27 19:08:01,610 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:02,632 - Single inference for Accountants and Auditors, duration: 0:00:10.676961
+mistral-no_prompt-1:  70%|███████   | 7/10 [00:10<00:03,  1.22s/it]2025-04-27 19:08:03,486 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:11.504827
+mistral-no_prompt-1:  80%|████████  | 8/10 [00:11<00:02,  1.10s/it]2025-04-27 19:08:03,709 - Single inference for Administrative Services Managers, duration: 0:00:08.434691
+mistral-no_prompt-1:  90%|█████████ | 9/10 [00:11<00:00,  1.21it/s]2025-04-27 19:08:09,797 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:13.026742
+mistral-no_prompt-1: 100%|██████████| 10/10 [00:17<00:00,  2.45s/it]mistral-no_prompt-1: 100%|██████████| 10/10 [00:17<00:00,  1.79s/it]
+2025-04-27 19:08:09,831 - Multiprocessing for mistral-no_prompt-1, duration: 0:00:17.969072
+mistral-no_prompt-2:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:08:09,999 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:10,079 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:10,082 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:10,085 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:14,499 - Single inference for Actors, duration: 0:00:04.605875
+mistral-no_prompt-2:  10%|█         | 1/10 [00:04<00:41,  4.64s/it]2025-04-27 19:08:14,558 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:15,511 - Single inference for Acupuncturists, duration: 0:00:05.617509
+mistral-no_prompt-2:  20%|██        | 2/10 [00:05<00:20,  2.51s/it]2025-04-27 19:08:15,577 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:16,003 - Single inference for Accountants and Auditors, duration: 0:00:06.084563
+mistral-no_prompt-2:  30%|███       | 3/10 [00:06<00:11,  1.58s/it]2025-04-27 19:08:16,064 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:17,794 - Single inference for Actuaries, duration: 0:00:07.868634
+mistral-no_prompt-2:  40%|████      | 4/10 [00:07<00:10,  1.67s/it]2025-04-27 19:08:17,852 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:18,313 - Single inference for Acute Care Nurses, duration: 0:00:08.395518
+mistral-no_prompt-2:  50%|█████     | 5/10 [00:08<00:06,  1.25s/it]2025-04-27 19:08:18,368 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:20,579 - Single inference for Administrative Services Managers, duration: 0:00:06.061096
+mistral-no_prompt-2:  60%|██████    | 6/10 [00:10<00:06,  1.60s/it]2025-04-27 19:08:20,602 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:10.663054
+2025-04-27 19:08:20,641 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:20,797 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:10.864058
+mistral-no_prompt-2:  80%|████████  | 8/10 [00:10<00:01,  1.16it/s]2025-04-27 19:08:23,821 - Single inference for Adapted Physical Education Specialists, duration: 0:00:13.892861
+mistral-no_prompt-2:  90%|█████████ | 9/10 [00:13<00:01,  1.43s/it]2025-04-27 19:08:26,266 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.723781
+mistral-no_prompt-2: 100%|██████████| 10/10 [00:16<00:00,  1.70s/it]mistral-no_prompt-2: 100%|██████████| 10/10 [00:16<00:00,  1.64s/it]
+2025-04-27 19:08:26,293 - Multiprocessing for mistral-no_prompt-2, duration: 0:00:16.458299
+mistral-no_prompt-3:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:08:26,465 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:26,555 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:26,559 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:26,562 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:30,521 - Single inference for Actuaries, duration: 0:00:04.153207
+mistral-no_prompt-3:  10%|█         | 1/10 [00:04<00:37,  4.20s/it]2025-04-27 19:08:30,588 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:32,187 - Single inference for Accountants and Auditors, duration: 0:00:05.832018
+mistral-no_prompt-3:  20%|██        | 2/10 [00:05<00:21,  2.71s/it]2025-04-27 19:08:32,245 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:32,994 - Single inference for Acupuncturists, duration: 0:00:06.614028
+mistral-no_prompt-3:  30%|███       | 3/10 [00:06<00:12,  1.84s/it]2025-04-27 19:08:33,054 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:34,845 - Single inference for Acute Care Nurses, duration: 0:00:08.476911
+mistral-no_prompt-3:  40%|████      | 4/10 [00:08<00:11,  1.84s/it]2025-04-27 19:08:34,907 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:36,116 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:09.732223
+mistral-no_prompt-3:  50%|█████     | 5/10 [00:09<00:08,  1.64s/it]2025-04-27 19:08:36,170 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:36,743 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:10.336999
+mistral-no_prompt-3:  60%|██████    | 6/10 [00:10<00:05,  1.29s/it]2025-04-27 19:08:36,805 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:37,520 - Single inference for Adapted Physical Education Specialists, duration: 0:00:11.119857
+mistral-no_prompt-3:  70%|███████   | 7/10 [00:11<00:03,  1.13s/it]2025-04-27 19:08:38,742 - Single inference for Administrative Services Managers, duration: 0:00:08.202906
+mistral-no_prompt-3:  80%|████████  | 8/10 [00:12<00:02,  1.16s/it]2025-04-27 19:08:39,225 - Single inference for Actors, duration: 0:00:12.812500
+mistral-no_prompt-3:  90%|█████████ | 9/10 [00:12<00:00,  1.06it/s]2025-04-27 19:08:43,401 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:11.191495
+mistral-no_prompt-3: 100%|██████████| 10/10 [00:17<00:00,  1.94s/it]mistral-no_prompt-3: 100%|██████████| 10/10 [00:17<00:00,  1.71s/it]
+2025-04-27 19:08:43,432 - Multiprocessing for mistral-no_prompt-3, duration: 0:00:17.134726
+mistral-no_prompt-4:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:08:43,593 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:43,688 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:43,685 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:43,692 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:47,823 - Single inference for Actuaries, duration: 0:00:04.327915
+mistral-no_prompt-4:  10%|█         | 1/10 [00:04<00:39,  4.36s/it]2025-04-27 19:08:47,880 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:48,269 - Single inference for Acupuncturists, duration: 0:00:04.774760
+mistral-no_prompt-4:  20%|██        | 2/10 [00:04<00:16,  2.05s/it]2025-04-27 19:08:48,324 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:48,979 - Single inference for Accountants and Auditors, duration: 0:00:05.457249
+mistral-no_prompt-4:  30%|███       | 3/10 [00:05<00:10,  1.44s/it]2025-04-27 19:08:49,042 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:50,660 - Single inference for Acute Care Nurses, duration: 0:00:07.132268
+mistral-no_prompt-4:  40%|████      | 4/10 [00:07<00:09,  1.54s/it]2025-04-27 19:08:50,721 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:51,224 - Single inference for Actors, duration: 0:00:07.702405
+mistral-no_prompt-4:  50%|█████     | 5/10 [00:07<00:05,  1.19s/it]2025-04-27 19:08:51,277 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:54,138 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:10.603780
+mistral-no_prompt-4:  60%|██████    | 6/10 [00:10<00:07,  1.77s/it]2025-04-27 19:08:54,199 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:54,573 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:11.017528
+mistral-no_prompt-4:  70%|███████   | 7/10 [00:11<00:04,  1.34s/it]2025-04-27 19:08:54,763 - Single inference for Administrative Services Managers, duration: 0:00:06.912052
+mistral-no_prompt-4:  80%|████████  | 8/10 [00:11<00:01,  1.03it/s]2025-04-27 19:08:55,575 - Single inference for Adapted Physical Education Specialists, duration: 0:00:12.036883
+mistral-no_prompt-4:  90%|█████████ | 9/10 [00:12<00:00,  1.09it/s]2025-04-27 19:09:00,315 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:12.031474
+mistral-no_prompt-4: 100%|██████████| 10/10 [00:16<00:00,  2.10s/it]mistral-no_prompt-4: 100%|██████████| 10/10 [00:16<00:00,  1.69s/it]
+2025-04-27 19:09:00,346 - Multiprocessing for mistral-no_prompt-4, duration: 0:00:16.910507
+mistral-no_prompt-5:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:09:00,519 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:00,597 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:00,600 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:00,604 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:05,000 - Single inference for Actuaries, duration: 0:00:04.593290
+mistral-no_prompt-5:  10%|█         | 1/10 [00:04<00:41,  4.63s/it]2025-04-27 19:09:05,011 - Single inference for Actors, duration: 0:00:04.604070
+2025-04-27 19:09:05,079 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:05,082 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:05,497 - Single inference for Acupuncturists, duration: 0:00:05.077498
+mistral-no_prompt-5:  30%|███       | 3/10 [00:05<00:09,  1.38s/it]2025-04-27 19:09:05,553 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:05,923 - Single inference for Accountants and Auditors, duration: 0:00:05.481390
+mistral-no_prompt-5:  40%|████      | 4/10 [00:05<00:06,  1.05s/it]2025-04-27 19:09:05,983 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:09,128 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:08.679750
+mistral-no_prompt-5:  50%|█████     | 5/10 [00:08<00:08,  1.76s/it]2025-04-27 19:09:09,180 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:09,382 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:08.922261
+mistral-no_prompt-5:  60%|██████    | 6/10 [00:09<00:05,  1.28s/it]2025-04-27 19:09:09,441 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:10,640 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.199605
+mistral-no_prompt-5:  70%|███████   | 7/10 [00:10<00:03,  1.27s/it]2025-04-27 19:09:10,787 - Single inference for Acute Care Nurses, duration: 0:00:10.356518
+mistral-no_prompt-5:  80%|████████  | 8/10 [00:10<00:01,  1.08it/s]2025-04-27 19:09:11,598 - Single inference for Administrative Services Managers, duration: 0:00:06.570699
+mistral-no_prompt-5:  90%|█████████ | 9/10 [00:11<00:00,  1.12it/s]2025-04-27 19:09:15,312 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.277482
+mistral-no_prompt-5: 100%|██████████| 10/10 [00:14<00:00,  1.75s/it]mistral-no_prompt-5: 100%|██████████| 10/10 [00:14<00:00,  1.49s/it]
+2025-04-27 19:09:15,343 - Multiprocessing for mistral-no_prompt-5, duration: 0:00:14.993508
+mistral-no_prompt-6:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:09:15,510 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:15,601 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:15,604 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:15,607 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:20,228 - Single inference for Actors, duration: 0:00:04.822636
+mistral-no_prompt-6:  10%|█         | 1/10 [00:04<00:43,  4.85s/it]2025-04-27 19:09:20,288 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:21,503 - Single inference for Acute Care Nurses, duration: 0:00:06.073266
+mistral-no_prompt-6:  20%|██        | 2/10 [00:06<00:21,  2.75s/it]2025-04-27 19:09:21,574 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:21,765 - Single inference for Acupuncturists, duration: 0:00:06.347922
+mistral-no_prompt-6:  30%|███       | 3/10 [00:06<00:11,  1.61s/it]2025-04-27 19:09:21,829 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:22,647 - Single inference for Accountants and Auditors, duration: 0:00:07.241662
+mistral-no_prompt-6:  40%|████      | 4/10 [00:07<00:07,  1.33s/it]2025-04-27 19:09:22,704 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:24,120 - Single inference for Actuaries, duration: 0:00:08.680267
+mistral-no_prompt-6:  50%|█████     | 5/10 [00:08<00:06,  1.38s/it]2025-04-27 19:09:24,172 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:26,249 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:10.800028
+mistral-no_prompt-6:  60%|██████    | 6/10 [00:10<00:06,  1.63s/it]2025-04-27 19:09:26,311 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:26,494 - Single inference for Administrative Services Managers, duration: 0:00:06.248152
+mistral-no_prompt-6:  70%|███████   | 7/10 [00:11<00:03,  1.18s/it]2025-04-27 19:09:26,850 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:11.394311
+mistral-no_prompt-6:  80%|████████  | 8/10 [00:11<00:01,  1.09it/s]2025-04-27 19:09:27,728 - Single inference for Adapted Physical Education Specialists, duration: 0:00:12.282235
+mistral-no_prompt-6:  90%|█████████ | 9/10 [00:12<00:00,  1.11it/s]2025-04-27 19:09:31,664 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.146804
+mistral-no_prompt-6: 100%|██████████| 10/10 [00:16<00:00,  1.84s/it]mistral-no_prompt-6: 100%|██████████| 10/10 [00:16<00:00,  1.63s/it]
+2025-04-27 19:09:31,699 - Multiprocessing for mistral-no_prompt-6, duration: 0:00:16.352163
+mistral-no_prompt-7:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:09:31,868 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:31,953 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:31,956 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:31,960 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:35,005 - Single inference for Actuaries, duration: 0:00:03.243942
+mistral-no_prompt-7:  10%|█         | 1/10 [00:03<00:29,  3.27s/it]2025-04-27 19:09:35,069 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:36,706 - Single inference for Acupuncturists, duration: 0:00:04.932449
+mistral-no_prompt-7:  20%|██        | 2/10 [00:04<00:18,  2.35s/it]2025-04-27 19:09:36,764 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:37,139 - Single inference for Actors, duration: 0:00:05.378036
+mistral-no_prompt-7:  30%|███       | 3/10 [00:05<00:10,  1.47s/it]2025-04-27 19:09:37,197 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:39,103 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:07.303751
+mistral-no_prompt-7:  40%|████      | 4/10 [00:07<00:09,  1.67s/it]2025-04-27 19:09:39,164 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:39,606 - Single inference for Acute Care Nurses, duration: 0:00:07.818770
+mistral-no_prompt-7:  50%|█████     | 5/10 [00:07<00:06,  1.25s/it]2025-04-27 19:09:39,660 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:42,097 - Single inference for Administrative Services Managers, duration: 0:00:07.078143
+mistral-no_prompt-7:  60%|██████    | 6/10 [00:10<00:06,  1.67s/it]2025-04-27 19:09:42,159 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:42,524 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.724648
+mistral-no_prompt-7:  70%|███████   | 7/10 [00:10<00:03,  1.26s/it]2025-04-27 19:09:42,994 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:11.178780
+mistral-no_prompt-7:  80%|████████  | 8/10 [00:11<00:02,  1.01s/it]2025-04-27 19:09:44,235 - Single inference for Accountants and Auditors, duration: 0:00:12.446988
+mistral-no_prompt-7:  90%|█████████ | 9/10 [00:12<00:01,  1.08s/it]2025-04-27 19:09:49,132 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:12.400151
+mistral-no_prompt-7: 100%|██████████| 10/10 [00:17<00:00,  2.26s/it]mistral-no_prompt-7: 100%|██████████| 10/10 [00:17<00:00,  1.74s/it]
+2025-04-27 19:09:49,163 - Multiprocessing for mistral-no_prompt-7, duration: 0:00:17.459776
+mistral-no_prompt-8:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:09:49,336 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:49,418 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:49,422 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:49,426 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:52,464 - Single inference for Actors, duration: 0:00:03.238994
+mistral-no_prompt-8:  10%|█         | 1/10 [00:03<00:29,  3.27s/it]2025-04-27 19:09:52,525 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:53,069 - Single inference for Actuaries, duration: 0:00:03.844704
+mistral-no_prompt-8:  20%|██        | 2/10 [00:03<00:13,  1.70s/it]2025-04-27 19:09:53,125 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:54,405 - Task issues for Accountants and Auditors: count 25/25, uniques 24. Retrying...
+2025-04-27 19:09:54,428 - Single inference for Acupuncturists, duration: 0:00:05.191008
+mistral-no_prompt-8:  30%|███       | 3/10 [00:05<00:10,  1.54s/it]2025-04-27 19:09:54,469 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:54,524 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:58,641 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:09.358344
+mistral-no_prompt-8:  40%|████      | 4/10 [00:09<00:15,  2.60s/it]2025-04-27 19:09:58,693 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:58,759 - Single inference for Adapted Physical Education Specialists, duration: 0:00:09.500104
+mistral-no_prompt-8:  50%|█████     | 5/10 [00:09<00:08,  1.70s/it]2025-04-27 19:09:58,817 - Single inference for Acute Care Nurses, duration: 0:00:09.568710
+2025-04-27 19:09:58,819 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:58,869 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:00,260 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:10.993551
+mistral-no_prompt-8:  70%|███████   | 7/10 [00:11<00:03,  1.22s/it]2025-04-27 19:10:01,089 - Single inference for Administrative Services Managers, duration: 0:00:08.607349
+mistral-no_prompt-8:  80%|████████  | 8/10 [00:11<00:02,  1.12s/it]2025-04-27 19:10:03,763 - Single inference for Accountants and Auditors, duration: 0:00:14.505157
+mistral-no_prompt-8:  90%|█████████ | 9/10 [00:14<00:01,  1.55s/it]2025-04-27 19:10:05,742 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:12.655403
+mistral-no_prompt-8: 100%|██████████| 10/10 [00:16<00:00,  1.67s/it]mistral-no_prompt-8: 100%|██████████| 10/10 [00:16<00:00,  1.65s/it]
+2025-04-27 19:10:05,771 - Multiprocessing for mistral-no_prompt-8, duration: 0:00:16.604586
+mistral-no_prompt-9:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:10:05,945 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:06,032 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:06,035 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:06,038 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:09,394 - Single inference for Actuaries, duration: 0:00:03.560362
+mistral-no_prompt-9:  10%|█         | 1/10 [00:03<00:32,  3.59s/it]2025-04-27 19:10:09,452 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:09,975 - Single inference for Actors, duration: 0:00:04.140903
+mistral-no_prompt-9:  20%|██        | 2/10 [00:04<00:14,  1.82s/it]2025-04-27 19:10:10,032 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:10,624 - Single inference for Accountants and Auditors, duration: 0:00:04.765850
+mistral-no_prompt-9:  30%|███       | 3/10 [00:04<00:08,  1.28s/it]2025-04-27 19:10:10,684 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:11,995 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:06.119654
+mistral-no_prompt-9:  40%|████      | 4/10 [00:06<00:07,  1.32s/it]2025-04-27 19:10:12,052 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:14,427 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:08.545266
+mistral-no_prompt-9:  50%|█████     | 5/10 [00:08<00:08,  1.72s/it]2025-04-27 19:10:14,479 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:15,360 - Single inference for Acute Care Nurses, duration: 0:00:09.502085
+mistral-no_prompt-9:  60%|██████    | 6/10 [00:09<00:05,  1.45s/it]2025-04-27 19:10:15,420 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:15,788 - Single inference for Acupuncturists, duration: 0:00:09.928418
+mistral-no_prompt-9:  70%|███████   | 7/10 [00:09<00:03,  1.12s/it]2025-04-27 19:10:16,840 - Single inference for Administrative Services Managers, duration: 0:00:07.427280
+mistral-no_prompt-9:  80%|████████  | 8/10 [00:11<00:02,  1.10s/it]2025-04-27 19:10:17,363 - Single inference for Adapted Physical Education Specialists, duration: 0:00:11.495466
+mistral-no_prompt-9:  90%|█████████ | 9/10 [00:11<00:00,  1.09it/s]2025-04-27 19:10:21,212 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:11.223567
+mistral-no_prompt-9: 100%|██████████| 10/10 [00:15<00:00,  1.82s/it]mistral-no_prompt-9: 100%|██████████| 10/10 [00:15<00:00,  1.54s/it]
+2025-04-27 19:10:21,245 - Multiprocessing for mistral-no_prompt-9, duration: 0:00:15.470835
+2025-04-27 19:10:21,259 - Wrote results JSON for mistral-no_prompt, duration: 0:00:00.010032
+2025-04-27 19:10:21,263 - Wrote prompt prompt1, duration: 0:00:00.003892
+mistral-prompt1-0:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:10:21,520 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:21,660 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:21,664 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:21,667 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:26,004 - Single inference for Actors, duration: 0:00:04.678870
+mistral-prompt1-0:  10%|█         | 1/10 [00:04<00:42,  4.71s/it]2025-04-27 19:10:26,081 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:26,132 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.768108
+mistral-prompt1-0:  20%|██        | 2/10 [00:04<00:16,  2.01s/it]2025-04-27 19:10:26,226 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:26,817 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.457566
+mistral-prompt1-0:  30%|███       | 3/10 [00:05<00:09,  1.41s/it]2025-04-27 19:10:26,894 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:27,396 - Single inference for Acupuncturists, duration: 0:00:06.070407
+mistral-prompt1-0:  40%|████      | 4/10 [00:06<00:06,  1.08s/it]2025-04-27 19:10:27,477 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:30,824 - Single inference for Actuaries, duration: 0:00:09.472802
+mistral-prompt1-0:  50%|█████     | 5/10 [00:09<00:09,  1.93s/it]2025-04-27 19:10:30,892 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:31,247 - Single inference for Acute Care Nurses, duration: 0:00:09.906075
+mistral-prompt1-0:  60%|██████    | 6/10 [00:09<00:05,  1.42s/it]2025-04-27 19:10:31,331 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:31,553 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:10.179970
+mistral-prompt1-0:  70%|███████   | 7/10 [00:10<00:03,  1.05s/it]2025-04-27 19:10:32,758 - Single inference for Accountants and Auditors, duration: 0:00:11.405226
+mistral-prompt1-0:  80%|████████  | 8/10 [00:11<00:02,  1.10s/it]2025-04-27 19:10:33,139 - Single inference for Administrative Services Managers, duration: 0:00:07.117391
+mistral-prompt1-0:  90%|█████████ | 9/10 [00:11<00:00,  1.14it/s]2025-04-27 19:10:36,439 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.283728
+mistral-prompt1-0: 100%|██████████| 10/10 [00:15<00:00,  1.63s/it]mistral-prompt1-0: 100%|██████████| 10/10 [00:15<00:00,  1.51s/it]
+2025-04-27 19:10:36,469 - Multiprocessing for mistral-prompt1-0, duration: 0:00:15.204939
+mistral-prompt1-1:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:10:36,691 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:36,694 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:36,799 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:36,802 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:40,137 - Single inference for Actuaries, duration: 0:00:03.606426
+mistral-prompt1-1:  10%|█         | 1/10 [00:03<00:32,  3.63s/it]2025-04-27 19:10:40,222 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:41,233 - Single inference for Actors, duration: 0:00:04.702526
+mistral-prompt1-1:  20%|██        | 2/10 [00:04<00:17,  2.14s/it]2025-04-27 19:10:41,309 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:41,891 - Single inference for Adapted Physical Education Specialists, duration: 0:00:05.331862
+mistral-prompt1-1:  30%|███       | 3/10 [00:05<00:10,  1.47s/it]2025-04-27 19:10:41,968 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:42,175 - Single inference for Acupuncturists, duration: 0:00:05.644867
+mistral-prompt1-1:  40%|████      | 4/10 [00:05<00:05,  1.00it/s]2025-04-27 19:10:42,256 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:45,414 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:08.854853
+mistral-prompt1-1:  50%|█████     | 5/10 [00:08<00:09,  1.81s/it]2025-04-27 19:10:45,482 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:46,309 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:09.724369
+mistral-prompt1-1:  60%|██████    | 6/10 [00:09<00:05,  1.50s/it]2025-04-27 19:10:46,390 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:47,615 - Single inference for Accountants and Auditors, duration: 0:00:11.038515
+mistral-prompt1-1:  70%|███████   | 7/10 [00:11<00:04,  1.43s/it]2025-04-27 19:10:47,836 - Single inference for Administrative Services Managers, duration: 0:00:07.675962
+mistral-prompt1-1:  80%|████████  | 8/10 [00:11<00:02,  1.05s/it]2025-04-27 19:10:48,848 - Single inference for Acute Care Nurses, duration: 0:00:12.270895
+mistral-prompt1-1:  90%|█████████ | 9/10 [00:12<00:01,  1.04s/it]2025-04-27 19:10:51,452 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.205661
+mistral-prompt1-1: 100%|██████████| 10/10 [00:14<00:00,  1.52s/it]mistral-prompt1-1: 100%|██████████| 10/10 [00:14<00:00,  1.49s/it]
+2025-04-27 19:10:51,480 - Multiprocessing for mistral-prompt1-1, duration: 0:00:15.007031
+mistral-prompt1-2:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:10:51,665 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:51,768 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:51,772 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:51,776 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:55,695 - Single inference for Actuaries, duration: 0:00:04.154272
+mistral-prompt1-2:  10%|█         | 1/10 [00:04<00:37,  4.18s/it]2025-04-27 19:10:55,772 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:55,789 - Single inference for Actors, duration: 0:00:04.247397
+2025-04-27 19:10:55,877 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:56,615 - Single inference for Acupuncturists, duration: 0:00:05.061761
+mistral-prompt1-2:  30%|███       | 3/10 [00:05<00:09,  1.42s/it]2025-04-27 19:10:56,691 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:57,747 - Single inference for Acute Care Nurses, duration: 0:00:06.182507
+mistral-prompt1-2:  40%|████      | 4/10 [00:06<00:07,  1.32s/it]2025-04-27 19:10:57,829 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:00,509 - Single inference for Accountants and Auditors, duration: 0:00:08.939616
+mistral-prompt1-2:  50%|█████     | 5/10 [00:08<00:08,  1.80s/it]2025-04-27 19:11:00,577 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:00,595 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:09.007233
+2025-04-27 19:11:00,685 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:01,406 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:09.810153
+mistral-prompt1-2:  70%|███████   | 7/10 [00:09<00:03,  1.14s/it]2025-04-27 19:11:02,388 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.807533
+mistral-prompt1-2:  80%|████████  | 8/10 [00:10<00:02,  1.10s/it]2025-04-27 19:11:02,820 - Single inference for Administrative Services Managers, duration: 0:00:07.107019
+mistral-prompt1-2:  90%|█████████ | 9/10 [00:11<00:00,  1.09it/s]2025-04-27 19:11:06,230 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.427400
+mistral-prompt1-2: 100%|██████████| 10/10 [00:14<00:00,  1.61s/it]mistral-prompt1-2: 100%|██████████| 10/10 [00:14<00:00,  1.47s/it]
+2025-04-27 19:11:06,262 - Multiprocessing for mistral-prompt1-2, duration: 0:00:14.778234
+mistral-prompt1-3:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:11:06,460 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:06,560 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:06,564 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:06,568 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:10,341 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:03.979003
+mistral-prompt1-3:  10%|█         | 1/10 [00:04<00:36,  4.05s/it]2025-04-27 19:11:10,420 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:11,011 - Single inference for Actors, duration: 0:00:04.686193
+mistral-prompt1-3:  20%|██        | 2/10 [00:04<00:16,  2.06s/it]2025-04-27 19:11:11,089 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:11,245 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:04.901867
+mistral-prompt1-3:  30%|███       | 3/10 [00:04<00:08,  1.23s/it]2025-04-27 19:11:11,323 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:12,531 - Single inference for Acupuncturists, duration: 0:00:06.205849
+mistral-prompt1-3:  40%|████      | 4/10 [00:06<00:07,  1.25s/it]2025-04-27 19:11:12,607 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:15,462 - Single inference for Actuaries, duration: 0:00:09.089479
+mistral-prompt1-3:  50%|█████     | 5/10 [00:09<00:09,  1.86s/it]2025-04-27 19:11:15,529 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:15,768 - Single inference for Accountants and Auditors, duration: 0:00:09.422163
+mistral-prompt1-3:  60%|██████    | 6/10 [00:09<00:05,  1.33s/it]2025-04-27 19:11:15,850 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:17,152 - Single inference for Acute Care Nurses, duration: 0:00:10.791353
+mistral-prompt1-3:  70%|███████   | 7/10 [00:10<00:04,  1.35s/it]2025-04-27 19:11:17,500 - Single inference for Adapted Physical Education Specialists, duration: 0:00:11.124564
+mistral-prompt1-3:  80%|████████  | 8/10 [00:11<00:02,  1.03s/it]2025-04-27 19:11:17,802 - Single inference for Administrative Services Managers, duration: 0:00:07.435388
+mistral-prompt1-3:  90%|█████████ | 9/10 [00:11<00:00,  1.25it/s]2025-04-27 19:11:22,800 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:11.774586
+mistral-prompt1-3: 100%|██████████| 10/10 [00:16<00:00,  2.10s/it]mistral-prompt1-3: 100%|██████████| 10/10 [00:16<00:00,  1.65s/it]
+2025-04-27 19:11:22,831 - Multiprocessing for mistral-prompt1-3, duration: 0:00:16.565577
+mistral-prompt1-4:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:11:23,025 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:23,128 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:23,131 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:23,135 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:27,437 - Single inference for Acupuncturists, duration: 0:00:04.517380
+mistral-prompt1-4:  10%|█         | 1/10 [00:04<00:41,  4.57s/it]2025-04-27 19:11:27,515 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:27,694 - Single inference for Actuaries, duration: 0:00:04.796791
+mistral-prompt1-4:  20%|██        | 2/10 [00:04<00:16,  2.03s/it]2025-04-27 19:11:27,777 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:28,246 - Single inference for Actors, duration: 0:00:05.348605
+mistral-prompt1-4:  30%|███       | 3/10 [00:05<00:09,  1.36s/it]2025-04-27 19:11:28,328 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:29,986 - Single inference for Acute Care Nurses, duration: 0:00:07.074287
+mistral-prompt1-4:  40%|████      | 4/10 [00:07<00:09,  1.51s/it]2025-04-27 19:11:30,065 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:31,982 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:09.024164
+mistral-prompt1-4:  50%|█████     | 5/10 [00:09<00:08,  1.68s/it]2025-04-27 19:11:32,051 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:33,167 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:10.230740
+mistral-prompt1-4:  60%|██████    | 6/10 [00:10<00:06,  1.51s/it]2025-04-27 19:11:33,249 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:33,267 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.335098
+mistral-prompt1-4:  70%|███████   | 7/10 [00:10<00:03,  1.05s/it]2025-04-27 19:11:34,095 - Single inference for Administrative Services Managers, duration: 0:00:06.640336
+mistral-prompt1-4:  80%|████████  | 8/10 [00:11<00:01,  1.02it/s]2025-04-27 19:11:35,987 - Single inference for Accountants and Auditors, duration: 0:00:13.041783
+mistral-prompt1-4:  90%|█████████ | 9/10 [00:13<00:01,  1.27s/it]2025-04-27 19:11:39,394 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:11.686054
+mistral-prompt1-4: 100%|██████████| 10/10 [00:16<00:00,  1.93s/it]mistral-prompt1-4: 100%|██████████| 10/10 [00:16<00:00,  1.65s/it]
+2025-04-27 19:11:39,426 - Multiprocessing for mistral-prompt1-4, duration: 0:00:16.587983
+mistral-prompt1-5:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:11:39,621 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:39,755 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:39,758 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:39,761 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:44,127 - Single inference for Actuaries, duration: 0:00:04.616684
+mistral-prompt1-5:  10%|█         | 1/10 [00:04<00:41,  4.67s/it]2025-04-27 19:11:44,211 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:45,002 - Single inference for Actors, duration: 0:00:05.502098
+mistral-prompt1-5:  20%|██        | 2/10 [00:05<00:19,  2.44s/it]2025-04-27 19:11:45,079 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:45,230 - Single inference for Acupuncturists, duration: 0:00:05.742911
+mistral-prompt1-5:  30%|███       | 3/10 [00:05<00:10,  1.43s/it]2025-04-27 19:11:45,306 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:47,003 - Single inference for Acute Care Nurses, duration: 0:00:07.513053
+mistral-prompt1-5:  40%|████      | 4/10 [00:07<00:09,  1.57s/it]2025-04-27 19:11:47,085 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:47,919 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:08.382868
+mistral-prompt1-5:  50%|█████     | 5/10 [00:08<00:06,  1.33s/it]2025-04-27 19:11:47,989 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:50,204 - Single inference for Administrative Services Managers, duration: 0:00:06.063661
+mistral-prompt1-5:  60%|██████    | 6/10 [00:10<00:06,  1.66s/it]2025-04-27 19:11:50,288 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:50,916 - Single inference for Adapted Physical Education Specialists, duration: 0:00:11.393784
+mistral-prompt1-5:  70%|███████   | 7/10 [00:11<00:04,  1.35s/it]2025-04-27 19:11:50,962 - Single inference for Accountants and Auditors, duration: 0:00:11.437071
+2025-04-27 19:11:51,501 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:11.975443
+mistral-prompt1-5:  90%|█████████ | 9/10 [00:12<00:00,  1.19it/s]2025-04-27 19:11:54,976 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:09.956112
+mistral-prompt1-5: 100%|██████████| 10/10 [00:15<00:00,  1.51s/it]mistral-prompt1-5: 100%|██████████| 10/10 [00:15<00:00,  1.55s/it]
+2025-04-27 19:11:55,006 - Multiprocessing for mistral-prompt1-5, duration: 0:00:15.576846
+mistral-prompt1-6:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:11:55,194 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:55,298 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:55,301 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:55,305 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:11:59,276 - Single inference for Acupuncturists, duration: 0:00:04.185886
+mistral-prompt1-6:  10%|█         | 1/10 [00:04<00:38,  4.24s/it]2025-04-27 19:11:59,355 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:00,127 - Single inference for Actors, duration: 0:00:05.046185
+mistral-prompt1-6:  20%|██        | 2/10 [00:05<00:17,  2.24s/it]2025-04-27 19:12:00,208 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:01,353 - Single inference for Acute Care Nurses, duration: 0:00:06.281654
+mistral-prompt1-6:  30%|███       | 3/10 [00:06<00:12,  1.78s/it]2025-04-27 19:12:01,435 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:01,679 - Single inference for Accountants and Auditors, duration: 0:00:06.610986
+mistral-prompt1-6:  40%|████      | 4/10 [00:06<00:07,  1.20s/it]2025-04-27 19:12:01,761 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:04,050 - Single inference for Actuaries, duration: 0:00:08.933917
+mistral-prompt1-6:  50%|█████     | 5/10 [00:09<00:08,  1.63s/it]2025-04-27 19:12:04,119 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:05,283 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.172940
+mistral-prompt1-6:  60%|██████    | 6/10 [00:10<00:05,  1.49s/it]2025-04-27 19:12:05,365 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:05,472 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:10.352529
+mistral-prompt1-6:  70%|███████   | 7/10 [00:10<00:03,  1.07s/it]2025-04-27 19:12:05,873 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:10.768952
+mistral-prompt1-6:  80%|████████  | 8/10 [00:10<00:01,  1.17it/s]2025-04-27 19:12:06,094 - Single inference for Administrative Services Managers, duration: 0:00:06.799933
+mistral-prompt1-6:  90%|█████████ | 9/10 [00:11<00:00,  1.52it/s]2025-04-27 19:12:10,691 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.541675
+mistral-prompt1-6: 100%|██████████| 10/10 [00:15<00:00,  1.87s/it]mistral-prompt1-6: 100%|██████████| 10/10 [00:15<00:00,  1.57s/it]
+2025-04-27 19:12:10,723 - Multiprocessing for mistral-prompt1-6, duration: 0:00:15.712616
+mistral-prompt1-7:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:12:10,910 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:11,040 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:11,044 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:11,047 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:14,883 - Single inference for Acupuncturists, duration: 0:00:04.072187
+mistral-prompt1-7:  10%|█         | 1/10 [00:04<00:37,  4.12s/it]2025-04-27 19:12:14,959 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:15,164 - Single inference for Actors, duration: 0:00:04.375569
+mistral-prompt1-7:  20%|██        | 2/10 [00:04<00:14,  1.86s/it]2025-04-27 19:12:15,245 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:15,751 - Single inference for Actuaries, duration: 0:00:04.962295
+mistral-prompt1-7:  30%|███       | 3/10 [00:04<00:08,  1.28s/it]2025-04-27 19:12:15,827 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:16,221 - Single inference for Acute Care Nurses, duration: 0:00:05.417939
+mistral-prompt1-7:  40%|████      | 4/10 [00:05<00:05,  1.04it/s]2025-04-27 19:12:16,303 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:19,664 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:08.812124
+mistral-prompt1-7:  50%|█████     | 5/10 [00:08<00:09,  1.86s/it]2025-04-27 19:12:19,732 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:19,883 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:09.054151
+mistral-prompt1-7:  60%|██████    | 6/10 [00:09<00:05,  1.30s/it]2025-04-27 19:12:19,964 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:20,807 - Single inference for Accountants and Auditors, duration: 0:00:09.978741
+mistral-prompt1-7:  70%|███████   | 7/10 [00:10<00:03,  1.18s/it]2025-04-27 19:12:21,414 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.586207
+mistral-prompt1-7:  80%|████████  | 8/10 [00:10<00:01,  1.01it/s]2025-04-27 19:12:21,855 - Single inference for Administrative Services Managers, duration: 0:00:06.955072
+mistral-prompt1-7:  90%|█████████ | 9/10 [00:11<00:00,  1.22it/s]2025-04-27 19:12:26,174 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.995345
+mistral-prompt1-7: 100%|██████████| 10/10 [00:15<00:00,  1.90s/it]mistral-prompt1-7: 100%|██████████| 10/10 [00:15<00:00,  1.54s/it]
+2025-04-27 19:12:26,201 - Multiprocessing for mistral-prompt1-7, duration: 0:00:15.471098
+mistral-prompt1-8:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:12:26,377 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:26,510 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:26,513 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:26,517 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:29,857 - Single inference for Actuaries, duration: 0:00:03.594945
+mistral-prompt1-8:  10%|█         | 1/10 [00:03<00:32,  3.63s/it]2025-04-27 19:12:29,940 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:30,993 - Single inference for Actors, duration: 0:00:04.730849
+mistral-prompt1-8:  20%|██        | 2/10 [00:04<00:17,  2.16s/it]2025-04-27 19:12:31,071 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:31,475 - Single inference for Acupuncturists, duration: 0:00:05.199980
+mistral-prompt1-8:  30%|███       | 3/10 [00:05<00:09,  1.39s/it]2025-04-27 19:12:31,555 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:32,531 - Single inference for Acute Care Nurses, duration: 0:00:06.243083
+mistral-prompt1-8:  40%|████      | 4/10 [00:06<00:07,  1.26s/it]2025-04-27 19:12:32,607 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:34,639 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:08.347537
+mistral-prompt1-8:  50%|█████     | 5/10 [00:08<00:07,  1.57s/it]2025-04-27 19:12:34,708 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:35,176 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:08.856047
+mistral-prompt1-8:  60%|██████    | 6/10 [00:08<00:04,  1.22s/it]2025-04-27 19:12:35,258 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:36,916 - Single inference for Administrative Services Managers, duration: 0:00:07.041581
+mistral-prompt1-8:  70%|███████   | 7/10 [00:10<00:04,  1.39s/it]2025-04-27 19:12:37,005 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.701615
+2025-04-27 19:12:37,652 - Single inference for Accountants and Auditors, duration: 0:00:11.336430
+mistral-prompt1-8:  90%|█████████ | 9/10 [00:11<00:00,  1.12it/s]2025-04-27 19:12:41,514 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:10.493644
+mistral-prompt1-8: 100%|██████████| 10/10 [00:15<00:00,  1.66s/it]mistral-prompt1-8: 100%|██████████| 10/10 [00:15<00:00,  1.53s/it]
+2025-04-27 19:12:41,546 - Multiprocessing for mistral-prompt1-8, duration: 0:00:15.341049
+mistral-prompt1-9:   0%|          | 0/10 [00:00<?, ?it/s]2025-04-27 19:12:41,706 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:41,844 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:41,847 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:41,850 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:45,790 - Single inference for Actors, duration: 0:00:04.153755
+mistral-prompt1-9:  10%|█         | 1/10 [00:04<00:37,  4.21s/it]2025-04-27 19:12:45,873 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:46,314 - Single inference for Acupuncturists, duration: 0:00:04.687833
+mistral-prompt1-9:  20%|██        | 2/10 [00:04<00:16,  2.04s/it]2025-04-27 19:12:46,389 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:48,628 - Single inference for Acute Care Nurses, duration: 0:00:07.011382
+mistral-prompt1-9:  30%|███       | 3/10 [00:07<00:15,  2.17s/it]2025-04-27 19:12:48,703 - Single inference for Accountants and Auditors, duration: 0:00:07.089964
+2025-04-27 19:12:48,707 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:48,781 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:50,724 - Single inference for Adhesive Bonding Machine Operators and Tenders, duration: 0:00:09.084448
+mistral-prompt1-9:  50%|█████     | 5/10 [00:09<00:07,  1.53s/it]2025-04-27 19:12:50,793 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:52,579 - Single inference for Adapted Physical Education Specialists, duration: 0:00:10.919604
+mistral-prompt1-9:  60%|██████    | 6/10 [00:10<00:06,  1.62s/it]2025-04-27 19:12:52,659 - HTTP Request: POST http://127.0.0.1:11924/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:12:52,759 - Single inference for Administrative Law Judges, Adjudicators, and Hearing Officers, duration: 0:00:11.094260
+mistral-prompt1-9:  70%|███████   | 7/10 [00:11<00:03,  1.20s/it]2025-04-27 19:12:53,075 - Single inference for Administrative Services Managers, duration: 0:00:07.257276
+mistral-prompt1-9:  80%|████████  | 8/10 [00:11<00:01,  1.06it/s]2025-04-27 19:12:53,509 - Single inference for Actuaries, duration: 0:00:11.858535
+mistral-prompt1-9:  90%|█████████ | 9/10 [00:11<00:00,  1.26it/s]2025-04-27 19:12:58,187 - Single inference for Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors, duration: 0:00:11.858790
+mistral-prompt1-9: 100%|██████████| 10/10 [00:16<00:00,  1.95s/it]mistral-prompt1-9: 100%|██████████| 10/10 [00:16<00:00,  1.66s/it]
+2025-04-27 19:12:58,217 - Multiprocessing for mistral-prompt1-9, duration: 0:00:16.667817
+2025-04-27 19:12:58,229 - Wrote results JSON for mistral-prompt1, duration: 0:00:00.007714
+2025-04-27 19:12:58,229 - Script completed

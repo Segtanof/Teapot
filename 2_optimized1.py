@@ -35,7 +35,7 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-sampled_occupation = sampled_occupation.iloc[[100,200,300,400,500]]
+sampled_occupation = sampled_occupation.iloc[30]
 
 
 #for trial
@@ -79,8 +79,8 @@ parser.add_argument("--port", type=int, default=11434)  # Dynamic port
 args = parser.parse_args()
 
 model_configs = [
-    {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}","num_predict": 2048},
-    # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 1024},
+    # {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}","num_predict": 2048},
+    {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 2048},
     # {"model": "deepseek-r1", "temperature": 1, "base_url": "http://127.0.0.1:11434", "num_predict": 512, "num_ctx": 16384}
 ]
 prompts = {

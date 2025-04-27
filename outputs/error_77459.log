@@ -1,0 +1,249 @@
+2025-04-27 18:54:26,025 - Script started
+2025-04-27 18:54:26,030 - Processing model: llama3.3
+2025-04-27 18:54:58,271 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+llama3.3-no_prompt-0:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 18:55:05,205 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:55:06,162 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:55:06,177 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:55:06,192 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:55:06,209 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:55:37,014 - Single inference for Business Intelligence Analysts, duration: 0:00:32.323305
+llama3.3-no_prompt-0:  20%|██        | 1/5 [00:32<02:08, 32.16s/it]2025-04-27 18:55:37,398 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:32.708324
+llama3.3-no_prompt-0:  40%|████      | 2/5 [00:32<00:40, 13.46s/it]2025-04-27 18:55:39,316 - Single inference for Marketing Managers, duration: 0:00:34.628507
+llama3.3-no_prompt-0:  60%|██████    | 3/5 [00:34<00:16,  8.19s/it]2025-04-27 18:55:47,157 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:42.482774
+llama3.3-no_prompt-0:  80%|████████  | 4/5 [00:42<00:08,  8.05s/it]2025-04-27 18:55:50,554 - Task issues for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders: count 21/21, uniques 20. Retrying...
+2025-04-27 18:55:50,675 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:07,925 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:01:03.250994
+llama3.3-no_prompt-0: 100%|██████████| 5/5 [01:03<00:00, 12.64s/it]llama3.3-no_prompt-0: 100%|██████████| 5/5 [01:03<00:00, 12.61s/it]
+2025-04-27 18:56:07,977 - Multiprocessing for llama3.3-no_prompt-0, duration: 0:01:03.555617
+llama3.3-no_prompt-1:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 18:56:08,323 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:08,523 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:08,537 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:08,552 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:08,568 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:37,228 - Single inference for Business Intelligence Analysts, duration: 0:00:29.103912
+llama3.3-no_prompt-1:  20%|██        | 1/5 [00:29<01:56, 29.19s/it]2025-04-27 18:56:39,279 - Single inference for Marketing Managers, duration: 0:00:31.165534
+llama3.3-no_prompt-1:  40%|████      | 2/5 [00:31<00:39, 13.23s/it]2025-04-27 18:56:43,870 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:35.770872
+llama3.3-no_prompt-1:  60%|██████    | 3/5 [00:35<00:18,  9.28s/it]2025-04-27 18:56:52,540 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:44.432010
+llama3.3-no_prompt-1:  80%|████████  | 4/5 [00:44<00:09,  9.04s/it]2025-04-27 18:56:53,182 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:45.062982
+llama3.3-no_prompt-1: 100%|██████████| 5/5 [00:45<00:00,  6.01s/it]llama3.3-no_prompt-1: 100%|██████████| 5/5 [00:45<00:00,  9.03s/it]
+2025-04-27 18:56:53,227 - Multiprocessing for llama3.3-no_prompt-1, duration: 0:00:45.238369
+llama3.3-no_prompt-2:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 18:56:53,538 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:53,735 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:53,749 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:53,764 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:56:53,780 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:57:22,427 - Single inference for Business Intelligence Analysts, duration: 0:00:29.093986
+llama3.3-no_prompt-2:  20%|██        | 1/5 [00:29<01:56, 29.16s/it]2025-04-27 18:57:23,407 - Single inference for Marketing Managers, duration: 0:00:30.065445
+llama3.3-no_prompt-2:  40%|████      | 2/5 [00:30<00:37, 12.59s/it]2025-04-27 18:57:27,779 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:34.453807
+llama3.3-no_prompt-2:  60%|██████    | 3/5 [00:34<00:17,  8.84s/it]2025-04-27 18:57:29,466 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:36.145971
+llama3.3-no_prompt-2:  80%|████████  | 4/5 [00:36<00:06,  6.01s/it]2025-04-27 18:57:36,851 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:43.502292
+llama3.3-no_prompt-2: 100%|██████████| 5/5 [00:43<00:00,  6.51s/it]llama3.3-no_prompt-2: 100%|██████████| 5/5 [00:43<00:00,  8.72s/it]
+2025-04-27 18:57:36,903 - Multiprocessing for llama3.3-no_prompt-2, duration: 0:00:43.672893
+llama3.3-no_prompt-3:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 18:57:37,193 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:57:37,394 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:57:37,407 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:57:37,422 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:57:37,438 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:58:09,079 - Single inference for Marketing Managers, duration: 0:00:32.052029
+llama3.3-no_prompt-3:  20%|██        | 1/5 [00:32<02:08, 32.14s/it]2025-04-27 18:58:12,036 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:35.037669
+llama3.3-no_prompt-3:  40%|████      | 2/5 [00:35<00:44, 14.98s/it]2025-04-27 18:58:12,118 - Single inference for Business Intelligence Analysts, duration: 0:00:35.089329
+2025-04-27 18:58:16,302 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:39.301408
+llama3.3-no_prompt-3:  80%|████████  | 4/5 [00:39<00:06,  6.93s/it]2025-04-27 18:58:17,967 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:40.946161
+llama3.3-no_prompt-3: 100%|██████████| 5/5 [00:41<00:00,  5.29s/it]llama3.3-no_prompt-3: 100%|██████████| 5/5 [00:41<00:00,  8.21s/it]
+2025-04-27 18:58:18,020 - Multiprocessing for llama3.3-no_prompt-3, duration: 0:00:41.114226
+llama3.3-no_prompt-4:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 18:58:18,344 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:58:18,542 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:58:18,557 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:58:18,573 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:58:18,589 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:58:44,939 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:26.809034
+llama3.3-no_prompt-4:  20%|██        | 1/5 [00:26<01:47, 26.88s/it]2025-04-27 18:58:49,470 - Single inference for Marketing Managers, duration: 0:00:31.354523
+llama3.3-no_prompt-4:  40%|████      | 2/5 [00:31<00:41, 13.74s/it]2025-04-27 18:58:53,514 - Single inference for Business Intelligence Analysts, duration: 0:00:35.390433
+llama3.3-no_prompt-4:  60%|██████    | 3/5 [00:35<00:18,  9.31s/it]2025-04-27 18:58:57,543 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:39.398154
+llama3.3-no_prompt-4:  80%|████████  | 4/5 [00:39<00:07,  7.23s/it]2025-04-27 18:59:13,809 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:55.671435
+llama3.3-no_prompt-4: 100%|██████████| 5/5 [00:55<00:00, 10.48s/it]llama3.3-no_prompt-4: 100%|██████████| 5/5 [00:55<00:00, 11.15s/it]
+2025-04-27 18:59:13,861 - Multiprocessing for llama3.3-no_prompt-4, duration: 0:00:55.838328
+llama3.3-no_prompt-5:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 18:59:14,193 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:59:14,396 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:59:14,414 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:59:14,427 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:59:14,442 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:59:46,340 - Single inference for Business Intelligence Analysts, duration: 0:00:32.351279
+llama3.3-no_prompt-5:  20%|██        | 1/5 [00:32<02:09, 32.43s/it]2025-04-27 18:59:49,795 - Single inference for Marketing Managers, duration: 0:00:35.804033
+llama3.3-no_prompt-5:  40%|████      | 2/5 [00:35<00:46, 15.39s/it]2025-04-27 18:59:50,523 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:36.569441
+llama3.3-no_prompt-5:  60%|██████    | 3/5 [00:36<00:17,  8.69s/it]2025-04-27 18:59:55,898 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:41.932759
+llama3.3-no_prompt-5:  80%|████████  | 4/5 [00:41<00:07,  7.39s/it]2025-04-27 18:59:59,378 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:45.394557
+llama3.3-no_prompt-5: 100%|██████████| 5/5 [00:45<00:00,  5.97s/it]llama3.3-no_prompt-5: 100%|██████████| 5/5 [00:45<00:00,  9.09s/it]
+2025-04-27 18:59:59,427 - Multiprocessing for llama3.3-no_prompt-5, duration: 0:00:45.562979
+llama3.3-no_prompt-6:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 18:59:59,771 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:59:59,970 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:59:59,985 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:00:00,001 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:00:00,015 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:00:26,643 - Single inference for Marketing Managers, duration: 0:00:27.099037
+llama3.3-no_prompt-6:  20%|██        | 1/5 [00:27<01:48, 27.18s/it]2025-04-27 19:00:31,166 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:31.638744
+llama3.3-no_prompt-6:  40%|████      | 2/5 [00:31<00:41, 13.85s/it]2025-04-27 19:00:32,865 - Single inference for Business Intelligence Analysts, duration: 0:00:33.328409
+llama3.3-no_prompt-6:  60%|██████    | 3/5 [00:33<00:16,  8.30s/it]2025-04-27 19:00:35,011 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:35.474489
+llama3.3-no_prompt-6:  80%|████████  | 4/5 [00:35<00:05,  5.87s/it]2025-04-27 19:00:42,424 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:42.872339
+llama3.3-no_prompt-6: 100%|██████████| 5/5 [00:42<00:00,  6.43s/it]llama3.3-no_prompt-6: 100%|██████████| 5/5 [00:42<00:00,  8.59s/it]
+2025-04-27 19:00:42,478 - Multiprocessing for llama3.3-no_prompt-6, duration: 0:00:43.048280
+llama3.3-no_prompt-7:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:00:42,808 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:00:43,000 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:00:43,013 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:00:43,029 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:00:43,046 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:01:05,343 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:22.753873
+llama3.3-no_prompt-7:  20%|██        | 1/5 [00:22<01:31, 22.84s/it]2025-04-27 19:01:12,790 - Single inference for Marketing Managers, duration: 0:00:30.212874
+llama3.3-no_prompt-7:  40%|████      | 2/5 [00:30<00:41, 13.78s/it]2025-04-27 19:01:14,805 - Single inference for Business Intelligence Analysts, duration: 0:00:32.223332
+llama3.3-no_prompt-7:  60%|██████    | 3/5 [00:32<00:16,  8.40s/it]2025-04-27 19:01:18,085 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:35.478567
+llama3.3-no_prompt-7:  80%|████████  | 4/5 [00:35<00:06,  6.38s/it]2025-04-27 19:01:24,597 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:41.998044
+llama3.3-no_prompt-7: 100%|██████████| 5/5 [00:42<00:00,  6.43s/it]llama3.3-no_prompt-7: 100%|██████████| 5/5 [00:42<00:00,  8.42s/it]
+2025-04-27 19:01:24,655 - Multiprocessing for llama3.3-no_prompt-7, duration: 0:00:42.174231
+llama3.3-no_prompt-8:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:01:25,001 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:01:25,202 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:01:25,216 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:01:25,229 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:01:25,246 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:01:56,790 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:31.999165
+llama3.3-no_prompt-8:  20%|██        | 1/5 [00:32<02:08, 32.10s/it]2025-04-27 19:01:58,456 - Single inference for Business Intelligence Analysts, duration: 0:00:33.694688
+llama3.3-no_prompt-8:  40%|████      | 2/5 [00:33<00:42, 14.19s/it]2025-04-27 19:02:00,481 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:35.695540
+llama3.3-no_prompt-8:  60%|██████    | 3/5 [00:35<00:17,  8.64s/it]2025-04-27 19:02:01,704 - Single inference for Marketing Managers, duration: 0:00:36.947711
+llama3.3-no_prompt-8:  80%|████████  | 4/5 [00:37<00:05,  5.71s/it]2025-04-27 19:02:08,355 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:43.578904
+llama3.3-no_prompt-8: 100%|██████████| 5/5 [00:43<00:00,  6.05s/it]llama3.3-no_prompt-8: 100%|██████████| 5/5 [00:43<00:00,  8.73s/it]
+2025-04-27 19:02:08,406 - Multiprocessing for llama3.3-no_prompt-8, duration: 0:00:43.748905
+llama3.3-no_prompt-9:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:02:08,710 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:08,908 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:08,921 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:08,936 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:08,952 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:34,844 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:26.354125
+llama3.3-no_prompt-9:  20%|██        | 1/5 [00:26<01:45, 26.41s/it]2025-04-27 19:02:38,863 - Single inference for Business Intelligence Analysts, duration: 0:00:30.337289
+llama3.3-no_prompt-9:  40%|████      | 2/5 [00:30<00:39, 13.24s/it]2025-04-27 19:02:42,431 - Single inference for Marketing Managers, duration: 0:00:33.896790
+llama3.3-no_prompt-9:  60%|██████    | 3/5 [00:33<00:17,  8.82s/it]2025-04-27 19:02:46,341 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:37.817562
+llama3.3-no_prompt-9:  80%|████████  | 4/5 [00:37<00:06,  6.88s/it]2025-04-27 19:02:48,539 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:40.037730
+llama3.3-no_prompt-9: 100%|██████████| 5/5 [00:40<00:00,  5.19s/it]llama3.3-no_prompt-9: 100%|██████████| 5/5 [00:40<00:00,  8.02s/it]
+2025-04-27 19:02:48,592 - Multiprocessing for llama3.3-no_prompt-9, duration: 0:00:40.182852
+2025-04-27 19:02:48,612 - Wrote results JSON for llama3.3-no_prompt, duration: 0:00:00.014252
+2025-04-27 19:02:48,617 - Wrote prompt prompt1, duration: 0:00:00.004755
+llama3.3-prompt1-0:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:02:49,961 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:51,590 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:51,606 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:51,618 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:02:51,642 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:03:24,839 - Single inference for Business Intelligence Analysts, duration: 0:00:36.082041
+llama3.3-prompt1-0:  20%|██        | 1/5 [00:36<02:24, 36.17s/it]2025-04-27 19:03:27,123 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:38.427188
+llama3.3-prompt1-0:  40%|████      | 2/5 [00:38<00:48, 16.24s/it]2025-04-27 19:03:29,740 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:41.014475
+llama3.3-prompt1-0:  60%|██████    | 3/5 [00:41<00:20, 10.02s/it]2025-04-27 19:03:37,183 - Single inference for Marketing Managers, duration: 0:00:48.431245
+llama3.3-prompt1-0:  80%|████████  | 4/5 [00:48<00:09,  9.00s/it]2025-04-27 19:03:43,843 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:55.095511
+llama3.3-prompt1-0: 100%|██████████| 5/5 [00:55<00:00,  8.16s/it]llama3.3-prompt1-0: 100%|██████████| 5/5 [00:55<00:00, 11.04s/it]
+2025-04-27 19:03:43,900 - Multiprocessing for llama3.3-prompt1-0, duration: 0:00:55.281849
+llama3.3-prompt1-1:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:03:44,262 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:03:44,471 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:03:44,487 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:03:44,503 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:03:44,519 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:04:14,670 - Single inference for Marketing Managers, duration: 0:00:30.630682
+llama3.3-prompt1-1:  20%|██        | 1/5 [00:30<02:02, 30.73s/it]2025-04-27 19:04:18,626 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:34.614764
+llama3.3-prompt1-1:  40%|████      | 2/5 [00:34<00:44, 14.98s/it]2025-04-27 19:04:18,710 - Single inference for Business Intelligence Analysts, duration: 0:00:34.672326
+2025-04-27 19:04:23,190 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:39.180629
+llama3.3-prompt1-1:  80%|████████  | 4/5 [00:39<00:07,  7.02s/it]2025-04-27 19:04:28,059 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:44.029518
+llama3.3-prompt1-1: 100%|██████████| 5/5 [00:44<00:00,  6.35s/it]llama3.3-prompt1-1: 100%|██████████| 5/5 [00:44<00:00,  8.82s/it]
+2025-04-27 19:04:28,111 - Multiprocessing for llama3.3-prompt1-1, duration: 0:00:44.207941
+llama3.3-prompt1-2:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:04:28,415 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:04:28,601 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:04:28,616 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:04:28,630 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:04:28,644 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:04:59,407 - Single inference for Business Intelligence Analysts, duration: 0:00:31.210260
+llama3.3-prompt1-2:  20%|██        | 1/5 [00:31<02:05, 31.27s/it]2025-04-27 19:05:00,303 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:32.073770
+llama3.3-prompt1-2:  40%|████      | 2/5 [00:32<00:40, 13.40s/it]2025-04-27 19:05:03,252 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:35.041865
+llama3.3-prompt1-2:  60%|██████    | 3/5 [00:35<00:17,  8.63s/it]2025-04-27 19:05:04,040 - Single inference for Marketing Managers, duration: 0:00:35.801300
+llama3.3-prompt1-2:  80%|████████  | 4/5 [00:35<00:05,  5.53s/it]2025-04-27 19:05:10,664 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:42.417745
+llama3.3-prompt1-2: 100%|██████████| 5/5 [00:42<00:00,  5.92s/it]llama3.3-prompt1-2: 100%|██████████| 5/5 [00:42<00:00,  8.50s/it]
+2025-04-27 19:05:10,713 - Multiprocessing for llama3.3-prompt1-2, duration: 0:00:42.599588
+llama3.3-prompt1-3:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:05:11,015 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:11,052 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:11,303 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:11,317 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:11,332 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:44,973 - Single inference for Business Intelligence Analysts, duration: 0:00:34.138315
+llama3.3-prompt1-3:  20%|██        | 1/5 [00:34<02:16, 34.22s/it]2025-04-27 19:05:45,070 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:34.268782
+2025-04-27 19:05:47,438 - Single inference for Marketing Managers, duration: 0:00:36.617208
+llama3.3-prompt1-3:  60%|██████    | 3/5 [00:36<00:19,  9.79s/it]2025-04-27 19:05:53,231 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:42.419755
+llama3.3-prompt1-3:  80%|████████  | 4/5 [00:42<00:08,  8.41s/it]2025-04-27 19:05:56,752 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:45.922937
+llama3.3-prompt1-3: 100%|██████████| 5/5 [00:45<00:00,  6.79s/it]llama3.3-prompt1-3: 100%|██████████| 5/5 [00:45<00:00,  9.20s/it]
+2025-04-27 19:05:56,805 - Multiprocessing for llama3.3-prompt1-3, duration: 0:00:46.089409
+llama3.3-prompt1-4:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:05:57,134 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:57,337 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:57,351 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:57,365 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:05:57,379 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:06:28,481 - Single inference for Business Intelligence Analysts, duration: 0:00:31.551875
+llama3.3-prompt1-4:  20%|██        | 1/5 [00:31<02:06, 31.63s/it]2025-04-27 19:06:29,174 - Single inference for Marketing Managers, duration: 0:00:32.255595
+llama3.3-prompt1-4:  40%|████      | 2/5 [00:32<00:40, 13.44s/it]2025-04-27 19:06:34,756 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:37.849803
+llama3.3-prompt1-4:  60%|██████    | 3/5 [00:37<00:19,  9.85s/it]2025-04-27 19:06:37,361 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:40.424243
+llama3.3-prompt1-4:  80%|████████  | 4/5 [00:40<00:06,  6.99s/it]2025-04-27 19:06:38,946 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:42.041944
+llama3.3-prompt1-4: 100%|██████████| 5/5 [00:42<00:00,  5.04s/it]llama3.3-prompt1-4: 100%|██████████| 5/5 [00:42<00:00,  8.42s/it]
+2025-04-27 19:06:39,003 - Multiprocessing for llama3.3-prompt1-4, duration: 0:00:42.194976
+llama3.3-prompt1-5:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:06:39,328 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:06:39,517 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:06:39,530 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:06:39,551 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:06:39,562 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:06,846 - Single inference for Marketing Managers, duration: 0:00:27.699897
+llama3.3-prompt1-5:  20%|██        | 1/5 [00:27<01:51, 27.80s/it]2025-04-27 19:07:11,113 - Single inference for Business Intelligence Analysts, duration: 0:00:31.979256
+llama3.3-prompt1-5:  40%|████      | 2/5 [00:32<00:41, 13.95s/it]2025-04-27 19:07:11,439 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:32.326916
+llama3.3-prompt1-5:  60%|██████    | 3/5 [00:32<00:15,  7.73s/it]2025-04-27 19:07:14,289 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:35.179312
+llama3.3-prompt1-5:  80%|████████  | 4/5 [00:35<00:05,  5.81s/it]2025-04-27 19:07:19,393 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:40.264873
+llama3.3-prompt1-5: 100%|██████████| 5/5 [00:40<00:00,  5.55s/it]llama3.3-prompt1-5: 100%|██████████| 5/5 [00:40<00:00,  8.07s/it]
+2025-04-27 19:07:19,446 - Multiprocessing for llama3.3-prompt1-5, duration: 0:00:40.440782
+llama3.3-prompt1-6:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:07:19,790 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:19,945 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:19,958 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:19,974 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:19,987 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:07:47,292 - Single inference for Marketing Managers, duration: 0:00:27.737560
+llama3.3-prompt1-6:  20%|██        | 1/5 [00:27<01:51, 27.81s/it]2025-04-27 19:07:52,250 - Single inference for Business Intelligence Analysts, duration: 0:00:32.682172
+llama3.3-prompt1-6:  40%|████      | 2/5 [00:32<00:43, 14.37s/it]2025-04-27 19:07:54,456 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:34.926110
+llama3.3-prompt1-6:  60%|██████    | 3/5 [00:34<00:17,  8.81s/it]2025-04-27 19:07:56,666 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:37.124600
+llama3.3-prompt1-6:  80%|████████  | 4/5 [00:37<00:06,  6.21s/it]2025-04-27 19:07:59,615 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:40.053886
+llama3.3-prompt1-6: 100%|██████████| 5/5 [00:40<00:00,  5.03s/it]llama3.3-prompt1-6: 100%|██████████| 5/5 [00:40<00:00,  8.03s/it]
+2025-04-27 19:07:59,665 - Multiprocessing for llama3.3-prompt1-6, duration: 0:00:40.216542
+llama3.3-prompt1-7:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:07:59,957 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:00,162 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:00,175 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:00,192 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:00,205 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:30,058 - Single inference for Business Intelligence Analysts, duration: 0:00:30.280126
+llama3.3-prompt1-7:  20%|██        | 1/5 [00:30<02:01, 30.37s/it]2025-04-27 19:08:35,526 - Single inference for Marketing Managers, duration: 0:00:35.754770
+llama3.3-prompt1-7:  40%|████      | 2/5 [00:35<00:47, 15.72s/it]2025-04-27 19:08:37,409 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:37.651017
+llama3.3-prompt1-7:  60%|██████    | 3/5 [00:37<00:18,  9.40s/it]2025-04-27 19:08:41,063 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:41.299442
+llama3.3-prompt1-7:  80%|████████  | 4/5 [00:41<00:07,  7.13s/it]2025-04-27 19:08:47,147 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:47.361111
+llama3.3-prompt1-7: 100%|██████████| 5/5 [00:47<00:00,  6.75s/it]llama3.3-prompt1-7: 100%|██████████| 5/5 [00:47<00:00,  9.49s/it]
+2025-04-27 19:08:47,197 - Multiprocessing for llama3.3-prompt1-7, duration: 0:00:47.529414
+llama3.3-prompt1-8:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:08:47,517 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:47,699 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:47,712 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:47,726 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:08:47,741 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:21,825 - Single inference for Business Intelligence Analysts, duration: 0:00:34.522719
+llama3.3-prompt1-8:  20%|██        | 1/5 [00:34<02:18, 34.59s/it]2025-04-27 19:09:22,150 - Single inference for Marketing Managers, duration: 0:00:34.860711
+llama3.3-prompt1-8:  40%|████      | 2/5 [00:34<00:43, 14.43s/it]2025-04-27 19:09:27,983 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:40.670642
+llama3.3-prompt1-8:  60%|██████    | 3/5 [00:40<00:21, 10.51s/it]2025-04-27 19:09:28,330 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:41.025681
+llama3.3-prompt1-8:  80%|████████  | 4/5 [00:41<00:06,  6.50s/it]2025-04-27 19:09:29,417 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:42.097020
+llama3.3-prompt1-8: 100%|██████████| 5/5 [00:42<00:00,  4.54s/it]llama3.3-prompt1-8: 100%|██████████| 5/5 [00:42<00:00,  8.44s/it]
+2025-04-27 19:09:29,465 - Multiprocessing for llama3.3-prompt1-8, duration: 0:00:42.265261
+llama3.3-prompt1-9:   0%|          | 0/5 [00:00<?, ?it/s]2025-04-27 19:09:29,722 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:30,006 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:30,021 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:30,037 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:09:30,051 - HTTP Request: POST http://127.0.0.1:11893/api/chat "HTTP/1.1 200 OK"
+2025-04-27 19:10:01,729 - Single inference for Business Intelligence Analysts, duration: 0:00:32.128312
+llama3.3-prompt1-9:  20%|██        | 1/5 [00:32<02:08, 32.23s/it]2025-04-27 19:10:03,122 - Single inference for Marketing Managers, duration: 0:00:33.538888
+llama3.3-prompt1-9:  40%|████      | 2/5 [00:33<00:42, 14.09s/it]2025-04-27 19:10:06,253 - Single inference for Farmworkers, Farm, Ranch, and Aquacultural Animals, duration: 0:00:36.715313
+llama3.3-prompt1-9:  60%|██████    | 3/5 [00:36<00:18,  9.09s/it]2025-04-27 19:10:09,056 - Single inference for Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders, duration: 0:00:39.467904
+llama3.3-prompt1-9:  80%|████████  | 4/5 [00:39<00:06,  6.61s/it]2025-04-27 19:10:11,763 - Single inference for Heating, Air Conditioning, and Refrigeration Mechanics and Installers, duration: 0:00:42.183197
+llama3.3-prompt1-9: 100%|██████████| 5/5 [00:42<00:00,  5.20s/it]llama3.3-prompt1-9: 100%|██████████| 5/5 [00:42<00:00,  8.45s/it]
+2025-04-27 19:10:11,818 - Multiprocessing for llama3.3-prompt1-9, duration: 0:00:42.350344
+2025-04-27 19:10:11,829 - Wrote results JSON for llama3.3-prompt1, duration: 0:00:00.007491
+2025-04-27 19:10:11,829 - Script completed
