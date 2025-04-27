@@ -23,7 +23,7 @@ conda activate mythesis
 PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 export OLLAMA_DEBUG=true
 export OLLAMA_KEEP_ALIVE="4h"
-export OLLAMA_NUM_PARALLEL=1    # Max parallelism
+export OLLAMA_NUM_PARALLEL=8    # Max parallelism
 export OLLAMA_MAX_QUEUE=128
 export OLLAMA_CTX_SIZE=16384
 

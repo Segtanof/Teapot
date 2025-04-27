@@ -35,7 +35,7 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-sampled_occupation = sampled_occupation.iloc[600:700]
+sampled_occupation = sampled_occupation.iloc[800:]
 
 #for trial
 # trial_df = sampled_occupation#.sample(3, random_state= 1)

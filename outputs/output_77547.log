@@ -1,0 +1,15 @@
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n076
+Job ID: 77547
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:01
+CPU Efficiency: 1.56% of 00:01:04 core-walltime
+Job Wall-clock time: 00:00:32
+Memory Utilized: 30.63 MB
+Memory Efficiency: 0.07% of 40.00 GB (40.00 GB/node)

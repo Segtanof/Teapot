@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=lo
+#SBATCH --job-name=800n
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=2     
