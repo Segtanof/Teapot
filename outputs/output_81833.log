@@ -23,3 +23,18 @@ Mon Apr 28 00:43:44 2025
 Mem:           503Gi        58Gi       403Gi       656Mi        50Gi       444Gi
 Swap:           14Gi        15Mi        14Gi
 folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n909
+Job ID: 81833
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:03:39
+CPU Efficiency: 3.21% of 01:53:52 core-walltime
+Job Wall-clock time: 00:56:56
+Memory Utilized: 4.42 GB
+Memory Efficiency: 110.51% of 4.00 GB (4.00 GB/node)
