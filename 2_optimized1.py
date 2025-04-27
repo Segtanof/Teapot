@@ -35,7 +35,7 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-sampled_occupation = sampled_occupation.iloc[600:700]
+sampled_occupation = sampled_occupation.iloc[[100,200,300,400,500]]
 
 
 #for trial
@@ -85,7 +85,7 @@ model_configs = [
 ]
 prompts = {
     "no_prompt": None,
-    # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
+    "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
 }
 
 logging.info("Script started")

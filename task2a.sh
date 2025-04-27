@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=misp
+#SBATCH --job-name=llqo
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=4     
