@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=d200
+#SBATCH --job-name=2-400
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=2     
