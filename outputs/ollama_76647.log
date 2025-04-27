@@ -1,0 +1,948 @@
+2025/04/27 14:35:14 routes.go:1186: INFO server config env="map[CUDA_VISIBLE_DEVICES:0 GPU_DEVICE_ORDINAL:0 HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:true OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:12081 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:4h0m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/home/ma/ma_ma/ma_ssiu/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:8 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:0 http_proxy: https_proxy: no_proxy:]"
+time=2025-04-27T14:35:14.218+02:00 level=INFO source=images.go:432 msg="total blobs: 26"
+time=2025-04-27T14:35:14.221+02:00 level=INFO source=images.go:439 msg="total unused blobs removed: 0"
+time=2025-04-27T14:35:14.225+02:00 level=INFO source=routes.go:1237 msg="Listening on 127.0.0.1:12081 (version 0.5.11)"
+time=2025-04-27T14:35:14.225+02:00 level=DEBUG source=sched.go:105 msg="starting llm scheduler"
+time=2025-04-27T14:35:14.225+02:00 level=INFO source=gpu.go:217 msg="looking for compatible GPUs"
+time=2025-04-27T14:35:14.234+02:00 level=DEBUG source=gpu.go:98 msg="searching for GPU discovery libraries for NVIDIA"
+time=2025-04-27T14:35:14.234+02:00 level=DEBUG source=gpu.go:501 msg="Searching for GPU library" name=libcuda.so*
+time=2025-04-27T14:35:14.234+02:00 level=DEBUG source=gpu.go:525 msg="gpu library search" globs="[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /usr/local/cuda*/targets/*/lib/libcuda.so* /usr/lib/*-linux-gnu/nvidia/current/libcuda.so* /usr/lib/*-linux-gnu/libcuda.so* /usr/lib/wsl/lib/libcuda.so* /usr/lib/wsl/drivers/*/libcuda.so* /opt/cuda/lib*/libcuda.so* /usr/local/cuda/lib*/libcuda.so* /usr/lib*/libcuda.so* /usr/local/lib*/libcuda.so*]"
+time=2025-04-27T14:35:14.237+02:00 level=DEBUG source=gpu.go:558 msg="discovered GPU libraries" paths="[/usr/lib/libcuda.so.570.86.15 /usr/lib64/libcuda.so.570.86.15]"
+initializing /usr/lib/libcuda.so.570.86.15
+library /usr/lib/libcuda.so.570.86.15 load err: /usr/lib/libcuda.so.570.86.15: wrong ELF class: ELFCLASS32
+time=2025-04-27T14:35:14.237+02:00 level=DEBUG source=gpu.go:609 msg="skipping 32bit library" library=/usr/lib/libcuda.so.570.86.15
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x14bb53d0de00
+dlsym: cuDriverGetVersion - 0x14bb53d0de20
+dlsym: cuDeviceGetCount - 0x14bb53d0de60
+dlsym: cuDeviceGet - 0x14bb53d0de40
+dlsym: cuDeviceGetAttribute - 0x14bb53d0df40
+dlsym: cuDeviceGetUuid - 0x14bb53d0dea0
+dlsym: cuDeviceGetName - 0x14bb53d0de80
+dlsym: cuCtxCreate_v3 - 0x14bb53d0e120
+dlsym: cuMemGetInfo_v2 - 0x14bb53d0e8a0
+dlsym: cuCtxDestroy - 0x14bb53d6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T14:35:15.166+02:00 level=DEBUG source=gpu.go:125 msg="detected GPUs" count=1 library=/usr/lib64/libcuda.so.570.86.15
+[GPU-031f3556-82e0-6baa-ee92-e3d307b835ae] CUDA totalMem 95330 mb
+[GPU-031f3556-82e0-6baa-ee92-e3d307b835ae] CUDA freeMem 94777 mb
+[GPU-031f3556-82e0-6baa-ee92-e3d307b835ae] Compute Capability 9.0
+time=2025-04-27T14:35:15.434+02:00 level=DEBUG source=amd_linux.go:419 msg="amdgpu driver not detected /sys/module/amdgpu"
+releasing cuda driver library
+time=2025-04-27T14:35:15.434+02:00 level=INFO source=types.go:130 msg="inference compute" id=GPU-031f3556-82e0-6baa-ee92-e3d307b835ae library=cuda variant=v12 compute=9.0 driver=12.8 name="NVIDIA H100" total="93.1 GiB" available="92.6 GiB"
+time=2025-04-27T14:36:36.974+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="755.6 GiB" before.free="731.3 GiB" before.free_swap="3.5 GiB" now.total="755.6 GiB" now.free="729.6 GiB" now.free_swap="3.5 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x14bb53d0de00
+dlsym: cuDriverGetVersion - 0x14bb53d0de20
+dlsym: cuDeviceGetCount - 0x14bb53d0de60
+dlsym: cuDeviceGet - 0x14bb53d0de40
+dlsym: cuDeviceGetAttribute - 0x14bb53d0df40
+dlsym: cuDeviceGetUuid - 0x14bb53d0dea0
+dlsym: cuDeviceGetName - 0x14bb53d0de80
+dlsym: cuCtxCreate_v3 - 0x14bb53d0e120
+dlsym: cuMemGetInfo_v2 - 0x14bb53d0e8a0
+dlsym: cuCtxDestroy - 0x14bb53d6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T14:36:37.225+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-031f3556-82e0-6baa-ee92-e3d307b835ae name="NVIDIA H100" overhead="0 B" before.total="93.1 GiB" before.free="92.6 GiB" now.total="93.1 GiB" now.free="92.6 GiB" now.used="552.6 MiB"
+releasing cuda driver library
+time=2025-04-27T14:36:37.226+02:00 level=DEBUG source=sched.go:181 msg="updating default concurrency" OLLAMA_MAX_LOADED_MODELS=0x561810d66b40 gpu_count=1
+time=2025-04-27T14:36:37.258+02:00 level=DEBUG source=sched.go:224 msg="loading first model" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:36:37.258+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[92.6 GiB]"
+time=2025-04-27T14:36:37.259+02:00 level=INFO source=sched.go:714 msg="new model will fit in available VRAM in single GPU, loading" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d gpu=GPU-031f3556-82e0-6baa-ee92-e3d307b835ae parallel=8 available=99381805056 required="47.2 GiB"
+time=2025-04-27T14:36:37.259+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="755.6 GiB" before.free="729.6 GiB" before.free_swap="3.5 GiB" now.total="755.6 GiB" now.free="729.6 GiB" now.free_swap="3.5 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x14bb53d0de00
+dlsym: cuDriverGetVersion - 0x14bb53d0de20
+dlsym: cuDeviceGetCount - 0x14bb53d0de60
+dlsym: cuDeviceGet - 0x14bb53d0de40
+dlsym: cuDeviceGetAttribute - 0x14bb53d0df40
+dlsym: cuDeviceGetUuid - 0x14bb53d0dea0
+dlsym: cuDeviceGetName - 0x14bb53d0de80
+dlsym: cuCtxCreate_v3 - 0x14bb53d0e120
+dlsym: cuMemGetInfo_v2 - 0x14bb53d0e8a0
+dlsym: cuCtxDestroy - 0x14bb53d6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T14:36:37.520+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-031f3556-82e0-6baa-ee92-e3d307b835ae name="NVIDIA H100" overhead="0 B" before.total="93.1 GiB" before.free="92.6 GiB" now.total="93.1 GiB" now.free="92.6 GiB" now.used="552.6 MiB"
+releasing cuda driver library
+time=2025-04-27T14:36:37.520+02:00 level=INFO source=server.go:100 msg="system memory" total="755.6 GiB" free="729.6 GiB" free_swap="3.5 GiB"
+time=2025-04-27T14:36:37.520+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[92.6 GiB]"
+time=2025-04-27T14:36:37.520+02:00 level=INFO source=memory.go:356 msg="offload to cuda" layers.requested=-1 layers.model=81 layers.offload=81 layers.split="" memory.available="[92.6 GiB]" memory.gpu_overhead="0 B" memory.required.full="47.2 GiB" memory.required.partial="47.2 GiB" memory.required.kv="5.0 GiB" memory.required.allocations="[47.2 GiB]" memory.weights.total="43.2 GiB" memory.weights.repeating="42.4 GiB" memory.weights.nonrepeating="822.0 MiB" memory.graph.full="2.1 GiB" memory.graph.partial="2.2 GiB"
+time=2025-04-27T14:36:37.521+02:00 level=DEBUG source=server.go:262 msg="compatible gpu libraries" compatible="[cuda_v12 cuda_v11]"
+time=2025-04-27T14:36:37.522+02:00 level=DEBUG source=server.go:302 msg="adding gpu library" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-27T14:36:37.522+02:00 level=DEBUG source=server.go:310 msg="adding gpu dependency paths" paths=[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12]
+time=2025-04-27T14:36:37.522+02:00 level=INFO source=server.go:380 msg="starting llama server" cmd="/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/bin/ollama runner --model /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d --ctx-size 16384 --batch-size 512 --n-gpu-layers 81 --verbose --threads 96 --parallel 8 --port 45757"
+time=2025-04-27T14:36:37.522+02:00 level=DEBUG source=server.go:398 msg=subprocess environment="[ROCR_VISIBLE_DEVICES=0 CUDA_VISIBLE_DEVICES=GPU-031f3556-82e0-6baa-ee92-e3d307b835ae GPU_DEVICE_ORDINAL=0 LD_LIBRARY_PATH=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama PATH=/pfs/work9/workspace/scratch/ma_ssiu-thesis/.conda/envs/mythesis/bin:/opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/condabin:/opt/bwhpc/common/cs/ollama/0.5.11/bin:/software/all/bin:/pfs/data6/home/ma/ma_ma/ma_ssiu/.vscode-server/cli/servers/Stable-17baf841131aa23349f217ca7c570c76ee87b957/server/bin/remote-cli:/home/ma/ma_ma/ma_ssiu/.local/bin:/home/ma/ma_ma/ma_ssiu/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ma/ma_ma/ma_ssiu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand]"
+time=2025-04-27T14:36:37.523+02:00 level=INFO source=sched.go:449 msg="loaded runners" count=1
+time=2025-04-27T14:36:37.523+02:00 level=INFO source=server.go:557 msg="waiting for llama runner to start responding"
+time=2025-04-27T14:36:37.523+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server error"
+time=2025-04-27T14:36:37.550+02:00 level=INFO source=runner.go:936 msg="starting go runner"
+time=2025-04-27T14:36:37.550+02:00 level=INFO source=runner.go:937 msg=system info="CPU : LLAMAFILE = 1 | CPU : LLAMAFILE = 1 | cgo(gcc)" threads=96
+time=2025-04-27T14:36:37.550+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-27T14:36:37.550+02:00 level=INFO source=runner.go:995 msg="Server listening on 127.0.0.1:45757"
+time=2025-04-27T14:36:37.962+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server loading model"
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA H100, compute capability 9.0, VMM: yes
+load_backend: loaded CUDA backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12/libggml-cuda.so
+time=2025-04-27T14:36:38.606+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+time=2025-04-27T14:36:38.656+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+llama_load_model_from_file: using device CUDA0 (NVIDIA H100) - 94777 MiB free
+llama_model_loader: loaded meta data with 36 key-value pairs and 724 tensors from /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Llama 3.1 70B Instruct 2024 12
+llama_model_loader: - kv   3:                            general.version str              = 2024-12
+llama_model_loader: - kv   4:                           general.finetune str              = Instruct
+llama_model_loader: - kv   5:                           general.basename str              = Llama-3.1
+llama_model_loader: - kv   6:                         general.size_label str              = 70B
+llama_model_loader: - kv   7:                            general.license str              = llama3.1
+llama_model_loader: - kv   8:                   general.base_model.count u32              = 1
+llama_model_loader: - kv   9:                  general.base_model.0.name str              = Llama 3.1 70B
+llama_model_loader: - kv  10:          general.base_model.0.organization str              = Meta Llama
+llama_model_loader: - kv  11:              general.base_model.0.repo_url str              = https://huggingface.co/meta-llama/Lla...
+llama_model_loader: - kv  12:                               general.tags arr[str,5]       = ["facebook", "meta", "pytorch", "llam...
+llama_model_loader: - kv  13:                          general.languages arr[str,7]       = ["fr", "it", "pt", "hi", "es", "th", ...
+llama_model_loader: - kv  14:                          llama.block_count u32              = 80
+llama_model_loader: - kv  15:                       llama.context_length u32              = 131072
+llama_model_loader: - kv  16:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv  17:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv  18:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv  19:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  20:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv  21:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  22:                 llama.attention.key_length u32              = 128
+llama_model_loader: - kv  23:               llama.attention.value_length u32              = 128
+llama_model_loader: - kv  24:                          general.file_type u32              = 15
+llama_model_loader: - kv  25:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  26:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  27:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  28:                         tokenizer.ggml.pre str              = llama-bpe
+llama_model_loader: - kv  29:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  30:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  31:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  32:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  33:                tokenizer.ggml.eos_token_id u32              = 128009
+llama_model_loader: - kv  34:                    tokenizer.chat_template str              = {{- bos_token }}\n{%- if custom_tools ...
+llama_model_loader: - kv  35:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  162 tensors
+llama_model_loader: - type q4_K:  441 tensors
+llama_model_loader: - type q5_K:   40 tensors
+llama_model_loader: - type q6_K:   81 tensors
+llm_load_vocab: control token: 128254 '<|reserved_special_token_246|>' is not marked as EOG
+llm_load_vocab: control token: 128249 '<|reserved_special_token_241|>' is not marked as EOG
+llm_load_vocab: control token: 128246 '<|reserved_special_token_238|>' is not marked as EOG
+llm_load_vocab: control token: 128243 '<|reserved_special_token_235|>' is not marked as EOG
+llm_load_vocab: control token: 128242 '<|reserved_special_token_234|>' is not marked as EOG
+llm_load_vocab: control token: 128241 '<|reserved_special_token_233|>' is not marked as EOG
+llm_load_vocab: control token: 128240 '<|reserved_special_token_232|>' is not marked as EOG
+llm_load_vocab: control token: 128235 '<|reserved_special_token_227|>' is not marked as EOG
+llm_load_vocab: control token: 128231 '<|reserved_special_token_223|>' is not marked as EOG
+llm_load_vocab: control token: 128230 '<|reserved_special_token_222|>' is not marked as EOG
+llm_load_vocab: control token: 128228 '<|reserved_special_token_220|>' is not marked as EOG
+llm_load_vocab: control token: 128225 '<|reserved_special_token_217|>' is not marked as EOG
+llm_load_vocab: control token: 128218 '<|reserved_special_token_210|>' is not marked as EOG
+llm_load_vocab: control token: 128214 '<|reserved_special_token_206|>' is not marked as EOG
+llm_load_vocab: control token: 128213 '<|reserved_special_token_205|>' is not marked as EOG
+llm_load_vocab: control token: 128207 '<|reserved_special_token_199|>' is not marked as EOG
+llm_load_vocab: control token: 128206 '<|reserved_special_token_198|>' is not marked as EOG
+llm_load_vocab: control token: 128204 '<|reserved_special_token_196|>' is not marked as EOG
+llm_load_vocab: control token: 128200 '<|reserved_special_token_192|>' is not marked as EOG
+llm_load_vocab: control token: 128199 '<|reserved_special_token_191|>' is not marked as EOG
+llm_load_vocab: control token: 128198 '<|reserved_special_token_190|>' is not marked as EOG
+llm_load_vocab: control token: 128196 '<|reserved_special_token_188|>' is not marked as EOG
+llm_load_vocab: control token: 128194 '<|reserved_special_token_186|>' is not marked as EOG
+llm_load_vocab: control token: 128193 '<|reserved_special_token_185|>' is not marked as EOG
+llm_load_vocab: control token: 128188 '<|reserved_special_token_180|>' is not marked as EOG
+llm_load_vocab: control token: 128187 '<|reserved_special_token_179|>' is not marked as EOG
+llm_load_vocab: control token: 128185 '<|reserved_special_token_177|>' is not marked as EOG
+llm_load_vocab: control token: 128184 '<|reserved_special_token_176|>' is not marked as EOG
+llm_load_vocab: control token: 128180 '<|reserved_special_token_172|>' is not marked as EOG
+llm_load_vocab: control token: 128179 '<|reserved_special_token_171|>' is not marked as EOG
+llm_load_vocab: control token: 128178 '<|reserved_special_token_170|>' is not marked as EOG
+llm_load_vocab: control token: 128177 '<|reserved_special_token_169|>' is not marked as EOG
+llm_load_vocab: control token: 128176 '<|reserved_special_token_168|>' is not marked as EOG
+llm_load_vocab: control token: 128175 '<|reserved_special_token_167|>' is not marked as EOG
+llm_load_vocab: control token: 128171 '<|reserved_special_token_163|>' is not marked as EOG
+llm_load_vocab: control token: 128170 '<|reserved_special_token_162|>' is not marked as EOG
+llm_load_vocab: control token: 128169 '<|reserved_special_token_161|>' is not marked as EOG
+llm_load_vocab: control token: 128168 '<|reserved_special_token_160|>' is not marked as EOG
+llm_load_vocab: control token: 128165 '<|reserved_special_token_157|>' is not marked as EOG
+llm_load_vocab: control token: 128162 '<|reserved_special_token_154|>' is not marked as EOG
+llm_load_vocab: control token: 128158 '<|reserved_special_token_150|>' is not marked as EOG
+llm_load_vocab: control token: 128156 '<|reserved_special_token_148|>' is not marked as EOG
+llm_load_vocab: control token: 128155 '<|reserved_special_token_147|>' is not marked as EOG
+llm_load_vocab: control token: 128154 '<|reserved_special_token_146|>' is not marked as EOG
+llm_load_vocab: control token: 128151 '<|reserved_special_token_143|>' is not marked as EOG
+llm_load_vocab: control token: 128149 '<|reserved_special_token_141|>' is not marked as EOG
+llm_load_vocab: control token: 128147 '<|reserved_special_token_139|>' is not marked as EOG
+llm_load_vocab: control token: 128146 '<|reserved_special_token_138|>' is not marked as EOG
+llm_load_vocab: control token: 128144 '<|reserved_special_token_136|>' is not marked as EOG
+llm_load_vocab: control token: 128142 '<|reserved_special_token_134|>' is not marked as EOG
+llm_load_vocab: control token: 128141 '<|reserved_special_token_133|>' is not marked as EOG
+llm_load_vocab: control token: 128138 '<|reserved_special_token_130|>' is not marked as EOG
+llm_load_vocab: control token: 128136 '<|reserved_special_token_128|>' is not marked as EOG
+llm_load_vocab: control token: 128135 '<|reserved_special_token_127|>' is not marked as EOG
+llm_load_vocab: control token: 128134 '<|reserved_special_token_126|>' is not marked as EOG
+llm_load_vocab: control token: 128133 '<|reserved_special_token_125|>' is not marked as EOG
+llm_load_vocab: control token: 128131 '<|reserved_special_token_123|>' is not marked as EOG
+llm_load_vocab: control token: 128128 '<|reserved_special_token_120|>' is not marked as EOG
+llm_load_vocab: control token: 128124 '<|reserved_special_token_116|>' is not marked as EOG
+llm_load_vocab: control token: 128123 '<|reserved_special_token_115|>' is not marked as EOG
+llm_load_vocab: control token: 128122 '<|reserved_special_token_114|>' is not marked as EOG
+llm_load_vocab: control token: 128119 '<|reserved_special_token_111|>' is not marked as EOG
+llm_load_vocab: control token: 128115 '<|reserved_special_token_107|>' is not marked as EOG
+llm_load_vocab: control token: 128112 '<|reserved_special_token_104|>' is not marked as EOG
+llm_load_vocab: control token: 128110 '<|reserved_special_token_102|>' is not marked as EOG
+llm_load_vocab: control token: 128109 '<|reserved_special_token_101|>' is not marked as EOG
+llm_load_vocab: control token: 128108 '<|reserved_special_token_100|>' is not marked as EOG
+llm_load_vocab: control token: 128106 '<|reserved_special_token_98|>' is not marked as EOG
+llm_load_vocab: control token: 128103 '<|reserved_special_token_95|>' is not marked as EOG
+llm_load_vocab: control token: 128102 '<|reserved_special_token_94|>' is not marked as EOG
+llm_load_vocab: control token: 128101 '<|reserved_special_token_93|>' is not marked as EOG
+llm_load_vocab: control token: 128097 '<|reserved_special_token_89|>' is not marked as EOG
+llm_load_vocab: control token: 128091 '<|reserved_special_token_83|>' is not marked as EOG
+llm_load_vocab: control token: 128090 '<|reserved_special_token_82|>' is not marked as EOG
+llm_load_vocab: control token: 128089 '<|reserved_special_token_81|>' is not marked as EOG
+llm_load_vocab: control token: 128087 '<|reserved_special_token_79|>' is not marked as EOG
+llm_load_vocab: control token: 128085 '<|reserved_special_token_77|>' is not marked as EOG
+llm_load_vocab: control token: 128081 '<|reserved_special_token_73|>' is not marked as EOG
+llm_load_vocab: control token: 128078 '<|reserved_special_token_70|>' is not marked as EOG
+llm_load_vocab: control token: 128076 '<|reserved_special_token_68|>' is not marked as EOG
+llm_load_vocab: control token: 128075 '<|reserved_special_token_67|>' is not marked as EOG
+llm_load_vocab: control token: 128073 '<|reserved_special_token_65|>' is not marked as EOG
+llm_load_vocab: control token: 128068 '<|reserved_special_token_60|>' is not marked as EOG
+llm_load_vocab: control token: 128067 '<|reserved_special_token_59|>' is not marked as EOG
+llm_load_vocab: control token: 128065 '<|reserved_special_token_57|>' is not marked as EOG
+llm_load_vocab: control token: 128063 '<|reserved_special_token_55|>' is not marked as EOG
+llm_load_vocab: control token: 128062 '<|reserved_special_token_54|>' is not marked as EOG
+llm_load_vocab: control token: 128060 '<|reserved_special_token_52|>' is not marked as EOG
+llm_load_vocab: control token: 128059 '<|reserved_special_token_51|>' is not marked as EOG
+llm_load_vocab: control token: 128057 '<|reserved_special_token_49|>' is not marked as EOG
+llm_load_vocab: control token: 128054 '<|reserved_special_token_46|>' is not marked as EOG
+llm_load_vocab: control token: 128046 '<|reserved_special_token_38|>' is not marked as EOG
+llm_load_vocab: control token: 128045 '<|reserved_special_token_37|>' is not marked as EOG
+llm_load_vocab: control token: 128044 '<|reserved_special_token_36|>' is not marked as EOG
+llm_load_vocab: control token: 128043 '<|reserved_special_token_35|>' is not marked as EOG
+llm_load_vocab: control token: 128038 '<|reserved_special_token_30|>' is not marked as EOG
+llm_load_vocab: control token: 128036 '<|reserved_special_token_28|>' is not marked as EOG
+llm_load_vocab: control token: 128035 '<|reserved_special_token_27|>' is not marked as EOG
+llm_load_vocab: control token: 128032 '<|reserved_special_token_24|>' is not marked as EOG
+llm_load_vocab: control token: 128028 '<|reserved_special_token_20|>' is not marked as EOG
+llm_load_vocab: control token: 128027 '<|reserved_special_token_19|>' is not marked as EOG
+llm_load_vocab: control token: 128024 '<|reserved_special_token_16|>' is not marked as EOG
+llm_load_vocab: control token: 128023 '<|reserved_special_token_15|>' is not marked as EOG
+llm_load_vocab: control token: 128022 '<|reserved_special_token_14|>' is not marked as EOG
+llm_load_vocab: control token: 128021 '<|reserved_special_token_13|>' is not marked as EOG
+llm_load_vocab: control token: 128018 '<|reserved_special_token_10|>' is not marked as EOG
+llm_load_vocab: control token: 128016 '<|reserved_special_token_8|>' is not marked as EOG
+llm_load_vocab: control token: 128015 '<|reserved_special_token_7|>' is not marked as EOG
+llm_load_vocab: control token: 128013 '<|reserved_special_token_5|>' is not marked as EOG
+llm_load_vocab: control token: 128011 '<|reserved_special_token_3|>' is not marked as EOG
+llm_load_vocab: control token: 128005 '<|reserved_special_token_2|>' is not marked as EOG
+llm_load_vocab: control token: 128004 '<|finetune_right_pad_id|>' is not marked as EOG
+llm_load_vocab: control token: 128002 '<|reserved_special_token_0|>' is not marked as EOG
+llm_load_vocab: control token: 128252 '<|reserved_special_token_244|>' is not marked as EOG
+llm_load_vocab: control token: 128190 '<|reserved_special_token_182|>' is not marked as EOG
+llm_load_vocab: control token: 128183 '<|reserved_special_token_175|>' is not marked as EOG
+llm_load_vocab: control token: 128137 '<|reserved_special_token_129|>' is not marked as EOG
+llm_load_vocab: control token: 128182 '<|reserved_special_token_174|>' is not marked as EOG
+llm_load_vocab: control token: 128040 '<|reserved_special_token_32|>' is not marked as EOG
+llm_load_vocab: control token: 128048 '<|reserved_special_token_40|>' is not marked as EOG
+llm_load_vocab: control token: 128092 '<|reserved_special_token_84|>' is not marked as EOG
+llm_load_vocab: control token: 128215 '<|reserved_special_token_207|>' is not marked as EOG
+llm_load_vocab: control token: 128107 '<|reserved_special_token_99|>' is not marked as EOG
+llm_load_vocab: control token: 128208 '<|reserved_special_token_200|>' is not marked as EOG
+llm_load_vocab: control token: 128145 '<|reserved_special_token_137|>' is not marked as EOG
+llm_load_vocab: control token: 128031 '<|reserved_special_token_23|>' is not marked as EOG
+llm_load_vocab: control token: 128129 '<|reserved_special_token_121|>' is not marked as EOG
+llm_load_vocab: control token: 128201 '<|reserved_special_token_193|>' is not marked as EOG
+llm_load_vocab: control token: 128074 '<|reserved_special_token_66|>' is not marked as EOG
+llm_load_vocab: control token: 128095 '<|reserved_special_token_87|>' is not marked as EOG
+llm_load_vocab: control token: 128186 '<|reserved_special_token_178|>' is not marked as EOG
+llm_load_vocab: control token: 128143 '<|reserved_special_token_135|>' is not marked as EOG
+llm_load_vocab: control token: 128229 '<|reserved_special_token_221|>' is not marked as EOG
+llm_load_vocab: control token: 128007 '<|end_header_id|>' is not marked as EOG
+llm_load_vocab: control token: 128055 '<|reserved_special_token_47|>' is not marked as EOG
+llm_load_vocab: control token: 128056 '<|reserved_special_token_48|>' is not marked as EOG
+llm_load_vocab: control token: 128061 '<|reserved_special_token_53|>' is not marked as EOG
+llm_load_vocab: control token: 128153 '<|reserved_special_token_145|>' is not marked as EOG
+llm_load_vocab: control token: 128152 '<|reserved_special_token_144|>' is not marked as EOG
+llm_load_vocab: control token: 128212 '<|reserved_special_token_204|>' is not marked as EOG
+llm_load_vocab: control token: 128172 '<|reserved_special_token_164|>' is not marked as EOG
+llm_load_vocab: control token: 128160 '<|reserved_special_token_152|>' is not marked as EOG
+llm_load_vocab: control token: 128041 '<|reserved_special_token_33|>' is not marked as EOG
+llm_load_vocab: control token: 128181 '<|reserved_special_token_173|>' is not marked as EOG
+llm_load_vocab: control token: 128094 '<|reserved_special_token_86|>' is not marked as EOG
+llm_load_vocab: control token: 128118 '<|reserved_special_token_110|>' is not marked as EOG
+llm_load_vocab: control token: 128236 '<|reserved_special_token_228|>' is not marked as EOG
+llm_load_vocab: control token: 128148 '<|reserved_special_token_140|>' is not marked as EOG
+llm_load_vocab: control token: 128042 '<|reserved_special_token_34|>' is not marked as EOG
+llm_load_vocab: control token: 128139 '<|reserved_special_token_131|>' is not marked as EOG
+llm_load_vocab: control token: 128173 '<|reserved_special_token_165|>' is not marked as EOG
+llm_load_vocab: control token: 128239 '<|reserved_special_token_231|>' is not marked as EOG
+llm_load_vocab: control token: 128157 '<|reserved_special_token_149|>' is not marked as EOG
+llm_load_vocab: control token: 128052 '<|reserved_special_token_44|>' is not marked as EOG
+llm_load_vocab: control token: 128026 '<|reserved_special_token_18|>' is not marked as EOG
+llm_load_vocab: control token: 128003 '<|reserved_special_token_1|>' is not marked as EOG
+llm_load_vocab: control token: 128019 '<|reserved_special_token_11|>' is not marked as EOG
+llm_load_vocab: control token: 128116 '<|reserved_special_token_108|>' is not marked as EOG
+llm_load_vocab: control token: 128161 '<|reserved_special_token_153|>' is not marked as EOG
+llm_load_vocab: control token: 128226 '<|reserved_special_token_218|>' is not marked as EOG
+llm_load_vocab: control token: 128159 '<|reserved_special_token_151|>' is not marked as EOG
+llm_load_vocab: control token: 128012 '<|reserved_special_token_4|>' is not marked as EOG
+llm_load_vocab: control token: 128088 '<|reserved_special_token_80|>' is not marked as EOG
+llm_load_vocab: control token: 128163 '<|reserved_special_token_155|>' is not marked as EOG
+llm_load_vocab: control token: 128001 '<|end_of_text|>' is not marked as EOG
+llm_load_vocab: control token: 128113 '<|reserved_special_token_105|>' is not marked as EOG
+llm_load_vocab: control token: 128250 '<|reserved_special_token_242|>' is not marked as EOG
+llm_load_vocab: control token: 128125 '<|reserved_special_token_117|>' is not marked as EOG
+llm_load_vocab: control token: 128053 '<|reserved_special_token_45|>' is not marked as EOG
+llm_load_vocab: control token: 128224 '<|reserved_special_token_216|>' is not marked as EOG
+llm_load_vocab: control token: 128247 '<|reserved_special_token_239|>' is not marked as EOG
+llm_load_vocab: control token: 128251 '<|reserved_special_token_243|>' is not marked as EOG
+llm_load_vocab: control token: 128216 '<|reserved_special_token_208|>' is not marked as EOG
+llm_load_vocab: control token: 128006 '<|start_header_id|>' is not marked as EOG
+llm_load_vocab: control token: 128211 '<|reserved_special_token_203|>' is not marked as EOG
+llm_load_vocab: control token: 128077 '<|reserved_special_token_69|>' is not marked as EOG
+llm_load_vocab: control token: 128237 '<|reserved_special_token_229|>' is not marked as EOG
+llm_load_vocab: control token: 128086 '<|reserved_special_token_78|>' is not marked as EOG
+llm_load_vocab: control token: 128227 '<|reserved_special_token_219|>' is not marked as EOG
+llm_load_vocab: control token: 128058 '<|reserved_special_token_50|>' is not marked as EOG
+llm_load_vocab: control token: 128100 '<|reserved_special_token_92|>' is not marked as EOG
+llm_load_vocab: control token: 128209 '<|reserved_special_token_201|>' is not marked as EOG
+llm_load_vocab: control token: 128084 '<|reserved_special_token_76|>' is not marked as EOG
+llm_load_vocab: control token: 128071 '<|reserved_special_token_63|>' is not marked as EOG
+llm_load_vocab: control token: 128070 '<|reserved_special_token_62|>' is not marked as EOG
+llm_load_vocab: control token: 128049 '<|reserved_special_token_41|>' is not marked as EOG
+llm_load_vocab: control token: 128197 '<|reserved_special_token_189|>' is not marked as EOG
+llm_load_vocab: control token: 128072 '<|reserved_special_token_64|>' is not marked as EOG
+llm_load_vocab: control token: 128000 '<|begin_of_text|>' is not marked as EOG
+llm_load_vocab: control token: 128223 '<|reserved_special_token_215|>' is not marked as EOG
+llm_load_vocab: control token: 128217 '<|reserved_special_token_209|>' is not marked as EOG
+llm_load_vocab: control token: 128111 '<|reserved_special_token_103|>' is not marked as EOG
+llm_load_vocab: control token: 128203 '<|reserved_special_token_195|>' is not marked as EOG
+llm_load_vocab: control token: 128051 '<|reserved_special_token_43|>' is not marked as EOG
+llm_load_vocab: control token: 128030 '<|reserved_special_token_22|>' is not marked as EOG
+llm_load_vocab: control token: 128117 '<|reserved_special_token_109|>' is not marked as EOG
+llm_load_vocab: control token: 128010 '<|python_tag|>' is not marked as EOG
+llm_load_vocab: control token: 128238 '<|reserved_special_token_230|>' is not marked as EOG
+llm_load_vocab: control token: 128255 '<|reserved_special_token_247|>' is not marked as EOG
+llm_load_vocab: control token: 128202 '<|reserved_special_token_194|>' is not marked as EOG
+llm_load_vocab: control token: 128132 '<|reserved_special_token_124|>' is not marked as EOG
+llm_load_vocab: control token: 128248 '<|reserved_special_token_240|>' is not marked as EOG
+llm_load_vocab: control token: 128167 '<|reserved_special_token_159|>' is not marked as EOG
+llm_load_vocab: control token: 128127 '<|reserved_special_token_119|>' is not marked as EOG
+llm_load_vocab: control token: 128105 '<|reserved_special_token_97|>' is not marked as EOG
+llm_load_vocab: control token: 128039 '<|reserved_special_token_31|>' is not marked as EOG
+llm_load_vocab: control token: 128232 '<|reserved_special_token_224|>' is not marked as EOG
+llm_load_vocab: control token: 128166 '<|reserved_special_token_158|>' is not marked as EOG
+llm_load_vocab: control token: 128130 '<|reserved_special_token_122|>' is not marked as EOG
+llm_load_vocab: control token: 128114 '<|reserved_special_token_106|>' is not marked as EOG
+llm_load_vocab: control token: 128234 '<|reserved_special_token_226|>' is not marked as EOG
+llm_load_vocab: control token: 128191 '<|reserved_special_token_183|>' is not marked as EOG
+llm_load_vocab: control token: 128064 '<|reserved_special_token_56|>' is not marked as EOG
+llm_load_vocab: control token: 128140 '<|reserved_special_token_132|>' is not marked as EOG
+llm_load_vocab: control token: 128096 '<|reserved_special_token_88|>' is not marked as EOG
+llm_load_vocab: control token: 128098 '<|reserved_special_token_90|>' is not marked as EOG
+llm_load_vocab: control token: 128192 '<|reserved_special_token_184|>' is not marked as EOG
+llm_load_vocab: control token: 128093 '<|reserved_special_token_85|>' is not marked as EOG
+llm_load_vocab: control token: 128150 '<|reserved_special_token_142|>' is not marked as EOG
+llm_load_vocab: control token: 128222 '<|reserved_special_token_214|>' is not marked as EOG
+llm_load_vocab: control token: 128233 '<|reserved_special_token_225|>' is not marked as EOG
+llm_load_vocab: control token: 128220 '<|reserved_special_token_212|>' is not marked as EOG
+llm_load_vocab: control token: 128034 '<|reserved_special_token_26|>' is not marked as EOG
+llm_load_vocab: control token: 128033 '<|reserved_special_token_25|>' is not marked as EOG
+llm_load_vocab: control token: 128253 '<|reserved_special_token_245|>' is not marked as EOG
+llm_load_vocab: control token: 128195 '<|reserved_special_token_187|>' is not marked as EOG
+llm_load_vocab: control token: 128099 '<|reserved_special_token_91|>' is not marked as EOG
+llm_load_vocab: control token: 128189 '<|reserved_special_token_181|>' is not marked as EOG
+llm_load_vocab: control token: 128210 '<|reserved_special_token_202|>' is not marked as EOG
+llm_load_vocab: control token: 128174 '<|reserved_special_token_166|>' is not marked as EOG
+llm_load_vocab: control token: 128083 '<|reserved_special_token_75|>' is not marked as EOG
+llm_load_vocab: control token: 128080 '<|reserved_special_token_72|>' is not marked as EOG
+llm_load_vocab: control token: 128104 '<|reserved_special_token_96|>' is not marked as EOG
+llm_load_vocab: control token: 128082 '<|reserved_special_token_74|>' is not marked as EOG
+llm_load_vocab: control token: 128219 '<|reserved_special_token_211|>' is not marked as EOG
+llm_load_vocab: control token: 128017 '<|reserved_special_token_9|>' is not marked as EOG
+llm_load_vocab: control token: 128050 '<|reserved_special_token_42|>' is not marked as EOG
+llm_load_vocab: control token: 128205 '<|reserved_special_token_197|>' is not marked as EOG
+llm_load_vocab: control token: 128047 '<|reserved_special_token_39|>' is not marked as EOG
+llm_load_vocab: control token: 128164 '<|reserved_special_token_156|>' is not marked as EOG
+llm_load_vocab: control token: 128020 '<|reserved_special_token_12|>' is not marked as EOG
+llm_load_vocab: control token: 128069 '<|reserved_special_token_61|>' is not marked as EOG
+llm_load_vocab: control token: 128245 '<|reserved_special_token_237|>' is not marked as EOG
+llm_load_vocab: control token: 128121 '<|reserved_special_token_113|>' is not marked as EOG
+llm_load_vocab: control token: 128079 '<|reserved_special_token_71|>' is not marked as EOG
+llm_load_vocab: control token: 128037 '<|reserved_special_token_29|>' is not marked as EOG
+llm_load_vocab: control token: 128244 '<|reserved_special_token_236|>' is not marked as EOG
+llm_load_vocab: control token: 128029 '<|reserved_special_token_21|>' is not marked as EOG
+llm_load_vocab: control token: 128221 '<|reserved_special_token_213|>' is not marked as EOG
+llm_load_vocab: control token: 128066 '<|reserved_special_token_58|>' is not marked as EOG
+llm_load_vocab: control token: 128120 '<|reserved_special_token_112|>' is not marked as EOG
+llm_load_vocab: control token: 128014 '<|reserved_special_token_6|>' is not marked as EOG
+llm_load_vocab: control token: 128025 '<|reserved_special_token_17|>' is not marked as EOG
+llm_load_vocab: control token: 128126 '<|reserved_special_token_118|>' is not marked as EOG
+llm_load_vocab: special tokens cache size = 256
+llm_load_vocab: token to piece cache size = 0.7999 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: vocab_only       = 0
+llm_load_print_meta: n_ctx_train      = 131072
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_swa            = 0
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_ctx_orig_yarn  = 131072
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: ssm_dt_b_c_rms   = 0
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_K - Medium
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 39.59 GiB (4.82 BPW) 
+llm_load_print_meta: general.name     = Llama 3.1 70B Instruct 2024 12
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOM token        = 128008 '<|eom_id|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOG token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128009 '<|eot_id|>'
+llm_load_print_meta: max token length = 256
+llm_load_tensors: tensor 'token_embd.weight' (q4_K) (and 0 others) cannot be used with preferred buffer type CUDA_Host, using CPU instead
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading output layer to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CUDA0 model buffer size = 39979.48 MiB
+llm_load_tensors:   CPU_Mapped model buffer size =   563.62 MiB
+time=2025-04-27T14:36:52.505+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.00"
+time=2025-04-27T14:36:52.756+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.14"
+time=2025-04-27T14:36:53.007+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.27"
+time=2025-04-27T14:36:53.258+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.40"
+time=2025-04-27T14:36:53.509+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.53"
+time=2025-04-27T14:36:53.760+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.66"
+time=2025-04-27T14:36:54.011+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.79"
+time=2025-04-27T14:36:54.262+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.91"
+time=2025-04-27T14:36:54.513+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.99"
+llama_new_context_with_model: n_seq_max     = 8
+llama_new_context_with_model: n_ctx         = 16384
+llama_new_context_with_model: n_ctx_per_seq = 2048
+llama_new_context_with_model: n_batch       = 4096
+llama_new_context_with_model: n_ubatch      = 512
+llama_new_context_with_model: flash_attn    = 0
+llama_new_context_with_model: freq_base     = 500000.0
+llama_new_context_with_model: freq_scale    = 1
+llama_new_context_with_model: n_ctx_per_seq (2048) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+llama_kv_cache_init: kv_size = 16384, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 80, can_shift = 1
+llama_kv_cache_init: layer 0: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 1: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 2: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 3: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 4: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 5: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 6: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 7: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 8: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 9: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 10: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 11: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 12: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 13: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 14: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 15: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 16: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 17: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 18: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 19: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 20: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 21: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 22: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 23: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 24: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 25: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 26: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 27: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 28: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 29: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 30: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 31: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 32: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 33: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 34: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 35: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 36: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 37: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 38: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 39: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 40: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 41: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 42: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 43: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 44: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 45: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 46: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 47: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 48: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 49: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 50: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 51: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 52: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 53: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 54: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 55: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 56: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 57: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 58: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 59: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 60: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 61: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 62: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 63: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 64: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 65: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 66: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 67: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 68: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 69: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 70: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 71: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 72: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 73: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 74: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 75: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 76: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 77: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 78: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 79: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init:      CUDA0 KV buffer size =  5120.00 MiB
+llama_new_context_with_model: KV self size  = 5120.00 MiB, K (f16): 2560.00 MiB, V (f16): 2560.00 MiB
+llama_new_context_with_model:  CUDA_Host  output buffer size =     4.16 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =  2144.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    48.01 MiB
+llama_new_context_with_model: graph nodes  = 2566
+llama_new_context_with_model: graph splits = 2
+time=2025-04-27T14:36:55.516+02:00 level=INFO source=server.go:596 msg="llama runner started in 17.99 seconds"
+time=2025-04-27T14:36:55.516+02:00 level=DEBUG source=sched.go:462 msg="finished setting up runner" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:36:55.516+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nWarm-up prompt<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:55.517+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=0 prompt=13 used=0 remaining=13
+[GIN] 2025/04/27 - 14:36:56 | 200 | 19.944529279s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:36:56.801+02:00 level=DEBUG source=sched.go:466 msg="context for request finished"
+time=2025-04-27T14:36:56.801+02:00 level=DEBUG source=sched.go:339 msg="runner with non-zero duration has gone idle, adding timer" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d duration=4h0m0s
+time=2025-04-27T14:36:56.801+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=0
+time=2025-04-27T14:36:56.968+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:36:57.006+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:36:57.025+02:00 level=DEBUG source=server.go:968 msg="new runner detected, loading model for cgo tokenization"
+time=2025-04-27T14:36:57.051+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:36:57.096+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+llama_model_loader: loaded meta data with 36 key-value pairs and 724 tensors from /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Llama 3.1 70B Instruct 2024 12
+llama_model_loader: - kv   3:                            general.version str              = 2024-12
+llama_model_loader: - kv   4:                           general.finetune str              = Instruct
+llama_model_loader: - kv   5:                           general.basename str              = Llama-3.1
+llama_model_loader: - kv   6:                         general.size_label str              = 70B
+llama_model_loader: - kv   7:                            general.license str              = llama3.1
+llama_model_loader: - kv   8:                   general.base_model.count u32              = 1
+llama_model_loader: - kv   9:                  general.base_model.0.name str              = Llama 3.1 70B
+llama_model_loader: - kv  10:          general.base_model.0.organization str              = Meta Llama
+llama_model_loader: - kv  11:              general.base_model.0.repo_url str              = https://huggingface.co/meta-llama/Lla...
+llama_model_loader: - kv  12:                               general.tags arr[str,5]       = ["facebook", "meta", "pytorch", "llam...
+llama_model_loader: - kv  13:                          general.languages arr[str,7]       = ["fr", "it", "pt", "hi", "es", "th", ...
+llama_model_loader: - kv  14:                          llama.block_count u32              = 80
+llama_model_loader: - kv  15:                       llama.context_length u32              = 131072
+llama_model_loader: - kv  16:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv  17:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv  18:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv  19:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  20:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv  21:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  22:                 llama.attention.key_length u32              = 128
+llama_model_loader: - kv  23:               llama.attention.value_length u32              = 128
+llama_model_loader: - kv  24:                          general.file_type u32              = 15
+llama_model_loader: - kv  25:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  26:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  27:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  28:                         tokenizer.ggml.pre str              = llama-bpe
+time=2025-04-27T14:36:57.108+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+llama_model_loader: - kv  29:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+time=2025-04-27T14:36:57.165+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+llama_model_loader: - kv  30:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+time=2025-04-27T14:36:57.167+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:36:57.168+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+llama_model_loader: - kv  31:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  32:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  33:                tokenizer.ggml.eos_token_id u32              = 128009
+llama_model_loader: - kv  34:                    tokenizer.chat_template str              = {{- bos_token }}\n{%- if custom_tools ...
+llama_model_loader: - kv  35:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  162 tensors
+llama_model_loader: - type q4_K:  441 tensors
+llama_model_loader: - type q5_K:   40 tensors
+llama_model_loader: - type q6_K:   81 tensors
+llm_load_vocab: special tokens cache size = 256
+llm_load_vocab: token to piece cache size = 0.7999 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: vocab_only       = 1
+llm_load_print_meta: model type       = ?B
+llm_load_print_meta: model ftype      = all F32
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 39.59 GiB (4.82 BPW) 
+llm_load_print_meta: general.name     = Llama 3.1 70B Instruct 2024 12
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOM token        = 128008 '<|eom_id|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOG token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128009 '<|eot_id|>'
+llm_load_print_meta: max token length = 256
+llama_model_load: vocab only - skipping tensors
+time=2025-04-27T14:36:57.579+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Marriage and Family Therapists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Marriage and Family Therapistswould perform at work. Here is the description of the occupation: Diagnose and treat mental and emotional disorders, whether cognitive, affective, or behavioral, within the context of marriage and family systems. Apply psychotherapeutic and family systems theories and techniques in the delivery of services to individuals, couples, and families for the purpose of treating such diagnosed nervous and mental disorders.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.580+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Massage Therapists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Massage Therapistswould perform at work. Here is the description of the occupation: Perform therapeutic massages of soft tissues and joints. May assist in the assessment of range of motion and muscle strength, or propose client therapy plans.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.581+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Meat, Poultry, and Fish Cutters and Trimmers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 12 unique task statements that the occupation Meat, Poultry, and Fish Cutters and Trimmerswould perform at work. Here is the description of the occupation: Use hands or hand tools to perform routine cutting and trimming of meat, poultry, and seafood.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.582+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mathematicians\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Mathematicianswould perform at work. Here is the description of the occupation: Conduct research in fundamental mathematics or in application of mathematical techniques to science, management, and other fields. Solve problems in various fields using mathematical methods.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.582+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mechanical Door Repairers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Mechanical Door Repairerswould perform at work. Here is the description of the occupation: Install, service, or repair automatic door mechanisms and hydraulic doors. Includes garage door mechanics.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.583+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mathematical Science Teachers, Postsecondary\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Mathematical Science Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses pertaining to mathematical concepts, statistics, and actuarial science and to the application of original and standardized mathematical techniques in solving specific problems and situations. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.584+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Materials Engineers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Materials Engineerswould perform at work. Here is the description of the occupation: Evaluate materials and develop machinery and processes to manufacture materials for use in products that must meet specialized design and performance specifications. Develop new uses for known materials. Includes those engineers working with composite materials or specializing in one type of material, such as graphite, metal and metal alloys, ceramics and glass, plastics and polymers, and naturally occurring materials. Includes metallurgists and metallurgical engineers, ceramic engineers, and welding engineers.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.584+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Materials Scientists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Materials Scientistswould perform at work. Here is the description of the occupation: Research and study the structures and chemical properties of various natural and synthetic or composite materials, including metals, alloys, rubber, ceramics, semiconductors, polymers, and glass. Determine ways to strengthen or combine materials or develop new materials with new or specific properties for use in a variety of products and applications. Includes glass scientists, ceramic scientists, metallurgical scientists, and polymer scientists.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:36:57.582+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=41 prompt=175 used=2 remaining=173
+time=2025-04-27T14:36:57.842+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=0 prompt=136 used=0 remaining=136
+time=2025-04-27T14:36:57.842+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=0 prompt=144 used=0 remaining=144
+time=2025-04-27T14:36:57.842+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=0 prompt=134 used=0 remaining=134
+time=2025-04-27T14:36:57.842+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=0 prompt=188 used=0 remaining=188
+time=2025-04-27T14:36:57.842+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=0 prompt=163 used=0 remaining=163
+time=2025-04-27T14:36:57.842+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=0 prompt=127 used=0 remaining=127
+time=2025-04-27T14:36:57.842+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=0 prompt=182 used=0 remaining=182
+[GIN] 2025/04/27 - 14:37:22 | 200 | 25.461981263s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:22.464+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:22.464+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:22.536+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:22.539+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mechanical Drafters\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Mechanical Drafterswould perform at work. Here is the description of the occupation: Prepare detailed working diagrams of machinery and mechanical devices, including dimensions, fastening methods, and other engineering information.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:22.643+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=363 prompt=129 used=14 remaining=115
+[GIN] 2025/04/27 - 14:37:24 | 200 | 27.041584527s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:24.107+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:24.107+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:24.161+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:24.162+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mechanical Engineering Technologists and Technicians\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 26 unique task statements that the occupation Mechanical Engineering Technologists and Technicianswould perform at work. Here is the description of the occupation: Apply theory and principles of mechanical engineering to modify, develop, test, or adjust machinery and equipment under direction of engineering staff or physical scientists.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:24.286+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=388 prompt=143 used=14 remaining=129
+[GIN] 2025/04/27 - 14:37:29 | 200 | 32.167360611s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:29.175+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:29.175+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:29.230+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:29.231+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mechanical Engineers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 28 unique task statements that the occupation Mechanical Engineerswould perform at work. Here is the description of the occupation: Perform engineering duties in planning and designing tools, engines, machines, and other mechanically functioning equipment. Oversee installation, operation, maintenance, and repair of equipment such as centralized heat, gas, water, and steam systems.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:29.352+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=474 prompt=149 used=14 remaining=135
+[GIN] 2025/04/27 - 14:37:31 | 200 | 34.205640558s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:31.289+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:31.289+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:31.349+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:31.350+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mechatronics Engineers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Mechatronics Engineerswould perform at work. Here is the description of the occupation: Research, design, develop, or test automation, intelligent systems, smart devices, or industrial systems control.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:31.479+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=474 prompt=129 used=14 remaining=115
+[GIN] 2025/04/27 - 14:37:32 | 200 | 35.248529331s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:32.198+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:32.198+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:32.262+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:32.263+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Media Programming Directors\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Media Programming Directorswould perform at work. Here is the description of the occupation: Direct and coordinate activities of personnel engaged in preparation of radio or television station program schedules and programs, such as sports or news.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 14:37:32 | 200 | 35.380565495s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:32.295+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:32.295+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:32.348+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:32.349+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Media Technical Directors/Managers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Media Technical Directors/Managerswould perform at work. Here is the description of the occupation: Coordinate activities of technical departments, such as taping, editing, engineering, and maintenance, to produce radio or television programs.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:32.374+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=497 prompt=131 used=14 remaining=117
+time=2025-04-27T14:37:32.374+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=455 prompt=137 used=14 remaining=123
+[GIN] 2025/04/27 - 14:37:35 | 200 | 38.032942769s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:35.103+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:35.103+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:35.154+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:35.155+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Appliance Technicians\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Medical Appliance Technicianswould perform at work. Here is the description of the occupation: Construct, maintain, or repair medical supportive devices such as braces, orthotics and prosthetic devices, joints, arch supports, and other surgical and medical appliances.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:35.274+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=471 prompt=142 used=14 remaining=128
+[GIN] 2025/04/27 - 14:37:36 | 200 | 39.309264055s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:36.355+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:36.355+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:36.414+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:36.415+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Assistants\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Medical Assistantswould perform at work. Here is the description of the occupation: Perform administrative and certain clinical duties under the direction of a physician. Administrative duties may include scheduling appointments, maintaining medical records, billing, and coding information for insurance purposes. Clinical duties may include taking and recording vital signs and medical histories, preparing patients for examination, drawing blood, and administering medications as directed by physician.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:36.538+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=543 prompt=168 used=14 remaining=154
+[GIN] 2025/04/27 - 14:37:53 | 200 | 30.628844088s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:53.133+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:53.133+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:53.193+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:53.194+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Dosimetrists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation Medical Dosimetristswould perform at work. Here is the description of the occupation: Generate radiation treatment plans, develop radiation dose calculations, communicate and supervise the treatment plan implementation, and consult with members of radiation oncology team.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:53.316+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=412 prompt=138 used=14 remaining=124
+[GIN] 2025/04/27 - 14:37:57 | 200 | 24.781970103s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:37:57.098+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:37:57.098+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:37:57.159+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:37:57.160+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Equipment Preparers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Medical Equipment Preparerswould perform at work. Here is the description of the occupation: Prepare, sterilize, install, or clean laboratory or healthcare equipment. May perform routine laboratory tasks and operate or inspect equipment.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:37:57.282+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=367 prompt=135 used=14 remaining=121
+[GIN] 2025/04/27 - 14:38:01 | 200 |  26.46035247s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:01.583+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:01.583+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:01.644+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:01.645+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Equipment Repairers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Medical Equipment Repairerswould perform at work. Here is the description of the occupation: Test, adjust, or repair biomedical or electromedical equipment.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 14:38:01 | 200 | 25.290808519s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:01.685+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:01.685+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:01.736+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:01.739+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Scientists, Except Epidemiologists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Medical Scientists, Except Epidemiologistswould perform at work. Here is the description of the occupation: Conduct research dealing with the understanding of human diseases and the improvement of human health. Engage in clinical investigation, research and development, or other related activities.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:01.757+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=405 prompt=121 used=15 remaining=106
+time=2025-04-27T14:38:01.757+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=389 prompt=143 used=15 remaining=128
+[GIN] 2025/04/27 - 14:38:05 | 200 | 36.609196741s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:05.807+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:05.807+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:05.865+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:05.866+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Secretaries and Administrative Assistants\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Medical Secretaries and Administrative Assistantswould perform at work. Here is the description of the occupation: Perform secretarial duties using specific knowledge of medical terminology and hospital, clinic, or laboratory procedures. Duties may include scheduling appointments, billing patients, and compiling and recording medical charts, reports, and correspondence.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:05.989+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=486 prompt=155 used=14 remaining=141
+[GIN] 2025/04/27 - 14:38:10 | 200 | 46.393947286s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:10.524+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:10.524+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:10.584+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:10.585+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical Transcriptionists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Medical Transcriptionistswould perform at work. Here is the description of the occupation: Transcribe medical reports recorded by physicians and other healthcare practitioners using various electronic devices, covering office visits, emergency room visits, diagnostic imaging studies, operations, chart reviews, and final summaries. Transcribe dictated reports and translate abbreviations into fully understandable form. Edit as necessary and return reports in either printed or electronic form for review and signature, or correction.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:10.709+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=572 prompt=178 used=14 remaining=164
+[GIN] 2025/04/27 - 14:38:13 | 200 | 42.095374776s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:13.413+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:13.413+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:13.479+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:13.480+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical and Clinical Laboratory Technicians\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Medical and Clinical Laboratory Technicianswould perform at work. Here is the description of the occupation: Perform routine medical laboratory tests for the diagnosis, treatment, and prevention of disease. May work under the supervision of a medical technologist.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:13.598+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=517 prompt=139 used=14 remaining=125
+[GIN] 2025/04/27 - 14:38:16 | 200 | 44.134972864s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:16.366+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:16.366+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:16.426+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:16.426+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical and Clinical Laboratory Technologists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Medical and Clinical Laboratory Technologistswould perform at work. Here is the description of the occupation: Perform complex medical laboratory tests for diagnosis, treatment, and prevention of disease. May train or supervise staff.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:16.552+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=538 prompt=133 used=14 remaining=119
+[GIN] 2025/04/27 - 14:38:22 | 200 | 29.220996489s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:22.382+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:22.382+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:22.443+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:22.444+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Medical and Health Services Managers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Medical and Health Services Managerswould perform at work. Here is the description of the occupation: Plan, direct, or coordinate medical and health services in hospitals, clinics, managed care organizations, public health agencies, or similar organizations.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:22.567+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=406 prompt=137 used=15 remaining=122
+[GIN] 2025/04/27 - 14:38:25 | 200 | 23.593181169s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:25.293+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:25.293+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:25.356+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:25.357+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Meeting, Convention, and Event Planners\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Meeting, Convention, and Event Plannerswould perform at work. Here is the description of the occupation: Coordinate activities of staff, convention personnel, or clients to make arrangements for group meetings, events, or conventions.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:25.475+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=359 prompt=138 used=14 remaining=124
+[GIN] 2025/04/27 - 14:38:27 | 200 | 30.499093536s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:27.626+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:27.626+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:27.688+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:27.689+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mental Health Counselors\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 27 unique task statements that the occupation Mental Health Counselorswould perform at work. Here is the description of the occupation: Counsel and advise individuals and groups to promote optimum mental and emotional health, with an emphasis on prevention. May help individuals deal with a broad range of mental health issues, such as those associated with addictions and substance abuse; family, parenting, and marital problems; stress management; self-esteem; or aging.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:27.811+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=414 prompt=170 used=14 remaining=156
+[GIN] 2025/04/27 - 14:38:37 | 200 | 26.922254017s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:37.474+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:37.474+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:37.535+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:37.535+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mental Health and Substance Abuse Social Workers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Mental Health and Substance Abuse Social Workerswould perform at work. Here is the description of the occupation: Assess and treat individuals with mental, emotional, or substance abuse problems, including abuse of alcohol, tobacco, and/or other drugs. Activities may include individual and group therapy, crisis intervention, case management, client advocacy, prevention, and education.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 14:38:37 | 200 | 35.953794211s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:37.574+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:37.574+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:37.629+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:37.630+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Merchandise Displayers and Window Trimmers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Merchandise Displayers and Window Trimmerswould perform at work. Here is the description of the occupation: Plan and erect commercial displays, such as those in windows and interiors of retail stores and at trade exhibitions.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:37.652+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=426 prompt=163 used=14 remaining=149
+time=2025-04-27T14:38:37.652+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=452 prompt=138 used=14 remaining=124
+[GIN] 2025/04/27 - 14:38:38 | 200 | 32.578440665s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:38.412+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:38.412+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:38.480+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:38.496+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Metal-Refining Furnace Operators and Tenders\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Metal-Refining Furnace Operators and Tenderswould perform at work. Here is the description of the occupation: Operate or tend furnaces, such as gas, oil, coal, electric-arc or electric induction, open-hearth, or oxygen furnaces, to melt and refine metal before casting or to produce specified types of steel.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 14:38:38 | 200 | 25.184895617s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:38.628+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:38.628+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:38.629+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=369 prompt=166 used=14 remaining=152
+time=2025-04-27T14:38:38.682+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:38.683+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Meter Readers, Utilities\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 12 unique task statements that the occupation Meter Readers, Utilitieswould perform at work. Here is the description of the occupation: Read meter and record consumption of electricity, gas, water, or steam.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:38.968+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=453 prompt=123 used=14 remaining=109
+[GIN] 2025/04/27 - 14:38:42 | 200 | 26.526995174s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:42.921+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:42.921+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:42.982+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:42.983+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Microbiologists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Microbiologistswould perform at work. Here is the description of the occupation: Investigate the growth, structure, development, and other characteristics of microscopic organisms, such as bacteria, algae, or fungi. Includes medical microbiologists who study the relationship between organisms and disease or the effects of antibiotics on microorganisms.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:43.106+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=375 prompt=152 used=14 remaining=138
+[GIN] 2025/04/27 - 14:38:47 | 200 | 25.167224435s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:47.578+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:47.578+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:47.640+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:47.641+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Microsystems Engineers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 25 unique task statements that the occupation Microsystems Engineerswould perform at work. Here is the description of the occupation: Research, design, develop, or test microelectromechanical systems (MEMS) devices.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:47.761+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=366 prompt=125 used=14 remaining=111
+[GIN] 2025/04/27 - 14:38:56 | 200 | 31.372471728s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:56.707+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:56.707+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:56.758+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:56.759+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Middle School Teachers, Except Special and Career/Technical Education\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 35 unique task statements that the occupation Middle School Teachers, Except Special and Career/Technical Educationwould perform at work. Here is the description of the occupation: Teach one or more subjects to students at the middle, intermediate, or junior high school level.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:56.876+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=428 prompt=141 used=14 remaining=127
+[GIN] 2025/04/27 - 14:38:58 | 200 | 20.005271006s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:38:58.656+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:38:58.656+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:38:58.714+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:38:58.715+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Midwives\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 36 unique task statements that the occupation Midwiveswould perform at work. Here is the description of the occupation: Provide prenatal care and childbirth assistance.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:38:58.834+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=309 prompt=111 used=14 remaining=97
+[GIN] 2025/04/27 - 14:39:06 | 200 | 23.725699174s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:06.676+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:06.676+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:06.739+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:06.740+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plasticwould perform at work. Here is the description of the occupation: Set up, operate, or tend milling or planing machines to mill, plane, shape, groove, or profile metal or plastic work pieces.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:06.860+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=376 prompt=165 used=14 remaining=151
+[GIN] 2025/04/27 - 14:39:07 | 200 | 29.931780918s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:07.434+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:07.434+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:07.495+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:07.496+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Millwrights\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Millwrightswould perform at work. Here is the description of the occupation: Install, dismantle, or move machinery and heavy equipment according to layout plans, blueprints, or other drawings.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:07.614+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=440 prompt=128 used=14 remaining=114
+[GIN] 2025/04/27 - 14:39:10 | 200 | 32.872665462s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:10.470+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:10.470+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:10.529+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:10.530+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mining and Geological Engineers, Including Mining Safety Engineers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 18 unique task statements that the occupation Mining and Geological Engineers, Including Mining Safety Engineerswould perform at work. Here is the description of the occupation: Conduct subsurface surveys to identify the characteristics of potential land or mining development sites. May specify the ground support systems, processes, and equipment for safe, economical, and environmentally sound extraction or underground construction activities. May inspect areas for unsafe geological conditions, equipment, and working conditions. May design, implement, and coordinate mine safety programs.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:10.652+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=443 prompt=184 used=14 remaining=170
+[GIN] 2025/04/27 - 14:39:11 | 200 | 43.827088409s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:11.481+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:11.481+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:11.535+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:11.536+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mixing and Blending Machine Setters, Operators, and Tenders\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Mixing and Blending Machine Setters, Operators, and Tenderswould perform at work. Here is the description of the occupation: Set up, operate, or tend machines to mix or blend materials, such as chemicals, tobacco, liquids, color pigments, or explosive ingredients.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:11.670+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=576 prompt=157 used=14 remaining=143
+[GIN] 2025/04/27 - 14:39:14 | 200 | 36.257614901s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:14.701+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:14.701+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:14.760+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:14.761+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Mobile Heavy Equipment Mechanics, Except Engines\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Mobile Heavy Equipment Mechanics, Except Engineswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul mobile mechanical, hydraulic, and pneumatic equipment, such as cranes, bulldozers, graders, and conveyors, used in construction, logging, and mining.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:14.882+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=502 prompt=159 used=14 remaining=145
+[GIN] 2025/04/27 - 14:39:32 | 200 | 25.681210097s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:32.388+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:32.388+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:32.445+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:32.452+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Model Makers, Metal and Plastic\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Model Makers, Metal and Plasticwould perform at work. Here is the description of the occupation: Set up and operate machines, such as lathes, milling and engraving machines, and jig borers to make working models of metal or plastic objects. Includes template makers.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:32.575+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=402 prompt=150 used=14 remaining=136
+[GIN] 2025/04/27 - 14:39:33 | 200 | 46.366631632s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:33.974+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:33.974+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:34.034+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:34.035+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Model Makers, Wood\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Model Makers, Woodwould perform at work. Here is the description of the occupation: Construct full-size and scale wooden precision models of products. Includes wood jig builders and loft workers.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:34.174+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=559 prompt=129 used=14 remaining=115
+[GIN] 2025/04/27 - 14:39:34 | 200 | 24.397552833s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:34.894+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:34.894+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:34.957+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:34.983+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Models\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 10 unique task statements that the occupation Modelswould perform at work. Here is the description of the occupation: Model garments or other apparel and accessories for prospective buyers at fashion shows, private showings, or retail establishments. May pose for photos to be used in magazines or advertisements. May pose as subject for paintings, sculptures, and other types of artistic expression.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:35.080+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=409 prompt=153 used=14 remaining=139
+[GIN] 2025/04/27 - 14:39:41 | 200 | 27.175210964s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:41.904+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:41.904+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:41.964+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:41.965+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Molders, Shapers, and Casters, Except Metal and Plastic\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Molders, Shapers, and Casters, Except Metal and Plasticwould perform at work. Here is the description of the occupation: Mold, shape, form, cast, or carve products such as food products, figurines, tile, pipes, and candles consisting of clay, glass, plaster, concrete, stone, or combinations of materials.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:42.088+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=413 prompt=170 used=14 remaining=156
+[GIN] 2025/04/27 - 14:39:44 | 200 |  33.38321457s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:44.895+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:44.895+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:44.946+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:44.948+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 29 unique task statements that the occupation Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plasticwould perform at work. Here is the description of the occupation: Set up, operate, or tend metal or plastic molding, casting, or coremaking machines to mold or cast metal or thermoplastic parts or products.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:45.099+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=467 prompt=173 used=14 remaining=159
+[GIN] 2025/04/27 - 14:39:50 | 200 | 51.600656421s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:50.283+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:50.283+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:50.345+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:50.346+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Molecular and Cellular Biologists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Molecular and Cellular Biologistswould perform at work. Here is the description of the occupation: Research and study cellular molecules and organelles to understand cell function and organization.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:50.485+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=589 prompt=127 used=14 remaining=113
+[GIN] 2025/04/27 - 14:39:52 | 200 | 17.467936884s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:52.399+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:52.399+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:52.455+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:52.457+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Morticians, Undertakers, and Funeral Arrangers\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Morticians, Undertakers, and Funeral Arrangerswould perform at work. Here is the description of the occupation: Perform various tasks to arrange and direct individual funeral services, such as coordinating transportation of body to mortuary, interviewing family or other authorized person to arrange details, selecting pallbearers, aiding with the selection of officials for religious rites, and providing transportation for mourners.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:52.580+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=311 prompt=174 used=14 remaining=160
+[GIN] 2025/04/27 - 14:39:53 | 200 | 45.715926239s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:53.179+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:53.179+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:53.244+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:53.245+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Motion Picture Projectionists\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 17 unique task statements that the occupation Motion Picture Projectionistswould perform at work. Here is the description of the occupation: Set up and operate motion picture projection and related sound reproduction equipment.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:53.386+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=548 prompt=121 used=14 remaining=107
+[GIN] 2025/04/27 - 14:39:58 | 200 |          1m2s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:58.998+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:58.998+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:59.060+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:59.061+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Motorboat Mechanics and Service Technicians\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Motorboat Mechanics and Service Technicianswould perform at work. Here is the description of the occupation: Repair and adjust electrical and mechanical equipment of inboard or inboard-outboard boat engines.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 14:39:59 | 200 | 25.086434634s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:39:59.088+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:39:59.088+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:39:59.151+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:39:59.152+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Motorboat Operators\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Motorboat Operatorswould perform at work. Here is the description of the occupation: Operate small motor-driven boats. May assist in navigational activities.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:39:59.175+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=356 prompt=132 used=14 remaining=118
+time=2025-04-27T14:39:59.175+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=716 prompt=121 used=14 remaining=107
+[GIN] 2025/04/27 - 14:40:00 | 200 | 28.010776247s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:40:00.422+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:40:00.422+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:40:00.483+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:40:00.484+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Motorcycle Mechanics\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Motorcycle Mechanicswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul motorcycles, scooters, mopeds, dirt bikes, or similar motorized vehicles.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:40:00.614+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=401 prompt=132 used=14 remaining=118
+[GIN] 2025/04/27 - 14:40:13 | 200 | 31.679154231s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:40:13.611+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:40:13.611+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:40:13.677+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:40:13.678+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plasticwould perform at work. Here is the description of the occupation: Set up, operate, or tend more than one type of cutting or forming machine tool or robot.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:40:13.798+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=457 prompt=150 used=14 remaining=136
+[GIN] 2025/04/27 - 14:40:17 | 200 | 23.882019179s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T14:40:17.094+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T14:40:17.094+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T14:40:17.156+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T14:40:17.157+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>system<|end_header_id|>\n\nYou are an expert of this occupation: \"Museum Technicians and Conservators\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. <|eot_id|><|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Museum Technicians and Conservatorswould perform at work. Here is the description of the occupation: Restore, maintain, or prepare objects in museum collections for storage, research, or exhibit. May work with specimens such as fossils, skeletal parts, or botanicals; or artifacts, textiles, or art. May identify and record objects or install and arrange them in exhibits. Includes book or document conservators.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T14:40:17.282+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=339 prompt=175 used=14 remaining=161

@@ -14,7 +14,7 @@ import os
 import argparse
 
 # Setup output folder
-folder_name = f'results/llamatask_match_301400{datetime.now().strftime("%d%m_%H%M")}/'
+folder_name = f'results/llamatask_match_501600{datetime.now().strftime("%d%m_%H%M")}/'
 os.makedirs(folder_name, exist_ok=True)
 print("folder created")
 
@@ -35,7 +35,7 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-sampled_occupation = sampled_occupation.iloc[301:400]
+sampled_occupation = sampled_occupation.iloc[501:600]
 
 #for trial
 # trial_df = sampled_occupation#.sample(3, random_state= 1)
