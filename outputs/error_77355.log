@@ -97,3 +97,415 @@
 llama3.3-no_prompt-0:  43%|████▎     | 43/100 [03:03<03:22,  3.56s/it]2025-04-27 18:08:40,536 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
 2025-04-27 18:08:43,174 - Single inference for Physicians, Pathologists, duration: 0:00:30.075544
 llama3.3-no_prompt-0:  44%|████▍     | 44/100 [03:06<03:09,  3.38s/it]2025-04-27 18:08:43,483 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:08:46,967 - Single inference for Pipelayers, duration: 0:00:17.678621
+llama3.3-no_prompt-0:  45%|████▌     | 45/100 [03:10<03:12,  3.50s/it]2025-04-27 18:08:47,267 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:08:47,506 - Single inference for Physical Therapists, duration: 0:00:44.686087
+llama3.3-no_prompt-0:  46%|████▌     | 46/100 [03:11<02:20,  2.61s/it]2025-04-27 18:08:47,885 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:08:58,401 - Single inference for Plasterers and Stucco Masons, duration: 0:00:28.931658
+llama3.3-no_prompt-0:  47%|████▋     | 47/100 [03:21<04:30,  5.10s/it]2025-04-27 18:08:58,729 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:08:59,055 - Single inference for Physics Teachers, Postsecondary, duration: 0:00:39.754693
+llama3.3-no_prompt-0:  48%|████▊     | 48/100 [03:22<03:15,  3.76s/it]2025-04-27 18:08:59,408 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:04,846 - Single inference for Podiatrists, duration: 0:00:24.595873
+llama3.3-no_prompt-0:  49%|████▉     | 49/100 [03:28<03:43,  4.37s/it]2025-04-27 18:09:05,202 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:11,441 - Single inference for Poets, Lyricists and Creative Writers, duration: 0:00:28.239442
+llama3.3-no_prompt-0:  50%|█████     | 50/100 [03:35<04:11,  5.04s/it]2025-04-27 18:09:11,528 - Single inference for Police Identification and Records Officers, duration: 0:00:24.531929
+2025-04-27 18:09:11,873 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:11,887 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:28,666 - Single inference for Political Scientists, duration: 0:00:29.588102
+llama3.3-no_prompt-0:  52%|█████▏    | 52/100 [03:52<05:21,  6.69s/it]2025-04-27 18:09:28,997 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:33,796 - Single inference for Postal Service Clerks, duration: 0:00:28.925300
+llama3.3-no_prompt-0:  53%|█████▎    | 53/100 [03:57<04:56,  6.30s/it]2025-04-27 18:09:34,119 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:34,221 - Single inference for Plating Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:01:02.853228
+llama3.3-no_prompt-0:  54%|█████▍    | 54/100 [03:57<03:39,  4.76s/it]2025-04-27 18:09:34,557 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:35,413 - Single inference for Political Science Teachers, Postsecondary, duration: 0:00:36.987511
+llama3.3-no_prompt-0:  55%|█████▌    | 55/100 [03:59<02:50,  3.79s/it]2025-04-27 18:09:35,714 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:36,289 - Single inference for Plumbers, Pipefitters, and Steamfitters, duration: 0:00:59.007470
+llama3.3-no_prompt-0:  56%|█████▌    | 56/100 [03:59<02:10,  2.97s/it]2025-04-27 18:09:36,598 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:37,473 - Single inference for Police and Sheriff's Patrol Officers, duration: 0:00:49.944410
+llama3.3-no_prompt-0:  57%|█████▋    | 57/100 [04:01<01:45,  2.46s/it]2025-04-27 18:09:37,852 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:38,937 - Single inference for Postal Service Mail Sorters, Processors, and Processing Machine Operators, duration: 0:00:27.386172
+llama3.3-no_prompt-0:  58%|█████▊    | 58/100 [04:02<01:31,  2.18s/it]2025-04-27 18:09:39,272 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:51,144 - Single inference for Postal Service Mail Carriers, duration: 0:00:39.675018
+llama3.3-no_prompt-0:  59%|█████▉    | 59/100 [04:14<03:29,  5.12s/it]2025-04-27 18:09:51,466 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:09:54,128 - Single inference for Postmasters and Mail Superintendents, duration: 0:00:25.434400
+llama3.3-no_prompt-0:  60%|██████    | 60/100 [04:17<02:59,  4.49s/it]2025-04-27 18:09:54,430 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:00,017 - Single inference for Pourers and Casters, Metal, duration: 0:00:25.772878
+llama3.3-no_prompt-0:  61%|██████    | 61/100 [04:23<03:11,  4.90s/it]2025-04-27 18:10:00,359 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:00,693 - Single inference for Power Distributors and Dispatchers, duration: 0:00:25.253427
+llama3.3-no_prompt-0:  62%|██████▏   | 62/100 [04:24<02:18,  3.64s/it]2025-04-27 18:10:00,997 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:01,440 - Single inference for Prepress Technicians and Workers, duration: 0:00:22.480746
+llama3.3-no_prompt-0:  63%|██████▎   | 63/100 [04:25<01:42,  2.78s/it]2025-04-27 18:10:01,768 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:12,780 - Single inference for Precision Agriculture Technicians, duration: 0:00:35.285941
+llama3.3-no_prompt-0:  64%|██████▍   | 64/100 [04:36<03:12,  5.34s/it]2025-04-27 18:10:12,957 - Single inference for Potters, Manufacturing, duration: 0:00:39.135099
+llama3.3-no_prompt-0:  65%|██████▌   | 65/100 [04:36<02:12,  3.79s/it]2025-04-27 18:10:13,091 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:13,344 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:17,205 - Single inference for Power Plant Operators, duration: 0:00:40.893971
+llama3.3-no_prompt-0:  66%|██████▌   | 66/100 [04:40<02:13,  3.93s/it]2025-04-27 18:10:17,505 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:31,039 - Single inference for Preventive Medicine Physicians, duration: 0:00:30.997238
+llama3.3-no_prompt-0:  67%|██████▋   | 67/100 [04:54<03:47,  6.90s/it]2025-04-27 18:10:31,376 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:36,895 - Single inference for Private Detectives and Investigators, duration: 0:00:24.086509
+llama3.3-no_prompt-0:  68%|██████▊   | 68/100 [05:00<03:30,  6.59s/it]2025-04-27 18:10:37,251 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:37,352 - Single inference for Pressers, Textile, Garment, and Related Materials, duration: 0:00:43.195691
+llama3.3-no_prompt-0:  69%|██████▉   | 69/100 [05:00<02:27,  4.75s/it]2025-04-27 18:10:37,725 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:41,319 - Single inference for Printing Press Operators, duration: 0:00:39.850438
+llama3.3-no_prompt-0:  70%|███████   | 70/100 [05:04<02:15,  4.51s/it]2025-04-27 18:10:41,665 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:45,404 - Single inference for Probation Officers and Correctional Treatment Specialists, duration: 0:00:32.426954
+llama3.3-no_prompt-0:  71%|███████   | 71/100 [05:08<02:07,  4.39s/it]2025-04-27 18:10:45,743 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:46,694 - Single inference for Procurement Clerks, duration: 0:00:29.469513
+llama3.3-no_prompt-0:  72%|███████▏  | 72/100 [05:10<01:36,  3.46s/it]2025-04-27 18:10:47,035 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:47,602 - Single inference for Print Binding and Finishing Workers, duration: 0:00:46.886723
+llama3.3-no_prompt-0:  73%|███████▎  | 73/100 [05:11<01:12,  2.69s/it]2025-04-27 18:10:47,944 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:50,449 - Single inference for Preschool Teachers, Except Special Education, duration: 0:00:59.276890
+llama3.3-no_prompt-0:  74%|███████▍  | 74/100 [05:14<01:11,  2.74s/it]2025-04-27 18:10:50,747 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:55,379 - Single inference for Production, Planning, and Expediting Clerks, duration: 0:00:18.458845
+llama3.3-no_prompt-0:  75%|███████▌  | 75/100 [05:18<01:24,  3.39s/it]2025-04-27 18:10:55,710 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:10:57,501 - Single inference for Proofreaders and Copy Markers, duration: 0:00:20.126012
+llama3.3-no_prompt-0:  76%|███████▌  | 76/100 [05:21<01:12,  3.02s/it]2025-04-27 18:10:57,833 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:04,671 - Single inference for Producers and Directors, duration: 0:00:33.605923
+llama3.3-no_prompt-0:  77%|███████▋  | 77/100 [05:28<01:38,  4.26s/it]2025-04-27 18:11:05,099 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:15,351 - Single inference for Prosthodontists, duration: 0:00:29.919758
+llama3.3-no_prompt-0:  78%|███████▊  | 78/100 [05:38<02:16,  6.19s/it]2025-04-27 18:11:15,691 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:16,443 - Single inference for Psychiatrists, duration: 0:00:25.969689
+llama3.3-no_prompt-0:  79%|███████▉  | 79/100 [05:40<01:37,  4.66s/it]2025-04-27 18:11:16,452 - Single inference for Psychiatric Technicians, duration: 0:00:28.825388
+2025-04-27 18:11:16,935 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:16,946 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:17,174 - Single inference for Psychiatric Aides, duration: 0:00:30.458087
+llama3.3-no_prompt-0:  81%|████████  | 81/100 [05:40<00:50,  2.68s/it]2025-04-27 18:11:17,514 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:29,531 - Single inference for Public Safety Telecommunicators, duration: 0:00:24.833627
+llama3.3-no_prompt-0:  82%|████████▏ | 82/100 [05:53<01:31,  5.08s/it]2025-04-27 18:11:29,848 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:33,749 - Single inference for Public Relations Specialists, duration: 0:00:36.219692
+llama3.3-no_prompt-0:  83%|████████▎ | 83/100 [05:57<01:22,  4.85s/it]2025-04-27 18:11:34,113 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:34,977 - Single inference for Property, Real Estate, and Community Association Managers, duration: 0:00:53.630348
+llama3.3-no_prompt-0:  84%|████████▍ | 84/100 [05:58<01:01,  3.87s/it]2025-04-27 18:11:35,284 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:49,401 - Single inference for Pump Operators, Except Wellhead Pumpers, duration: 0:00:34.024669
+llama3.3-no_prompt-0:  85%|████████▌ | 85/100 [06:12<01:42,  6.82s/it]2025-04-27 18:11:49,763 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:50,297 - Single inference for Psychology Teachers, Postsecondary, duration: 0:00:54.899493
+llama3.3-no_prompt-0:  86%|████████▌ | 86/100 [06:13<01:11,  5.13s/it]2025-04-27 18:11:50,720 - Single inference for Purchasing Agents, Except Wholesale, Retail, and Farm Products, duration: 0:00:34.236733
+llama3.3-no_prompt-0:  87%|████████▋ | 87/100 [06:14<00:48,  3.77s/it]2025-04-27 18:11:50,747 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:51,084 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:51,215 - Single inference for Purchasing Managers, duration: 0:00:34.733746
+llama3.3-no_prompt-0:  88%|████████▊ | 88/100 [06:14<00:33,  2.81s/it]2025-04-27 18:11:51,544 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:11:54,231 - Single inference for Quality Control Analysts, duration: 0:00:37.030077
+llama3.3-no_prompt-0:  89%|████████▉ | 89/100 [06:17<00:31,  2.87s/it]2025-04-27 18:11:54,559 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:06,196 - Single inference for Quality Control Systems Managers, duration: 0:00:36.641847
+llama3.3-no_prompt-0:  90%|█████████ | 90/100 [06:29<00:55,  5.57s/it]2025-04-27 18:12:06,544 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:16,217 - Single inference for Radiation Therapists, duration: 0:00:42.442895
+llama3.3-no_prompt-0:  91%|█████████ | 91/100 [06:39<01:01,  6.89s/it]2025-04-27 18:12:16,578 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:19,787 - Single inference for Radio Frequency Identification Device Specialists, duration: 0:00:44.786170
+llama3.3-no_prompt-0:  92%|█████████▏| 92/100 [06:43<00:47,  5.90s/it]2025-04-27 18:12:20,146 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:21,638 - Single inference for Radio, Cellular, and Tower Equipment Installers and Repairers, duration: 0:00:32.208754
+llama3.3-no_prompt-0:  93%|█████████▎| 93/100 [06:45<00:32,  4.69s/it]2025-04-27 18:12:24,130 - Single inference for Radiologists, duration: 0:00:33.391392
+llama3.3-no_prompt-0:  94%|█████████▍| 94/100 [06:47<00:24,  4.03s/it]2025-04-27 18:12:24,548 - Single inference for Rail Car Repairers, duration: 0:00:33.311010
+llama3.3-no_prompt-0:  95%|█████████▌| 95/100 [06:48<00:14,  2.95s/it]2025-04-27 18:12:30,968 - Single inference for Radiologic Technologists and Technicians, duration: 0:00:40.644987
+llama3.3-no_prompt-0:  96%|█████████▌| 96/100 [06:54<00:15,  3.99s/it]2025-04-27 18:12:31,934 - Single inference for Rail Yard Engineers, Dinkey Operators, and Hostlers, duration: 0:00:37.674440
+llama3.3-no_prompt-0:  97%|█████████▋| 97/100 [06:55<00:09,  3.08s/it]2025-04-27 18:12:39,337 - Single inference for Railroad Brake, Signal, and Switch Operators and Locomotive Firers, duration: 0:00:23.095571
+llama3.3-no_prompt-0:  98%|█████████▊| 98/100 [07:02<00:08,  4.38s/it]2025-04-27 18:12:42,843 - Single inference for Rail-Track Laying and Maintenance Equipment Operators, duration: 0:00:36.622560
+llama3.3-no_prompt-0:  99%|█████████▉| 99/100 [07:06<00:04,  4.11s/it]2025-04-27 18:12:43,706 - Single inference for Railroad Conductors and Yardmasters, duration: 0:00:23.896700
+llama3.3-no_prompt-0: 100%|██████████| 100/100 [07:07<00:00,  3.14s/it]llama3.3-no_prompt-0: 100%|██████████| 100/100 [07:07<00:00,  4.27s/it]
+2025-04-27 18:12:43,760 - Multiprocessing for llama3.3-no_prompt-0, duration: 0:07:07.404235
+llama3.3-no_prompt-1:   0%|          | 0/100 [00:00<?, ?it/s]2025-04-27 18:12:44,138 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:44,457 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:44,466 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:44,479 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:44,893 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:44,904 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:44,912 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:12:44,922 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:02,154 - Single inference for Painting, Coating, and Decorating Workers, duration: 0:00:18.148599
+llama3.3-no_prompt-1:   1%|          | 1/100 [00:18<30:15, 18.34s/it]2025-04-27 18:13:02,493 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:10,792 - Single inference for Packers and Packagers, Hand, duration: 0:00:26.856824
+llama3.3-no_prompt-1:   2%|▏         | 2/100 [00:26<20:38, 12.64s/it]2025-04-27 18:13:11,109 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:11,431 - Single inference for Orthodontists, duration: 0:00:27.532772
+llama3.3-no_prompt-1:   3%|▎         | 3/100 [00:27<11:34,  7.16s/it]2025-04-27 18:13:11,755 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:14,500 - Single inference for Outdoor Power Equipment and Other Small Engine Mechanics, duration: 0:00:30.636589
+llama3.3-no_prompt-1:   4%|▍         | 4/100 [00:30<08:52,  5.55s/it]2025-04-27 18:13:14,802 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:14,916 - Single inference for Packaging and Filling Machine Operators and Tenders, duration: 0:00:31.035679
+llama3.3-no_prompt-1:   5%|▌         | 5/100 [00:31<05:50,  3.69s/it]2025-04-27 18:13:15,256 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:19,872 - Single inference for Orthoptists, duration: 0:00:35.924741
+llama3.3-no_prompt-1:   6%|▌         | 6/100 [00:36<06:27,  4.13s/it]2025-04-27 18:13:20,175 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:25,465 - Single inference for Painters, Construction and Maintenance, duration: 0:00:41.526090
+llama3.3-no_prompt-1:   7%|▋         | 7/100 [00:41<07:08,  4.61s/it]2025-04-27 18:13:25,750 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:26,590 - Single inference for Orthotists and Prosthetists, duration: 0:00:42.739593
+llama3.3-no_prompt-1:   8%|▊         | 8/100 [00:42<05:21,  3.50s/it]2025-04-27 18:13:26,923 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:29,985 - Single inference for Paper Goods Machine Setters, Operators, and Tenders, duration: 0:00:27.814865
+llama3.3-no_prompt-1:   9%|▉         | 9/100 [00:46<05:15,  3.47s/it]2025-04-27 18:13:30,276 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:36,107 - Single inference for Paralegals and Legal Assistants, duration: 0:00:24.653120
+llama3.3-no_prompt-1:  10%|█         | 10/100 [00:52<06:25,  4.28s/it]2025-04-27 18:13:36,422 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:38,205 - Single inference for Parking Attendants, duration: 0:00:23.272220
+llama3.3-no_prompt-1:  11%|█         | 11/100 [00:54<05:21,  3.61s/it]2025-04-27 18:13:38,517 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:41,278 - Single inference for Paperhangers, duration: 0:00:30.461241
+llama3.3-no_prompt-1:  12%|█▏        | 12/100 [00:57<05:03,  3.45s/it]2025-04-27 18:13:41,631 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:49,237 - Single inference for Park Naturalists, duration: 0:00:34.708761
+llama3.3-no_prompt-1:  13%|█▎        | 13/100 [01:05<06:59,  4.82s/it]2025-04-27 18:13:49,554 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:50,911 - Single inference for Passenger Attendants, duration: 0:00:24.293884
+llama3.3-no_prompt-1:  14%|█▍        | 14/100 [01:07<05:32,  3.87s/it]2025-04-27 18:13:51,246 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:56,165 - Single inference for Parts Salespersons, duration: 0:00:30.670121
+llama3.3-no_prompt-1:  15%|█▌        | 15/100 [01:12<06:04,  4.29s/it]2025-04-27 18:13:56,578 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:57,311 - Single inference for Patient Representatives, duration: 0:00:27.301200
+llama3.3-no_prompt-1:  16%|█▌        | 16/100 [01:13<04:40,  3.34s/it]2025-04-27 18:13:57,660 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:13:58,517 - Single inference for Parking Enforcement Workers, duration: 0:00:38.620110
+llama3.3-no_prompt-1:  17%|█▋        | 17/100 [01:14<03:44,  2.70s/it]2025-04-27 18:13:58,818 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:06,554 - Single inference for Patternmakers, Metal and Plastic, duration: 0:00:30.419899
+llama3.3-no_prompt-1:  18%|█▊        | 18/100 [01:22<05:52,  4.30s/it]2025-04-27 18:14:06,898 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:10,703 - Single inference for Personal Care Aides, duration: 0:00:14.509639
+llama3.3-no_prompt-1:  19%|█▉        | 19/100 [01:26<05:44,  4.26s/it]2025-04-27 18:14:11,002 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:20,527 - Single inference for Pest Control Workers, duration: 0:00:21.981890
+llama3.3-no_prompt-1:  20%|██        | 20/100 [01:36<07:54,  5.93s/it]2025-04-27 18:14:20,526 - Single inference for Patternmakers, Wood, duration: 0:00:42.292296
+2025-04-27 18:14:21,006 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:21,018 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:23,699 - Single inference for Pediatricians, General, duration: 0:00:32.758571
+llama3.3-no_prompt-1:  22%|██▏       | 22/100 [01:39<05:05,  3.92s/it]2025-04-27 18:14:24,005 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:25,714 - Single inference for Paving, Surfacing, and Tamping Equipment Operators, duration: 0:00:44.409062
+llama3.3-no_prompt-1:  23%|██▎       | 23/100 [01:41<04:25,  3.45s/it]2025-04-27 18:14:26,032 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:26,350 - Single inference for Payroll and Timekeeping Clerks, duration: 0:00:37.084834
+llama3.3-no_prompt-1:  24%|██▍       | 24/100 [01:42<03:26,  2.71s/it]2025-04-27 18:14:26,691 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:29,441 - Single inference for Pesticide Handlers, Sprayers, and Applicators, Vegetation, duration: 0:00:22.861988
+llama3.3-no_prompt-1:  25%|██▌       | 25/100 [01:45<03:31,  2.82s/it]2025-04-27 18:14:29,758 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:43,236 - Single inference for Pharmacy Aides, duration: 0:00:19.507838
+llama3.3-no_prompt-1:  26%|██▌       | 26/100 [01:59<07:15,  5.89s/it]2025-04-27 18:14:43,573 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:45,167 - Single inference for Personal Financial Advisors, duration: 0:00:47.830228
+llama3.3-no_prompt-1:  27%|██▋       | 27/100 [02:01<05:47,  4.76s/it]2025-04-27 18:14:45,490 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:48,582 - Single inference for Petroleum Engineers, duration: 0:00:37.848434
+llama3.3-no_prompt-1:  28%|██▊       | 28/100 [02:04<05:14,  4.37s/it]2025-04-27 18:14:48,884 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:49,945 - Single inference for Pharmacists, duration: 0:00:29.373114
+llama3.3-no_prompt-1:  29%|██▉       | 29/100 [02:06<04:07,  3.49s/it]2025-04-27 18:14:50,276 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:14:57,698 - Single inference for Pharmacy Technicians, duration: 0:00:31.963457
+llama3.3-no_prompt-1:  30%|███       | 30/100 [02:13<05:32,  4.75s/it]2025-04-27 18:14:58,002 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:01,669 - Single inference for Petroleum Pump System Operators, Refinery Operators, and Gaugers, duration: 0:00:41.102045
+llama3.3-no_prompt-1:  31%|███       | 31/100 [02:17<05:11,  4.52s/it]2025-04-27 18:15:01,989 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:03,267 - Single inference for Phlebotomists, duration: 0:00:33.799229
+llama3.3-no_prompt-1:  32%|███▏      | 32/100 [02:19<04:07,  3.65s/it]2025-04-27 18:15:03,628 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:07,748 - Single inference for Philosophy and Religion Teachers, Postsecondary, duration: 0:00:41.370700
+llama3.3-no_prompt-1:  33%|███▎      | 33/100 [02:23<04:21,  3.90s/it]2025-04-27 18:15:08,069 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:29,598 - Single inference for Photographers, duration: 0:00:46.337944
+llama3.3-no_prompt-1:  34%|███▍      | 34/100 [02:45<10:11,  9.26s/it]2025-04-27 18:15:29,932 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:31,621 - Single inference for Photographic Process Workers and Processing Machine Operators, duration: 0:00:46.428208
+llama3.3-no_prompt-1:  35%|███▌      | 35/100 [02:47<07:41,  7.10s/it]2025-04-27 18:15:31,926 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:34,973 - Single inference for Physical Medicine and Rehabilitation Physicians, duration: 0:00:37.249068
+llama3.3-no_prompt-1:  36%|███▌      | 36/100 [02:51<06:22,  5.97s/it]2025-04-27 18:15:35,277 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:39,336 - Single inference for Photonics Engineers, duration: 0:00:50.725285
+llama3.3-no_prompt-1:  37%|███▋      | 37/100 [02:55<05:45,  5.49s/it]2025-04-27 18:15:39,659 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:39,987 - Single inference for Physical Therapist Aides, duration: 0:00:38.289233
+llama3.3-no_prompt-1:  38%|███▊      | 38/100 [02:56<04:10,  4.04s/it]2025-04-27 18:15:40,326 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:41,501 - Single inference for Physical Therapist Assistants, duration: 0:00:38.208956
+llama3.3-no_prompt-1:  39%|███▉      | 39/100 [02:57<03:20,  3.28s/it]2025-04-27 18:15:41,833 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:45,465 - Single inference for Physical Therapists, duration: 0:00:37.690289
+llama3.3-no_prompt-1:  40%|████      | 40/100 [03:01<03:29,  3.49s/it]2025-04-27 18:15:45,773 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:46,742 - Single inference for Photonics Technicians, duration: 0:00:56.771177
+llama3.3-no_prompt-1:  41%|████      | 41/100 [03:02<02:46,  2.82s/it]2025-04-27 18:15:47,101 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:51,437 - Single inference for Pile Driver Operators, duration: 0:00:11.427264
+llama3.3-no_prompt-1:  42%|████▏     | 42/100 [03:07<03:16,  3.39s/it]2025-04-27 18:15:51,779 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:52,954 - Single inference for Physicists, duration: 0:00:17.956954
+llama3.3-no_prompt-1:  43%|████▎     | 43/100 [03:09<02:41,  2.82s/it]2025-04-27 18:15:53,258 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:57,273 - Single inference for Physicians, Pathologists, duration: 0:00:25.625667
+llama3.3-no_prompt-1:  44%|████▍     | 44/100 [03:13<03:03,  3.27s/it]2025-04-27 18:15:57,579 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:15:58,941 - Single inference for Physician Assistants, duration: 0:00:29.315960
+llama3.3-no_prompt-1:  45%|████▌     | 45/100 [03:15<02:33,  2.79s/it]2025-04-27 18:15:59,255 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:08,265 - Single inference for Pipelayers, duration: 0:00:26.742393
+llama3.3-no_prompt-1:  46%|████▌     | 46/100 [03:24<04:16,  4.75s/it]2025-04-27 18:16:08,642 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:12,146 - Single inference for Podiatrists, duration: 0:00:19.166584
+llama3.3-no_prompt-1:  47%|████▋     | 47/100 [03:28<03:58,  4.49s/it]2025-04-27 18:16:12,561 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:17,395 - Single inference for Plasterers and Stucco Masons, duration: 0:00:31.901247
+llama3.3-no_prompt-1:  48%|████▊     | 48/100 [03:33<04:05,  4.72s/it]2025-04-27 18:16:17,741 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:23,557 - Single inference for Physics Teachers, Postsecondary, duration: 0:00:44.197142
+llama3.3-no_prompt-1:  49%|████▉     | 49/100 [03:39<04:22,  5.15s/it]2025-04-27 18:16:23,918 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:27,669 - Single inference for Police Identification and Records Officers, duration: 0:00:28.702876
+llama3.3-no_prompt-1:  50%|█████     | 50/100 [03:43<04:01,  4.84s/it]2025-04-27 18:16:27,988 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:31,333 - Single inference for Poets, Lyricists and Creative Writers, duration: 0:00:34.035094
+llama3.3-no_prompt-1:  51%|█████     | 51/100 [03:47<03:39,  4.49s/it]2025-04-27 18:16:31,710 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:42,831 - Single inference for Political Scientists, duration: 0:00:25.412571
+llama3.3-no_prompt-1:  52%|█████▏    | 52/100 [03:59<05:16,  6.59s/it]2025-04-27 18:16:43,161 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:45,644 - Single inference for Political Science Teachers, Postsecondary, duration: 0:00:33.471541
+llama3.3-no_prompt-1:  53%|█████▎    | 53/100 [04:01<04:16,  5.46s/it]2025-04-27 18:16:45,977 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:49,308 - Single inference for Plating Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:01:02.543234
+llama3.3-no_prompt-1:  54%|█████▍    | 54/100 [04:05<03:46,  4.92s/it]2025-04-27 18:16:49,618 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:50,294 - Single inference for Plumbers, Pipefitters, and Steamfitters, duration: 0:00:58.829303
+llama3.3-no_prompt-1:  55%|█████▌    | 55/100 [04:06<02:48,  3.74s/it]2025-04-27 18:16:50,684 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:51,756 - Single inference for Postal Service Clerks, duration: 0:00:28.177840
+llama3.3-no_prompt-1:  56%|█████▌    | 56/100 [04:07<02:14,  3.05s/it]2025-04-27 18:16:52,065 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:54,110 - Single inference for Postal Service Mail Sorters, Processors, and Processing Machine Operators, duration: 0:00:22.751583
+llama3.3-no_prompt-1:  57%|█████▋    | 57/100 [04:10<02:02,  2.85s/it]2025-04-27 18:16:54,481 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:16:57,792 - Single inference for Postal Service Mail Carriers, duration: 0:00:30.098753
+llama3.3-no_prompt-1:  58%|█████▊    | 58/100 [04:13<02:10,  3.10s/it]2025-04-27 18:16:58,120 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:05,313 - Single inference for Pourers and Casters, Metal, duration: 0:00:15.979776
+llama3.3-no_prompt-1:  59%|█████▉    | 59/100 [04:21<03:01,  4.42s/it]2025-04-27 18:17:05,644 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:09,561 - Single inference for Police and Sheriff's Patrol Officers, duration: 0:01:01.269171
+llama3.3-no_prompt-1:  60%|██████    | 60/100 [04:25<02:54,  4.37s/it]2025-04-27 18:17:09,871 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:17,463 - Single inference for Power Distributors and Dispatchers, duration: 0:00:27.144209
+llama3.3-no_prompt-1:  61%|██████    | 61/100 [04:33<03:31,  5.43s/it]2025-04-27 18:17:17,801 - Single inference for Postmasters and Mail Superintendents, duration: 0:00:34.944195
+llama3.3-no_prompt-1:  62%|██████▏   | 62/100 [04:33<02:28,  3.90s/it]2025-04-27 18:17:17,826 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:18,150 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:25,556 - Single inference for Prepress Technicians and Workers, duration: 0:00:27.736733
+llama3.3-no_prompt-1:  63%|██████▎   | 63/100 [04:41<03:07,  5.06s/it]2025-04-27 18:17:25,881 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:28,471 - Single inference for Power Plant Operators, duration: 0:00:36.693915
+llama3.3-no_prompt-1:  64%|██████▍   | 64/100 [04:44<02:38,  4.42s/it]2025-04-27 18:17:28,801 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:34,327 - Single inference for Potters, Manufacturing, duration: 0:00:48.657716
+llama3.3-no_prompt-1:  65%|██████▌   | 65/100 [04:50<02:49,  4.85s/it]2025-04-27 18:17:34,676 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:35,753 - Single inference for Precision Agriculture Technicians, duration: 0:00:41.617918
+llama3.3-no_prompt-1:  66%|██████▌   | 66/100 [04:51<02:09,  3.82s/it]2025-04-27 18:17:36,052 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:44,435 - Single inference for Preventive Medicine Physicians, duration: 0:00:26.947093
+llama3.3-no_prompt-1:  67%|██████▋   | 67/100 [05:00<02:54,  5.28s/it]2025-04-27 18:17:44,770 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:47,914 - Single inference for Private Detectives and Investigators, duration: 0:00:19.413307
+llama3.3-no_prompt-1:  68%|██████▊   | 68/100 [05:04<02:31,  4.74s/it]2025-04-27 18:17:48,268 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:53,537 - Single inference for Pressers, Textile, Garment, and Related Materials, duration: 0:00:43.949810
+llama3.3-no_prompt-1:  69%|██████▉   | 69/100 [05:09<02:35,  5.01s/it]2025-04-27 18:17:53,875 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:17:59,018 - Single inference for Print Binding and Finishing Workers, duration: 0:00:41.191176
+llama3.3-no_prompt-1:  70%|███████   | 70/100 [05:15<02:34,  5.15s/it]2025-04-27 18:17:59,361 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:02,442 - Single inference for Printing Press Operators, duration: 0:00:36.858469
+llama3.3-no_prompt-1:  71%|███████   | 71/100 [05:18<02:14,  4.63s/it]2025-04-27 18:18:02,782 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:07,240 - Single inference for Preschool Teachers, Except Special Education, duration: 0:01:01.905102
+llama3.3-no_prompt-1:  72%|███████▏  | 72/100 [05:23<02:11,  4.68s/it]2025-04-27 18:18:07,586 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:07,589 - Single inference for Procurement Clerks, duration: 0:00:31.815478
+llama3.3-no_prompt-1:  73%|███████▎  | 73/100 [05:23<01:31,  3.38s/it]2025-04-27 18:18:07,963 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:11,900 - Single inference for Proofreaders and Copy Markers, duration: 0:00:18.336840
+llama3.3-no_prompt-1:  74%|███████▍  | 74/100 [05:28<01:35,  3.66s/it]2025-04-27 18:18:12,194 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:18,127 - Single inference for Production, Planning, and Expediting Clerks, duration: 0:00:30.188109
+llama3.3-no_prompt-1:  75%|███████▌  | 75/100 [05:34<01:50,  4.43s/it]2025-04-27 18:18:18,458 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:22,079 - Single inference for Probation Officers and Correctional Treatment Specialists, duration: 0:00:47.726552
+llama3.3-no_prompt-1:  76%|███████▌  | 76/100 [05:38<01:42,  4.29s/it]2025-04-27 18:18:22,407 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:28,009 - Single inference for Producers and Directors, duration: 0:00:43.544292
+llama3.3-no_prompt-1:  77%|███████▋  | 77/100 [05:44<01:49,  4.78s/it]2025-04-27 18:18:28,441 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:32,046 - Single inference for Psychiatric Technicians, duration: 0:00:24.440300
+llama3.3-no_prompt-1:  78%|███████▊  | 78/100 [05:48<01:40,  4.56s/it]2025-04-27 18:18:32,392 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:33,672 - Single inference for Prosthodontists, duration: 0:00:31.205014
+llama3.3-no_prompt-1:  79%|███████▉  | 79/100 [05:49<01:17,  3.67s/it]2025-04-27 18:18:34,001 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:35,939 - Single inference for Psychiatrists, duration: 0:00:24.011295
+llama3.3-no_prompt-1:  80%|████████  | 80/100 [05:52<01:05,  3.26s/it]2025-04-27 18:18:36,279 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:37,467 - Single inference for Psychiatric Aides, duration: 0:00:30.199763
+llama3.3-no_prompt-1:  81%|████████  | 81/100 [05:53<00:51,  2.74s/it]2025-04-27 18:18:37,773 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:42,693 - Single inference for Property, Real Estate, and Community Association Managers, duration: 0:00:43.653809
+llama3.3-no_prompt-1:  82%|████████▏ | 82/100 [05:58<01:02,  3.49s/it]2025-04-27 18:18:42,996 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:51,272 - Single inference for Public Relations Specialists, duration: 0:00:29.167374
+llama3.3-no_prompt-1:  83%|████████▎ | 83/100 [06:07<01:25,  5.01s/it]2025-04-27 18:18:51,629 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:55,642 - Single inference for Psychology Teachers, Postsecondary, duration: 0:00:37.489462
+llama3.3-no_prompt-1:  84%|████████▍ | 84/100 [06:11<01:17,  4.82s/it]2025-04-27 18:18:55,952 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:18:57,655 - Single inference for Pump Operators, Except Wellhead Pumpers, duration: 0:00:25.584032
+llama3.3-no_prompt-1:  85%|████████▌ | 85/100 [06:13<00:59,  3.98s/it]2025-04-27 18:18:58,014 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:01,704 - Single inference for Public Safety Telecommunicators, duration: 0:00:33.668273
+llama3.3-no_prompt-1:  86%|████████▌ | 86/100 [06:17<00:56,  4.00s/it]2025-04-27 18:19:02,030 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:04,347 - Single inference for Purchasing Agents, Except Wholesale, Retail, and Farm Products, duration: 0:00:30.653516
+llama3.3-no_prompt-1:  87%|████████▋ | 87/100 [06:20<00:46,  3.59s/it]2025-04-27 18:19:04,671 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:06,090 - Single inference for Radio Frequency Identification Device Specialists, duration: 0:00:10.420171
+llama3.3-no_prompt-1:  88%|████████▊ | 88/100 [06:22<00:36,  3.04s/it]2025-04-27 18:19:06,391 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:08,308 - Single inference for Purchasing Managers, duration: 0:00:32.342571
+llama3.3-no_prompt-1:  89%|████████▉ | 89/100 [06:24<00:30,  2.79s/it]2025-04-27 18:19:08,630 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:19,233 - Single inference for Quality Control Analysts, duration: 0:00:41.741181
+llama3.3-no_prompt-1:  90%|█████████ | 90/100 [06:35<00:52,  5.23s/it]2025-04-27 18:19:19,574 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:29,749 - Single inference for Quality Control Systems Managers, duration: 0:00:47.029020
+llama3.3-no_prompt-1:  91%|█████████ | 91/100 [06:45<01:01,  6.81s/it]2025-04-27 18:19:30,116 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:31,403 - Single inference for Radio, Cellular, and Tower Equipment Installers and Repairers, duration: 0:00:33.721921
+llama3.3-no_prompt-1:  92%|█████████▏| 92/100 [06:47<00:42,  5.27s/it]2025-04-27 18:19:31,495 - Single inference for Radiation Therapists, duration: 0:00:40.198193
+2025-04-27 18:19:31,753 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:32,699 - Single inference for Radiologists, duration: 0:00:28.323838
+llama3.3-no_prompt-1:  94%|█████████▍| 94/100 [06:48<00:18,  3.13s/it]2025-04-27 18:19:41,312 - Single inference for Rail Car Repairers, duration: 0:00:35.195012
+llama3.3-no_prompt-1:  95%|█████████▌| 95/100 [06:57<00:22,  4.49s/it]2025-04-27 18:19:47,551 - Single inference for Rail Yard Engineers, Dinkey Operators, and Hostlers, duration: 0:00:39.218896
+llama3.3-no_prompt-1:  96%|█████████▌| 96/100 [07:03<00:19,  4.95s/it]2025-04-27 18:19:49,169 - Single inference for Radiologic Technologists and Technicians, duration: 0:00:47.437587
+llama3.3-no_prompt-1:  97%|█████████▋| 97/100 [07:05<00:12,  4.04s/it]2025-04-27 18:19:51,015 - Single inference for Railroad Conductors and Yardmasters, duration: 0:00:19.586877
+llama3.3-no_prompt-1:  98%|█████████▊| 98/100 [07:07<00:06,  3.43s/it]2025-04-27 18:19:52,013 - Single inference for Rail-Track Laying and Maintenance Equipment Operators, duration: 0:00:32.754463
+llama3.3-no_prompt-1:  99%|█████████▉| 99/100 [07:08<00:02,  2.73s/it]2025-04-27 18:19:54,967 - Single inference for Railroad Brake, Signal, and Switch Operators and Locomotive Firers, duration: 0:00:25.200436
+llama3.3-no_prompt-1: 100%|██████████| 100/100 [07:11<00:00,  2.80s/it]llama3.3-no_prompt-1: 100%|██████████| 100/100 [07:11<00:00,  4.31s/it]
+2025-04-27 18:19:55,025 - Multiprocessing for llama3.3-no_prompt-1, duration: 0:07:11.249304
+llama3.3-no_prompt-2:   0%|          | 0/100 [00:00<?, ?it/s]2025-04-27 18:19:55,398 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:55,888 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:55,898 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:55,908 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:55,918 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:55,928 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:55,939 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:19:56,273 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:15,881 - Single inference for Packers and Packagers, Hand, duration: 0:00:20.699380
+llama3.3-no_prompt-2:   1%|          | 1/100 [00:20<34:19, 20.80s/it]2025-04-27 18:20:16,227 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:18,551 - Single inference for Painting, Coating, and Decorating Workers, duration: 0:00:23.333071
+llama3.3-no_prompt-2:   2%|▏         | 2/100 [00:23<16:34, 10.14s/it]2025-04-27 18:20:18,875 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:20,383 - Single inference for Outdoor Power Equipment and Other Small Engine Mechanics, duration: 0:00:25.257589
+llama3.3-no_prompt-2:   3%|▎         | 3/100 [00:25<10:17,  6.36s/it]2025-04-27 18:20:20,810 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:22,816 - Single inference for Orthodontists, duration: 0:00:27.628304
+llama3.3-no_prompt-2:   4%|▍         | 4/100 [00:27<07:40,  4.80s/it]2025-04-27 18:20:23,122 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:26,508 - Single inference for Orthoptists, duration: 0:00:31.361187
+llama3.3-no_prompt-2:   5%|▌         | 5/100 [00:31<06:57,  4.40s/it]2025-04-27 18:20:26,829 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:29,892 - Single inference for Packaging and Filling Machine Operators and Tenders, duration: 0:00:34.695007
+llama3.3-no_prompt-2:   6%|▌         | 6/100 [00:34<06:20,  4.05s/it]2025-04-27 18:20:29,982 - Single inference for Painters, Construction and Maintenance, duration: 0:00:34.790309
+2025-04-27 18:20:30,237 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:30,246 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:31,566 - Single inference for Orthotists and Prosthetists, duration: 0:00:36.451018
+llama3.3-no_prompt-2:   8%|▊         | 8/100 [00:36<03:47,  2.47s/it]2025-04-27 18:20:31,878 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:38,810 - Single inference for Paralegals and Legal Assistants, duration: 0:00:18.359055
+llama3.3-no_prompt-2:   9%|▉         | 9/100 [00:43<05:37,  3.71s/it]2025-04-27 18:20:39,095 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:52,064 - Single inference for Parking Attendants, duration: 0:00:25.534233
+llama3.3-no_prompt-2:  10%|█         | 10/100 [00:57<09:27,  6.30s/it]2025-04-27 18:20:52,364 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:52,701 - Single inference for Paper Goods Machine Setters, Operators, and Tenders, duration: 0:00:36.799140
+llama3.3-no_prompt-2:  11%|█         | 11/100 [00:57<06:59,  4.72s/it]2025-04-27 18:20:53,008 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:57,567 - Single inference for Paperhangers, duration: 0:00:38.987414
+llama3.3-no_prompt-2:  12%|█▏        | 12/100 [01:02<06:58,  4.76s/it]2025-04-27 18:20:57,914 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:58,013 - Single inference for Passenger Attendants, duration: 0:00:26.420663
+llama3.3-no_prompt-2:  13%|█▎        | 13/100 [01:02<05:05,  3.51s/it]2025-04-27 18:20:58,361 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:20:59,514 - Single inference for Parts Salespersons, duration: 0:00:29.511307
+llama3.3-no_prompt-2:  14%|█▍        | 14/100 [01:04<04:11,  2.92s/it]2025-04-27 18:20:59,846 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:02,603 - Single inference for Parking Enforcement Workers, duration: 0:00:32.690759
+llama3.3-no_prompt-2:  15%|█▌        | 15/100 [01:07<04:12,  2.97s/it]2025-04-27 18:21:03,019 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:04,185 - Single inference for Patient Representatives, duration: 0:00:25.348915
+llama3.3-no_prompt-2:  16%|█▌        | 16/100 [01:09<03:35,  2.56s/it]2025-04-27 18:21:04,528 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:11,989 - Single inference for Park Naturalists, duration: 0:00:49.147941
+llama3.3-no_prompt-2:  17%|█▋        | 17/100 [01:16<05:41,  4.12s/it]2025-04-27 18:21:12,294 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:16,749 - Single inference for Paving, Surfacing, and Tamping Equipment Operators, duration: 0:00:19.156176
+llama3.3-no_prompt-2:  18%|█▊        | 18/100 [01:21<05:53,  4.31s/it]2025-04-27 18:21:17,105 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:19,945 - Single inference for Personal Care Aides, duration: 0:00:17.320837
+llama3.3-no_prompt-2:  19%|█▉        | 19/100 [01:24<05:22,  3.98s/it]2025-04-27 18:21:20,252 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:20,893 - Single inference for Patternmakers, Metal and Plastic, duration: 0:00:28.800569
+llama3.3-no_prompt-2:  20%|██        | 20/100 [01:25<04:05,  3.07s/it]2025-04-27 18:21:21,234 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:29,151 - Single inference for Pediatricians, General, duration: 0:00:29.611441
+llama3.3-no_prompt-2:  21%|██        | 21/100 [01:34<06:05,  4.62s/it]2025-04-27 18:21:29,473 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:29,682 - Single inference for Payroll and Timekeeping Clerks, duration: 0:00:31.640234
+llama3.3-no_prompt-2:  22%|██▏       | 22/100 [01:34<04:24,  3.40s/it]2025-04-27 18:21:30,009 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:32,656 - Single inference for Pest Control Workers, duration: 0:00:20.647024
+llama3.3-no_prompt-2:  23%|██▎       | 23/100 [01:37<04:11,  3.27s/it]2025-04-27 18:21:32,973 - Single inference for Patternmakers, Wood, duration: 0:00:40.247542
+llama3.3-no_prompt-2:  24%|██▍       | 24/100 [01:37<03:01,  2.38s/it]2025-04-27 18:21:32,982 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:33,313 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:42,413 - Single inference for Personal Financial Advisors, duration: 0:00:38.202444
+llama3.3-no_prompt-2:  25%|██▌       | 25/100 [01:47<05:37,  4.50s/it]2025-04-27 18:21:42,505 - Single inference for Pesticide Handlers, Sprayers, and Applicators, Vegetation, duration: 0:00:25.735784
+2025-04-27 18:21:42,804 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:42,815 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:51,723 - Single inference for Pharmacy Aides, duration: 0:00:22.018257
+llama3.3-no_prompt-2:  27%|██▋       | 27/100 [01:56<05:33,  4.57s/it]2025-04-27 18:21:52,033 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:21:53,408 - Single inference for Petroleum Engineers, duration: 0:00:33.437813
+llama3.3-no_prompt-2:  28%|██▊       | 28/100 [01:58<04:37,  3.86s/it]2025-04-27 18:21:53,700 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:01,571 - Single inference for Petroleum Pump System Operators, Refinery Operators, and Gaugers, duration: 0:00:40.651520
+llama3.3-no_prompt-2:  29%|██▉       | 29/100 [02:06<05:53,  4.98s/it]2025-04-27 18:22:01,872 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:04,371 - Single inference for Pharmacy Technicians, duration: 0:00:31.696321
+llama3.3-no_prompt-2:  30%|███       | 30/100 [02:09<05:07,  4.39s/it]2025-04-27 18:22:04,670 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:11,953 - Single inference for Pharmacists, duration: 0:00:42.773529
+llama3.3-no_prompt-2:  31%|███       | 31/100 [02:16<06:04,  5.28s/it]2025-04-27 18:22:12,270 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:15,619 - Single inference for Phlebotomists, duration: 0:00:33.179539
+llama3.3-no_prompt-2:  32%|███▏      | 32/100 [02:20<05:27,  4.82s/it]2025-04-27 18:22:15,972 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:19,667 - Single inference for Philosophy and Religion Teachers, Postsecondary, duration: 0:00:46.670126
+llama3.3-no_prompt-2:  33%|███▎      | 33/100 [02:24<05:08,  4.60s/it]2025-04-27 18:22:19,986 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:31,679 - Single inference for Photographers, duration: 0:00:49.148903
+2025-04-27 18:22:31,680 - Single inference for Photographic Process Workers and Processing Machine Operators, duration: 0:00:39.927241
+llama3.3-no_prompt-2:  34%|███▍      | 34/100 [02:36<07:26,  6.77s/it]2025-04-27 18:22:32,155 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:32,166 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:35,238 - Single inference for Physical Therapist Aides, duration: 0:00:23.261275
+llama3.3-no_prompt-2:  36%|███▌      | 36/100 [02:40<04:47,  4.49s/it]2025-04-27 18:22:35,540 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:38,272 - Single inference for Photonics Technicians, duration: 0:00:36.672963
+llama3.3-no_prompt-2:  37%|███▋      | 37/100 [02:43<04:20,  4.14s/it]2025-04-27 18:22:38,365 - Single inference for Physical Medicine and Rehabilitation Physicians, duration: 0:00:33.967814
+2025-04-27 18:22:38,679 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:38,689 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:45,982 - Single inference for Photonics Engineers, duration: 0:00:52.547784
+llama3.3-no_prompt-2:  39%|███▉      | 39/100 [02:50<04:05,  4.02s/it]2025-04-27 18:22:46,304 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:47,580 - Single inference for Pile Driver Operators, duration: 0:00:09.194165
+llama3.3-no_prompt-2:  40%|████      | 40/100 [02:52<03:28,  3.47s/it]2025-04-27 18:22:47,893 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:50,099 - Single inference for Physician Assistants, duration: 0:00:18.393529
+llama3.3-no_prompt-2:  41%|████      | 41/100 [02:55<03:10,  3.23s/it]2025-04-27 18:22:50,459 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:52,767 - Single inference for Physical Therapist Assistants, duration: 0:00:37.121493
+llama3.3-no_prompt-2:  42%|████▏     | 42/100 [02:57<02:59,  3.09s/it]2025-04-27 18:22:53,123 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:22:53,672 - Single inference for Physicists, duration: 0:00:18.410421
+llama3.3-no_prompt-2:  43%|████▎     | 43/100 [02:58<02:22,  2.50s/it]2025-04-27 18:22:53,974 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:23:01,883 - Single inference for Physical Therapists, duration: 0:00:42.190998
+llama3.3-no_prompt-2:  44%|████▍     | 44/100 [03:06<03:48,  4.09s/it]2025-04-27 18:23:02,190 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:23:03,031 - Single inference for Physicians, Pathologists, duration: 0:00:31.308242
+llama3.3-no_prompt-2:  45%|████▌     | 45/100 [03:07<02:59,  3.25s/it]2025-04-27 18:23:03,338 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:23:08,372 - Single inference for Pipelayers, duration: 0:00:22.364764
+llama3.3-no_prompt-2:  46%|████▌     | 46/100 [03:13<03:28,  3.86s/it]2025-04-27 18:23:08,728 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:23:15,525 - Single inference for Plasterers and Stucco Masons, duration: 0:00:27.918388
+llama3.3-no_prompt-2:  47%|████▋     | 47/100 [03:20<04:15,  4.82s/it]2025-04-27 18:23:15,845 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
+2025-04-27 18:23:18,784 - Single inference for Podiatrists, duration: 0:00:25.089293
+llama3.3-no_prompt-2:  48%|████▊     | 48/100 [03:23<03:46,  4.36s/it]2025-04-27 18:23:19,127 - HTTP Request: POST http://127.0.0.1:11789/api/chat "HTTP/1.1 200 OK"
