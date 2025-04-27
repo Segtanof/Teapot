@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=800n
+#SBATCH --job-name=d200
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=2     
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=40G              
-#SBATCH --time=01:30:00        
+#SBATCH --mem=4G              
+#SBATCH --time=02:30:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 #SBATCH --mail-type=ALL

@@ -1,0 +1,936 @@
+2025/04/27 21:40:08 routes.go:1186: INFO server config env="map[CUDA_VISIBLE_DEVICES:0 GPU_DEVICE_ORDINAL:0 HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:true OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11574 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:4h0m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/home/ma/ma_ma/ma_ssiu/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:8 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:0 http_proxy: https_proxy: no_proxy:]"
+time=2025-04-27T21:40:08.600+02:00 level=INFO source=images.go:432 msg="total blobs: 26"
+time=2025-04-27T21:40:08.611+02:00 level=INFO source=images.go:439 msg="total unused blobs removed: 0"
+time=2025-04-27T21:40:08.624+02:00 level=INFO source=routes.go:1237 msg="Listening on 127.0.0.1:11574 (version 0.5.11)"
+time=2025-04-27T21:40:08.624+02:00 level=DEBUG source=sched.go:105 msg="starting llm scheduler"
+time=2025-04-27T21:40:08.624+02:00 level=INFO source=gpu.go:217 msg="looking for compatible GPUs"
+time=2025-04-27T21:40:08.630+02:00 level=DEBUG source=gpu.go:98 msg="searching for GPU discovery libraries for NVIDIA"
+time=2025-04-27T21:40:08.630+02:00 level=DEBUG source=gpu.go:501 msg="Searching for GPU library" name=libcuda.so*
+time=2025-04-27T21:40:08.630+02:00 level=DEBUG source=gpu.go:525 msg="gpu library search" globs="[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /usr/local/cuda*/targets/*/lib/libcuda.so* /usr/lib/*-linux-gnu/nvidia/current/libcuda.so* /usr/lib/*-linux-gnu/libcuda.so* /usr/lib/wsl/lib/libcuda.so* /usr/lib/wsl/drivers/*/libcuda.so* /opt/cuda/lib*/libcuda.so* /usr/local/cuda/lib*/libcuda.so* /usr/lib*/libcuda.so* /usr/local/lib*/libcuda.so*]"
+time=2025-04-27T21:40:08.636+02:00 level=DEBUG source=gpu.go:558 msg="discovered GPU libraries" paths="[/usr/lib/libcuda.so.570.86.15 /usr/lib64/libcuda.so.570.86.15]"
+initializing /usr/lib/libcuda.so.570.86.15
+library /usr/lib/libcuda.so.570.86.15 load err: /usr/lib/libcuda.so.570.86.15: wrong ELF class: ELFCLASS32
+time=2025-04-27T21:40:08.636+02:00 level=DEBUG source=gpu.go:609 msg="skipping 32bit library" library=/usr/lib/libcuda.so.570.86.15
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x151aebd0de00
+dlsym: cuDriverGetVersion - 0x151aebd0de20
+dlsym: cuDeviceGetCount - 0x151aebd0de60
+dlsym: cuDeviceGet - 0x151aebd0de40
+dlsym: cuDeviceGetAttribute - 0x151aebd0df40
+dlsym: cuDeviceGetUuid - 0x151aebd0dea0
+dlsym: cuDeviceGetName - 0x151aebd0de80
+dlsym: cuCtxCreate_v3 - 0x151aebd0e120
+dlsym: cuMemGetInfo_v2 - 0x151aebd0e8a0
+dlsym: cuCtxDestroy - 0x151aebd6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T21:40:08.884+02:00 level=DEBUG source=gpu.go:125 msg="detected GPUs" count=1 library=/usr/lib64/libcuda.so.570.86.15
+[GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f] CUDA totalMem 81153 mb
+[GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f] CUDA freeMem 80704 mb
+[GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f] Compute Capability 8.0
+time=2025-04-27T21:40:09.068+02:00 level=DEBUG source=amd_linux.go:419 msg="amdgpu driver not detected /sys/module/amdgpu"
+releasing cuda driver library
+time=2025-04-27T21:40:09.068+02:00 level=INFO source=types.go:130 msg="inference compute" id=GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f library=cuda variant=v12 compute=8.0 driver=12.8 name="NVIDIA A100 80GB PCIe" total="79.3 GiB" available="78.8 GiB"
+time=2025-04-27T21:40:39.111+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="503.5 GiB" before.free="467.0 GiB" before.free_swap="14.9 GiB" now.total="503.5 GiB" now.free="465.3 GiB" now.free_swap="14.9 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x151aebd0de00
+dlsym: cuDriverGetVersion - 0x151aebd0de20
+dlsym: cuDeviceGetCount - 0x151aebd0de60
+dlsym: cuDeviceGet - 0x151aebd0de40
+dlsym: cuDeviceGetAttribute - 0x151aebd0df40
+dlsym: cuDeviceGetUuid - 0x151aebd0dea0
+dlsym: cuDeviceGetName - 0x151aebd0de80
+dlsym: cuCtxCreate_v3 - 0x151aebd0e120
+dlsym: cuMemGetInfo_v2 - 0x151aebd0e8a0
+dlsym: cuCtxDestroy - 0x151aebd6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T21:40:39.299+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f name="NVIDIA A100 80GB PCIe" overhead="0 B" before.total="79.3 GiB" before.free="78.8 GiB" now.total="79.3 GiB" now.free="78.8 GiB" now.used="449.4 MiB"
+releasing cuda driver library
+time=2025-04-27T21:40:39.299+02:00 level=DEBUG source=sched.go:181 msg="updating default concurrency" OLLAMA_MAX_LOADED_MODELS=0x55a3958abb40 gpu_count=1
+time=2025-04-27T21:40:39.331+02:00 level=DEBUG source=sched.go:224 msg="loading first model" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:39.331+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[78.8 GiB]"
+time=2025-04-27T21:40:39.331+02:00 level=INFO source=sched.go:714 msg="new model will fit in available VRAM in single GPU, loading" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 gpu=GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f parallel=8 available=84624670720 required="19.2 GiB"
+time=2025-04-27T21:40:39.331+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="503.5 GiB" before.free="465.3 GiB" before.free_swap="14.9 GiB" now.total="503.5 GiB" now.free="465.3 GiB" now.free_swap="14.9 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x151aebd0de00
+dlsym: cuDriverGetVersion - 0x151aebd0de20
+dlsym: cuDeviceGetCount - 0x151aebd0de60
+dlsym: cuDeviceGet - 0x151aebd0de40
+dlsym: cuDeviceGetAttribute - 0x151aebd0df40
+dlsym: cuDeviceGetUuid - 0x151aebd0dea0
+dlsym: cuDeviceGetName - 0x151aebd0de80
+dlsym: cuCtxCreate_v3 - 0x151aebd0e120
+dlsym: cuMemGetInfo_v2 - 0x151aebd0e8a0
+dlsym: cuCtxDestroy - 0x151aebd6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T21:40:39.507+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f name="NVIDIA A100 80GB PCIe" overhead="0 B" before.total="79.3 GiB" before.free="78.8 GiB" now.total="79.3 GiB" now.free="78.8 GiB" now.used="449.4 MiB"
+releasing cuda driver library
+time=2025-04-27T21:40:39.507+02:00 level=INFO source=server.go:100 msg="system memory" total="503.5 GiB" free="465.3 GiB" free_swap="14.9 GiB"
+time=2025-04-27T21:40:39.507+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[78.8 GiB]"
+time=2025-04-27T21:40:39.508+02:00 level=INFO source=memory.go:356 msg="offload to cuda" layers.requested=-1 layers.model=29 layers.offload=29 layers.split="" memory.available="[78.8 GiB]" memory.gpu_overhead="0 B" memory.required.full="19.2 GiB" memory.required.partial="19.2 GiB" memory.required.kv="7.0 GiB" memory.required.allocations="[19.2 GiB]" memory.weights.total="10.7 GiB" memory.weights.repeating="10.2 GiB" memory.weights.nonrepeating="426.4 MiB" memory.graph.full="7.3 GiB" memory.graph.partial="9.0 GiB"
+time=2025-04-27T21:40:39.509+02:00 level=DEBUG source=server.go:262 msg="compatible gpu libraries" compatible="[cuda_v12 cuda_v11]"
+time=2025-04-27T21:40:39.509+02:00 level=DEBUG source=server.go:302 msg="adding gpu library" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-27T21:40:39.509+02:00 level=DEBUG source=server.go:310 msg="adding gpu dependency paths" paths=[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12]
+time=2025-04-27T21:40:39.510+02:00 level=INFO source=server.go:380 msg="starting llama server" cmd="/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/bin/ollama runner --model /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 --ctx-size 131072 --batch-size 512 --n-gpu-layers 29 --verbose --threads 64 --parallel 8 --port 43555"
+time=2025-04-27T21:40:39.510+02:00 level=DEBUG source=server.go:398 msg=subprocess environment="[ROCR_VISIBLE_DEVICES=0 CUDA_VISIBLE_DEVICES=GPU-777d8a41-68b2-5d83-56c4-844c3bbdd26f GPU_DEVICE_ORDINAL=0 LD_LIBRARY_PATH=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama PATH=/pfs/work9/workspace/scratch/ma_ssiu-thesis/.conda/envs/mythesis/bin:/opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/condabin:/opt/bwhpc/common/cs/ollama/0.5.11/bin:/software/all/bin:/pfs/data6/home/ma/ma_ma/ma_ssiu/.vscode-server/cli/servers/Stable-17baf841131aa23349f217ca7c570c76ee87b957/server/bin/remote-cli:/home/ma/ma_ma/ma_ssiu/.local/bin:/home/ma/ma_ma/ma_ssiu/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ma/ma_ma/ma_ssiu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand]"
+time=2025-04-27T21:40:39.510+02:00 level=INFO source=sched.go:449 msg="loaded runners" count=1
+time=2025-04-27T21:40:39.510+02:00 level=INFO source=server.go:557 msg="waiting for llama runner to start responding"
+time=2025-04-27T21:40:39.511+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server error"
+time=2025-04-27T21:40:39.538+02:00 level=INFO source=runner.go:936 msg="starting go runner"
+time=2025-04-27T21:40:39.538+02:00 level=INFO source=runner.go:937 msg=system info="CPU : LLAMAFILE = 1 | CPU : LLAMAFILE = 1 | cgo(gcc)" threads=64
+time=2025-04-27T21:40:39.538+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-27T21:40:39.538+02:00 level=INFO source=runner.go:995 msg="Server listening on 127.0.0.1:43555"
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA A100 80GB PCIe, compute capability 8.0, VMM: yes
+load_backend: loaded CUDA backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12/libggml-cuda.so
+time=2025-04-27T21:40:39.622+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+time=2025-04-27T21:40:39.651+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+time=2025-04-27T21:40:39.762+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server loading model"
+llama_load_model_from_file: using device CUDA0 (NVIDIA A100 80GB PCIe) - 80704 MiB free
+llama_model_loader: loaded meta data with 26 key-value pairs and 339 tensors from /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen2
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = DeepSeek R1 Distill Qwen 7B
+llama_model_loader: - kv   3:                           general.basename str              = DeepSeek-R1-Distill-Qwen
+llama_model_loader: - kv   4:                         general.size_label str              = 7B
+llama_model_loader: - kv   5:                          qwen2.block_count u32              = 28
+llama_model_loader: - kv   6:                       qwen2.context_length u32              = 131072
+llama_model_loader: - kv   7:                     qwen2.embedding_length u32              = 3584
+llama_model_loader: - kv   8:                  qwen2.feed_forward_length u32              = 18944
+llama_model_loader: - kv   9:                 qwen2.attention.head_count u32              = 28
+llama_model_loader: - kv  10:              qwen2.attention.head_count_kv u32              = 4
+llama_model_loader: - kv  11:                       qwen2.rope.freq_base f32              = 10000.000000
+llama_model_loader: - kv  12:     qwen2.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  13:                          general.file_type u32              = 15
+llama_model_loader: - kv  14:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  15:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,152064]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,152064]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  18:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  19:                tokenizer.ggml.bos_token_id u32              = 151646
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 151643
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  22:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  23:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {% if not add_generation_prompt is de...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  141 tensors
+llama_model_loader: - type q4_K:  169 tensors
+llama_model_loader: - type q6_K:   29 tensors
+llm_load_vocab: control token: 151660 '<|fim_middle|>' is not marked as EOG
+llm_load_vocab: control token: 151659 '<|fim_prefix|>' is not marked as EOG
+llm_load_vocab: control token: 151653 '<|vision_end|>' is not marked as EOG
+llm_load_vocab: control token: 151645 '<｜Assistant｜>' is not marked as EOG
+llm_load_vocab: control token: 151644 '<｜User｜>' is not marked as EOG
+llm_load_vocab: control token: 151655 '<|image_pad|>' is not marked as EOG
+llm_load_vocab: control token: 151651 '<|quad_end|>' is not marked as EOG
+llm_load_vocab: control token: 151646 '<｜begin▁of▁sentence｜>' is not marked as EOG
+llm_load_vocab: control token: 151643 '<｜end▁of▁sentence｜>' is not marked as EOG
+llm_load_vocab: control token: 151652 '<|vision_start|>' is not marked as EOG
+llm_load_vocab: control token: 151647 '<|EOT|>' is not marked as EOG
+llm_load_vocab: control token: 151654 '<|vision_pad|>' is not marked as EOG
+llm_load_vocab: control token: 151656 '<|video_pad|>' is not marked as EOG
+llm_load_vocab: control token: 151661 '<|fim_suffix|>' is not marked as EOG
+llm_load_vocab: control token: 151650 '<|quad_start|>' is not marked as EOG
+llm_load_vocab: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+llm_load_vocab: special tokens cache size = 22
+llm_load_vocab: token to piece cache size = 0.9310 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = qwen2
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 152064
+llm_load_print_meta: n_merges         = 151387
+llm_load_print_meta: vocab_only       = 0
+llm_load_print_meta: n_ctx_train      = 131072
+llm_load_print_meta: n_embd           = 3584
+llm_load_print_meta: n_layer          = 28
+llm_load_print_meta: n_head           = 28
+llm_load_print_meta: n_head_kv        = 4
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_swa            = 0
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 7
+llm_load_print_meta: n_embd_k_gqa     = 512
+llm_load_print_meta: n_embd_v_gqa     = 512
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-06
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 18944
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 2
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 10000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_ctx_orig_yarn  = 131072
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: ssm_dt_b_c_rms   = 0
+llm_load_print_meta: model type       = 7B
+llm_load_print_meta: model ftype      = Q4_K - Medium
+llm_load_print_meta: model params     = 7.62 B
+llm_load_print_meta: model size       = 4.36 GiB (4.91 BPW) 
+llm_load_print_meta: general.name     = DeepSeek R1 Distill Qwen 7B
+llm_load_print_meta: BOS token        = 151646 '<｜begin▁of▁sentence｜>'
+llm_load_print_meta: EOS token        = 151643 '<｜end▁of▁sentence｜>'
+llm_load_print_meta: EOT token        = 151643 '<｜end▁of▁sentence｜>'
+llm_load_print_meta: PAD token        = 151643 '<｜end▁of▁sentence｜>'
+llm_load_print_meta: LF token         = 148848 'ÄĬ'
+llm_load_print_meta: FIM PRE token    = 151659 '<|fim_prefix|>'
+llm_load_print_meta: FIM SUF token    = 151661 '<|fim_suffix|>'
+llm_load_print_meta: FIM MID token    = 151660 '<|fim_middle|>'
+llm_load_print_meta: FIM PAD token    = 151662 '<|fim_pad|>'
+llm_load_print_meta: FIM REP token    = 151663 '<|repo_name|>'
+llm_load_print_meta: FIM SEP token    = 151664 '<|file_sep|>'
+llm_load_print_meta: EOG token        = 151643 '<｜end▁of▁sentence｜>'
+llm_load_print_meta: EOG token        = 151662 '<|fim_pad|>'
+llm_load_print_meta: EOG token        = 151663 '<|repo_name|>'
+llm_load_print_meta: EOG token        = 151664 '<|file_sep|>'
+llm_load_print_meta: max token length = 256
+llm_load_tensors: tensor 'token_embd.weight' (q4_K) (and 0 others) cannot be used with preferred buffer type CUDA_Host, using CPU instead
+llm_load_tensors: offloading 28 repeating layers to GPU
+llm_load_tensors: offloading output layer to GPU
+llm_load_tensors: offloaded 29/29 layers to GPU
+llm_load_tensors:        CUDA0 model buffer size =  4168.09 MiB
+llm_load_tensors:   CPU_Mapped model buffer size =   292.36 MiB
+time=2025-04-27T21:40:40.766+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.00"
+time=2025-04-27T21:40:41.017+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.53"
+time=2025-04-27T21:40:41.268+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.93"
+llama_new_context_with_model: n_seq_max     = 8
+llama_new_context_with_model: n_ctx         = 131072
+llama_new_context_with_model: n_ctx_per_seq = 16384
+llama_new_context_with_model: n_batch       = 4096
+llama_new_context_with_model: n_ubatch      = 512
+llama_new_context_with_model: flash_attn    = 0
+llama_new_context_with_model: freq_base     = 10000.0
+llama_new_context_with_model: freq_scale    = 1
+llama_new_context_with_model: n_ctx_per_seq (16384) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+llama_kv_cache_init: kv_size = 131072, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 28, can_shift = 1
+llama_kv_cache_init: layer 0: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 1: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 2: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 3: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 4: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 5: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 6: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 7: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 8: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 9: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 10: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 11: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 12: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 13: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 14: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 15: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 16: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 17: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 18: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 19: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 20: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 21: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 22: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 23: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 24: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 25: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 26: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init: layer 27: n_embd_k_gqa = 512, n_embd_v_gqa = 512
+llama_kv_cache_init:      CUDA0 KV buffer size =  7168.00 MiB
+llama_new_context_with_model: KV self size  = 7168.00 MiB, K (f16): 3584.00 MiB, V (f16): 3584.00 MiB
+llama_new_context_with_model:  CUDA_Host  output buffer size =     4.75 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =  7452.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =   263.01 MiB
+llama_new_context_with_model: graph nodes  = 986
+llama_new_context_with_model: graph splits = 2
+time=2025-04-27T21:40:41.518+02:00 level=INFO source=server.go:596 msg="llama runner started in 2.01 seconds"
+time=2025-04-27T21:40:41.518+02:00 level=DEBUG source=sched.go:462 msg="finished setting up runner" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:41.518+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>Warm-up prompt<｜Assistant｜>"
+time=2025-04-27T21:40:41.521+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=0 prompt=6 used=0 remaining=6
+[GIN] 2025/04/27 - 21:40:42 | 200 |  2.972739971s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:42.052+02:00 level=DEBUG source=sched.go:466 msg="context for request finished"
+time=2025-04-27T21:40:42.052+02:00 level=DEBUG source=sched.go:339 msg="runner with non-zero duration has gone idle, adding timer" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 duration=4h0m0s
+time=2025-04-27T21:40:42.052+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=0
+time=2025-04-27T21:40:42.242+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.243+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Astronomerswould perform at work. Here is the description of the occupation: Observe, research, and interpret astronomical phenomena to increase basic knowledge or apply such information to practical problems.<｜Assistant｜>"
+time=2025-04-27T21:40:42.248+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=55 prompt=51 used=2 remaining=49
+time=2025-04-27T21:40:42.351+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.384+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 9 unique task statements that the occupation Athletes and Sports Competitorswould perform at work. Here is the description of the occupation: Compete in athletic events.<｜Assistant｜>"
+time=2025-04-27T21:40:42.445+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.451+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.451+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 27 unique task statements that the occupation Atmospheric and Space Scientistswould perform at work. Here is the description of the occupation: Investigate atmospheric phenomena and interpret meteorological data, gathered by surface and air stations, satellites, and radar to prepare reports and forecasts for public and other uses. Includes weather analysts and forecasters whose functions require the detailed knowledge of meteorology.<｜Assistant｜>"
+time=2025-04-27T21:40:42.452+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Athletic Trainerswould perform at work. Here is the description of the occupation: Evaluate and treat musculoskeletal injuries or illnesses. Provide preventive, therapeutic, emergency, and rehabilitative care.<｜Assistant｜>"
+time=2025-04-27T21:40:42.487+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.461+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=0 prompt=38 used=0 remaining=38
+time=2025-04-27T21:40:42.461+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=0 prompt=52 used=0 remaining=52
+time=2025-04-27T21:40:42.489+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 29 unique task statements that the occupation Audio and Video Technicianswould perform at work. Here is the description of the occupation: Set up, maintain, and dismantle audio and video equipment, such as microphones, sound speakers, connecting wires and cables, sound and mixing boards, video cameras, video monitors and servers, and related electronic equipment for live or recorded events, such as concerts, meetings, conventions, presentations, podcasts, news conferences, and sporting events.<｜Assistant｜>"
+time=2025-04-27T21:40:42.515+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.537+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.537+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 26 unique task statements that the occupation Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in the physical sciences, except chemistry and physics. Includes both teachers primarily engaged in teaching, and those who do a combination of teaching and research.<｜Assistant｜>"
+time=2025-04-27T21:40:42.540+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 11 unique task statements that the occupation Audiovisual Equipment Installers and Repairerswould perform at work. Here is the description of the occupation: Install, repair, or adjust audio or television receivers, stereo systems, camcorders, video systems, or other electronic entertainment equipment in homes or other venues. May perform routine maintenance.<｜Assistant｜>"
+time=2025-04-27T21:40:42.561+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=0 prompt=79 used=0 remaining=79
+time=2025-04-27T21:40:42.561+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=0 prompt=99 used=0 remaining=99
+time=2025-04-27T21:40:42.562+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=0 prompt=71 used=0 remaining=71
+time=2025-04-27T21:40:42.562+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=0 prompt=72 used=0 remaining=72
+time=2025-04-27T21:40:42.578+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:42.578+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 22 unique task statements that the occupation Audiologistswould perform at work. Here is the description of the occupation: Assess and treat persons with hearing and related disorders. May fit hearing aids and provide auditory training. May perform research related to hearing problems.<｜Assistant｜>"
+time=2025-04-27T21:40:42.861+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=0 prompt=56 used=0 remaining=56
+[GIN] 2025/04/27 - 21:40:46 | 200 |   4.27030324s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:46.606+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:46.606+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:40:46.667+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:46.667+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Athletic Trainerswould perform at work. Here is the description of the occupation: Evaluate and treat musculoskeletal injuries or illnesses. Provide preventive, therapeutic, emergency, and rehabilitative care.<｜Assistant｜>"
+time=2025-04-27T21:40:46.728+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=140 prompt=52 used=51 remaining=1
+[GIN] 2025/04/27 - 21:40:48 | 200 |  5.791750554s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:48.034+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:48.034+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+[GIN] 2025/04/27 - 21:40:48 | 200 |  5.736829646s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:48.121+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:48.121+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=6
+time=2025-04-27T21:40:48.149+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:48.150+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 25 unique task statements that the occupation Automotive Body and Related Repairerswould perform at work. Here is the description of the occupation: Repair and refinish automotive vehicle bodies and straighten vehicle frames.<｜Assistant｜>"
+time=2025-04-27T21:40:48.204+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=159 prompt=46 used=5 remaining=41
+time=2025-04-27T21:40:48.210+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:48.210+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Automotive Engineering Technicianswould perform at work. Here is the description of the occupation: Assist engineers in determining the practicality of proposed product design changes and plan and carry out tests on experimental test devices or equipment for performance, durability, or efficiency.<｜Assistant｜>"
+time=2025-04-27T21:40:48.297+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=192 prompt=63 used=6 remaining=57
+[GIN] 2025/04/27 - 21:40:51 | 200 |  9.591886545s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:51.768+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:51.768+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:40:51.861+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:51.861+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 25 unique task statements that the occupation Automotive Engineerswould perform at work. Here is the description of the occupation: Develop new or improved designs for vehicle structural members, engines, transmissions, or other vehicle systems, using computer-assisted design technology. Direct building, modification, or testing of vehicle or components.<｜Assistant｜>"
+time=2025-04-27T21:40:51.897+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=276 prompt=67 used=5 remaining=62
+[GIN] 2025/04/27 - 21:40:53 | 200 | 11.399720815s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:53.726+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:53.727+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:40:53.820+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:53.821+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Automotive Glass Installers and Repairerswould perform at work. Here is the description of the occupation: Replace or repair broken windshields and window glass in motor vehicles.<｜Assistant｜>"
+time=2025-04-27T21:40:53.877+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=368 prompt=48 used=5 remaining=43
+[GIN] 2025/04/27 - 21:40:55 | 200 |  7.209043019s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:55.274+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:55.274+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:40:55.364+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:55.365+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 28 unique task statements that the occupation Automotive Service Technicians and Mechanicswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul automotive vehicles.<｜Assistant｜>"
+time=2025-04-27T21:40:55.402+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=234 prompt=46 used=6 remaining=40
+[GIN] 2025/04/27 - 21:40:56 | 200 | 13.975583891s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:56.312+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:56.312+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:40:56.399+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:56.400+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Automotive and Watercraft Service Attendantswould perform at work. Here is the description of the occupation: Service automobiles, buses, trucks, boats, and other automotive or marine vehicles with fuel, lubricants, and accessories. Collect payment for services and supplies. May lubricate vehicle, change motor oil, refill antifreeze, or replace lights or other accessories, such as windshield wiper blades or fan belts. May repair or replace tires.<｜Assistant｜>"
+time=2025-04-27T21:40:56.461+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=391 prompt=102 used=5 remaining=97
+[GIN] 2025/04/27 - 21:40:59 | 200 | 16.832843353s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:40:59.200+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:40:59.200+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:40:59.301+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:40:59.301+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 13 unique task statements that the occupation Aviation Inspectorswould perform at work. Here is the description of the occupation: Inspect aircraft, maintenance procedures, air navigational aids, air traffic controls, and communications equipment to ensure conformance with Federal safety regulations.<｜Assistant｜>"
+time=2025-04-27T21:40:59.351+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=488 prompt=59 used=5 remaining=54
+[GIN] 2025/04/27 - 21:41:01 | 200 |  5.348498934s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:01.699+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:01.699+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:01.796+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:01.797+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 13 unique task statements that the occupation Avionics Technicianswould perform at work. Here is the description of the occupation: Install, inspect, test, adjust, or repair avionics equipment, such as radar, radio, navigation, and missile control systems in aircraft or space vehicles.<｜Assistant｜>"
+time=2025-04-27T21:41:01.851+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=242 prompt=65 used=6 remaining=59
+[GIN] 2025/04/27 - 21:41:03 | 200 | 11.254231369s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:03.067+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:03.067+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:03.156+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:03.156+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Baggage Porters and Bellhopswould perform at work. Here is the description of the occupation: Handle baggage for travelers at transportation terminals or for guests at hotels or similar establishments.<｜Assistant｜>"
+time=2025-04-27T21:41:03.224+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=360 prompt=51 used=5 remaining=46
+[GIN] 2025/04/27 - 21:41:03 | 200 | 17.133028085s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:03.752+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:03.752+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:03.836+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:03.837+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 15 unique task statements that the occupation Bailiffswould perform at work. Here is the description of the occupation: Maintain order in courts of law.<｜Assistant｜>"
+time=2025-04-27T21:41:03.874+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=491 prompt=37 used=5 remaining=32
+[GIN] 2025/04/27 - 21:41:04 | 200 | 16.435230397s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:04.596+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:04.608+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:04.683+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:04.684+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Bakerswould perform at work. Here is the description of the occupation: Mix and bake ingredients to produce breads, rolls, cookies, cakes, pies, pastries, or other baked goods.<｜Assistant｜>"
+time=2025-04-27T21:41:04.775+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=487 prompt=54 used=13 remaining=41
+[GIN] 2025/04/27 - 21:41:05 | 200 |  6.045948704s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:05.290+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:05.290+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:05.377+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:05.378+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Barberswould perform at work. Here is the description of the occupation: Provide barbering services, such as cutting, trimming, shampooing, and styling hair; trimming beards; or giving shaves.<｜Assistant｜>"
+time=2025-04-27T21:41:05.417+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=198 prompt=56 used=6 remaining=50
+[GIN] 2025/04/27 - 21:41:06 | 200 | 12.722917935s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:06.493+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:06.493+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:06.581+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:06.581+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Baristaswould perform at work. Here is the description of the occupation: Prepare or serve specialty coffee or other beverages. Serve food such as baked goods or sandwiches to patrons.<｜Assistant｜>"
+time=2025-04-27T21:41:06.643+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=366 prompt=49 used=6 remaining=43
+[GIN] 2025/04/27 - 21:41:07 | 200 |  3.286797821s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:07.075+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:07.075+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:07.126+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:07.126+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 15 unique task statements that the occupation Bailiffswould perform at work. Here is the description of the occupation: Maintain order in courts of law.<｜Assistant｜>"
+time=2025-04-27T21:41:07.182+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=105 prompt=37 used=36 remaining=1
+[GIN] 2025/04/27 - 21:41:08 | 200 |  6.999730106s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:08.745+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:08.745+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:08.840+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:08.841+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 20 unique task statements that the occupation Bartenderswould perform at work. Here is the description of the occupation: Mix and serve drinks to patrons, directly or through waitstaff.<｜Assistant｜>"
+time=2025-04-27T21:41:08.879+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=217 prompt=42 used=5 remaining=37
+[GIN] 2025/04/27 - 21:41:11 | 200 |   2.35963933s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:11.152+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:11.152+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:11.207+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:11.207+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 20 unique task statements that the occupation Bartenderswould perform at work. Here is the description of the occupation: Mix and serve drinks to patrons, directly or through waitstaff.<｜Assistant｜>"
+time=2025-04-27T21:41:11.253+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=94 prompt=42 used=41 remaining=1
+[GIN] 2025/04/27 - 21:41:12 | 200 |  16.90513725s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:12.221+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:12.221+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:12.309+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:12.309+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Bicycle Repairerswould perform at work. Here is the description of the occupation: Repair and service bicycles.<｜Assistant｜>"
+time=2025-04-27T21:41:12.365+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=449 prompt=35 used=5 remaining=30
+[GIN] 2025/04/27 - 21:41:13 | 200 |  6.312702215s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:13.391+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:13.391+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:13.484+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:13.484+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 15 unique task statements that the occupation Bill and Account Collectorswould perform at work. Here is the description of the occupation: Locate and notify customers of delinquent accounts by mail, telephone, or personal visit to solicit payment. Duties include receiving payment and posting amount to customer's account, preparing statements to credit department if customer fails to respond, initiating repossession proceedings or service disconnection, and keeping records of collection and status of accounts.<｜Assistant｜>"
+[GIN] 2025/04/27 - 21:41:13 | 200 |  8.220048908s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:13.550+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:13.550+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:13.553+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=174 prompt=96 used=13 remaining=83
+time=2025-04-27T21:41:13.636+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:13.636+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Billing and Posting Clerkswould perform at work. Here is the description of the occupation: Compile, compute, and record billing, accounting, statistical, and other numerical data for billing purposes. Prepare billing invoices for services rendered or for delivery or shipment of goods.<｜Assistant｜>"
+time=2025-04-27T21:41:13.726+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=238 prompt=66 used=5 remaining=61
+[GIN] 2025/04/27 - 21:41:15 | 200 | 10.860072077s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:15.495+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:15.495+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:15.649+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:15.650+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 24 unique task statements that the occupation Biochemists and Biophysicistswould perform at work. Here is the description of the occupation: Study the chemical composition or physical principles of living cells and organisms, their electrical and mechanical energy, and related phenomena. May conduct research to further understanding of the complex chemical combinations and reactions involved in metabolism, reproduction, growth, and heredity. May determine the effects of foods, drugs, serums, hormones, and other substances on tissues and vital processes of living organisms.<｜Assistant｜>"
+time=2025-04-27T21:41:15.729+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=284 prompt=110 used=5 remaining=105
+[GIN] 2025/04/27 - 21:41:16 | 200 |  9.816466111s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:16.352+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:16.353+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:16.444+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:16.444+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 30 unique task statements that the occupation Bioengineers and Biomedical Engineerswould perform at work. Here is the description of the occupation: Apply knowledge of engineering, biology, chemistry, computer science, and biomechanical principles to the design, development, and evaluation of biological, agricultural, and health systems and products, such as artificial organs, prostheses, instrumentation, medical information systems, and health management and care delivery systems.<｜Assistant｜>"
+time=2025-04-27T21:41:16.511+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=252 prompt=93 used=5 remaining=88
+[GIN] 2025/04/27 - 21:41:16 | 200 | 13.442960079s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:16.562+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:16.562+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:16.642+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:16.643+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Biofuels Processing Technicianswould perform at work. Here is the description of the occupation: Calculate, measure, load, mix, and process refined feedstock with additives in fermentation or reaction process vessels and monitor production process. Perform, and keep records of, plant maintenance, repairs, and safety inspections.<｜Assistant｜>"
+time=2025-04-27T21:41:16.702+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=334 prompt=75 used=6 remaining=69
+[GIN] 2025/04/27 - 21:41:19 | 200 |  3.953011324s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:19.555+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:19.555+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:19.609+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:19.610+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 24 unique task statements that the occupation Biochemists and Biophysicistswould perform at work. Here is the description of the occupation: Study the chemical composition or physical principles of living cells and organisms, their electrical and mechanical energy, and related phenomena. May conduct research to further understanding of the complex chemical combinations and reactions involved in metabolism, reproduction, growth, and heredity. May determine the effects of foods, drugs, serums, hormones, and other substances on tissues and vital processes of living organisms.<｜Assistant｜>"
+time=2025-04-27T21:41:19.661+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=184 prompt=110 used=109 remaining=1
+[GIN] 2025/04/27 - 21:41:21 | 200 |  9.016217482s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:21.276+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:21.276+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:21.362+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:21.363+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Biofuels Production Managerswould perform at work. Here is the description of the occupation: Manage biofuels production and plant operations. Collect and process information on plant production and performance, diagnose problems, and design corrective procedures.<｜Assistant｜>"
+time=2025-04-27T21:41:21.451+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=206 prompt=59 used=13 remaining=46
+[GIN] 2025/04/27 - 21:41:25 | 200 | 12.156693588s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:25.744+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:25.745+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:25.838+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:25.839+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Biofuels/Biodiesel Technology and Product Development Managerswould perform at work. Here is the description of the occupation: Define, plan, or execute biofuels/biodiesel research programs that evaluate alternative feedstock and process technologies with near-term commercial potential.<｜Assistant｜>"
+time=2025-04-27T21:41:25.939+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=303 prompt=66 used=5 remaining=61
+[GIN] 2025/04/27 - 21:41:29 | 200 | 17.911933986s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:29.071+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:29.071+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:29.155+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:29.155+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 20 unique task statements that the occupation Bioinformatics Scientistswould perform at work. Here is the description of the occupation: Conduct research using bioinformatics theory and methods in areas such as pharmaceuticals, medical technology, biotechnology, computational biology, proteomics, computer information science, biology and medical informatics. May design databases and develop algorithms for processing and analyzing genomic information, or other biological information.<｜Assistant｜>"
+time=2025-04-27T21:41:29.233+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=403 prompt=85 used=13 remaining=72
+[GIN] 2025/04/27 - 21:41:33 | 200 | 16.573552853s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:33.166+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:33.166+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:33.253+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:33.254+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Bioinformatics Technicianswould perform at work. Here is the description of the occupation: Apply principles and methods of bioinformatics to assist scientists in areas such as pharmaceuticals, medical technology, biotechnology, computational biology, proteomics, computer information science, biology and medical informatics. Apply bioinformatics tools to visualize, analyze, manipulate or interpret molecular data. May build and maintain databases for processing and analyzing genomic or other biological information.<｜Assistant｜>"
+time=2025-04-27T21:41:33.339+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=408 prompt=100 used=14 remaining=86
+[GIN] 2025/04/27 - 21:41:33 | 200 | 14.214632011s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:33.777+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:33.777+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:33.864+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:33.864+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 27 unique task statements that the occupation Biological Science Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in biological sciences. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<｜Assistant｜>"
+time=2025-04-27T21:41:33.925+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=389 prompt=57 used=6 remaining=51
+[GIN] 2025/04/27 - 21:41:33 | 200 |  4.889426633s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:33.996+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:33.996+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:34.055+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:34.055+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 20 unique task statements that the occupation Bioinformatics Scientistswould perform at work. Here is the description of the occupation: Conduct research using bioinformatics theory and methods in areas such as pharmaceuticals, medical technology, biotechnology, computational biology, proteomics, computer information science, biology and medical informatics. May design databases and develop algorithms for processing and analyzing genomic information, or other biological information.<｜Assistant｜>"
+time=2025-04-27T21:41:34.115+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=169 prompt=85 used=84 remaining=1
+[GIN] 2025/04/27 - 21:41:38 | 200 |  5.373734868s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:38.579+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:38.579+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:38.669+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:38.670+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Biological Technicianswould perform at work. Here is the description of the occupation: Assist biological and medical scientists. Set up, operate, and maintain laboratory instruments and equipment, monitor experiments, collect data and samples, make observations, and calculate and record results. May analyze organic substances, such as blood, food, and drugs.<｜Assistant｜>"
+time=2025-04-27T21:41:38.727+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=207 prompt=79 used=6 remaining=73
+[GIN] 2025/04/27 - 21:41:41 | 200 | 24.964100047s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:41.362+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:41.363+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:41.454+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:41.454+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 21 unique task statements that the occupation Biologistswould perform at work. Here is the description of the occupation: Research or study basic principles of plant and animal life, such as origin, relationship, development, anatomy, and functions.<｜Assistant｜>"
+time=2025-04-27T21:41:41.519+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=593 prompt=53 used=5 remaining=48
+[GIN] 2025/04/27 - 21:41:44 | 200 |  5.819667849s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:44.441+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:44.443+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:44.530+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:44.532+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Biomass Plant Technicianswould perform at work. Here is the description of the occupation: Control and monitor biomass plant activities and perform maintenance as needed.<｜Assistant｜>"
+time=2025-04-27T21:41:44.605+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=194 prompt=44 used=6 remaining=38
+[GIN] 2025/04/27 - 21:41:46 | 200 | 20.520391262s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:46.310+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:46.310+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:46.393+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:46.394+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Biomass Power Plant Managerswould perform at work. Here is the description of the occupation: Manage operations at biomass power generation facilities. Direct work activities at plant, including supervision of operations and maintenance staff.<｜Assistant｜>"
+time=2025-04-27T21:41:46.485+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=475 prompt=54 used=6 remaining=48
+[GIN] 2025/04/27 - 21:41:47 | 200 | 33.812497641s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:47.244+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:47.244+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:47.299+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:47.299+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 15 unique task statements that the occupation Bill and Account Collectorswould perform at work. Here is the description of the occupation: Locate and notify customers of delinquent accounts by mail, telephone, or personal visit to solicit payment. Duties include receiving payment and posting amount to customer's account, preparing statements to credit department if customer fails to respond, initiating repossession proceedings or service disconnection, and keeping records of collection and status of accounts.<｜Assistant｜>"
+time=2025-04-27T21:41:47.388+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=766 prompt=96 used=95 remaining=1
+[GIN] 2025/04/27 - 21:41:48 | 200 | 14.326404305s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:48.327+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:48.327+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:48.420+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:48.420+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 25 unique task statements that the occupation Biostatisticianswould perform at work. Here is the description of the occupation: Develop and apply biostatistical theory and methods to the study of life sciences.<｜Assistant｜>"
+time=2025-04-27T21:41:48.483+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=369 prompt=49 used=6 remaining=43
+[GIN] 2025/04/27 - 21:41:53 | 200 | 19.873384241s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:53.690+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:53.690+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:53.787+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:53.788+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Boilermakerswould perform at work. Here is the description of the occupation: Construct, assemble, maintain, and repair stationary steam boilers and boiler house auxiliaries. Align structures or plate sections to assemble boiler frame tanks or vats, following blueprints. Work involves use of hand and power tools, plumb bobs, levels, wedges, dogs, or turnbuckles. Assist in testing assembled vessels. Direct cleaning of boilers and boiler furnaces. Inspect and repair boiler fittings, such as safety valves, regulators, automatic-control mechanisms, water columns, and auxiliary machines.<｜Assistant｜>"
+time=2025-04-27T21:41:53.876+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=456 prompt=133 used=5 remaining=128
+[GIN] 2025/04/27 - 21:41:54 | 200 |  7.100574672s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:54.351+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:54.351+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:54.435+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:54.436+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 28 unique task statements that the occupation Bookkeeping, Accounting, and Auditing Clerkswould perform at work. Here is the description of the occupation: Compute, classify, and record numerical data to keep financial records complete. Perform any combination of routine calculating, posting, and verifying duties to obtain primary financial data for use in maintaining accounting records. May also check the accuracy of figures, calculations, and postings pertaining to business transactions recorded by other workers.<｜Assistant｜>"
+time=2025-04-27T21:41:54.526+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=231 prompt=96 used=5 remaining=91
+[GIN] 2025/04/27 - 21:41:58 | 200 | 16.822804898s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:58.229+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:58.229+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:58.318+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:58.318+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Brickmasons and Blockmasonswould perform at work. Here is the description of the occupation: Lay and bind building materials, such as brick, structural tile, concrete block, cinder block, glass block, and terra-cotta block, with mortar and other substances, to construct or repair walls, partitions, arches, sewers, and other structures.<｜Assistant｜>"
+time=2025-04-27T21:41:58.434+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=378 prompt=88 used=5 remaining=83
+[GIN] 2025/04/27 - 21:41:58 | 200 | 14.020086785s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:58.500+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:58.500+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:58.583+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:58.584+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Bridge and Lock Tenderswould perform at work. Here is the description of the occupation: Operate and tend bridges, canal locks, and lighthouses to permit marine passage on inland waterways, near shores, and at danger points in waterway passages. May supervise such operations. Includes drawbridge operators, lock operators, and slip bridge operators.<｜Assistant｜>"
+time=2025-04-27T21:41:58.698+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=308 prompt=84 used=13 remaining=71
+[GIN] 2025/04/27 - 21:41:59 | 200 | 12.890918063s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:59.246+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:59.246+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:59.327+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:59.328+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 24 unique task statements that the occupation Broadcast Announcers and Radio Disc Jockeyswould perform at work. Here is the description of the occupation: Speak or read from scripted materials, such as news reports or commercial messages, on radio, television, or other communications media. May play and queue music, announce artist or title of performance, identify station, or interview guests.<｜Assistant｜>"
+[GIN] 2025/04/27 - 21:41:59 | 200 |         1m17s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:41:59.407+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:41:59.407+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:41:59.436+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=1730 prompt=83 used=6 remaining=77
+time=2025-04-27T21:41:59.490+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:41:59.491+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 27 unique task statements that the occupation Broadcast Technicianswould perform at work. Here is the description of the occupation: Set up, operate, and maintain the electronic equipment used to acquire, edit, and transmit audio and video for radio or television programs. Control and adjust incoming and outgoing broadcast signals to regulate sound volume, signal strength, and signal clarity. Operate satellite, microwave, or other transmitter equipment to broadcast radio or television programs.<｜Assistant｜>"
+time=2025-04-27T21:41:59.573+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=294 prompt=94 used=5 remaining=89
+[GIN] 2025/04/27 - 21:42:02 | 200 | 14.336913049s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:02.709+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:02.710+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:02.789+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:02.790+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 10 unique task statements that the occupation Brokerage Clerkswould perform at work. Here is the description of the occupation: Perform duties related to the purchase, sale, or holding of securities. Duties include writing orders for stock purchases or sales, computing transfer taxes, verifying stock transactions, accepting and delivering securities, tracking stock price fluctuations, computing equity, distributing dividends, and keeping records of daily transactions and holdings.<｜Assistant｜>"
+time=2025-04-27T21:42:02.927+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=319 prompt=89 used=5 remaining=84
+[GIN] 2025/04/27 - 21:42:03 | 200 |  9.270415641s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:03.001+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:03.001+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:03.085+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:03.086+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Brownfield Redevelopment Specialists and Site Managerswould perform at work. Here is the description of the occupation: Plan and direct cleanup and redevelopment of contaminated properties for reuse. Does not include properties sufficiently contaminated to qualify as Superfund sites.<｜Assistant｜>"
+time=2025-04-27T21:42:03.199+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=296 prompt=60 used=5 remaining=55
+[GIN] 2025/04/27 - 21:42:06 | 200 | 44.900602187s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:06.212+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:06.212+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:06.271+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:06.271+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Biofuels Production Managerswould perform at work. Here is the description of the occupation: Manage biofuels production and plant operations. Collect and process information on plant production and performance, diagnose problems, and design corrective procedures.<｜Assistant｜>"
+time=2025-04-27T21:42:06.345+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=935 prompt=59 used=58 remaining=1
+[GIN] 2025/04/27 - 21:42:08 | 200 | 13.878464306s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:08.267+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:08.267+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:08.355+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:08.355+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 13 unique task statements that the occupation Budget Analystswould perform at work. Here is the description of the occupation: Examine budget estimates for completeness, accuracy, and conformance with procedures and regulations. Analyze budgeting and accounting reports.<｜Assistant｜>"
+time=2025-04-27T21:42:08.439+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=348 prompt=55 used=5 remaining=50
+[GIN] 2025/04/27 - 21:42:09 | 200 |  7.082275816s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:09.826+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:09.826+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+[GIN] 2025/04/27 - 21:42:09 | 200 |  11.34394246s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:09.879+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:09.879+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=6
+time=2025-04-27T21:42:09.933+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:09.936+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Bus Drivers, Transit and Intercitywould perform at work. Here is the description of the occupation: Drive bus or motor coach, including regular route operations, charters, and private carriage. May assist passengers with baggage. May collect fares or tickets.<｜Assistant｜>"
+time=2025-04-27T21:42:09.996+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:09.996+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 26 unique task statements that the occupation Bus and Truck Mechanics and Diesel Engine Specialistswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul buses and trucks, or maintain and repair any type of diesel engines. Includes mechanics working primarily with automobile or marine diesel engines.<｜Assistant｜>"
+time=2025-04-27T21:42:10.003+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=288 prompt=65 used=6 remaining=59
+time=2025-04-27T21:42:10.004+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=217 prompt=70 used=5 remaining=65
+[GIN] 2025/04/27 - 21:42:10 | 200 | 12.241995775s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:10.510+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:10.510+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:10.597+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:10.598+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 21 unique task statements that the occupation Business Continuity Plannerswould perform at work. Here is the description of the occupation: Develop, maintain, or implement business continuity and disaster recovery strategies and solutions, including risk assessments, business impact analyses, strategy selection, and documentation of business continuity and disaster recovery procedures. Plan, conduct, and debrief regular mock-disaster exercises to test the adequacy of existing plans and strategies, updating procedures and plans regularly. Act as a coordinator for continuity efforts after a disruption event.<｜Assistant｜>"
+time=2025-04-27T21:42:10.695+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=305 prompt=109 used=5 remaining=104
+[GIN] 2025/04/27 - 21:42:12 | 200 |   5.81478801s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:12.034+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:12.034+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+[GIN] 2025/04/27 - 21:42:15 | 200 |  5.688655666s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:15.557+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:15.557+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=6
+[GIN] 2025/04/27 - 21:42:18 | 200 | 19.187653653s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:18.463+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:18.463+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=5
+[GIN] 2025/04/27 - 21:42:18 | 200 | 10.369327612s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:18.672+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:18.672+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=4
+[GIN] 2025/04/27 - 21:42:19 | 200 |   16.8917514s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:19.932+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:19.932+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=3
+[GIN] 2025/04/27 - 21:42:20 | 200 | 10.348108061s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:20.297+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:20.297+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=2
+[GIN] 2025/04/27 - 21:42:20 | 200 | 21.231816114s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:20.677+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:20.677+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=1
+[GIN] 2025/04/27 - 21:42:23 | 200 | 12.800140256s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:23.346+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:23.346+02:00 level=DEBUG source=sched.go:339 msg="runner with non-zero duration has gone idle, adding timer" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 duration=4h0m0s
+time=2025-04-27T21:42:23.346+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=0
+time=2025-04-27T21:42:23.622+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.623+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 9 unique task statements that the occupation Athletes and Sports Competitorswould perform at work. Here is the description of the occupation: Compete in athletic events.<｜Assistant｜>"
+time=2025-04-27T21:42:23.627+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=194 prompt=38 used=5 remaining=33
+time=2025-04-27T21:42:23.677+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.684+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.685+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 22 unique task statements that the occupation Audiologistswould perform at work. Here is the description of the occupation: Assess and treat persons with hearing and related disorders. May fit hearing aids and provide auditory training. May perform research related to hearing problems.<｜Assistant｜>"
+time=2025-04-27T21:42:23.689+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Athletic Trainerswould perform at work. Here is the description of the occupation: Evaluate and treat musculoskeletal injuries or illnesses. Provide preventive, therapeutic, emergency, and rehabilitative care.<｜Assistant｜>"
+time=2025-04-27T21:42:23.746+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.748+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 29 unique task statements that the occupation Audio and Video Technicianswould perform at work. Here is the description of the occupation: Set up, maintain, and dismantle audio and video equipment, such as microphones, sound speakers, connecting wires and cables, sound and mixing boards, video cameras, video monitors and servers, and related electronic equipment for live or recorded events, such as concerts, meetings, conventions, presentations, podcasts, news conferences, and sporting events.<｜Assistant｜>"
+time=2025-04-27T21:42:23.819+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.770+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=491 prompt=56 used=6 remaining=50
+time=2025-04-27T21:42:23.771+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=444 prompt=52 used=13 remaining=39
+time=2025-04-27T21:42:23.771+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=593 prompt=99 used=6 remaining=93
+time=2025-04-27T21:42:23.827+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Astronomerswould perform at work. Here is the description of the occupation: Observe, research, and interpret astronomical phenomena to increase basic knowledge or apply such information to practical problems.<｜Assistant｜>"
+time=2025-04-27T21:42:23.833+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.833+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 26 unique task statements that the occupation Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in the physical sciences, except chemistry and physics. Includes both teachers primarily engaged in teaching, and those who do a combination of teaching and research.<｜Assistant｜>"
+time=2025-04-27T21:42:23.862+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.875+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 27 unique task statements that the occupation Atmospheric and Space Scientistswould perform at work. Here is the description of the occupation: Investigate atmospheric phenomena and interpret meteorological data, gathered by surface and air stations, satellites, and radar to prepare reports and forecasts for public and other uses. Includes weather analysts and forecasters whose functions require the detailed knowledge of meteorology.<｜Assistant｜>"
+time=2025-04-27T21:42:23.896+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:23.896+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 11 unique task statements that the occupation Audiovisual Equipment Installers and Repairerswould perform at work. Here is the description of the occupation: Install, repair, or adjust audio or television receivers, stereo systems, camcorders, video systems, or other electronic entertainment equipment in homes or other venues. May perform routine maintenance.<｜Assistant｜>"
+time=2025-04-27T21:42:24.025+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=166 prompt=51 used=6 remaining=45
+time=2025-04-27T21:42:24.026+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=337 prompt=71 used=13 remaining=58
+time=2025-04-27T21:42:24.026+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=570 prompt=79 used=13 remaining=66
+time=2025-04-27T21:42:24.026+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=300 prompt=72 used=6 remaining=66
+[GIN] 2025/04/27 - 21:42:30 | 200 |  6.634770325s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:30.182+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:30.182+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:30.276+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:30.276+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 25 unique task statements that the occupation Automotive Body and Related Repairerswould perform at work. Here is the description of the occupation: Repair and refinish automotive vehicle bodies and straighten vehicle frames.<｜Assistant｜>"
+time=2025-04-27T21:42:30.314+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=189 prompt=46 used=5 remaining=41
+[GIN] 2025/04/27 - 21:42:30 | 200 |  7.135859869s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:30.743+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:30.743+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:30.822+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:30.823+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Automotive Engineering Technicianswould perform at work. Here is the description of the occupation: Assist engineers in determining the practicality of proposed product design changes and plan and carry out tests on experimental test devices or equipment for performance, durability, or efficiency.<｜Assistant｜>"
+time=2025-04-27T21:42:30.872+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=217 prompt=63 used=5 remaining=58
+[GIN] 2025/04/27 - 21:42:31 | 200 |  7.455396332s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:31.173+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:31.173+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:31.252+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:31.254+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 25 unique task statements that the occupation Automotive Engineerswould perform at work. Here is the description of the occupation: Develop new or improved designs for vehicle structural members, engines, transmissions, or other vehicle systems, using computer-assisted design technology. Direct building, modification, or testing of vehicle or components.<｜Assistant｜>"
+time=2025-04-27T21:42:31.312+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=219 prompt=67 used=5 remaining=62
+[GIN] 2025/04/27 - 21:42:33 | 200 | 10.056389786s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:33.876+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:33.876+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:33.973+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:33.973+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Automotive Glass Installers and Repairerswould perform at work. Here is the description of the occupation: Replace or repair broken windshields and window glass in motor vehicles.<｜Assistant｜>"
+time=2025-04-27T21:42:34.028+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=307 prompt=48 used=6 remaining=42
+[GIN] 2025/04/27 - 21:42:41 | 200 |  17.52435623s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:41.204+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:41.204+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:41.298+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:41.300+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 28 unique task statements that the occupation Automotive Service Technicians and Mechanicswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul automotive vehicles.<｜Assistant｜>"
+time=2025-04-27T21:42:41.359+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=532 prompt=46 used=6 remaining=40
+[GIN] 2025/04/27 - 21:42:42 | 200 | 11.575834789s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:42.346+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:42.346+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:42.438+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:42.438+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Automotive and Watercraft Service Attendantswould perform at work. Here is the description of the occupation: Service automobiles, buses, trucks, boats, and other automotive or marine vehicles with fuel, lubricants, and accessories. Collect payment for services and supplies. May lubricate vehicle, change motor oil, refill antifreeze, or replace lights or other accessories, such as windshield wiper blades or fan belts. May repair or replace tires.<｜Assistant｜>"
+time=2025-04-27T21:42:42.477+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=356 prompt=102 used=6 remaining=96
+[GIN] 2025/04/27 - 21:42:43 | 200 | 19.875520685s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:43.571+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:43.571+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:43.666+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:43.667+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 13 unique task statements that the occupation Aviation Inspectorswould perform at work. Here is the description of the occupation: Inspect aircraft, maintenance procedures, air navigational aids, air traffic controls, and communications equipment to ensure conformance with Federal safety regulations.<｜Assistant｜>"
+time=2025-04-27T21:42:43.729+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=551 prompt=59 used=5 remaining=54
+[GIN] 2025/04/27 - 21:42:44 | 200 |  20.44331473s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:44.193+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:44.193+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:44.284+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:44.285+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 13 unique task statements that the occupation Avionics Technicianswould perform at work. Here is the description of the occupation: Install, inspect, test, adjust, or repair avionics equipment, such as radar, radio, navigation, and missile control systems in aircraft or space vehicles.<｜Assistant｜>"
+time=2025-04-27T21:42:44.361+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=573 prompt=65 used=5 remaining=60
+[GIN] 2025/04/27 - 21:42:46 | 200 | 16.045306462s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:46.272+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:46.272+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:46.356+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:46.356+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Baggage Porters and Bellhopswould perform at work. Here is the description of the occupation: Handle baggage for travelers at transportation terminals or for guests at hotels or similar establishments.<｜Assistant｜>"
+time=2025-04-27T21:42:46.437+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=440 prompt=51 used=5 remaining=46
+[GIN] 2025/04/27 - 21:42:47 | 200 | 13.598786338s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:47.516+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:47.516+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:47.607+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:47.607+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 15 unique task statements that the occupation Bailiffswould perform at work. Here is the description of the occupation: Maintain order in courts of law.<｜Assistant｜>"
+time=2025-04-27T21:42:47.680+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=382 prompt=37 used=6 remaining=31
+[GIN] 2025/04/27 - 21:42:47 | 200 |  5.385146583s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:47.775+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:47.775+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:47.864+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:47.865+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Bakerswould perform at work. Here is the description of the occupation: Mix and bake ingredients to produce breads, rolls, cookies, cakes, pies, pastries, or other baked goods.<｜Assistant｜>"
+time=2025-04-27T21:42:47.906+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=221 prompt=54 used=6 remaining=48
+[GIN] 2025/04/27 - 21:42:48 | 200 |    4.4908653s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:48.115+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:48.115+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:48.195+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:48.195+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Barberswould perform at work. Here is the description of the occupation: Provide barbering services, such as cutting, trimming, shampooing, and styling hair; trimming beards; or giving shaves.<｜Assistant｜>"
+time=2025-04-27T21:42:48.240+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=158 prompt=56 used=6 remaining=50
+[GIN] 2025/04/27 - 21:42:50 | 200 |  6.118470054s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:50.355+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:50.355+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:50.448+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:50.448+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Baristaswould perform at work. Here is the description of the occupation: Prepare or serve specialty coffee or other beverages. Serve food such as baked goods or sandwiches to patrons.<｜Assistant｜>"
+time=2025-04-27T21:42:50.492+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=203 prompt=49 used=6 remaining=43
+[GIN] 2025/04/27 - 21:42:53 | 200 |  5.358904241s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:53.176+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:53.176+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:53.259+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:53.262+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 20 unique task statements that the occupation Bartenderswould perform at work. Here is the description of the occupation: Mix and serve drinks to patrons, directly or through waitstaff.<｜Assistant｜>"
+time=2025-04-27T21:42:53.335+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=176 prompt=42 used=5 remaining=37
+[GIN] 2025/04/27 - 21:42:53 | 200 |  7.071501621s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:53.378+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:53.378+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:53.457+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:53.457+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Bicycle Repairerswould perform at work. Here is the description of the occupation: Repair and service bicycles.<｜Assistant｜>"
+time=2025-04-27T21:42:53.527+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=208 prompt=35 used=6 remaining=29
+[GIN] 2025/04/27 - 21:42:54 | 200 |   6.64258883s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:54.789+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:54.789+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:54.882+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:54.882+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 15 unique task statements that the occupation Bill and Account Collectorswould perform at work. Here is the description of the occupation: Locate and notify customers of delinquent accounts by mail, telephone, or personal visit to solicit payment. Duties include receiving payment and posting amount to customer's account, preparing statements to credit department if customer fails to respond, initiating repossession proceedings or service disconnection, and keeping records of collection and status of accounts.<｜Assistant｜>"
+time=2025-04-27T21:42:54.930+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=203 prompt=96 used=6 remaining=90
+[GIN] 2025/04/27 - 21:42:59 | 200 | 18.262373145s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:42:59.511+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:42:59.511+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:42:59.605+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:42:59.605+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Billing and Posting Clerkswould perform at work. Here is the description of the occupation: Compile, compute, and record billing, accounting, statistical, and other numerical data for billing purposes. Prepare billing invoices for services rendered or for delivery or shipment of goods.<｜Assistant｜>"
+time=2025-04-27T21:42:59.658+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=455 prompt=66 used=6 remaining=60
+[GIN] 2025/04/27 - 21:43:00 | 200 |   7.02554406s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:00.433+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:00.433+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:00.511+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:00.511+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 24 unique task statements that the occupation Biochemists and Biophysicistswould perform at work. Here is the description of the occupation: Study the chemical composition or physical principles of living cells and organisms, their electrical and mechanical energy, and related phenomena. May conduct research to further understanding of the complex chemical combinations and reactions involved in metabolism, reproduction, growth, and heredity. May determine the effects of foods, drugs, serums, hormones, and other substances on tissues and vital processes of living organisms.<｜Assistant｜>"
+time=2025-04-27T21:43:00.560+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=188 prompt=110 used=5 remaining=105
+[GIN] 2025/04/27 - 21:43:01 | 200 | 14.381237005s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:01.938+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:01.940+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:02.032+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:02.032+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 30 unique task statements that the occupation Bioengineers and Biomedical Engineerswould perform at work. Here is the description of the occupation: Apply knowledge of engineering, biology, chemistry, computer science, and biomechanical principles to the design, development, and evaluation of biological, agricultural, and health systems and products, such as artificial organs, prostheses, instrumentation, medical information systems, and health management and care delivery systems.<｜Assistant｜>"
+time=2025-04-27T21:43:02.116+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=350 prompt=93 used=5 remaining=88
+[GIN] 2025/04/27 - 21:43:02 | 200 | 12.001936464s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:02.414+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:02.414+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:02.489+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:02.489+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Biofuels Processing Technicianswould perform at work. Here is the description of the occupation: Calculate, measure, load, mix, and process refined feedstock with additives in fermentation or reaction process vessels and monitor production process. Perform, and keep records of, plant maintenance, repairs, and safety inspections.<｜Assistant｜>"
+time=2025-04-27T21:43:02.577+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=307 prompt=75 used=13 remaining=62
+[GIN] 2025/04/27 - 21:43:06 | 200 | 11.953715094s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:06.787+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:06.787+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:06.877+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:06.877+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Biofuels Production Managerswould perform at work. Here is the description of the occupation: Manage biofuels production and plant operations. Collect and process information on plant production and performance, diagnose problems, and design corrective procedures.<｜Assistant｜>"
+time=2025-04-27T21:43:06.959+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=347 prompt=59 used=6 remaining=53
+[GIN] 2025/04/27 - 21:43:07 | 200 | 14.116098821s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:07.327+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:07.327+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:07.411+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:07.411+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Biofuels/Biodiesel Technology and Product Development Managerswould perform at work. Here is the description of the occupation: Define, plan, or execute biofuels/biodiesel research programs that evaluate alternative feedstock and process technologies with near-term commercial potential.<｜Assistant｜>"
+time=2025-04-27T21:43:07.493+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=335 prompt=66 used=5 remaining=61
+[GIN] 2025/04/27 - 21:43:08 | 200 |  8.991397173s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:08.549+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:08.549+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:08.636+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:08.636+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 20 unique task statements that the occupation Bioinformatics Scientistswould perform at work. Here is the description of the occupation: Conduct research using bioinformatics theory and methods in areas such as pharmaceuticals, medical technology, biotechnology, computational biology, proteomics, computer information science, biology and medical informatics. May design databases and develop algorithms for processing and analyzing genomic information, or other biological information.<｜Assistant｜>"
+time=2025-04-27T21:43:08.712+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=238 prompt=85 used=6 remaining=79
+[GIN] 2025/04/27 - 21:43:12 | 200 |  5.927673617s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:12.756+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:12.756+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:12.851+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:12.852+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Bioinformatics Technicianswould perform at work. Here is the description of the occupation: Apply principles and methods of bioinformatics to assist scientists in areas such as pharmaceuticals, medical technology, biotechnology, computational biology, proteomics, computer information science, biology and medical informatics. Apply bioinformatics tools to visualize, analyze, manipulate or interpret molecular data. May build and maintain databases for processing and analyzing genomic or other biological information.<｜Assistant｜>"
+time=2025-04-27T21:43:12.918+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=169 prompt=100 used=6 remaining=94
+[GIN] 2025/04/27 - 21:43:13 | 200 | 10.979605674s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:13.422+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:13.422+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:13.514+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:13.514+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 27 unique task statements that the occupation Biological Science Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in biological sciences. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<｜Assistant｜>"
+time=2025-04-27T21:43:13.581+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=290 prompt=57 used=5 remaining=52
+[GIN] 2025/04/27 - 21:43:22 | 200 | 15.567305034s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:22.931+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:22.931+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:23.021+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:23.021+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Biological Technicianswould perform at work. Here is the description of the occupation: Assist biological and medical scientists. Set up, operate, and maintain laboratory instruments and equipment, monitor experiments, collect data and samples, make observations, and calculate and record results. May analyze organic substances, such as blood, food, and drugs.<｜Assistant｜>"
+[GIN] 2025/04/27 - 21:43:23 | 200 | 51.871944134s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:23.077+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:23.077+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:23.078+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=359 prompt=79 used=6 remaining=73
+time=2025-04-27T21:43:23.124+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:23.125+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 25 unique task statements that the occupation Automotive Engineerswould perform at work. Here is the description of the occupation: Develop new or improved designs for vehicle structural members, engines, transmissions, or other vehicle systems, using computer-assisted design technology. Direct building, modification, or testing of vehicle or components.<｜Assistant｜>"
+time=2025-04-27T21:43:23.205+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=1194 prompt=67 used=66 remaining=1
+[GIN] 2025/04/27 - 21:43:24 | 200 | 22.636665112s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:24.620+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:24.623+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:24.710+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:24.711+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 21 unique task statements that the occupation Biologistswould perform at work. Here is the description of the occupation: Research or study basic principles of plant and animal life, such as origin, relationship, development, anatomy, and functions.<｜Assistant｜>"
+time=2025-04-27T21:43:24.801+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=520 prompt=53 used=5 remaining=48
+[GIN] 2025/04/27 - 21:43:26 | 200 | 17.425184587s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:26.016+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:26.016+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:26.110+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:26.110+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Biomass Plant Technicianswould perform at work. Here is the description of the occupation: Control and monitor biomass plant activities and perform maintenance as needed.<｜Assistant｜>"
+[GIN] 2025/04/27 - 21:43:26 | 200 | 13.408063281s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:26.218+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:26.218+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:26.213+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=337 prompt=44 used=6 remaining=38
+time=2025-04-27T21:43:26.294+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:26.295+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 19 unique task statements that the occupation Biomass Power Plant Managerswould perform at work. Here is the description of the occupation: Manage operations at biomass power generation facilities. Direct work activities at plant, including supervision of operations and maintenance staff.<｜Assistant｜>"
+time=2025-04-27T21:43:26.385+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=404 prompt=54 used=5 remaining=49
+[GIN] 2025/04/27 - 21:43:30 | 200 |  7.481563622s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:30.456+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:30.456+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:30.549+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:30.549+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 25 unique task statements that the occupation Biostatisticianswould perform at work. Here is the description of the occupation: Develop and apply biostatistical theory and methods to the study of life sciences.<｜Assistant｜>"
+time=2025-04-27T21:43:30.621+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=211 prompt=49 used=5 remaining=44
+[GIN] 2025/04/27 - 21:43:31 | 200 | 17.576912414s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:31.042+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:31.042+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:31.125+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:31.128+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Boilermakerswould perform at work. Here is the description of the occupation: Construct, assemble, maintain, and repair stationary steam boilers and boiler house auxiliaries. Align structures or plate sections to assemble boiler frame tanks or vats, following blueprints. Work involves use of hand and power tools, plumb bobs, levels, wedges, dogs, or turnbuckles. Assist in testing assembled vessels. Direct cleaning of boilers and boiler furnaces. Inspect and repair boiler fittings, such as safety valves, regulators, automatic-control mechanisms, water columns, and auxiliary machines.<｜Assistant｜>"
+time=2025-04-27T21:43:31.202+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=375 prompt=133 used=5 remaining=128
+[GIN] 2025/04/27 - 21:43:37 | 200 | 10.835096855s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:37.080+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:37.080+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:37.169+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:37.169+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 28 unique task statements that the occupation Bookkeeping, Accounting, and Auditing Clerkswould perform at work. Here is the description of the occupation: Compute, classify, and record numerical data to keep financial records complete. Perform any combination of routine calculating, posting, and verifying duties to obtain primary financial data for use in maintaining accounting records. May also check the accuracy of figures, calculations, and postings pertaining to business transactions recorded by other workers.<｜Assistant｜>"
+time=2025-04-27T21:43:37.250+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=261 prompt=96 used=5 remaining=91
+[GIN] 2025/04/27 - 21:43:37 | 200 | 11.560296385s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:37.623+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:37.624+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:37.715+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:37.716+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Brickmasons and Blockmasonswould perform at work. Here is the description of the occupation: Lay and bind building materials, such as brick, structural tile, concrete block, cinder block, glass block, and terra-cotta block, with mortar and other substances, to construct or repair walls, partitions, arches, sewers, and other structures.<｜Assistant｜>"
+time=2025-04-27T21:43:37.763+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=262 prompt=88 used=6 remaining=82
+[GIN] 2025/04/27 - 21:43:40 | 200 |  9.938187534s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:40.434+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:40.435+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:40.527+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:40.528+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 18 unique task statements that the occupation Bridge and Lock Tenderswould perform at work. Here is the description of the occupation: Operate and tend bridges, canal locks, and lighthouses to permit marine passage on inland waterways, near shores, and at danger points in waterway passages. May supervise such operations. Includes drawbridge operators, lock operators, and slip bridge operators.<｜Assistant｜>"
+time=2025-04-27T21:43:40.608+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=230 prompt=84 used=5 remaining=79
+[GIN] 2025/04/27 - 21:43:43 | 200 | 20.617139777s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:43.694+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:43.694+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:43.786+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:43.786+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 24 unique task statements that the occupation Broadcast Announcers and Radio Disc Jockeyswould perform at work. Here is the description of the occupation: Speak or read from scripted materials, such as news reports or commercial messages, on radio, television, or other communications media. May play and queue music, announce artist or title of performance, identify station, or interview guests.<｜Assistant｜>"
+time=2025-04-27T21:43:43.865+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=443 prompt=83 used=6 remaining=77
+[GIN] 2025/04/27 - 21:43:45 | 200 |  7.656415617s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:45.325+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:45.325+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:45.412+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:45.412+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 27 unique task statements that the occupation Broadcast Technicianswould perform at work. Here is the description of the occupation: Set up, operate, and maintain the electronic equipment used to acquire, edit, and transmit audio and video for radio or television programs. Control and adjust incoming and outgoing broadcast signals to regulate sound volume, signal strength, and signal clarity. Operate satellite, microwave, or other transmitter equipment to broadcast radio or television programs.<｜Assistant｜>"
+time=2025-04-27T21:43:45.505+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=225 prompt=94 used=5 remaining=89
+[GIN] 2025/04/27 - 21:43:48 | 200 | 17.362981633s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:48.440+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:48.441+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:48.499+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:48.500+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 17 unique task statements that the occupation Boilermakerswould perform at work. Here is the description of the occupation: Construct, assemble, maintain, and repair stationary steam boilers and boiler house auxiliaries. Align structures or plate sections to assemble boiler frame tanks or vats, following blueprints. Work involves use of hand and power tools, plumb bobs, levels, wedges, dogs, or turnbuckles. Assist in testing assembled vessels. Direct cleaning of boilers and boiler furnaces. Inspect and repair boiler fittings, such as safety valves, regulators, automatic-control mechanisms, water columns, and auxiliary machines.<｜Assistant｜>"
+time=2025-04-27T21:43:48.569+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=450 prompt=133 used=132 remaining=1
+[GIN] 2025/04/27 - 21:43:49 | 200 |  5.911845273s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:49.648+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:49.648+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:49.704+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:49.704+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 24 unique task statements that the occupation Broadcast Announcers and Radio Disc Jockeyswould perform at work. Here is the description of the occupation: Speak or read from scripted materials, such as news reports or commercial messages, on radio, television, or other communications media. May play and queue music, announce artist or title of performance, identify station, or interview guests.<｜Assistant｜>"
+time=2025-04-27T21:43:49.780+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=183 prompt=83 used=82 remaining=1
+[GIN] 2025/04/27 - 21:43:55 | 200 |  6.744446403s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:55.192+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:55.192+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:55.279+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:55.280+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 10 unique task statements that the occupation Brokerage Clerkswould perform at work. Here is the description of the occupation: Perform duties related to the purchase, sale, or holding of securities. Duties include writing orders for stock purchases or sales, computing transfer taxes, verifying stock transactions, accepting and delivering securities, tracking stock price fluctuations, computing equity, distributing dividends, and keeping records of daily transactions and holdings.<｜Assistant｜>"
+time=2025-04-27T21:43:55.391+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=258 prompt=89 used=6 remaining=83
+[GIN] 2025/04/27 - 21:43:56 | 200 | 19.396898779s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:56.519+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:56.519+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:56.609+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:56.610+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Brownfield Redevelopment Specialists and Site Managerswould perform at work. Here is the description of the occupation: Plan and direct cleanup and redevelopment of contaminated properties for reuse. Does not include properties sufficiently contaminated to qualify as Superfund sites.<｜Assistant｜>"
+time=2025-04-27T21:43:56.695+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=447 prompt=60 used=6 remaining=54
+[GIN] 2025/04/27 - 21:43:57 | 200 | 17.128202966s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:43:57.603+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:43:57.603+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:43:57.689+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:43:57.689+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 13 unique task statements that the occupation Budget Analystswould perform at work. Here is the description of the occupation: Examine budget estimates for completeness, accuracy, and conformance with procedures and regulations. Analyze budgeting and accounting reports.<｜Assistant｜>"
+time=2025-04-27T21:43:57.752+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=396 prompt=55 used=6 remaining=49
+[GIN] 2025/04/27 - 21:44:03 | 200 |         1m39s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:44:03.398+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:44:03.398+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:44:03.452+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:44:03.452+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 23 unique task statements that the occupation Athletic Trainerswould perform at work. Here is the description of the occupation: Evaluate and treat musculoskeletal injuries or illnesses. Provide preventive, therapeutic, emergency, and rehabilitative care.<｜Assistant｜>"
+time=2025-04-27T21:44:03.530+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=2099 prompt=52 used=51 remaining=1
+[GIN] 2025/04/27 - 21:44:04 | 200 |  8.856193375s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:44:04.095+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:44:04.095+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:44:04.173+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:44:04.175+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 14 unique task statements that the occupation Bus Drivers, Transit and Intercitywould perform at work. Here is the description of the occupation: Drive bus or motor coach, including regular route operations, charters, and private carriage. May assist passengers with baggage. May collect fares or tickets.<｜Assistant｜>"
+time=2025-04-27T21:44:04.264+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=246 prompt=65 used=6 remaining=59
+[GIN] 2025/04/27 - 21:44:05 | 200 | 16.224951421s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:44:05.882+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:44:05.882+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:44:05.968+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:44:05.970+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 26 unique task statements that the occupation Bus and Truck Mechanics and Diesel Engine Specialistswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul buses and trucks, or maintain and repair any type of diesel engines. Includes mechanics working primarily with automobile or marine diesel engines.<｜Assistant｜>"
+time=2025-04-27T21:44:06.061+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=379 prompt=70 used=6 remaining=64
+[GIN] 2025/04/27 - 21:44:07 | 200 |  9.401807675s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:44:07.057+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:44:07.057+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7
+time=2025-04-27T21:44:07.132+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49
+time=2025-04-27T21:44:07.133+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<｜User｜>List exactly 21 unique task statements that the occupation Business Continuity Plannerswould perform at work. Here is the description of the occupation: Develop, maintain, or implement business continuity and disaster recovery strategies and solutions, including risk assessments, business impact analyses, strategy selection, and documentation of business continuity and disaster recovery procedures. Plan, conduct, and debrief regular mock-disaster exercises to test the adequacy of existing plans and strategies, updating procedures and plans regularly. Act as a coordinator for continuity efforts after a disruption event.<｜Assistant｜>"
+time=2025-04-27T21:44:07.183+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=219 prompt=109 used=5 remaining=104
+[GIN] 2025/04/27 - 21:44:11 | 200 | 14.913815336s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T21:44:11.473+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T21:44:11.473+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-96c415656d377afbff962f6cdb2394ab092ccbcbaab4b82525bc4ca800fe8a49 refCount=7

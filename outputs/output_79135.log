@@ -23,3 +23,18 @@ Sun Apr 27 21:28:23 2025
 Mem:           503Gi        55Gi       376Gi       863Mi        79Gi       447Gi
 Swap:           14Gi       6.0Mi        14Gi
 folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n902
+Job ID: 79135
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:02
+CPU Efficiency: 0.19% of 00:17:42 core-walltime
+Job Wall-clock time: 00:08:51
+Memory Utilized: 2.00 GB
+Memory Efficiency: 25.03% of 8.00 GB (8.00 GB/node)
