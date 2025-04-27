@@ -2181,3 +2181,1067 @@
 deepseek-r1-no_prompt-6:  65%|██████▌   | 98/150 [02:11<01:58,  2.27s/it]2025-04-27 23:54:48,586 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
 2025-04-27 23:54:49,404 - Single inference for Real Estate Brokers, duration: 0:00:08.863050
 deepseek-r1-no_prompt-6:  66%|██████▌   | 99/150 [02:12<01:36,  1.89s/it]2025-04-27 23:54:49,557 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:51,101 - Single inference for Receptionists and Information Clerks, duration: 0:00:07.141232
+deepseek-r1-no_prompt-6:  67%|██████▋   | 100/150 [02:14<01:31,  1.83s/it]2025-04-27 23:54:51,279 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:51,448 - Single inference for Recreation Workers, duration: 0:00:06.087327
+deepseek-r1-no_prompt-6:  67%|██████▋   | 101/150 [02:14<01:07,  1.38s/it]2025-04-27 23:54:51,590 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:52,193 - Single inference for Range Managers, duration: 0:00:12.814513
+deepseek-r1-no_prompt-6:  68%|██████▊   | 102/150 [02:15<00:57,  1.19s/it]2025-04-27 23:54:52,338 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:52,753 - Task issues for Producers and Directors: count 6/27, uniques 6. Retrying...
+2025-04-27 23:54:52,845 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:55,325 - Single inference for Recycling and Reclamation Workers, duration: 0:00:03.102182
+deepseek-r1-no_prompt-6:  69%|██████▊   | 103/150 [02:18<01:23,  1.77s/it]2025-04-27 23:54:55,466 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:55,751 - Single inference for Recreational Therapists, duration: 0:00:06.319429
+deepseek-r1-no_prompt-6:  69%|██████▉   | 104/150 [02:19<01:03,  1.37s/it]2025-04-27 23:54:55,881 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:57,515 - Single inference for Recycling Coordinators, duration: 0:00:06.042061
+deepseek-r1-no_prompt-6:  70%|███████   | 105/150 [02:20<01:06,  1.48s/it]2025-04-27 23:54:57,654 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:58,122 - Single inference for Refuse and Recyclable Material Collectors, duration: 0:00:02.341976
+deepseek-r1-no_prompt-6:  71%|███████   | 106/150 [02:21<00:53,  1.22s/it]2025-04-27 23:54:58,267 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:58,480 - Single inference for Recreational Vehicle Service Technicians, duration: 0:00:07.344661
+deepseek-r1-no_prompt-6:  71%|███████▏  | 107/150 [02:21<00:41,  1.04it/s]2025-04-27 23:54:58,613 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:54:59,998 - Single inference for Refractory Materials Repairers, Except Brickmasons, duration: 0:00:04.653516
+deepseek-r1-no_prompt-6:  72%|███████▏  | 108/150 [02:23<00:47,  1.13s/it]2025-04-27 23:55:00,152 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:01,291 - Single inference for Recreation and Fitness Studies Teachers, Postsecondary, duration: 0:00:12.826727
+deepseek-r1-no_prompt-6:  73%|███████▎  | 109/150 [02:24<00:48,  1.18s/it]2025-04-27 23:55:01,364 - Task issues for Rail Car Repairers: count 20/20, uniques 9. Retrying...
+2025-04-27 23:55:01,466 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:01,477 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:04,426 - Single inference for Registered Nurses, duration: 0:00:06.889492
+deepseek-r1-no_prompt-6:  73%|███████▎  | 110/150 [02:27<01:10,  1.77s/it]2025-04-27 23:55:04,584 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:04,984 - Single inference for Reinforcing Iron and Rebar Workers, duration: 0:00:03.665206
+deepseek-r1-no_prompt-6:  74%|███████▍  | 111/150 [02:28<00:55,  1.41s/it]2025-04-27 23:55:05,148 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:07,372 - Single inference for Rehabilitation Counselors, duration: 0:00:07.348046
+deepseek-r1-no_prompt-6:  75%|███████▍  | 112/150 [02:30<01:04,  1.69s/it]2025-04-27 23:55:07,513 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:07,649 - Single inference for Regulatory Affairs Managers, duration: 0:00:09.503977
+deepseek-r1-no_prompt-6:  75%|███████▌  | 113/150 [02:30<00:46,  1.27s/it]2025-04-27 23:55:07,792 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:09,098 - Single inference for Rail Car Repairers, duration: 0:00:41.502481
+deepseek-r1-no_prompt-6:  76%|███████▌  | 114/150 [02:32<00:47,  1.32s/it]2025-04-27 23:55:09,234 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:09,665 - Single inference for Producers and Directors, duration: 0:01:13.479255
+deepseek-r1-no_prompt-6:  77%|███████▋  | 115/150 [02:32<00:38,  1.10s/it]2025-04-27 23:55:09,812 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:11,864 - Task issues for Quality Control Systems Managers: count 1/27, uniques 1. Retrying...
+2025-04-27 23:55:11,965 - Single inference for Remote Sensing Scientists and Technologists, duration: 0:00:07.509133
+deepseek-r1-no_prompt-6:  77%|███████▋  | 116/150 [02:35<00:49,  1.46s/it]2025-04-27 23:55:11,998 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:12,129 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:13,258 - Single inference for Residential Advisors, duration: 0:00:05.592451
+deepseek-r1-no_prompt-6:  78%|███████▊  | 117/150 [02:36<00:46,  1.41s/it]2025-04-27 23:55:13,401 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:14,347 - Single inference for Retail Loss Prevention Specialists, duration: 0:00:04.652731
+deepseek-r1-no_prompt-6:  79%|███████▊  | 118/150 [02:37<00:41,  1.31s/it]2025-04-27 23:55:14,491 - Single inference for Respiratory Therapists, duration: 0:00:05.367619
+deepseek-r1-no_prompt-6:  79%|███████▉  | 119/150 [02:37<00:29,  1.04it/s]2025-04-27 23:55:14,509 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:14,632 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:15,186 - Single inference for Reservation and Transportation Ticket Agents and Travel Clerks, duration: 0:00:07.794056
+deepseek-r1-no_prompt-6:  80%|████████  | 120/150 [02:38<00:26,  1.13it/s]2025-04-27 23:55:15,318 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:15,644 - Single inference for Quality Control Systems Managers, duration: 0:01:00.175316
+deepseek-r1-no_prompt-6:  81%|████████  | 121/150 [02:38<00:21,  1.33it/s]2025-04-27 23:55:15,774 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:16,407 - Single inference for Remote Sensing Technicians, duration: 0:00:11.396379
+deepseek-r1-no_prompt-6:  81%|████████▏ | 122/150 [02:39<00:21,  1.32it/s]2025-04-27 23:55:16,540 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:17,411 - Single inference for Riggers, duration: 0:00:04.123307
+deepseek-r1-no_prompt-6:  82%|████████▏ | 123/150 [02:40<00:22,  1.20it/s]2025-04-27 23:55:17,514 - Single inference for Retail Salespersons, duration: 0:00:05.526743
+deepseek-r1-no_prompt-6:  83%|████████▎ | 124/150 [02:40<00:15,  1.63it/s]2025-04-27 23:55:17,572 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:17,666 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:19,612 - Single inference for Rock Splitters, Quarry, duration: 0:00:04.409395
+deepseek-r1-no_prompt-6:  83%|████████▎ | 125/150 [02:42<00:26,  1.06s/it]2025-04-27 23:55:19,735 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:21,031 - Single inference for Robotics Engineers, duration: 0:00:06.658402
+deepseek-r1-no_prompt-6:  84%|████████▍ | 126/150 [02:44<00:28,  1.17s/it]2025-04-27 23:55:21,226 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:21,483 - Single inference for Roof Bolters, Mining, duration: 0:00:05.051255
+deepseek-r1-no_prompt-6:  85%|████████▍ | 127/150 [02:44<00:21,  1.05it/s]2025-04-27 23:55:21,607 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:22,606 - Single inference for Roustabouts, Oil and Gas, duration: 0:00:02.974120
+deepseek-r1-no_prompt-6:  85%|████████▌ | 128/150 [02:45<00:22,  1.00s/it]2025-04-27 23:55:22,745 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:22,971 - Single inference for Rotary Drill Operators, Oil and Gas, duration: 0:00:05.432923
+deepseek-r1-no_prompt-6:  86%|████████▌ | 129/150 [02:46<00:17,  1.23it/s]2025-04-27 23:55:23,096 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:24,186 - Single inference for Robotics Technicians, duration: 0:00:09.667313
+deepseek-r1-no_prompt-6:  87%|████████▋ | 130/150 [02:47<00:18,  1.07it/s]2025-04-27 23:55:24,332 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:25,856 - Single inference for Rolling Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:00:10.191299
+deepseek-r1-no_prompt-6:  87%|████████▋ | 131/150 [02:49<00:21,  1.15s/it]2025-04-27 23:55:25,981 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:26,919 - Single inference for Roofers, duration: 0:00:09.484681
+deepseek-r1-no_prompt-6:  88%|████████▊ | 132/150 [02:50<00:20,  1.13s/it]2025-04-27 23:55:27,065 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:29,884 - Single inference for Sales Managers, duration: 0:00:07.258437
+deepseek-r1-no_prompt-6:  89%|████████▊ | 133/150 [02:53<00:28,  1.68s/it]2025-04-27 23:55:30,019 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:31,544 - Single inference for Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products, duration: 0:00:08.546541
+deepseek-r1-no_prompt-6:  89%|████████▉ | 134/150 [02:54<00:26,  1.67s/it]2025-04-27 23:55:31,682 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:32,094 - Single inference for Sales Engineers, duration: 0:00:10.587094
+deepseek-r1-no_prompt-6:  90%|█████████ | 135/150 [02:55<00:20,  1.34s/it]2025-04-27 23:55:32,237 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:32,451 - Single inference for Sawing Machine Setters, Operators, and Tenders, Wood, duration: 0:00:06.576255
+deepseek-r1-no_prompt-6:  91%|█████████ | 136/150 [02:55<00:14,  1.04s/it]2025-04-27 23:55:32,618 - Single inference for School Psychologists, duration: 0:00:05.673374
+2025-04-27 23:55:32,634 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+deepseek-r1-no_prompt-6:  91%|█████████▏| 137/150 [02:55<00:10,  1.28it/s]2025-04-27 23:55:32,767 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:33,864 - Single inference for Sailors and Marine Oilers, duration: 0:00:12.803395
+deepseek-r1-no_prompt-6:  92%|█████████▏| 138/150 [02:57<00:11,  1.09it/s]2025-04-27 23:55:34,000 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:34,608 - Task issues for Security Guards: count 14/14, uniques 4. Retrying...
+2025-04-27 23:55:34,717 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:36,814 - Single inference for Securities, Commodities, and Financial Services Sales Agents, duration: 0:00:04.337420
+deepseek-r1-no_prompt-6:  93%|█████████▎| 139/150 [03:00<00:16,  1.53s/it]2025-04-27 23:55:36,940 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:37,071 - Single inference for Security Guards, duration: 0:00:04.425035
+deepseek-r1-no_prompt-6:  93%|█████████▎| 140/150 [03:00<00:11,  1.15s/it]2025-04-27 23:55:37,149 - Single inference for Security and Fire Alarm Systems Installers, duration: 0:00:03.257725
+2025-04-27 23:55:37,213 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:37,311 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:38,147 - Single inference for Secretaries and Administrative Assistants, Except Legal, Medical, and Executive, duration: 0:00:06.029296
+deepseek-r1-no_prompt-6:  95%|█████████▍| 142/150 [03:01<00:06,  1.15it/s]2025-04-27 23:55:38,301 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:41,500 - Single inference for Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products, duration: 0:00:17.285304
+deepseek-r1-no_prompt-6:  95%|█████████▌| 143/150 [03:04<00:10,  1.48s/it]2025-04-27 23:55:41,582 - Single inference for Segmental Pavers, duration: 0:00:04.751236
+2025-04-27 23:55:42,513 - Task issues for Regulatory Affairs Specialists: count 30/30, uniques 29. Retrying...
+2025-04-27 23:55:42,609 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:43,188 - Single inference for Self-Enrichment Teachers, duration: 0:00:06.092247
+deepseek-r1-no_prompt-6:  97%|█████████▋| 145/150 [03:06<00:06,  1.22s/it]2025-04-27 23:55:43,326 - Single inference for Semiconductor Processing Technicians, duration: 0:00:06.154288
+deepseek-r1-no_prompt-6:  97%|█████████▋| 146/150 [03:06<00:03,  1.03it/s]2025-04-27 23:55:43,630 - Single inference for Secondary School Teachers, Except Special and Career/Technical Education, duration: 0:00:12.053120
+deepseek-r1-no_prompt-6:  98%|█████████▊| 147/150 [03:06<00:02,  1.24it/s]2025-04-27 23:55:44,113 - Single inference for Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders, duration: 0:00:05.939178
+deepseek-r1-no_prompt-6:  99%|█████████▊| 148/150 [03:07<00:01,  1.38it/s]2025-04-27 23:55:44,940 - Single inference for Search Marketing Strategists, duration: 0:00:15.035442
+deepseek-r1-no_prompt-6:  99%|█████████▉| 149/150 [03:08<00:00,  1.33it/s]2025-04-27 23:55:47,235 - Single inference for Regulatory Affairs Specialists, duration: 0:00:48.732266
+deepseek-r1-no_prompt-6: 100%|██████████| 150/150 [03:10<00:00,  1.18s/it]deepseek-r1-no_prompt-6: 100%|██████████| 150/150 [03:10<00:00,  1.27s/it]
+2025-04-27 23:55:47,296 - Multiprocessing for deepseek-r1-no_prompt-6, duration: 0:03:10.602307
+deepseek-r1-no_prompt-7:   0%|          | 0/150 [00:00<?, ?it/s]2025-04-27 23:55:47,583 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:47,770 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:47,783 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:47,792 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:47,804 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:47,814 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:47,825 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:48,030 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:50,045 - Single inference for Outdoor Power Equipment and Other Small Engine Mechanics, duration: 0:00:02.566278
+deepseek-r1-no_prompt-7:   1%|          | 1/150 [00:02<06:41,  2.69s/it]2025-04-27 23:55:50,193 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:51,223 - Single inference for Packers and Packagers, Hand, duration: 0:00:03.796165
+deepseek-r1-no_prompt-7:   1%|▏         | 2/150 [00:03<04:27,  1.81s/it]2025-04-27 23:55:51,366 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:52,194 - Single inference for Orthodontists, duration: 0:00:04.752702
+deepseek-r1-no_prompt-7:   2%|▏         | 3/150 [00:04<03:28,  1.42s/it]2025-04-27 23:55:52,336 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:52,370 - Single inference for Painting, Coating, and Decorating Workers, duration: 0:00:04.816153
+deepseek-r1-no_prompt-7:   3%|▎         | 4/150 [00:05<02:16,  1.07it/s]2025-04-27 23:55:52,467 - Single inference for Orthotists and Prosthetists, duration: 0:00:05.059480
+2025-04-27 23:55:52,526 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:52,643 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:52,993 - Single inference for Orthoptists, duration: 0:00:05.598551
+deepseek-r1-no_prompt-7:   4%|▍         | 6/150 [00:05<01:26,  1.66it/s]2025-04-27 23:55:53,153 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:55,281 - Single inference for Paralegals and Legal Assistants, duration: 0:00:03.062105
+deepseek-r1-no_prompt-7:   5%|▍         | 7/150 [00:07<02:32,  1.07s/it]2025-04-27 23:55:55,401 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:55,721 - Single inference for Paper Goods Machine Setters, Operators, and Tenders, duration: 0:00:05.656340
+deepseek-r1-no_prompt-7:   5%|▌         | 8/150 [00:08<02:06,  1.12it/s]2025-04-27 23:55:55,862 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:56,498 - Single inference for Packaging and Filling Machine Operators and Tenders, duration: 0:00:09.015332
+deepseek-r1-no_prompt-7:   6%|▌         | 9/150 [00:09<02:00,  1.17it/s]2025-04-27 23:55:56,630 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:56,700 - Single inference for Park Naturalists, duration: 0:00:04.303819
+deepseek-r1-no_prompt-7:   7%|▋         | 10/150 [00:09<01:32,  1.51it/s]2025-04-27 23:55:56,817 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:58,292 - Single inference for Paperhangers, duration: 0:00:07.039579
+deepseek-r1-no_prompt-7:   7%|▋         | 11/150 [00:10<02:10,  1.07it/s]2025-04-27 23:55:58,418 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:58,536 - Single inference for Parking Attendants, duration: 0:00:06.045644
+deepseek-r1-no_prompt-7:   8%|▊         | 12/150 [00:11<01:41,  1.37it/s]2025-04-27 23:55:58,677 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:58,941 - Single inference for Painters, Construction and Maintenance, duration: 0:00:11.482738
+deepseek-r1-no_prompt-7:   9%|▊         | 13/150 [00:11<01:26,  1.57it/s]2025-04-27 23:55:59,068 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:59,485 - Single inference for Parking Enforcement Workers, duration: 0:00:06.464442
+deepseek-r1-no_prompt-7:   9%|▉         | 14/150 [00:12<01:22,  1.65it/s]2025-04-27 23:55:59,597 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:55:59,965 - Single inference for Patient Representatives, duration: 0:00:03.434017
+deepseek-r1-no_prompt-7:  10%|█         | 15/150 [00:12<01:16,  1.76it/s]2025-04-27 23:56:00,115 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:00,374 - Single inference for Patternmakers, Metal and Plastic, duration: 0:00:03.656957
+deepseek-r1-no_prompt-7:  11%|█         | 16/150 [00:13<01:09,  1.92it/s]2025-04-27 23:56:00,496 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:00,728 - Single inference for Passenger Attendants, duration: 0:00:04.980462
+deepseek-r1-no_prompt-7:  11%|█▏        | 17/150 [00:13<01:02,  2.12it/s]2025-04-27 23:56:00,849 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:02,503 - Single inference for Parts Salespersons, duration: 0:00:07.196477
+deepseek-r1-no_prompt-7:  12%|█▏        | 18/150 [00:15<01:53,  1.16it/s]2025-04-27 23:56:02,633 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:03,572 - Single inference for Patternmakers, Wood, duration: 0:00:05.254383
+deepseek-r1-no_prompt-7:  13%|█▎        | 19/150 [00:16<02:01,  1.08it/s]2025-04-27 23:56:03,700 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:04,310 - Single inference for Pest Control Workers, duration: 0:00:03.557990
+deepseek-r1-no_prompt-7:  13%|█▎        | 20/150 [00:16<01:53,  1.15it/s]2025-04-27 23:56:04,443 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:05,852 - Single inference for Pesticide Handlers, Sprayers, and Applicators, Vegetation, duration: 0:00:03.321007
+deepseek-r1-no_prompt-7:  14%|█▍        | 21/150 [00:18<02:17,  1.07s/it]2025-04-27 23:56:05,929 - Single inference for Pediatricians, General, duration: 0:00:06.425548
+2025-04-27 23:56:05,990 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:06,088 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:06,384 - Single inference for Personal Care Aides, duration: 0:00:06.401222
+deepseek-r1-no_prompt-7:  15%|█▌        | 23/150 [00:19<01:28,  1.43it/s]2025-04-27 23:56:06,521 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:07,054 - Single inference for Payroll and Timekeeping Clerks, duration: 0:00:08.082824
+deepseek-r1-no_prompt-7:  16%|█▌        | 24/150 [00:19<01:27,  1.44it/s]2025-04-27 23:56:07,178 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:07,907 - Single inference for Petroleum Pump System Operators, Refinery Operators, and Gaugers, duration: 0:00:03.570998
+deepseek-r1-no_prompt-7:  17%|█▋        | 25/150 [00:20<01:31,  1.36it/s]2025-04-27 23:56:08,033 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:09,792 - Single inference for Paving, Surfacing, and Tamping Equipment Operators, duration: 0:00:11.229244
+deepseek-r1-no_prompt-7:  17%|█▋        | 26/150 [00:22<02:09,  1.05s/it]2025-04-27 23:56:09,924 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:10,378 - Single inference for Pharmacy Aides, duration: 0:00:04.432998
+deepseek-r1-no_prompt-7:  18%|█▊        | 27/150 [00:23<01:52,  1.09it/s]2025-04-27 23:56:10,569 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:10,688 - Single inference for Pharmacists, duration: 0:00:04.815851
+deepseek-r1-no_prompt-7:  19%|█▊        | 28/150 [00:23<01:31,  1.34it/s]2025-04-27 23:56:10,778 - Single inference for Pharmacy Technicians, duration: 0:00:04.367029
+2025-04-27 23:56:10,832 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:10,929 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:11,666 - Single inference for Personal Financial Advisors, duration: 0:00:11.270054
+deepseek-r1-no_prompt-7:  20%|██        | 30/150 [00:24<01:15,  1.59it/s]2025-04-27 23:56:11,807 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:12,753 - Single inference for Petroleum Engineers, duration: 0:00:09.152371
+deepseek-r1-no_prompt-7:  21%|██        | 31/150 [00:25<01:27,  1.35it/s]2025-04-27 23:56:12,880 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:13,783 - Single inference for Phlebotomists, duration: 0:00:05.846613
+deepseek-r1-no_prompt-7:  21%|██▏       | 32/150 [00:26<01:36,  1.23it/s]2025-04-27 23:56:13,915 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:14,758 - Single inference for Philosophy and Religion Teachers, Postsecondary, duration: 0:00:07.674403
+deepseek-r1-no_prompt-7:  22%|██▏       | 33/150 [00:27<01:40,  1.16it/s]2025-04-27 23:56:14,825 - Task issues for Photonics Engineers: count 26/26, uniques 25. Retrying...
+2025-04-27 23:56:14,878 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:14,941 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:16,414 - Task issues for Photographers: count 28/28, uniques 27. Retrying...
+2025-04-27 23:56:16,535 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:16,968 - Single inference for Photonics Technicians, duration: 0:00:06.164380
+deepseek-r1-no_prompt-7:  23%|██▎       | 34/150 [00:29<02:23,  1.23s/it]2025-04-27 23:56:17,100 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:17,760 - Single inference for Physical Medicine and Rehabilitation Physicians, duration: 0:00:06.062983
+deepseek-r1-no_prompt-7:  23%|██▎       | 35/150 [00:30<02:07,  1.11s/it]2025-04-27 23:56:17,887 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:18,915 - Single inference for Physical Therapist Aides, duration: 0:00:06.137880
+deepseek-r1-no_prompt-7:  24%|██▍       | 36/150 [00:31<02:08,  1.12s/it]2025-04-27 23:56:19,046 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:19,686 - Single inference for Photographic Process Workers and Processing Machine Operators, duration: 0:00:09.288731
+deepseek-r1-no_prompt-7:  25%|██▍       | 37/150 [00:32<01:55,  1.02s/it]2025-04-27 23:56:19,815 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:20,204 - Single inference for Physician Assistants, duration: 0:00:03.207629
+deepseek-r1-no_prompt-7:  25%|██▌       | 38/150 [00:32<01:37,  1.15it/s]2025-04-27 23:56:20,332 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:21,485 - Single inference for Physical Therapist Assistants, duration: 0:00:07.676750
+deepseek-r1-no_prompt-7:  26%|██▌       | 39/150 [00:34<01:50,  1.01it/s]2025-04-27 23:56:21,554 - Single inference for Physicists, duration: 0:00:02.609930
+2025-04-27 23:56:21,617 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:21,706 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:22,102 - Single inference for Photonics Engineers, duration: 0:00:11.384108
+deepseek-r1-no_prompt-7:  27%|██▋       | 41/150 [00:34<01:14,  1.47it/s]2025-04-27 23:56:22,238 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:22,430 - Single inference for Physicians, Pathologists, duration: 0:00:04.645138
+deepseek-r1-no_prompt-7:  28%|██▊       | 42/150 [00:35<01:03,  1.69it/s]2025-04-27 23:56:22,563 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:22,970 - Single inference for Pile Driver Operators, duration: 0:00:02.738606
+deepseek-r1-no_prompt-7:  29%|██▊       | 43/150 [00:35<01:01,  1.73it/s]2025-04-27 23:56:23,094 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:23,527 - Single inference for Physical Therapists, duration: 0:00:08.744549
+deepseek-r1-no_prompt-7:  29%|██▉       | 44/150 [00:36<01:00,  1.75it/s]2025-04-27 23:56:23,654 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:23,998 - Single inference for Photographers, duration: 0:00:14.178383
+deepseek-r1-no_prompt-7:  30%|███       | 45/150 [00:36<00:57,  1.83it/s]2025-04-27 23:56:24,127 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:25,129 - Single inference for Pipelayers, duration: 0:00:03.615798
+deepseek-r1-no_prompt-7:  31%|███       | 46/150 [00:37<01:14,  1.40it/s]2025-04-27 23:56:25,262 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:26,028 - Single inference for Physics Teachers, Postsecondary, duration: 0:00:06.312645
+deepseek-r1-no_prompt-7:  31%|███▏      | 47/150 [00:38<01:18,  1.31it/s]2025-04-27 23:56:26,156 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:26,770 - Single inference for Plasterers and Stucco Masons, duration: 0:00:05.190873
+deepseek-r1-no_prompt-7:  32%|███▏      | 48/150 [00:39<01:17,  1.32it/s]2025-04-27 23:56:26,901 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:28,610 - Single inference for Police Identification and Records Officers, duration: 0:00:04.584867
+deepseek-r1-no_prompt-7:  33%|███▎      | 49/150 [00:41<01:48,  1.08s/it]2025-04-27 23:56:28,728 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:29,154 - Single inference for Podiatrists, duration: 0:00:06.155211
+deepseek-r1-no_prompt-7:  33%|███▎      | 50/150 [00:41<01:32,  1.09it/s]2025-04-27 23:56:29,221 - Single inference for Poets, Lyricists and Creative Writers, duration: 0:00:05.667075
+2025-04-27 23:56:29,281 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:29,368 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:30,089 - Single inference for Political Science Teachers, Postsecondary, duration: 0:00:04.034992
+deepseek-r1-no_prompt-7:  35%|███▍      | 52/150 [00:42<01:09,  1.40it/s]2025-04-27 23:56:30,218 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:31,335 - Single inference for Plating Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:00:09.202748
+deepseek-r1-no_prompt-7:  35%|███▌      | 53/150 [00:43<01:21,  1.19it/s]2025-04-27 23:56:31,464 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:32,217 - Single inference for Political Scientists, duration: 0:00:05.422310
+deepseek-r1-no_prompt-7:  36%|███▌      | 54/150 [00:44<01:22,  1.17it/s]2025-04-27 23:56:32,367 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:33,047 - Single inference for Postal Service Mail Sorters, Processors, and Processing Machine Operators, duration: 0:00:03.802529
+deepseek-r1-no_prompt-7:  37%|███▋      | 55/150 [00:45<01:20,  1.18it/s]2025-04-27 23:56:33,171 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:33,739 - Single inference for Postal Service Mail Carriers, duration: 0:00:04.559109
+deepseek-r1-no_prompt-7:  37%|███▋      | 56/150 [00:46<01:15,  1.24it/s]2025-04-27 23:56:33,873 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:34,276 - Single inference for Police and Sheriff's Patrol Officers, duration: 0:00:09.118995
+deepseek-r1-no_prompt-7:  38%|███▊      | 57/150 [00:46<01:07,  1.37it/s]2025-04-27 23:56:34,408 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:35,558 - Single inference for Pourers and Casters, Metal, duration: 0:00:03.314288
+deepseek-r1-no_prompt-7:  39%|███▊      | 58/150 [00:48<01:21,  1.13it/s]2025-04-27 23:56:35,692 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:36,680 - Single inference for Postal Service Clerks, duration: 0:00:08.048723
+deepseek-r1-no_prompt-7:  39%|███▉      | 59/150 [00:49<01:27,  1.04it/s]2025-04-27 23:56:36,846 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:37,962 - Single inference for Power Distributors and Dispatchers, duration: 0:00:04.885034
+deepseek-r1-no_prompt-7:  40%|████      | 60/150 [00:50<01:34,  1.05s/it]2025-04-27 23:56:38,093 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:38,559 - Single inference for Postmasters and Mail Superintendents, duration: 0:00:08.447110
+deepseek-r1-no_prompt-7:  41%|████      | 61/150 [00:51<01:21,  1.09it/s]2025-04-27 23:56:38,705 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:41,154 - Single inference for Prepress Technicians and Workers, duration: 0:00:05.570139
+deepseek-r1-no_prompt-7:  41%|████▏     | 62/150 [00:53<02:04,  1.42s/it]2025-04-27 23:56:41,287 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:42,059 - Single inference for Potters, Manufacturing, duration: 0:00:10.697537
+deepseek-r1-no_prompt-7:  42%|████▏     | 63/150 [00:54<01:49,  1.26s/it]2025-04-27 23:56:42,211 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:42,502 - Single inference for Power Plant Operators, duration: 0:00:08.736981
+deepseek-r1-no_prompt-7:  43%|████▎     | 64/150 [00:55<01:27,  1.02s/it]2025-04-27 23:56:42,524 - Single inference for Preschool Teachers, Except Special Education, duration: 0:00:05.817221
+2025-04-27 23:56:42,701 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:42,716 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:44,962 - Single inference for Preventive Medicine Physicians, duration: 0:00:06.374794
+deepseek-r1-no_prompt-7:  44%|████▍     | 66/150 [00:57<01:33,  1.12s/it]2025-04-27 23:56:45,158 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:46,496 - Single inference for Private Detectives and Investigators, duration: 0:00:03.946547
+deepseek-r1-no_prompt-7:  45%|████▍     | 67/150 [00:59<01:41,  1.22s/it]2025-04-27 23:56:46,633 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:47,198 - Single inference for Print Binding and Finishing Workers, duration: 0:00:06.017440
+deepseek-r1-no_prompt-7:  45%|████▌     | 68/150 [00:59<01:28,  1.08s/it]2025-04-27 23:56:47,348 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:47,814 - Single inference for Pressers, Textile, Garment, and Related Materials, duration: 0:00:09.823576
+deepseek-r1-no_prompt-7:  46%|████▌     | 69/150 [01:00<01:17,  1.04it/s]2025-04-27 23:56:47,947 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:48,218 - Task issues for Plumbers, Pipefitters, and Steamfitters: count 30/30, uniques 27. Retrying...
+2025-04-27 23:56:48,310 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:49,007 - Single inference for Procurement Clerks, duration: 0:00:03.964363
+deepseek-r1-no_prompt-7:  47%|████▋     | 70/150 [01:01<01:21,  1.02s/it]2025-04-27 23:56:49,149 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:50,401 - Single inference for Printing Press Operators, duration: 0:00:08.317595
+deepseek-r1-no_prompt-7:  47%|████▋     | 71/150 [01:03<01:29,  1.13s/it]2025-04-27 23:56:50,589 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:50,814 - Single inference for Probation Officers and Correctional Treatment Specialists, duration: 0:00:08.269739
+deepseek-r1-no_prompt-7:  48%|████▊     | 72/150 [01:03<01:11,  1.09it/s]2025-04-27 23:56:50,939 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:52,424 - Single inference for Proofreaders and Copy Markers, duration: 0:00:04.582926
+deepseek-r1-no_prompt-7:  49%|████▊     | 73/150 [01:05<01:26,  1.12s/it]2025-04-27 23:56:52,549 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:53,172 - Single inference for Production, Planning, and Expediting Clerks, duration: 0:00:05.951491
+deepseek-r1-no_prompt-7:  49%|████▉     | 74/150 [01:05<01:17,  1.01s/it]2025-04-27 23:56:53,303 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:53,561 - Task issues for Psychiatric Aides: count 17/17, uniques 4. Retrying...
+2025-04-27 23:56:53,672 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:56,395 - Single inference for Prosthodontists, duration: 0:00:05.964413
+deepseek-r1-no_prompt-7:  50%|█████     | 75/150 [01:09<02:04,  1.67s/it]2025-04-27 23:56:56,549 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:57,069 - Single inference for Psychiatrists, duration: 0:00:03.868006
+deepseek-r1-no_prompt-7:  51%|█████     | 76/150 [01:09<01:41,  1.37s/it]2025-04-27 23:56:57,206 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:59,207 - Single inference for Psychiatric Technicians, duration: 0:00:06.758150
+deepseek-r1-no_prompt-7:  51%|█████▏    | 77/150 [01:11<01:56,  1.60s/it]2025-04-27 23:56:59,258 - Single inference for Psychiatric Aides, duration: 0:00:08.418766
+2025-04-27 23:56:59,362 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:59,446 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:56:59,714 - Single inference for Property, Real Estate, and Community Association Managers, duration: 0:00:10.683174
+deepseek-r1-no_prompt-7:  53%|█████▎    | 79/150 [01:12<01:09,  1.02it/s]2025-04-27 23:56:59,853 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:00,188 - Single inference for Producers and Directors, duration: 0:00:13.667287
+deepseek-r1-no_prompt-7:  53%|█████▎    | 80/150 [01:12<00:59,  1.17it/s]2025-04-27 23:57:00,325 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:01,507 - Single inference for Public Relations Specialists, duration: 0:00:04.412865
+deepseek-r1-no_prompt-7:  54%|█████▍    | 81/150 [01:14<01:07,  1.03it/s]2025-04-27 23:57:01,641 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:04,267 - Single inference for Plumbers, Pipefitters, and Steamfitters, duration: 0:00:41.811786
+deepseek-r1-no_prompt-7:  55%|█████▍    | 82/150 [01:16<01:39,  1.46s/it]2025-04-27 23:57:04,392 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:05,502 - Single inference for Pump Operators, Except Wellhead Pumpers, duration: 0:00:06.215133
+deepseek-r1-no_prompt-7:  55%|█████▌    | 83/150 [01:18<01:33,  1.40s/it]2025-04-27 23:57:05,653 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:06,349 - Single inference for Purchasing Agents, Except Wholesale, Retail, and Farm Products, duration: 0:00:06.610178
+deepseek-r1-no_prompt-7:  56%|█████▌    | 84/150 [01:19<01:22,  1.24s/it]2025-04-27 23:57:06,489 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:08,763 - Single inference for Quality Control Analysts, duration: 0:00:07.230973
+deepseek-r1-no_prompt-7:  57%|█████▋    | 85/150 [01:21<01:42,  1.58s/it]2025-04-27 23:57:08,826 - Single inference for Public Safety Telecommunicators, duration: 0:00:09.589783
+2025-04-27 23:57:08,965 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:08,978 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:12,330 - Single inference for Psychology Teachers, Postsecondary, duration: 0:00:15.908112
+deepseek-r1-no_prompt-7:  58%|█████▊    | 87/150 [01:24<01:45,  1.67s/it]2025-04-27 23:57:12,432 - Single inference for Quality Control Systems Managers, duration: 0:00:08.146319
+2025-04-27 23:57:12,486 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:12,592 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:15,017 - Task issues for Purchasing Managers: count 18/18, uniques 15. Retrying...
+2025-04-27 23:57:15,197 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:15,744 - Single inference for Radiologists, duration: 0:00:03.387043
+deepseek-r1-no_prompt-7:  59%|█████▉    | 89/150 [01:28<01:42,  1.69s/it]2025-04-27 23:57:15,879 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:16,768 - Single inference for Radio, Cellular, and Tower Equipment Installers and Repairers, duration: 0:00:07.975918
+deepseek-r1-no_prompt-7:  60%|██████    | 90/150 [01:29<01:32,  1.54s/it]2025-04-27 23:57:16,898 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:17,451 - Single inference for Radiation Therapists, duration: 0:00:11.919692
+deepseek-r1-no_prompt-7:  61%|██████    | 91/150 [01:30<01:18,  1.34s/it]2025-04-27 23:57:17,603 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:18,582 - Single inference for Radio Frequency Identification Device Specialists, duration: 0:00:12.208599
+deepseek-r1-no_prompt-7:  61%|██████▏   | 92/150 [01:31<01:14,  1.28s/it]2025-04-27 23:57:18,733 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:19,333 - Single inference for Rail Car Repairers, duration: 0:00:06.878668
+deepseek-r1-no_prompt-7:  62%|██████▏   | 93/150 [01:31<01:05,  1.14s/it]2025-04-27 23:57:19,460 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:20,237 - Single inference for Purchasing Managers, duration: 0:00:20.020344
+deepseek-r1-no_prompt-7:  63%|██████▎   | 94/150 [01:32<01:00,  1.08s/it]2025-04-27 23:57:20,306 - Single inference for Rail Yard Engineers, Dinkey Operators, and Hostlers, duration: 0:00:04.541758
+2025-04-27 23:57:20,371 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:20,461 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:24,928 - Single inference for Railroad Conductors and Yardmasters, duration: 0:00:06.321575
+deepseek-r1-no_prompt-7:  64%|██████▍   | 96/150 [01:37<01:28,  1.63s/it]2025-04-27 23:57:25,101 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:25,731 - Single inference for Rail-Track Laying and Maintenance Equipment Operators, duration: 0:00:08.936266
+deepseek-r1-no_prompt-7:  65%|██████▍   | 97/150 [01:38<01:16,  1.44s/it]2025-04-27 23:57:25,880 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:27,415 - Single inference for Railroad Brake, Signal, and Switch Operators and Locomotive Firers, duration: 0:00:09.936153
+deepseek-r1-no_prompt-7:  65%|██████▌   | 98/150 [01:40<01:18,  1.50s/it]2025-04-27 23:57:27,550 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:28,334 - Task issues for Precision Agriculture Technicians: count 8/22, uniques 8. Retrying...
+2025-04-27 23:57:28,480 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:28,676 - Single inference for Real Estate Brokers, duration: 0:00:08.414324
+deepseek-r1-no_prompt-7:  66%|██████▌   | 99/150 [01:41<01:13,  1.44s/it]2025-04-27 23:57:28,825 - Task issues for Radiologic Technologists and Technicians: count 27/27, uniques 4. Retrying...
+2025-04-27 23:57:28,823 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:28,989 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:29,558 - Single inference for Range Managers, duration: 0:00:10.199136
+deepseek-r1-no_prompt-7:  67%|██████▋   | 100/150 [01:42<01:04,  1.28s/it]2025-04-27 23:57:29,698 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:32,210 - Single inference for Recreation and Fitness Studies Teachers, Postsecondary, duration: 0:00:04.767309
+deepseek-r1-no_prompt-7:  67%|██████▋   | 101/150 [01:44<01:21,  1.67s/it]2025-04-27 23:57:32,354 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:32,880 - Single inference for Receptionists and Information Clerks, duration: 0:00:07.926531
+deepseek-r1-no_prompt-7:  68%|██████▊   | 102/150 [01:45<01:06,  1.38s/it]2025-04-27 23:57:33,031 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:34,204 - Single inference for Recreation Workers, duration: 0:00:08.448249
+deepseek-r1-no_prompt-7:  69%|██████▊   | 103/150 [01:46<01:04,  1.36s/it]2025-04-27 23:57:34,226 - Single inference for Recreational Therapists, duration: 0:00:05.521682
+2025-04-27 23:57:34,367 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:34,377 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:34,390 - Single inference for Precision Agriculture Technicians, duration: 0:01:00.085571
+deepseek-r1-no_prompt-7:  70%|███████   | 105/150 [01:47<00:35,  1.27it/s]2025-04-27 23:57:34,548 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:35,325 - Single inference for Real Estate Sales Agents, duration: 0:00:14.994382
+deepseek-r1-no_prompt-7:  71%|███████   | 106/150 [01:47<00:36,  1.22it/s]2025-04-27 23:57:35,473 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:36,273 - Single inference for Recreational Vehicle Service Technicians, duration: 0:00:06.693662
+deepseek-r1-no_prompt-7:  71%|███████▏  | 107/150 [01:48<00:36,  1.17it/s]2025-04-27 23:57:36,399 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:37,891 - Task issues for Registered Nurses: count 27/27, uniques 25. Retrying...
+2025-04-27 23:57:37,984 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:38,486 - Single inference for Refuse and Recyclable Material Collectors, duration: 0:00:04.236536
+deepseek-r1-no_prompt-7:  72%|███████▏  | 108/150 [01:51<00:51,  1.22s/it]2025-04-27 23:57:38,548 - Single inference for Refractory Materials Repairers, Except Brickmasons, duration: 0:00:04.328003
+2025-04-27 23:57:38,621 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:38,707 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:39,441 - Single inference for Recycling and Reclamation Workers, duration: 0:00:06.536254
+deepseek-r1-no_prompt-7:  73%|███████▎  | 110/150 [01:52<00:35,  1.11it/s]2025-04-27 23:57:39,570 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:40,644 - Single inference for Radiologic Technologists and Technicians, duration: 0:00:31.801994
+deepseek-r1-no_prompt-7:  74%|███████▍  | 111/150 [01:53<00:37,  1.03it/s]2025-04-27 23:57:40,794 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:42,233 - Single inference for Rehabilitation Counselors, duration: 0:00:03.722476
+deepseek-r1-no_prompt-7:  75%|███████▍  | 112/150 [01:54<00:42,  1.13s/it]2025-04-27 23:57:42,382 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:42,685 - Single inference for Regulatory Affairs Managers, duration: 0:00:07.339539
+deepseek-r1-no_prompt-7:  75%|███████▌  | 113/150 [01:55<00:35,  1.05it/s]2025-04-27 23:57:42,873 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:43,132 - Single inference for Reinforcing Iron and Rebar Workers, duration: 0:00:04.557797
+deepseek-r1-no_prompt-7:  76%|███████▌  | 114/150 [01:55<00:29,  1.23it/s]2025-04-27 23:57:43,263 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:44,517 - Task issues for Registered Nurses: count 27/27, uniques 26. Retrying...
+2025-04-27 23:57:44,621 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:44,854 - Task issues for Regulatory Affairs Specialists: count 30/30, uniques 29. Retrying...
+2025-04-27 23:57:45,013 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:45,902 - Single inference for Recycling Coordinators, duration: 0:00:13.661148
+deepseek-r1-no_prompt-7:  77%|███████▋  | 115/150 [01:58<00:47,  1.36s/it]2025-04-27 23:57:46,046 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:46,568 - Single inference for Reservation and Transportation Ticket Agents and Travel Clerks, duration: 0:00:04.316216
+deepseek-r1-no_prompt-7:  77%|███████▋  | 116/150 [01:59<00:39,  1.16s/it]2025-04-27 23:57:46,694 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:46,841 - Single inference for Remote Sensing Technicians, duration: 0:00:06.168820
+deepseek-r1-no_prompt-7:  78%|███████▊  | 117/150 [01:59<00:29,  1.11it/s]2025-04-27 23:57:47,021 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:48,191 - Single inference for Respiratory Therapists, duration: 0:00:05.030700
+deepseek-r1-no_prompt-7:  79%|███████▊  | 118/150 [02:00<00:33,  1.03s/it]2025-04-27 23:57:48,327 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:48,651 - Single inference for Residential Advisors, duration: 0:00:05.939393
+deepseek-r1-no_prompt-7:  79%|███████▉  | 119/150 [02:01<00:26,  1.16it/s]2025-04-27 23:57:48,773 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:49,469 - Single inference for Remote Sensing Scientists and Technologists, duration: 0:00:10.003729
+deepseek-r1-no_prompt-7:  80%|████████  | 120/150 [02:02<00:25,  1.18it/s]2025-04-27 23:57:49,611 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:50,355 - Single inference for Riggers, duration: 0:00:03.485266
+deepseek-r1-no_prompt-7:  81%|████████  | 121/150 [02:03<00:24,  1.16it/s]2025-04-27 23:57:50,501 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:51,282 - Single inference for Registered Nurses, duration: 0:00:16.869415
+deepseek-r1-no_prompt-7:  81%|████████▏ | 122/150 [02:03<00:24,  1.13it/s]2025-04-27 23:57:51,441 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:51,743 - Single inference for Retail Loss Prevention Specialists, duration: 0:00:05.813900
+deepseek-r1-no_prompt-7:  82%|████████▏ | 123/150 [02:04<00:20,  1.33it/s]2025-04-27 23:57:51,884 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:55,676 - Single inference for Robotics Technicians, duration: 0:00:07.008052
+deepseek-r1-no_prompt-7:  83%|████████▎ | 124/150 [02:08<00:44,  1.71s/it]2025-04-27 23:57:55,750 - Single inference for Rock Splitters, Quarry, duration: 0:00:06.255359
+2025-04-27 23:57:55,814 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:55,912 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:56,236 - Single inference for Robotics Engineers, duration: 0:00:08.020358
+deepseek-r1-no_prompt-7:  84%|████████▍ | 126/150 [02:08<00:25,  1.05s/it]2025-04-27 23:57:56,388 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:56,776 - Single inference for Rolling Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:00:06.395002
+deepseek-r1-no_prompt-7:  85%|████████▍ | 127/150 [02:09<00:21,  1.08it/s]2025-04-27 23:57:56,896 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:57,957 - Single inference for Retail Salespersons, duration: 0:00:11.368537
+deepseek-r1-no_prompt-7:  85%|████████▌ | 128/150 [02:10<00:21,  1.01it/s]2025-04-27 23:57:58,107 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:57:59,100 - Single inference for Roofers, duration: 0:00:07.331127
+deepseek-r1-no_prompt-7:  86%|████████▌ | 129/150 [02:11<00:21,  1.03s/it]2025-04-27 23:57:59,232 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:00,174 - Single inference for Roustabouts, Oil and Gas, duration: 0:00:04.398326
+deepseek-r1-no_prompt-7:  87%|████████▋ | 130/150 [02:12<00:20,  1.04s/it]2025-04-27 23:58:00,325 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:03,303 - Task issues for Regulatory Affairs Specialists: count 30/30, uniques 10. Retrying...
+2025-04-27 23:58:03,392 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:04,048 - Single inference for Rotary Drill Operators, Oil and Gas, duration: 0:00:08.344466
+deepseek-r1-no_prompt-7:  87%|████████▋ | 131/150 [02:16<00:35,  1.85s/it]2025-04-27 23:58:04,169 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:04,732 - Single inference for Sales Engineers, duration: 0:00:07.930968
+deepseek-r1-no_prompt-7:  88%|████████▊ | 132/150 [02:17<00:27,  1.52s/it]2025-04-27 23:58:04,871 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:05,553 - Single inference for Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products, duration: 0:00:06.427990
+deepseek-r1-no_prompt-7:  89%|████████▊ | 133/150 [02:18<00:22,  1.31s/it]2025-04-27 23:58:05,703 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:06,334 - Single inference for Sales Managers, duration: 0:00:08.359040
+deepseek-r1-no_prompt-7:  89%|████████▉ | 134/150 [02:18<00:18,  1.15s/it]2025-04-27 23:58:06,446 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:07,250 - Single inference for Sailors and Marine Oilers, duration: 0:00:10.996421
+deepseek-r1-no_prompt-7:  90%|█████████ | 135/150 [02:19<00:16,  1.09s/it]2025-04-27 23:58:07,384 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:10,722 - Single inference for Sawing Machine Setters, Operators, and Tenders, Wood, duration: 0:00:06.657076
+deepseek-r1-no_prompt-7:  91%|█████████ | 136/150 [02:23<00:25,  1.79s/it]2025-04-27 23:58:10,871 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:12,864 - Single inference for Secretaries and Administrative Assistants, Except Legal, Medical, and Executive, duration: 0:00:05.594143
+deepseek-r1-no_prompt-7:  91%|█████████▏| 137/150 [02:25<00:24,  1.90s/it]2025-04-27 23:58:12,999 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:13,224 - Single inference for School Psychologists, duration: 0:00:08.466049
+deepseek-r1-no_prompt-7:  92%|█████████▏| 138/150 [02:25<00:17,  1.44s/it]2025-04-27 23:58:13,366 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:14,778 - Single inference for Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products, duration: 0:00:14.582700
+deepseek-r1-no_prompt-7:  93%|█████████▎| 139/150 [02:27<00:16,  1.47s/it]2025-04-27 23:58:14,910 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:16,359 - Single inference for Search Marketing Strategists, duration: 0:00:10.776774
+deepseek-r1-no_prompt-7:  93%|█████████▎| 140/150 [02:29<00:15,  1.51s/it]2025-04-27 23:58:16,493 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:17,300 - Single inference for Security Guards, duration: 0:00:04.407723
+deepseek-r1-no_prompt-7:  94%|█████████▍| 141/150 [02:29<00:12,  1.34s/it]2025-04-27 23:58:17,431 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:17,753 - Single inference for Security and Fire Alarm Systems Installers, duration: 0:00:04.505281
+deepseek-r1-no_prompt-7:  95%|█████████▍| 142/150 [02:30<00:08,  1.07s/it]2025-04-27 23:58:17,913 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:18,644 - Single inference for Segmental Pavers, duration: 0:00:03.837162
+deepseek-r1-no_prompt-7:  95%|█████████▌| 143/150 [02:31<00:07,  1.02s/it]2025-04-27 23:58:19,216 - Single inference for Secondary School Teachers, Except Special and Career/Technical Education, duration: 0:00:12.856807
+deepseek-r1-no_prompt-7:  96%|█████████▌| 144/150 [02:31<00:05,  1.13it/s]2025-04-27 23:58:21,584 - Single inference for Securities, Commodities, and Financial Services Sales Agents, duration: 0:00:10.833464
+deepseek-r1-no_prompt-7:  97%|█████████▋| 145/150 [02:34<00:06,  1.33s/it]2025-04-27 23:58:22,912 - Single inference for Semiconductor Processing Technicians, duration: 0:00:05.588129
+deepseek-r1-no_prompt-7:  97%|█████████▋| 146/150 [02:35<00:05,  1.33s/it]2025-04-27 23:58:23,508 - Single inference for Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders, duration: 0:00:05.727164
+deepseek-r1-no_prompt-7:  98%|█████████▊| 147/150 [02:36<00:03,  1.11s/it]2025-04-27 23:58:23,803 - Single inference for Self-Enrichment Teachers, duration: 0:00:07.411713
+deepseek-r1-no_prompt-7:  99%|█████████▊| 148/150 [02:36<00:01,  1.16it/s]2025-04-27 23:58:32,148 - Task issues for Roof Bolters, Mining: count 9/14, uniques 9. Retrying...
+2025-04-27 23:58:32,213 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:34,249 - Single inference for Roof Bolters, Mining, duration: 0:00:42.938055
+deepseek-r1-no_prompt-7:  99%|█████████▉| 149/150 [02:46<00:03,  3.74s/it]2025-04-27 23:58:35,124 - Single inference for Regulatory Affairs Specialists, duration: 0:00:58.833297
+deepseek-r1-no_prompt-7: 100%|██████████| 150/150 [02:47<00:00,  2.88s/it]deepseek-r1-no_prompt-7: 100%|██████████| 150/150 [02:47<00:00,  1.12s/it]
+2025-04-27 23:58:35,182 - Multiprocessing for deepseek-r1-no_prompt-7, duration: 0:02:47.864690
+deepseek-r1-no_prompt-8:   0%|          | 0/150 [00:00<?, ?it/s]2025-04-27 23:58:35,438 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:35,531 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:35,653 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:35,664 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:35,795 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:35,806 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:35,817 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:35,829 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:37,862 - Task issues for Orthodontists: count 11/11, uniques 1. Retrying...
+2025-04-27 23:58:37,952 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:39,298 - Single inference for Painting, Coating, and Decorating Workers, duration: 0:00:03.880454
+deepseek-r1-no_prompt-8:   1%|          | 1/150 [00:04<10:04,  4.06s/it]2025-04-27 23:58:39,422 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:40,154 - Single inference for Packers and Packagers, Hand, duration: 0:00:04.813628
+deepseek-r1-no_prompt-8:   1%|▏         | 2/150 [00:04<05:22,  2.18s/it]2025-04-27 23:58:40,294 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:41,393 - Single inference for Orthoptists, duration: 0:00:06.116413
+deepseek-r1-no_prompt-8:   2%|▏         | 3/150 [00:06<04:17,  1.75s/it]2025-04-27 23:58:41,580 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:41,766 - Single inference for Orthodontists, duration: 0:00:06.420561
+deepseek-r1-no_prompt-8:   3%|▎         | 4/150 [00:06<02:55,  1.20s/it]2025-04-27 23:58:41,912 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:41,941 - Single inference for Orthotists and Prosthetists, duration: 0:00:06.651293
+deepseek-r1-no_prompt-8:   3%|▎         | 5/150 [00:06<02:00,  1.20it/s]2025-04-27 23:58:42,075 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:42,322 - Single inference for Painters, Construction and Maintenance, duration: 0:00:06.972823
+deepseek-r1-no_prompt-8:   4%|▍         | 6/150 [00:07<01:38,  1.47it/s]2025-04-27 23:58:42,478 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:43,599 - Single inference for Outdoor Power Equipment and Other Small Engine Mechanics, duration: 0:00:08.263648
+deepseek-r1-no_prompt-8:   5%|▍         | 7/150 [00:08<02:05,  1.14it/s]2025-04-27 23:58:43,734 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:44,244 - Single inference for Packaging and Filling Machine Operators and Tenders, duration: 0:00:08.890930
+deepseek-r1-no_prompt-8:   5%|▌         | 8/150 [00:09<01:54,  1.24it/s]2025-04-27 23:58:44,376 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:44,556 - Single inference for Paper Goods Machine Setters, Operators, and Tenders, duration: 0:00:05.237905
+deepseek-r1-no_prompt-8:   6%|▌         | 9/150 [00:09<01:31,  1.54it/s]2025-04-27 23:58:44,684 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:45,292 - Single inference for Paperhangers, duration: 0:00:05.108466
+deepseek-r1-no_prompt-8:   7%|▋         | 10/150 [00:10<01:34,  1.48it/s]2025-04-27 23:58:45,423 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:46,177 - Single inference for Parking Attendants, duration: 0:00:04.211346
+deepseek-r1-no_prompt-8:   7%|▋         | 11/150 [00:10<01:42,  1.36it/s]2025-04-27 23:58:46,297 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:46,740 - Single inference for Park Naturalists, duration: 0:00:04.951792
+deepseek-r1-no_prompt-8:   8%|▊         | 12/150 [00:11<01:34,  1.45it/s]2025-04-27 23:58:46,890 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:47,020 - Single inference for Paralegals and Legal Assistants, duration: 0:00:05.599236
+deepseek-r1-no_prompt-8:   9%|▊         | 13/150 [00:11<01:16,  1.78it/s]2025-04-27 23:58:47,077 - Single inference for Parking Enforcement Workers, duration: 0:00:04.728093
+2025-04-27 23:58:47,139 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:47,214 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:48,195 - Single inference for Passenger Attendants, duration: 0:00:03.924998
+deepseek-r1-no_prompt-8:  10%|█         | 15/150 [00:12<01:17,  1.74it/s]2025-04-27 23:58:48,345 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:49,432 - Single inference for Patternmakers, Metal and Plastic, duration: 0:00:04.109637
+deepseek-r1-no_prompt-8:  11%|█         | 16/150 [00:14<01:39,  1.35it/s]2025-04-27 23:58:49,582 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:49,637 - Single inference for Patient Representatives, duration: 0:00:05.056709
+deepseek-r1-no_prompt-8:  11%|█▏        | 17/150 [00:14<01:19,  1.67it/s]2025-04-27 23:58:49,776 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:50,383 - Single inference for Paving, Surfacing, and Tamping Equipment Operators, duration: 0:00:03.616714
+deepseek-r1-no_prompt-8:  12%|█▏        | 18/150 [00:15<01:24,  1.56it/s]2025-04-27 23:58:50,451 - Single inference for Parts Salespersons, duration: 0:00:06.826987
+2025-04-27 23:58:50,516 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:50,591 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:53,998 - Single inference for Pest Control Workers, duration: 0:00:04.336973
+deepseek-r1-no_prompt-8:  13%|█▎        | 20/150 [00:18<02:29,  1.15s/it]2025-04-27 23:58:54,129 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:55,382 - Single inference for Patternmakers, Wood, duration: 0:00:09.187059
+deepseek-r1-no_prompt-8:  14%|█▍        | 21/150 [00:20<02:35,  1.20s/it]2025-04-27 23:58:55,456 - Single inference for Payroll and Timekeeping Clerks, duration: 0:00:08.420276
+2025-04-27 23:58:55,587 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:55,598 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:55,946 - Single inference for Petroleum Engineers, duration: 0:00:05.469733
+deepseek-r1-no_prompt-8:  15%|█▌        | 23/150 [00:20<01:45,  1.20it/s]2025-04-27 23:58:56,082 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:56,524 - Single inference for Pediatricians, General, duration: 0:00:09.423190
+deepseek-r1-no_prompt-8:  16%|█▌        | 24/150 [00:21<01:37,  1.29it/s]2025-04-27 23:58:56,674 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:57,246 - Single inference for Pesticide Handlers, Sprayers, and Applicators, Vegetation, duration: 0:00:06.837502
+deepseek-r1-no_prompt-8:  17%|█▋        | 25/150 [00:22<01:35,  1.31it/s]2025-04-27 23:58:57,398 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:58:59,596 - Single inference for Pharmacy Aides, duration: 0:00:04.112568
+deepseek-r1-no_prompt-8:  17%|█▋        | 26/150 [00:24<02:25,  1.17s/it]2025-04-27 23:58:59,732 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:00,052 - Single inference for Personal Financial Advisors, duration: 0:00:10.592088
+deepseek-r1-no_prompt-8:  18%|█▊        | 27/150 [00:24<02:00,  1.02it/s]2025-04-27 23:59:00,209 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:00,264 - Single inference for Petroleum Pump System Operators, Refinery Operators, and Gaugers, duration: 0:00:06.234636
+deepseek-r1-no_prompt-8:  19%|█▊        | 28/150 [00:25<01:33,  1.30it/s]2025-04-27 23:59:00,402 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:03,642 - Single inference for Pharmacy Technicians, duration: 0:00:07.669427
+deepseek-r1-no_prompt-8:  19%|█▉        | 29/150 [00:28<03:02,  1.51s/it]2025-04-27 23:59:03,776 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:05,735 - Single inference for Photographers, duration: 0:00:06.110283
+deepseek-r1-no_prompt-8:  20%|██        | 30/150 [00:30<03:21,  1.68s/it]2025-04-27 23:59:05,870 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:06,007 - Single inference for Philosophy and Religion Teachers, Postsecondary, duration: 0:00:09.457490
+deepseek-r1-no_prompt-8:  21%|██        | 31/150 [00:30<02:30,  1.27s/it]2025-04-27 23:59:06,137 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:06,855 - Single inference for Personal Care Aides, duration: 0:00:18.633888
+deepseek-r1-no_prompt-8:  21%|██▏       | 32/150 [00:31<02:14,  1.14s/it]2025-04-27 23:59:06,979 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:07,262 - Single inference for Phlebotomists, duration: 0:00:09.986830
+deepseek-r1-no_prompt-8:  22%|██▏       | 33/150 [00:32<01:48,  1.08it/s]2025-04-27 23:59:07,385 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:09,375 - Single inference for Photonics Engineers, duration: 0:00:09.085119
+deepseek-r1-no_prompt-8:  23%|██▎       | 34/150 [00:34<02:28,  1.28s/it]2025-04-27 23:59:09,512 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:12,173 - Single inference for Physical Therapists, duration: 0:00:04.893083
+deepseek-r1-no_prompt-8:  23%|██▎       | 35/150 [00:36<03:19,  1.73s/it]2025-04-27 23:59:12,320 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:12,752 - Single inference for Physician Assistants, duration: 0:00:03.347987
+deepseek-r1-no_prompt-8:  24%|██▍       | 36/150 [00:37<02:38,  1.39s/it]2025-04-27 23:59:12,867 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:12,929 - Single inference for Physical Therapist Aides, duration: 0:00:06.891957
+deepseek-r1-no_prompt-8:  25%|██▍       | 37/150 [00:37<01:55,  1.02s/it]2025-04-27 23:59:13,052 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:14,314 - Single inference for Photonics Technicians, duration: 0:00:10.646510
+deepseek-r1-no_prompt-8:  25%|██▌       | 38/150 [00:39<02:07,  1.13s/it]2025-04-27 23:59:14,446 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:14,865 - Single inference for Physical Medicine and Rehabilitation Physicians, duration: 0:00:09.104307
+deepseek-r1-no_prompt-8:  26%|██▌       | 39/150 [00:39<01:46,  1.04it/s]2025-04-27 23:59:15,012 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:15,762 - Task issues for Pharmacists: count 20/20, uniques 11. Retrying...
+2025-04-27 23:59:15,849 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:16,636 - Single inference for Pile Driver Operators, duration: 0:00:02.294561
+deepseek-r1-no_prompt-8:  27%|██▋       | 40/150 [00:41<02:11,  1.20s/it]2025-04-27 23:59:16,792 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:16,822 - Single inference for Physical Therapist Assistants, duration: 0:00:09.947537
+deepseek-r1-no_prompt-8:  27%|██▋       | 41/150 [00:41<01:37,  1.12it/s]2025-04-27 23:59:16,973 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:17,985 - Single inference for Pipelayers, duration: 0:00:03.098899
+deepseek-r1-no_prompt-8:  28%|██▊       | 42/150 [00:42<01:45,  1.02it/s]2025-04-27 23:59:18,119 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:18,648 - Single inference for Photographic Process Workers and Processing Machine Operators, duration: 0:00:18.572379
+deepseek-r1-no_prompt-8:  29%|██▊       | 43/150 [00:43<01:34,  1.13it/s]2025-04-27 23:59:18,822 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:18,959 - Single inference for Physicians, Pathologists, duration: 0:00:06.756549
+deepseek-r1-no_prompt-8:  29%|██▉       | 44/150 [00:43<01:15,  1.40it/s]2025-04-27 23:59:19,111 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:19,653 - Single inference for Physicists, duration: 0:00:06.879743
+deepseek-r1-no_prompt-8:  30%|███       | 45/150 [00:44<01:14,  1.41it/s]2025-04-27 23:59:19,786 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:19,813 - Single inference for Pharmacists, duration: 0:00:24.403125
+deepseek-r1-no_prompt-8:  31%|███       | 46/150 [00:44<00:56,  1.84it/s]2025-04-27 23:59:19,942 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:21,538 - Single inference for Plasterers and Stucco Masons, duration: 0:00:04.880453
+deepseek-r1-no_prompt-8:  31%|███▏      | 47/150 [00:46<01:32,  1.12it/s]2025-04-27 23:59:21,665 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:23,820 - Single inference for Poets, Lyricists and Creative Writers, duration: 0:00:04.844154
+deepseek-r1-no_prompt-8:  32%|███▏      | 48/150 [00:48<02:13,  1.31s/it]2025-04-27 23:59:23,956 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:24,899 - Single inference for Police Identification and Records Officers, duration: 0:00:05.221021
+deepseek-r1-no_prompt-8:  33%|███▎      | 49/150 [00:49<02:05,  1.24s/it]2025-04-27 23:59:25,059 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:25,405 - Single inference for Podiatrists, duration: 0:00:06.733165
+deepseek-r1-no_prompt-8:  33%|███▎      | 50/150 [00:50<01:42,  1.02s/it]2025-04-27 23:59:25,562 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:27,019 - Single inference for Plumbers, Pipefitters, and Steamfitters, duration: 0:00:09.014737
+deepseek-r1-no_prompt-8:  34%|███▍      | 51/150 [00:51<01:58,  1.20s/it]2025-04-27 23:59:27,164 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:29,800 - Single inference for Postal Service Clerks, duration: 0:00:04.873503
+deepseek-r1-no_prompt-8:  35%|███▍      | 52/150 [00:54<02:44,  1.67s/it]2025-04-27 23:59:29,964 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:30,316 - Single inference for Police and Sheriff's Patrol Officers, duration: 0:00:10.483582
+deepseek-r1-no_prompt-8:  35%|███▌      | 53/150 [00:55<02:08,  1.32s/it]2025-04-27 23:59:30,461 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:30,572 - Single inference for Political Scientists, duration: 0:00:06.722140
+deepseek-r1-no_prompt-8:  36%|███▌      | 54/150 [00:55<01:36,  1.00s/it]2025-04-27 23:59:30,716 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:31,186 - Single inference for Postal Service Mail Carriers, duration: 0:00:05.755707
+deepseek-r1-no_prompt-8:  37%|███▋      | 55/150 [00:55<01:24,  1.13it/s]2025-04-27 23:59:31,293 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:31,471 - Single inference for Postal Service Mail Sorters, Processors, and Processing Machine Operators, duration: 0:00:04.421368
+deepseek-r1-no_prompt-8:  37%|███▋      | 56/150 [00:56<01:06,  1.42it/s]2025-04-27 23:59:31,588 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:34,750 - Single inference for Postmasters and Mail Superintendents, duration: 0:00:04.921241
+deepseek-r1-no_prompt-8:  38%|███▊      | 57/150 [00:59<02:17,  1.48s/it]2025-04-27 23:59:34,904 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:35,193 - Single inference for Power Plant Operators, duration: 0:00:03.704319
+deepseek-r1-no_prompt-8:  39%|███▊      | 58/150 [00:59<01:47,  1.17s/it]2025-04-27 23:59:35,311 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:35,700 - Single inference for Pourers and Casters, Metal, duration: 0:00:05.111241
+deepseek-r1-no_prompt-8:  39%|███▉      | 59/150 [01:00<01:28,  1.03it/s]2025-04-27 23:59:35,829 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:36,707 - Single inference for Power Distributors and Dispatchers, duration: 0:00:05.502898
+deepseek-r1-no_prompt-8:  40%|████      | 60/150 [01:01<01:28,  1.02it/s]2025-04-27 23:59:36,742 - Task issues for Plating Machine Setters, Operators, and Tenders, Metal and Plastic: count 33/33, uniques 12. Retrying...
+2025-04-27 23:59:36,852 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:36,861 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:38,115 - Single inference for Potters, Manufacturing, duration: 0:00:07.777199
+deepseek-r1-no_prompt-8:  41%|████      | 61/150 [01:02<01:38,  1.11s/it]2025-04-27 23:59:38,271 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:38,363 - Single inference for Political Science Teachers, Postsecondary, duration: 0:00:16.798473
+deepseek-r1-no_prompt-8:  41%|████▏     | 62/150 [01:03<01:14,  1.17it/s]2025-04-27 23:59:38,506 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:39,598 - Task issues for Prepress Technicians and Workers: count 15/15, uniques 2. Retrying...
+2025-04-27 23:59:39,687 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:40,124 - Single inference for Precision Agriculture Technicians, duration: 0:00:05.349464
+deepseek-r1-no_prompt-8:  42%|████▏     | 63/150 [01:04<01:37,  1.12s/it]2025-04-27 23:59:40,271 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:43,518 - Single inference for Preventive Medicine Physicians, duration: 0:00:05.377707
+deepseek-r1-no_prompt-8:  43%|████▎     | 64/150 [01:08<02:35,  1.81s/it]2025-04-27 23:59:43,637 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:44,624 - Single inference for Preschool Teachers, Except Special Education, duration: 0:00:08.897565
+deepseek-r1-no_prompt-8:  43%|████▎     | 65/150 [01:09<02:15,  1.59s/it]2025-04-27 23:59:44,764 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:45,902 - Single inference for Plating Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:00:29.057211
+deepseek-r1-no_prompt-8:  44%|████▍     | 66/150 [01:10<02:06,  1.50s/it]2025-04-27 23:59:46,061 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:46,141 - Task issues for Print Binding and Finishing Workers: count 25/25, uniques 24. Retrying...
+2025-04-27 23:59:46,233 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:47,197 - Task issues for Pressers, Textile, Garment, and Related Materials: count 28/28, uniques 27. Retrying...
+2025-04-27 23:59:47,247 - Single inference for Private Detectives and Investigators, duration: 0:00:03.706429
+deepseek-r1-no_prompt-8:  45%|████▍     | 67/150 [01:12<02:00,  1.45s/it]2025-04-27 23:59:47,320 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:47,423 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:47,868 - Task issues for Physics Teachers, Postsecondary: count 24/24, uniques 8. Retrying...
+2025-04-27 23:59:47,965 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:49,840 - Single inference for Printing Press Operators, duration: 0:00:09.687848
+deepseek-r1-no_prompt-8:  45%|████▌     | 68/150 [01:14<02:27,  1.80s/it]2025-04-27 23:59:49,988 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:51,617 - Single inference for Procurement Clerks, duration: 0:00:05.685899
+deepseek-r1-no_prompt-8:  46%|████▌     | 69/150 [01:16<02:25,  1.79s/it]2025-04-27 23:59:51,756 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:54,007 - Single inference for Print Binding and Finishing Workers, duration: 0:00:15.613448
+deepseek-r1-no_prompt-8:  47%|████▋     | 70/150 [01:18<02:37,  1.97s/it]2025-04-27 23:59:54,153 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:54,587 - Single inference for Probation Officers and Correctional Treatment Specialists, duration: 0:00:09.938002
+deepseek-r1-no_prompt-8:  47%|████▋     | 71/150 [01:19<02:02,  1.55s/it]2025-04-27 23:59:54,725 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:55,978 - Single inference for Pressers, Textile, Garment, and Related Materials, duration: 0:00:19.250618
+deepseek-r1-no_prompt-8:  48%|████▊     | 72/150 [01:20<01:57,  1.50s/it]2025-04-27 23:59:56,123 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:56,345 - Single inference for Production, Planning, and Expediting Clerks, duration: 0:00:06.473948
+deepseek-r1-no_prompt-8:  49%|████▊     | 73/150 [01:21<01:29,  1.16s/it]2025-04-27 23:59:56,489 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:58,293 - Single inference for Proofreaders and Copy Markers, duration: 0:00:06.646609
+deepseek-r1-no_prompt-8:  49%|████▉     | 74/150 [01:23<01:46,  1.40s/it]2025-04-27 23:59:58,425 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-27 23:59:58,715 - Single inference for Prepress Technicians and Workers, duration: 0:00:23.496366
+deepseek-r1-no_prompt-8:  50%|█████     | 75/150 [01:23<01:22,  1.11s/it]2025-04-27 23:59:58,872 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:00,459 - Single inference for Physics Teachers, Postsecondary, duration: 0:00:47.512537
+deepseek-r1-no_prompt-8:  51%|█████     | 76/150 [01:25<01:36,  1.30s/it]2025-04-28 00:00:00,600 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:01,703 - Single inference for Producers and Directors, duration: 0:00:14.434017
+deepseek-r1-no_prompt-8:  51%|█████▏    | 77/150 [01:26<01:33,  1.28s/it]2025-04-28 00:00:01,838 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:01,849 - Single inference for Psychiatric Technicians, duration: 0:00:05.477037
+deepseek-r1-no_prompt-8:  52%|█████▏    | 78/150 [01:26<01:07,  1.06it/s]2025-04-28 00:00:02,006 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:02,561 - Single inference for Psychiatrists, duration: 0:00:04.239246
+deepseek-r1-no_prompt-8:  53%|█████▎    | 79/150 [01:27<01:01,  1.15it/s]2025-04-28 00:00:02,682 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:03,974 - Single inference for Psychiatric Aides, duration: 0:00:07.967603
+deepseek-r1-no_prompt-8:  53%|█████▎    | 80/150 [01:28<01:12,  1.03s/it]2025-04-28 00:00:04,106 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:06,683 - Single inference for Psychology Teachers, Postsecondary, duration: 0:00:07.938812
+deepseek-r1-no_prompt-8:  54%|█████▍    | 81/150 [01:31<01:46,  1.54s/it]2025-04-28 00:00:06,829 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:06,886 - Single inference for Pump Operators, Except Wellhead Pumpers, duration: 0:00:05.011668
+deepseek-r1-no_prompt-8:  55%|█████▍    | 82/150 [01:31<01:17,  1.14s/it]2025-04-28 00:00:07,031 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:07,398 - Single inference for Purchasing Agents, Except Wholesale, Retail, and Farm Products, duration: 0:00:04.813215
+deepseek-r1-no_prompt-8:  55%|█████▌    | 83/150 [01:32<01:03,  1.05it/s]2025-04-28 00:00:07,538 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:08,421 - Single inference for Public Safety Telecommunicators, duration: 0:00:06.699165
+deepseek-r1-no_prompt-8:  56%|█████▌    | 84/150 [01:33<01:03,  1.03it/s]2025-04-28 00:00:08,561 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:09,792 - Single inference for Property, Real Estate, and Community Association Managers, duration: 0:00:15.760962
+deepseek-r1-no_prompt-8:  57%|█████▋    | 85/150 [01:34<01:11,  1.09s/it]2025-04-28 00:00:09,934 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:10,065 - Single inference for Purchasing Managers, duration: 0:00:06.064939
+deepseek-r1-no_prompt-8:  57%|█████▋    | 86/150 [01:34<00:54,  1.18it/s]2025-04-28 00:00:10,215 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:12,157 - Single inference for Quality Control Systems Managers, duration: 0:00:05.245420
+deepseek-r1-no_prompt-8:  58%|█████▊    | 87/150 [01:36<01:16,  1.22s/it]2025-04-28 00:00:12,293 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:13,089 - Single inference for Quality Control Analysts, duration: 0:00:06.378868
+deepseek-r1-no_prompt-8:  59%|█████▊    | 88/150 [01:37<01:10,  1.13s/it]2025-04-28 00:00:13,217 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:14,494 - Single inference for Radiation Therapists, duration: 0:00:07.072721
+deepseek-r1-no_prompt-8:  59%|█████▉    | 89/150 [01:39<01:14,  1.22s/it]2025-04-28 00:00:14,626 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:15,591 - Single inference for Radio Frequency Identification Device Specialists, duration: 0:00:07.146791
+deepseek-r1-no_prompt-8:  60%|██████    | 90/150 [01:40<01:10,  1.18s/it]2025-04-28 00:00:15,712 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:16,668 - Task issues for Public Relations Specialists: count 18/18, uniques 13. Retrying...
+2025-04-28 00:00:16,758 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:17,171 - Single inference for Rail Car Repairers, duration: 0:00:04.053642
+deepseek-r1-no_prompt-8:  61%|██████    | 91/150 [01:41<01:16,  1.30s/it]2025-04-28 00:00:17,318 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:17,726 - Single inference for Radio, Cellular, and Tower Equipment Installers and Repairers, duration: 0:00:07.907601
+deepseek-r1-no_prompt-8:  61%|██████▏   | 92/150 [01:42<01:02,  1.08s/it]2025-04-28 00:00:17,868 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:19,568 - Single inference for Radiologists, duration: 0:00:07.387453
+deepseek-r1-no_prompt-8:  62%|██████▏   | 93/150 [01:44<01:14,  1.31s/it]2025-04-28 00:00:19,728 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:22,403 - Task issues for Radiologic Technologists and Technicians: count 27/27, uniques 5. Retrying...
+2025-04-28 00:00:22,493 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:23,336 - Single inference for Railroad Conductors and Yardmasters, duration: 0:00:05.583528
+deepseek-r1-no_prompt-8:  63%|██████▎   | 94/150 [01:48<01:54,  2.04s/it]2025-04-28 00:00:23,474 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:24,845 - Single inference for Rail Yard Engineers, Dinkey Operators, and Hostlers, duration: 0:00:10.321035
+deepseek-r1-no_prompt-8:  63%|██████▎   | 95/150 [01:49<01:43,  1.88s/it]2025-04-28 00:00:25,012 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:25,144 - Single inference for Rail-Track Laying and Maintenance Equipment Operators, duration: 0:00:09.536736
+deepseek-r1-no_prompt-8:  64%|██████▍   | 96/150 [01:49<01:16,  1.41s/it]2025-04-28 00:00:25,268 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:25,735 - Single inference for Public Relations Specialists, duration: 0:00:25.245505
+deepseek-r1-no_prompt-8:  65%|██████▍   | 97/150 [01:50<01:01,  1.16s/it]2025-04-28 00:00:25,875 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:26,696 - Single inference for Range Managers, duration: 0:00:07.097963
+deepseek-r1-no_prompt-8:  65%|██████▌   | 98/150 [01:51<00:57,  1.10s/it]2025-04-28 00:00:26,820 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:27,881 - Single inference for Railroad Brake, Signal, and Switch Operators and Locomotive Firers, duration: 0:00:10.685360
+deepseek-r1-no_prompt-8:  66%|██████▌   | 99/150 [01:52<00:57,  1.13s/it]2025-04-28 00:00:28,024 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:29,409 - Single inference for Real Estate Brokers, duration: 0:00:06.045605
+deepseek-r1-no_prompt-8:  67%|██████▋   | 100/150 [01:54<01:02,  1.25s/it]2025-04-28 00:00:29,554 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:31,003 - Single inference for Receptionists and Information Clerks, duration: 0:00:05.832538
+deepseek-r1-no_prompt-8:  67%|██████▋   | 101/150 [01:55<01:06,  1.35s/it]2025-04-28 00:00:31,158 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:31,364 - Single inference for Radiologic Technologists and Technicians, duration: 0:00:21.269455
+deepseek-r1-no_prompt-8:  68%|██████▊   | 102/150 [01:56<00:50,  1.05s/it]2025-04-28 00:00:31,485 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:34,130 - Single inference for Recreational Therapists, duration: 0:00:06.229840
+deepseek-r1-no_prompt-8:  69%|██████▊   | 103/150 [01:58<01:13,  1.57s/it]2025-04-28 00:00:34,261 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:34,912 - Single inference for Recreation Workers, duration: 0:00:09.151654
+deepseek-r1-no_prompt-8:  69%|██████▉   | 104/150 [01:59<01:01,  1.34s/it]2025-04-28 00:00:34,973 - Single inference for Real Estate Sales Agents, duration: 0:00:10.099326
+2025-04-28 00:00:35,133 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:35,221 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:35,876 - Single inference for Recycling and Reclamation Workers, duration: 0:00:04.486561
+deepseek-r1-no_prompt-8:  71%|███████   | 106/150 [02:00<00:41,  1.06it/s]2025-04-28 00:00:35,998 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:36,497 - Single inference for Recreation and Fitness Studies Teachers, Postsecondary, duration: 0:00:09.782495
+deepseek-r1-no_prompt-8:  71%|███████▏  | 107/150 [02:01<00:37,  1.16it/s]2025-04-28 00:00:36,623 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:36,989 - Single inference for Recreational Vehicle Service Technicians, duration: 0:00:07.549203
+deepseek-r1-no_prompt-8:  72%|███████▏  | 108/150 [02:01<00:31,  1.31it/s]2025-04-28 00:00:37,142 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:38,371 - Single inference for Refractory Materials Repairers, Except Brickmasons, duration: 0:00:04.221128
+deepseek-r1-no_prompt-8:  73%|███████▎  | 109/150 [02:03<00:38,  1.07it/s]2025-04-28 00:00:38,506 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:38,606 - Single inference for Refuse and Recyclable Material Collectors, duration: 0:00:03.662697
+deepseek-r1-no_prompt-8:  73%|███████▎  | 110/150 [02:03<00:29,  1.36it/s]2025-04-28 00:00:38,749 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:39,509 - Single inference for Recycling Coordinators, duration: 0:00:08.483940
+deepseek-r1-no_prompt-8:  74%|███████▍  | 111/150 [02:04<00:30,  1.27it/s]2025-04-28 00:00:39,637 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:42,526 - Single inference for Registered Nurses, duration: 0:00:07.491057
+deepseek-r1-no_prompt-8:  75%|███████▍  | 112/150 [02:07<00:54,  1.43s/it]2025-04-28 00:00:42,629 - Single inference for Reinforcing Iron and Rebar Workers, duration: 0:00:04.239700
+2025-04-28 00:00:42,686 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:42,776 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:44,813 - Single inference for Regulatory Affairs Specialists, duration: 0:00:08.288528
+deepseek-r1-no_prompt-8:  76%|███████▌  | 114/150 [02:09<00:46,  1.30s/it]2025-04-28 00:00:44,965 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:45,003 - Single inference for Remote Sensing Scientists and Technologists, duration: 0:00:06.373024
+deepseek-r1-no_prompt-8:  77%|███████▋  | 115/150 [02:09<00:36,  1.03s/it]2025-04-28 00:00:45,191 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:45,333 - Single inference for Regulatory Affairs Managers, duration: 0:00:09.427943
+deepseek-r1-no_prompt-8:  77%|███████▋  | 116/150 [02:10<00:28,  1.18it/s]2025-04-28 00:00:45,479 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:47,220 - Single inference for Rehabilitation Counselors, duration: 0:00:10.212407
+deepseek-r1-no_prompt-8:  78%|███████▊  | 117/150 [02:11<00:37,  1.13s/it]2025-04-28 00:00:47,374 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:47,537 - Single inference for Remote Sensing Technicians, duration: 0:00:08.000981
+deepseek-r1-no_prompt-8:  79%|███████▊  | 118/150 [02:12<00:28,  1.11it/s]2025-04-28 00:00:47,676 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:48,154 - Single inference for Reservation and Transportation Ticket Agents and Travel Clerks, duration: 0:00:05.602411
+deepseek-r1-no_prompt-8:  79%|███████▉  | 119/150 [02:12<00:25,  1.22it/s]2025-04-28 00:00:48,282 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:48,966 - Task issues for Prosthodontists: count 1/12, uniques 1. Retrying...
+2025-04-28 00:00:49,059 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:51,062 - Single inference for Residential Advisors, duration: 0:00:08.411198
+deepseek-r1-no_prompt-8:  80%|████████  | 120/150 [02:15<00:42,  1.43s/it]2025-04-28 00:00:51,210 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:51,367 - Single inference for Respiratory Therapists, duration: 0:00:06.533129
+deepseek-r1-no_prompt-8:  81%|████████  | 121/150 [02:16<00:31,  1.10s/it]2025-04-28 00:00:51,534 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:51,650 - Single inference for Retail Salespersons, duration: 0:00:06.291645
+deepseek-r1-no_prompt-8:  81%|████████▏ | 122/150 [02:16<00:23,  1.17it/s]2025-04-28 00:00:51,776 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:53,428 - Single inference for Robotics Technicians, duration: 0:00:05.248554
+deepseek-r1-no_prompt-8:  82%|████████▏ | 123/150 [02:18<00:30,  1.13s/it]2025-04-28 00:00:53,561 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:53,895 - Single inference for Retail Loss Prevention Specialists, duration: 0:00:08.866548
+deepseek-r1-no_prompt-8:  83%|████████▎ | 124/150 [02:18<00:24,  1.07it/s]2025-04-28 00:00:54,048 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:54,834 - Single inference for Riggers, duration: 0:00:07.590646
+deepseek-r1-no_prompt-8:  83%|████████▎ | 125/150 [02:19<00:23,  1.07it/s]2025-04-28 00:00:54,992 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:55,536 - Single inference for Prosthodontists, duration: 0:01:00.922234
+deepseek-r1-no_prompt-8:  84%|████████▍ | 126/150 [02:20<00:20,  1.15it/s]2025-04-28 00:00:55,685 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:57,514 - Single inference for Rock Splitters, Quarry, duration: 0:00:06.422108
+deepseek-r1-no_prompt-8:  85%|████████▍ | 127/150 [02:22<00:27,  1.20s/it]2025-04-28 00:00:57,605 - Single inference for Roof Bolters, Mining, duration: 0:00:05.938890
+2025-04-28 00:00:57,672 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:57,782 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:57,986 - Single inference for Robotics Engineers, duration: 0:00:10.425542
+deepseek-r1-no_prompt-8:  86%|████████▌ | 129/150 [02:22<00:15,  1.33it/s]2025-04-28 00:00:58,147 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:58,423 - Single inference for Rolling Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:00:07.035255
+deepseek-r1-no_prompt-8:  87%|████████▋ | 130/150 [02:23<00:13,  1.48it/s]2025-04-28 00:00:58,615 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:58,857 - Single inference for Roustabouts, Oil and Gas, duration: 0:00:03.998427
+deepseek-r1-no_prompt-8:  87%|████████▋ | 131/150 [02:23<00:11,  1.63it/s]2025-04-28 00:00:59,036 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:00:59,754 - Task issues for Sales Managers: count 17/17, uniques 1. Retrying...
+2025-04-28 00:00:59,848 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:02,448 - Single inference for Rotary Drill Operators, Oil and Gas, duration: 0:00:08.526296
+deepseek-r1-no_prompt-8:  88%|████████▊ | 132/150 [02:27<00:25,  1.42s/it]2025-04-28 00:01:02,578 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:03,931 - Task issues for Sailors and Marine Oilers: count 28/28, uniques 23. Retrying...
+2025-04-28 00:01:04,026 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:06,083 - Single inference for Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products, duration: 0:00:08.073735
+deepseek-r1-no_prompt-8:  89%|████████▊ | 133/150 [02:30<00:34,  2.04s/it]2025-04-28 00:01:06,229 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:06,759 - Single inference for Sales Engineers, duration: 0:00:09.216947
+deepseek-r1-no_prompt-8:  89%|████████▉ | 134/150 [02:31<00:26,  1.65s/it]2025-04-28 00:01:06,878 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:07,380 - Single inference for Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products, duration: 0:00:08.931895
+deepseek-r1-no_prompt-8:  90%|█████████ | 135/150 [02:32<00:20,  1.35s/it]2025-04-28 00:01:07,542 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:08,304 - Single inference for Sawing Machine Setters, Operators, and Tenders, Wood, duration: 0:00:09.418796
+deepseek-r1-no_prompt-8:  91%|█████████ | 136/150 [02:33<00:17,  1.23s/it]2025-04-28 00:01:08,428 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:11,652 - Single inference for Secretaries and Administrative Assistants, Except Legal, Medical, and Executive, duration: 0:00:04.244917
+deepseek-r1-no_prompt-8:  91%|█████████▏| 137/150 [02:36<00:24,  1.85s/it]2025-04-28 00:01:11,786 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:13,679 - Single inference for School Psychologists, duration: 0:00:11.203428
+deepseek-r1-no_prompt-8:  92%|█████████▏| 138/150 [02:38<00:22,  1.91s/it]2025-04-28 00:01:13,818 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:16,243 - Single inference for Security Guards, duration: 0:00:04.563051
+deepseek-r1-no_prompt-8:  93%|█████████▎| 139/150 [02:41<00:23,  2.10s/it]2025-04-28 00:01:16,380 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:16,554 - Single inference for Secondary School Teachers, Except Special and Career/Technical Education, duration: 0:00:09.773445
+deepseek-r1-no_prompt-8:  93%|█████████▎| 140/150 [02:41<00:15,  1.57s/it]2025-04-28 00:01:16,694 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:16,966 - Single inference for Search Marketing Strategists, duration: 0:00:10.853973
+deepseek-r1-no_prompt-8:  94%|█████████▍| 141/150 [02:41<00:11,  1.22s/it]2025-04-28 00:01:17,132 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:17,674 - Task issues for Sailors and Marine Oilers: count 28/28, uniques 27. Retrying...
+2025-04-28 00:01:17,762 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:18,476 - Single inference for Securities, Commodities, and Financial Services Sales Agents, duration: 0:00:10.150700
+deepseek-r1-no_prompt-8:  95%|█████████▍| 142/150 [02:43<00:10,  1.31s/it]2025-04-28 00:01:18,629 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:19,490 - Single inference for Security and Fire Alarm Systems Installers, duration: 0:00:05.780583
+deepseek-r1-no_prompt-8:  95%|█████████▌| 143/150 [02:44<00:08,  1.22s/it]2025-04-28 00:01:20,997 - Single inference for Segmental Pavers, duration: 0:00:04.725134
+deepseek-r1-no_prompt-8:  96%|█████████▌| 144/150 [02:45<00:07,  1.31s/it]2025-04-28 00:01:22,696 - Single inference for Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders, duration: 0:00:04.194842
+deepseek-r1-no_prompt-8:  97%|█████████▋| 145/150 [02:47<00:07,  1.42s/it]2025-04-28 00:01:25,142 - Single inference for Semiconductor Processing Technicians, duration: 0:00:08.150271
+deepseek-r1-no_prompt-8:  97%|█████████▋| 146/150 [02:49<00:06,  1.73s/it]2025-04-28 00:01:29,741 - Single inference for Sailors and Marine Oilers, duration: 0:00:34.181784
+deepseek-r1-no_prompt-8:  98%|█████████▊| 147/150 [02:54<00:07,  2.59s/it]2025-04-28 00:01:38,212 - Task issues for Roofers: count 9/27, uniques 7. Retrying...
+2025-04-28 00:01:38,295 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:41,195 - Single inference for Self-Enrichment Teachers, duration: 0:00:24.615531
+deepseek-r1-no_prompt-8:  99%|█████████▊| 148/150 [03:05<00:10,  5.25s/it]2025-04-28 00:01:41,349 - Task issues for Sales Managers: count 16/17, uniques 11. Retrying...
+2025-04-28 00:01:41,416 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:42,139 - Task issues for Sales Managers: count 17/17, uniques 2. Retrying...
+2025-04-28 00:01:42,206 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:45,453 - Task issues for Roofers: count 27/27, uniques 26. Retrying...
+2025-04-28 00:01:45,528 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:46,276 - Single inference for Sales Managers, duration: 0:00:48.649046
+deepseek-r1-no_prompt-8:  99%|█████████▉| 149/150 [03:11<00:05,  5.20s/it]2025-04-28 00:01:47,779 - Single inference for Roofers, duration: 0:00:54.324140
+deepseek-r1-no_prompt-8: 100%|██████████| 150/150 [03:12<00:00,  4.09s/it]deepseek-r1-no_prompt-8: 100%|██████████| 150/150 [03:12<00:00,  1.28s/it]
+2025-04-28 00:01:47,837 - Multiprocessing for deepseek-r1-no_prompt-8, duration: 0:03:12.633989
+deepseek-r1-no_prompt-9:   0%|          | 0/150 [00:00<?, ?it/s]2025-04-28 00:01:48,113 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:48,223 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:48,345 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:48,356 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:48,366 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:48,377 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:48,389 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:48,553 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:50,954 - Single inference for Orthodontists, duration: 0:00:02.986636
+deepseek-r1-no_prompt-9:   1%|          | 1/150 [00:03<07:35,  3.06s/it]2025-04-28 00:01:51,073 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:52,019 - Single inference for Outdoor Power Equipment and Other Small Engine Mechanics, duration: 0:00:04.007090
+deepseek-r1-no_prompt-9:   1%|▏         | 2/150 [00:04<04:39,  1.89s/it]2025-04-28 00:01:52,158 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:52,192 - Single inference for Painting, Coating, and Decorating Workers, duration: 0:00:04.123463
+deepseek-r1-no_prompt-9:   2%|▏         | 3/150 [00:04<02:43,  1.11s/it]2025-04-28 00:01:52,341 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:52,674 - Single inference for Packers and Packagers, Hand, duration: 0:00:04.679417
+deepseek-r1-no_prompt-9:   3%|▎         | 4/150 [00:04<02:04,  1.17it/s]2025-04-28 00:01:52,790 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:53,506 - Single inference for Orthoptists, duration: 0:00:05.556851
+deepseek-r1-no_prompt-9:   3%|▎         | 5/150 [00:05<02:03,  1.18it/s]2025-04-28 00:01:53,647 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:54,274 - Single inference for Orthotists and Prosthetists, duration: 0:00:06.333870
+deepseek-r1-no_prompt-9:   4%|▍         | 6/150 [00:06<01:58,  1.22it/s]2025-04-28 00:01:54,411 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:55,252 - Single inference for Paper Goods Machine Setters, Operators, and Tenders, duration: 0:00:04.278818
+deepseek-r1-no_prompt-9:   5%|▍         | 7/150 [00:07<02:04,  1.15it/s]2025-04-28 00:01:55,367 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:56,619 - Single inference for Paralegals and Legal Assistants, duration: 0:00:04.401435
+deepseek-r1-no_prompt-9:   5%|▌         | 8/150 [00:08<02:26,  1.03s/it]2025-04-28 00:01:56,766 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:56,795 - Single inference for Park Naturalists, duration: 0:00:04.097101
+deepseek-r1-no_prompt-9:   6%|▌         | 9/150 [00:08<01:47,  1.31it/s]2025-04-28 00:01:56,941 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:58,162 - Task issues for Passenger Attendants: count 12/12, uniques 1. Retrying...
+2025-04-28 00:01:58,252 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:58,928 - Single inference for Parking Attendants, duration: 0:00:05.402123
+deepseek-r1-no_prompt-9:   7%|▋         | 10/150 [00:11<02:45,  1.19s/it]2025-04-28 00:01:59,049 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:59,336 - Single inference for Paperhangers, duration: 0:00:07.288732
+deepseek-r1-no_prompt-9:   7%|▋         | 11/150 [00:11<02:11,  1.05it/s]2025-04-28 00:01:59,479 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:01:59,718 - Single inference for Patient Representatives, duration: 0:00:02.899431
+deepseek-r1-no_prompt-9:   8%|▊         | 12/150 [00:11<01:46,  1.29it/s]2025-04-28 00:01:59,843 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:00,834 - Single inference for Parking Enforcement Workers, duration: 0:00:06.537036
+deepseek-r1-no_prompt-9:   9%|▊         | 13/150 [00:12<02:00,  1.14it/s]2025-04-28 00:02:00,969 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:01,108 - Single inference for Parts Salespersons, duration: 0:00:05.830616
+deepseek-r1-no_prompt-9:   9%|▉         | 14/150 [00:13<01:34,  1.43it/s]2025-04-28 00:02:01,238 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:02,262 - Single inference for Patternmakers, Metal and Plastic, duration: 0:00:03.316136
+deepseek-r1-no_prompt-9:  10%|█         | 15/150 [00:14<01:52,  1.20it/s]2025-04-28 00:02:02,430 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:02,964 - Single inference for Passenger Attendants, duration: 0:00:06.314672
+deepseek-r1-no_prompt-9:  11%|█         | 16/150 [00:15<01:46,  1.26it/s]2025-04-28 00:02:03,104 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:03,907 - Task issues for Painters, Construction and Maintenance: count 19/19, uniques 12. Retrying...
+2025-04-28 00:02:03,996 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:05,404 - Single inference for Patternmakers, Wood, duration: 0:00:06.043091
+deepseek-r1-no_prompt-9:  11%|█▏        | 17/150 [00:17<02:51,  1.29s/it]2025-04-28 00:02:05,537 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:07,014 - Single inference for Personal Care Aides, duration: 0:00:04.721622
+deepseek-r1-no_prompt-9:  12%|█▏        | 18/150 [00:19<03:02,  1.38s/it]2025-04-28 00:02:07,146 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:08,347 - Single inference for Pediatricians, General, duration: 0:00:07.212089
+deepseek-r1-no_prompt-9:  13%|█▎        | 19/150 [00:20<02:59,  1.37s/it]2025-04-28 00:02:08,480 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:09,302 - Single inference for Paving, Surfacing, and Tamping Equipment Operators, duration: 0:00:09.560496
+deepseek-r1-no_prompt-9:  13%|█▎        | 20/150 [00:21<02:42,  1.25s/it]2025-04-28 00:02:09,428 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:10,183 - Single inference for Pest Control Workers, duration: 0:00:04.755054
+deepseek-r1-no_prompt-9:  14%|█▍        | 21/150 [00:22<02:26,  1.13s/it]2025-04-28 00:02:10,291 - Single inference for Pesticide Handlers, Sprayers, and Applicators, Vegetation, duration: 0:00:03.259424
+deepseek-r1-no_prompt-9:  15%|█▍        | 22/150 [00:22<01:46,  1.21it/s]2025-04-28 00:02:10,338 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:10,447 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:11,215 - Single inference for Painters, Construction and Maintenance, duration: 0:00:23.224355
+deepseek-r1-no_prompt-9:  15%|█▌        | 23/150 [00:23<01:48,  1.17it/s]2025-04-28 00:02:11,348 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:14,070 - Single inference for Petroleum Engineers, duration: 0:00:05.693443
+deepseek-r1-no_prompt-9:  16%|█▌        | 24/150 [00:26<03:04,  1.46s/it]2025-04-28 00:02:14,218 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:14,699 - Single inference for Pharmacists, duration: 0:00:04.494989
+deepseek-r1-no_prompt-9:  17%|█▋        | 25/150 [00:26<02:30,  1.21s/it]2025-04-28 00:02:14,805 - Single inference for Pharmacy Aides, duration: 0:00:04.488215
+deepseek-r1-no_prompt-9:  17%|█▋        | 26/150 [00:26<01:48,  1.14it/s]2025-04-28 00:02:14,880 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:14,937 - Single inference for Personal Financial Advisors, duration: 0:00:11.948062
+deepseek-r1-no_prompt-9:  18%|█▊        | 27/150 [00:27<01:20,  1.53it/s]2025-04-28 00:02:15,007 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:15,125 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:17,776 - Single inference for Petroleum Pump System Operators, Refinery Operators, and Gaugers, duration: 0:00:08.453445
+deepseek-r1-no_prompt-9:  19%|█▊        | 28/150 [00:29<02:39,  1.31s/it]2025-04-28 00:02:17,923 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:19,206 - Single inference for Phlebotomists, duration: 0:00:04.491415
+deepseek-r1-no_prompt-9:  19%|█▉        | 29/150 [00:31<02:42,  1.34s/it]2025-04-28 00:02:19,326 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:19,631 - Task issues for Pharmacy Technicians: count 21/21, uniques 20. Retrying...
+2025-04-28 00:02:19,722 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:22,503 - Task issues for Photonics Technicians: count 24/24, uniques 1. Retrying...
+2025-04-28 00:02:22,593 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:23,772 - Single inference for Philosophy and Religion Teachers, Postsecondary, duration: 0:00:09.668778
+deepseek-r1-no_prompt-9:  20%|██        | 30/150 [00:35<04:37,  2.31s/it]2025-04-28 00:02:23,912 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:24,613 - Single inference for Photographic Process Workers and Processing Machine Operators, duration: 0:00:09.655232
+deepseek-r1-no_prompt-9:  21%|██        | 31/150 [00:36<03:42,  1.87s/it]2025-04-28 00:02:24,755 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:25,549 - Single inference for Photonics Engineers, duration: 0:00:07.749398
+deepseek-r1-no_prompt-9:  21%|██▏       | 32/150 [00:37<03:07,  1.59s/it]2025-04-28 00:02:25,697 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:25,829 - Single inference for Pharmacy Technicians, duration: 0:00:14.587654
+deepseek-r1-no_prompt-9:  22%|██▏       | 33/150 [00:37<02:20,  1.20s/it]2025-04-28 00:02:25,980 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:26,156 - Single inference for Photographers, duration: 0:00:11.328391
+deepseek-r1-no_prompt-9:  23%|██▎       | 34/150 [00:38<01:48,  1.07it/s]2025-04-28 00:02:26,305 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:29,783 - Single inference for Physical Medicine and Rehabilitation Physicians, duration: 0:00:05.981793
+deepseek-r1-no_prompt-9:  23%|██▎       | 35/150 [00:41<03:20,  1.74s/it]2025-04-28 00:02:29,907 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:31,229 - Single inference for Photonics Technicians, duration: 0:00:11.996023
+deepseek-r1-no_prompt-9:  24%|██▍       | 36/150 [00:43<03:08,  1.65s/it]2025-04-28 00:02:31,352 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:31,766 - Single inference for Physical Therapist Aides, duration: 0:00:07.124795
+deepseek-r1-no_prompt-9:  25%|██▍       | 37/150 [00:43<02:29,  1.32s/it]2025-04-28 00:02:31,902 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:34,568 - Single inference for Physical Therapist Assistants, duration: 0:00:08.994041
+deepseek-r1-no_prompt-9:  25%|██▌       | 38/150 [00:46<03:17,  1.76s/it]2025-04-28 00:02:34,716 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:35,339 - Single inference for Physicians, Pathologists, duration: 0:00:05.532311
+deepseek-r1-no_prompt-9:  26%|██▌       | 39/150 [00:47<02:42,  1.47s/it]2025-04-28 00:02:35,444 - Single inference for Physicists, duration: 0:00:04.188012
+deepseek-r1-no_prompt-9:  27%|██▋       | 40/150 [00:47<01:56,  1.06s/it]2025-04-28 00:02:35,500 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:35,602 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:37,727 - Single inference for Pile Driver Operators, duration: 0:00:03.130503
+deepseek-r1-no_prompt-9:  27%|██▋       | 41/150 [00:49<02:35,  1.43s/it]2025-04-28 00:02:37,896 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:38,029 - Single inference for Physical Therapists, duration: 0:00:12.174829
+deepseek-r1-no_prompt-9:  28%|██▊       | 42/150 [00:50<01:57,  1.09s/it]2025-04-28 00:02:38,177 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:38,579 - Single inference for Pipelayers, duration: 0:00:03.210666
+deepseek-r1-no_prompt-9:  29%|██▊       | 43/150 [00:50<01:39,  1.08it/s]2025-04-28 00:02:38,703 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:39,704 - Single inference for Physics Teachers, Postsecondary, duration: 0:00:07.917060
+deepseek-r1-no_prompt-9:  29%|██▉       | 44/150 [00:51<01:44,  1.01it/s]2025-04-28 00:02:39,843 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:40,049 - Single inference for Plasterers and Stucco Masons, duration: 0:00:04.582820
+deepseek-r1-no_prompt-9:  30%|███       | 45/150 [00:52<01:23,  1.26it/s]2025-04-28 00:02:40,175 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:42,081 - Single inference for Podiatrists, duration: 0:00:03.475790
+deepseek-r1-no_prompt-9:  31%|███       | 46/150 [00:54<02:00,  1.16s/it]2025-04-28 00:02:42,220 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:42,901 - Task issues for Packaging and Filling Machine Operators and Tenders: count 20/20, uniques 18. Retrying...
+2025-04-28 00:02:42,996 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:45,146 - Single inference for Police Identification and Records Officers, duration: 0:00:05.069514
+deepseek-r1-no_prompt-9:  31%|███▏      | 47/150 [00:57<02:58,  1.74s/it]2025-04-28 00:02:45,314 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:45,738 - Single inference for Plating Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:00:07.982557
+deepseek-r1-no_prompt-9:  32%|███▏      | 48/150 [00:57<02:21,  1.39s/it]2025-04-28 00:02:45,892 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:46,155 - Single inference for Poets, Lyricists and Creative Writers, duration: 0:00:06.428249
+deepseek-r1-no_prompt-9:  33%|███▎      | 49/150 [00:58<01:51,  1.10s/it]2025-04-28 00:02:46,311 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:47,579 - Single inference for Packaging and Filling Machine Operators and Tenders, duration: 0:00:59.572683
+deepseek-r1-no_prompt-9:  33%|███▎      | 50/150 [00:59<01:59,  1.20s/it]2025-04-28 00:02:47,733 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:47,970 - Single inference for Plumbers, Pipefitters, and Steamfitters, duration: 0:00:09.915922
+deepseek-r1-no_prompt-9:  34%|███▍      | 51/150 [01:00<01:34,  1.05it/s]2025-04-28 00:02:48,118 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:51,993 - Single inference for Postal Service Mail Sorters, Processors, and Processing Machine Operators, duration: 0:00:04.002376
+deepseek-r1-no_prompt-9:  35%|███▍      | 52/150 [01:04<03:04,  1.88s/it]2025-04-28 00:02:52,163 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:52,639 - Single inference for Political Scientists, duration: 0:00:06.874479
+deepseek-r1-no_prompt-9:  35%|███▌      | 53/150 [01:04<02:26,  1.51s/it]2025-04-28 00:02:52,798 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:53,742 - Single inference for Political Science Teachers, Postsecondary, duration: 0:00:08.565865
+deepseek-r1-no_prompt-9:  36%|███▌      | 54/150 [01:05<02:13,  1.39s/it]2025-04-28 00:02:53,892 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:54,340 - Single inference for Postal Service Mail Carriers, duration: 0:00:06.737276
+deepseek-r1-no_prompt-9:  37%|███▋      | 55/150 [01:06<01:49,  1.15s/it]2025-04-28 00:02:54,491 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:55,014 - Single inference for Postmasters and Mail Superintendents, duration: 0:00:02.991423
+deepseek-r1-no_prompt-9:  37%|███▋      | 56/150 [01:07<01:35,  1.01s/it]2025-04-28 00:02:55,235 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:55,875 - Task issues for Payroll and Timekeeping Clerks: count 5/21, uniques 4. Retrying...
+2025-04-28 00:02:55,966 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:56,893 - Single inference for Postal Service Clerks, duration: 0:00:10.720264
+deepseek-r1-no_prompt-9:  38%|███▊      | 57/150 [01:09<01:57,  1.27s/it]2025-04-28 00:02:57,043 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:57,743 - Single inference for Police and Sheriff's Patrol Officers, duration: 0:00:15.637550
+deepseek-r1-no_prompt-9:  39%|███▊      | 58/150 [01:09<01:45,  1.14s/it]2025-04-28 00:02:57,875 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:02:59,299 - Single inference for Power Distributors and Dispatchers, duration: 0:00:04.931896
+deepseek-r1-no_prompt-9:  39%|███▉      | 59/150 [01:11<01:55,  1.27s/it]2025-04-28 00:02:59,450 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:00,213 - Single inference for Payroll and Timekeeping Clerks, duration: 0:00:59.350484
+deepseek-r1-no_prompt-9:  40%|████      | 60/150 [01:12<01:44,  1.16s/it]2025-04-28 00:03:00,331 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:02,765 - Single inference for Pourers and Casters, Metal, duration: 0:00:08.993360
+deepseek-r1-no_prompt-9:  41%|████      | 61/150 [01:14<02:20,  1.58s/it]2025-04-28 00:03:02,920 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:03,887 - Single inference for Potters, Manufacturing, duration: 0:00:11.219031
+deepseek-r1-no_prompt-9:  41%|████▏     | 62/150 [01:16<02:06,  1.44s/it]2025-04-28 00:03:04,018 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:04,970 - Single inference for Precision Agriculture Technicians, duration: 0:00:08.046015
+deepseek-r1-no_prompt-9:  42%|████▏     | 63/150 [01:17<01:56,  1.34s/it]2025-04-28 00:03:05,132 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:05,642 - Single inference for Power Plant Operators, duration: 0:00:10.574111
+deepseek-r1-no_prompt-9:  43%|████▎     | 64/150 [01:17<01:37,  1.13s/it]2025-04-28 00:03:05,781 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:09,143 - Single inference for Private Detectives and Investigators, duration: 0:00:03.473012
+deepseek-r1-no_prompt-9:  43%|████▎     | 65/150 [01:21<02:36,  1.85s/it]2025-04-28 00:03:09,308 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:09,699 - Single inference for Preschool Teachers, Except Special Education, duration: 0:00:10.370259
+deepseek-r1-no_prompt-9:  44%|████▍     | 66/150 [01:21<02:02,  1.45s/it]2025-04-28 00:03:09,799 - Single inference for Pressers, Textile, Garment, and Related Materials, duration: 0:00:09.567851
+deepseek-r1-no_prompt-9:  45%|████▍     | 67/150 [01:21<01:27,  1.05s/it]2025-04-28 00:03:09,866 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:09,960 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:11,989 - Single inference for Printing Press Operators, duration: 0:00:06.963460
+deepseek-r1-no_prompt-9:  45%|████▌     | 68/150 [01:24<01:53,  1.39s/it]2025-04-28 00:03:12,153 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:12,300 - Single inference for Preventive Medicine Physicians, duration: 0:00:09.505395
+deepseek-r1-no_prompt-9:  46%|████▌     | 69/150 [01:24<01:26,  1.07s/it]2025-04-28 00:03:12,450 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:14,237 - Single inference for Print Binding and Finishing Workers, duration: 0:00:10.321824
+deepseek-r1-no_prompt-9:  47%|████▋     | 70/150 [01:26<01:46,  1.33s/it]2025-04-28 00:03:14,388 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:16,386 - Single inference for Procurement Clerks, duration: 0:00:06.665272
+deepseek-r1-no_prompt-9:  47%|████▋     | 71/150 [01:28<02:04,  1.58s/it]2025-04-28 00:03:16,523 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:17,607 - Single inference for Probation Officers and Correctional Treatment Specialists, duration: 0:00:08.436279
+deepseek-r1-no_prompt-9:  48%|████▊     | 72/150 [01:29<01:54,  1.47s/it]2025-04-28 00:03:17,747 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:18,129 - Single inference for Proofreaders and Copy Markers, duration: 0:00:05.803251
+deepseek-r1-no_prompt-9:  49%|████▊     | 73/150 [01:30<01:31,  1.18s/it]2025-04-28 00:03:18,268 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:20,304 - Single inference for Production, Planning, and Expediting Clerks, duration: 0:00:08.288746
+deepseek-r1-no_prompt-9:  49%|████▉     | 74/150 [01:32<01:52,  1.48s/it]2025-04-28 00:03:20,431 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:22,252 - Single inference for Psychiatric Technicians, duration: 0:00:04.104218
+deepseek-r1-no_prompt-9:  50%|█████     | 75/150 [01:34<02:01,  1.62s/it]2025-04-28 00:03:22,410 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:22,517 - Task issues for Physician Assistants: count 2/12, uniques 2. Retrying...
+2025-04-28 00:03:22,652 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:22,752 - Single inference for Psychiatric Aides, duration: 0:00:05.118714
+deepseek-r1-no_prompt-9:  51%|█████     | 76/150 [01:34<01:35,  1.28s/it]2025-04-28 00:03:22,910 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:23,058 - Single inference for Prosthodontists, duration: 0:00:06.645279
+deepseek-r1-no_prompt-9:  51%|█████▏    | 77/150 [01:35<01:12,  1.01it/s]2025-04-28 00:03:23,232 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:25,059 - Single inference for Producers and Directors, duration: 0:00:15.231887
+deepseek-r1-no_prompt-9:  52%|█████▏    | 78/150 [01:37<01:33,  1.30s/it]2025-04-28 00:03:25,245 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:26,143 - Single inference for Psychiatrists, duration: 0:00:05.814251
+deepseek-r1-no_prompt-9:  53%|█████▎    | 79/150 [01:38<01:27,  1.23s/it]2025-04-28 00:03:26,287 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:27,204 - Single inference for Physician Assistants, duration: 0:01:01.024659
+deepseek-r1-no_prompt-9:  53%|█████▎    | 80/150 [01:39<01:22,  1.18s/it]2025-04-28 00:03:27,368 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:28,027 - Single inference for Public Safety Telecommunicators, duration: 0:00:04.941146
+deepseek-r1-no_prompt-9:  54%|█████▍    | 81/150 [01:40<01:14,  1.07s/it]2025-04-28 00:03:28,149 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:29,327 - Single inference for Prepress Technicians and Workers, duration: 0:00:31.558731
+deepseek-r1-no_prompt-9:  55%|█████▍    | 82/150 [01:41<01:17,  1.14s/it]2025-04-28 00:03:29,468 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:31,291 - Single inference for Property, Real Estate, and Community Association Managers, duration: 0:00:17.026332
+deepseek-r1-no_prompt-9:  55%|█████▌    | 83/150 [01:43<01:32,  1.39s/it]2025-04-28 00:03:31,427 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:31,825 - Single inference for Pump Operators, Except Wellhead Pumpers, duration: 0:00:06.712360
+deepseek-r1-no_prompt-9:  56%|█████▌    | 84/150 [01:43<01:14,  1.13s/it]2025-04-28 00:03:31,955 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:32,162 - Task issues for Purchasing Agents, Except Wholesale, Retail, and Farm Products: count 19/19, uniques 9. Retrying...
+2025-04-28 00:03:32,255 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:34,965 - Single inference for Purchasing Managers, duration: 0:00:07.732830
+deepseek-r1-no_prompt-9:  57%|█████▋    | 85/150 [01:47<01:52,  1.73s/it]2025-04-28 00:03:35,174 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:36,325 - Single inference for Quality Control Analysts, duration: 0:00:08.276877
+deepseek-r1-no_prompt-9:  57%|█████▋    | 86/150 [01:48<01:43,  1.62s/it]2025-04-28 00:03:36,466 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:37,324 - Single inference for Purchasing Agents, Except Wholesale, Retail, and Farm Products, duration: 0:00:11.152268
+deepseek-r1-no_prompt-9:  58%|█████▊    | 87/150 [01:49<01:30,  1.43s/it]2025-04-28 00:03:37,450 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:38,638 - Single inference for Psychology Teachers, Postsecondary, duration: 0:00:16.366822
+deepseek-r1-no_prompt-9:  59%|█████▊    | 88/150 [01:50<01:26,  1.40s/it]2025-04-28 00:03:38,761 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:39,249 - Single inference for Radio Frequency Identification Device Specialists, duration: 0:00:07.397907
+deepseek-r1-no_prompt-9:  59%|█████▉    | 89/150 [01:51<01:10,  1.16s/it]2025-04-28 00:03:39,377 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:40,245 - Single inference for Quality Control Systems Managers, duration: 0:00:10.890613
+deepseek-r1-no_prompt-9:  60%|██████    | 90/150 [01:52<01:06,  1.11s/it]2025-04-28 00:03:40,372 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:41,099 - Single inference for Radio, Cellular, and Tower Equipment Installers and Repairers, duration: 0:00:06.052039
+deepseek-r1-no_prompt-9:  61%|██████    | 91/150 [01:53<01:01,  1.04s/it]2025-04-28 00:03:41,231 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:41,489 - Single inference for Radiation Therapists, duration: 0:00:10.178926
+deepseek-r1-no_prompt-9:  61%|██████▏   | 92/150 [01:53<00:48,  1.19it/s]2025-04-28 00:03:41,636 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:45,220 - Single inference for Rail Car Repairers, duration: 0:00:06.556982
+deepseek-r1-no_prompt-9:  62%|██████▏   | 93/150 [01:57<01:37,  1.71s/it]2025-04-28 00:03:45,359 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:47,407 - Single inference for Radiologists, duration: 0:00:10.057686
+deepseek-r1-no_prompt-9:  63%|██████▎   | 94/150 [01:59<01:43,  1.85s/it]2025-04-28 00:03:47,558 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:47,789 - Single inference for Radiologic Technologists and Technicians, duration: 0:00:11.437580
+deepseek-r1-no_prompt-9:  63%|██████▎   | 95/150 [01:59<01:17,  1.41s/it]2025-04-28 00:03:47,925 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:48,217 - Single inference for Railroad Conductors and Yardmasters, duration: 0:00:06.703483
+deepseek-r1-no_prompt-9:  64%|██████▍   | 96/150 [02:00<01:00,  1.12s/it]2025-04-28 00:03:48,374 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:48,496 - Single inference for Rail Yard Engineers, Dinkey Operators, and Hostlers, duration: 0:00:09.229173
+deepseek-r1-no_prompt-9:  65%|██████▍   | 97/150 [02:00<00:45,  1.16it/s]2025-04-28 00:03:48,622 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:49,333 - Single inference for Range Managers, duration: 0:00:04.080060
+deepseek-r1-no_prompt-9:  65%|██████▌   | 98/150 [02:01<00:44,  1.17it/s]2025-04-28 00:03:49,351 - Single inference for Railroad Brake, Signal, and Switch Operators and Locomotive Firers, duration: 0:00:08.225566
+2025-04-28 00:03:49,533 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:49,545 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:51,043 - Single inference for Rail-Track Laying and Maintenance Equipment Operators, duration: 0:00:10.771733
+deepseek-r1-no_prompt-9:  67%|██████▋   | 100/150 [02:03<00:42,  1.17it/s]2025-04-28 00:03:51,168 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:51,482 - Single inference for Real Estate Brokers, duration: 0:00:04.051491
+deepseek-r1-no_prompt-9:  67%|██████▋   | 101/150 [02:03<00:36,  1.33it/s]2025-04-28 00:03:51,620 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:52,222 - Single inference for Receptionists and Information Clerks, duration: 0:00:03.980167
+deepseek-r1-no_prompt-9:  68%|██████▊   | 102/150 [02:04<00:35,  1.34it/s]2025-04-28 00:03:52,361 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:53,607 - Single inference for Recreational Therapists, duration: 0:00:04.219713
+deepseek-r1-no_prompt-9:  69%|██████▊   | 103/150 [02:05<00:43,  1.09it/s]2025-04-28 00:03:53,748 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:54,068 - Single inference for Recreation Workers, duration: 0:00:05.549524
+deepseek-r1-no_prompt-9:  69%|██████▉   | 104/150 [02:06<00:36,  1.26it/s]2025-04-28 00:03:54,204 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:55,523 - Single inference for Recreation and Fitness Studies Teachers, Postsecondary, duration: 0:00:06.144640
+deepseek-r1-no_prompt-9:  70%|███████   | 105/150 [02:07<00:44,  1.02it/s]2025-04-28 00:03:55,684 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:56,125 - Single inference for Recycling Coordinators, duration: 0:00:04.617797
+deepseek-r1-no_prompt-9:  71%|███████   | 106/150 [02:08<00:38,  1.15it/s]2025-04-28 00:03:56,246 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:56,547 - Task issues for Refuse and Recyclable Material Collectors: count 14/14, uniques 1. Retrying...
+2025-04-28 00:03:56,638 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:56,960 - Single inference for Recycling and Reclamation Workers, duration: 0:00:04.722390
+deepseek-r1-no_prompt-9:  71%|███████▏  | 107/150 [02:09<00:37,  1.16it/s]2025-04-28 00:03:57,101 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:58,389 - Single inference for Refractory Materials Repairers, Except Brickmasons, duration: 0:00:04.757384
+deepseek-r1-no_prompt-9:  72%|███████▏  | 108/150 [02:10<00:43,  1.03s/it]2025-04-28 00:03:58,520 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:03:59,471 - Single inference for Recreational Vehicle Service Technicians, duration: 0:00:08.399622
+deepseek-r1-no_prompt-9:  73%|███████▎  | 109/150 [02:11<00:42,  1.04s/it]2025-04-28 00:03:59,613 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:00,885 - Single inference for Refuse and Recyclable Material Collectors, duration: 0:00:06.792615
+deepseek-r1-no_prompt-9:  73%|███████▎  | 110/150 [02:12<00:46,  1.16s/it]2025-04-28 00:04:01,032 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:01,789 - Single inference for Real Estate Sales Agents, duration: 0:00:13.981137
+deepseek-r1-no_prompt-9:  74%|███████▍  | 111/150 [02:13<00:42,  1.08s/it]2025-04-28 00:04:01,948 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:02,173 - Single inference for Reinforcing Iron and Rebar Workers, duration: 0:00:02.682405
+deepseek-r1-no_prompt-9:  75%|███████▍  | 112/150 [02:14<00:33,  1.15it/s]2025-04-28 00:04:02,290 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:04,103 - Single inference for Registered Nurses, duration: 0:00:08.551316
+deepseek-r1-no_prompt-9:  75%|███████▌  | 113/150 [02:16<00:43,  1.19s/it]2025-04-28 00:04:04,233 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:05,481 - Single inference for Rehabilitation Counselors, duration: 0:00:07.073010
+deepseek-r1-no_prompt-9:  76%|███████▌  | 114/150 [02:17<00:44,  1.25s/it]2025-04-28 00:04:05,645 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:07,933 - Single inference for Reservation and Transportation Ticket Agents and Travel Clerks, duration: 0:00:05.742899
+deepseek-r1-no_prompt-9:  77%|███████▋  | 115/150 [02:20<00:56,  1.60s/it]2025-04-28 00:04:08,056 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:09,141 - Single inference for Remote Sensing Scientists and Technologists, duration: 0:00:08.225875
+deepseek-r1-no_prompt-9:  77%|███████▋  | 116/150 [02:21<00:50,  1.49s/it]2025-04-28 00:04:09,293 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:09,307 - Single inference for Regulatory Affairs Managers, duration: 0:00:13.166396
+deepseek-r1-no_prompt-9:  78%|███████▊  | 117/150 [02:21<00:36,  1.09s/it]2025-04-28 00:04:09,479 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:09,552 - Single inference for Remote Sensing Technicians, duration: 0:00:07.742988
+deepseek-r1-no_prompt-9:  79%|███████▊  | 118/150 [02:21<00:26,  1.20it/s]2025-04-28 00:04:09,693 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:09,982 - Single inference for Regulatory Affairs Specialists, duration: 0:00:12.997985
+deepseek-r1-no_prompt-9:  79%|███████▉  | 119/150 [02:22<00:22,  1.40it/s]2025-04-28 00:04:10,119 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:11,195 - Single inference for Respiratory Therapists, duration: 0:00:05.684714
+deepseek-r1-no_prompt-9:  80%|████████  | 120/150 [02:23<00:25,  1.16it/s]2025-04-28 00:04:11,338 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:11,457 - Task issues for Retail Salespersons: count 24/24, uniques 1. Retrying...
+2025-04-28 00:04:11,567 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:12,488 - Single inference for Residential Advisors, duration: 0:00:08.361177
+deepseek-r1-no_prompt-9:  81%|████████  | 121/150 [02:24<00:28,  1.01it/s]2025-04-28 00:04:12,633 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:13,593 - Single inference for Riggers, duration: 0:00:04.260435
+deepseek-r1-no_prompt-9:  81%|████████▏ | 122/150 [02:25<00:28,  1.03s/it]2025-04-28 00:04:13,743 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:14,065 - Single inference for Retail Loss Prevention Specialists, duration: 0:00:06.113643
+deepseek-r1-no_prompt-9:  82%|████████▏ | 123/150 [02:26<00:23,  1.16it/s]2025-04-28 00:04:14,200 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:15,892 - Single inference for Rock Splitters, Quarry, duration: 0:00:04.671179
+deepseek-r1-no_prompt-9:  83%|████████▎ | 124/150 [02:27<00:29,  1.15s/it]2025-04-28 00:04:16,040 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:17,513 - Single inference for Robotics Technicians, duration: 0:00:07.505960
+deepseek-r1-no_prompt-9:  83%|████████▎ | 125/150 [02:29<00:32,  1.29s/it]2025-04-28 00:04:17,660 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:18,118 - Single inference for Roof Bolters, Mining, duration: 0:00:04.496196
+deepseek-r1-no_prompt-9:  84%|████████▍ | 126/150 [02:30<00:26,  1.08s/it]2025-04-28 00:04:18,142 - Task issues for Public Relations Specialists: count 2/18, uniques 2. Retrying...
+2025-04-28 00:04:18,293 - Single inference for Robotics Engineers, duration: 0:00:08.715818
+deepseek-r1-no_prompt-9:  85%|████████▍ | 127/150 [02:30<00:18,  1.23it/s]2025-04-28 00:04:18,339 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:18,354 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:18,434 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:19,439 - Single inference for Retail Salespersons, duration: 0:00:10.267179
+deepseek-r1-no_prompt-9:  85%|████████▌ | 128/150 [02:31<00:20,  1.09it/s]2025-04-28 00:04:19,579 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:20,136 - Single inference for Rolling Machine Setters, Operators, and Tenders, Metal and Plastic, duration: 0:00:07.622934
+deepseek-r1-no_prompt-9:  86%|████████▌ | 129/150 [02:32<00:17,  1.18it/s]2025-04-28 00:04:20,265 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:22,439 - Single inference for Roofers, duration: 0:00:08.351113
+deepseek-r1-no_prompt-9:  87%|████████▋ | 130/150 [02:34<00:25,  1.28s/it]2025-04-28 00:04:22,572 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:23,112 - Single inference for Rotary Drill Operators, Oil and Gas, duration: 0:00:07.196195
+deepseek-r1-no_prompt-9:  87%|████████▋ | 131/150 [02:35<00:20,  1.10s/it]2025-04-28 00:04:23,245 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:24,002 - Single inference for Roustabouts, Oil and Gas, duration: 0:00:06.459598
+deepseek-r1-no_prompt-9:  88%|████████▊ | 132/150 [02:36<00:18,  1.04s/it]2025-04-28 00:04:24,142 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
+2025-04-28 00:04:24,669 - Single inference for Sales Managers, duration: 0:00:05.200844
+deepseek-r1-no_prompt-9:  89%|████████▊ | 133/150 [02:36<00:15,  1.08it/s]2025-04-28 00:04:24,814 - HTTP Request: POST http://127.0.0.1:11798/api/chat "HTTP/1.1 200 OK"
