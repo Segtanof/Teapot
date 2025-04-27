@@ -23,3 +23,18 @@ Sun Apr 27 21:42:38 2025
 Mem:           755Gi        26Gi       708Gi        62Mi        27Gi       728Gi
 Swap:          3.7Gi       470Mi       3.3Gi
 folder created
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n080
+Job ID: 79144
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:04:59
+CPU Efficiency: 4.47% of 01:51:24 core-walltime
+Job Wall-clock time: 00:55:42
+Memory Utilized: 2.62 GB
+Memory Efficiency: 65.51% of 4.00 GB (4.00 GB/node)
