@@ -2,7 +2,7 @@
 #SBATCH --job-name=lmis
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
-#SBATCH --cpus-per-task=4     
+#SBATCH --cpus-per-task=2     
 #SBATCH --gres=gpu:1           
 #SBATCH --mem=8G              
 #SBATCH --time=00:10:00        
@@ -24,7 +24,7 @@ PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 export OLLAMA_DEBUG=true
 export OLLAMA_KEEP_ALIVE="4h"
 export OLLAMA_NUM_PARALLEL=8    # Max parallelism
-export OLLAMA_MAX_QUEUE=128
+export OLLAMA_MAX_QUEUE=512
 export OLLAMA_CTX_SIZE=16384
 
 # Start Ollama server in the background
