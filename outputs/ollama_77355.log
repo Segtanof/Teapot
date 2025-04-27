@@ -1,0 +1,877 @@
+2025/04/27 18:02:43 routes.go:1186: INFO server config env="map[CUDA_VISIBLE_DEVICES:0 GPU_DEVICE_ORDINAL:0 HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:true OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11789 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:4h0m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/home/ma/ma_ma/ma_ssiu/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:8 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:0 http_proxy: https_proxy: no_proxy:]"
+time=2025-04-27T18:02:43.192+02:00 level=INFO source=images.go:432 msg="total blobs: 26"
+time=2025-04-27T18:02:43.196+02:00 level=INFO source=images.go:439 msg="total unused blobs removed: 0"
+time=2025-04-27T18:02:43.201+02:00 level=INFO source=routes.go:1237 msg="Listening on 127.0.0.1:11789 (version 0.5.11)"
+time=2025-04-27T18:02:43.201+02:00 level=DEBUG source=sched.go:105 msg="starting llm scheduler"
+time=2025-04-27T18:02:43.201+02:00 level=INFO source=gpu.go:217 msg="looking for compatible GPUs"
+time=2025-04-27T18:02:43.209+02:00 level=DEBUG source=gpu.go:98 msg="searching for GPU discovery libraries for NVIDIA"
+time=2025-04-27T18:02:43.209+02:00 level=DEBUG source=gpu.go:501 msg="Searching for GPU library" name=libcuda.so*
+time=2025-04-27T18:02:43.209+02:00 level=DEBUG source=gpu.go:525 msg="gpu library search" globs="[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libcuda.so* /usr/local/cuda*/targets/*/lib/libcuda.so* /usr/lib/*-linux-gnu/nvidia/current/libcuda.so* /usr/lib/*-linux-gnu/libcuda.so* /usr/lib/wsl/lib/libcuda.so* /usr/lib/wsl/drivers/*/libcuda.so* /opt/cuda/lib*/libcuda.so* /usr/local/cuda/lib*/libcuda.so* /usr/lib*/libcuda.so* /usr/local/lib*/libcuda.so*]"
+time=2025-04-27T18:02:43.212+02:00 level=DEBUG source=gpu.go:558 msg="discovered GPU libraries" paths="[/usr/lib/libcuda.so.570.86.15 /usr/lib64/libcuda.so.570.86.15]"
+initializing /usr/lib/libcuda.so.570.86.15
+library /usr/lib/libcuda.so.570.86.15 load err: /usr/lib/libcuda.so.570.86.15: wrong ELF class: ELFCLASS32
+time=2025-04-27T18:02:43.212+02:00 level=DEBUG source=gpu.go:609 msg="skipping 32bit library" library=/usr/lib/libcuda.so.570.86.15
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x149cf7d0de00
+dlsym: cuDriverGetVersion - 0x149cf7d0de20
+dlsym: cuDeviceGetCount - 0x149cf7d0de60
+dlsym: cuDeviceGet - 0x149cf7d0de40
+dlsym: cuDeviceGetAttribute - 0x149cf7d0df40
+dlsym: cuDeviceGetUuid - 0x149cf7d0dea0
+dlsym: cuDeviceGetName - 0x149cf7d0de80
+dlsym: cuCtxCreate_v3 - 0x149cf7d0e120
+dlsym: cuMemGetInfo_v2 - 0x149cf7d0e8a0
+dlsym: cuCtxDestroy - 0x149cf7d6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T18:02:44.220+02:00 level=DEBUG source=gpu.go:125 msg="detected GPUs" count=1 library=/usr/lib64/libcuda.so.570.86.15
+[GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398] CUDA totalMem 95330 mb
+[GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398] CUDA freeMem 94777 mb
+[GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398] Compute Capability 9.0
+time=2025-04-27T18:02:45.802+02:00 level=DEBUG source=amd_linux.go:419 msg="amdgpu driver not detected /sys/module/amdgpu"
+releasing cuda driver library
+time=2025-04-27T18:02:45.802+02:00 level=INFO source=types.go:130 msg="inference compute" id=GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398 library=cuda variant=v12 compute=9.0 driver=12.8 name="NVIDIA H100" total="93.1 GiB" available="92.6 GiB"
+time=2025-04-27T18:03:21.543+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="755.6 GiB" before.free="723.0 GiB" before.free_swap="3.7 GiB" now.total="755.6 GiB" now.free="719.1 GiB" now.free_swap="3.7 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x149cf7d0de00
+dlsym: cuDriverGetVersion - 0x149cf7d0de20
+dlsym: cuDeviceGetCount - 0x149cf7d0de60
+dlsym: cuDeviceGet - 0x149cf7d0de40
+dlsym: cuDeviceGetAttribute - 0x149cf7d0df40
+dlsym: cuDeviceGetUuid - 0x149cf7d0dea0
+dlsym: cuDeviceGetName - 0x149cf7d0de80
+dlsym: cuCtxCreate_v3 - 0x149cf7d0e120
+dlsym: cuMemGetInfo_v2 - 0x149cf7d0e8a0
+dlsym: cuCtxDestroy - 0x149cf7d6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T18:03:21.991+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398 name="NVIDIA H100" overhead="0 B" before.total="93.1 GiB" before.free="92.6 GiB" now.total="93.1 GiB" now.free="92.6 GiB" now.used="552.8 MiB"
+releasing cuda driver library
+time=2025-04-27T18:03:21.991+02:00 level=DEBUG source=sched.go:181 msg="updating default concurrency" OLLAMA_MAX_LOADED_MODELS=0x55822a034b40 gpu_count=1
+time=2025-04-27T18:03:22.024+02:00 level=DEBUG source=sched.go:224 msg="loading first model" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:03:22.024+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[92.6 GiB]"
+time=2025-04-27T18:03:22.025+02:00 level=INFO source=sched.go:714 msg="new model will fit in available VRAM in single GPU, loading" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d gpu=GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398 parallel=8 available=99381673984 required="47.2 GiB"
+time=2025-04-27T18:03:22.025+02:00 level=DEBUG source=gpu.go:391 msg="updating system memory data" before.total="755.6 GiB" before.free="719.1 GiB" before.free_swap="3.7 GiB" now.total="755.6 GiB" now.free="719.1 GiB" now.free_swap="3.7 GiB"
+initializing /usr/lib64/libcuda.so.570.86.15
+dlsym: cuInit - 0x149cf7d0de00
+dlsym: cuDriverGetVersion - 0x149cf7d0de20
+dlsym: cuDeviceGetCount - 0x149cf7d0de60
+dlsym: cuDeviceGet - 0x149cf7d0de40
+dlsym: cuDeviceGetAttribute - 0x149cf7d0df40
+dlsym: cuDeviceGetUuid - 0x149cf7d0dea0
+dlsym: cuDeviceGetName - 0x149cf7d0de80
+dlsym: cuCtxCreate_v3 - 0x149cf7d0e120
+dlsym: cuMemGetInfo_v2 - 0x149cf7d0e8a0
+dlsym: cuCtxDestroy - 0x149cf7d6c9f0
+calling cuInit
+calling cuDriverGetVersion
+raw version 0x2f30
+CUDA driver version: 12.8
+calling cuDeviceGetCount
+device count 1
+time=2025-04-27T18:03:22.491+02:00 level=DEBUG source=gpu.go:441 msg="updating cuda memory data" gpu=GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398 name="NVIDIA H100" overhead="0 B" before.total="93.1 GiB" before.free="92.6 GiB" now.total="93.1 GiB" now.free="92.6 GiB" now.used="552.8 MiB"
+releasing cuda driver library
+time=2025-04-27T18:03:22.491+02:00 level=INFO source=server.go:100 msg="system memory" total="755.6 GiB" free="719.1 GiB" free_swap="3.7 GiB"
+time=2025-04-27T18:03:22.491+02:00 level=DEBUG source=memory.go:107 msg=evaluating library=cuda gpu_count=1 available="[92.6 GiB]"
+time=2025-04-27T18:03:22.492+02:00 level=INFO source=memory.go:356 msg="offload to cuda" layers.requested=-1 layers.model=81 layers.offload=81 layers.split="" memory.available="[92.6 GiB]" memory.gpu_overhead="0 B" memory.required.full="47.2 GiB" memory.required.partial="47.2 GiB" memory.required.kv="5.0 GiB" memory.required.allocations="[47.2 GiB]" memory.weights.total="43.2 GiB" memory.weights.repeating="42.4 GiB" memory.weights.nonrepeating="822.0 MiB" memory.graph.full="2.1 GiB" memory.graph.partial="2.2 GiB"
+time=2025-04-27T18:03:22.492+02:00 level=DEBUG source=server.go:262 msg="compatible gpu libraries" compatible="[cuda_v12 cuda_v11]"
+time=2025-04-27T18:03:22.493+02:00 level=DEBUG source=server.go:302 msg="adding gpu library" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-27T18:03:22.493+02:00 level=DEBUG source=server.go:310 msg="adding gpu dependency paths" paths=[/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12]
+time=2025-04-27T18:03:22.493+02:00 level=INFO source=server.go:380 msg="starting llama server" cmd="/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/bin/ollama runner --model /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d --ctx-size 16384 --batch-size 512 --n-gpu-layers 81 --verbose --threads 96 --parallel 8 --port 42067"
+time=2025-04-27T18:03:22.493+02:00 level=DEBUG source=server.go:398 msg=subprocess environment="[ROCR_VISIBLE_DEVICES=0 CUDA_VISIBLE_DEVICES=GPU-3886c961-9d28-3ee8-0f45-3bf2a450d398 GPU_DEVICE_ORDINAL=0 LD_LIBRARY_PATH=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12:/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama PATH=/pfs/work9/workspace/scratch/ma_ssiu-thesis/.conda/envs/mythesis/bin:/opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/condabin:/opt/bwhpc/common/cs/ollama/0.5.11/bin:/software/all/bin:/pfs/data6/home/ma/ma_ma/ma_ssiu/.vscode-server/cli/servers/Stable-17baf841131aa23349f217ca7c570c76ee87b957/server/bin/remote-cli:/home/ma/ma_ma/ma_ssiu/.local/bin:/home/ma/ma_ma/ma_ssiu/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ma/ma_ma/ma_ssiu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand]"
+time=2025-04-27T18:03:22.494+02:00 level=INFO source=sched.go:449 msg="loaded runners" count=1
+time=2025-04-27T18:03:22.494+02:00 level=INFO source=server.go:557 msg="waiting for llama runner to start responding"
+time=2025-04-27T18:03:22.495+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server error"
+time=2025-04-27T18:03:22.522+02:00 level=INFO source=runner.go:936 msg="starting go runner"
+time=2025-04-27T18:03:22.522+02:00 level=INFO source=runner.go:937 msg=system info="CPU : LLAMAFILE = 1 | CPU : LLAMAFILE = 1 | cgo(gcc)" threads=96
+time=2025-04-27T18:03:22.522+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12
+time=2025-04-27T18:03:22.522+02:00 level=INFO source=runner.go:995 msg="Server listening on 127.0.0.1:42067"
+time=2025-04-27T18:03:22.929+02:00 level=INFO source=server.go:591 msg="waiting for server to become available" status="llm server loading model"
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA H100, compute capability 9.0, VMM: yes
+load_backend: loaded CUDA backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/cuda_v12/libggml-cuda.so
+time=2025-04-27T18:03:23.676+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /opt/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+time=2025-04-27T18:03:23.713+02:00 level=DEBUG source=ggml.go:89 msg="ggml backend load all from path" path=/pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-skylakex.so score: 183
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sapphirerapids.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-haswell.so score: 55
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-sandybridge.so score: 20
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-alderlake.so score: 0
+ggml_backend_load_best: /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so score: 1463
+load_backend: loaded CPU backend from /pfs/data6/software_uc3/bwhpc/common/cs/ollama/0.5.11/lib/ollama/libggml-cpu-icelake.so
+llama_load_model_from_file: using device CUDA0 (NVIDIA H100) - 94777 MiB free
+llama_model_loader: loaded meta data with 36 key-value pairs and 724 tensors from /home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Llama 3.1 70B Instruct 2024 12
+llama_model_loader: - kv   3:                            general.version str              = 2024-12
+llama_model_loader: - kv   4:                           general.finetune str              = Instruct
+llama_model_loader: - kv   5:                           general.basename str              = Llama-3.1
+llama_model_loader: - kv   6:                         general.size_label str              = 70B
+llama_model_loader: - kv   7:                            general.license str              = llama3.1
+llama_model_loader: - kv   8:                   general.base_model.count u32              = 1
+llama_model_loader: - kv   9:                  general.base_model.0.name str              = Llama 3.1 70B
+llama_model_loader: - kv  10:          general.base_model.0.organization str              = Meta Llama
+llama_model_loader: - kv  11:              general.base_model.0.repo_url str              = https://huggingface.co/meta-llama/Lla...
+llama_model_loader: - kv  12:                               general.tags arr[str,5]       = ["facebook", "meta", "pytorch", "llam...
+llama_model_loader: - kv  13:                          general.languages arr[str,7]       = ["fr", "it", "pt", "hi", "es", "th", ...
+llama_model_loader: - kv  14:                          llama.block_count u32              = 80
+llama_model_loader: - kv  15:                       llama.context_length u32              = 131072
+llama_model_loader: - kv  16:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv  17:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv  18:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv  19:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  20:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv  21:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  22:                 llama.attention.key_length u32              = 128
+llama_model_loader: - kv  23:               llama.attention.value_length u32              = 128
+llama_model_loader: - kv  24:                          general.file_type u32              = 15
+llama_model_loader: - kv  25:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  26:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  27:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  28:                         tokenizer.ggml.pre str              = llama-bpe
+llama_model_loader: - kv  29:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  30:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  31:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  32:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  33:                tokenizer.ggml.eos_token_id u32              = 128009
+llama_model_loader: - kv  34:                    tokenizer.chat_template str              = {{- bos_token }}\n{%- if custom_tools ...
+llama_model_loader: - kv  35:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  162 tensors
+llama_model_loader: - type q4_K:  441 tensors
+llama_model_loader: - type q5_K:   40 tensors
+llama_model_loader: - type q6_K:   81 tensors
+llm_load_vocab: control token: 128254 '<|reserved_special_token_246|>' is not marked as EOG
+llm_load_vocab: control token: 128249 '<|reserved_special_token_241|>' is not marked as EOG
+llm_load_vocab: control token: 128246 '<|reserved_special_token_238|>' is not marked as EOG
+llm_load_vocab: control token: 128243 '<|reserved_special_token_235|>' is not marked as EOG
+llm_load_vocab: control token: 128242 '<|reserved_special_token_234|>' is not marked as EOG
+llm_load_vocab: control token: 128241 '<|reserved_special_token_233|>' is not marked as EOG
+llm_load_vocab: control token: 128240 '<|reserved_special_token_232|>' is not marked as EOG
+llm_load_vocab: control token: 128235 '<|reserved_special_token_227|>' is not marked as EOG
+llm_load_vocab: control token: 128231 '<|reserved_special_token_223|>' is not marked as EOG
+llm_load_vocab: control token: 128230 '<|reserved_special_token_222|>' is not marked as EOG
+llm_load_vocab: control token: 128228 '<|reserved_special_token_220|>' is not marked as EOG
+llm_load_vocab: control token: 128225 '<|reserved_special_token_217|>' is not marked as EOG
+llm_load_vocab: control token: 128218 '<|reserved_special_token_210|>' is not marked as EOG
+llm_load_vocab: control token: 128214 '<|reserved_special_token_206|>' is not marked as EOG
+llm_load_vocab: control token: 128213 '<|reserved_special_token_205|>' is not marked as EOG
+llm_load_vocab: control token: 128207 '<|reserved_special_token_199|>' is not marked as EOG
+llm_load_vocab: control token: 128206 '<|reserved_special_token_198|>' is not marked as EOG
+llm_load_vocab: control token: 128204 '<|reserved_special_token_196|>' is not marked as EOG
+llm_load_vocab: control token: 128200 '<|reserved_special_token_192|>' is not marked as EOG
+llm_load_vocab: control token: 128199 '<|reserved_special_token_191|>' is not marked as EOG
+llm_load_vocab: control token: 128198 '<|reserved_special_token_190|>' is not marked as EOG
+llm_load_vocab: control token: 128196 '<|reserved_special_token_188|>' is not marked as EOG
+llm_load_vocab: control token: 128194 '<|reserved_special_token_186|>' is not marked as EOG
+llm_load_vocab: control token: 128193 '<|reserved_special_token_185|>' is not marked as EOG
+llm_load_vocab: control token: 128188 '<|reserved_special_token_180|>' is not marked as EOG
+llm_load_vocab: control token: 128187 '<|reserved_special_token_179|>' is not marked as EOG
+llm_load_vocab: control token: 128185 '<|reserved_special_token_177|>' is not marked as EOG
+llm_load_vocab: control token: 128184 '<|reserved_special_token_176|>' is not marked as EOG
+llm_load_vocab: control token: 128180 '<|reserved_special_token_172|>' is not marked as EOG
+llm_load_vocab: control token: 128179 '<|reserved_special_token_171|>' is not marked as EOG
+llm_load_vocab: control token: 128178 '<|reserved_special_token_170|>' is not marked as EOG
+llm_load_vocab: control token: 128177 '<|reserved_special_token_169|>' is not marked as EOG
+llm_load_vocab: control token: 128176 '<|reserved_special_token_168|>' is not marked as EOG
+llm_load_vocab: control token: 128175 '<|reserved_special_token_167|>' is not marked as EOG
+llm_load_vocab: control token: 128171 '<|reserved_special_token_163|>' is not marked as EOG
+llm_load_vocab: control token: 128170 '<|reserved_special_token_162|>' is not marked as EOG
+llm_load_vocab: control token: 128169 '<|reserved_special_token_161|>' is not marked as EOG
+llm_load_vocab: control token: 128168 '<|reserved_special_token_160|>' is not marked as EOG
+llm_load_vocab: control token: 128165 '<|reserved_special_token_157|>' is not marked as EOG
+llm_load_vocab: control token: 128162 '<|reserved_special_token_154|>' is not marked as EOG
+llm_load_vocab: control token: 128158 '<|reserved_special_token_150|>' is not marked as EOG
+llm_load_vocab: control token: 128156 '<|reserved_special_token_148|>' is not marked as EOG
+llm_load_vocab: control token: 128155 '<|reserved_special_token_147|>' is not marked as EOG
+llm_load_vocab: control token: 128154 '<|reserved_special_token_146|>' is not marked as EOG
+llm_load_vocab: control token: 128151 '<|reserved_special_token_143|>' is not marked as EOG
+llm_load_vocab: control token: 128149 '<|reserved_special_token_141|>' is not marked as EOG
+llm_load_vocab: control token: 128147 '<|reserved_special_token_139|>' is not marked as EOG
+llm_load_vocab: control token: 128146 '<|reserved_special_token_138|>' is not marked as EOG
+llm_load_vocab: control token: 128144 '<|reserved_special_token_136|>' is not marked as EOG
+llm_load_vocab: control token: 128142 '<|reserved_special_token_134|>' is not marked as EOG
+llm_load_vocab: control token: 128141 '<|reserved_special_token_133|>' is not marked as EOG
+llm_load_vocab: control token: 128138 '<|reserved_special_token_130|>' is not marked as EOG
+llm_load_vocab: control token: 128136 '<|reserved_special_token_128|>' is not marked as EOG
+llm_load_vocab: control token: 128135 '<|reserved_special_token_127|>' is not marked as EOG
+llm_load_vocab: control token: 128134 '<|reserved_special_token_126|>' is not marked as EOG
+llm_load_vocab: control token: 128133 '<|reserved_special_token_125|>' is not marked as EOG
+llm_load_vocab: control token: 128131 '<|reserved_special_token_123|>' is not marked as EOG
+llm_load_vocab: control token: 128128 '<|reserved_special_token_120|>' is not marked as EOG
+llm_load_vocab: control token: 128124 '<|reserved_special_token_116|>' is not marked as EOG
+llm_load_vocab: control token: 128123 '<|reserved_special_token_115|>' is not marked as EOG
+llm_load_vocab: control token: 128122 '<|reserved_special_token_114|>' is not marked as EOG
+llm_load_vocab: control token: 128119 '<|reserved_special_token_111|>' is not marked as EOG
+llm_load_vocab: control token: 128115 '<|reserved_special_token_107|>' is not marked as EOG
+llm_load_vocab: control token: 128112 '<|reserved_special_token_104|>' is not marked as EOG
+llm_load_vocab: control token: 128110 '<|reserved_special_token_102|>' is not marked as EOG
+llm_load_vocab: control token: 128109 '<|reserved_special_token_101|>' is not marked as EOG
+llm_load_vocab: control token: 128108 '<|reserved_special_token_100|>' is not marked as EOG
+llm_load_vocab: control token: 128106 '<|reserved_special_token_98|>' is not marked as EOG
+llm_load_vocab: control token: 128103 '<|reserved_special_token_95|>' is not marked as EOG
+llm_load_vocab: control token: 128102 '<|reserved_special_token_94|>' is not marked as EOG
+llm_load_vocab: control token: 128101 '<|reserved_special_token_93|>' is not marked as EOG
+llm_load_vocab: control token: 128097 '<|reserved_special_token_89|>' is not marked as EOG
+llm_load_vocab: control token: 128091 '<|reserved_special_token_83|>' is not marked as EOG
+llm_load_vocab: control token: 128090 '<|reserved_special_token_82|>' is not marked as EOG
+llm_load_vocab: control token: 128089 '<|reserved_special_token_81|>' is not marked as EOG
+llm_load_vocab: control token: 128087 '<|reserved_special_token_79|>' is not marked as EOG
+llm_load_vocab: control token: 128085 '<|reserved_special_token_77|>' is not marked as EOG
+llm_load_vocab: control token: 128081 '<|reserved_special_token_73|>' is not marked as EOG
+llm_load_vocab: control token: 128078 '<|reserved_special_token_70|>' is not marked as EOG
+llm_load_vocab: control token: 128076 '<|reserved_special_token_68|>' is not marked as EOG
+llm_load_vocab: control token: 128075 '<|reserved_special_token_67|>' is not marked as EOG
+llm_load_vocab: control token: 128073 '<|reserved_special_token_65|>' is not marked as EOG
+llm_load_vocab: control token: 128068 '<|reserved_special_token_60|>' is not marked as EOG
+llm_load_vocab: control token: 128067 '<|reserved_special_token_59|>' is not marked as EOG
+llm_load_vocab: control token: 128065 '<|reserved_special_token_57|>' is not marked as EOG
+llm_load_vocab: control token: 128063 '<|reserved_special_token_55|>' is not marked as EOG
+llm_load_vocab: control token: 128062 '<|reserved_special_token_54|>' is not marked as EOG
+llm_load_vocab: control token: 128060 '<|reserved_special_token_52|>' is not marked as EOG
+llm_load_vocab: control token: 128059 '<|reserved_special_token_51|>' is not marked as EOG
+llm_load_vocab: control token: 128057 '<|reserved_special_token_49|>' is not marked as EOG
+llm_load_vocab: control token: 128054 '<|reserved_special_token_46|>' is not marked as EOG
+llm_load_vocab: control token: 128046 '<|reserved_special_token_38|>' is not marked as EOG
+llm_load_vocab: control token: 128045 '<|reserved_special_token_37|>' is not marked as EOG
+llm_load_vocab: control token: 128044 '<|reserved_special_token_36|>' is not marked as EOG
+llm_load_vocab: control token: 128043 '<|reserved_special_token_35|>' is not marked as EOG
+llm_load_vocab: control token: 128038 '<|reserved_special_token_30|>' is not marked as EOG
+llm_load_vocab: control token: 128036 '<|reserved_special_token_28|>' is not marked as EOG
+llm_load_vocab: control token: 128035 '<|reserved_special_token_27|>' is not marked as EOG
+llm_load_vocab: control token: 128032 '<|reserved_special_token_24|>' is not marked as EOG
+llm_load_vocab: control token: 128028 '<|reserved_special_token_20|>' is not marked as EOG
+llm_load_vocab: control token: 128027 '<|reserved_special_token_19|>' is not marked as EOG
+llm_load_vocab: control token: 128024 '<|reserved_special_token_16|>' is not marked as EOG
+llm_load_vocab: control token: 128023 '<|reserved_special_token_15|>' is not marked as EOG
+llm_load_vocab: control token: 128022 '<|reserved_special_token_14|>' is not marked as EOG
+llm_load_vocab: control token: 128021 '<|reserved_special_token_13|>' is not marked as EOG
+llm_load_vocab: control token: 128018 '<|reserved_special_token_10|>' is not marked as EOG
+llm_load_vocab: control token: 128016 '<|reserved_special_token_8|>' is not marked as EOG
+llm_load_vocab: control token: 128015 '<|reserved_special_token_7|>' is not marked as EOG
+llm_load_vocab: control token: 128013 '<|reserved_special_token_5|>' is not marked as EOG
+llm_load_vocab: control token: 128011 '<|reserved_special_token_3|>' is not marked as EOG
+llm_load_vocab: control token: 128005 '<|reserved_special_token_2|>' is not marked as EOG
+llm_load_vocab: control token: 128004 '<|finetune_right_pad_id|>' is not marked as EOG
+llm_load_vocab: control token: 128002 '<|reserved_special_token_0|>' is not marked as EOG
+llm_load_vocab: control token: 128252 '<|reserved_special_token_244|>' is not marked as EOG
+llm_load_vocab: control token: 128190 '<|reserved_special_token_182|>' is not marked as EOG
+llm_load_vocab: control token: 128183 '<|reserved_special_token_175|>' is not marked as EOG
+llm_load_vocab: control token: 128137 '<|reserved_special_token_129|>' is not marked as EOG
+llm_load_vocab: control token: 128182 '<|reserved_special_token_174|>' is not marked as EOG
+llm_load_vocab: control token: 128040 '<|reserved_special_token_32|>' is not marked as EOG
+llm_load_vocab: control token: 128048 '<|reserved_special_token_40|>' is not marked as EOG
+llm_load_vocab: control token: 128092 '<|reserved_special_token_84|>' is not marked as EOG
+llm_load_vocab: control token: 128215 '<|reserved_special_token_207|>' is not marked as EOG
+llm_load_vocab: control token: 128107 '<|reserved_special_token_99|>' is not marked as EOG
+llm_load_vocab: control token: 128208 '<|reserved_special_token_200|>' is not marked as EOG
+llm_load_vocab: control token: 128145 '<|reserved_special_token_137|>' is not marked as EOG
+llm_load_vocab: control token: 128031 '<|reserved_special_token_23|>' is not marked as EOG
+llm_load_vocab: control token: 128129 '<|reserved_special_token_121|>' is not marked as EOG
+llm_load_vocab: control token: 128201 '<|reserved_special_token_193|>' is not marked as EOG
+llm_load_vocab: control token: 128074 '<|reserved_special_token_66|>' is not marked as EOG
+llm_load_vocab: control token: 128095 '<|reserved_special_token_87|>' is not marked as EOG
+llm_load_vocab: control token: 128186 '<|reserved_special_token_178|>' is not marked as EOG
+llm_load_vocab: control token: 128143 '<|reserved_special_token_135|>' is not marked as EOG
+llm_load_vocab: control token: 128229 '<|reserved_special_token_221|>' is not marked as EOG
+llm_load_vocab: control token: 128007 '<|end_header_id|>' is not marked as EOG
+llm_load_vocab: control token: 128055 '<|reserved_special_token_47|>' is not marked as EOG
+llm_load_vocab: control token: 128056 '<|reserved_special_token_48|>' is not marked as EOG
+llm_load_vocab: control token: 128061 '<|reserved_special_token_53|>' is not marked as EOG
+llm_load_vocab: control token: 128153 '<|reserved_special_token_145|>' is not marked as EOG
+llm_load_vocab: control token: 128152 '<|reserved_special_token_144|>' is not marked as EOG
+llm_load_vocab: control token: 128212 '<|reserved_special_token_204|>' is not marked as EOG
+llm_load_vocab: control token: 128172 '<|reserved_special_token_164|>' is not marked as EOG
+llm_load_vocab: control token: 128160 '<|reserved_special_token_152|>' is not marked as EOG
+llm_load_vocab: control token: 128041 '<|reserved_special_token_33|>' is not marked as EOG
+llm_load_vocab: control token: 128181 '<|reserved_special_token_173|>' is not marked as EOG
+llm_load_vocab: control token: 128094 '<|reserved_special_token_86|>' is not marked as EOG
+llm_load_vocab: control token: 128118 '<|reserved_special_token_110|>' is not marked as EOG
+llm_load_vocab: control token: 128236 '<|reserved_special_token_228|>' is not marked as EOG
+llm_load_vocab: control token: 128148 '<|reserved_special_token_140|>' is not marked as EOG
+llm_load_vocab: control token: 128042 '<|reserved_special_token_34|>' is not marked as EOG
+llm_load_vocab: control token: 128139 '<|reserved_special_token_131|>' is not marked as EOG
+llm_load_vocab: control token: 128173 '<|reserved_special_token_165|>' is not marked as EOG
+llm_load_vocab: control token: 128239 '<|reserved_special_token_231|>' is not marked as EOG
+llm_load_vocab: control token: 128157 '<|reserved_special_token_149|>' is not marked as EOG
+llm_load_vocab: control token: 128052 '<|reserved_special_token_44|>' is not marked as EOG
+llm_load_vocab: control token: 128026 '<|reserved_special_token_18|>' is not marked as EOG
+llm_load_vocab: control token: 128003 '<|reserved_special_token_1|>' is not marked as EOG
+llm_load_vocab: control token: 128019 '<|reserved_special_token_11|>' is not marked as EOG
+llm_load_vocab: control token: 128116 '<|reserved_special_token_108|>' is not marked as EOG
+llm_load_vocab: control token: 128161 '<|reserved_special_token_153|>' is not marked as EOG
+llm_load_vocab: control token: 128226 '<|reserved_special_token_218|>' is not marked as EOG
+llm_load_vocab: control token: 128159 '<|reserved_special_token_151|>' is not marked as EOG
+llm_load_vocab: control token: 128012 '<|reserved_special_token_4|>' is not marked as EOG
+llm_load_vocab: control token: 128088 '<|reserved_special_token_80|>' is not marked as EOG
+llm_load_vocab: control token: 128163 '<|reserved_special_token_155|>' is not marked as EOG
+llm_load_vocab: control token: 128001 '<|end_of_text|>' is not marked as EOG
+llm_load_vocab: control token: 128113 '<|reserved_special_token_105|>' is not marked as EOG
+llm_load_vocab: control token: 128250 '<|reserved_special_token_242|>' is not marked as EOG
+llm_load_vocab: control token: 128125 '<|reserved_special_token_117|>' is not marked as EOG
+llm_load_vocab: control token: 128053 '<|reserved_special_token_45|>' is not marked as EOG
+llm_load_vocab: control token: 128224 '<|reserved_special_token_216|>' is not marked as EOG
+llm_load_vocab: control token: 128247 '<|reserved_special_token_239|>' is not marked as EOG
+llm_load_vocab: control token: 128251 '<|reserved_special_token_243|>' is not marked as EOG
+llm_load_vocab: control token: 128216 '<|reserved_special_token_208|>' is not marked as EOG
+llm_load_vocab: control token: 128006 '<|start_header_id|>' is not marked as EOG
+llm_load_vocab: control token: 128211 '<|reserved_special_token_203|>' is not marked as EOG
+llm_load_vocab: control token: 128077 '<|reserved_special_token_69|>' is not marked as EOG
+llm_load_vocab: control token: 128237 '<|reserved_special_token_229|>' is not marked as EOG
+llm_load_vocab: control token: 128086 '<|reserved_special_token_78|>' is not marked as EOG
+llm_load_vocab: control token: 128227 '<|reserved_special_token_219|>' is not marked as EOG
+llm_load_vocab: control token: 128058 '<|reserved_special_token_50|>' is not marked as EOG
+llm_load_vocab: control token: 128100 '<|reserved_special_token_92|>' is not marked as EOG
+llm_load_vocab: control token: 128209 '<|reserved_special_token_201|>' is not marked as EOG
+llm_load_vocab: control token: 128084 '<|reserved_special_token_76|>' is not marked as EOG
+llm_load_vocab: control token: 128071 '<|reserved_special_token_63|>' is not marked as EOG
+llm_load_vocab: control token: 128070 '<|reserved_special_token_62|>' is not marked as EOG
+llm_load_vocab: control token: 128049 '<|reserved_special_token_41|>' is not marked as EOG
+llm_load_vocab: control token: 128197 '<|reserved_special_token_189|>' is not marked as EOG
+llm_load_vocab: control token: 128072 '<|reserved_special_token_64|>' is not marked as EOG
+llm_load_vocab: control token: 128000 '<|begin_of_text|>' is not marked as EOG
+llm_load_vocab: control token: 128223 '<|reserved_special_token_215|>' is not marked as EOG
+llm_load_vocab: control token: 128217 '<|reserved_special_token_209|>' is not marked as EOG
+llm_load_vocab: control token: 128111 '<|reserved_special_token_103|>' is not marked as EOG
+llm_load_vocab: control token: 128203 '<|reserved_special_token_195|>' is not marked as EOG
+llm_load_vocab: control token: 128051 '<|reserved_special_token_43|>' is not marked as EOG
+llm_load_vocab: control token: 128030 '<|reserved_special_token_22|>' is not marked as EOG
+llm_load_vocab: control token: 128117 '<|reserved_special_token_109|>' is not marked as EOG
+llm_load_vocab: control token: 128010 '<|python_tag|>' is not marked as EOG
+llm_load_vocab: control token: 128238 '<|reserved_special_token_230|>' is not marked as EOG
+llm_load_vocab: control token: 128255 '<|reserved_special_token_247|>' is not marked as EOG
+llm_load_vocab: control token: 128202 '<|reserved_special_token_194|>' is not marked as EOG
+llm_load_vocab: control token: 128132 '<|reserved_special_token_124|>' is not marked as EOG
+llm_load_vocab: control token: 128248 '<|reserved_special_token_240|>' is not marked as EOG
+llm_load_vocab: control token: 128167 '<|reserved_special_token_159|>' is not marked as EOG
+llm_load_vocab: control token: 128127 '<|reserved_special_token_119|>' is not marked as EOG
+llm_load_vocab: control token: 128105 '<|reserved_special_token_97|>' is not marked as EOG
+llm_load_vocab: control token: 128039 '<|reserved_special_token_31|>' is not marked as EOG
+llm_load_vocab: control token: 128232 '<|reserved_special_token_224|>' is not marked as EOG
+llm_load_vocab: control token: 128166 '<|reserved_special_token_158|>' is not marked as EOG
+llm_load_vocab: control token: 128130 '<|reserved_special_token_122|>' is not marked as EOG
+llm_load_vocab: control token: 128114 '<|reserved_special_token_106|>' is not marked as EOG
+llm_load_vocab: control token: 128234 '<|reserved_special_token_226|>' is not marked as EOG
+llm_load_vocab: control token: 128191 '<|reserved_special_token_183|>' is not marked as EOG
+llm_load_vocab: control token: 128064 '<|reserved_special_token_56|>' is not marked as EOG
+llm_load_vocab: control token: 128140 '<|reserved_special_token_132|>' is not marked as EOG
+llm_load_vocab: control token: 128096 '<|reserved_special_token_88|>' is not marked as EOG
+llm_load_vocab: control token: 128098 '<|reserved_special_token_90|>' is not marked as EOG
+llm_load_vocab: control token: 128192 '<|reserved_special_token_184|>' is not marked as EOG
+llm_load_vocab: control token: 128093 '<|reserved_special_token_85|>' is not marked as EOG
+llm_load_vocab: control token: 128150 '<|reserved_special_token_142|>' is not marked as EOG
+llm_load_vocab: control token: 128222 '<|reserved_special_token_214|>' is not marked as EOG
+llm_load_vocab: control token: 128233 '<|reserved_special_token_225|>' is not marked as EOG
+llm_load_vocab: control token: 128220 '<|reserved_special_token_212|>' is not marked as EOG
+llm_load_vocab: control token: 128034 '<|reserved_special_token_26|>' is not marked as EOG
+llm_load_vocab: control token: 128033 '<|reserved_special_token_25|>' is not marked as EOG
+llm_load_vocab: control token: 128253 '<|reserved_special_token_245|>' is not marked as EOG
+llm_load_vocab: control token: 128195 '<|reserved_special_token_187|>' is not marked as EOG
+llm_load_vocab: control token: 128099 '<|reserved_special_token_91|>' is not marked as EOG
+llm_load_vocab: control token: 128189 '<|reserved_special_token_181|>' is not marked as EOG
+llm_load_vocab: control token: 128210 '<|reserved_special_token_202|>' is not marked as EOG
+llm_load_vocab: control token: 128174 '<|reserved_special_token_166|>' is not marked as EOG
+llm_load_vocab: control token: 128083 '<|reserved_special_token_75|>' is not marked as EOG
+llm_load_vocab: control token: 128080 '<|reserved_special_token_72|>' is not marked as EOG
+llm_load_vocab: control token: 128104 '<|reserved_special_token_96|>' is not marked as EOG
+llm_load_vocab: control token: 128082 '<|reserved_special_token_74|>' is not marked as EOG
+llm_load_vocab: control token: 128219 '<|reserved_special_token_211|>' is not marked as EOG
+llm_load_vocab: control token: 128017 '<|reserved_special_token_9|>' is not marked as EOG
+llm_load_vocab: control token: 128050 '<|reserved_special_token_42|>' is not marked as EOG
+llm_load_vocab: control token: 128205 '<|reserved_special_token_197|>' is not marked as EOG
+llm_load_vocab: control token: 128047 '<|reserved_special_token_39|>' is not marked as EOG
+llm_load_vocab: control token: 128164 '<|reserved_special_token_156|>' is not marked as EOG
+llm_load_vocab: control token: 128020 '<|reserved_special_token_12|>' is not marked as EOG
+llm_load_vocab: control token: 128069 '<|reserved_special_token_61|>' is not marked as EOG
+llm_load_vocab: control token: 128245 '<|reserved_special_token_237|>' is not marked as EOG
+llm_load_vocab: control token: 128121 '<|reserved_special_token_113|>' is not marked as EOG
+llm_load_vocab: control token: 128079 '<|reserved_special_token_71|>' is not marked as EOG
+llm_load_vocab: control token: 128037 '<|reserved_special_token_29|>' is not marked as EOG
+llm_load_vocab: control token: 128244 '<|reserved_special_token_236|>' is not marked as EOG
+llm_load_vocab: control token: 128029 '<|reserved_special_token_21|>' is not marked as EOG
+llm_load_vocab: control token: 128221 '<|reserved_special_token_213|>' is not marked as EOG
+llm_load_vocab: control token: 128066 '<|reserved_special_token_58|>' is not marked as EOG
+llm_load_vocab: control token: 128120 '<|reserved_special_token_112|>' is not marked as EOG
+llm_load_vocab: control token: 128014 '<|reserved_special_token_6|>' is not marked as EOG
+llm_load_vocab: control token: 128025 '<|reserved_special_token_17|>' is not marked as EOG
+llm_load_vocab: control token: 128126 '<|reserved_special_token_118|>' is not marked as EOG
+llm_load_vocab: special tokens cache size = 256
+llm_load_vocab: token to piece cache size = 0.7999 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: vocab_only       = 0
+llm_load_print_meta: n_ctx_train      = 131072
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_swa            = 0
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_ctx_orig_yarn  = 131072
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: ssm_dt_b_c_rms   = 0
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_K - Medium
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 39.59 GiB (4.82 BPW) 
+llm_load_print_meta: general.name     = Llama 3.1 70B Instruct 2024 12
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOM token        = 128008 '<|eom_id|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOG token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128009 '<|eot_id|>'
+llm_load_print_meta: max token length = 256
+llm_load_tensors: tensor 'token_embd.weight' (q4_K) (and 0 others) cannot be used with preferred buffer type CUDA_Host, using CPU instead
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading output layer to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CUDA0 model buffer size = 39979.48 MiB
+llm_load_tensors:   CPU_Mapped model buffer size =   563.62 MiB
+time=2025-04-27T18:05:30.047+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.09"
+time=2025-04-27T18:05:30.298+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.21"
+time=2025-04-27T18:05:30.549+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.31"
+time=2025-04-27T18:05:30.800+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.42"
+time=2025-04-27T18:05:31.051+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.54"
+time=2025-04-27T18:05:31.302+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.65"
+time=2025-04-27T18:05:31.553+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.76"
+time=2025-04-27T18:05:31.804+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.87"
+time=2025-04-27T18:05:32.055+02:00 level=DEBUG source=server.go:602 msg="model load progress 0.99"
+llama_new_context_with_model: n_seq_max     = 8
+llama_new_context_with_model: n_ctx         = 16384
+llama_new_context_with_model: n_ctx_per_seq = 2048
+llama_new_context_with_model: n_batch       = 4096
+llama_new_context_with_model: n_ubatch      = 512
+llama_new_context_with_model: flash_attn    = 0
+llama_new_context_with_model: freq_base     = 500000.0
+llama_new_context_with_model: freq_scale    = 1
+llama_new_context_with_model: n_ctx_per_seq (2048) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+llama_kv_cache_init: kv_size = 16384, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 80, can_shift = 1
+llama_kv_cache_init: layer 0: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 1: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 2: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 3: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 4: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 5: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 6: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 7: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 8: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 9: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 10: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 11: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 12: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 13: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 14: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 15: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 16: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 17: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 18: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 19: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 20: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 21: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 22: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 23: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 24: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 25: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 26: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 27: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 28: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 29: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 30: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 31: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 32: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 33: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 34: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 35: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 36: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 37: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 38: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 39: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 40: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 41: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 42: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 43: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 44: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 45: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 46: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 47: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 48: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 49: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 50: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 51: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 52: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 53: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 54: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 55: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 56: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 57: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 58: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 59: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 60: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 61: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 62: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 63: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 64: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 65: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 66: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 67: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 68: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 69: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 70: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 71: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 72: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 73: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 74: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 75: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 76: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 77: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 78: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init: layer 79: n_embd_k_gqa = 1024, n_embd_v_gqa = 1024
+llama_kv_cache_init:      CUDA0 KV buffer size =  5120.00 MiB
+llama_new_context_with_model: KV self size  = 5120.00 MiB, K (f16): 2560.00 MiB, V (f16): 2560.00 MiB
+llama_new_context_with_model:  CUDA_Host  output buffer size =     4.16 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =  2144.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    48.01 MiB
+llama_new_context_with_model: graph nodes  = 2566
+llama_new_context_with_model: graph splits = 2
+time=2025-04-27T18:05:33.310+02:00 level=INFO source=server.go:596 msg="llama runner started in 130.82 seconds"
+time=2025-04-27T18:05:33.310+02:00 level=DEBUG source=sched.go:462 msg="finished setting up runner" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:33.310+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nWarm-up prompt<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:33.311+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=0 prompt=13 used=0 remaining=13
+[GIN] 2025/04/27 - 18:05:36 | 200 |         2m14s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:05:36.354+02:00 level=DEBUG source=sched.go:466 msg="context for request finished"
+time=2025-04-27T18:05:36.354+02:00 level=DEBUG source=sched.go:339 msg="runner with non-zero duration has gone idle, adding timer" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d duration=4h0m0s
+time=2025-04-27T18:05:36.354+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=0
+time=2025-04-27T18:05:36.555+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.556+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Orthodontistswould perform at work. Here is the description of the occupation: Examine, diagnose, and treat dental malocclusions and oral cavity anomalies. Design and fabricate appliances to realign teeth and jaws to produce and maintain normal function and to improve appearance.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.564+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=107 prompt=74 used=5 remaining=69
+time=2025-04-27T18:05:36.580+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.580+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Orthoptistswould perform at work. Here is the description of the occupation: Diagnose and treat visual system disorders such as binocular vision and eye movement impairments.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.689+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.743+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=0 prompt=55 used=0 remaining=55
+time=2025-04-27T18:05:36.768+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.769+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 9 unique task statements that the occupation Painting, Coating, and Decorating Workerswould perform at work. Here is the description of the occupation: Paint, coat, or decorate articles, such as furniture, glass, plateware, pottery, jewelry, toys, books, or leather.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.769+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.769+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 12 unique task statements that the occupation Packers and Packagers, Handwould perform at work. Here is the description of the occupation: Pack or package by hand a wide variety of products and materials.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.770+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.770+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation Painters, Construction and Maintenancewould perform at work. Here is the description of the occupation: Paint walls, equipment, buildings, bridges, and other structural surfaces, using brushes, rollers, and spray guns. May remove old paint to prepare surface prior to painting. May mix colors or oils to obtain desired color or consistency.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.777+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.781+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:36.781+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Packaging and Filling Machine Operators and Tenderswould perform at work. Here is the description of the occupation: Operate or tend machines to prepare industrial or consumer products for storage or shipment. Includes cannery workers who pack food products.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.782+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Orthotists and Prosthetistswould perform at work. Here is the description of the occupation: Design, measure, fit, and adapt orthopedic braces, appliances or prostheses, such as limbs or facial parts for patients with disabling conditions.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.784+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Outdoor Power Equipment and Other Small Engine Mechanicswould perform at work. Here is the description of the occupation: Diagnose, adjust, repair, or overhaul small engines used to power lawn mowers, chain saws, recreational sporting equipment, and related equipment.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:36.898+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=0 prompt=69 used=0 remaining=69
+time=2025-04-27T18:05:36.898+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=0 prompt=52 used=0 remaining=52
+time=2025-04-27T18:05:36.898+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=0 prompt=85 used=0 remaining=85
+time=2025-04-27T18:05:36.898+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=0 prompt=72 used=0 remaining=72
+time=2025-04-27T18:05:36.898+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=0 prompt=67 used=0 remaining=67
+time=2025-04-27T18:05:36.898+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=0 prompt=72 used=0 remaining=72
+[GIN] 2025/04/27 - 18:05:57 | 200 | 20.870969097s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:05:57.369+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:05:57.369+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:05:57.436+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:57.437+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Paper Goods Machine Setters, Operators, and Tenderswould perform at work. Here is the description of the occupation: Set up, operate, or tend paper goods machines that perform a variety of functions, such as converting, sawing, corrugating, banding, wrapping, boxing, stitching, forming, or sealing paper or paperboard sheets into products.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:57.551+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=274 prompt=93 used=8 remaining=85
+[GIN] 2025/04/27 - 18:05:58 | 200 | 21.418800275s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:05:58.022+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:05:58.022+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:05:58.084+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:05:58.084+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Paperhangerswould perform at work. Here is the description of the occupation: Cover interior walls or ceilings of rooms with decorative wallpaper or fabric, or attach advertising posters on surfaces such as walls and billboards. May remove old materials or prepare surfaces to be papered.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:05:58.213+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=271 prompt=74 used=8 remaining=66
+[GIN] 2025/04/27 - 18:06:02 | 200 | 26.102356547s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:02.682+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:02.682+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:02.749+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:02.750+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 12 unique task statements that the occupation Paralegals and Legal Assistantswould perform at work. Here is the description of the occupation: Assist lawyers by investigating facts, preparing legal documents, or researching legal precedent. Conduct research to support a legal proceeding, to formulate a defense, or to initiate legal action.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:02.863+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=299 prompt=75 used=15 remaining=60
+[GIN] 2025/04/27 - 18:06:03 | 200 |  27.33060215s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:03.827+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:03.828+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:03.892+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:03.892+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Park Naturalistswould perform at work. Here is the description of the occupation: Plan, develop, and conduct programs to inform public of historical, natural, and scientific features of national, state, or local park.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:04.011+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=315 prompt=63 used=8 remaining=55
+[GIN] 2025/04/27 - 18:06:04 | 200 | 27.500245526s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:04.130+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:04.130+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:04.192+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:04.192+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Parking Attendantswould perform at work. Here is the description of the occupation: Park vehicles or issue tickets for customers in a parking lot or garage. May park or tend vehicles in environments such as a car dealership or rental car facility. May collect fee.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:04.326+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=333 prompt=71 used=8 remaining=63
+[GIN] 2025/04/27 - 18:06:07 | 200 | 31.065364654s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:07.686+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:07.686+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:07.751+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:07.751+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Parking Enforcement Workerswould perform at work. Here is the description of the occupation: Patrol assigned area, such as public parking lot or city streets to issue tickets to overtime parking violators and illegally parked vehicles.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:07.865+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=367 prompt=61 used=8 remaining=53
+[GIN] 2025/04/27 - 18:06:09 | 200 | 32.978134084s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:09.570+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:09.570+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:09.638+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:09.638+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation Parts Salespersonswould perform at work. Here is the description of the occupation: Sell spare and replacement parts and equipment in repair shop or parts store.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:09.755+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=380 prompt=51 used=8 remaining=43
+[GIN] 2025/04/27 - 18:06:12 | 200 | 36.152441996s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:12.798+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:12.798+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:12.864+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:12.864+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 12 unique task statements that the occupation Passenger Attendantswould perform at work. Here is the description of the occupation: Provide services to ensure the safety of passengers aboard ships, buses, trains, or within the station or terminal. Perform duties such as explaining the use of safety equipment, serving meals or beverages, or answering questions related to travel.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:12.981+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=429 prompt=81 used=8 remaining=73
+[GIN] 2025/04/27 - 18:06:18 | 200 | 15.891807534s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:18.608+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:18.608+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:18.673+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:18.673+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Patient Representativeswould perform at work. Here is the description of the occupation: Assist patients in obtaining services, understanding policies and making health care decisions.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:18.789+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=225 prompt=49 used=8 remaining=41
+[GIN] 2025/04/27 - 18:06:30 | 200 |  25.93045257s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:30.089+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:30.090+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:30.152+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:30.153+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Patternmakers, Metal and Plasticwould perform at work. Here is the description of the occupation: Lay out, machine, fit, and assemble castings and parts to metal or plastic foundry patterns, core boxes, or match plates.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 18:06:30 | 200 | 32.216511797s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:30.268+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:30.268+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:30.270+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=318 prompt=67 used=15 remaining=52
+time=2025-04-27T18:06:30.345+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:30.357+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Patternmakers, Woodwould perform at work. Here is the description of the occupation: Plan, lay out, and construct wooden unit or sectional patterns used in forming sand molds for castings.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:30.496+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=382 prompt=58 used=15 remaining=43
+[GIN] 2025/04/27 - 18:06:30 | 200 | 26.970064052s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:30.829+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:30.829+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:30.892+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:30.892+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Paving, Surfacing, and Tamping Equipment Operatorswould perform at work. Here is the description of the occupation: Operate equipment used for applying concrete, asphalt, or other materials to road beds, parking lots, or airport runways and taxiways or for tamping gravel, dirt, or other materials. Includes concrete and asphalt paving machine operators, form tampers, tamping machine operators, and stone spreader operators.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:31.031+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=320 prompt=107 used=15 remaining=92
+[GIN] 2025/04/27 - 18:06:32 | 200 | 35.187769083s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:32.591+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:32.591+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:32.662+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:32.663+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Payroll and Timekeeping Clerkswould perform at work. Here is the description of the occupation: Compile and record employee time and payroll data. May compute employees' time worked, production, and commission. May compute and post wages and deductions, or prepare paychecks.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:32.777+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=428 prompt=74 used=8 remaining=66
+[GIN] 2025/04/27 - 18:06:36 | 200 | 23.453620478s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:36.285+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:36.285+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:36.350+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:36.350+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 17 unique task statements that the occupation Pediatricians, Generalwould perform at work. Here is the description of the occupation: Diagnose, treat, and help prevent diseases and injuries in children. May refer patients to specialists for further diagnosis or treatment, as needed.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:36.463+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=303 prompt=66 used=8 remaining=58
+[GIN] 2025/04/27 - 18:06:38 | 200 | 29.287380582s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:38.892+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:38.892+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:38.952+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:38.952+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Personal Care Aideswould perform at work. Here is the description of the occupation: Provide personalized assistance to individuals with disabilities or illness who require help with personal care and activities of daily living support (e.g., feeding, bathing, dressing, grooming, toileting, and ambulation). May also provide help with tasks such as preparing meals, doing light housekeeping, and doing laundry. Work is performed in various settings depending on the needs of the care recipient and may include locations such as their home, place of work, out in the community, or at a daytime nonresidential facility.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:39.071+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=329 prompt=138 used=8 remaining=130
+[GIN] 2025/04/27 - 18:06:39 | 200 | 31.790199978s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:39.508+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:39.508+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:39.574+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:39.575+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Personal Financial Advisorswould perform at work. Here is the description of the occupation: Advise clients on financial plans using knowledge of tax and investment strategies, securities, insurance, pension plans, and real estate. Duties include assessing clients' assets, liabilities, cash flow, insurance coverage, tax status, and financial objectives. May also buy and sell financial assets for clients.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:39.715+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=362 prompt=94 used=8 remaining=86
+[GIN] 2025/04/27 - 18:06:44 | 200 | 25.648152547s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:44.288+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:44.288+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:44.354+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:44.355+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 13 unique task statements that the occupation Pest Control Workerswould perform at work. Here is the description of the occupation: Apply or release chemical solutions or toxic gases and set traps to kill or remove pests and vermin that infest buildings and surrounding areas.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:44.469+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=290 prompt=63 used=15 remaining=48
+[GIN] 2025/04/27 - 18:06:53 | 200 | 14.778024584s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:06:53.697+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:06:53.697+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:06:53.762+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:06:53.762+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 10 unique task statements that the occupation Pesticide Handlers, Sprayers, and Applicators, Vegetationwould perform at work. Here is the description of the occupation: Mix or apply pesticides, herbicides, fungicides, or insecticides through sprays, dusts, vapors, soil incorporation, or chemical application on trees, shrubs, lawns, or crops. Usually requires specific training and state or federal certification.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:06:53.878+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=276 prompt=100 used=8 remaining=92
+[GIN] 2025/04/27 - 18:07:00 | 200 | 30.240798485s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:00.361+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:00.361+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:00.484+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:00.484+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Petroleum Engineerswould perform at work. Here is the description of the occupation: Devise methods to improve oil and gas extraction and production and determine the need for new or modified tool designs. Oversee drilling and offer technical advice.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:00.634+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=352 prompt=65 used=8 remaining=57
+[GIN] 2025/04/27 - 18:07:01 | 200 | 31.412816972s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:01.714+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:01.714+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:01.778+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:01.778+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Petroleum Pump System Operators, Refinery Operators, and Gaugerswould perform at work. Here is the description of the occupation: Operate or control petroleum refining or processing units. May specialize in controlling manifold and pumping systems, gauging or testing oil in storage tanks, or regulating the flow of oil into pipelines.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:01.907+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=354 prompt=84 used=8 remaining=76
+[GIN] 2025/04/27 - 18:07:04 | 200 | 31.744957569s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:04.368+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:04.368+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:04.434+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:04.434+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 20 unique task statements that the occupation Pharmacistswould perform at work. Here is the description of the occupation: Dispense drugs prescribed by physicians and other health practitioners and provide information to patients about medications and their use. May advise physicians and other health practitioners on the selection, dosage, interactions, and side effects of medications.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:04.573+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=374 prompt=77 used=8 remaining=69
+[GIN] 2025/04/27 - 18:07:05 | 200 | 28.936329456s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:05.253+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:05.253+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:05.319+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:05.319+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Pharmacy Aideswould perform at work. Here is the description of the occupation: Record drugs delivered to the pharmacy, store incoming merchandise, and inform the supervisor of stock needs. May operate cash register and accept prescriptions for filling.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:05.435+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=339 prompt=65 used=8 remaining=57
+[GIN] 2025/04/27 - 18:07:06 | 200 |  21.98136839s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:06.303+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:06.303+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:06.369+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:06.370+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Pharmacy Technicianswould perform at work. Here is the description of the occupation: Prepare medications under the direction of a pharmacist. May measure, mix, count out, label, and record amounts and dosages of medications according to prescription orders.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:06.491+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=271 prompt=68 used=8 remaining=60
+[GIN] 2025/04/27 - 18:07:11 | 200 | 40.566069398s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:11.426+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:11.426+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:11.491+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:11.492+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 22 unique task statements that the occupation Philosophy and Religion Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses in philosophy, religion, and theology. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:11.612+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=490 prompt=68 used=8 remaining=60
+[GIN] 2025/04/27 - 18:07:19 | 200 | 25.887782888s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:19.617+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:19.617+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:19.678+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:19.678+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 23 unique task statements that the occupation Phlebotomistswould perform at work. Here is the description of the occupation: Draw blood for tests, transfusions, donations, or research. May explain the procedure to patients and assist in the recovery of patients with adverse reactions.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:19.799+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=345 prompt=68 used=8 remaining=60
+[GIN] 2025/04/27 - 18:07:22 | 200 |  43.35682733s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:22.898+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:22.898+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:22.965+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:22.965+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 28 unique task statements that the occupation Photographerswould perform at work. Here is the description of the occupation: Photograph people, landscapes, merchandise, or other subjects. May use lighting equipment to enhance a subject's appearance. May use editing software to produce finished images and prints. Includes commercial and industrial photographers, scientific photographers, and photojournalists.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:23.080+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=506 prompt=82 used=8 remaining=74
+[GIN] 2025/04/27 - 18:07:30 | 200 | 24.380555725s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:30.715+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:30.715+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:30.783+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:30.783+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 27 unique task statements that the occupation Photographic Process Workers and Processing Machine Operatorswould perform at work. Here is the description of the occupation: Perform work involved in developing and processing photographic images from film or digital media. May perform precision tasks such as editing photographic negatives and prints.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:30.899+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=299 prompt=69 used=8 remaining=61
+[GIN] 2025/04/27 - 18:07:32 | 200 | 27.651988126s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:32.939+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:32.939+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:32.997+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:32.997+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 26 unique task statements that the occupation Photonics Engineerswould perform at work. Here is the description of the occupation: Design technologies specializing in light information or light energy, such as laser or fiber optics technology.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:33.120+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=327 prompt=54 used=8 remaining=46
+[GIN] 2025/04/27 - 18:07:39 | 200 |  35.29004381s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:39.691+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:39.691+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:39.759+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:39.760+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Photonics Technicianswould perform at work. Here is the description of the occupation: Build, install, test, or maintain optical or fiber optic equipment, such as lasers, lenses, or mirrors, using spectrometers, interferometers, or related equipment.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 18:07:39 | 200 | 39.430979567s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:39.874+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:39.874+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:39.877+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=412 prompt=72 used=8 remaining=64
+time=2025-04-27T18:07:39.942+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:39.942+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Physical Medicine and Rehabilitation Physicianswould perform at work. Here is the description of the occupation: Diagnose and treat disorders requiring physiotherapy to provide physical, mental, and occupational rehabilitation.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:40.118+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=439 prompt=58 used=8 remaining=50
+[GIN] 2025/04/27 - 18:07:43 | 200 | 42.055900988s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:43.801+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:43.801+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:43.868+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:43.868+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation Physical Therapist Aideswould perform at work. Here is the description of the occupation: Under close supervision of a physical therapist or physical therapy assistant, perform only delegated, selected, or routine tasks in specific situations. These duties include preparing the patient and the treatment area.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:43.982+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=483 prompt=74 used=8 remaining=66
+[GIN] 2025/04/27 - 18:07:50 | 200 |  39.44209001s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:07:50.900+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:07:50.900+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:07:50.966+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:07:50.967+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 21 unique task statements that the occupation Physical Therapist Assistantswould perform at work. Here is the description of the occupation: Assist physical therapists in providing physical therapy treatments and procedures. May, in accordance with state laws, assist in the development of treatment plans, carry out routine functions, document the progress of treatment, and modify specific treatments in accordance with patient status and within the scope of treatment plans established by a physical therapist. Generally requires formal training.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:07:51.086+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=443 prompt=103 used=8 remaining=95
+[GIN] 2025/04/27 - 18:08:02 | 200 | 43.145336418s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:02.790+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:02.790+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:02.861+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:02.861+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Physical Therapistswould perform at work. Here is the description of the occupation: Assess, plan, organize, and participate in rehabilitative programs that improve mobility, relieve pain, increase strength, and improve or correct disabling conditions resulting from disease or injury.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:02.970+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=6 cache=478 prompt=71 used=8 remaining=63
+[GIN] 2025/04/27 - 18:08:08 | 200 | 45.181419313s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:08.114+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:08.114+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:08.174+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:08.174+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 12 unique task statements that the occupation Physician Assistantswould perform at work. Here is the description of the occupation: Provide healthcare services typically performed by a physician, under the supervision of a physician. Conduct complete physicals, provide treatment, and counsel patients. May, in some cases, prescribe medication. Must graduate from an accredited educational program for physician assistants.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:08.297+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=512 prompt=84 used=8 remaining=76
+[GIN] 2025/04/27 - 18:08:13 | 200 | 29.233772329s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:13.069+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:13.069+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:13.136+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:13.136+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 19 unique task statements that the occupation Physicians, Pathologistswould perform at work. Here is the description of the occupation: Diagnose diseases and conduct lab tests using organs, body tissues, and fluids. Includes medical examiners.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:13.249+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=351 prompt=59 used=15 remaining=44
+[GIN] 2025/04/27 - 18:08:16 | 200 | 36.187388263s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:16.094+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:16.094+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:16.155+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:16.156+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 10 unique task statements that the occupation Physicistswould perform at work. Here is the description of the occupation: Conduct research into physical phenomena, develop theories on the basis of observation and experiments, and devise methods to apply physical laws and theories.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:16.279+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=401 prompt=62 used=8 remaining=54
+[GIN] 2025/04/27 - 18:08:19 | 200 | 48.521418411s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:19.272+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:19.272+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:19.340+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:19.341+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 24 unique task statements that the occupation Physics Teachers, Postsecondarywould perform at work. Here is the description of the occupation: Teach courses pertaining to the laws of matter and energy. Includes both teachers primarily engaged in teaching and those who do a combination of teaching and research.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:19.456+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=3 cache=530 prompt=67 used=8 remaining=59
+[GIN] 2025/04/27 - 18:08:24 | 200 |  51.94702665s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:24.911+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:24.911+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:24.979+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:24.982+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 5 unique task statements that the occupation Pile Driver Operatorswould perform at work. Here is the description of the occupation: Operate pile drivers mounted on skids, barges, crawler treads, or locomotive cranes to drive pilings for retaining walls, bulkheads, and foundations of structures such as buildings, bridges, and piers.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:25.093+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=548 prompt=84 used=8 remaining=76
+[GIN] 2025/04/27 - 18:08:29 | 200 | 21.120635157s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:29.262+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:29.262+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:29.326+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:29.326+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 14 unique task statements that the occupation Pipelayerswould perform at work. Here is the description of the occupation: Lay pipe for storm or sanitation sewers, drains, and water mains. Perform any combination of the following tasks: grade trenches or culverts, position pipe, or seal joints.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+[GIN] 2025/04/27 - 18:08:29 | 200 | 49.715218716s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:29.443+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:29.443+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:29.445+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=0 cache=544 prompt=72 used=8 remaining=64
+time=2025-04-27T18:08:29.506+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:29.507+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 15 unique task statements that the occupation Plasterers and Stucco Masonswould perform at work. Here is the description of the occupation: Apply interior or exterior plaster, cement, stucco, or similar materials. May also set ornamental plaster.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:29.715+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=5 cache=282 prompt=65 used=8 remaining=57
+[GIN] 2025/04/27 - 18:08:31 | 200 | 40.406976579s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:31.340+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:31.340+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:31.405+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:31.406+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 33 unique task statements that the occupation Plating Machine Setters, Operators, and Tenders, Metal and Plasticwould perform at work. Here is the description of the occupation: Set up, operate, or tend plating machines to coat metal or plastic products with chromium, zinc, copper, cadmium, nickel, or other metal to protect or decorate surfaces. Typically, the product being coated is immersed in molten metal or an electrolytic solution.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:31.526+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=1 cache=485 prompt=103 used=8 remaining=95
+[GIN] 2025/04/27 - 18:08:37 | 200 | 21.132241249s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:37.255+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:37.255+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:37.319+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:37.320+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 30 unique task statements that the occupation Plumbers, Pipefitters, and Steamfitterswould perform at work. Here is the description of the occupation: Assemble, install, alter, and repair pipelines or pipe systems that carry water, steam, air, or other liquids or gases. May install heating and cooling equipment and mechanical control systems. Includes sprinkler fitters.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:37.439+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=7 cache=259 prompt=88 used=8 remaining=80
+[GIN] 2025/04/27 - 18:08:40 | 200 | 15.280930228s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:40.228+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:40.228+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:40.290+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:40.290+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 11 unique task statements that the occupation Podiatristswould perform at work. Here is the description of the occupation: Diagnose and treat diseases and deformities of the human foot.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:40.414+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=4 cache=225 prompt=50 used=8 remaining=42
+[GIN] 2025/04/27 - 18:08:43 | 200 | 30.069531066s |       127.0.0.1 | POST     "/api/chat"
+time=2025-04-27T18:08:43.173+02:00 level=DEBUG source=sched.go:407 msg="context for request finished"
+time=2025-04-27T18:08:43.173+02:00 level=DEBUG source=sched.go:357 msg="after processing request finished event" modelPath=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d refCount=7
+time=2025-04-27T18:08:43.241+02:00 level=DEBUG source=sched.go:575 msg="evaluating already loaded" model=/home/ma/ma_ma/ma_ssiu/.ollama/models/blobs/sha256-4824460d29f2058aaf6e1118a63a7a197a09bed509f0e7d4e2efb1ee273b447d
+time=2025-04-27T18:08:43.242+02:00 level=DEBUG source=routes.go:1461 msg="chat request" images=0 prompt="<|start_header_id|>user<|end_header_id|>\n\nList exactly 16 unique task statements that the occupation Poets, Lyricists and Creative Writerswould perform at work. Here is the description of the occupation: Create original written works, such as scripts, essays, prose, poetry or song lyrics, for publication or performance.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+time=2025-04-27T18:08:43.355+02:00 level=DEBUG source=cache.go:104 msg="loading cache slot" id=2 cache=341 prompt=65 used=8 remaining=57

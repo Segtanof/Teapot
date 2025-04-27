@@ -42,7 +42,7 @@ free -h
 NVIDIA_PID=$!
 
 # Run Python script
-timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized2.py --port $PORT
+timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized1.py --port $PORT
 # Clean up
 kill $NVIDIA_PID
 kill $OLLAMA_PID
