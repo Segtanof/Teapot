@@ -1,0 +1,11 @@
+2025-04-28 17:53:44,541 - INFO - Script started
+2025-04-28 17:53:44,550 - INFO - Found 4 JSON files in results/test
+2025-04-28 17:53:44,550 - INFO - Processing file: mistral_prompt_all.json
+2025-04-28 17:53:44,659 - ERROR - Failed to process mistral_prompt_all.json: Trailing data
+2025-04-28 17:53:44,659 - INFO - Processing file: llama_prompt_all.json
+2025-04-28 17:53:44,761 - ERROR - Failed to process llama_prompt_all.json: Trailing data
+2025-04-28 17:53:44,762 - INFO - Processing file: llama_benchmark_all.json
+2025-04-28 17:53:44,893 - ERROR - Failed to process llama_benchmark_all.json: Trailing data
+2025-04-28 17:53:44,893 - INFO - Processing file: mistral_benchmark_all.json
+2025-04-28 17:53:45,012 - ERROR - Failed to process mistral_benchmark_all.json: Trailing data
+2025-04-28 17:53:45,012 - INFO - Script completed

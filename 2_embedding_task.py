@@ -4,10 +4,8 @@ import pandas as pd
 import re
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from scipy.optimize import linear_sum_assignment
-from concurrent.futures import ProcessPoolExecutor
-from multiprocessing import cpu_count
-import torch
+from multiprocessing import Pool
+import math
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -22,63 +20,49 @@ def preProcessText(text):
         processed.append(doc.lower())
     return processed
 
-def sbert_batch(ref_list, gen_list):
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    sim_model = SentenceTransformer("all-mpnet-base-v2", similarity_fn_name="cosine", device=device)
-    embeddings_ref = sim_model.encode(ref_list, batch_size=16, convert_to_tensor=True)
-    embeddings_gen = sim_model.encode(gen_list, batch_size=16, convert_to_tensor=True)
-    similarity = sim_model.similarity(embeddings_ref, embeddings_gen).cpu().numpy()
-    del embeddings_ref, embeddings_gen  # Free tensors
-    torch.cuda.empty_cache()  # Clear GPU memory
-    return similarity
+def embed_sentences(sentences, model=None):
+    if model is None:
+        model = SentenceTransformer("all-mpnet-base-v2", device="cpu")
+    embeddings = model.encode(sentences, batch_size=16, convert_to_numpy=True)
+    return embeddings.tolist()
 
-def match_batch(ref_lists, gen_lists):
-    results = []
-    for ref_tasks, gen_tasks in zip(ref_lists, gen_lists):
-        ref_clean = preProcessText(ref_tasks)
-        gen_clean = preProcessText(gen_tasks)
-        matrix = sbert_batch(ref_clean, gen_clean)
-        row_ind, col_ind = linear_sum_assignment(1 - matrix)
-        avg_score = np.mean(matrix)
-        results.append((avg_score, matrix.tolist(), row_ind.tolist(), col_ind.tolist()))
-    return results
-
-def process_chunk(chunk):
-    refs, gens = chunk
-    return match_batch(refs, gens)
-
-def match_batch_parallel(ref_lists, gen_lists, num_processes=None):
-    if num_processes is None:
-        num_processes = min(cpu_count(), 2)  # Cap at 8 for SLURM setup
-    
-    chunk_size = max(1, len(ref_lists) // num_processes)
-    chunks = [(ref_lists[i:i + chunk_size], gen_lists[i:i + chunk_size]) 
-             for i in range(0, len(ref_lists), chunk_size)]
-    
-    with ProcessPoolExecutor(max_workers=num_processes) as executor:
-        chunk_results = list(executor.map(process_chunk, chunks))
-    
-    results = []
-    for chunk in chunk_results:
-        results.extend(chunk)
-    return results
-
-def apply_match_batch(df):
+def process_chunk(chunk, model=None):
     try:
-        ref_lists = df["ref_task"].tolist()
-        gen_lists = df["gen_task"].tolist()
-        results = match_batch_parallel(ref_lists, gen_lists, num_processes=2)
-        scores, matrices, ref_orders, gen_orders = zip(*results)
-        df["score"] = scores
-        df["matrix"] = matrices
-        df["ref_order"] = ref_orders
-        df["gen_order"] = gen_orders
-        return df
+        # Preprocess and embed ref_task and gen_task for the chunk
+        chunk['ref_clean'] = preProcessText(chunk['ref_task'].tolist())
+        chunk['gen_clean'] = preProcessText(chunk['gen_task'].tolist())
+        chunk['ref_embeddings'] = embed_sentences(chunk['ref_clean'].tolist(), model)
+        chunk['gen_embeddings'] = embed_sentences(chunk['gen_clean'].tolist(), model)
+        return chunk
     except Exception as e:
-        logging.error(f"Error in apply_match_batch: {str(e)}")
+        logging.error(f"Error in process_chunk: {str(e)}")
+        return None
+
+def process_file(df, num_processes=8):
+    try:
+        # Initialize the model once to share across processes
+        model = SentenceTransformer("all-mpnet-base-v2", device="cpu")
+
+        # Split DataFrame into chunks
+        chunk_size = math.ceil(len(df) / num_processes)
+        chunks = [df[i:i + chunk_size] for i in range(0, len(df), chunk_size)]
+
+        # Process chunks in parallel
+        with Pool(processes=num_processes) as pool:
+            results = pool.starmap(process_chunk, [(chunk, model) for chunk in chunks])
+
+        # Combine results
+        processed_chunks = [chunk for chunk in results if chunk is not None]
+        if not processed_chunks:
+            raise ValueError("No chunks processed successfully")
+        
+        result_df = pd.concat(processed_chunks, ignore_index=True)
+        return result_df
+    except Exception as e:
+        logging.error(f"Error in process_file: {str(e)}")
         raise
 
-def process_files(folder_name):
+def process_files(folder_name, num_processes=8):
     logging.info("Script started")
     
     if not os.path.exists(folder_name):
@@ -90,19 +74,18 @@ def process_files(folder_name):
     
     for file in all_files:
         input_path = os.path.join(folder_name, file)
-        output_path = os.path.join(folder_name, "sim" + file)
+        output_path = os.path.join(folder_name, "emb_" + file)
         
         logging.info(f"Processing file: {file}")
         try:
-            all_results_df = pd.read_json(input_path).dropna()
-            logging.info(f"Loaded {len(all_results_df)} rows from {file}")
+            df = pd.read_json(input_path, lines=True).dropna()
+            logging.info(f"Loaded {len(df)} rows from {file}")
             
-            all_results_df = apply_match_batch(all_results_df)
-            logging.info(f"Computed similarities for {file}")
+            df = process_file(df, num_processes)
+            logging.info(f"Computed embeddings for {file}")
             
-            all_results_df.to_json(output_path, orient='records', lines=True)
+            df.to_json(output_path, orient='records', lines=True)
             logging.info(f"Saved results to {output_path}")
-            torch.cuda.empty_cache()
             
         except Exception as e:
             logging.error(f"Failed to process {file}: {str(e)}")
@@ -111,5 +94,5 @@ def process_files(folder_name):
     logging.info("Script completed")
 
 if __name__ == "__main__":
-    folder_name = 'results/task_match_2803_1753'
-    process_files(folder_name)
+    folder_name = 'results/test'
+    process_files(folder_name, num_processes=8)
