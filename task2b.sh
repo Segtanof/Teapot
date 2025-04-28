@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=6-750
+#SBATCH --job-name=2-400p
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=2     
