@@ -40,6 +40,8 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55']
 
+occupations = occupations.iloc[:100]
+
 # Sample 5% of occupations per industry
 # sampled_occupation = occupations.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1)
 
@@ -132,18 +134,18 @@ def main():
     # Model configurations
     model_configs = [
         # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-        #  "num_predict": 512, "num_ctx": 8192},
+        #  "num_predict": 1024, "num_ctx": 8192},
         # {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-        #  "num_predict": 512, "num_ctx": 8192},
-        # {"model": "llama3.3", "temperature": 1, "base_url": "http://127.0.0.1:11434", 
-        #  "num_predict": 512, "num_ctx": 16384},
+        #  "num_predict": 1024, "num_ctx": 8192},
+        # {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+        #  "num_predict": 1024, "num_ctx": 8192},
         {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-         "num_predict": 512, "num_ctx": 8192}
+         "num_predict": 1024, "num_ctx": 8192}
     ]
     
     prompts = {
         "no_prompt": None,
-        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
+        # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
 

@@ -1,23 +1,21 @@
 #!/bin/bash
-#SBATCH --job-name=fla8
+#SBATCH --job-name=-100
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=8     
 #SBATCH --gres=gpu:1           
 #SBATCH --mem=32G              
-#SBATCH --time=12:00:00        
+#SBATCH --time=02:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=godfreysiust@gmail.com
 
-# Load ollama module
 module load cs/ollama
-module load devel/cuda/11.8
 
-# Initialize Conda
 source /opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/etc/profile.d/conda.sh
 
-# Activate the test environment
-conda activate test
+conda activate mythesis
 
 
 
