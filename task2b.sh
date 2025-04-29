@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=4-500
+#SBATCH --job-name=750-
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=2     
@@ -41,7 +41,7 @@ free -h
 NVIDIA_PID=$!
 
 # Run Python script
-timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized2.py --port $PORT
+timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/teapot/2_optimized2.py --port $PORT
 # Clean up
 kill $NVIDIA_PID
 kill $OLLAMA_PID
