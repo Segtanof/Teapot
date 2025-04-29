@@ -1,0 +1,17 @@
+Conda environment: test
+Python version: Python 3.11.11
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n871
+Job ID: 98065
+Cluster: uc3
+User/Group: ma_ssiu/ma_ma
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:13
+CPU Efficiency: 1.56% of 00:13:52 core-walltime
+Job Wall-clock time: 00:01:44
+Memory Utilized: 412.68 MB
+Memory Efficiency: 2.52% of 16.00 GB (16.00 GB/node)
