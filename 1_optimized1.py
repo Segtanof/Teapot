@@ -14,11 +14,11 @@ import os
 # SLURM environment setup
 # os.environ["OMP_NUM_THREADS"] = "4"  # Half of 8 cores for threading within processes
 # os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Single GPU
-folder_name = f'results/ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
+folder_name = f'results/test1ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
 os.makedirs(folder_name, exist_ok=True)
 print("folder created")
 
-logging.basicConfig(level=logging.WARNING , format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.INFO , format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load and preprocess occupation data
 occupations = (
@@ -38,9 +38,9 @@ occupations = occupations.astype({"code": str, "title": str, "description": str}
 occupations["ind"] = occupations["code"].str[:2]
 
 # discard rows with ind = 55
-occupations = occupations[occupations['ind'] != '55']
+occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-occupations = occupations.iloc[200:300]
+occupations = occupations.iloc[360:480]
 
 first = occupations.index[0]
 last = occupations.index[-1]
@@ -62,8 +62,16 @@ with open("datasets/60qs.json") as f:
     rqlist = list(df["question"])
     qlist = rqlist
   
+def clean_text(text):
+    if isinstance(text, str):
+        # Replace invalid UTF-8 characters with a replacement character or empty string
+        return text.encode('utf-8', errors='replace').decode('utf-8')
+    elif isinstance(text, list):
+        # Handle lists (e.g., 'reason' column)
+        return [clean_text(item) if isinstance(item, str) else item for item in text]
+    return text
 
-def get_rating(title, model, description, system_prompt=None, batch_size=20):
+def get_rating(title, model, description, system_prompt=None, batch_size=60):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". This occupation "+ description +" Your options for the ratings are the following: 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -83,7 +91,7 @@ def get_rating(title, model, description, system_prompt=None, batch_size=20):
             try:
                 with torch.cuda.device(0):
                     logging.debug(f"Sending batch {i} to LLM: {prompts}")
-                    responses = llm.batch(prompts, config={"num_threads": 8})
+                    responses = llm.batch(prompts, config={"num_threads": 2})
                 
                 elapsed = time.time() - start_time
                 logging.info(f"Batch {i} response received after {elapsed:.2f} seconds")
@@ -118,23 +126,24 @@ def get_rating(title, model, description, system_prompt=None, batch_size=20):
     return "".join(ratings), reasons
 
 
-def process_title(args):
-    """Process a single title"""
-    title, model_config, description, prompt = args
+def process_chunk(chunk_args):
+    model_config, prompt, titles, descriptions = chunk_args
     model = ChatOllama(**model_config)
-    ratings, reasons = get_rating(title, model, description, prompt)
-    return title, ratings, reasons
-
+    results = []
+    for title, desc in zip(titles, descriptions):
+        ratings, reasons = get_rating(title, model, desc, prompt)
+        if ratings:  # Only append if successful
+            results.append((title, ratings, reasons))
+    return results
 def initializer():
     """Initialize each process"""
     logging.basicConfig(level=logging.INFO)
 
 def main():
-    # Parse arguments from SLURM
     parser = argparse.ArgumentParser()
-    parser.add_argument("--port", type=int, default=11434)  # Dynamic port
+    parser.add_argument("--port", type=int, default=11434)
     args = parser.parse_args()
-    # Model configurations
+    
     model_configs = [
         # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
         #  "num_predict": 1024, "num_ctx": 8192},
@@ -147,22 +156,19 @@ def main():
     ]
     
     prompts = {
-        "no_prompt": None,
-        # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
+        # "no_prompt": None,
+        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
-    
-
     
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 8  # Match SLURM cpus-per-task
+    num_processes = 4
     
     for model_config in model_configs:
         model_name = model_config["model"]
         logging.info(f"Processing model: {model_name}")
         
-        # Warm-up
         warmup_model = ChatOllama(**model_config)
         warmup_model.invoke("Warm-up prompt")
         
@@ -175,30 +181,44 @@ def main():
             all_results_df["rating"] = pd.Series([None] * len(all_results_df))
             all_results_df["reason"] = [None] * len(all_results_df)
             all_results_df = all_results_df.astype({"rating": str})
-
             
-            for i in range(10):  # 10 rounds
+            for i in range(10):  # Reduced iterations
                 start_time = datetime.now()
                 
-                args = [(row['title'], model_config, row['description'], prompt) for _, row in occupations[['title', 'description']].iterrows()]
-
+                chunk_size = len(occupations) // num_processes
+                chunks = [
+                    (
+                        model_config,
+                        prompt,
+                        occupations['title'][j:j+chunk_size].tolist(),
+                        occupations['description'][j:j+chunk_size].tolist()
+                    )
+                    for j in range(0, len(occupations), chunk_size)
+                ]
+                
                 with Pool(processes=num_processes, initializer=initializer) as pool:
                     results = list(tqdm(
-                        pool.imap_unordered(process_title, args),
-                        total=len(occupations),
+                        pool.imap_unordered(process_chunk, chunks),
+                        total=len(chunks),
                         desc=f"{model_name}-{name}-{i}"
                     ))
                 
+                results = [item for sublist in results for item in sublist]
+                
                 temp_df = occupations.copy()
                 for title, rating, reason in results:
-                    temp_df.loc[temp_df["title"] == title, "rating"] = pd.Series([rating],dtype= "string").values
+                    temp_df.loc[temp_df["title"] == title, "rating"] = pd.Series([rating], dtype="string").values
                     temp_df.loc[temp_df["title"] == title, "reason"] = pd.Series([reason]).values
                 temp_df["iteration"] = i
                 all_results_df = pd.concat([all_results_df, temp_df], ignore_index=True)
                 
                 logging.info(f"Completed {model_name}-{name}-{i}, duration: {datetime.now() - start_time}")
             
-            all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records")
+            # Clean text columns before saving
+            for col in ['title', 'description', 'reason']:
+                all_results_df[col] = all_results_df[col].apply(clean_text)
+
+            all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records", lines=True)
 
     logging.info("Script completed")
 

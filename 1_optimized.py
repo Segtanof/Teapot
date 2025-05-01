@@ -18,7 +18,7 @@ folder_name = f'results/ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
 os.makedirs(folder_name, exist_ok=True)
 print("folder created")
 
-logging.basicConfig(level=logging.WARNING , format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.INFO , format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load and preprocess occupation data
 occupations = (
@@ -38,7 +38,7 @@ occupations = occupations.astype({"code": str, "title": str, "description": str}
 occupations["ind"] = occupations["code"].str[:2]
 
 # discard rows with ind = 55
-occupations = occupations[occupations['ind'] != '55']
+occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
 occupations = occupations.iloc[600:720]
 
@@ -63,7 +63,7 @@ with open("datasets/60qs.json") as f:
     qlist = rqlist
   
 
-def get_rating(title, model, description, system_prompt=None, batch_size=20):
+def get_rating(title, model, description, system_prompt=None, batch_size=60):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". This occupation "+ description +" Your options for the ratings are the following: 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -83,7 +83,7 @@ def get_rating(title, model, description, system_prompt=None, batch_size=20):
             try:
                 with torch.cuda.device(0):
                     logging.debug(f"Sending batch {i} to LLM: {prompts}")
-                    responses = llm.batch(prompts, config={"num_threads": 8})
+                    responses = llm.batch(prompts, config={"num_threads": 2})
                 
                 elapsed = time.time() - start_time
                 logging.info(f"Batch {i} response received after {elapsed:.2f} seconds")
@@ -147,8 +147,8 @@ def main():
     ]
     
     prompts = {
-        "no_prompt": None,
-        # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
+        # "no_prompt": None,
+        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
 
@@ -156,7 +156,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 8  # Match SLURM cpus-per-task
+    num_processes = 4  # Match SLURM cpus-per-task
     
     for model_config in model_configs:
         model_name = model_config["model"]

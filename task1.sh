@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=6-720
+#SBATCH --job-name=-6-720
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
-#SBATCH --cpus-per-task=8     
+#SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1           
 #SBATCH --mem=4G              
 #SBATCH --time=03:00:00        
@@ -22,7 +22,7 @@ PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 # Set Ollama environment variable to keep model loaded
 export OLLAMA_DEBUG=true
 export OLLAMA_KEEP_ALIVE="12h"
-export OLLAMA_NUM_PARALLEL=8    # Max parallelism
+export OLLAMA_NUM_PARALLEL=4    # Max parallelism
 export OLLAMA_MAX_QUEUE=512
 export OLLAMA_CTX_SIZE=8192
 
@@ -49,7 +49,7 @@ monitor_gpu &  # NEW: Start GPU monitoring in background
 GPU_MONITOR_PID=$!  # NEW: Store PID for cleanup
 
 
-python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT >>
+python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT
 PYTHON_EXIT=$?
 
 # Clean up
