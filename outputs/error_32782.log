@@ -1,3 +1,0 @@
-2025-04-21 13:10:59,365 - Script started
-2025-04-21 13:10:59,367 - Processing model: llama3.3
-slurmstepd: error: *** JOB 32782 ON uc2n906 CANCELLED AT 2025-04-21T13:16:29 ***

@@ -1,0 +1,6 @@
+results/emb_mistral_benchmark_all.json
+results/emb_mistral_prompt_all_agg.json
+results/emb_mistral_prompt_all_anal.json
+results/emb_mistral_prompt_all.json
+outputs/
+outputs/*.log

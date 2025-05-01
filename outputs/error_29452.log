@@ -1,4 +1,0 @@
-2025-04-20 02:15:06,002 - Script started
-2025-04-20 02:15:06,004 - Processing model: mistral
-2025-04-20 02:32:40,198 - HTTP Request: POST http://127.0.0.1:11886/api/chat "HTTP/1.1 200 OK"
-slurmstepd: error: *** JOB 29452 ON uc3n083 CANCELLED AT 2025-04-20T02:34:30 DUE TO TIME LIMIT ***

@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --job-name=embedding_test
+#SBATCH --job-name=embedding_test1
 #SBATCH --nodes=1                # Use 1 node
 #SBATCH --ntasks=1               # Single task
 #SBATCH --cpus-per-task=8        # 8 CPUs for parallelism
 #SBATCH --mem=32G                # 32 GB RAM
-#SBATCH --time=00:30:00          # 30 minutes, adjustable based on workload
+#SBATCH --time=00:50:00          # 30 minutes, adjustable based on workload
 #SBATCH --output=outputs/output_%j.log  # Job-specific output
 #SBATCH --error=outputs/error_%j.log    # Job-specific error
 #SBATCH --mail-type=ALL

@@ -1,1207 +1,0 @@
-2025-04-20 01:38:49,951 - Script started
-2025-04-20 01:38:49,956 - Processing model: mistral
-2025-04-20 01:38:52,008 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-mistral-no_prompt-0:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:38:58,802 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:38:58,894 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:38:58,898 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:38:58,901 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:01,914 - Single inference for Animal Control Workers, duration: 0:00:03.171514
-mistral-no_prompt-0:   3%|▎         | 1/29 [00:03<01:29,  3.19s/it]2025-04-20 01:39:02,007 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:03,080 - Single inference for Anesthesiologists, duration: 0:00:04.358161
-mistral-no_prompt-0:   7%|▋         | 2/29 [00:04<00:54,  2.00s/it]2025-04-20 01:39:03,186 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:03,755 - Single inference for Animal Caretakers, duration: 0:00:05.023983
-mistral-no_prompt-0:  10%|█         | 3/29 [00:05<00:36,  1.40s/it]2025-04-20 01:39:03,851 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:04,114 - Single inference for Animal Breeders, duration: 0:00:05.379851
-mistral-no_prompt-0:  14%|█▍        | 4/29 [00:05<00:24,  1.01it/s]2025-04-20 01:39:04,213 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:05,083 - Single inference for Animal Scientists, duration: 0:00:03.154368
-mistral-no_prompt-0:  17%|█▋        | 5/29 [00:06<00:23,  1.02it/s]2025-04-20 01:39:05,180 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:07,269 - Single inference for Animal Trainers, duration: 0:00:04.175692
-mistral-no_prompt-0:  21%|██        | 6/29 [00:08<00:31,  1.39s/it]2025-04-20 01:39:07,368 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:10,209 - Single inference for Anthropologists and Archeologists, duration: 0:00:06.440014
-mistral-no_prompt-0:  24%|██▍       | 7/29 [00:11<00:41,  1.90s/it]2025-04-20 01:39:10,295 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:12,003 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.875782
-mistral-no_prompt-0:  28%|██▊       | 8/29 [00:13<00:39,  1.86s/it]2025-04-20 01:39:12,102 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:12,887 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:07.781674
-mistral-no_prompt-0:  31%|███       | 9/29 [00:14<00:31,  1.56s/it]2025-04-20 01:39:12,974 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:13,306 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.023282
-mistral-no_prompt-0:  34%|███▍      | 10/29 [00:14<00:22,  1.21s/it]2025-04-20 01:39:13,411 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:16,547 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.324821
-mistral-no_prompt-0:  38%|███▊      | 11/29 [00:17<00:32,  1.83s/it]2025-04-20 01:39:16,636 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:19,171 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:05.842433
-mistral-no_prompt-0:  41%|████▏     | 12/29 [00:20<00:35,  2.07s/it]2025-04-20 01:39:19,270 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:19,656 - Single inference for Architectural and Engineering Managers, duration: 0:00:06.755340
-mistral-no_prompt-0:  45%|████▍     | 13/29 [00:20<00:25,  1.59s/it]2025-04-20 01:39:19,757 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:20,719 - Single inference for Architectural and Civil Drafters, duration: 0:00:08.702346
-mistral-no_prompt-0:  48%|████▊     | 14/29 [00:21<00:21,  1.43s/it]2025-04-20 01:39:20,815 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:21,072 - Single inference for Archivists, duration: 0:00:04.510804
-mistral-no_prompt-0:  52%|█████▏    | 15/29 [00:22<00:15,  1.11s/it]2025-04-20 01:39:21,171 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:25,563 - Single inference for Art Directors, duration: 0:00:05.884710
-mistral-no_prompt-0:  55%|█████▌    | 16/29 [00:26<00:27,  2.13s/it]2025-04-20 01:39:25,656 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:26,075 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.890485
-mistral-no_prompt-0:  59%|█████▊    | 17/29 [00:27<00:19,  1.64s/it]2025-04-20 01:39:26,156 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:27,802 - Single inference for Art Therapists, duration: 0:00:07.068927
-mistral-no_prompt-0:  62%|██████▏   | 18/29 [00:29<00:18,  1.67s/it]2025-04-20 01:39:27,900 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:28,920 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.831157
-mistral-no_prompt-0:  66%|██████▌   | 19/29 [00:30<00:15,  1.50s/it]2025-04-20 01:39:29,031 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:29,842 - Single inference for Astronomers, duration: 0:00:04.265113
-mistral-no_prompt-0:  69%|██████▉   | 20/29 [00:31<00:11,  1.33s/it]2025-04-20 01:39:29,935 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:30,919 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.833799
-mistral-no_prompt-0:  72%|███████▏  | 21/29 [00:32<00:10,  1.25s/it]2025-04-20 01:39:31,035 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:34,863 - Single inference for Athletic Trainers, duration: 0:00:07.037738
-mistral-no_prompt-0:  76%|███████▌  | 22/29 [00:36<00:14,  2.06s/it]2025-04-20 01:39:34,964 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:37,067 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:07.211861
-mistral-no_prompt-0:  79%|███████▉  | 23/29 [00:38<00:12,  2.10s/it]2025-04-20 01:39:37,175 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:37,786 - Single inference for Audio and Video Technicians, duration: 0:00:06.851281
-mistral-no_prompt-0:  83%|████████▎ | 24/29 [00:39<00:08,  1.69s/it]2025-04-20 01:39:37,894 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:38,781 - Single inference for Atmospheric and Space Scientists, duration: 0:00:09.847585
-mistral-no_prompt-0:  86%|████████▌ | 25/29 [00:40<00:05,  1.48s/it]2025-04-20 01:39:38,886 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:40,754 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.664316
-mistral-no_prompt-0:  90%|████████▉ | 26/29 [00:42<00:04,  1.63s/it]2025-04-20 01:39:42,091 - Single inference for Audiologists, duration: 0:00:07.214606
-mistral-no_prompt-0:  93%|█████████▎| 27/29 [00:43<00:03,  1.54s/it]2025-04-20 01:39:43,077 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.273343
-mistral-no_prompt-0:  97%|█████████▋| 28/29 [00:44<00:01,  1.37s/it]2025-04-20 01:39:43,440 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.631228
-mistral-no_prompt-0: 100%|██████████| 29/29 [00:44<00:00,  1.07s/it]mistral-no_prompt-0: 100%|██████████| 29/29 [00:44<00:00,  1.54s/it]
-2025-04-20 01:39:43,457 - Multiprocessing for mistral-no_prompt-0, duration: 0:00:44.779497
-mistral-no_prompt-1:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:39:43,606 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:43,691 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:43,695 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:43,698 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:47,817 - Single inference for Animal Control Workers, duration: 0:00:04.305205
-mistral-no_prompt-1:   3%|▎         | 1/29 [00:04<02:01,  4.33s/it]2025-04-20 01:39:47,900 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:48,656 - Single inference for Animal Breeders, duration: 0:00:05.144611
-mistral-no_prompt-1:   7%|▋         | 2/29 [00:05<01:01,  2.28s/it]2025-04-20 01:39:48,764 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:49,512 - Single inference for Animal Caretakers, duration: 0:00:06.000679
-mistral-no_prompt-1:  10%|█         | 3/29 [00:06<00:42,  1.63s/it]2025-04-20 01:39:49,610 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:50,433 - Single inference for Animal Scientists, duration: 0:00:02.602359
-mistral-no_prompt-1:  14%|█▍        | 4/29 [00:06<00:33,  1.35s/it]2025-04-20 01:39:50,534 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:50,592 - Single inference for Anesthesiologists, duration: 0:00:07.080232
-mistral-no_prompt-1:  17%|█▋        | 5/29 [00:07<00:22,  1.09it/s]2025-04-20 01:39:50,694 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:52,660 - Single inference for Animal Trainers, duration: 0:00:03.980326
-mistral-no_prompt-1:  21%|██        | 6/29 [00:09<00:30,  1.31s/it]2025-04-20 01:39:52,750 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:57,418 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:06.803106
-mistral-no_prompt-1:  24%|██▍       | 7/29 [00:13<00:53,  2.44s/it]2025-04-20 01:39:57,516 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:58,480 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.953918
-mistral-no_prompt-1:  28%|██▊       | 8/29 [00:14<00:41,  2.00s/it]2025-04-20 01:39:58,527 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:08.080743
-2025-04-20 01:39:58,588 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:58,642 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:39:58,985 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.312094
-mistral-no_prompt-1:  34%|███▍      | 10/29 [00:15<00:22,  1.17s/it]2025-04-20 01:39:59,091 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:03,814 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.272722
-mistral-no_prompt-1:  38%|███▊      | 11/29 [00:20<00:37,  2.10s/it]2025-04-20 01:40:03,924 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:05,562 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:08.130053
-mistral-no_prompt-1:  41%|████▏     | 12/29 [00:22<00:34,  2.00s/it]2025-04-20 01:40:05,668 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.165054
-mistral-no_prompt-1:  45%|████▍     | 13/29 [00:22<00:23,  1.48s/it]2025-04-20 01:40:05,669 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:05,766 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:06,177 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:07.169065
-mistral-no_prompt-1:  48%|████▊     | 14/29 [00:22<00:18,  1.21s/it]2025-04-20 01:40:06,262 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:08,382 - Single inference for Archivists, duration: 0:00:04.545069
-mistral-no_prompt-1:  52%|█████▏    | 15/29 [00:24<00:20,  1.49s/it]2025-04-20 01:40:08,487 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:09,644 - Single inference for Art Directors, duration: 0:00:03.962832
-mistral-no_prompt-1:  55%|█████▌    | 16/29 [00:26<00:18,  1.43s/it]2025-04-20 01:40:09,729 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:12,935 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:07.359868
-mistral-no_prompt-1:  59%|█████▊    | 17/29 [00:29<00:23,  1.97s/it]2025-04-20 01:40:13,020 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:13,498 - Single inference for Art Therapists, duration: 0:00:07.307748
-mistral-no_prompt-1:  62%|██████▏   | 18/29 [00:30<00:17,  1.56s/it]2025-04-20 01:40:13,596 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:14,466 - Single inference for Astronomers, duration: 0:00:04.807789
-mistral-no_prompt-1:  66%|██████▌   | 19/29 [00:30<00:13,  1.38s/it]2025-04-20 01:40:14,562 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:15,661 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.712142
-mistral-no_prompt-1:  69%|██████▉   | 20/29 [00:32<00:11,  1.33s/it]2025-04-20 01:40:15,771 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:16,035 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:07.630917
-mistral-no_prompt-1:  72%|███████▏  | 21/29 [00:32<00:08,  1.04s/it]2025-04-20 01:40:16,135 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:21,120 - Single inference for Athletic Trainers, duration: 0:00:07.598455
-mistral-no_prompt-1:  76%|███████▌  | 22/29 [00:37<00:15,  2.25s/it]2025-04-20 01:40:21,232 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:22,156 - Single inference for Atmospheric and Space Scientists, duration: 0:00:07.676902
-mistral-no_prompt-1:  79%|███████▉  | 23/29 [00:38<00:11,  1.89s/it]2025-04-20 01:40:22,249 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:22,932 - Single inference for Audio and Video Technicians, duration: 0:00:06.882805
-mistral-no_prompt-1:  83%|████████▎ | 24/29 [00:39<00:07,  1.55s/it]2025-04-20 01:40:23,019 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:24,639 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:08.960764
-mistral-no_prompt-1:  86%|████████▌ | 25/29 [00:41<00:06,  1.60s/it]2025-04-20 01:40:24,743 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:25,597 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.426315
-mistral-no_prompt-1:  90%|████████▉ | 26/29 [00:42<00:04,  1.41s/it]2025-04-20 01:40:27,869 - Single inference for Audiologists, duration: 0:00:06.726872
-mistral-no_prompt-1:  93%|█████████▎| 27/29 [00:44<00:03,  1.67s/it]2025-04-20 01:40:27,919 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.973368
-2025-04-20 01:40:28,600 - Single inference for Automotive Engineering Technicians, duration: 0:00:03.947540
-mistral-no_prompt-1: 100%|██████████| 29/29 [00:45<00:00,  1.07s/it]mistral-no_prompt-1: 100%|██████████| 29/29 [00:45<00:00,  1.56s/it]
-2025-04-20 01:40:28,618 - Multiprocessing for mistral-no_prompt-1, duration: 0:00:45.152451
-mistral-no_prompt-2:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:40:28,757 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:28,845 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:28,848 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:28,851 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:32,936 - Single inference for Anesthesiologists, duration: 0:00:04.262161
-mistral-no_prompt-2:   3%|▎         | 1/29 [00:04<02:00,  4.29s/it]2025-04-20 01:40:33,024 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:33,197 - Single inference for Animal Breeders, duration: 0:00:04.522586
-mistral-no_prompt-2:   7%|▋         | 2/29 [00:04<00:51,  1.92s/it]2025-04-20 01:40:33,305 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:33,834 - Single inference for Animal Control Workers, duration: 0:00:05.159807
-mistral-no_prompt-2:  10%|█         | 3/29 [00:05<00:34,  1.33s/it]2025-04-20 01:40:33,941 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:35,416 - Single inference for Animal Caretakers, duration: 0:00:06.742202
-mistral-no_prompt-2:  14%|█▍        | 4/29 [00:06<00:35,  1.43s/it]2025-04-20 01:40:35,526 - Single inference for Animal Scientists, duration: 0:00:02.576281
-mistral-no_prompt-2:  17%|█▋        | 5/29 [00:06<00:22,  1.05it/s]2025-04-20 01:40:35,532 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:35,635 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:37,948 - Single inference for Animal Trainers, duration: 0:00:04.728699
-mistral-no_prompt-2:  21%|██        | 6/29 [00:09<00:33,  1.45s/it]2025-04-20 01:40:38,061 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:42,763 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.323932
-mistral-no_prompt-2:  24%|██▍       | 7/29 [00:14<00:56,  2.55s/it]2025-04-20 01:40:42,851 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:43,160 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:07.610725
-mistral-no_prompt-2:  28%|██▊       | 8/29 [00:14<00:39,  1.87s/it]2025-04-20 01:40:43,257 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:44,003 - Single inference for Anthropologists and Archeologists, duration: 0:00:10.155952
-2025-04-20 01:40:44,004 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.032707
-mistral-no_prompt-2:  31%|███       | 9/29 [00:15<00:30,  1.55s/it]2025-04-20 01:40:44,122 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:44,126 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:48,867 - Single inference for Architectural and Engineering Managers, duration: 0:00:04.849065
-mistral-no_prompt-2:  38%|███▊      | 11/29 [00:20<00:35,  1.96s/it]2025-04-20 01:40:48,956 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:49,206 - Single inference for Architectural and Civil Drafters, duration: 0:00:06.032537
-mistral-no_prompt-2:  41%|████▏     | 12/29 [00:20<00:26,  1.55s/it]2025-04-20 01:40:49,306 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:49,336 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:05.310173
-mistral-no_prompt-2:  45%|████▍     | 13/29 [00:20<00:18,  1.18s/it]2025-04-20 01:40:49,435 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:51,359 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:08.582406
-mistral-no_prompt-2:  48%|████▊     | 14/29 [00:22<00:21,  1.41s/it]2025-04-20 01:40:51,459 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:52,889 - Single inference for Archivists, duration: 0:00:04.008911
-mistral-no_prompt-2:  52%|█████▏    | 15/29 [00:24<00:20,  1.44s/it]2025-04-20 01:40:52,995 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:54,835 - Single inference for Art Directors, duration: 0:00:05.484962
-mistral-no_prompt-2:  55%|█████▌    | 16/29 [00:26<00:20,  1.59s/it]2025-04-20 01:40:54,938 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:56,017 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.797345
-mistral-no_prompt-2:  59%|█████▊    | 17/29 [00:27<00:17,  1.47s/it]2025-04-20 01:40:56,109 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:58,539 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.500001
-mistral-no_prompt-2:  62%|██████▏   | 18/29 [00:29<00:19,  1.78s/it]2025-04-20 01:40:58,636 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:59,220 - Single inference for Astronomers, duration: 0:00:04.362216
-mistral-no_prompt-2:  66%|██████▌   | 19/29 [00:30<00:14,  1.45s/it]2025-04-20 01:40:59,323 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:40:59,784 - Single inference for Art Therapists, duration: 0:00:08.402399
-mistral-no_prompt-2:  69%|██████▉   | 20/29 [00:31<00:10,  1.19s/it]2025-04-20 01:40:59,894 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:03,157 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:10.245159
-mistral-no_prompt-2:  72%|███████▏  | 21/29 [00:34<00:14,  1.84s/it]2025-04-20 01:41:03,263 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:07,390 - Single inference for Athletic Trainers, duration: 0:00:08.838095
-mistral-no_prompt-2:  76%|███████▌  | 22/29 [00:38<00:17,  2.55s/it]2025-04-20 01:41:07,493 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:09,546 - Single inference for Atmospheric and Space Scientists, duration: 0:00:10.312166
-mistral-no_prompt-2:  79%|███████▉  | 23/29 [00:40<00:14,  2.43s/it]2025-04-20 01:41:09,642 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:09,745 - Single inference for Audio and Video Technicians, duration: 0:00:06.574869
-mistral-no_prompt-2:  83%|████████▎ | 24/29 [00:41<00:08,  1.77s/it]2025-04-20 01:41:09,835 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:10,144 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:10.337251
-mistral-no_prompt-2:  86%|████████▌ | 25/29 [00:41<00:05,  1.36s/it]2025-04-20 01:41:10,237 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:12,643 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.084686
-mistral-no_prompt-2:  90%|████████▉ | 26/29 [00:44<00:05,  1.70s/it]2025-04-20 01:41:14,787 - Single inference for Audiologists, duration: 0:00:07.374751
-mistral-no_prompt-2:  93%|█████████▎| 27/29 [00:46<00:03,  1.83s/it]2025-04-20 01:41:15,252 - Single inference for Automotive Engineering Technicians, duration: 0:00:05.094705
-mistral-no_prompt-2:  97%|█████████▋| 28/29 [00:46<00:01,  1.42s/it]2025-04-20 01:41:15,611 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.852044
-mistral-no_prompt-2: 100%|██████████| 29/29 [00:46<00:00,  1.10s/it]mistral-no_prompt-2: 100%|██████████| 29/29 [00:46<00:00,  1.62s/it]
-2025-04-20 01:41:15,628 - Multiprocessing for mistral-no_prompt-2, duration: 0:00:47.002808
-mistral-no_prompt-3:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:41:15,772 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:15,860 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:15,863 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:15,866 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:20,518 - Single inference for Animal Control Workers, duration: 0:00:04.834298
-mistral-no_prompt-3:   3%|▎         | 1/29 [00:04<02:16,  4.86s/it]2025-04-20 01:41:20,603 - Single inference for Animal Breeders, duration: 0:00:04.920114
-2025-04-20 01:41:20,607 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:20,717 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:21,039 - Single inference for Animal Caretakers, duration: 0:00:05.355694
-mistral-no_prompt-3:  10%|█         | 3/29 [00:05<00:37,  1.45s/it]2025-04-20 01:41:21,062 - Single inference for Anesthesiologists, duration: 0:00:05.378527
-2025-04-20 01:41:21,168 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:21,171 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:23,110 - Single inference for Animal Scientists, duration: 0:00:02.577290
-mistral-no_prompt-3:  17%|█▋        | 5/29 [00:07<00:29,  1.24s/it]2025-04-20 01:41:23,205 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:24,511 - Single inference for Animal Trainers, duration: 0:00:03.894253
-mistral-no_prompt-3:  21%|██        | 6/29 [00:08<00:29,  1.28s/it]2025-04-20 01:41:24,598 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:29,582 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:08.503282
-mistral-no_prompt-3:  24%|██▍       | 7/29 [00:13<00:51,  2.33s/it]2025-04-20 01:41:29,684 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:30,190 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:05.664622
-mistral-no_prompt-3:  28%|██▊       | 8/29 [00:14<00:38,  1.84s/it]2025-04-20 01:41:30,287 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:30,411 - Single inference for Anthropologists and Archeologists, duration: 0:00:09.349256
-mistral-no_prompt-3:  31%|███       | 9/29 [00:14<00:27,  1.38s/it]2025-04-20 01:41:30,500 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:32,898 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.774183
-mistral-no_prompt-3:  34%|███▍      | 10/29 [00:17<00:32,  1.70s/it]2025-04-20 01:41:33,005 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:35,349 - Single inference for Architectural and Engineering Managers, duration: 0:00:04.924884
-mistral-no_prompt-3:  38%|███▊      | 11/29 [00:19<00:34,  1.92s/it]2025-04-20 01:41:35,438 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:36,558 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.963760
-mistral-no_prompt-3:  41%|████▏     | 12/29 [00:20<00:29,  1.71s/it]2025-04-20 01:41:36,664 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:38,578 - Single inference for Architectural and Civil Drafters, duration: 0:00:08.374709
-mistral-no_prompt-3:  45%|████▍     | 13/29 [00:22<00:28,  1.80s/it]2025-04-20 01:41:38,683 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:39,666 - Single inference for Archivists, duration: 0:00:04.302411
-mistral-no_prompt-3:  48%|████▊     | 14/29 [00:24<00:23,  1.59s/it]2025-04-20 01:41:39,751 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:42,238 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:09.326348
-mistral-no_prompt-3:  52%|█████▏    | 15/29 [00:26<00:26,  1.88s/it]2025-04-20 01:41:42,347 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:42,800 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.228198
-mistral-no_prompt-3:  55%|█████▌    | 16/29 [00:27<00:19,  1.49s/it]2025-04-20 01:41:42,899 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:43,443 - Single inference for Art Directors, duration: 0:00:04.841970
-mistral-no_prompt-3:  59%|█████▊    | 17/29 [00:27<00:14,  1.23s/it]2025-04-20 01:41:43,537 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:45,920 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.454355
-mistral-no_prompt-3:  62%|██████▏   | 18/29 [00:30<00:17,  1.61s/it]2025-04-20 01:41:46,021 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:47,094 - Single inference for Astronomers, duration: 0:00:04.279777
-mistral-no_prompt-3:  66%|██████▌   | 19/29 [00:31<00:14,  1.48s/it]2025-04-20 01:41:47,203 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:48,058 - Single inference for Art Therapists, duration: 0:00:08.379007
-mistral-no_prompt-3:  69%|██████▉   | 20/29 [00:32<00:11,  1.32s/it]2025-04-20 01:41:48,162 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:49,159 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:06.897623
-mistral-no_prompt-3:  72%|███████▏  | 21/29 [00:33<00:10,  1.26s/it]2025-04-20 01:41:49,269 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:52,847 - Single inference for Athletic Trainers, duration: 0:00:06.904626
-mistral-no_prompt-3:  76%|███████▌  | 22/29 [00:37<00:13,  1.99s/it]2025-04-20 01:41:52,933 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:55,817 - Single inference for Audio and Video Technicians, duration: 0:00:06.635408
-mistral-no_prompt-3:  79%|███████▉  | 23/29 [00:40<00:13,  2.28s/it]2025-04-20 01:41:55,925 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:56,999 - Single inference for Atmospheric and Space Scientists, duration: 0:00:09.891935
-mistral-no_prompt-3:  83%|████████▎ | 24/29 [00:41<00:09,  1.95s/it]2025-04-20 01:41:57,105 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:59,054 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:10.981464
-mistral-no_prompt-3:  86%|████████▌ | 25/29 [00:43<00:07,  1.98s/it]2025-04-20 01:41:59,149 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:41:59,261 - Single inference for Audiologists, duration: 0:00:06.400676
-mistral-no_prompt-3:  90%|████████▉ | 26/29 [00:43<00:04,  1.45s/it]2025-04-20 01:41:59,355 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.524791
-2025-04-20 01:42:03,485 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.417816
-mistral-no_prompt-3:  97%|█████████▋| 28/29 [00:47<00:01,  1.76s/it]2025-04-20 01:42:03,538 - Single inference for Automotive Body and Related Repairers, duration: 0:00:06.516228
-mistral-no_prompt-3: 100%|██████████| 29/29 [00:47<00:00,  1.65s/it]
-2025-04-20 01:42:03,556 - Multiprocessing for mistral-no_prompt-3, duration: 0:00:47.920078
-mistral-no_prompt-4:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:42:03,705 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:03,795 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:03,798 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:03,801 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:07,494 - Single inference for Animal Control Workers, duration: 0:00:03.882040
-mistral-no_prompt-4:   3%|▎         | 1/29 [00:03<01:49,  3.91s/it]2025-04-20 01:42:07,578 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:07,796 - Single inference for Anesthesiologists, duration: 0:00:04.183939
-mistral-no_prompt-4:   7%|▋         | 2/29 [00:04<00:48,  1.79s/it]2025-04-20 01:42:07,903 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:09,081 - Single inference for Animal Caretakers, duration: 0:00:05.469757
-mistral-no_prompt-4:  10%|█         | 3/29 [00:05<00:40,  1.56s/it]2025-04-20 01:42:09,189 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:10,489 - Single inference for Animal Scientists, duration: 0:00:02.981018
-mistral-no_prompt-4:  14%|█▍        | 4/29 [00:06<00:37,  1.50s/it]2025-04-20 01:42:10,500 - Single inference for Animal Breeders, duration: 0:00:06.888055
-2025-04-20 01:42:10,594 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:10,597 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:11,897 - Single inference for Animal Trainers, duration: 0:00:04.088033
-mistral-no_prompt-4:  21%|██        | 6/29 [00:08<00:24,  1.08s/it]2025-04-20 01:42:11,999 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:17,660 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:05.739947
-mistral-no_prompt-4:  24%|██▍       | 7/29 [00:14<00:52,  2.36s/it]2025-04-20 01:42:17,757 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:18,357 - Single inference for Anthropologists and Archeologists, duration: 0:00:09.261976
-mistral-no_prompt-4:  28%|██▊       | 8/29 [00:14<00:39,  1.89s/it]2025-04-20 01:42:18,454 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:19,597 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:09.091947
-mistral-no_prompt-4:  31%|███       | 9/29 [00:16<00:34,  1.71s/it]2025-04-20 01:42:19,654 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.136357
-2025-04-20 01:42:19,684 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:19,750 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:24,611 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.000675
-mistral-no_prompt-4:  38%|███▊      | 11/29 [00:21<00:37,  2.07s/it]2025-04-20 01:42:24,710 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:25,290 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:05.622644
-mistral-no_prompt-4:  41%|████▏     | 12/29 [00:21<00:29,  1.73s/it]2025-04-20 01:42:25,391 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:25,700 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.329040
-mistral-no_prompt-4:  45%|████▍     | 13/29 [00:22<00:22,  1.39s/it]2025-04-20 01:42:25,801 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:26,369 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:08.695284
-mistral-no_prompt-4:  48%|████▊     | 14/29 [00:22<00:17,  1.19s/it]2025-04-20 01:42:26,455 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:28,018 - Single inference for Archivists, duration: 0:00:03.380347
-mistral-no_prompt-4:  52%|█████▏    | 15/29 [00:24<00:18,  1.32s/it]2025-04-20 01:42:28,125 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:31,359 - Single inference for Art Directors, duration: 0:00:05.637254
-mistral-no_prompt-4:  55%|█████▌    | 16/29 [00:27<00:24,  1.89s/it]2025-04-20 01:42:31,445 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:33,385 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:08.081055
-mistral-no_prompt-4:  59%|█████▊    | 17/29 [00:29<00:23,  1.93s/it]2025-04-20 01:42:33,477 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:34,743 - Single inference for Art Therapists, duration: 0:00:08.360896
-mistral-no_prompt-4:  62%|██████▏   | 18/29 [00:31<00:19,  1.77s/it]2025-04-20 01:42:34,842 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:35,964 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.565937
-mistral-no_prompt-4:  66%|██████▌   | 19/29 [00:32<00:16,  1.61s/it]2025-04-20 01:42:36,073 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:36,482 - Single inference for Astronomers, duration: 0:00:05.109858
-mistral-no_prompt-4:  69%|██████▉   | 20/29 [00:32<00:11,  1.28s/it]2025-04-20 01:42:36,587 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:37,397 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.356253
-mistral-no_prompt-4:  72%|███████▏  | 21/29 [00:33<00:09,  1.17s/it]2025-04-20 01:42:37,513 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:41,459 - Single inference for Athletic Trainers, duration: 0:00:06.701979
-mistral-no_prompt-4:  76%|███████▌  | 22/29 [00:37<00:14,  2.03s/it]2025-04-20 01:42:41,548 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:44,690 - Single inference for Audio and Video Technicians, duration: 0:00:07.270901
-mistral-no_prompt-4:  79%|███████▉  | 23/29 [00:41<00:14,  2.39s/it]2025-04-20 01:42:44,788 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:44,819 - Single inference for Atmospheric and Space Scientists, duration: 0:00:08.832131
-mistral-no_prompt-4:  83%|████████▎ | 24/29 [00:41<00:08,  1.72s/it]2025-04-20 01:42:44,910 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:45,644 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:09.138853
-mistral-no_prompt-4:  86%|████████▌ | 25/29 [00:42<00:05,  1.45s/it]2025-04-20 01:42:45,736 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:48,108 - Single inference for Audiologists, duration: 0:00:06.635458
-mistral-no_prompt-4:  90%|████████▉ | 26/29 [00:44<00:05,  1.75s/it]2025-04-20 01:42:48,678 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.973934
-mistral-no_prompt-4:  93%|█████████▎| 27/29 [00:45<00:02,  1.40s/it]2025-04-20 01:42:50,691 - Single inference for Automotive Engineering Technicians, duration: 0:00:05.034149
-mistral-no_prompt-4:  97%|█████████▋| 28/29 [00:47<00:01,  1.58s/it]2025-04-20 01:42:51,167 - Single inference for Automotive Body and Related Repairers, duration: 0:00:06.331970
-mistral-no_prompt-4: 100%|██████████| 29/29 [00:47<00:00,  1.25s/it]mistral-no_prompt-4: 100%|██████████| 29/29 [00:47<00:00,  1.64s/it]
-2025-04-20 01:42:51,184 - Multiprocessing for mistral-no_prompt-4, duration: 0:00:47.620809
-mistral-no_prompt-5:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:42:51,330 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:51,414 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:51,418 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:51,421 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:55,537 - Single inference for Animal Control Workers, duration: 0:00:04.296323
-mistral-no_prompt-5:   3%|▎         | 1/29 [00:04<02:01,  4.33s/it]2025-04-20 01:42:55,635 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:56,859 - Single inference for Anesthesiologists, duration: 0:00:05.618245
-mistral-no_prompt-5:   7%|▋         | 2/29 [00:05<01:09,  2.56s/it]2025-04-20 01:42:56,980 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:57,047 - Single inference for Animal Caretakers, duration: 0:00:05.806022
-mistral-no_prompt-5:  10%|█         | 3/29 [00:05<00:38,  1.48s/it]2025-04-20 01:42:57,158 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:57,383 - Single inference for Animal Breeders, duration: 0:00:06.141926
-mistral-no_prompt-5:  14%|█▍        | 4/29 [00:06<00:25,  1.03s/it]2025-04-20 01:42:57,471 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:42:58,671 - Single inference for Animal Scientists, duration: 0:00:03.119375
-mistral-no_prompt-5:  17%|█▋        | 5/29 [00:07<00:26,  1.12s/it]2025-04-20 01:42:58,756 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:02,254 - Single inference for Animal Trainers, duration: 0:00:05.371592
-mistral-no_prompt-5:  21%|██        | 6/29 [00:11<00:45,  1.96s/it]2025-04-20 01:43:02,354 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:04,022 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:06.625428
-mistral-no_prompt-5:  24%|██▍       | 7/29 [00:12<00:41,  1.90s/it]2025-04-20 01:43:04,129 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:08,225 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.541226
-mistral-no_prompt-5:  28%|██▊       | 8/29 [00:17<00:55,  2.63s/it]2025-04-20 01:43:08,238 - Single inference for Anthropologists and Archeologists, duration: 0:00:11.168211
-2025-04-20 01:43:08,356 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:08,360 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:08,924 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.647126
-mistral-no_prompt-5:  34%|███▍      | 10/29 [00:17<00:29,  1.54s/it]2025-04-20 01:43:09,021 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:12,673 - Single inference for Architectural and Engineering Managers, duration: 0:00:04.412277
-mistral-no_prompt-5:  38%|███▊      | 11/29 [00:21<00:37,  2.10s/it]2025-04-20 01:43:12,777 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:13,074 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:09.029313
-mistral-no_prompt-5:  41%|████▏     | 12/29 [00:21<00:28,  1.65s/it]2025-04-20 01:43:13,172 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:15,938 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.698656
-mistral-no_prompt-5:  45%|████▍     | 13/29 [00:24<00:31,  1.98s/it]2025-04-20 01:43:16,040 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:16,238 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:07.301180
-mistral-no_prompt-5:  48%|████▊     | 14/29 [00:25<00:22,  1.51s/it]2025-04-20 01:43:16,325 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:16,496 - Single inference for Archivists, duration: 0:00:03.808481
-mistral-no_prompt-5:  52%|█████▏    | 15/29 [00:25<00:16,  1.15s/it]2025-04-20 01:43:16,613 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:19,144 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.055807
-mistral-no_prompt-5:  55%|█████▌    | 16/29 [00:27<00:20,  1.59s/it]2025-04-20 01:43:19,240 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:19,967 - Single inference for Art Directors, duration: 0:00:04.006964
-mistral-no_prompt-5:  59%|█████▊    | 17/29 [00:28<00:16,  1.36s/it]2025-04-20 01:43:20,056 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:22,975 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.994188
-mistral-no_prompt-5:  62%|██████▏   | 18/29 [00:31<00:20,  1.85s/it]2025-04-20 01:43:23,060 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:24,026 - Single inference for Art Therapists, duration: 0:00:07.774257
-mistral-no_prompt-5:  66%|██████▌   | 19/29 [00:32<00:16,  1.61s/it]2025-04-20 01:43:24,129 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:25,590 - Single inference for Astronomers, duration: 0:00:06.432888
-mistral-no_prompt-5:  69%|██████▉   | 20/29 [00:34<00:14,  1.60s/it]2025-04-20 01:43:25,703 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:26,652 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:10.133340
-mistral-no_prompt-5:  72%|███████▏  | 21/29 [00:35<00:11,  1.44s/it]2025-04-20 01:43:26,756 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:30,704 - Single inference for Athletic Trainers, duration: 0:00:07.714387
-mistral-no_prompt-5:  76%|███████▌  | 22/29 [00:39<00:15,  2.22s/it]2025-04-20 01:43:30,805 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:32,233 - Single inference for Atmospheric and Space Scientists, duration: 0:00:08.193501
-mistral-no_prompt-5:  79%|███████▉  | 23/29 [00:41<00:12,  2.01s/it]2025-04-20 01:43:32,329 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:33,595 - Single inference for Audio and Video Technicians, duration: 0:00:06.929145
-mistral-no_prompt-5:  83%|████████▎ | 24/29 [00:42<00:09,  1.82s/it]2025-04-20 01:43:33,696 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:33,929 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:08.316583
-mistral-no_prompt-5:  86%|████████▌ | 25/29 [00:42<00:05,  1.37s/it]2025-04-20 01:43:34,034 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:35,300 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.053170
-mistral-no_prompt-5:  90%|████████▉ | 26/29 [00:44<00:04,  1.37s/it]2025-04-20 01:43:37,614 - Single inference for Audiologists, duration: 0:00:06.896890
-mistral-no_prompt-5:  93%|█████████▎| 27/29 [00:46<00:03,  1.65s/it]2025-04-20 01:43:38,298 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.345616
-mistral-no_prompt-5:  97%|█████████▋| 28/29 [00:47<00:01,  1.36s/it]2025-04-20 01:43:39,443 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.826112
-mistral-no_prompt-5: 100%|██████████| 29/29 [00:48<00:00,  1.30s/it]mistral-no_prompt-5: 100%|██████████| 29/29 [00:48<00:00,  1.66s/it]
-2025-04-20 01:43:39,462 - Multiprocessing for mistral-no_prompt-5, duration: 0:00:48.269729
-mistral-no_prompt-6:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:43:39,602 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:39,687 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:39,690 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:39,694 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:43,512 - Single inference for Animal Control Workers, duration: 0:00:03.995363
-mistral-no_prompt-6:   3%|▎         | 1/29 [00:04<01:52,  4.02s/it]2025-04-20 01:43:43,597 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:44,942 - Single inference for Anesthesiologists, duration: 0:00:05.425285
-mistral-no_prompt-6:   7%|▋         | 2/29 [00:05<01:07,  2.50s/it]2025-04-20 01:43:45,051 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:45,104 - Single inference for Animal Caretakers, duration: 0:00:05.587288
-mistral-no_prompt-6:  10%|█         | 3/29 [00:05<00:37,  1.43s/it]2025-04-20 01:43:45,213 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:46,111 - Single inference for Animal Scientists, duration: 0:00:02.585300
-mistral-no_prompt-6:  14%|█▍        | 4/29 [00:06<00:31,  1.26s/it]2025-04-20 01:43:46,208 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:46,454 - Single inference for Animal Breeders, duration: 0:00:06.936973
-mistral-no_prompt-6:  17%|█▋        | 5/29 [00:06<00:22,  1.07it/s]2025-04-20 01:43:46,539 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:49,350 - Single inference for Animal Trainers, duration: 0:00:04.394552
-mistral-no_prompt-6:  21%|██        | 6/29 [00:09<00:36,  1.60s/it]2025-04-20 01:43:49,440 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:53,348 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.223145
-mistral-no_prompt-6:  24%|██▍       | 7/29 [00:13<00:52,  2.38s/it]2025-04-20 01:43:53,438 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:54,619 - Single inference for Anthropologists and Archeologists, duration: 0:00:09.491641
-mistral-no_prompt-6:  28%|██▊       | 8/29 [00:15<00:42,  2.03s/it]2025-04-20 01:43:54,720 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:55,569 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.205698
-mistral-no_prompt-6:  31%|███       | 9/29 [00:16<00:33,  1.69s/it]2025-04-20 01:43:55,670 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:43:56,210 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.742298
-mistral-no_prompt-6:  34%|███▍      | 10/29 [00:16<00:25,  1.37s/it]2025-04-20 01:43:56,317 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:00,527 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.165054
-mistral-no_prompt-6:  38%|███▊      | 11/29 [00:21<00:40,  2.27s/it]2025-04-20 01:44:00,618 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:01,937 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.305106
-mistral-no_prompt-6:  41%|████▏     | 12/29 [00:22<00:34,  2.01s/it]2025-04-20 01:44:02,046 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:02,454 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.221348
-mistral-no_prompt-6:  45%|████▍     | 13/29 [00:22<00:24,  1.56s/it]2025-04-20 01:44:02,548 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:02,801 - Single inference for Architectural and Engineering Managers, duration: 0:00:07.209307
-mistral-no_prompt-6:  48%|████▊     | 14/29 [00:23<00:17,  1.19s/it]2025-04-20 01:44:02,889 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:04,331 - Single inference for Archivists, duration: 0:00:03.790676
-mistral-no_prompt-6:  52%|█████▏    | 15/29 [00:24<00:18,  1.29s/it]2025-04-20 01:44:04,436 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:06,926 - Single inference for Art Directors, duration: 0:00:04.458222
-mistral-no_prompt-6:  55%|█████▌    | 16/29 [00:27<00:21,  1.69s/it]2025-04-20 01:44:07,022 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:09,504 - Single inference for Art Therapists, duration: 0:00:06.689098
-mistral-no_prompt-6:  59%|█████▊    | 17/29 [00:30<00:23,  1.95s/it]2025-04-20 01:44:09,604 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:10,926 - Single inference for Astronomers, duration: 0:00:03.977707
-mistral-no_prompt-6:  62%|██████▏   | 18/29 [00:31<00:19,  1.79s/it]2025-04-20 01:44:11,021 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:11,083 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:09.131879
-mistral-no_prompt-6:  66%|██████▌   | 19/29 [00:31<00:13,  1.30s/it]2025-04-20 01:44:11,192 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:12,429 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.902614
-mistral-no_prompt-6:  69%|██████▉   | 20/29 [00:32<00:11,  1.32s/it]2025-04-20 01:44:12,535 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:13,528 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.184267
-mistral-no_prompt-6:  72%|███████▏  | 21/29 [00:34<00:10,  1.25s/it]2025-04-20 01:44:13,644 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:17,755 - Single inference for Athletic Trainers, duration: 0:00:06.814678
-mistral-no_prompt-6:  76%|███████▌  | 22/29 [00:38<00:15,  2.14s/it]2025-04-20 01:44:17,856 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:19,731 - Single inference for Audio and Video Technicians, duration: 0:00:06.180113
-mistral-no_prompt-6:  79%|███████▉  | 23/29 [00:40<00:12,  2.09s/it]2025-04-20 01:44:19,837 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:21,018 - Single inference for Atmospheric and Space Scientists, duration: 0:00:09.911955
-mistral-no_prompt-6:  83%|████████▎ | 24/29 [00:41<00:09,  1.85s/it]2025-04-20 01:44:21,106 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:22,499 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:10.055755
-mistral-no_prompt-6:  86%|████████▌ | 25/29 [00:43<00:06,  1.74s/it]2025-04-20 01:44:22,605 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:23,103 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.358768
-mistral-no_prompt-6:  90%|████████▉ | 26/29 [00:43<00:04,  1.40s/it]2025-04-20 01:44:24,274 - Single inference for Audiologists, duration: 0:00:06.497022
-mistral-no_prompt-6:  93%|█████████▎| 27/29 [00:44<00:02,  1.33s/it]2025-04-20 01:44:26,533 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.012123
-mistral-no_prompt-6:  97%|█████████▋| 28/29 [00:47<00:01,  1.61s/it]2025-04-20 01:44:26,671 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.639930
-mistral-no_prompt-6: 100%|██████████| 29/29 [00:47<00:00,  1.17s/it]mistral-no_prompt-6: 100%|██████████| 29/29 [00:47<00:00,  1.63s/it]
-2025-04-20 01:44:26,689 - Multiprocessing for mistral-no_prompt-6, duration: 0:00:47.219418
-mistral-no_prompt-7:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:44:26,836 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:26,922 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:26,926 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:26,929 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:31,576 - Single inference for Animal Control Workers, duration: 0:00:04.831103
-mistral-no_prompt-7:   3%|▎         | 1/29 [00:04<02:16,  4.86s/it]2025-04-20 01:44:31,678 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:31,762 - Single inference for Animal Breeders, duration: 0:00:05.017375
-mistral-no_prompt-7:   7%|▋         | 2/29 [00:05<00:56,  2.11s/it]2025-04-20 01:44:31,858 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:32,135 - Single inference for Animal Caretakers, duration: 0:00:05.390242
-mistral-no_prompt-7:  10%|█         | 3/29 [00:05<00:34,  1.32s/it]2025-04-20 01:44:32,241 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:32,930 - Single inference for Anesthesiologists, duration: 0:00:06.185562
-mistral-no_prompt-7:  14%|█▍        | 4/29 [00:06<00:27,  1.11s/it]2025-04-20 01:44:33,020 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:34,796 - Single inference for Animal Scientists, duration: 0:00:03.202545
-mistral-no_prompt-7:  17%|█▋        | 5/29 [00:08<00:33,  1.38s/it]2025-04-20 01:44:34,892 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:36,941 - Single inference for Animal Trainers, duration: 0:00:05.165542
-mistral-no_prompt-7:  21%|██        | 6/29 [00:10<00:37,  1.64s/it]2025-04-20 01:44:37,040 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:40,408 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.464656
-mistral-no_prompt-7:  24%|██▍       | 7/29 [00:13<00:49,  2.24s/it]2025-04-20 01:44:40,496 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:40,863 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.714328
-mistral-no_prompt-7:  28%|██▊       | 8/29 [00:14<00:35,  1.67s/it]2025-04-20 01:44:40,959 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:43,268 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.312588
-mistral-no_prompt-7:  31%|███       | 9/29 [00:16<00:38,  1.90s/it]2025-04-20 01:44:43,366 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:45,770 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:10.951421
-mistral-no_prompt-7:  34%|███▍      | 10/29 [00:19<00:39,  2.09s/it]2025-04-20 01:44:45,865 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:46,847 - Single inference for Architectural and Civil Drafters, duration: 0:00:05.970064
-mistral-no_prompt-7:  38%|███▊      | 11/29 [00:20<00:31,  1.78s/it]2025-04-20 01:44:46,949 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:47,995 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.573112
-mistral-no_prompt-7:  41%|████▏     | 12/29 [00:21<00:26,  1.59s/it]2025-04-20 01:44:48,095 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:48,308 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.026314
-mistral-no_prompt-7:  45%|████▍     | 13/29 [00:21<00:19,  1.20s/it]2025-04-20 01:44:48,395 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:50,561 - Single inference for Archivists, duration: 0:00:03.700249
-mistral-no_prompt-7:  48%|████▊     | 14/29 [00:23<00:22,  1.52s/it]2025-04-20 01:44:50,643 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:51,723 - Single inference for Art Directors, duration: 0:00:03.402079
-mistral-no_prompt-7:  52%|█████▏    | 15/29 [00:25<00:19,  1.41s/it]2025-04-20 01:44:51,827 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:53,219 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:07.435810
-mistral-no_prompt-7:  55%|█████▌    | 16/29 [00:26<00:18,  1.44s/it]2025-04-20 01:44:53,321 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:53,563 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:05.554798
-mistral-no_prompt-7:  59%|█████▊    | 17/29 [00:26<00:13,  1.11s/it]2025-04-20 01:44:53,655 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:56,377 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.800004
-mistral-no_prompt-7:  62%|██████▏   | 18/29 [00:29<00:17,  1.62s/it]2025-04-20 01:44:56,464 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:58,900 - Single inference for Art Therapists, duration: 0:00:08.326044
-mistral-no_prompt-7:  66%|██████▌   | 19/29 [00:32<00:18,  1.89s/it]2025-04-20 01:44:59,006 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:44:59,150 - Single inference for Astronomers, duration: 0:00:05.917395
-mistral-no_prompt-7:  69%|██████▉   | 20/29 [00:32<00:12,  1.40s/it]2025-04-20 01:44:59,250 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:00,103 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:08.357159
-mistral-no_prompt-7:  72%|███████▏  | 21/29 [00:33<00:10,  1.26s/it]2025-04-20 01:45:00,216 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:03,397 - Single inference for Athletic Trainers, duration: 0:00:07.006283
-mistral-no_prompt-7:  76%|███████▌  | 22/29 [00:36<00:13,  1.87s/it]2025-04-20 01:45:03,496 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:07,087 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:07.923413
-mistral-no_prompt-7:  79%|███████▉  | 23/29 [00:40<00:14,  2.42s/it]2025-04-20 01:45:07,192 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:07,548 - Single inference for Atmospheric and Space Scientists, duration: 0:00:08.625011
-mistral-no_prompt-7:  83%|████████▎ | 24/29 [00:40<00:09,  1.83s/it]2025-04-20 01:45:07,650 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:08,223 - Single inference for Audio and Video Technicians, duration: 0:00:08.098174
-mistral-no_prompt-7:  86%|████████▌ | 25/29 [00:41<00:05,  1.48s/it]2025-04-20 01:45:08,328 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:09,632 - Single inference for Audiologists, duration: 0:00:06.213077
-mistral-no_prompt-7:  90%|████████▉ | 26/29 [00:42<00:04,  1.46s/it]2025-04-20 01:45:10,014 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.904491
-mistral-no_prompt-7:  93%|█████████▎| 27/29 [00:43<00:02,  1.14s/it]2025-04-20 01:45:12,528 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.291305
-mistral-no_prompt-7:  97%|█████████▋| 28/29 [00:45<00:01,  1.55s/it]2025-04-20 01:45:13,042 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.480934
-mistral-no_prompt-7: 100%|██████████| 29/29 [00:46<00:00,  1.24s/it]mistral-no_prompt-7: 100%|██████████| 29/29 [00:46<00:00,  1.60s/it]
-2025-04-20 01:45:13,061 - Multiprocessing for mistral-no_prompt-7, duration: 0:00:46.364551
-mistral-no_prompt-8:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:45:13,193 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:13,289 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:13,292 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:13,296 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:16,983 - Single inference for Animal Control Workers, duration: 0:00:03.868085
-mistral-no_prompt-8:   3%|▎         | 1/29 [00:03<01:49,  3.90s/it]2025-04-20 01:45:17,080 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:19,537 - Single inference for Animal Breeders, duration: 0:00:06.420764
-mistral-no_prompt-8:   7%|▋         | 2/29 [00:06<01:23,  3.11s/it]2025-04-20 01:45:19,646 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:19,730 - Single inference for Anesthesiologists, duration: 0:00:06.614095
-mistral-no_prompt-8:  10%|█         | 3/29 [00:06<00:46,  1.78s/it]2025-04-20 01:45:19,828 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:19,845 - Single inference for Animal Caretakers, duration: 0:00:06.729225
-mistral-no_prompt-8:  14%|█▍        | 4/29 [00:06<00:28,  1.12s/it]2025-04-20 01:45:19,943 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:20,493 - Single inference for Animal Scientists, duration: 0:00:03.495601
-mistral-no_prompt-8:  17%|█▋        | 5/29 [00:07<00:22,  1.05it/s]2025-04-20 01:45:20,602 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:23,637 - Single inference for Animal Trainers, duration: 0:00:04.077500
-mistral-no_prompt-8:  21%|██        | 6/29 [00:10<00:39,  1.70s/it]2025-04-20 01:45:23,751 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:28,194 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:08.335578
-mistral-no_prompt-8:  24%|██▍       | 7/29 [00:15<00:57,  2.63s/it]2025-04-20 01:45:28,294 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:28,574 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:04.914942
-mistral-no_prompt-8:  28%|██▊       | 8/29 [00:15<00:40,  1.91s/it]2025-04-20 01:45:28,675 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:30,010 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.494830
-mistral-no_prompt-8:  31%|███       | 9/29 [00:16<00:35,  1.76s/it]2025-04-20 01:45:30,100 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:30,488 - Single inference for Anthropologists and Archeologists, duration: 0:00:10.743763
-mistral-no_prompt-8:  34%|███▍      | 10/29 [00:17<00:25,  1.37s/it]2025-04-20 01:45:30,596 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:34,611 - Single inference for Architectural and Civil Drafters, duration: 0:00:06.022706
-mistral-no_prompt-8:  38%|███▊      | 11/29 [00:21<00:39,  2.21s/it]2025-04-20 01:45:34,714 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:36,663 - Single inference for Architectural and Engineering Managers, duration: 0:00:06.638771
-mistral-no_prompt-8:  41%|████▏     | 12/29 [00:23<00:36,  2.16s/it]2025-04-20 01:45:36,698 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:08.481676
-2025-04-20 01:45:36,782 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:36,836 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:38,145 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:07.635127
-mistral-no_prompt-8:  48%|████▊     | 14/29 [00:25<00:22,  1.50s/it]2025-04-20 01:45:38,243 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:39,202 - Single inference for Archivists, duration: 0:00:04.568560
-mistral-no_prompt-8:  52%|█████▏    | 15/29 [00:26<00:19,  1.39s/it]2025-04-20 01:45:39,296 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:40,909 - Single inference for Art Directors, duration: 0:00:04.195003
-mistral-no_prompt-8:  55%|█████▌    | 16/29 [00:27<00:19,  1.47s/it]2025-04-20 01:45:41,006 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:44,263 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:07.577029
-mistral-no_prompt-8:  59%|█████▊    | 17/29 [00:31<00:23,  1.99s/it]2025-04-20 01:45:44,355 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:45,402 - Single inference for Astronomers, duration: 0:00:04.470252
-mistral-no_prompt-8:  62%|██████▏   | 18/29 [00:32<00:19,  1.75s/it]2025-04-20 01:45:45,501 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:46,668 - Single inference for Art Therapists, duration: 0:00:08.499707
-mistral-no_prompt-8:  66%|██████▌   | 19/29 [00:33<00:16,  1.61s/it]2025-04-20 01:45:46,779 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:47,074 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:07.858867
-mistral-no_prompt-8:  69%|██████▉   | 20/29 [00:33<00:11,  1.26s/it]2025-04-20 01:45:47,170 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:47,366 - Single inference for Athletes and Sports Competitors, duration: 0:00:03.089823
-mistral-no_prompt-8:  72%|███████▏  | 21/29 [00:34<00:07,  1.02it/s]2025-04-20 01:45:47,468 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:53,269 - Single inference for Audio and Video Technicians, duration: 0:00:05.888579
-mistral-no_prompt-8:  76%|███████▌  | 22/29 [00:40<00:17,  2.43s/it]2025-04-20 01:45:53,356 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:54,262 - Single inference for Atmospheric and Space Scientists, duration: 0:00:07.580927
-mistral-no_prompt-8:  79%|███████▉  | 23/29 [00:41<00:12,  2.00s/it]2025-04-20 01:45:54,379 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:55,227 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:08.138477
-mistral-no_prompt-8:  83%|████████▎ | 24/29 [00:42<00:08,  1.69s/it]2025-04-20 01:45:55,327 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:55,595 - Single inference for Athletic Trainers, duration: 0:00:10.179435
-mistral-no_prompt-8:  86%|████████▌ | 25/29 [00:42<00:05,  1.30s/it]2025-04-20 01:45:55,692 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:45:57,267 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.982487
-mistral-no_prompt-8:  90%|████████▉ | 26/29 [00:44<00:04,  1.41s/it]2025-04-20 01:45:59,363 - Single inference for Audiologists, duration: 0:00:06.081088
-mistral-no_prompt-8:  93%|█████████▎| 27/29 [00:46<00:03,  1.62s/it]2025-04-20 01:45:59,473 - Single inference for Automotive Engineering Technicians, duration: 0:00:03.864455
-mistral-no_prompt-8:  97%|█████████▋| 28/29 [00:46<00:01,  1.16s/it]2025-04-20 01:46:00,918 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.677386
-mistral-no_prompt-8: 100%|██████████| 29/29 [00:47<00:00,  1.25s/it]mistral-no_prompt-8: 100%|██████████| 29/29 [00:47<00:00,  1.65s/it]
-2025-04-20 01:46:00,936 - Multiprocessing for mistral-no_prompt-8, duration: 0:00:47.867214
-mistral-no_prompt-9:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:46:01,076 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:01,166 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:01,169 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:01,172 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:04,924 - Single inference for Animal Control Workers, duration: 0:00:03.933119
-mistral-no_prompt-9:   3%|▎         | 1/29 [00:03<01:50,  3.96s/it]2025-04-20 01:46:05,017 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:06,047 - Single inference for Animal Breeders, duration: 0:00:05.056610
-mistral-no_prompt-9:   7%|▋         | 2/29 [00:05<01:01,  2.29s/it]2025-04-20 01:46:06,153 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:07,025 - Single inference for Anesthesiologists, duration: 0:00:06.033549
-mistral-no_prompt-9:  10%|█         | 3/29 [00:06<00:43,  1.69s/it]2025-04-20 01:46:07,139 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:07,340 - Single inference for Animal Scientists, duration: 0:00:02.392952
-mistral-no_prompt-9:  14%|█▍        | 4/29 [00:06<00:28,  1.15s/it]2025-04-20 01:46:07,375 - Single inference for Animal Caretakers, duration: 0:00:06.383575
-2025-04-20 01:46:07,448 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:07,497 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:11,296 - Single inference for Animal Trainers, duration: 0:00:05.226491
-mistral-no_prompt-9:  21%|██        | 6/29 [00:10<00:36,  1.59s/it]2025-04-20 01:46:11,397 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:15,085 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.036681
-mistral-no_prompt-9:  24%|██▍       | 7/29 [00:14<00:48,  2.19s/it]2025-04-20 01:46:15,175 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:15,990 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:08.627109
-mistral-no_prompt-9:  28%|██▊       | 8/29 [00:15<00:38,  1.83s/it]2025-04-20 01:46:16,096 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:16,338 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:08.950068
-mistral-no_prompt-9:  31%|███       | 9/29 [00:15<00:28,  1.40s/it]2025-04-20 01:46:16,426 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:18,111 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.801024
-mistral-no_prompt-9:  34%|███▍      | 10/29 [00:17<00:28,  1.51s/it]2025-04-20 01:46:18,217 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:22,128 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.027637
-mistral-no_prompt-9:  38%|███▊      | 11/29 [00:21<00:40,  2.25s/it]2025-04-20 01:46:22,151 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.799122
-2025-04-20 01:46:22,222 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:22,281 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:23,460 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.455803
-mistral-no_prompt-9:  45%|████▍     | 13/29 [00:22<00:24,  1.53s/it]2025-04-20 01:46:23,564 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:24,460 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.326285
-mistral-no_prompt-9:  48%|████▊     | 14/29 [00:23<00:20,  1.40s/it]2025-04-20 01:46:24,545 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:25,906 - Single inference for Archivists, duration: 0:00:03.764129
-mistral-no_prompt-9:  52%|█████▏    | 15/29 [00:24<00:19,  1.41s/it]2025-04-20 01:46:26,011 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:28,653 - Single inference for Art Directors, duration: 0:00:05.180036
-mistral-no_prompt-9:  55%|█████▌    | 16/29 [00:27<00:23,  1.77s/it]2025-04-20 01:46:28,738 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:30,436 - Single inference for Art Therapists, duration: 0:00:05.962160
-mistral-no_prompt-9:  59%|█████▊    | 17/29 [00:29<00:21,  1.77s/it]2025-04-20 01:46:30,530 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:31,309 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:09.143182
-mistral-no_prompt-9:  62%|██████▏   | 18/29 [00:30<00:16,  1.52s/it]2025-04-20 01:46:31,408 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:32,928 - Single inference for Astronomers, duration: 0:00:04.261167
-mistral-no_prompt-9:  66%|██████▌   | 19/29 [00:31<00:15,  1.55s/it]2025-04-20 01:46:33,026 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:33,529 - Single inference for Athletes and Sports Competitors, duration: 0:00:03.071122
-mistral-no_prompt-9:  69%|██████▉   | 20/29 [00:32<00:11,  1.27s/it]2025-04-20 01:46:33,635 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:35,758 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.829716
-mistral-no_prompt-9:  72%|███████▏  | 21/29 [00:34<00:12,  1.55s/it]2025-04-20 01:46:35,875 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:38,712 - Single inference for Athletic Trainers, duration: 0:00:07.381250
-mistral-no_prompt-9:  76%|███████▌  | 22/29 [00:37<00:13,  1.97s/it]2025-04-20 01:46:38,814 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:42,250 - Single inference for Atmospheric and Space Scientists, duration: 0:00:09.308564
-mistral-no_prompt-9:  79%|███████▉  | 23/29 [00:41<00:14,  2.43s/it]2025-04-20 01:46:42,351 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:42,792 - Single inference for Audio and Video Technicians, duration: 0:00:07.010927
-mistral-no_prompt-9:  83%|████████▎ | 24/29 [00:41<00:09,  1.87s/it]2025-04-20 01:46:42,892 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:43,038 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:09.485418
-mistral-no_prompt-9:  86%|████████▌ | 25/29 [00:42<00:05,  1.39s/it]2025-04-20 01:46:43,145 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:45,408 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.144647
-2025-04-20 01:46:45,409 - Single inference for Audiologists, duration: 0:00:06.673678
-mistral-no_prompt-9:  90%|████████▉ | 26/29 [00:44<00:05,  1.68s/it]2025-04-20 01:46:48,000 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.938777
-mistral-no_prompt-9:  97%|█████████▋| 28/29 [00:47<00:01,  1.50s/it]2025-04-20 01:46:48,426 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.619886
-mistral-no_prompt-9: 100%|██████████| 29/29 [00:47<00:00,  1.24s/it]mistral-no_prompt-9: 100%|██████████| 29/29 [00:47<00:00,  1.64s/it]
-2025-04-20 01:46:48,444 - Multiprocessing for mistral-no_prompt-9, duration: 0:00:47.500710
-2025-04-20 01:46:48,480 - Wrote results JSON for mistral-no_prompt, duration: 0:00:00.028687
-2025-04-20 01:46:48,484 - Wrote prompt prompt1, duration: 0:00:00.004175
-mistral-prompt1-0:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:46:48,685 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:48,826 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:48,830 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:48,833 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:53,770 - Single inference for Animal Control Workers, duration: 0:00:05.234504
-mistral-prompt1-0:   3%|▎         | 1/29 [00:05<02:27,  5.26s/it]2025-04-20 01:46:53,836 - Single inference for Anesthesiologists, duration: 0:00:05.300646
-2025-04-20 01:46:53,882 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:53,973 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:54,152 - Single inference for Animal Breeders, duration: 0:00:05.617047
-mistral-prompt1-0:  10%|█         | 3/29 [00:05<00:39,  1.51s/it]2025-04-20 01:46:54,273 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:54,388 - Single inference for Animal Caretakers, duration: 0:00:05.852436
-mistral-prompt1-0:  14%|█▍        | 4/29 [00:05<00:26,  1.07s/it]2025-04-20 01:46:54,511 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:56,692 - Single inference for Animal Scientists, duration: 0:00:02.908686
-mistral-prompt1-0:  17%|█▋        | 5/29 [00:08<00:35,  1.48s/it]2025-04-20 01:46:56,802 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:46:58,417 - Single inference for Animal Trainers, duration: 0:00:04.567432
-mistral-prompt1-0:  21%|██        | 6/29 [00:09<00:35,  1.56s/it]2025-04-20 01:46:58,527 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:01,994 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.583231
-mistral-prompt1-0:  24%|██▍       | 7/29 [00:13<00:48,  2.19s/it]2025-04-20 01:47:02,118 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:02,410 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.243558
-mistral-prompt1-0:  28%|██▊       | 8/29 [00:13<00:34,  1.64s/it]2025-04-20 01:47:02,535 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:04,236 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:05.805403
-mistral-prompt1-0:  31%|███       | 9/29 [00:15<00:33,  1.70s/it]2025-04-20 01:47:04,352 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:07,671 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:10.965613
-mistral-prompt1-0:  34%|███▍      | 10/29 [00:19<00:42,  2.23s/it]2025-04-20 01:47:07,803 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:08,386 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.378215
-mistral-prompt1-0:  38%|███▊      | 11/29 [00:19<00:31,  1.77s/it]2025-04-20 01:47:08,507 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:10,048 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.624636
-mistral-prompt1-0:  41%|████▏     | 12/29 [00:21<00:29,  1.74s/it]2025-04-20 01:47:10,172 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:11,212 - Single inference for Architectural and Engineering Managers, duration: 0:00:06.953983
-mistral-prompt1-0:  45%|████▍     | 13/29 [00:22<00:25,  1.56s/it]2025-04-20 01:47:11,329 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:12,101 - Single inference for Archivists, duration: 0:00:03.702015
-mistral-prompt1-0:  48%|████▊     | 14/29 [00:23<00:20,  1.36s/it]2025-04-20 01:47:12,212 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:14,433 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.738511
-mistral-prompt1-0:  52%|█████▏    | 15/29 [00:25<00:23,  1.65s/it]2025-04-20 01:47:14,556 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:15,331 - Single inference for Art Directors, duration: 0:00:04.100845
-mistral-prompt1-0:  55%|█████▌    | 16/29 [00:26<00:18,  1.43s/it]2025-04-20 01:47:15,443 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:17,157 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:07.095699
-mistral-prompt1-0:  59%|█████▊    | 17/29 [00:28<00:18,  1.55s/it]2025-04-20 01:47:17,269 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:19,220 - Single inference for Art Therapists, duration: 0:00:07.104962
-mistral-prompt1-0:  62%|██████▏   | 18/29 [00:30<00:18,  1.70s/it]2025-04-20 01:47:19,334 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:19,959 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.788536
-mistral-prompt1-0:  66%|██████▌   | 19/29 [00:31<00:14,  1.41s/it]2025-04-20 01:47:20,076 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:20,495 - Single inference for Astronomers, duration: 0:00:05.142008
-mistral-prompt1-0:  69%|██████▉   | 20/29 [00:31<00:10,  1.15s/it]2025-04-20 01:47:20,628 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:22,897 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:08.450099
-mistral-prompt1-0:  72%|███████▏  | 21/29 [00:34<00:12,  1.53s/it]2025-04-20 01:47:23,027 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:25,552 - Single inference for Athletic Trainers, duration: 0:00:06.319003
-mistral-prompt1-0:  76%|███████▌  | 22/29 [00:37<00:13,  1.86s/it]2025-04-20 01:47:25,680 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:28,090 - Single inference for Atmospheric and Space Scientists, duration: 0:00:08.117230
-mistral-prompt1-0:  79%|███████▉  | 23/29 [00:39<00:12,  2.07s/it]2025-04-20 01:47:28,203 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:28,485 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:07.975623
-mistral-prompt1-0:  83%|████████▎ | 24/29 [00:39<00:07,  1.56s/it]2025-04-20 01:47:28,587 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:29,483 - Single inference for Audio and Video Technicians, duration: 0:00:06.563863
-mistral-prompt1-0:  86%|████████▌ | 25/29 [00:40<00:05,  1.40s/it]2025-04-20 01:47:29,606 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:31,578 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.474339
-mistral-prompt1-0:  90%|████████▉ | 26/29 [00:43<00:04,  1.60s/it]2025-04-20 01:47:31,964 - Single inference for Audiologists, duration: 0:00:06.388446
-mistral-prompt1-0:  93%|█████████▎| 27/29 [00:43<00:02,  1.24s/it]2025-04-20 01:47:33,559 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.053272
-mistral-prompt1-0:  97%|█████████▋| 28/29 [00:45<00:01,  1.35s/it]2025-04-20 01:47:34,380 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.881454
-mistral-prompt1-0: 100%|██████████| 29/29 [00:45<00:00,  1.19s/it]mistral-prompt1-0: 100%|██████████| 29/29 [00:45<00:00,  1.58s/it]
-2025-04-20 01:47:34,398 - Multiprocessing for mistral-prompt1-0, duration: 0:00:45.912824
-mistral-prompt1-1:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:47:34,567 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:34,700 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:34,702 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:34,705 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:38,790 - Single inference for Animal Control Workers, duration: 0:00:04.336592
-mistral-prompt1-1:   3%|▎         | 1/29 [00:04<02:02,  4.37s/it]2025-04-20 01:47:38,914 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:39,242 - Single inference for Animal Caretakers, duration: 0:00:04.788464
-mistral-prompt1-1:   7%|▋         | 2/29 [00:04<00:55,  2.06s/it]2025-04-20 01:47:39,368 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:39,604 - Single inference for Anesthesiologists, duration: 0:00:05.151054
-mistral-prompt1-1:  10%|█         | 3/29 [00:05<00:33,  1.29s/it]2025-04-20 01:47:39,735 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:41,372 - Single inference for Animal Breeders, duration: 0:00:06.918161
-mistral-prompt1-1:  14%|█▍        | 4/29 [00:06<00:36,  1.48s/it]2025-04-20 01:47:41,493 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:41,539 - Single inference for Animal Scientists, duration: 0:00:02.726299
-mistral-prompt1-1:  17%|█▋        | 5/29 [00:07<00:24,  1.00s/it]2025-04-20 01:47:41,659 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:43,560 - Single inference for Animal Trainers, duration: 0:00:04.303809
-mistral-prompt1-1:  21%|██        | 6/29 [00:09<00:31,  1.35s/it]2025-04-20 01:47:43,683 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:47,355 - Single inference for Anthropologists and Archeologists, duration: 0:00:07.727557
-mistral-prompt1-1:  24%|██▍       | 7/29 [00:12<00:47,  2.15s/it]2025-04-20 01:47:47,467 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:48,667 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.281673
-mistral-prompt1-1:  28%|██▊       | 8/29 [00:14<00:39,  1.88s/it]2025-04-20 01:47:48,804 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:49,004 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:05.430864
-mistral-prompt1-1:  31%|███       | 9/29 [00:14<00:27,  1.40s/it]2025-04-20 01:47:49,123 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:52,465 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:10.911916
-mistral-prompt1-1:  34%|███▍      | 10/29 [00:18<00:38,  2.04s/it]2025-04-20 01:47:52,584 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:53,620 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.251637
-mistral-prompt1-1:  38%|███▊      | 11/29 [00:19<00:31,  1.77s/it]2025-04-20 01:47:53,742 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:54,977 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.950453
-mistral-prompt1-1:  41%|████▏     | 12/29 [00:20<00:27,  1.64s/it]2025-04-20 01:47:55,101 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:56,163 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.472250
-mistral-prompt1-1:  45%|████▍     | 13/29 [00:21<00:24,  1.50s/it]2025-04-20 01:47:56,280 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:57,374 - Single inference for Archivists, duration: 0:00:03.730951
-mistral-prompt1-1:  48%|████▊     | 14/29 [00:22<00:21,  1.42s/it]2025-04-20 01:47:57,484 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:47:58,597 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.118796
-mistral-prompt1-1:  52%|█████▏    | 15/29 [00:24<00:19,  1.36s/it]2025-04-20 01:47:58,707 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:00,155 - Single inference for Art Directors, duration: 0:00:03.969778
-mistral-prompt1-1:  55%|█████▌    | 16/29 [00:25<00:18,  1.42s/it]2025-04-20 01:48:00,266 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:00,820 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:05.828801
-mistral-prompt1-1:  59%|█████▊    | 17/29 [00:26<00:14,  1.19s/it]2025-04-20 01:48:00,919 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:03,206 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.372538
-mistral-prompt1-1:  62%|██████▏   | 18/29 [00:28<00:17,  1.55s/it]2025-04-20 01:48:03,307 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:04,171 - Single inference for Art Therapists, duration: 0:00:06.783254
-mistral-prompt1-1:  66%|██████▌   | 19/29 [00:29<00:13,  1.37s/it]2025-04-20 01:48:04,289 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:05,440 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:06.829127
-mistral-prompt1-1:  69%|██████▉   | 20/29 [00:31<00:12,  1.34s/it]2025-04-20 01:48:05,563 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:06,096 - Single inference for Astronomers, duration: 0:00:05.927403
-mistral-prompt1-1:  72%|███████▏  | 21/29 [00:31<00:09,  1.14s/it]2025-04-20 01:48:06,235 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:09,585 - Single inference for Athletic Trainers, duration: 0:00:06.365416
-mistral-prompt1-1:  76%|███████▌  | 22/29 [00:35<00:12,  1.84s/it]2025-04-20 01:48:09,699 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:11,847 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:06.393067
-mistral-prompt1-1:  79%|███████▉  | 23/29 [00:37<00:11,  1.97s/it]2025-04-20 01:48:11,971 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:13,889 - Single inference for Audio and Video Technicians, duration: 0:00:07.769595
-mistral-prompt1-1:  83%|████████▎ | 24/29 [00:39<00:09,  1.99s/it]2025-04-20 01:48:14,008 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:14,246 - Single inference for Atmospheric and Space Scientists, duration: 0:00:10.061462
-mistral-prompt1-1:  86%|████████▌ | 25/29 [00:39<00:06,  1.50s/it]2025-04-20 01:48:14,365 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:15,577 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.714757
-mistral-prompt1-1:  90%|████████▉ | 26/29 [00:41<00:04,  1.45s/it]2025-04-20 01:48:16,234 - Single inference for Audiologists, duration: 0:00:06.635695
-mistral-prompt1-1:  93%|█████████▎| 27/29 [00:41<00:02,  1.21s/it]2025-04-20 01:48:18,418 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.157712
-mistral-prompt1-1:  97%|█████████▋| 28/29 [00:43<00:01,  1.50s/it]2025-04-20 01:48:18,810 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.898068
-mistral-prompt1-1: 100%|██████████| 29/29 [00:44<00:00,  1.17s/it]mistral-prompt1-1: 100%|██████████| 29/29 [00:44<00:00,  1.53s/it]
-2025-04-20 01:48:18,828 - Multiprocessing for mistral-prompt1-1, duration: 0:00:44.422217
-mistral-prompt1-2:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:48:19,040 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:19,043 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:19,148 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:19,151 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:23,254 - Single inference for Animal Control Workers, duration: 0:00:04.369978
-mistral-prompt1-2:   3%|▎         | 1/29 [00:04<02:03,  4.40s/it]2025-04-20 01:48:23,361 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:23,961 - Single inference for Anesthesiologists, duration: 0:00:05.077263
-mistral-prompt1-2:   7%|▋         | 2/29 [00:05<01:00,  2.23s/it]2025-04-20 01:48:24,095 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:24,892 - Single inference for Animal Breeders, duration: 0:00:06.007918
-mistral-prompt1-2:  10%|█         | 3/29 [00:06<00:42,  1.64s/it]2025-04-20 01:48:25,040 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:26,049 - Single inference for Animal Caretakers, duration: 0:00:07.165197
-mistral-prompt1-2:  14%|█▍        | 4/29 [00:07<00:36,  1.45s/it]2025-04-20 01:48:26,177 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:26,286 - Single inference for Animal Scientists, duration: 0:00:03.018065
-mistral-prompt1-2:  17%|█▋        | 5/29 [00:07<00:24,  1.01s/it]2025-04-20 01:48:26,405 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:28,241 - Single inference for Animal Trainers, duration: 0:00:04.266283
-mistral-prompt1-2:  21%|██        | 6/29 [00:09<00:30,  1.33s/it]2025-04-20 01:48:28,357 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:32,659 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:06.595748
-mistral-prompt1-2:  24%|██▍       | 7/29 [00:13<00:51,  2.34s/it]2025-04-20 01:48:32,772 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:34,105 - Single inference for Anthropologists and Archeologists, duration: 0:00:09.189958
-mistral-prompt1-2:  28%|██▊       | 8/29 [00:15<00:43,  2.06s/it]2025-04-20 01:48:34,242 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:34,506 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.251210
-mistral-prompt1-2:  31%|███       | 9/29 [00:15<00:30,  1.54s/it]2025-04-20 01:48:34,618 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:34,960 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:08.661126
-mistral-prompt1-2:  34%|███▍      | 10/29 [00:16<00:22,  1.20s/it]2025-04-20 01:48:35,079 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:39,029 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.356599
-mistral-prompt1-2:  38%|███▊      | 11/29 [00:20<00:37,  2.08s/it]2025-04-20 01:48:39,132 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:39,404 - Single inference for Architectural and Engineering Managers, duration: 0:00:04.884259
-mistral-prompt1-2:  41%|████▏     | 12/29 [00:20<00:26,  1.56s/it]2025-04-20 01:48:39,518 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:41,760 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.785866
-mistral-prompt1-2:  45%|████▍     | 13/29 [00:22<00:28,  1.80s/it]2025-04-20 01:48:41,870 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:42,227 - Single inference for Architectural and Civil Drafters, duration: 0:00:08.099575
-mistral-prompt1-2:  48%|████▊     | 14/29 [00:23<00:20,  1.40s/it]2025-04-20 01:48:42,342 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:43,384 - Single inference for Archivists, duration: 0:00:04.341308
-mistral-prompt1-2:  52%|█████▏    | 15/29 [00:24<00:18,  1.33s/it]2025-04-20 01:48:43,510 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:45,582 - Single inference for Art Directors, duration: 0:00:03.808181
-mistral-prompt1-2:  55%|█████▌    | 16/29 [00:26<00:20,  1.59s/it]2025-04-20 01:48:45,700 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:46,330 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.912950
-mistral-prompt1-2:  59%|█████▊    | 17/29 [00:27<00:16,  1.34s/it]2025-04-20 01:48:46,442 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:48,673 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.319896
-mistral-prompt1-2:  62%|██████▏   | 18/29 [00:29<00:18,  1.64s/it]2025-04-20 01:48:48,787 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:50,173 - Single inference for Astronomers, duration: 0:00:04.578164
-mistral-prompt1-2:  66%|██████▌   | 19/29 [00:31<00:15,  1.60s/it]2025-04-20 01:48:50,291 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:51,021 - Single inference for Art Therapists, duration: 0:00:08.779811
-mistral-prompt1-2:  69%|██████▉   | 20/29 [00:32<00:12,  1.37s/it]2025-04-20 01:48:51,154 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:51,611 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:08.204686
-mistral-prompt1-2:  72%|███████▏  | 21/29 [00:32<00:09,  1.14s/it]2025-04-20 01:48:51,743 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:54,704 - Single inference for Athletic Trainers, duration: 0:00:06.016969
-mistral-prompt1-2:  76%|███████▌  | 22/29 [00:35<00:12,  1.72s/it]2025-04-20 01:48:54,821 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:58,994 - Single inference for Audio and Video Technicians, duration: 0:00:07.359686
-mistral-prompt1-2:  79%|███████▉  | 23/29 [00:40<00:14,  2.49s/it]2025-04-20 01:48:59,120 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:59,420 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:08.385747
-mistral-prompt1-2:  83%|████████▎ | 24/29 [00:40<00:09,  1.87s/it]2025-04-20 01:48:59,541 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:48:59,729 - Single inference for Atmospheric and Space Scientists, duration: 0:00:09.542428
-mistral-prompt1-2:  86%|████████▌ | 25/29 [00:40<00:05,  1.40s/it]2025-04-20 01:48:59,844 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:01,130 - Single inference for Audiologists, duration: 0:00:06.403202
-mistral-prompt1-2:  90%|████████▉ | 26/29 [00:42<00:04,  1.40s/it]2025-04-20 01:49:02,578 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.570879
-mistral-prompt1-2:  93%|█████████▎| 27/29 [00:43<00:02,  1.42s/it]2025-04-20 01:49:03,857 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.114547
-mistral-prompt1-2:  97%|█████████▋| 28/29 [00:45<00:01,  1.38s/it]2025-04-20 01:49:05,168 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.725286
-mistral-prompt1-2: 100%|██████████| 29/29 [00:46<00:00,  1.36s/it]mistral-prompt1-2: 100%|██████████| 29/29 [00:46<00:00,  1.60s/it]
-2025-04-20 01:49:05,187 - Multiprocessing for mistral-prompt1-2, duration: 0:00:46.351525
-mistral-prompt1-3:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:49:05,356 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:05,495 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:05,498 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:05,501 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:09,477 - Single inference for Animal Control Workers, duration: 0:00:04.224737
-mistral-prompt1-3:   3%|▎         | 1/29 [00:04<01:59,  4.25s/it]2025-04-20 01:49:09,587 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:10,742 - Single inference for Animal Breeders, duration: 0:00:05.490265
-mistral-prompt1-3:   7%|▋         | 2/29 [00:05<01:07,  2.50s/it]2025-04-20 01:49:10,868 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:11,032 - Single inference for Anesthesiologists, duration: 0:00:05.779654
-mistral-prompt1-3:  10%|█         | 3/29 [00:05<00:38,  1.49s/it]2025-04-20 01:49:11,065 - Single inference for Animal Caretakers, duration: 0:00:05.812883
-2025-04-20 01:49:11,154 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:11,221 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:12,537 - Single inference for Animal Scientists, duration: 0:00:03.036621
-mistral-prompt1-3:  17%|█▋        | 5/29 [00:07<00:25,  1.07s/it]2025-04-20 01:49:12,658 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:15,978 - Single inference for Animal Trainers, duration: 0:00:05.221968
-mistral-prompt1-3:  21%|██        | 6/29 [00:10<00:40,  1.76s/it]2025-04-20 01:49:16,100 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:18,162 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.080783
-mistral-prompt1-3:  24%|██▍       | 7/29 [00:12<00:41,  1.88s/it]2025-04-20 01:49:18,301 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:20,315 - Single inference for Anthropologists and Archeologists, duration: 0:00:09.269177
-mistral-prompt1-3:  28%|██▊       | 8/29 [00:15<00:41,  1.96s/it]2025-04-20 01:49:20,431 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:22,297 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.746705
-mistral-prompt1-3:  31%|███       | 9/29 [00:17<00:39,  1.97s/it]2025-04-20 01:49:22,416 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:22,495 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.499138
-mistral-prompt1-3:  34%|███▍      | 10/29 [00:17<00:27,  1.44s/it]2025-04-20 01:49:22,616 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:26,069 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.883714
-mistral-prompt1-3:  38%|███▊      | 11/29 [00:20<00:37,  2.08s/it]2025-04-20 01:49:26,187 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:28,139 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.819034
-mistral-prompt1-3:  41%|████▏     | 12/29 [00:22<00:35,  2.07s/it]2025-04-20 01:49:28,279 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:28,612 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.103605
-mistral-prompt1-3:  45%|████▍     | 13/29 [00:23<00:25,  1.60s/it]2025-04-20 01:49:28,722 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:28,892 - Single inference for Architectural and Civil Drafters, duration: 0:00:08.563527
-mistral-prompt1-3:  48%|████▊     | 14/29 [00:23<00:18,  1.20s/it]2025-04-20 01:49:29,001 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:30,582 - Single inference for Archivists, duration: 0:00:04.496332
-mistral-prompt1-3:  52%|█████▏    | 15/29 [00:25<00:18,  1.35s/it]2025-04-20 01:49:30,695 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:33,690 - Single inference for Art Directors, duration: 0:00:05.064275
-mistral-prompt1-3:  55%|█████▌    | 16/29 [00:28<00:24,  1.88s/it]2025-04-20 01:49:33,796 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:34,671 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.510303
-mistral-prompt1-3:  59%|█████▊    | 17/29 [00:29<00:19,  1.61s/it]2025-04-20 01:49:34,782 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:37,221 - Single inference for Art Therapists, duration: 0:00:08.316123
-mistral-prompt1-3:  62%|██████▏   | 18/29 [00:31<00:20,  1.89s/it]2025-04-20 01:49:37,337 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:37,395 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.710567
-mistral-prompt1-3:  66%|██████▌   | 19/29 [00:32<00:13,  1.38s/it]2025-04-20 01:49:37,523 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:37,853 - Single inference for Astronomers, duration: 0:00:04.149576
-mistral-prompt1-3:  69%|██████▉   | 20/29 [00:32<00:09,  1.10s/it]2025-04-20 01:49:37,980 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:40,340 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.744686
-mistral-prompt1-3:  72%|███████▏  | 21/29 [00:35<00:12,  1.52s/it]2025-04-20 01:49:40,475 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:44,043 - Single inference for Athletic Trainers, duration: 0:00:06.807845
-mistral-prompt1-3:  76%|███████▌  | 22/29 [00:38<00:15,  2.17s/it]2025-04-20 01:49:44,101 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:06.234830
-2025-04-20 01:49:44,165 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:44,246 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:45,733 - Single inference for Atmospheric and Space Scientists, duration: 0:00:08.325174
-mistral-prompt1-3:  83%|████████▎ | 24/29 [00:40<00:07,  1.56s/it]2025-04-20 01:49:45,838 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:46,168 - Single inference for Audio and Video Technicians, duration: 0:00:05.804867
-mistral-prompt1-3:  86%|████████▌ | 25/29 [00:40<00:05,  1.28s/it]2025-04-20 01:49:46,279 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:47,346 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.221855
-mistral-prompt1-3:  90%|████████▉ | 26/29 [00:42<00:03,  1.25s/it]2025-04-20 01:49:50,785 - Single inference for Audiologists, duration: 0:00:06.719664
-mistral-prompt1-3:  93%|█████████▎| 27/29 [00:45<00:03,  1.85s/it]2025-04-20 01:49:51,161 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.979472
-mistral-prompt1-3:  97%|█████████▋| 28/29 [00:45<00:01,  1.44s/it]2025-04-20 01:49:51,653 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.906605
-mistral-prompt1-3: 100%|██████████| 29/29 [00:46<00:00,  1.17s/it]mistral-prompt1-3: 100%|██████████| 29/29 [00:46<00:00,  1.60s/it]
-2025-04-20 01:49:51,672 - Multiprocessing for mistral-prompt1-3, duration: 0:00:46.477100
-mistral-prompt1-4:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:49:51,857 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:51,974 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:51,978 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:51,982 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:55,958 - Single inference for Animal Control Workers, duration: 0:00:04.230234
-mistral-prompt1-4:   3%|▎         | 1/29 [00:04<01:59,  4.26s/it]2025-04-20 01:49:56,072 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:57,142 - Single inference for Animal Breeders, duration: 0:00:05.414494
-mistral-prompt1-4:   7%|▋         | 2/29 [00:05<01:06,  2.45s/it]2025-04-20 01:49:57,276 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:57,699 - Single inference for Anesthesiologists, duration: 0:00:05.971907
-mistral-prompt1-4:  10%|█         | 3/29 [00:06<00:41,  1.59s/it]2025-04-20 01:49:57,835 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:58,366 - Single inference for Animal Caretakers, duration: 0:00:06.637969
-mistral-prompt1-4:  14%|█▍        | 4/29 [00:06<00:30,  1.22s/it]2025-04-20 01:49:58,489 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:49:58,792 - Single inference for Animal Scientists, duration: 0:00:02.810626
-mistral-prompt1-4:  17%|█▋        | 5/29 [00:07<00:22,  1.07it/s]2025-04-20 01:49:58,923 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:02,448 - Single inference for Animal Trainers, duration: 0:00:05.292492
-mistral-prompt1-4:  21%|██        | 6/29 [00:10<00:42,  1.86s/it]2025-04-20 01:50:02,559 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:07,181 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:08.802086
-mistral-prompt1-4:  24%|██▍       | 7/29 [00:15<01:01,  2.80s/it]2025-04-20 01:50:07,308 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:07,673 - Single inference for Anthropologists and Archeologists, duration: 0:00:09.950933
-mistral-prompt1-4:  28%|██▊       | 8/29 [00:15<00:43,  2.07s/it]2025-04-20 01:50:07,791 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:08,665 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.203132
-mistral-prompt1-4:  31%|███       | 9/29 [00:16<00:34,  1.73s/it]2025-04-20 01:50:08,784 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:08,972 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:10.157864
-mistral-prompt1-4:  34%|███▍      | 10/29 [00:17<00:24,  1.29s/it]2025-04-20 01:50:09,089 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:13,264 - Single inference for Architectural and Engineering Managers, duration: 0:00:04.576060
-mistral-prompt1-4:  38%|███▊      | 11/29 [00:21<00:39,  2.21s/it]2025-04-20 01:50:13,383 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:15,201 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.215067
-mistral-prompt1-4:  41%|████▏     | 12/29 [00:23<00:36,  2.13s/it]2025-04-20 01:50:15,323 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:15,840 - Single inference for Architectural and Civil Drafters, duration: 0:00:08.152897
-mistral-prompt1-4:  45%|████▍     | 13/29 [00:24<00:26,  1.68s/it]2025-04-20 01:50:15,852 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:08.647354
-2025-04-20 01:50:15,978 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:15,983 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:17,188 - Single inference for Archivists, duration: 0:00:03.901871
-mistral-prompt1-4:  52%|█████▏    | 15/29 [00:25<00:16,  1.21s/it]2025-04-20 01:50:17,314 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:20,742 - Single inference for Art Directors, duration: 0:00:04.887627
-mistral-prompt1-4:  55%|█████▌    | 16/29 [00:29<00:23,  1.79s/it]2025-04-20 01:50:20,845 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:22,078 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.863548
-mistral-prompt1-4:  59%|█████▊    | 17/29 [00:30<00:20,  1.67s/it]2025-04-20 01:50:22,190 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:24,236 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.135095
-mistral-prompt1-4:  62%|██████▏   | 18/29 [00:32<00:19,  1.81s/it]2025-04-20 01:50:24,348 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:25,404 - Single inference for Astronomers, duration: 0:00:04.647935
-mistral-prompt1-4:  66%|██████▌   | 19/29 [00:33<00:16,  1.63s/it]2025-04-20 01:50:25,550 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:25,684 - Single inference for Art Therapists, duration: 0:00:09.810036
-mistral-prompt1-4:  69%|██████▉   | 20/29 [00:33<00:11,  1.24s/it]2025-04-20 01:50:25,808 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:27,056 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.852739
-mistral-prompt1-4:  72%|███████▏  | 21/29 [00:35<00:10,  1.28s/it]2025-04-20 01:50:27,181 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:31,216 - Single inference for Athletic Trainers, duration: 0:00:06.965937
-mistral-prompt1-4:  76%|███████▌  | 22/29 [00:39<00:14,  2.12s/it]2025-04-20 01:50:31,336 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:33,144 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:07.446609
-mistral-prompt1-4:  79%|███████▉  | 23/29 [00:41<00:12,  2.07s/it]2025-04-20 01:50:33,272 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:33,562 - Single inference for Audio and Video Technicians, duration: 0:00:06.492286
-mistral-prompt1-4:  83%|████████▎ | 24/29 [00:41<00:07,  1.58s/it]2025-04-20 01:50:33,681 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:35,478 - Single inference for Atmospheric and Space Scientists, duration: 0:00:10.051259
-mistral-prompt1-4:  86%|████████▌ | 25/29 [00:43<00:06,  1.68s/it]2025-04-20 01:50:35,594 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:36,000 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.842362
-mistral-prompt1-4:  90%|████████▉ | 26/29 [00:44<00:03,  1.33s/it]2025-04-20 01:50:37,346 - Single inference for Audiologists, duration: 0:00:06.107689
-mistral-prompt1-4:  93%|█████████▎| 27/29 [00:45<00:02,  1.34s/it]2025-04-20 01:50:39,083 - Single inference for Automotive Engineering Technicians, duration: 0:00:03.590679
-mistral-prompt1-4:  97%|█████████▋| 28/29 [00:47<00:01,  1.46s/it]2025-04-20 01:50:39,604 - Single inference for Automotive Body and Related Repairers, duration: 0:00:06.019139
-mistral-prompt1-4: 100%|██████████| 29/29 [00:47<00:00,  1.18s/it]mistral-prompt1-4: 100%|██████████| 29/29 [00:47<00:00,  1.65s/it]
-2025-04-20 01:50:39,622 - Multiprocessing for mistral-prompt1-4, duration: 0:00:47.942912
-mistral-prompt1-5:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:50:39,782 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:39,921 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:39,924 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:39,928 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:43,389 - Single inference for Animal Control Workers, duration: 0:00:03.711537
-mistral-prompt1-5:   3%|▎         | 1/29 [00:03<01:44,  3.74s/it]2025-04-20 01:50:43,510 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:44,395 - Single inference for Anesthesiologists, duration: 0:00:04.717067
-mistral-prompt1-5:   7%|▋         | 2/29 [00:04<00:57,  2.13s/it]2025-04-20 01:50:44,519 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:45,114 - Single inference for Animal Breeders, duration: 0:00:05.436443
-mistral-prompt1-5:  10%|█         | 3/29 [00:05<00:38,  1.49s/it]2025-04-20 01:50:45,239 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:46,305 - Single inference for Animal Caretakers, duration: 0:00:06.626972
-mistral-prompt1-5:  14%|█▍        | 4/29 [00:06<00:34,  1.37s/it]2025-04-20 01:50:46,360 - Single inference for Animal Scientists, duration: 0:00:02.948300
-2025-04-20 01:50:46,426 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:46,497 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:50,048 - Single inference for Animal Trainers, duration: 0:00:05.630007
-mistral-prompt1-5:  21%|██        | 6/29 [00:10<00:37,  1.64s/it]2025-04-20 01:50:50,171 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:53,085 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:06.760547
-mistral-prompt1-5:  24%|██▍       | 7/29 [00:13<00:44,  2.02s/it]2025-04-20 01:50:53,209 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:53,365 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.237535
-mistral-prompt1-5:  28%|██▊       | 8/29 [00:13<00:32,  1.53s/it]2025-04-20 01:50:53,487 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:56,292 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.917545
-mistral-prompt1-5:  31%|███       | 9/29 [00:16<00:38,  1.93s/it]2025-04-20 01:50:56,411 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:50:56,512 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.450233
-mistral-prompt1-5:  34%|███▍      | 10/29 [00:16<00:27,  1.43s/it]2025-04-20 01:50:56,629 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:00,398 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.016192
-mistral-prompt1-5:  38%|███▊      | 11/29 [00:20<00:38,  2.15s/it]2025-04-20 01:51:00,520 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:00,876 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.767702
-mistral-prompt1-5:  41%|████▏     | 12/29 [00:21<00:28,  1.66s/it]2025-04-20 01:51:01,006 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:01,909 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.594097
-mistral-prompt1-5:  45%|████▍     | 13/29 [00:22<00:23,  1.47s/it]2025-04-20 01:51:02,021 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:02,841 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.315829
-mistral-prompt1-5:  48%|████▊     | 14/29 [00:23<00:19,  1.31s/it]2025-04-20 01:51:02,942 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:04,606 - Single inference for Archivists, duration: 0:00:04.192966
-mistral-prompt1-5:  52%|█████▏    | 15/29 [00:24<00:20,  1.45s/it]2025-04-20 01:51:04,741 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:05,827 - Single inference for Art Directors, duration: 0:00:03.904444
-mistral-prompt1-5:  55%|█████▌    | 16/29 [00:26<00:17,  1.38s/it]2025-04-20 01:51:05,939 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:06,689 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:05.790245
-mistral-prompt1-5:  59%|█████▊    | 17/29 [00:27<00:14,  1.22s/it]2025-04-20 01:51:06,787 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:08,929 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.226847
-mistral-prompt1-5:  62%|██████▏   | 18/29 [00:29<00:16,  1.53s/it]2025-04-20 01:51:09,042 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:10,438 - Single inference for Art Therapists, duration: 0:00:07.582502
-mistral-prompt1-5:  66%|██████▌   | 19/29 [00:30<00:15,  1.52s/it]2025-04-20 01:51:10,554 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:11,265 - Single inference for Astronomers, duration: 0:00:05.424415
-mistral-prompt1-5:  69%|██████▉   | 20/29 [00:31<00:11,  1.31s/it]2025-04-20 01:51:11,383 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:13,860 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.231020
-mistral-prompt1-5:  72%|███████▏  | 21/29 [00:34<00:13,  1.70s/it]2025-04-20 01:51:13,994 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:15,501 - Single inference for Athletic Trainers, duration: 0:00:06.549593
-mistral-prompt1-5:  76%|███████▌  | 22/29 [00:35<00:11,  1.68s/it]2025-04-20 01:51:15,619 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:19,694 - Single inference for Audio and Video Technicians, duration: 0:00:05.817149
-mistral-prompt1-5:  79%|███████▉  | 23/29 [00:40<00:14,  2.43s/it]2025-04-20 01:51:19,819 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:20,322 - Single inference for Atmospheric and Space Scientists, duration: 0:00:09.871306
-mistral-prompt1-5:  83%|████████▎ | 24/29 [00:40<00:09,  1.89s/it]2025-04-20 01:51:20,429 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:20,430 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:09.151791
-mistral-prompt1-5:  86%|████████▌ | 25/29 [00:40<00:05,  1.36s/it]2025-04-20 01:51:20,559 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:23,253 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.545896
-mistral-prompt1-5:  90%|████████▉ | 26/29 [00:43<00:05,  1.80s/it]2025-04-20 01:51:23,658 - Single inference for Audiologists, duration: 0:00:08.143653
-mistral-prompt1-5:  93%|█████████▎| 27/29 [00:44<00:02,  1.38s/it]2025-04-20 01:51:24,566 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.122847
-mistral-prompt1-5:  97%|█████████▋| 28/29 [00:44<00:01,  1.24s/it]2025-04-20 01:51:25,988 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.652566
-mistral-prompt1-5: 100%|██████████| 29/29 [00:46<00:00,  1.29s/it]mistral-prompt1-5: 100%|██████████| 29/29 [00:46<00:00,  1.60s/it]
-2025-04-20 01:51:26,007 - Multiprocessing for mistral-prompt1-5, duration: 0:00:46.376952
-mistral-prompt1-6:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:51:26,191 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:26,303 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:26,307 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:26,310 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:30,712 - Single inference for Animal Control Workers, duration: 0:00:04.649558
-mistral-prompt1-6:   3%|▎         | 1/29 [00:04<02:11,  4.68s/it]2025-04-20 01:51:30,822 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:31,728 - Single inference for Animal Breeders, duration: 0:00:05.664875
-mistral-prompt1-6:   7%|▋         | 2/29 [00:05<01:08,  2.52s/it]2025-04-20 01:51:31,740 - Single inference for Anesthesiologists, duration: 0:00:05.676930
-2025-04-20 01:51:31,846 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:31,922 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:32,003 - Single inference for Animal Caretakers, duration: 0:00:05.940468
-mistral-prompt1-6:  14%|█▍        | 4/29 [00:05<00:25,  1.03s/it]2025-04-20 01:51:32,129 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:33,671 - Single inference for Animal Scientists, duration: 0:00:02.944452
-mistral-prompt1-6:  17%|█▋        | 5/29 [00:07<00:29,  1.23s/it]2025-04-20 01:51:33,781 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:36,133 - Single inference for Animal Trainers, duration: 0:00:04.389016
-mistral-prompt1-6:  21%|██        | 6/29 [00:10<00:36,  1.60s/it]2025-04-20 01:51:36,256 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:39,182 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:07.156153
-mistral-prompt1-6:  24%|██▍       | 7/29 [00:13<00:44,  2.04s/it]2025-04-20 01:51:39,305 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:40,681 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.922600
-mistral-prompt1-6:  28%|██▊       | 8/29 [00:14<00:39,  1.88s/it]2025-04-20 01:51:40,798 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:42,115 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:05.959311
-mistral-prompt1-6:  31%|███       | 9/29 [00:16<00:34,  1.74s/it]2025-04-20 01:51:42,224 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:43,941 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:10.256386
-mistral-prompt1-6:  34%|███▍      | 10/29 [00:17<00:33,  1.77s/it]2025-04-20 01:51:44,058 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:46,261 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.056278
-mistral-prompt1-6:  38%|███▊      | 11/29 [00:20<00:34,  1.94s/it]2025-04-20 01:51:46,382 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:47,641 - Single inference for Architectural and Civil Drafters, duration: 0:00:06.946659
-mistral-prompt1-6:  41%|████▏     | 12/29 [00:21<00:30,  1.77s/it]2025-04-20 01:51:47,776 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:47,868 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.739944
-mistral-prompt1-6:  45%|████▍     | 13/29 [00:21<00:20,  1.30s/it]2025-04-20 01:51:47,973 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:50,179 - Single inference for Archivists, duration: 0:00:03.894616
-mistral-prompt1-6:  48%|████▊     | 14/29 [00:24<00:24,  1.61s/it]2025-04-20 01:51:50,279 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:50,940 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.984984
-mistral-prompt1-6:  52%|█████▏    | 15/29 [00:24<00:18,  1.35s/it]2025-04-20 01:51:51,063 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:51,993 - Single inference for Art Directors, duration: 0:00:04.111263
-mistral-prompt1-6:  55%|█████▌    | 16/29 [00:25<00:16,  1.26s/it]2025-04-20 01:51:52,095 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:54,746 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:07.081658
-mistral-prompt1-6:  59%|█████▊    | 17/29 [00:28<00:20,  1.71s/it]2025-04-20 01:51:54,858 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:56,533 - Single inference for Astronomers, duration: 0:00:04.526557
-mistral-prompt1-6:  62%|██████▏   | 18/29 [00:30<00:19,  1.73s/it]2025-04-20 01:51:56,637 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:57,271 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.512026
-mistral-prompt1-6:  66%|██████▌   | 19/29 [00:31<00:14,  1.43s/it]2025-04-20 01:51:57,415 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:51:58,843 - Single inference for Art Therapists, duration: 0:00:08.650258
-mistral-prompt1-6:  69%|██████▉   | 20/29 [00:32<00:13,  1.48s/it]2025-04-20 01:51:58,958 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:01,043 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:10.089541
-mistral-prompt1-6:  72%|███████▏  | 21/29 [00:35<00:13,  1.69s/it]2025-04-20 01:52:01,166 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:03,529 - Single inference for Athletic Trainers, duration: 0:00:06.982205
-mistral-prompt1-6:  76%|███████▌  | 22/29 [00:37<00:13,  1.93s/it]2025-04-20 01:52:03,636 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:05,347 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:06.490591
-mistral-prompt1-6:  79%|███████▉  | 23/29 [00:39<00:11,  1.90s/it]2025-04-20 01:52:05,477 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:07,374 - Single inference for Audio and Video Technicians, duration: 0:00:06.317582
-mistral-prompt1-6:  83%|████████▎ | 24/29 [00:41<00:09,  1.94s/it]2025-04-20 01:52:07,481 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:07,528 - Single inference for Atmospheric and Space Scientists, duration: 0:00:10.233517
-mistral-prompt1-6:  86%|████████▌ | 25/29 [00:41<00:05,  1.40s/it]2025-04-20 01:52:07,648 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:09,138 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.768079
-mistral-prompt1-6:  90%|████████▉ | 26/29 [00:43<00:04,  1.46s/it]2025-04-20 01:52:10,206 - Single inference for Audiologists, duration: 0:00:06.663148
-mistral-prompt1-6:  93%|█████████▎| 27/29 [00:44<00:02,  1.35s/it]2025-04-20 01:52:11,619 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.077404
-mistral-prompt1-6:  97%|█████████▋| 28/29 [00:45<00:01,  1.37s/it]2025-04-20 01:52:12,804 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.416370
-mistral-prompt1-6: 100%|██████████| 29/29 [00:46<00:00,  1.31s/it]mistral-prompt1-6: 100%|██████████| 29/29 [00:46<00:00,  1.61s/it]
-2025-04-20 01:52:12,822 - Multiprocessing for mistral-prompt1-6, duration: 0:00:46.807975
-mistral-prompt1-7:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:52:12,977 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:13,115 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:13,118 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:13,122 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:17,188 - Single inference for Animal Control Workers, duration: 0:00:04.311785
-mistral-prompt1-7:   3%|▎         | 1/29 [00:04<02:01,  4.34s/it]2025-04-20 01:52:17,299 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:18,306 - Single inference for Anesthesiologists, duration: 0:00:05.428735
-mistral-prompt1-7:   7%|▋         | 2/29 [00:05<01:05,  2.44s/it]2025-04-20 01:52:18,436 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:19,351 - Single inference for Animal Breeders, duration: 0:00:06.473585
-mistral-prompt1-7:  10%|█         | 3/29 [00:06<00:46,  1.81s/it]2025-04-20 01:52:19,407 - Single inference for Animal Caretakers, duration: 0:00:06.530414
-2025-04-20 01:52:19,478 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:19,545 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:19,946 - Single inference for Animal Scientists, duration: 0:00:02.743796
-mistral-prompt1-7:  17%|█▋        | 5/29 [00:07<00:22,  1.05it/s]2025-04-20 01:52:20,069 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:22,365 - Single inference for Animal Trainers, duration: 0:00:04.036905
-mistral-prompt1-7:  21%|██        | 6/29 [00:09<00:31,  1.37s/it]2025-04-20 01:52:22,476 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:26,111 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:06.681074
-mistral-prompt1-7:  24%|██▍       | 7/29 [00:13<00:45,  2.07s/it]2025-04-20 01:52:26,250 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:27,699 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.334488
-mistral-prompt1-7:  28%|██▊       | 8/29 [00:14<00:40,  1.93s/it]2025-04-20 01:52:27,813 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:29,350 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.971320
-mistral-prompt1-7:  31%|███       | 9/29 [00:16<00:36,  1.84s/it]2025-04-20 01:52:29,468 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:29,621 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.661358
-mistral-prompt1-7:  34%|███▍      | 10/29 [00:16<00:26,  1.38s/it]2025-04-20 01:52:29,750 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:32,879 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:06.744333
-mistral-prompt1-7:  38%|███▊      | 11/29 [00:20<00:34,  1.94s/it]2025-04-20 01:52:32,985 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:34,809 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.445470
-mistral-prompt1-7:  41%|████▏     | 12/29 [00:21<00:32,  1.94s/it]2025-04-20 01:52:34,944 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:36,348 - Single inference for Architectural and Civil Drafters, duration: 0:00:08.635818
-mistral-prompt1-7:  45%|████▍     | 13/29 [00:23<00:29,  1.82s/it]2025-04-20 01:52:36,465 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:36,539 - Single inference for Archivists, duration: 0:00:03.646323
-mistral-prompt1-7:  48%|████▊     | 14/29 [00:23<00:19,  1.33s/it]2025-04-20 01:52:36,661 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:37,134 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:07.489870
-mistral-prompt1-7:  52%|█████▏    | 15/29 [00:24<00:15,  1.11s/it]2025-04-20 01:52:37,258 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:40,960 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.128149
-mistral-prompt1-7:  55%|█████▌    | 16/29 [00:28<00:25,  1.92s/it]2025-04-20 01:52:41,074 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:41,432 - Single inference for Art Directors, duration: 0:00:05.070136
-mistral-prompt1-7:  59%|█████▊    | 17/29 [00:28<00:17,  1.49s/it]2025-04-20 01:52:41,555 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:43,802 - Single inference for Art Therapists, duration: 0:00:07.239844
-mistral-prompt1-7:  62%|██████▏   | 18/29 [00:30<00:19,  1.75s/it]2025-04-20 01:52:43,906 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:44,521 - Single inference for Athletes and Sports Competitors, duration: 0:00:03.065813
-mistral-prompt1-7:  66%|██████▌   | 19/29 [00:31<00:14,  1.44s/it]2025-04-20 01:52:44,638 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:45,885 - Single inference for Astronomers, duration: 0:00:04.901694
-mistral-prompt1-7:  69%|██████▉   | 20/29 [00:33<00:12,  1.42s/it]2025-04-20 01:52:46,000 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:46,243 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:09.086441
-mistral-prompt1-7:  72%|███████▏  | 21/29 [00:33<00:08,  1.10s/it]2025-04-20 01:52:46,365 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:51,716 - Single inference for Athletic Trainers, duration: 0:00:07.900250
-mistral-prompt1-7:  76%|███████▌  | 22/29 [00:38<00:16,  2.41s/it]2025-04-20 01:52:51,839 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:52,511 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:06.611899
-mistral-prompt1-7:  79%|███████▉  | 23/29 [00:39<00:11,  1.93s/it]2025-04-20 01:52:52,626 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:52,690 - Single inference for Atmospheric and Space Scientists, duration: 0:00:08.155080
-mistral-prompt1-7:  83%|████████▎ | 24/29 [00:39<00:07,  1.40s/it]2025-04-20 01:52:52,799 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:52,887 - Single inference for Audio and Video Technicians, duration: 0:00:06.630400
-mistral-prompt1-7:  86%|████████▌ | 25/29 [00:40<00:04,  1.04s/it]2025-04-20 01:52:53,011 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:55,634 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.109589
-mistral-prompt1-7:  90%|████████▉ | 26/29 [00:42<00:04,  1.55s/it]2025-04-20 01:52:57,211 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.300283
-mistral-prompt1-7:  93%|█████████▎| 27/29 [00:44<00:03,  1.56s/it]2025-04-20 01:52:58,115 - Single inference for Audiologists, duration: 0:00:06.385408
-mistral-prompt1-7:  97%|█████████▋| 28/29 [00:45<00:01,  1.36s/it]2025-04-20 01:52:58,663 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.959742
-mistral-prompt1-7: 100%|██████████| 29/29 [00:45<00:00,  1.12s/it]mistral-prompt1-7: 100%|██████████| 29/29 [00:45<00:00,  1.58s/it]
-2025-04-20 01:52:58,681 - Multiprocessing for mistral-prompt1-7, duration: 0:00:45.851641
-mistral-prompt1-8:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:52:58,843 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:58,981 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:58,984 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:52:58,987 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:03,059 - Single inference for Animal Control Workers, duration: 0:00:04.322132
-mistral-prompt1-8:   3%|▎         | 1/29 [00:04<02:01,  4.35s/it]2025-04-20 01:53:03,182 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:03,796 - Single inference for Anesthesiologists, duration: 0:00:05.058690
-2025-04-20 01:53:03,796 - Single inference for Animal Caretakers, duration: 0:00:05.058768
-mistral-prompt1-8:   7%|▋         | 2/29 [00:05<01:00,  2.22s/it]2025-04-20 01:53:03,958 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:03,961 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:04,470 - Single inference for Animal Breeders, duration: 0:00:05.733932
-mistral-prompt1-8:  14%|█▍        | 4/29 [00:05<00:26,  1.04s/it]2025-04-20 01:53:04,593 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:05,816 - Single inference for Animal Scientists, duration: 0:00:02.733751
-mistral-prompt1-8:  17%|█▋        | 5/29 [00:07<00:27,  1.14s/it]2025-04-20 01:53:05,938 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:08,188 - Single inference for Animal Trainers, duration: 0:00:04.378074
-mistral-prompt1-8:  21%|██        | 6/29 [00:09<00:34,  1.51s/it]2025-04-20 01:53:08,309 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:11,252 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:06.768149
-mistral-prompt1-8:  24%|██▍       | 7/29 [00:12<00:43,  1.99s/it]2025-04-20 01:53:11,375 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:12,303 - Single inference for Anthropologists and Archeologists, duration: 0:00:08.482994
-mistral-prompt1-8:  28%|██▊       | 8/29 [00:13<00:35,  1.70s/it]2025-04-20 01:53:12,429 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:14,701 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:06.498645
-mistral-prompt1-8:  31%|███       | 9/29 [00:15<00:38,  1.91s/it]2025-04-20 01:53:14,818 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:15,080 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.240577
-mistral-prompt1-8:  34%|███▍      | 10/29 [00:16<00:27,  1.45s/it]2025-04-20 01:53:15,198 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:19,061 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.794341
-mistral-prompt1-8:  38%|███▊      | 11/29 [00:20<00:39,  2.21s/it]2025-04-20 01:53:19,178 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:19,282 - Single inference for Architectural and Civil Drafters, duration: 0:00:06.965931
-mistral-prompt1-8:  41%|████▏     | 12/29 [00:20<00:27,  1.61s/it]2025-04-20 01:53:19,420 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:20,407 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.692573
-mistral-prompt1-8:  45%|████▍     | 13/29 [00:21<00:23,  1.47s/it]2025-04-20 01:53:20,510 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:22,046 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:06.952578
-mistral-prompt1-8:  48%|████▊     | 14/29 [00:23<00:22,  1.52s/it]2025-04-20 01:53:22,159 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:22,958 - Single inference for Archivists, duration: 0:00:03.880243
-mistral-prompt1-8:  52%|█████▏    | 15/29 [00:24<00:18,  1.34s/it]2025-04-20 01:53:23,070 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:25,469 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:06.164079
-mistral-prompt1-8:  55%|█████▌    | 16/29 [00:26<00:21,  1.69s/it]2025-04-20 01:53:25,481 - Single inference for Art Directors, duration: 0:00:05.060553
-2025-04-20 01:53:25,607 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:25,610 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:28,069 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.570866
-mistral-prompt1-8:  62%|██████▏   | 18/29 [00:29<00:16,  1.51s/it]2025-04-20 01:53:28,183 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:30,407 - Single inference for Astronomers, duration: 0:00:04.921306
-mistral-prompt1-8:  66%|██████▌   | 19/29 [00:31<00:17,  1.71s/it]2025-04-20 01:53:30,548 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:31,531 - Single inference for Art Therapists, duration: 0:00:09.467914
-mistral-prompt1-8:  69%|██████▉   | 20/29 [00:32<00:14,  1.56s/it]2025-04-20 01:53:31,664 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:31,694 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:08.722709
-mistral-prompt1-8:  72%|███████▏  | 21/29 [00:32<00:09,  1.18s/it]2025-04-20 01:53:31,817 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:34,901 - Single inference for Athletic Trainers, duration: 0:00:06.814799
-mistral-prompt1-8:  76%|███████▌  | 22/29 [00:36<00:12,  1.75s/it]2025-04-20 01:53:35,008 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:37,878 - Single inference for Audio and Video Technicians, duration: 0:00:06.170936
-mistral-prompt1-8:  79%|███████▉  | 23/29 [00:39<00:12,  2.10s/it]2025-04-20 01:53:38,001 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:39,334 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:07.779233
-mistral-prompt1-8:  83%|████████▎ | 24/29 [00:40<00:09,  1.91s/it]2025-04-20 01:53:39,440 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:40,433 - Single inference for Atmospheric and Space Scientists, duration: 0:00:10.002935
-mistral-prompt1-8:  86%|████████▌ | 25/29 [00:41<00:06,  1.67s/it]2025-04-20 01:53:40,548 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:41,232 - Single inference for Audiologists, duration: 0:00:06.317102
-mistral-prompt1-8:  90%|████████▉ | 26/29 [00:42<00:04,  1.42s/it]2025-04-20 01:53:41,476 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:03.583467
-mistral-prompt1-8:  93%|█████████▎| 27/29 [00:42<00:02,  1.07s/it]2025-04-20 01:53:44,655 - Single inference for Automotive Body and Related Repairers, duration: 0:00:05.307329
-mistral-prompt1-8:  97%|█████████▋| 28/29 [00:45<00:01,  1.70s/it]2025-04-20 01:53:44,764 - Single inference for Automotive Engineering Technicians, duration: 0:00:04.317942
-mistral-prompt1-8: 100%|██████████| 29/29 [00:46<00:00,  1.22s/it]mistral-prompt1-8: 100%|██████████| 29/29 [00:46<00:00,  1.59s/it]
-2025-04-20 01:53:44,782 - Multiprocessing for mistral-prompt1-8, duration: 0:00:46.093492
-mistral-prompt1-9:   0%|          | 0/29 [00:00<?, ?it/s]2025-04-20 01:53:44,966 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:45,082 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:45,086 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:45,089 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:49,782 - Single inference for Animal Control Workers, duration: 0:00:04.943494
-mistral-prompt1-9:   3%|▎         | 1/29 [00:04<02:19,  4.97s/it]2025-04-20 01:53:49,794 - Single inference for Anesthesiologists, duration: 0:00:04.955888
-2025-04-20 01:53:49,891 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:49,973 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:50,898 - Single inference for Animal Breeders, duration: 0:00:06.059423
-mistral-prompt1-9:  10%|█         | 3/29 [00:06<00:44,  1.70s/it]2025-04-20 01:53:51,030 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:51,210 - Single inference for Animal Caretakers, duration: 0:00:06.372346
-mistral-prompt1-9:  14%|█▍        | 4/29 [00:06<00:30,  1.22s/it]2025-04-20 01:53:51,336 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:52,815 - Single inference for Animal Scientists, duration: 0:00:03.019709
-mistral-prompt1-9:  17%|█▋        | 5/29 [00:08<00:32,  1.35s/it]2025-04-20 01:53:52,940 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:54,853 - Single inference for Animal Trainers, duration: 0:00:05.035336
-mistral-prompt1-9:  21%|██        | 6/29 [00:10<00:36,  1.57s/it]2025-04-20 01:53:54,973 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:58,911 - Single inference for Anthropologists and Archeologists, duration: 0:00:07.990349
-mistral-prompt1-9:  24%|██▍       | 7/29 [00:14<00:51,  2.35s/it]2025-04-20 01:53:59,036 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:53:59,458 - Single inference for Anthropology and Archeology Teachers, Postsecondary, duration: 0:00:08.225140
-mistral-prompt1-9:  28%|██▊       | 8/29 [00:14<00:37,  1.79s/it]2025-04-20 01:53:59,573 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:02,393 - Single inference for Arbitrators, Mediators, and Conciliators, duration: 0:00:07.526599
-mistral-prompt1-9:  31%|███       | 9/29 [00:17<00:42,  2.14s/it]2025-04-20 01:54:02,500 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:02,708 - Single inference for Appraisers and Assessors of Real Estate, duration: 0:00:09.869484
-mistral-prompt1-9:  34%|███▍      | 10/29 [00:17<00:30,  1.59s/it]2025-04-20 01:54:02,825 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:06,815 - Single inference for Architectural and Civil Drafters, duration: 0:00:07.343058
-mistral-prompt1-9:  38%|███▊      | 11/29 [00:22<00:42,  2.35s/it]2025-04-20 01:54:06,897 - Single inference for Architects, Except Landscape and Naval, duration: 0:00:07.972224
-2025-04-20 01:54:06,948 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:07,035 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:07,579 - Single inference for Architectural and Engineering Managers, duration: 0:00:05.172647
-mistral-prompt1-9:  45%|████▍     | 13/29 [00:22<00:22,  1.44s/it]2025-04-20 01:54:07,697 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:08,702 - Single inference for Architecture Teachers, Postsecondary, duration: 0:00:05.980869
-mistral-prompt1-9:  48%|████▊     | 14/29 [00:23<00:20,  1.36s/it]2025-04-20 01:54:08,817 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:10,722 - Single inference for Archivists, duration: 0:00:03.884340
-mistral-prompt1-9:  52%|█████▏    | 15/29 [00:25<00:21,  1.53s/it]2025-04-20 01:54:10,847 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:12,397 - Single inference for Art Directors, duration: 0:00:04.804115
-mistral-prompt1-9:  55%|█████▌    | 16/29 [00:27<00:20,  1.57s/it]2025-04-20 01:54:12,509 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:14,111 - Single inference for Area, Ethnic, and Cultural Studies Teachers, Postsecondary, duration: 0:00:07.200812
-mistral-prompt1-9:  59%|█████▊    | 17/29 [00:29<00:19,  1.61s/it]2025-04-20 01:54:14,226 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:15,487 - Single inference for Art Therapists, duration: 0:00:06.762088
-mistral-prompt1-9:  62%|██████▏   | 18/29 [00:30<00:16,  1.54s/it]2025-04-20 01:54:15,614 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:16,849 - Single inference for Athletes and Sports Competitors, duration: 0:00:02.723967
-mistral-prompt1-9:  66%|██████▌   | 19/29 [00:32<00:14,  1.49s/it]2025-04-20 01:54:16,965 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:17,597 - Single inference for Astronomers, duration: 0:00:05.186014
-mistral-prompt1-9:  69%|██████▉   | 20/29 [00:32<00:11,  1.27s/it]2025-04-20 01:54:17,721 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:19,692 - Single inference for Art, Drama, and Music Teachers, Postsecondary, duration: 0:00:08.946703
-mistral-prompt1-9:  72%|███████▏  | 21/29 [00:34<00:12,  1.52s/it]2025-04-20 01:54:19,813 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:21,556 - Single inference for Athletic Trainers, duration: 0:00:06.045685
-mistral-prompt1-9:  76%|███████▌  | 22/29 [00:36<00:11,  1.62s/it]2025-04-20 01:54:21,675 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:25,473 - Single inference for Audio and Video Technicians, duration: 0:00:05.767114
-mistral-prompt1-9:  79%|███████▉  | 23/29 [00:40<00:13,  2.30s/it]2025-04-20 01:54:25,588 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:25,895 - Single inference for Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary, duration: 0:00:08.275537
-mistral-prompt1-9:  83%|████████▎ | 24/29 [00:41<00:08,  1.74s/it]2025-04-20 01:54:26,001 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:26,249 - Single inference for Atmospheric and Space Scientists, duration: 0:00:09.386204
-mistral-prompt1-9:  86%|████████▌ | 25/29 [00:41<00:05,  1.33s/it]2025-04-20 01:54:26,374 - HTTP Request: POST http://127.0.0.1:11881/api/chat "HTTP/1.1 200 OK"
-2025-04-20 01:54:27,522 - Single inference for Audiologists, duration: 0:00:05.942830
-mistral-prompt1-9:  90%|████████▉ | 26/29 [00:42<00:03,  1.31s/it]2025-04-20 01:54:28,446 - Single inference for Audiovisual Equipment Installers and Repairers, duration: 0:00:02.959213
-mistral-prompt1-9:  93%|█████████▎| 27/29 [00:43<00:02,  1.19s/it]2025-04-20 01:54:30,102 - Single inference for Automotive Engineering Technicians, duration: 0:00:03.839988
-mistral-prompt1-9:  97%|█████████▋| 28/29 [00:45<00:01,  1.33s/it]2025-04-20 01:54:30,871 - Single inference for Automotive Body and Related Repairers, duration: 0:00:04.962124
-mistral-prompt1-9: 100%|██████████| 29/29 [00:46<00:00,  1.16s/it]mistral-prompt1-9: 100%|██████████| 29/29 [00:46<00:00,  1.59s/it]
-2025-04-20 01:54:30,889 - Multiprocessing for mistral-prompt1-9, duration: 0:00:46.099500
-2025-04-20 01:54:30,908 - Wrote results JSON for mistral-prompt1, duration: 0:00:00.011174
-2025-04-20 01:54:30,908 - Script completed

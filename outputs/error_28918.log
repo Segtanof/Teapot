@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/condabin/conda", line 12, in <module>
-    from conda.cli import main
-ModuleNotFoundError: No module named 'conda'

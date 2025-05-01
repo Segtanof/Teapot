@@ -1,87 +1,0 @@
-2025-04-27 19:39:42,582 - Script started
-2025-04-27 19:39:42,591 - Processing model: mistral
-2025-04-27 19:39:44,633 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-mistral-no_prompt-0:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:39:49,536 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:39:52,142 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.682926
-mistral-no_prompt-0: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]mistral-no_prompt-0: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]
-2025-04-27 19:39:52,150 - Multiprocessing for mistral-no_prompt-0, duration: 0:00:02.716989
-mistral-no_prompt-1:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:39:52,233 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:39:54,935 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.761169
-mistral-no_prompt-1: 100%|██████████| 1/1 [00:02<00:00,  2.78s/it]mistral-no_prompt-1: 100%|██████████| 1/1 [00:02<00:00,  2.78s/it]
-2025-04-27 19:39:54,943 - Multiprocessing for mistral-no_prompt-1, duration: 0:00:02.791276
-mistral-no_prompt-2:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:39:55,025 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:39:57,127 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.160101
-mistral-no_prompt-2: 100%|██████████| 1/1 [00:02<00:00,  2.18s/it]mistral-no_prompt-2: 100%|██████████| 1/1 [00:02<00:00,  2.18s/it]
-2025-04-27 19:39:57,135 - Multiprocessing for mistral-no_prompt-2, duration: 0:00:02.190045
-mistral-no_prompt-3:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:39:57,214 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:00,125 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.966541
-mistral-no_prompt-3: 100%|██████████| 1/1 [00:02<00:00,  2.98s/it]mistral-no_prompt-3: 100%|██████████| 1/1 [00:02<00:00,  2.98s/it]
-2025-04-27 19:40:00,133 - Multiprocessing for mistral-no_prompt-3, duration: 0:00:02.996517
-mistral-no_prompt-4:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:00,216 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:03,125 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.968299
-mistral-no_prompt-4: 100%|██████████| 1/1 [00:02<00:00,  2.98s/it]mistral-no_prompt-4: 100%|██████████| 1/1 [00:02<00:00,  2.98s/it]
-2025-04-27 19:40:03,133 - Multiprocessing for mistral-no_prompt-4, duration: 0:00:02.998534
-mistral-no_prompt-5:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:03,215 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:05,338 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.181616
-mistral-no_prompt-5: 100%|██████████| 1/1 [00:02<00:00,  2.20s/it]mistral-no_prompt-5: 100%|██████████| 1/1 [00:02<00:00,  2.20s/it]
-2025-04-27 19:40:05,346 - Multiprocessing for mistral-no_prompt-5, duration: 0:00:02.211452
-mistral-no_prompt-6:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:05,425 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:08,054 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.684231
-mistral-no_prompt-6: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]mistral-no_prompt-6: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]
-2025-04-27 19:40:08,062 - Multiprocessing for mistral-no_prompt-6, duration: 0:00:02.714089
-mistral-no_prompt-7:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:08,146 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:10,242 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.156790
-mistral-no_prompt-7: 100%|██████████| 1/1 [00:02<00:00,  2.17s/it]mistral-no_prompt-7: 100%|██████████| 1/1 [00:02<00:00,  2.17s/it]
-2025-04-27 19:40:10,250 - Multiprocessing for mistral-no_prompt-7, duration: 0:00:02.186662
-mistral-no_prompt-8:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:10,329 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:12,913 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.639865
-mistral-no_prompt-8: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]mistral-no_prompt-8: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]
-2025-04-27 19:40:12,921 - Multiprocessing for mistral-no_prompt-8, duration: 0:00:02.669430
-mistral-no_prompt-9:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:13,003 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:15,262 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.317599
-mistral-no_prompt-9: 100%|██████████| 1/1 [00:02<00:00,  2.33s/it]mistral-no_prompt-9: 100%|██████████| 1/1 [00:02<00:00,  2.33s/it]
-2025-04-27 19:40:15,271 - Multiprocessing for mistral-no_prompt-9, duration: 0:00:02.347664
-2025-04-27 19:40:15,279 - Wrote results JSON for mistral-no_prompt, duration: 0:00:00.006460
-2025-04-27 19:40:15,283 - Wrote prompt prompt1, duration: 0:00:00.003780
-mistral-prompt1-0:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:15,446 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:17,952 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.645793
-mistral-prompt1-0: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]mistral-prompt1-0: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]
-2025-04-27 19:40:17,960 - Multiprocessing for mistral-prompt1-0, duration: 0:00:02.676490
-mistral-prompt1-1:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:18,046 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:20,402 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.419209
-mistral-prompt1-1: 100%|██████████| 1/1 [00:02<00:00,  2.44s/it]mistral-prompt1-1: 100%|██████████| 1/1 [00:02<00:00,  2.44s/it]
-2025-04-27 19:40:20,410 - Multiprocessing for mistral-prompt1-1, duration: 0:00:02.448795
-mistral-prompt1-2:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:20,493 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:22,819 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.385970
-mistral-prompt1-2: 100%|██████████| 1/1 [00:02<00:00,  2.40s/it]mistral-prompt1-2: 100%|██████████| 1/1 [00:02<00:00,  2.40s/it]
-2025-04-27 19:40:22,828 - Multiprocessing for mistral-prompt1-2, duration: 0:00:02.415931
-mistral-prompt1-3:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:22,910 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:25,321 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.470226
-mistral-prompt1-3: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]mistral-prompt1-3: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]
-2025-04-27 19:40:25,329 - Multiprocessing for mistral-prompt1-3, duration: 0:00:02.500042
-mistral-prompt1-4:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:25,413 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:27,893 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.540649
-mistral-prompt1-4: 100%|██████████| 1/1 [00:02<00:00,  2.56s/it]mistral-prompt1-4: 100%|██████████| 1/1 [00:02<00:00,  2.56s/it]
-2025-04-27 19:40:27,901 - Multiprocessing for mistral-prompt1-4, duration: 0:00:02.570389
-mistral-prompt1-5:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:27,984 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:30,411 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.486646
-mistral-prompt1-5: 100%|██████████| 1/1 [00:02<00:00,  2.50s/it]mistral-prompt1-5: 100%|██████████| 1/1 [00:02<00:00,  2.50s/it]
-2025-04-27 19:40:30,419 - Multiprocessing for mistral-prompt1-5, duration: 0:00:02.516211
-mistral-prompt1-6:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:30,500 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:32,446 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.003803
-mistral-prompt1-6: 100%|██████████| 1/1 [00:02<00:00,  2.02s/it]mistral-prompt1-6: 100%|██████████| 1/1 [00:02<00:00,  2.02s/it]
-2025-04-27 19:40:32,455 - Multiprocessing for mistral-prompt1-6, duration: 0:00:02.033927
-mistral-prompt1-7:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:32,538 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:34,503 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.025279
-mistral-prompt1-7: 100%|██████████| 1/1 [00:02<00:00,  2.04s/it]mistral-prompt1-7: 100%|██████████| 1/1 [00:02<00:00,  2.04s/it]
-2025-04-27 19:40:34,512 - Multiprocessing for mistral-prompt1-7, duration: 0:00:02.055524
-mistral-prompt1-8:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:34,593 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:37,467 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.931740
-mistral-prompt1-8: 100%|██████████| 1/1 [00:02<00:00,  2.95s/it]mistral-prompt1-8: 100%|██████████| 1/1 [00:02<00:00,  2.95s/it]
-2025-04-27 19:40:37,475 - Multiprocessing for mistral-prompt1-8, duration: 0:00:02.961418
-mistral-prompt1-9:   0%|          | 0/1 [00:00<?, ?it/s]2025-04-27 19:40:37,556 - HTTP Request: POST http://127.0.0.1:11954/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:40:39,564 - Single inference for Anesthesiologist Assistants, duration: 0:00:02.066348
-mistral-prompt1-9: 100%|██████████| 1/1 [00:02<00:00,  2.08s/it]mistral-prompt1-9: 100%|██████████| 1/1 [00:02<00:00,  2.08s/it]
-2025-04-27 19:40:39,572 - Multiprocessing for mistral-prompt1-9, duration: 0:00:02.096109
-2025-04-27 19:40:39,579 - Wrote results JSON for mistral-prompt1, duration: 0:00:00.004640
-2025-04-27 19:40:39,579 - Script completed

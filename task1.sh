@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=-100
+#SBATCH --job-name=1-200
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=8     
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=32G              
-#SBATCH --time=02:00:00        
+#SBATCH --mem=4G              
+#SBATCH --time=03:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 #SBATCH --mail-type=ALL
@@ -16,8 +16,6 @@ module load cs/ollama
 source /opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/etc/profile.d/conda.sh
 
 conda activate mythesis
-
-
 
 # Start Ollama server in the background
 PORT=$((11434 + (SLURM_JOB_ID % 1000)))
@@ -44,15 +42,14 @@ monitor_gpu() {  # NEW: Function for continuous GPU logging
         timestamp=$(date '+%Y-%m-%d %H:%M:%S')
         nvidia-smi --query-gpu=utilization.gpu,memory.used,power.draw --format=csv,noheader,nounits | \
         awk -v ts="$timestamp" '{print ts ", " $1 ", " $2 ", " $3}' >> "$output_file"
-        sleep 10  # NEW: 10-second interval, less noise than 5
+        sleep 60  #
     done
 }
 monitor_gpu &  # NEW: Start GPU monitoring in background
 GPU_MONITOR_PID=$!  # NEW: Store PID for cleanup
 
-# Run Python with explicit output
-echo "Starting Python script..." >> outputs/output_${SLURM_JOB_ID}.log
-python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT >> outputs/output_${SLURM_JOB_ID}.log 2>> outputs/error_${SLURM_JOB_ID}.log
+
+python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT >>
 PYTHON_EXIT=$?
 
 # Clean up

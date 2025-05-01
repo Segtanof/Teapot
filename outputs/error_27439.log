@@ -1,8 +1,0 @@
-/var/spool/slurmd/job27439/slurm_script: line 16: /opt/bwhpc/common/devel/miniconda/23.9.0-py3.9.15/etc/profile.d/conda.sh: No such file or directory
-
-CondaError: Run 'conda init' before 'conda activate'
-
-Traceback (most recent call last):
-  File "/pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized1.py", line 2, in <module>
-    import pandas as pd
-ModuleNotFoundError: No module named 'pandas'

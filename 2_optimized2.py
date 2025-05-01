@@ -83,7 +83,7 @@ model_configs = [
     {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 2048, "num_ctx": 16384}
 ]
 prompts = {
-    "no_prompt": None,
+    # "no_prompt": None,
     "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
 }
 

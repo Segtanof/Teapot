@@ -1,49 +1,0 @@
-2025-04-27 19:46:02,049 - Script started
-2025-04-27 19:46:02,057 - Processing model: llama3.3
-2025-04-27 19:46:20,712 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-llama3.3-no_prompt-0:   0%|          | 0/100 [00:00<?, ?it/s]2025-04-27 19:46:25,725 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:46:35,299 - Single inference for Range Managers, duration: 0:00:09.722068
-llama3.3-no_prompt-0:   1%|          | 1/100 [00:09<16:03,  9.74s/it]2025-04-27 19:46:35,445 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:46:46,483 - Single inference for Real Estate Brokers, duration: 0:00:11.171501
-llama3.3-no_prompt-0:   2%|▏         | 2/100 [00:20<17:18, 10.59s/it]2025-04-27 19:46:46,645 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:47:01,807 - Single inference for Real Estate Sales Agents, duration: 0:00:15.308759
-llama3.3-no_prompt-0:   3%|▎         | 3/100 [00:36<20:37, 12.75s/it]2025-04-27 19:47:01,963 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:47:11,189 - Single inference for Receptionists and Information Clerks, duration: 0:00:09.366229
-llama3.3-no_prompt-0:   4%|▍         | 4/100 [00:45<18:16, 11.42s/it]2025-04-27 19:47:11,358 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:47:22,889 - Single inference for Recreation Workers, duration: 0:00:11.684312
-llama3.3-no_prompt-0:   5%|▌         | 5/100 [00:57<18:14, 11.52s/it]2025-04-27 19:47:23,043 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:47:34,327 - Single inference for Recreation and Fitness Studies Teachers, Postsecondary, duration: 0:00:11.423171
-llama3.3-no_prompt-0:   6%|▌         | 6/100 [01:08<18:00, 11.49s/it]2025-04-27 19:47:34,486 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:47:42,194 - Single inference for Recreational Therapists, duration: 0:00:07.851610
-llama3.3-no_prompt-0:   7%|▋         | 7/100 [01:16<15:58, 10.30s/it]2025-04-27 19:47:42,361 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:47:51,423 - Single inference for Recreational Vehicle Service Technicians, duration: 0:00:09.217954
-llama3.3-no_prompt-0:   8%|▊         | 8/100 [01:25<15:16,  9.96s/it]2025-04-27 19:47:51,551 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:48:05,541 - Single inference for Recycling Coordinators, duration: 0:00:14.107242
-llama3.3-no_prompt-0:   9%|▉         | 9/100 [01:39<17:04, 11.26s/it]2025-04-27 19:48:05,675 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:48:13,140 - Single inference for Recycling and Reclamation Workers, duration: 0:00:07.588521
-llama3.3-no_prompt-0:  10%|█         | 10/100 [01:47<15:12, 10.13s/it]2025-04-27 19:48:13,293 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:48:22,037 - Single inference for Refractory Materials Repairers, Except Brickmasons, duration: 0:00:08.882296
-llama3.3-no_prompt-0:  11%|█         | 11/100 [01:56<14:27,  9.75s/it]2025-04-27 19:48:22,176 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:48:47,289 - Task issues for Refuse and Recyclable Material Collectors: count 14/14, uniques 12. Retrying...
-2025-04-27 19:48:47,364 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:48:55,843 - Single inference for Refuse and Recyclable Material Collectors, duration: 0:00:33.796061
-llama3.3-no_prompt-0:  12%|█▏        | 12/100 [02:30<25:02, 17.07s/it]2025-04-27 19:48:56,015 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:49:05,711 - Single inference for Registered Nurses, duration: 0:00:09.857579
-llama3.3-no_prompt-0:  13%|█▎        | 13/100 [02:40<21:35, 14.89s/it]2025-04-27 19:49:05,845 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:49:22,222 - Single inference for Regulatory Affairs Managers, duration: 0:00:16.495889
-llama3.3-no_prompt-0:  14%|█▍        | 14/100 [02:56<22:02, 15.38s/it]2025-04-27 19:49:22,364 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:49:33,034 - Single inference for Regulatory Affairs Specialists, duration: 0:00:10.797228
-llama3.3-no_prompt-0:  15%|█▌        | 15/100 [03:07<19:50, 14.00s/it]2025-04-27 19:49:33,217 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:49:41,295 - Single inference for Rehabilitation Counselors, duration: 0:00:08.245877
-llama3.3-no_prompt-0:  16%|█▌        | 16/100 [03:15<17:11, 12.27s/it]2025-04-27 19:49:41,448 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:49:46,107 - Single inference for Reinforcing Iron and Rebar Workers, duration: 0:00:04.797727
-llama3.3-no_prompt-0:  17%|█▋        | 17/100 [03:20<13:52, 10.03s/it]2025-04-27 19:49:46,255 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:50:00,196 - Single inference for Remote Sensing Scientists and Technologists, duration: 0:00:14.079217
-llama3.3-no_prompt-0:  18%|█▊        | 18/100 [03:34<15:22, 11.25s/it]2025-04-27 19:50:00,339 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:50:09,805 - Single inference for Remote Sensing Technicians, duration: 0:00:09.594360
-llama3.3-no_prompt-0:  19%|█▉        | 19/100 [03:44<14:31, 10.76s/it]2025-04-27 19:50:09,971 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:50:19,982 - Single inference for Reservation and Transportation Ticket Agents and Travel Clerks, duration: 0:00:10.164540
-llama3.3-no_prompt-0:  20%|██        | 20/100 [03:54<14:06, 10.58s/it]2025-04-27 19:50:20,143 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-2025-04-27 19:50:30,939 - Single inference for Residential Advisors, duration: 0:00:10.945568
-llama3.3-no_prompt-0:  21%|██        | 21/100 [04:05<14:04, 10.69s/it]2025-04-27 19:50:31,102 - HTTP Request: POST http://127.0.0.1:11969/api/chat "HTTP/1.1 200 OK"
-slurmstepd: error: *** JOB 77535 ON uc3n076 CANCELLED AT 2025-04-27T19:50:36 ***

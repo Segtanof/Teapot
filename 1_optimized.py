@@ -18,7 +18,7 @@ folder_name = f'results/ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
 os.makedirs(folder_name, exist_ok=True)
 print("folder created")
 
-logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.WARNING , format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load and preprocess occupation data
 occupations = (
@@ -40,7 +40,10 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55']
 
-occupations = occupations.iloc[:100]
+occupations = occupations.iloc[100:200]
+
+first = occupations.index[0]
+last = occupations.index[-1]
 
 # Sample 5% of occupations per industry
 # sampled_occupation = occupations.groupby('ind', group_keys=False).sample(frac=0.05, random_state=1)
@@ -174,7 +177,7 @@ def main():
             all_results_df = all_results_df.astype({"rating": str})
 
             
-            for i in range(5):  # 10 rounds
+            for i in range(10):  # 10 rounds
                 start_time = datetime.now()
                 
                 args = [(row['title'], model_config, row['description'], prompt) for _, row in occupations[['title', 'description']].iterrows()]
@@ -195,7 +198,7 @@ def main():
                 
                 logging.info(f"Completed {model_name}-{name}-{i}, duration: {datetime.now() - start_time}")
             
-            all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results.json", orient="records")
+            all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records")
 
     logging.info("Script completed")
 
