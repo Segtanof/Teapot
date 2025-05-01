@@ -2,5 +2,15 @@ results/emb_mistral_benchmark_all.json
 results/emb_mistral_prompt_all_agg.json
 results/emb_mistral_prompt_all_anal.json
 results/emb_mistral_prompt_all.json
+outputs/error_119468.log
+outputs/error_119473.log
+outputs/gpu_initial_119468.log
+outputs/gpu_initial_119473.log
+outputs/gpu_usage_118935.log
+outputs/gpu_usage_119468.log
+outputs/gpu_usage_119473.log
+outputs/ollama_119468.log
+outputs/ollama_119473.log
+outputs/output_119468.log
+outputs/output_119473.log
 outputs/
-outputs/*.log
