@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --job-name=a6-700
+#SBATCH --job-name=test
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
-#SBATCH --cpus-per-task=4     
+#SBATCH --cpus-per-task=12     
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=2G              
+#SBATCH --mem=4G              
 #SBATCH --time=03:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
@@ -20,9 +20,9 @@ conda activate mythesis
 # Start Ollama server in the background
 PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 # Set Ollama environment variable to keep model loaded
-export OLLAMA_DEBUG=true
+export OLLAMA_DEBUG=false
 export OLLAMA_KEEP_ALIVE="12h"
-export OLLAMA_NUM_PARALLEL=4    # Max parallelism
+export OLLAMA_NUM_PARALLEL=12    # Max parallelism
 export OLLAMA_MAX_QUEUE=512
 export OLLAMA_CTX_SIZE=8192
 
