@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --job-name=360-480
+#SBATCH --job-name=a2-250
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=4     
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=4G              
+#SBATCH --mem=2G              
 #SBATCH --time=03:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
@@ -35,18 +35,6 @@ echo "PORT: $PORT" >> outputs/output_${SLURM_JOB_ID}.log
 
 # Monitor GPU usage
 nvidia-smi -l 180 > outputs/gpu_initial_${SLURM_JOB_ID}.log &
-monitor_gpu() {  # NEW: Function for continuous GPU logging
-    local output_file="outputs/gpu_usage_${SLURM_JOB_ID}.log"
-    echo "Timestamp, GPU Util (%), Memory Used (MiB), Power (W)" > "$output_file"
-    while true; do
-        timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-        nvidia-smi --query-gpu=utilization.gpu,memory.used,power.draw --format=csv,noheader,nounits | \
-        awk -v ts="$timestamp" '{print ts ", " $1 ", " $2 ", " $3}' >> "$output_file"
-        sleep 60  #
-    done
-}
-monitor_gpu &  # NEW: Start GPU monitoring in background
-GPU_MONITOR_PID=$!  # NEW: Store PID for cleanup
 
 
 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized_a.py --port $PORT
