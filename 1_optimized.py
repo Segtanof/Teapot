@@ -33,7 +33,7 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-occupations = occupations.iloc[:10]
+occupations = occupations.iloc[150:200]
 
 first = occupations.index[0]
 last = occupations.index[-1]
@@ -158,7 +158,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 4  # Match SLURM cpus-per-task
+    num_processes = 12  # Match SLURM cpus-per-task
     
     for model_config in model_configs:
         model_name = model_config["model"]
@@ -175,7 +175,7 @@ def main():
             all_results_df = all_results_df.astype({"rating": str})
 
             
-            for i in range(5):  # 10 rounds
+            for i in range(10):  # 10 rounds
                 start_time = datetime.now()
                 
                 args = [(row['title'], model_config, row['description'], prompt) for _, row in occupations[['title', 'description']].iterrows()]

@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=4c4g4p
+#SBATCH --job-name=12c48g4p60b
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
-#SBATCH --cpus-per-task=12
+#SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=48G              
-#SBATCH --time=30    
+#SBATCH --mem=32G              
+#SBATCH --time=10:00:00    
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 #SBATCH --mail-type=ALL
@@ -22,7 +22,7 @@ PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 # Set Ollama environment variable to keep model loaded
 export OLLAMA_DEBUG=true
 export OLLAMA_KEEP_ALIVE="12h"
-export OLLAMA_NUM_PARALLEL=4    # Max parallelism
+export OLLAMA_NUM_PARALLEL=12    # Max parallelism
 export OLLAMA_MAX_QUEUE=512
 export OLLAMA_CTX_SIZE=8192
 
