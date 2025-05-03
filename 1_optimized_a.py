@@ -33,7 +33,7 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-occupations = occupations.iloc[900:]
+occupations = occupations.iloc[:10]
 
 first = occupations.index[0]
 last = occupations.index[-1]
@@ -64,7 +64,7 @@ def clean_text(text):
         return [clean_text(item) if isinstance(item, str) else item for item in text]
     return text
 
-def get_rating(title, model, description, system_prompt=None, batch_size=60):
+def get_rating(title, model, description, system_prompt=None, batch_size=15):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". This occupation "+ description +" Your options for the ratings are the following: 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -85,7 +85,7 @@ def get_rating(title, model, description, system_prompt=None, batch_size=60):
             try:
                 with torch.cuda.device(0):
                     logging.debug(f"Sending batch {i} to LLM: {prompts}")
-                    responses = llm.batch(prompts, config={"num_threads": 2})
+                    responses = llm.batch(prompts, config={"num_threads": 1})
                 
                 elapsed = time.time() - start_time
                 logging.info(f"Batch {i} response received after {elapsed:.2f} seconds")
@@ -149,8 +149,8 @@ def main():
     ]
     
     prompts = {
-        # "no_prompt": None,
-        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
+        "no_prompt": None,
+        # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
 
@@ -175,7 +175,7 @@ def main():
             all_results_df = all_results_df.astype({"rating": str})
 
             
-            for i in range(10):  # 10 rounds
+            for i in range(5):  # 10 rounds
                 start_time = datetime.now()
                 
                 args = [(row['title'], model_config, row['description'], prompt) for _, row in occupations[['title', 'description']].iterrows()]
@@ -205,6 +205,7 @@ def main():
             all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records")
 
     logging.info("Script completed")
+    logging.info(f"number of processes: {num_processes}, number of threads: {torch.get_num_threads()}")
 
 if __name__ == "__main__":
     main()

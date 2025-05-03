@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=test8
+#SBATCH --job-name=4c4g4p
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=12
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=2G              
-#SBATCH --time=03:00:00        
+#SBATCH --mem=48G              
+#SBATCH --time=30    
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 #SBATCH --mail-type=ALL
