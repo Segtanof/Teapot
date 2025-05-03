@@ -146,7 +146,7 @@ def process_rating(generated_df, num_workers=5):
 
 
 # Main execution
-folder_name = "results/jm1"
+folder_name = "results/task1/j_mistral"
 json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
 for file in json_files:
     generated_df = pd.read_json(f"{folder_name}/{file}", dtype={"rating": "object"}).dropna()
