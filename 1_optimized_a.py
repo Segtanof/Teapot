@@ -11,13 +11,6 @@ import time
 import torch
 import os
 
-# SLURM environment setup
-# os.environ["OMP_NUM_THREADS"] = "4"  # Half of 8 cores for threading within processes
-# os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Single GPU
-folder_name = f'results/test1ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
-os.makedirs(folder_name, exist_ok=True)
-print("folder created")
-
 logging.basicConfig(level=logging.INFO , format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load and preprocess occupation data
@@ -40,7 +33,7 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-occupations = occupations.iloc[360:480]
+occupations = occupations.iloc[900:]
 
 first = occupations.index[0]
 last = occupations.index[-1]
@@ -78,6 +71,7 @@ def get_rating(title, model, description, system_prompt=None, batch_size=60):
 
     llm = model.with_structured_output(schema=json_schema, method="json_schema")
     
+    logging.info(f"Model initialized for {title}")
     ratings, reasons = [], []
     for i in range(0, len(qlist), batch_size):
         batch = qlist[i:i + batch_size]
@@ -126,33 +120,32 @@ def get_rating(title, model, description, system_prompt=None, batch_size=60):
     return "".join(ratings), reasons
 
 
-def process_chunk(chunk_args):
-    model_config, prompt, titles, descriptions = chunk_args
+def process_title(args):
+    """Process a single title"""
+    title, model_config, description, prompt = args
     model = ChatOllama(**model_config)
-    results = []
-    for title, desc in zip(titles, descriptions):
-        ratings, reasons = get_rating(title, model, desc, prompt)
-        if ratings:  # Only append if successful
-            results.append((title, ratings, reasons))
-    return results
+    ratings, reasons = get_rating(title, model, description, prompt)
+    return title, ratings, reasons
+
 def initializer():
     """Initialize each process"""
     logging.basicConfig(level=logging.INFO)
 
 def main():
+    # Parse arguments from SLURM
     parser = argparse.ArgumentParser()
-    parser.add_argument("--port", type=int, default=11434)
+    parser.add_argument("--port", type=int, default=11434)  # Dynamic port
     args = parser.parse_args()
-    
+    # Model configurations
     model_configs = [
-        # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-        #  "num_predict": 1024, "num_ctx": 8192},
+        {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+         "num_predict": 1024, "num_ctx": 8192},
         # {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
         #  "num_predict": 1024, "num_ctx": 8192},
         # {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
         #  "num_predict": 1024, "num_ctx": 8192},
-        {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-         "num_predict": 1024, "num_ctx": 8192}
+        # {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+        #  "num_predict": 1024, "num_ctx": 8192}
     ]
     
     prompts = {
@@ -160,65 +153,56 @@ def main():
         "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
+
+    
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 4
+    num_processes = 4  # Match SLURM cpus-per-task
     
     for model_config in model_configs:
         model_name = model_config["model"]
         logging.info(f"Processing model: {model_name}")
         
+        # Warm-up
         warmup_model = ChatOllama(**model_config)
         warmup_model.invoke("Warm-up prompt")
         
-        for name, prompt in prompts.items():
-            if prompt:
-                with open(f"{folder_name}/sys_prompt.txt", "a") as f:
-                    f.write(prompt + "\n")
-            
+        for name, prompt in prompts.items():            
             all_results_df = occupations.copy()
             all_results_df["rating"] = pd.Series([None] * len(all_results_df))
             all_results_df["reason"] = [None] * len(all_results_df)
             all_results_df = all_results_df.astype({"rating": str})
+
             
-            for i in range(10):  # Reduced iterations
+            for i in range(10):  # 10 rounds
                 start_time = datetime.now()
                 
-                chunk_size = len(occupations) // num_processes
-                chunks = [
-                    (
-                        model_config,
-                        prompt,
-                        occupations['title'][j:j+chunk_size].tolist(),
-                        occupations['description'][j:j+chunk_size].tolist()
-                    )
-                    for j in range(0, len(occupations), chunk_size)
-                ]
-                
+                args = [(row['title'], model_config, row['description'], prompt) for _, row in occupations[['title', 'description']].iterrows()]
+
                 with Pool(processes=num_processes, initializer=initializer) as pool:
                     results = list(tqdm(
-                        pool.imap_unordered(process_chunk, chunks),
-                        total=len(chunks),
+                        pool.imap_unordered(process_title, args),
+                        total=len(occupations),
                         desc=f"{model_name}-{name}-{i}"
                     ))
                 
-                results = [item for sublist in results for item in sublist]
-                
                 temp_df = occupations.copy()
                 for title, rating, reason in results:
-                    temp_df.loc[temp_df["title"] == title, "rating"] = pd.Series([rating], dtype="string").values
+                    temp_df.loc[temp_df["title"] == title, "rating"] = pd.Series([rating],dtype= "string").values
                     temp_df.loc[temp_df["title"] == title, "reason"] = pd.Series([reason]).values
                 temp_df["iteration"] = i
                 all_results_df = pd.concat([all_results_df, temp_df], ignore_index=True)
                 
                 logging.info(f"Completed {model_name}-{name}-{i}, duration: {datetime.now() - start_time}")
-            
+
             # Clean text columns before saving
             for col in ['title', 'description', 'reason']:
                 all_results_df[col] = all_results_df[col].apply(clean_text)
 
-            all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records", lines=True)
+            folder_name = f'results/{model_name}_ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
+            os.makedirs(folder_name, exist_ok=True)
+            all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records")
 
     logging.info("Script completed")
 

@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --job-name=6-720
+#SBATCH --job-name=test8
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
-#SBATCH --cpus-per-task=8     
+#SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=4G              
+#SBATCH --mem=2G              
 #SBATCH --time=03:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
@@ -22,7 +22,7 @@ PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 # Set Ollama environment variable to keep model loaded
 export OLLAMA_DEBUG=true
 export OLLAMA_KEEP_ALIVE="12h"
-export OLLAMA_NUM_PARALLEL=8    # Max parallelism
+export OLLAMA_NUM_PARALLEL=4    # Max parallelism
 export OLLAMA_MAX_QUEUE=512
 export OLLAMA_CTX_SIZE=8192
 
@@ -35,21 +35,9 @@ echo "PORT: $PORT" >> outputs/output_${SLURM_JOB_ID}.log
 
 # Monitor GPU usage
 nvidia-smi -l 180 > outputs/gpu_initial_${SLURM_JOB_ID}.log &
-monitor_gpu() {  # NEW: Function for continuous GPU logging
-    local output_file="outputs/gpu_usage_${SLURM_JOB_ID}.log"
-    echo "Timestamp, GPU Util (%), Memory Used (MiB), Power (W)" > "$output_file"
-    while true; do
-        timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-        nvidia-smi --query-gpu=utilization.gpu,memory.used,power.draw --format=csv,noheader,nounits | \
-        awk -v ts="$timestamp" '{print ts ", " $1 ", " $2 ", " $3}' >> "$output_file"
-        sleep 60  #
-    done
-}
-monitor_gpu &  # NEW: Start GPU monitoring in background
-GPU_MONITOR_PID=$!  # NEW: Store PID for cleanup
 
 
-python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT >>
+python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT
 PYTHON_EXIT=$?
 
 # Clean up
