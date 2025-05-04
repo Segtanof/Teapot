@@ -33,7 +33,7 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-occupations = occupations.iloc[100:150]
+occupations = occupations.iloc[700:800]
 
 first = occupations.index[0]
 last = occupations.index[-1]
@@ -149,8 +149,8 @@ def main():
     ]
     
     prompts = {
-        "no_prompt": None,
-        # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
+        # "no_prompt": None,
+        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
 
@@ -158,7 +158,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    num_processes = 6  # Match SLURM cpus-per-task
+    num_processes = 12  # Match SLURM cpus-per-task
     
     for model_config in model_configs:
         model_name = model_config["model"]
@@ -200,7 +200,7 @@ def main():
             for col in ['title', 'description', 'reason']:
                 all_results_df[col] = all_results_df[col].apply(clean_text)
 
-            folder_name = f'results/{model_name}_job_match_{datetime.now().strftime("%d%m_%H%M")}/'
+            folder_name = f'results/{model_name}_ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
             os.makedirs(folder_name, exist_ok=True)
             all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records")
 
