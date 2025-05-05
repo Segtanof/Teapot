@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=32G              
+#SBATCH --mem=4G              
 #SBATCH --time=10:00:00
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
@@ -23,7 +23,7 @@ PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 export OLLAMA_DEBUG=true
 export OLLAMA_KEEP_ALIVE="12h"
 export OLLAMA_NUM_PARALLEL=12    # Max parallelism
-export OLLAMA_MAX_QUEUE=512
+export OLLAMA_MAX_QUEUE=1024
 export OLLAMA_CTX_SIZE=8192
 
 export OLLAMA_HOST="127.0.0.1:$PORT"
@@ -34,7 +34,7 @@ sleep 10  # Wait for server to initialize
 echo "PORT: $PORT" >> outputs/output_${SLURM_JOB_ID}.log
 
 # Monitor GPU usage
-nvidia-smi -l 180 > outputs/gpu_initial_${SLURM_JOB_ID}.log &
+nvidia-smi -l 60 > outputs/gpu_initial_${SLURM_JOB_ID}.log &
 
 
 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized_a.py --port $PORT

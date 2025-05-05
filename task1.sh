@@ -3,9 +3,9 @@
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=4
-#SBATCH --gres=gpu:1           
-#SBATCH --mem=32G              
-#SBATCH --time=10:00:00    
+#SBATCH --gres=gpu:1         
+#SBATCH --mem=4G              
+#SBATCH --time=10:00:00
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 #SBATCH --mail-type=ALL
@@ -34,7 +34,7 @@ sleep 10  # Wait for server to initialize
 echo "PORT: $PORT" >> outputs/output_${SLURM_JOB_ID}.log
 
 # Monitor GPU usage
-nvidia-smi -l 180 > outputs/gpu_initial_${SLURM_JOB_ID}.log &
+nvidia-smi -l 30 > outputs/gpu_initial_${SLURM_JOB_ID}.log &
 
 
 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/1_optimized.py --port $PORT

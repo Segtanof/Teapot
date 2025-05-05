@@ -11,7 +11,7 @@ import time
 import torch
 import os
 
-logging.basicConfig(level=logging.INFO , format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.INFO , format="%(asctime)s - %(message)s")
 
 # Load and preprocess occupation data
 occupations = (
@@ -33,7 +33,7 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-occupations = occupations.iloc[600:700]
+occupations = occupations.iloc[100:300]
 
 first = occupations.index[0]
 last = occupations.index[-1]
@@ -64,7 +64,7 @@ def clean_text(text):
         return [clean_text(item) if isinstance(item, str) else item for item in text]
     return text
 
-def get_rating(title, model, description, system_prompt=None, batch_size=30):
+def get_rating(title, model, description, system_prompt=None, batch_size=60):
     json_schema = {"type":"object","properties":{"reason":{"type":"string"},"rating":{"type":"integer","minimum":1,"maximum":5},"items":{"type":"string"}},"required":["reason","rating"]}
     query = "Rate the statement with a number either 1, 2, 3, 4, or 5 base on the interest of the occupation \"" + title + "\". This occupation "+ description +" Your options for the ratings are the following: 1 is strongly dislike, 2 is dislike, 3 is neutral, 4 is like and 5 is strongly like. Provide your reasons. Return your response strictly as a JSON object matching this schema: "+ str(json_schema) +". Here is the statement: "
     prompt_template = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")] if system_prompt else [("human", "{input}")])
@@ -85,7 +85,7 @@ def get_rating(title, model, description, system_prompt=None, batch_size=30):
             try:
                 with torch.cuda.device(0):
                     logging.debug(f"Sending batch {i} to LLM: {prompts}")
-                    responses = llm.batch(prompts, config={"num_threads": 1})
+                    responses = llm.batch(prompts, config=None)
                 
                 elapsed = time.time() - start_time
                 logging.info(f"Batch {i} response received after {elapsed:.2f} seconds")
@@ -140,17 +140,17 @@ def main():
     model_configs = [
         # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
         #  "num_predict": 1024, "num_ctx": 8192},
-        # {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
-        #  "num_predict": 1024, "num_ctx": 8192},
-        {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+        {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
          "num_predict": 1024, "num_ctx": 8192},
+        # {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
+        #  "num_predict": 1024, "num_ctx": 8192},
         # {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", 
         #  "num_predict": 1024, "num_ctx": 8192}
     ]
     
     prompts = {
-        # "no_prompt": None,
-        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
+        "no_prompt": None,
+        # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
 
@@ -200,7 +200,7 @@ def main():
             for col in ['title', 'description', 'reason']:
                 all_results_df[col] = all_results_df[col].apply(clean_text)
 
-            folder_name = f'results/{model_name}_job_match_{datetime.now().strftime("%d%m_%H%M")}/'
+            folder_name = f'results/{model_name}_ajob_match_{datetime.now().strftime("%d%m_%H%M")}/'
             os.makedirs(folder_name, exist_ok=True)
             all_results_df.to_json(f"{folder_name}/{model_name}_{name}_results{first}-{last}.json", orient="records")
 
