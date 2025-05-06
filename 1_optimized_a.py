@@ -33,7 +33,7 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-occupations = occupations.iloc[300:500]
+occupations = occupations.iloc[500:600]
 
 first = occupations.index[0]
 last = occupations.index[-1]
