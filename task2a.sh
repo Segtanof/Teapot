@@ -5,7 +5,7 @@
 #SBATCH --cpus-per-task=2     
 #SBATCH --gres=gpu:1           
 #SBATCH --mem=4G              
-#SBATCH --time=04:00:00        
+#SBATCH --time=10:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 #SBATCH --mail-type=ALL
@@ -42,7 +42,7 @@ free -h
 NVIDIA_PID=$!
 
 # Run Python script
-timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized2.py --port $PORT
+timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized1.py --port $PORT
 # Clean up
 kill $NVIDIA_PID
 kill $OLLAMA_PID
