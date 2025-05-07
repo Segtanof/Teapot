@@ -14,10 +14,6 @@ import os
 import argparse
 
 # Setup output folder
-folder_name = f'results/dstask_match_{datetime.now().strftime("%d%m_%H%M")}/'
-os.makedirs(folder_name, exist_ok=True)
-print("folder created")
-
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s",
                     handlers=[logging.FileHandler("execution_log.log"), logging.StreamHandler()])
 
@@ -35,8 +31,9 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-sampled_occupation = sampled_occupation.iloc[300:400]
-
+# sampled_occupation = sampled_occupation.iloc[:5]
+first = sampled_occupation.index[0]
+last = sampled_occupation.index[-1]
 
 #for trial
 # trial_df = sampled_occupation#.sample(3, random_state= 1)
@@ -80,12 +77,13 @@ args = parser.parse_args()
 
 model_configs = [
     # {"model": "llama3.3", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}","num_predict": 2048},
-    # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 2048},
-    {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 2048, "num_ctx": 16384}
+    # {"model": "mistral", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 1024},
+    # {"model": "deepseek-r1", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 2048, "num_ctx": 16384},
+    {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 1024, "num_ctx": 8192}
 ]
 prompts = {
-    # "no_prompt": None,
-    "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
+    "no_prompt": None,
+    # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
 }
 
 logging.info("Script started")
@@ -96,19 +94,13 @@ for model_config in model_configs:
     model.invoke("Warm-up prompt")
 
     for name, prompt in prompts.items():
-        if prompt:
-            start_time = datetime.now()
-            with open(f"{folder_name}/sys_prompt.txt", "a") as f:
-                f.write(prompt + "\n")
-            logging.info(f"Wrote prompt {name}, duration: {datetime.now() - start_time}")
-
         all_results_df = sampled_occupation.copy()
         all_results_df["gen_task"] = [None] * len(all_results_df)
         all_results_df["iteration"] = None
 
         for i in range(10):
             start_time = datetime.now()
-            with Pool(processes=8) as pool:
+            with Pool(processes=12) as pool:
                 results = list(tqdm(
                     pool.imap_unordered(process_title, [(row['title'], model_config, row['description'], prompt) for _, row in sampled_occupation[['title', 'description']].iterrows()]),
                     total=len(sampled_occupation), desc=f"{model_name}-{name}-{i}"
@@ -121,8 +113,11 @@ for model_config in model_configs:
             temp_df["iteration"] = i
             all_results_df = pd.concat([all_results_df, temp_df], ignore_index=True)
 
+        folder_name = f'results/dstask_match_{datetime.now().strftime("%d%m_%H%M")}/'
+        os.makedirs(folder_name, exist_ok=True)
+        print("folder created")
         start_time = datetime.now()
-        with open(f"{folder_name}/{model_name}_{name}_results.json", "w") as f:
+        with open(f"{folder_name}/{model_name}_{name}_tmresults{first}-{last}.json", "w") as f:
             f.write(all_results_df.to_json(index=True))
         logging.info(f"Wrote results JSON for {model_name}-{name}, duration: {datetime.now() - start_time}")
 

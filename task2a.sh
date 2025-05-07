@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=a3-400
+#SBATCH --job-name=a
 #SBATCH --nodes=1              
 #SBATCH --ntasks=1             
 #SBATCH --cpus-per-task=2     
 #SBATCH --gres=gpu:1           
-#SBATCH --mem=8G              
-#SBATCH --time=02:00:00        
+#SBATCH --mem=4G              
+#SBATCH --time=04:00:00        
 #SBATCH --output=outputs/output_%j.log
 #SBATCH --error=outputs/error_%j.log
 #SBATCH --mail-type=ALL
@@ -23,7 +23,7 @@ conda activate mythesis
 PORT=$((11434 + (SLURM_JOB_ID % 1000)))
 export OLLAMA_DEBUG=true
 export OLLAMA_KEEP_ALIVE="4h"
-export OLLAMA_NUM_PARALLEL=8    # Max parallelism
+export OLLAMA_NUM_PARALLEL=12    # Max parallelism
 export OLLAMA_MAX_QUEUE=512
 export OLLAMA_CTX_SIZE=16384
 
@@ -42,7 +42,7 @@ free -h
 NVIDIA_PID=$!
 
 # Run Python script
-timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized1.py --port $PORT
+timeout 7200 python /pfs/work9/workspace/scratch/ma_ssiu-thesis/Teapot/2_optimized2.py --port $PORT
 # Clean up
 kill $NVIDIA_PID
 kill $OLLAMA_PID
