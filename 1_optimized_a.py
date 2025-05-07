@@ -33,7 +33,7 @@ occupations["ind"] = occupations["code"].str[:2]
 # discard rows with ind = 55
 occupations = occupations[occupations['ind'] != '55'].reset_index(drop=True)
 
-# occupations = occupations.iloc[600:711]
+occupations = occupations.iloc[:100]
 
 first = occupations.index[0]
 last = occupations.index[-1]
@@ -149,8 +149,8 @@ def main():
     ]
     
     prompts = {
-        "no_prompt": None,
-        # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
+        # "no_prompt": None,
+        "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to rate the statement according to your professional interest and occupation relevance."
     }
     
 

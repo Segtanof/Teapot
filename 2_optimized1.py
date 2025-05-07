@@ -31,13 +31,21 @@ occupations = (
     .rename(columns={"o*net-soc code": "code"})  # Rename specific column
 )
 sampled_occupation = job_statements.merge(occupations, how="left", on="title")
-# sampled_occupation = sampled_occupation.iloc[:5]
+sampled_occupation = sampled_occupation.iloc[:]
 first = sampled_occupation.index[0]
 last = sampled_occupation.index[-1]
 
 #for trial
 # trial_df = sampled_occupation#.sample(3, random_state= 1)
 # test_sample_list =[trial_df.iloc[x]["title"] for x in range(len(trial_df))]
+def clean_text(text):
+    if isinstance(text, str):
+        # Replace invalid UTF-8 characters with a replacement character or empty string
+        return text.encode('utf-8', errors='replace').decode('utf-8')
+    elif isinstance(text, list):
+        # Handle lists (e.g., 'reason' column)
+        return [clean_text(item) if isinstance(item, str) else item for item in text]
+    return text
 
 #get reference description
 def get_des (title):
@@ -82,8 +90,8 @@ model_configs = [
     {"model": "llama3.2", "temperature": 1, "base_url": f"http://127.0.0.1:{args.port}", "num_predict": 1024, "num_ctx": 8192}
 ]
 prompts = {
-    "no_prompt": None,
-    # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
+    # "no_prompt": None,
+    "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
 }
 
 logging.info("Script started")
@@ -112,6 +120,9 @@ for model_config in model_configs:
                 temp_df.loc[temp_df["title"] == title, "gen_task"] = pd.Series([tasks]).values
             temp_df["iteration"] = i
             all_results_df = pd.concat([all_results_df, temp_df], ignore_index=True)
+            # Clean text columns before saving
+        for col in ['gen_task']:
+            all_results_df[col] = all_results_df[col].apply(clean_text)
 
         folder_name = f'results/dstask_match_{datetime.now().strftime("%d%m_%H%M")}/'
         os.makedirs(folder_name, exist_ok=True)
