@@ -94,5 +94,5 @@ def process_files(folder_name, num_processes=8):
     logging.info("Script completed")
 
 if __name__ == "__main__":
-    folder_name = 'results/tm_llama3b_n'
+    folder_name = 'results/tm_llama3b_p'
     process_files(folder_name, num_processes=8)
