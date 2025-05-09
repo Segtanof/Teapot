@@ -48,51 +48,20 @@ def get_career(answer):
     return career
 
 # Matching function
-def match_score(rating, title):
+def match_score(rating, title, iteration):
     # Load pre-fetched career data
     onet_career = get_career(rating)
     
-    #create an empty dataframe to store the results
+    # Create an empty DataFrame to store the results
     result_df = pd.DataFrame(columns=[])
 
-    # Filter careers by fit categories
-    best_fit = onet_career[onet_career["fit"] == "Best"]
-    great_fit = onet_career[onet_career["fit"] == "Great"]
-    good_fit = onet_career[onet_career["fit"] == "Good"]
-    
-    # Calculate hit rate @n
-    best_fit_hits = 1 if title in best_fit["title"].values else 0
-    best_and_great_fit_hits = 1 if title in pd.concat([best_fit, great_fit])["title"].values else 0
     all_fit_hits = 1 if title in onet_career["title"].values else 0
     
-    # Calculate precision
-    best_fit_precision = best_fit_hits / len(best_fit) if len(best_fit) > 0 else 0
-    great_fit_precision = best_and_great_fit_hits / len(pd.concat([best_fit, great_fit])) if len(pd.concat([best_fit, great_fit])) > 0 else 0
-    all_fit_precision = all_fit_hits / len(onet_career) if len(onet_career) > 0 else 0
-
     # Calculate hit rate @n in related jobs
     related_job = related[related["title"] == title]
-    related_best_fit_hits = 1 if related_job["related_title"].isin(best_fit["title"]).any() else 0
-    related_best_and_great_fit_hits = 1 if related_job["related_title"].isin(pd.concat([best_fit, great_fit])["title"]).any() else 0
     related_all_fit_hits = 1 if related_job["related_title"].isin(onet_career["title"]).any() else 0
 
-    
     # Calculate recall @n
-    related_job = related[related["title"] == title]
-    related_in_best = pd.merge(
-        right=best_fit, 
-        left=related_job, 
-        right_on="title", 
-        left_on="related_title", 
-        how="inner"
-    )
-    related_in_best_and_great = pd.merge(
-        right=pd.concat([best_fit, great_fit]),
-        left=related_job, 
-        right_on="title", 
-        left_on="related_title", 
-        how="inner"
-    )
     related_in_all = pd.merge(
         right=onet_career, 
         left=related_job, 
@@ -102,54 +71,43 @@ def match_score(rating, title):
     )
 
     # Calculate recall
-    best_fit_recall = len(related_in_best) / len(related_job) if len(related_job) > 0 else 0
-    best_and_great_fit_recall = len(related_in_best_and_great) / len(related_job) if len(related_job) > 0 else 0
     all_fit_recall = len(related_in_all) / len(related_job) if len(related_job) > 0 else 0
     result_df = pd.DataFrame({
         "title": [title],
-        "best_fit": [len(best_fit)],
-        "great_fit": [len(great_fit)],
-        "good_fit": [len(good_fit)],
+        "iteration": [iteration],  # Include the iteration column
         "all_fit": [len(onet_career)],
-        "c_best_fit_hits": [best_fit_hits],
-        "c_best_fit_precision": [best_fit_precision],
-        "r_best_fit_hits": [related_best_fit_hits],
-        "r_best_fit_recall": [best_fit_recall],
-        "c_best_and_great_fit_hits": [best_and_great_fit_hits],
-        "c_best_and_great_fit_precision": [great_fit_precision],
-        "r_best_and_great_fit_hits": [related_best_and_great_fit_hits],
-        "r_best_and_great_fit_recall": [best_and_great_fit_recall],
         "c_all_fit_hits": [all_fit_hits],
-        "c_all_fit_precision": [all_fit_precision],
         "r_all_fit_hits": [related_all_fit_hits],
         "r_all_fit_recall": [all_fit_recall]
-
     })
 
-    
     return result_df
 
 # Parallel processing helper
 def process_single_pair(args):
-    rating, title = args
-    return match_score(rating, title)
+    rating, title, iteration = args
+    return match_score(rating, title, iteration)
 
 def process_rating(generated_df, num_workers=5):
     rating_list = generated_df["rating"].tolist()
     title_list = generated_df["title"].tolist()
-    pairs = list(zip(rating_list, title_list))
+    iteration_list = generated_df["iteration"].tolist()  # Include iteration column
+    pairs = list(zip(rating_list, title_list, iteration_list))  # Pass iteration to pairs
     
     with ThreadPoolExecutor(max_workers=num_workers) as executor:
-        result_df= list(tqdm(executor.map(process_single_pair, pairs), total=len(pairs)))
+        result_df = list(tqdm(executor.map(process_single_pair, pairs), total=len(pairs)))
     
     return result_df
 
 
 # Main execution
-folder_name = "results/task1/j_mistral"
+folder_name = "results"
 json_files = [f for f in os.listdir(folder_name) if f.endswith('.json')]
 for file in json_files:
-    generated_df = pd.read_json(f"{folder_name}/{file}", dtype={"rating": "object"}).dropna()
+    try:
+        generated_df = pd.read_json(f"{folder_name}/{file}", dtype={"rating": "object"}).dropna()
+    except ValueError as e:
+        generated_df = pd.read_json(f"{folder_name}/{file}", dtype={"rating": "object"}, lines=True).dropna()
     generated_df = generated_df[["title", "ind", "rating", "iteration"]]
     # generated_df = generated_df[generated_df["iteration"]]
     result_df = process_rating(generated_df)
