@@ -1,0 +1,33 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: match ~ prompt * task + (1 | title)
+   Data: r_df
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 50000))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  33187.5   33230.0  -16588.7   33177.5     36915 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-11.5538  -0.4614  -0.1808   0.4586   9.5705 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ title  (Intercept) 3.426    1.851   
+Number of obs: 36920, groups:  title, 923
+
+Fixed effects:
+                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                -1.85708    0.06601  -28.13   <2e-16 ***
+prompt.L                    0.95966    0.03183   30.15   <2e-16 ***
+taskrelated_match           2.18289    0.03196   68.30   <2e-16 ***
+prompt.L:taskrelated_match  0.44648    0.04195   10.64   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) prmp.L tskrl_
+prompt.L    -0.099              
+tskrltd_mtc -0.297  0.236       
+prmpt.L:ts_  0.035 -0.733 -0.067

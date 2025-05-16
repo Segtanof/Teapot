@@ -1,0 +1,67 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: related_match ~ prompt * industry + (1 | title)
+   Data: r_df
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 50000))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  19259.6   19611.7   -9584.8   19169.6     18415 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.3362 -0.5837 -0.2763  0.6019  7.6279 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ title  (Intercept) 1.123    1.06    
+Number of obs: 18460, groups:  title, 923
+
+Fixed effects:
+                     Estimate Std. Error z value Pr(>|z|)    
+(Intercept)         -0.684190   0.231958  -2.950 0.003182 ** 
+prompt.L             0.972861   0.145913   6.667 2.60e-11 ***
+industry11           1.569954   0.282803   5.551 2.83e-08 ***
+industry13           0.984966   0.290123   3.395 0.000686 ***
+industry15          -0.003201   0.305060  -0.010 0.991628    
+industry17          -1.026902   0.290133  -3.539 0.000401 ***
+industry19           0.304743   0.278347   1.095 0.273591    
+industry21           2.285343   0.409697   5.578 2.43e-08 ***
+industry23           0.636725   0.509865   1.249 0.211734    
+industry25           1.147335   0.277004   4.142 3.44e-05 ***
+industry27           1.092558   0.298703   3.658 0.000255 ***
+industry29          -0.039737   0.264558  -0.150 0.880604    
+industry31           1.117384   0.357633   3.124 0.001782 ** 
+industry35           0.792526   0.373447   2.122 0.033822 *  
+industry37          -0.323927   0.479620  -0.675 0.499432    
+industry39           1.386335   0.316115   4.386 1.16e-05 ***
+industry41           1.173990   0.344511   3.408 0.000655 ***
+industry43           0.999897   0.285378   3.504 0.000459 ***
+industry45          -0.779450   0.422257  -1.846 0.064904 .  
+industry47          -1.044275   0.283198  -3.687 0.000227 ***
+industry49          -0.996863   0.294212  -3.388 0.000703 ***
+industry51          -1.306859   0.263746  -4.955 7.23e-07 ***
+industry53          -0.616125   0.287269  -2.145 0.031972 *  
+prompt.L:industry11  0.408139   0.182900   2.231 0.025649 *  
+prompt.L:industry13  1.109618   0.191768   5.786 7.20e-09 ***
+prompt.L:industry15  0.075962   0.193200   0.393 0.694186    
+prompt.L:industry17  0.825279   0.202171   4.082 4.46e-05 ***
+prompt.L:industry19  0.517893   0.178397   2.903 0.003696 ** 
+prompt.L:industry21  0.387793   0.288814   1.343 0.179366    
+prompt.L:industry23  1.029217   0.348613   2.952 0.003154 ** 
+prompt.L:industry25  0.250989   0.176626   1.421 0.155312    
+prompt.L:industry27 -0.523428   0.186712  -2.803 0.005057 ** 
+prompt.L:industry29  0.109459   0.168411   0.650 0.515726    
+prompt.L:industry31 -0.179576   0.223692  -0.803 0.422101    
+prompt.L:industry35 -0.258227   0.228499  -1.130 0.258434    
+prompt.L:industry37 -0.640764   0.296873  -2.158 0.030899 *  
+prompt.L:industry39 -0.504996   0.198161  -2.548 0.010821 *  
+prompt.L:industry41  0.405053   0.223184   1.815 0.069543 .  
+prompt.L:industry43  0.422334   0.182089   2.319 0.020375 *  
+prompt.L:industry45 -0.286521   0.278088  -1.030 0.302856    
+prompt.L:industry47  0.169778   0.188762   0.899 0.368426    
+prompt.L:industry49  0.529496   0.201907   2.622 0.008730 ** 
+prompt.L:industry51 -0.171993   0.171752  -1.001 0.316632    
+prompt.L:industry53 -0.309805   0.183502  -1.688 0.091355 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

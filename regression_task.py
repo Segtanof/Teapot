@@ -11,7 +11,6 @@ import statsmodels.api as sm  # For the qqplot
 pandas2ri.activate()
 
 
-
 # Print versions for debugging
 import pymer4
 print(f"pymer4 version: {pymer4.__version__}")
@@ -50,7 +49,7 @@ def assess_normality(data, title):
     plt.title(f'Histogram for {title}')
 
     plt.tight_layout()
-    # plt.show()
+    plt.show()
 
     # 2. Statistical Tests
     if len(data) > 3: # Shapiro-Wilk requires more than 3 samples
@@ -100,13 +99,13 @@ except FileNotFoundError:
     raise
 
 # Filter for mistral model
-llm = "deepseek-r1"
+
 
 # Replace values in prompt column and convert to category
 df['model'] = df['model'].replace('llama3.2', 'llama3b').replace('llama3.3', 'llama70b')
 df['prompt'] = df['prompt'].replace('no', 'benchmark').replace('prompt1', 'persona')
 df['prompt'] = df['prompt'].astype('category')
-df = df[df['model'] == llm]
+df = df[df['model'] == 'llama3b']
 
 # Drop unnecessary column
 df.drop(columns=['all_fit'], inplace=True)
@@ -149,29 +148,38 @@ df['industry'] = pd.Categorical(df['industry']) # Convert industry to category
 df["zone"] = df["zone"].astype(str)  # Convert zone to string
 df['zone'] = pd.Categorical(df['zone']) # Convert title to category
 
+df = df.drop(columns=['related_recall'])
+df = df.melt(
+    id_vars=[col for col in df.columns if col not in ['correct_match', 'related_match']],
+    value_vars=['correct_match', 'related_match'],
+    var_name='task',
+    value_name='match'
+).reset_index(drop=True)
 
-# Store original industry categories
-original_industry_categories = df['industry'].cat.categories.tolist()
-print("Original industry categories:", original_industry_categories)
 
-# Store original industry categories
-original_zone_categories = df['zone'].cat.categories.tolist()
-print("Original zone categories:", original_zone_categories)
-
-# Convert DataFrame to R and assign to global environment
+# --- Convert DataFrame to R and assign to global environment ---
 globalenv['r_df'] = pandas2ri.py2rpy(df)
 
-# Set industry as factor with '33' as first level in R
+# --- Set 'task' as factor with 'correct_match' as first level in R ---
 r('''
-if ("33" %in% levels(r_df$industry)) {
-    r_df$industry <- factor(r_df$industry, levels = c("33", setdiff(levels(r_df$industry), "33")))
+if ("correct_match" %in% levels(r_df$task)) {
+    r_df$task <- factor(r_df$task, levels = c("correct_match", setdiff(levels(r_df$task), "correct_match")))
 } else {
-    message("Warning: '33' not found in industry levels. Using default order.")
+    message("Warning: 'correct_match' not found in task levels. Using default order.")
+}
+''')
+
+# --- Set 'industry' as factor with '47' as first level in R ---
+r('''
+if ("47" %in% levels(r_df$industry)) {
+    r_df$industry <- factor(r_df$industry, levels = c("47", setdiff(levels(r_df$industry), "47")))
+} else {
+    message("Warning: '47' not found in industry levels. Using default order.")
 }
 ''')
 
 # --- Fit the model using the r_df in the R environment ---
-r_model_formula = 'related_match ~ prompt * industry + (1 | title)'
+r_model_formula = 'match ~ prompt * task * industry + (1 | title)'
 r_code_fit = f'r_model <- lme4::glmer({r_model_formula}, data = r_df, family = binomial, control=glmerControl(optimizer="bobyqa", optCtrl=list(maxfun=50000)))'
 r(r_code_fit)
 
@@ -179,101 +187,30 @@ r(r_code_fit)
 r_model_exists = r('exists("r_model")')[0]
 print(f"\nDid R create 'r_model'? {r_model_exists}")
 
-fixed_effects_industry_pandas = None  # Initialize
-
-# --- Define file names for saving results ---
-summary_file = "_summary"
-coefficients_file = "model_coefficients"
-random_effects_file = "random_effects"
-
-# --- Extract fixed effects coefficients from the R model as a data frame ---
 if r_model_exists:
-    # --- Save the full summary to a text file ---
-    r(f'sink("{llm}_{summary_file}_industry.txt")')
+    # --- Extract Fixed Effects Coefficients ---
+    fixed_effects_r = r('as.data.frame(summary(r_model)$coefficients)')
+    fixed_effects_pandas = pandas2ri.rpy2py(fixed_effects_r)
+    print("\nFixed effects coefficients from R (with \'correct_match\' as reference for task, \'benchmark\' as reference for prompt, and \'47\' as reference for industry):")
+    print(fixed_effects_pandas)
+
+    # --- Extract Random Effects Variances ---
+    random_effects_r = r('as.data.frame(VarCorr(r_model))')
+    random_effects_pandas = pandas2ri.rpy2py(random_effects_r)
+    print("\nRandom effects variances from R:")
+    print(random_effects_pandas)
+
+    # --- Optionally save the results to text files ---
+    summary_file = "model_summary_prompt_task_industry.txt"
+    coefficients_file = "model_coefficients_prompt_task_industry.txt"
+    random_effects_file = "random_effects_prompt_task_industry.txt"
+
+    r(f'sink("{summary_file}")')
     r('print(summary(r_model))')
     r('sink()')
     print(f"\nR Model summary saved to: {summary_file}")
 
-    # # --- Save the coefficients to a text file (tab-separated) ---
-    # r(f'write.table(coef(summary(r_model)), file="{coefficients_file}_industry.txt", sep="\\t", quote=FALSE, row.names=TRUE)')
-    # print(f"Model coefficients saved to: {coefficients_file}")
-
-    # # --- Save the random effects variance to a text file ---
-    # r(f'sink("{random_effects_file}_industry.txt")')
-    # r('print(VarCorr(r_model))')
-    # r('sink()')
-    # print(f"Random effects variances saved to: {random_effects_file}")
-
-    # # --- Extract coefficients to Pandas DataFrame for plotting ---
-    # coefficients_r = r('as.data.frame(summary(r_model)$coefficients)')
-    # fixed_effects_industry_pandas = pandas2ri.rpy2py(coefficients_r)
-
 else:
     print("\nError: 'r_model' was not found in the R environment. Check for errors during model fitting.")
 
-if fixed_effects_industry_pandas is not None:
-    # Assess normality of industry-related fixed effects coefficients
-    industry_coefficients = fixed_effects_industry_pandas.loc[fixed_effects_industry_pandas.index.str.startswith('industry'), 'Estimate'].values
-    assess_normality(industry_coefficients, "Fixed Effects Coefficients (Zone Model)")
-
-    # You can also assess the normality of the interaction terms with zone
-    interaction_industry_coefficients = fixed_effects_industry_pandas.loc[fixed_effects_industry_pandas.index.str.startswith('prompt.L:industry'), 'Estimate'].values
-    assess_normality(interaction_industry_coefficients, "Interaction Coefficients (Prompt x industry)")
-
-# Set zone as factor with '2' as first level in R
-r('''
-if ("5" %in% levels(r_df$zone)) {
-    r_df$zone <- factor(r_df$zone, levels = c("5", setdiff(levels(r_df$zone), "5")))
-} else {
-    message("Warning: '3' not found in zone levels. Using default order.")
-}
-''')
-
-# --- Fit the model using the r_df in the R environment ---
-r_model_formula = 'related_match ~ prompt * zone + (1 | title)'
-r_code_fit = f'r_model <- lme4::glmer({r_model_formula}, data = r_df, family = binomial, control=glmerControl(optimizer="bobyqa", optCtrl=list(maxfun=50000)))'
-r(r_code_fit)
-
-# --- Check if r_model was created ---
-r_model_exists = r('exists("r_model")')[0]
-print(f"\nDid R create 'r_model'? {r_model_exists}")
-
-fixed_effects_zone_pandas = None  # Initialize
-
-# --- Extract fixed effects coefficients from the R model as a data frame ---
-if r_model_exists:
-    # --- Save the full summary to a text file ---
-    r(f'sink("{llm}_{summary_file}_zone.txt")')
-    r('print(summary(r_model))')
-    r('sink()')
-    print(f"\nR Model summary saved to: {summary_file}_zone.txt")
-
-    # # --- Save the coefficients to a text file (tab-separated) ---
-    # r(f'write.table(coef(summary(r_model)), file="{coefficients_file}_zone.txt", sep="\\t", quote=FALSE, row.names=TRUE)')
-    # print(f"Model coefficients saved to: {coefficients_file}_zone.txt")
-
-    # # --- Save the random effects variance to a text file ---
-    # # Save the random effects variance to a CSV file
-    # r(f'write.csv(as.data.frame(VarCorr(r_model)), file="{random_effects_file}_zone.csv", row.names=FALSE)')
-    # print(f"Random effects variances saved to: {random_effects_file}_zone.csv")
-
-    # --- Extract coefficients to Pandas DataFrame for plotting ---
-    coefficients_r = r('as.data.frame(summary(r_model)$coefficients)')
-    fixed_effects_zone_pandas = pandas2ri.rpy2py(coefficients_r)
-
-else:
-    print("\nError: 'r_model' was not found in the R environment. Check for errors during model fitting.")
-
-
-
-
-if fixed_effects_zone_pandas is not None:
-    # Assess normality of Zone-related fixed effects coefficients
-    industry_coefficients = fixed_effects_zone_pandas.loc[fixed_effects_zone_pandas.index.str.startswith('zone'), 'Estimate'].values
-    assess_normality(industry_coefficients, "Fixed Effects Coefficients (Zone Model)")
-
-    # You can also assess the normality of the interaction terms with zone
-    interaction_industry_coefficients = fixed_effects_zone_pandas.loc[fixed_effects_zone_pandas.index.str.startswith('prompt.L:zone'), 'Estimate'].values
-    assess_normality(interaction_industry_coefficients, "Interaction Coefficients (Prompt x Zone)")
-
-print("\nAnalysis complete. Results saved to text files and normality assessed.")
+print("\nRegression analysis complete.")
