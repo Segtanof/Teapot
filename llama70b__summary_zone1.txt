@@ -1,0 +1,45 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: related_match ~ prompt * zone + (1 | title)
+   Data: r_df
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 50000))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   7928.7    8014.7   -3953.3    7906.7     18449 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-9.3422 -0.0622  0.0207  0.0656  7.0345 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ title  (Intercept) 42.59    6.526   
+Number of obs: 18460, groups:  title, 923
+
+Fixed effects:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)      8.8026     0.4888  18.008  < 2e-16 ***
+prompt.L         0.4798     0.1477   3.249  0.00116 ** 
+zone1          -13.3192     1.6003  -8.323  < 2e-16 ***
+zone2           -8.3167     0.6500 -12.796  < 2e-16 ***
+zone3           -3.3486     0.7175  -4.667 3.06e-06 ***
+zone4           -0.2600     0.5639  -0.461  0.64472    
+prompt.L:zone1   0.5236     0.2507   2.089  0.03673 *  
+prompt.L:zone2   0.1461     0.1660   0.880  0.37883    
+prompt.L:zone3   0.4350     0.1752   2.483  0.01302 *  
+prompt.L:zone4   0.9218     0.1972   4.674 2.95e-06 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) prmp.L zone1  zone2  zone3  zone4  pr.L:1 pr.L:2 pr.L:3
+prompt.L     0.067                                                        
+zone1       -0.392 -0.023                                                 
+zone2       -0.718 -0.049  0.273                                          
+zone3       -0.430 -0.037  0.083  0.334                                   
+zone4       -0.672 -0.052  0.195  0.503  0.483                            
+prmpt.L:zn1 -0.036 -0.589  0.002  0.027  0.024  0.031                     
+prmpt.L:zn2 -0.049 -0.889  0.012  0.037  0.040  0.048  0.524              
+prmpt.L:zn3 -0.046 -0.843  0.012  0.035  0.046  0.045  0.496  0.750       
+prmpt.L:zn4 -0.028 -0.748  0.001  0.023  0.041  0.113  0.441  0.667  0.632

@@ -1,0 +1,196 @@
+Initial Model Summary:
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: correct_match ~ prompt * industry + (1 | title)
+   Data: r_df
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 50000),  
+    calc.derivs = FALSE, check.conv.grad = .makeCC("warning",  
+        tol = 0.001, relTol = NULL))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  10504.7   10856.7   -5207.3   10414.7     18415 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.2695 -0.2543 -0.0997 -0.0392 18.3272 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ title  (Intercept) 5.906    2.43    
+Number of obs: 18460, groups:  title, 923
+
+Fixed effects:
+                         Estimate Std. Error z value Pr(>|z|)    
+(Intercept)              -3.50473    0.47594  -7.364 1.79e-13 ***
+promptpersona             0.42326    0.25709   1.646  0.09969 .  
+industry11                0.77832    0.59999   1.297  0.19456    
+industry13               -0.63109    0.64317  -0.981  0.32648    
+industry15                0.03125    0.67460   0.046  0.96306    
+industry17               -2.97453    0.76139  -3.907 9.36e-05 ***
+industry19               -0.73848    0.62120  -1.189  0.23452    
+industry21                0.14366    0.91565   0.157  0.87533    
+industry23               -3.06149    1.51121  -2.026  0.04278 *  
+industry25               -0.06849    0.60129  -0.114  0.90931    
+industry29               -0.19895    0.56849  -0.350  0.72637    
+industry31                1.83532    0.76359   2.404  0.01624 *  
+industry33               -1.87213    0.85018  -2.202  0.02766 *  
+industry35               -0.10366    0.87641  -0.118  0.90584    
+industry37               -2.82108    1.81370  -1.555  0.11984    
+industry39                0.50832    0.69804   0.728  0.46648    
+industry41                0.44647    0.75999   0.587  0.55689    
+industry43               -1.07248    0.64530  -1.662  0.09651 .  
+industry45               -2.19196    1.16770  -1.877  0.06050 .  
+industry47               -1.70787    0.65708  -2.599  0.00934 ** 
+industry49               -3.01891    0.76569  -3.943 8.06e-05 ***
+industry51               -2.90583    0.63872  -4.549 5.38e-06 ***
+industry53               -2.33603    0.71859  -3.251  0.00115 ** 
+promptpersona:industry11  1.41234    0.31205   4.526 6.01e-06 ***
+promptpersona:industry13  2.17344    0.35946   6.046 1.48e-09 ***
+promptpersona:industry15  1.42915    0.36651   3.899 9.65e-05 ***
+promptpersona:industry17  3.02766    0.54313   5.575 2.48e-08 ***
+promptpersona:industry19  1.74651    0.35436   4.929 8.28e-07 ***
+promptpersona:industry21  1.38852    0.50834   2.731  0.00631 ** 
+promptpersona:industry23  2.90658    0.99533   2.920  0.00350 ** 
+promptpersona:industry25  1.66389    0.32764   5.078 3.81e-07 ***
+promptpersona:industry29  1.27821    0.31101   4.110 3.96e-05 ***
+promptpersona:industry31  1.17463    0.37133   3.163  0.00156 ** 
+promptpersona:industry33  1.07927    0.51275   2.105  0.03530 *  
+promptpersona:industry35  0.18562    0.47060   0.394  0.69326    
+promptpersona:industry37  0.08935    1.10541   0.081  0.93557    
+promptpersona:industry39  0.18432    0.36632   0.503  0.61484    
+promptpersona:industry41  1.79448    0.39781   4.511 6.45e-06 ***
+promptpersona:industry43  1.72166    0.35435   4.859 1.18e-06 ***
+promptpersona:industry45  2.09823    0.77960   2.691  0.00712 ** 
+promptpersona:industry47  0.91216    0.38629   2.361  0.01821 *  
+promptpersona:industry49  2.06315    0.49981   4.128 3.66e-05 ***
+promptpersona:industry51  1.36114    0.39449   3.450  0.00056 ***
+promptpersona:industry53  1.37804    0.44976   3.064  0.00218 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Cleaned Model Summary:
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: correct_match ~ prompt * industry + (1 | title)
+   Data: r_df_clean
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 50000),  
+    calc.derivs = FALSE, check.conv.grad = .makeCC("warning",  
+        tol = 0.001, relTol = NULL))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   9906.4   10258.3   -4908.2    9816.4     18353 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.3180 -0.2131 -0.0888 -0.0311  7.0827 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ title  (Intercept) 6.827    2.613   
+Number of obs: 18398, groups:  title, 923
+
+Fixed effects:
+                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                -3.74795    0.51261  -7.312 2.64e-13 ***
+promptpersona               0.46796    0.26114   1.792 0.073135 .  
+industry11                  0.94863    0.64366   1.474 0.140532    
+industry13                 -0.71619    0.69310  -1.033 0.301457    
+industry15                  0.08818    0.72403   0.122 0.903067    
+industry17                -18.95352 1206.65876  -0.016 0.987468    
+industry19                 -1.32432    0.68730  -1.927 0.054000 .  
+industry21                  0.24611    0.97854   0.252 0.801426    
+industry23                 -3.04586    1.59580  -1.909 0.056304 .  
+industry25                  0.07723    0.64419   0.120 0.904573    
+industry29                 -0.62543    0.61803  -1.012 0.311549    
+industry31                  2.06249    0.81768   2.522 0.011656 *  
+industry33                 -1.81080    0.90501  -2.001 0.045408 *  
+industry35                  0.03255    0.93536   0.035 0.972242    
+industry37                 -2.80118    1.95363  -1.434 0.151620    
+industry39                  0.44013    0.75404   0.584 0.559428    
+industry41                  0.59322    0.81314   0.730 0.465672    
+industry43                 -1.25473    0.69639  -1.802 0.071583 .  
+industry45                -19.32892 2555.61258  -0.008 0.993965    
+industry47                 -1.89110    0.71235  -2.655 0.007937 ** 
+industry49                 -4.14762    0.93494  -4.436 9.15e-06 ***
+industry51                 -3.22862    0.69965  -4.615 3.94e-06 ***
+industry53                 -2.62279    0.78562  -3.338 0.000842 ***
+promptpersona:industry11    1.38051    0.31586   4.371 1.24e-05 ***
+promptpersona:industry13    2.37680    0.37533   6.333 2.41e-10 ***
+promptpersona:industry15    1.50344    0.37611   3.997 6.40e-05 ***
+promptpersona:industry17   19.00248 1206.65862   0.016 0.987435    
+promptpersona:industry19    2.32361    0.39694   5.854 4.80e-09 ***
+promptpersona:industry21    1.37877    0.51527   2.676 0.007455 ** 
+promptpersona:industry23    2.89640    1.00274   2.888 0.003871 ** 
+promptpersona:industry25    1.64024    0.33178   4.944 7.66e-07 ***
+promptpersona:industry29    1.69667    0.32880   5.160 2.47e-07 ***
+promptpersona:industry31    1.13656    0.37471   3.033 0.002420 ** 
+promptpersona:industry33    1.04624    0.51635   2.026 0.042742 *  
+promptpersona:industry35    0.14462    0.47370   0.305 0.760139    
+promptpersona:industry37    0.04830    1.10737   0.044 0.965209    
+promptpersona:industry39    0.23277    0.37388   0.623 0.533554    
+promptpersona:industry41    1.77092    0.40209   4.404 1.06e-05 ***
+promptpersona:industry43    1.90887    0.36718   5.199 2.01e-07 ***
+promptpersona:industry45   19.32019 2555.61241   0.008 0.993968    
+promptpersona:industry47    1.06917    0.40196   2.660 0.007816 ** 
+promptpersona:industry49    3.13340    0.67732   4.626 3.73e-06 ***
+promptpersona:industry51    1.63911    0.42230   3.881 0.000104 ***
+promptpersona:industry53    1.57878    0.47509   3.323 0.000890 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Cleaned Total Observations: 18398 
+Cleaned Outliers (> |3|): 178 
+
+Initial Total Observations: 18460 
+Initial Outliers (> |3|): 204  ( 1.11 %)
+Initial Outlier Summary by Industry and Prompt:
+    
+     benchmark persona
+  27         1       1
+  11         6       1
+  13        14       0
+  15        12       5
+  17         6       6
+  19        25       3
+  21         0       0
+  23         1       0
+  25        14       3
+  29        33       4
+  31         4       0
+  33         4       1
+  35         0       2
+  37         0       0
+  39         6       0
+  41         2       0
+  43         8       0
+  45         3       0
+  47         8       3
+  49         7       3
+  51         7       2
+  53         6       3
+
+Initial Top 10 Residuals:
+                                                 title industry    prompt
+2655 Radio Frequency Identification Device Specialists       17 benchmark
+1478                    Solar Energy Systems Engineers       17 benchmark
+1252                       Computer Hardware Engineers       17 benchmark
+2641                              Landscape Architects       17 benchmark
+1875                                Robotics Engineers       17 benchmark
+8156                                  Dredge Operators       53 benchmark
+8762                   Airfield Operations Specialists       53 benchmark
+1107                                    Range Managers       19 benchmark
+1732                                      Sociologists       19 benchmark
+1924                                        Economists       19 benchmark
+         resid
+2655 18.327192
+1478 12.440566
+1252 12.440566
+2641 12.440566
+1875  9.572652
+8156  9.313674
+8762  9.313674
+1107  9.287197
+1732  9.287197
+1924  9.287197

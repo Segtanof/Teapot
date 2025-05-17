@@ -100,7 +100,7 @@ except FileNotFoundError:
     raise
 
 # Filter for mistral model
-llm = "deepseek-r1"
+llm = "mistral"
 
 # Replace values in prompt column and convert to category
 df['model'] = df['model'].replace('llama3.2', 'llama3b').replace('llama3.3', 'llama70b')
@@ -161,12 +161,12 @@ print("Original zone categories:", original_zone_categories)
 # Convert DataFrame to R and assign to global environment
 globalenv['r_df'] = pandas2ri.py2rpy(df)
 
-# Set industry as factor with '33' as first level in R
+# Set industry as factor with '27' as first level in R
 r('''
-if ("33" %in% levels(r_df$industry)) {
-    r_df$industry <- factor(r_df$industry, levels = c("33", setdiff(levels(r_df$industry), "33")))
+if ("27" %in% levels(r_df$industry)) {
+    r_df$industry <- factor(r_df$industry, levels = c("27", setdiff(levels(r_df$industry), "27")))
 } else {
-    message("Warning: '33' not found in industry levels. Using default order.")
+    message("Warning: '27' not found in industry levels. Using default order.")
 }
 ''')
 
