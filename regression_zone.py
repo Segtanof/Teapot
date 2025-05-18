@@ -27,7 +27,7 @@ except FileNotFoundError:
     raise
 
 # Filter for model and preprocess
-llm = "llama3b"
+llm = "llama70b"
 
 df['model'] = df['model'].replace('llama3.2', 'llama3b').replace('llama3.3', 'llama70b')
 df['prompt'] = df['prompt'].replace('no', 'benchmark').replace('prompt1', 'persona')
@@ -168,7 +168,7 @@ initial_top_residuals = result.rx2('initial_top_residuals')
 clean_observations = result.rx2('clean_observations')[0]
 
 # Print Python-side summary
-print(f"Model Summaries saved to glmm_summary_scalable.txt")
+print(f"Model Summaries saved to zone_2step.txt")
 print(f"Initial Outlier Percentage (> |3|): {initial_outlier_percentage:.2f}%")
 print(f"Number of Initial Outliers: {len(result.rx2('initial_outliers').rx2('resid'))}")
 print(f"Cleaned Observations: {clean_observations}")

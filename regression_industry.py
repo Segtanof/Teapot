@@ -27,7 +27,7 @@ except FileNotFoundError:
     raise
 
 # Filter for model and preprocess
-llm = "llama3b"
+llm = "llama70b"
 df['model'] = df['model'].replace('llama3.2', 'llama3b').replace('llama3.3', 'llama70b')
 df['prompt'] = df['prompt'].replace('no', 'benchmark').replace('prompt1', 'persona')
 df['prompt'] = df['prompt'].astype('category')
@@ -63,11 +63,11 @@ globalenv['r_df'] = pandas2ri.py2rpy(df)
 r_script = '''
 library(lme4)
 
-# Ensure industry is a factor with '39' as reference
-if ("39" %in% levels(r_df$industry)) {
-    r_df$industry <- factor(r_df$industry, levels = c("39", setdiff(levels(r_df$industry), "39")))
+# Ensure industry is a factor with '43' as reference
+if ("43" %in% levels(r_df$industry)) {
+    r_df$industry <- factor(r_df$industry, levels = c("43", setdiff(levels(r_df$industry), "43")))
 } else {
-    message("Warning: '39' not found in industry levels. Using default order.")
+    message("Warning: '43' not found in industry levels. Using default order.")
 }
 
 # Fit initial GLMM
@@ -131,10 +131,10 @@ initial_top_residuals <- head(r_df[order(-abs(r_df$resid)), c("title", "industry
 # Save results
 sink("glmm_summary_scalable.txt")
 cat("Initial Model Summary:\n")
-print(initial_summary)
+print(initial_summary,correlation=TRUE)
 if (!is.na(exclusion_threshold)) {
     cat("\nCleaned Model Summary:\n")
-    print(clean_summary)
+    print(clean_summary,correlation=TRUE)
     cat("\nCleaned Total Observations:", nrow(r_df_clean), "\n")
     cat("Cleaned Outliers (> |3|):", sum(abs(r_df_clean$resid) > 3), "\n")
 }
