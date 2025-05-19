@@ -27,7 +27,7 @@ except FileNotFoundError:
     raise
 
 # Filter for model and preprocess
-llm = "llama70b"
+llm = "deepseek-r1"
 df['model'] = df['model'].replace('llama3.2', 'llama3b').replace('llama3.3', 'llama70b')
 df['prompt'] = df['prompt'].replace('no', 'benchmark').replace('prompt1', 'persona')
 df['prompt'] = df['prompt'].astype('category')
