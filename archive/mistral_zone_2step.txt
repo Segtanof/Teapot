@@ -1,0 +1,124 @@
+Initial Model Summary:
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: correct_match ~ prompt * zone + (1 | title)
+   Data: r_df
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 50000),  
+    calc.derivs = FALSE, check.conv.grad = .makeCC("warning",  
+        tol = 0.001, relTol = NULL))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  10588.2   10674.2   -5283.1   10566.2     18449 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.5207 -0.2371 -0.0827 -0.0517 10.0157 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ title  (Intercept) 9.998    3.162   
+Number of obs: 18460, groups:  title, 923
+
+Fixed effects:
+                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          -4.6245     0.2605 -17.753  < 2e-16 ***
+promptpersona         1.1706     0.1165  10.049  < 2e-16 ***
+zone1                -1.1080     0.8703  -1.273   0.2030    
+zone2                -0.3560     0.3507  -1.015   0.3101    
+zone4                -0.2984     0.3660  -0.815   0.4148    
+zone5                 1.1713     0.3858   3.036   0.0024 ** 
+promptpersona:zone1  -0.7401     0.3769  -1.964   0.0495 *  
+promptpersona:zone2  -0.2305     0.1571  -1.468   0.1422    
+promptpersona:zone4   1.0867     0.1743   6.234 4.55e-10 ***
+promptpersona:zone5   0.7948     0.1687   4.712 2.46e-06 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) prmptp zone1  zone2  zone4  zone5  prmp:1 prmp:2 prmp:4
+promptpersn -0.299                                                        
+zone1       -0.299  0.090                                                 
+zone2       -0.743  0.222  0.222                                          
+zone4       -0.712  0.213  0.213  0.529                                   
+zone5       -0.675  0.202  0.202  0.501  0.481                            
+prmptprsn:1  0.093 -0.309 -0.252 -0.069 -0.066 -0.062                     
+prmptprsn:2  0.222 -0.742 -0.066 -0.294 -0.158 -0.150  0.229              
+prmptprsn:4  0.200 -0.668 -0.060 -0.149 -0.338 -0.135  0.207  0.496       
+prmptprsn:5  0.207 -0.691 -0.062 -0.154 -0.147 -0.291  0.213  0.512  0.461
+
+Cleaned Model Summary:
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: correct_match ~ prompt * zone + (1 | title)
+   Data: r_df_clean
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 50000),  
+    calc.derivs = FALSE, check.conv.grad = .makeCC("warning",  
+        tol = 0.001, relTol = NULL))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  10001.9   10087.9   -4990.0    9979.9     18394 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0682 -0.1535 -0.0642 -0.0388  5.4278 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ title  (Intercept) 13.85    3.721   
+Number of obs: 18405, groups:  title, 923
+
+Fixed effects:
+                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          -5.2923     0.3080 -17.186  < 2e-16 ***
+promptpersona         1.2468     0.1192  10.462  < 2e-16 ***
+zone1                -1.0788     1.0469  -1.030  0.30281    
+zone2                -0.4329     0.4170  -1.038  0.29913    
+zone4                -0.7589     0.4354  -1.743  0.08133 .  
+zone5                 1.2018     0.4548   2.643  0.00823 ** 
+promptpersona:zone1  -0.8104     0.3792  -2.137  0.03261 *  
+promptpersona:zone2  -0.2379     0.1606  -1.482  0.13847    
+promptpersona:zone4   1.5080     0.1902   7.930 2.19e-15 ***
+promptpersona:zone5   0.9476     0.1759   5.389 7.10e-08 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) prmptp zone1  zone2  zone4  zone5  prmp:1 prmp:2 prmp:4
+promptpersn -0.261                                                        
+zone1       -0.294  0.077                                                 
+zone2       -0.739  0.193  0.217                                          
+zone4       -0.707  0.185  0.208  0.522                                   
+zone5       -0.677  0.177  0.199  0.500  0.479                            
+prmptprsn:1  0.082 -0.314 -0.211 -0.061 -0.058 -0.056                     
+prmptprsn:2  0.194 -0.742 -0.057 -0.255 -0.137 -0.131  0.233              
+prmptprsn:4  0.164 -0.627 -0.048 -0.121 -0.317 -0.111  0.197  0.465       
+prmptprsn:5  0.177 -0.678 -0.052 -0.131 -0.125 -0.260  0.213  0.503  0.425
+
+Cleaned Total Observations: 18405 
+Cleaned Outliers (> |3|): 187 
+
+Initial Total Observations: 18460 
+Initial Outliers (> |3|): 192  ( 1.04 %)
+Initial Outlier Summary by Zone and Prompt:
+   
+    benchmark persona
+  3        36       7
+  1         0       0
+  2        42       7
+  4        43      14
+  5        29      14
+
+Initial Top 10 Residuals:
+                                                 title zone    prompt     resid
+303                                        Legislators    4 benchmark 10.015744
+764                       Data Warehousing Specialists    4 benchmark 10.015744
+836                                    Data Scientists    4 benchmark 10.015744
+844                                 Geodetic Surveyors    4 benchmark 10.015744
+1355 Radio Frequency Identification Device Specialists    4 benchmark 10.015744
+943                                          Surveyors    4 benchmark 10.015744
+1014                               Materials Engineers    4 benchmark 10.015744
+1474                               Photonics Engineers    4 benchmark 10.015744
+5587                                   Sales Engineers    4 benchmark 10.015744
+1724                                        Economists    5 benchmark  8.315048

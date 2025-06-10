@@ -91,7 +91,7 @@ model_configs = [
 ]
 prompts = {
     "no_prompt": None,
-    # "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
+    "prompt1": "You are an expert of this occupation: \"{title}\". Your task is to generate clear, concise and relevant task descriptions associated with this occupation. Each description should be specific, action-oriented, distinct from one another, and use professional language. Avoid unnecessary details—focus on the core action and purpose of the task. "
 }
 
 logging.info("Script started")
